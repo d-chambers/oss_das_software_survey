@@ -2,97 +2,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="790" viewBox="0 0 1680 790">
   <title>How the search was run, and where it could not reach</title>
-  <desc>102 forge probes across seven hosts produced 3,142 candidates. Four discovery routes were not taken, which is why every count is a floor.</desc>
-
+  <desc>110 probes produced 3,245 candidates. Four discovery routes were not taken.</desc>
   <rect x="0" y="0" width="1680" height="790" fill="#ffffff"/>
-
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
-
-    <!-- ============ what was searched ============ -->
-    <text x="841.6" y="64" font-size="24" fill="#2b2620" letter-spacing="3.2">WHAT WAS SEARCHED</text>
-
-    <g font-size="76" fill="#2b2620">
-      <text x="210"  y="164">15</text>
-      <text x="630"  y="164">24</text>
-      <text x="1050" y="164">63</text>
-      <text x="1470" y="164" fill="#c98500">7</text>
-    </g>
-
-    <g font-size="21" fill="#2b2620" letter-spacing="2.6">
-      <text x="211.3"  y="202">GITHUB QUERIES</text>
-      <text x="631.3"  y="202">MIRROR-HOST QUERIES</text>
-      <text x="1051.3" y="202">NAMESPACE WALKS</text>
-      <text x="1471.3" y="202">FORGE HOSTS</text>
-    </g>
-
-    <g font-size="19" font-style="italic" fill="#7a7266">
-      <text x="210"  y="234">Name, description, README, topic</text>
-      <text x="630"  y="234">Four GitLab and two Gitea hosts</text>
-      <text x="1050" y="234">Organisations swept end to end</text>
-      <text x="1470" y="234">Three forge APIs</text>
-    </g>
-
-    <!-- the four query families -->
-    <text x="841.6" y="292" font-size="17" fill="#7a7266" letter-spacing="2.2">THE QUERIES ASKED FOUR THINGS</text>
-    <g font-size="19" font-style="italic" fill="#2b2620">
-      <text x="248"  y="330">“distributed acoustic sensing”</text>
-      <text x="672"  y="330">Silixa · OptaSense · Febus · Terra15</text>
-      <text x="1067" y="330">GitHub topics</text>
-      <text x="1436" y="330">MATLAB · Julia · R</text>
-    </g>
-    <g font-size="15" fill="#a3825a" letter-spacing="1.6">
-      <text x="248"  y="356">THE PHRASE, AND ITS VARIANTS</text>
-      <text x="672"  y="356">THE INTERROGATOR VENDORS</text>
-      <text x="1067" y="356">CURATED LABELS</text>
-      <text x="1436" y="356">LANGUAGES PYTHON SEARCH HIDES</text>
-    </g>
-
-    <!-- ============ spine ============ -->
-    <path d="M 100,410 H 1580" stroke="#cbc3b3" stroke-width="3" fill="none"/>
-    <g fill="#2b2620">
-      <circle cx="210"  cy="410" r="7"/>
-      <circle cx="630"  cy="410" r="7"/>
-      <circle cx="1050" cy="410" r="7"/>
-      <circle cx="1470" cy="410" r="7"/>
-    </g>
-    <text x="841.6" y="452" font-size="19" fill="#7a7266" letter-spacing="2.4">3,440 RESULTS · 3,142 DISTINCT CANDIDATES · 2 PROBES TRUNCATED</text>
-
-    <!-- ============ what was not searched ============ -->
-    <text x="841.6" y="536" font-size="24" fill="#2b2620" letter-spacing="3.2">WHAT WAS NOT SEARCHED</text>
-
-    <g stroke="#cbc3b3" stroke-width="2.5" stroke-dasharray="7 7" fill="none">
-      <path d="M 108,576 H 312"/>
-      <path d="M 528,576 H 732"/>
-      <path d="M 948,576 H 1152"/>
-      <path d="M 1368,576 H 1572"/>
-    </g>
-
-    <g font-size="21" fill="#7a7266" letter-spacing="2.6">
-      <text x="211.3"  y="620">THE LITERATURE</text>
-      <text x="631.3"  y="620">SOURCE CODE</text>
-      <text x="1051.3" y="620">PACKAGE REGISTRIES</text>
-      <text x="1471.3" y="620">OTHER HOSTS</text>
-    </g>
-
-    <g font-size="19" font-style="italic" fill="#7a7266">
-      <text x="210"  y="654">No paper-to-software search.</text>
-      <text x="210"  y="680">Citations were read only for</text>
-      <text x="210"  y="706">projects already catalogued.</text>
-
-      <text x="630"  y="654">No scan of candidate source for</text>
-      <text x="630"  y="680">interrogator format readers —</text>
-      <text x="630"  y="706">TDMS, OptoDAS, PRODML.</text>
-
-      <text x="1050" y="654">PyPI, conda and the Julia</text>
-      <text x="1050" y="680">registry were queried only for</text>
-      <text x="1050" y="706">packages already catalogued.</text>
-
-      <text x="1470" y="654">Institutional and private forges</text>
-      <text x="1470" y="680">outside the seven, and any</text>
-      <text x="1470" y="706">source published off-forge.</text>
-    </g>
-
-    <text x="840" y="762" font-size="20" font-style="italic" fill="#a3825a">A tool is invisible here unless it says so in its own name, description, README, or topics — which is why Pyrocko was missed.</text>
-
+  <text x="841.6" y="64" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT WAS SEARCHED</text>
+  <text x="210" y="164" font-size="76" fill="#2b2620" text-anchor="middle">15</text>
+  <text x="211.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITHUB QUERIES</text>
+  <text x="210" y="234" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Name, description, README, topic</text>
+  <text x="630" y="164" font-size="76" fill="#2b2620" text-anchor="middle">16</text>
+  <text x="631.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITLAB QUERIES</text>
+  <text x="630" y="234" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Across four hosts</text>
+  <text x="1050" y="164" font-size="76" fill="#2b2620" text-anchor="middle">8</text>
+  <text x="1051.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITEA QUERIES</text>
+  <text x="1050" y="234" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Across two hosts</text>
+  <text x="1470" y="164" font-size="76" fill="#c98500" text-anchor="middle">71</text>
+  <text x="1471.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">NAMESPACE WALKS</text>
+  <text x="1470" y="234" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Organisations swept end to end</text>
+  <text x="841.1" y="292" font-size="17" fill="#7a7266" text-anchor="middle" letter-spacing="2.2">THE QUERIES ASKED FOUR THINGS</text>
+  <text x="210" y="330" font-size="19" fill="#2b2620" text-anchor="middle" font-style="italic">“distributed acoustic sensing”</text>
+  <text x="210.8" y="356" font-size="15" fill="#a3825a" text-anchor="middle" letter-spacing="1.6">THE PHRASE, AND ITS VARIANTS</text>
+  <text x="630" y="330" font-size="19" fill="#2b2620" text-anchor="middle" font-style="italic">Silixa · OptaSense · Febus · Terra15</text>
+  <text x="630.8" y="356" font-size="15" fill="#a3825a" text-anchor="middle" letter-spacing="1.6">THE INTERROGATOR VENDORS</text>
+  <text x="1050" y="330" font-size="19" fill="#2b2620" text-anchor="middle" font-style="italic">Repository topics</text>
+  <text x="1050.8" y="356" font-size="15" fill="#a3825a" text-anchor="middle" letter-spacing="1.6">CURATED LABELS</text>
+  <text x="1470" y="330" font-size="19" fill="#2b2620" text-anchor="middle" font-style="italic">MATLAB · Julia · R</text>
+  <text x="1470.8" y="356" font-size="15" fill="#a3825a" text-anchor="middle" letter-spacing="1.6">LANGUAGES A PYTHON SEARCH HIDES</text>
+  <path d="M 100,410 L 1580,410" stroke="#cbc3b3" stroke-width="3" fill="none"/>
+  <circle cx="210" cy="410" r="7" fill="#2b2620"/>
+  <circle cx="630" cy="410" r="7" fill="#2b2620"/>
+  <circle cx="1050" cy="410" r="7" fill="#2b2620"/>
+  <circle cx="1470" cy="410" r="7" fill="#2b2620"/>
+  <text x="841.2" y="452" font-size="19" fill="#7a7266" text-anchor="middle" letter-spacing="2.4">3,562 RESULTS · 3,245 DISTINCT CANDIDATES · 5 OF 110 PROBES FAILED</text>
+  <text x="841.6" y="536" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT WAS NOT SEARCHED</text>
+  <path d="M 108,576 L 312,576" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
+  <text x="212.6" y="620" font-size="21" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">THE LITERATURE</text>
+  <text x="210" y="654" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">No paper-to-software search.</text>
+  <text x="210" y="680" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Citations were read only for</text>
+  <text x="210" y="706" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">projects already catalogued.</text>
+  <path d="M 528,576 L 732,576" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
+  <text x="632.6" y="620" font-size="21" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">SOURCE CODE</text>
+  <text x="630" y="654" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">No scan of candidate source for</text>
+  <text x="630" y="680" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">interrogator format readers —</text>
+  <text x="630" y="706" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">TDMS, OptoDAS, PRODML.</text>
+  <path d="M 948,576 L 1152,576" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
+  <text x="1052.6" y="620" font-size="21" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">PACKAGE REGISTRIES</text>
+  <text x="1050" y="654" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">PyPI, conda and the Julia</text>
+  <text x="1050" y="680" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">registry were queried only for</text>
+  <text x="1050" y="706" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">packages already catalogued.</text>
+  <path d="M 1368,576 L 1572,576" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
+  <text x="1472.6" y="620" font-size="21" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">OTHER HOSTS</text>
+  <text x="1470" y="654" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Institutional and private forges</text>
+  <text x="1470" y="680" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">outside the seven, and any</text>
+  <text x="1470" y="706" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">source published off-forge.</text>
+  <text x="840" y="762" font-size="21" fill="#a3825a" text-anchor="middle" font-style="italic">A tool is invisible here unless it says so in its own name, description, README, or topics.</text>
   </g>
 </svg>

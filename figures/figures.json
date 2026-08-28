@@ -1,0 +1,1005 @@
+{
+ "snapshot": "2026-08-28",
+ "ecosystem_totals": {
+  "projects": 74,
+  "contributors": 120,
+  "commits": 6848,
+  "lines": 564437,
+  "unmirrored": [
+   "exploredas"
+  ]
+ },
+ "pipeline_flow": {
+  "snapshot": "2026-08-28",
+  "github_searches": 15,
+  "gitlab_searches": 16,
+  "gitea_searches": 8,
+  "namespace_walks": 71,
+  "probes_ok": 105,
+  "probes_failed": 5,
+  "failed_hosts": [
+   "git.pyrocko.org"
+  ],
+  "rows_retrieved": 3562,
+  "candidates": 3245,
+  "unreviewed": 2906,
+  "reviewed": 339,
+  "catalogued": 98,
+  "included": 73,
+  "metric_rows": 656,
+  "metric_hosts": [
+   "api.anaconda.org",
+   "api.github.com",
+   "api.openalex.org",
+   "git.gfz-potsdam.de",
+   "pypi.org",
+   "pypistats.org"
+  ],
+  "summarised": 71,
+  "summary_models": [
+   "claude-haiku-4-5-20251001",
+   "claude-sonnet-5"
+  ]
+ },
+ "selection_funnel": {
+  "snapshot": "2026-08-28",
+  "candidates": 3245,
+  "reviewed": 339,
+  "in_scope": 74,
+  "unreviewed": 2906,
+  "held_back": [
+   [
+    "not-reusable",
+    163
+   ],
+   [
+    "paper-code",
+    39
+   ],
+   [
+    "duplicate",
+    22
+   ],
+   [
+    "acronym-collision",
+    18
+   ],
+   [
+    "other-fiber",
+    12
+   ],
+   [
+    "no-source",
+    10
+   ],
+   [
+    "teaching",
+    7
+   ],
+   [
+    "general-toolkit",
+    4
+   ],
+   [
+    "other",
+    1
+   ]
+  ],
+  "held_back_total": 276
+ },
+ "licence_mix": {
+  "by_class": [
+   [
+    "osi-approved",
+    71
+   ],
+   [
+    "source-available",
+    3
+   ],
+   [
+    "unlicensed",
+    11
+   ],
+   [
+    "unknown",
+    1
+   ]
+  ],
+  "lines_by_class": [
+   [
+    "osi-approved",
+    543755
+   ],
+   [
+    "source-available",
+    50222
+   ],
+   [
+    "unlicensed",
+    27397
+   ],
+   [
+    "unknown",
+    0
+   ]
+  ],
+  "projects": 86,
+  "lines": 621374
+ },
+ "composition": {
+  "languages": [
+   [
+    "Python",
+    462037
+   ],
+   [
+    "Jupyter",
+    54107
+   ],
+   [
+    "Java",
+    19062
+   ],
+   [
+    "Julia",
+    9760
+   ],
+   [
+    "Rust",
+    6928
+   ],
+   [
+    "MATLAB",
+    4253
+   ],
+   [
+    "C",
+    3837
+   ],
+   [
+    "Shell",
+    2244
+   ],
+   [
+    "CUDA",
+    870
+   ],
+   [
+    "Web",
+    704
+   ],
+   [
+    "C++",
+    470
+   ],
+   [
+    "TypeScript",
+    107
+   ],
+   [
+    "JavaScript",
+    58
+   ]
+  ],
+  "total_lines": 564437,
+  "projects": 86,
+  "with_pypi": 19,
+  "with_conda": 5,
+  "with_julia": 1,
+  "with_none": 66
+ },
+ "growth": {
+  "years": [
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "by_class": [
+   [
+    "das-native",
+    [
+     0,
+     46,
+     228,
+     356,
+     463,
+     916,
+     1559,
+     1993,
+     1416
+    ]
+   ],
+   [
+    "other-fiber",
+    [
+     340,
+     407,
+     450,
+     36,
+     83,
+     246,
+     37,
+     88,
+     1
+    ]
+   ],
+   [
+    "das-supporting",
+    [
+     0,
+     0,
+     0,
+     0,
+     111,
+     109,
+     36,
+     6,
+     3
+    ]
+   ]
+  ],
+  "class_totals": [
+   [
+    "das-native",
+    6977
+   ],
+   [
+    "other-fiber",
+    1688
+   ],
+   [
+    "das-supporting",
+    265
+   ]
+  ]
+ },
+ "maturity": {
+  "projects": [
+   {
+    "project_id": "xdas",
+    "name": "xdas",
+    "role": "framework",
+    "commits": 1124,
+    "authors": 12,
+    "days": 1366,
+    "lines": 24958
+   },
+   {
+    "project_id": "dtscalibration",
+    "name": "python-dts-calibration",
+    "role": "other",
+    "commits": 1002,
+    "authors": 6,
+    "days": 2835,
+    "lines": 16221
+   },
+   {
+    "project_id": "dastools",
+    "name": "dastools",
+    "role": "other",
+    "commits": 842,
+    "authors": 1,
+    "days": 2385,
+    "lines": 11297
+   },
+   {
+    "project_id": "das4whales",
+    "name": "DAS4Whales",
+    "role": "other",
+    "commits": 619,
+    "authors": 7,
+    "days": 1276,
+    "lines": 14962
+   },
+   {
+    "project_id": "dascore",
+    "name": "DASCore",
+    "role": "framework",
+    "commits": 530,
+    "authors": 18,
+    "days": 1710,
+    "lines": 63692
+   },
+   {
+    "project_id": "pyfocs",
+    "name": "pyfocs",
+    "role": "other",
+    "commits": 506,
+    "authors": 3,
+    "days": 1947,
+    "lines": 5728
+   },
+   {
+    "project_id": "daspy",
+    "name": "DASPy",
+    "role": "other",
+    "commits": 457,
+    "authors": 4,
+    "days": 821,
+    "lines": 7242
+   },
+   {
+    "project_id": "fiberis",
+    "name": "fibeRIS",
+    "role": "framework",
+    "commits": 313,
+    "authors": 3,
+    "days": 536,
+    "lines": 21565
+   },
+   {
+    "project_id": "eqnet",
+    "name": "EQNet / PhaseNet-DAS",
+    "role": "other",
+    "commits": 265,
+    "authors": 3,
+    "days": 1491,
+    "lines": 21397
+   },
+   {
+    "project_id": "das-simulator",
+    "name": "fiberoptics-das-simulator",
+    "role": "other",
+    "commits": 230,
+    "authors": 5,
+    "days": 1922,
+    "lines": 8308
+   },
+   {
+    "project_id": "das-metadata",
+    "name": "DAS metadata tools",
+    "role": "other",
+    "commits": 215,
+    "authors": 1,
+    "days": 915,
+    "lines": 0
+   },
+   {
+    "project_id": "fiberwatch-cli",
+    "name": "FiberWatch CLI",
+    "role": "other",
+    "commits": 183,
+    "authors": 2,
+    "days": 398,
+    "lines": 55057
+   },
+   {
+    "project_id": "rnn-das",
+    "name": "RNN-DAS",
+    "role": "other",
+    "commits": 172,
+    "authors": 1,
+    "days": 522,
+    "lines": 1986
+   },
+   {
+    "project_id": "das-anomaly",
+    "name": "das-anomaly",
+    "role": "other",
+    "commits": 169,
+    "authors": 1,
+    "days": 526,
+    "lines": 5033
+   },
+   {
+    "project_id": "farmdas",
+    "name": "FarmDAS",
+    "role": "other",
+    "commits": 137,
+    "authors": 4,
+    "days": 952,
+    "lines": 13863
+   },
+   {
+    "project_id": "dasstore",
+    "name": "DASstore",
+    "role": "other",
+    "commits": 127,
+    "authors": 3,
+    "days": 1269,
+    "lines": 2171
+   },
+   {
+    "project_id": "dts-r",
+    "name": "dts",
+    "role": "other",
+    "commits": 126,
+    "authors": 3,
+    "days": 2661,
+    "lines": 9454
+   },
+   {
+    "project_id": "das-ani",
+    "name": "DAS-ANI",
+    "role": "other",
+    "commits": 125,
+    "authors": 1,
+    "days": 223,
+    "lines": 15056
+   },
+   {
+    "project_id": "daslab",
+    "name": "DASLab",
+    "role": "other",
+    "commits": 117,
+    "authors": 1,
+    "days": 1574,
+    "lines": 4563
+   },
+   {
+    "project_id": "dasexplorer",
+    "name": "DASexplorer",
+    "role": "viewer",
+    "commits": 115,
+    "authors": 2,
+    "days": 18,
+    "lines": 18415
+   },
+   {
+    "project_id": "dasvader",
+    "name": "DASVader.jl",
+    "role": "framework",
+    "commits": 90,
+    "authors": 1,
+    "days": 578,
+    "lines": 4712
+   },
+   {
+    "project_id": "fiberoptics-das-schemas",
+    "name": "Fiberoptics DAS Public Schemas",
+    "role": "other",
+    "commits": 73,
+    "authors": 5,
+    "days": 2185,
+    "lines": 175
+   },
+   {
+    "project_id": "pyseafom",
+    "name": "pySEAFOM",
+    "role": "other",
+    "commits": 72,
+    "authors": 2,
+    "days": 251,
+    "lines": 5624
+   },
+   {
+    "project_id": "das-vessel-detection",
+    "name": "das-vessel-detection",
+    "role": "other",
+    "commits": 66,
+    "authors": 1,
+    "days": 423,
+    "lines": 10857
+   },
+   {
+    "project_id": "dasmatrix",
+    "name": "DASMatrix",
+    "role": "framework",
+    "commits": 66,
+    "authors": 1,
+    "days": 322,
+    "lines": 19067
+   },
+   {
+    "project_id": "distpy",
+    "name": "distpy",
+    "role": "other",
+    "commits": 64,
+    "authors": 3,
+    "days": 1023,
+    "lines": 7600
+   },
+   {
+    "project_id": "dasio",
+    "name": "dasio",
+    "role": "other",
+    "commits": 58,
+    "authors": 1,
+    "days": 45,
+    "lines": 11009
+   },
+   {
+    "project_id": "derzug",
+    "name": "DerZug",
+    "role": "viewer",
+    "commits": 57,
+    "authors": 1,
+    "days": 146,
+    "lines": 75368
+   },
+   {
+    "project_id": "optodas-processor",
+    "name": "OptoDAS_processor",
+    "role": "other",
+    "commits": 55,
+    "authors": 1,
+    "days": 73,
+    "lines": 3610
+   },
+   {
+    "project_id": "dss-analyzer",
+    "name": "DSS_analyzer_Mariner",
+    "role": "other",
+    "commits": 53,
+    "authors": 1,
+    "days": 484,
+    "lines": 1569
+   },
+   {
+    "project_id": "a1das",
+    "name": "a1das",
+    "role": "other",
+    "commits": 52,
+    "authors": 1,
+    "days": 1270,
+    "lines": 0
+   },
+   {
+    "project_id": "xpick",
+    "name": "Xpick",
+    "role": "viewer",
+    "commits": 52,
+    "authors": 1,
+    "days": 303,
+    "lines": 733
+   },
+   {
+    "project_id": "mldas",
+    "name": "MLDAS",
+    "role": "other",
+    "commits": 47,
+    "authors": 1,
+    "days": 176,
+    "lines": 6803
+   },
+   {
+    "project_id": "cqi-das",
+    "name": "cqi_das",
+    "role": "other",
+    "commits": 44,
+    "authors": 2,
+    "days": 483,
+    "lines": 4462
+   },
+   {
+    "project_id": "das-processing-pipeline",
+    "name": "DAS Processing Pipeline",
+    "role": "other",
+    "commits": 39,
+    "authors": 2,
+    "days": 44,
+    "lines": 9127
+   },
+   {
+    "project_id": "invisensing",
+    "name": "invisensing",
+    "role": "other",
+    "commits": 39,
+    "authors": 2,
+    "days": 677,
+    "lines": 3492
+   },
+   {
+    "project_id": "das-n2n",
+    "name": "DAS-N2N-torch",
+    "role": "other",
+    "commits": 32,
+    "authors": 1,
+    "days": 431,
+    "lines": 444
+   },
+   {
+    "project_id": "coherence-analysis",
+    "name": "Coherence Analysis",
+    "role": "other",
+    "commits": 31,
+    "authors": 1,
+    "days": 16,
+    "lines": 22265
+   },
+   {
+    "project_id": "treble-sdk",
+    "name": "TrebleSDK",
+    "role": "other",
+    "commits": 31,
+    "authors": 2,
+    "days": 1077,
+    "lines": 4102
+   },
+   {
+    "project_id": "das-sensitivity",
+    "name": "DAS_sensitivity",
+    "role": "other",
+    "commits": 30,
+    "authors": 2,
+    "days": 181,
+    "lines": 2023
+   },
+   {
+    "project_id": "lightguide",
+    "name": "lightguide",
+    "role": "other",
+    "commits": 29,
+    "authors": 2,
+    "days": 889,
+    "lines": 2515
+   },
+   {
+    "project_id": "das-events",
+    "name": "das-events",
+    "role": "other",
+    "commits": 24,
+    "authors": 1,
+    "days": 21,
+    "lines": 2004
+   },
+   {
+    "project_id": "alakoro-fibersense",
+    "name": "Alakoro FiberSense",
+    "role": "other",
+    "commits": 23,
+    "authors": 2,
+    "days": 7,
+    "lines": 2022
+   },
+   {
+    "project_id": "das-dvv",
+    "name": "das-dvv",
+    "role": "other",
+    "commits": 22,
+    "authors": 1,
+    "days": 0,
+    "lines": 1487
+   },
+   {
+    "project_id": "daspack",
+    "name": "DASPack",
+    "role": "other",
+    "commits": 20,
+    "authors": 2,
+    "days": 97,
+    "lines": 6515
+   },
+   {
+    "project_id": "spool-processing",
+    "name": "SpoolProcessing",
+    "role": "other",
+    "commits": 20,
+    "authors": 2,
+    "days": 121,
+    "lines": 364
+   },
+   {
+    "project_id": "das-ancc",
+    "name": "das-ancc",
+    "role": "other",
+    "commits": 19,
+    "authors": 1,
+    "days": 16,
+    "lines": 1150
+   },
+   {
+    "project_id": "febustools",
+    "name": "FebusTools.jl",
+    "role": "other",
+    "commits": 19,
+    "authors": 1,
+    "days": 625,
+    "lines": 353
+   },
+   {
+    "project_id": "idas-convert",
+    "name": "idas-convert",
+    "role": "other",
+    "commits": 18,
+    "authors": 2,
+    "days": 306,
+    "lines": 1279
+   },
+   {
+    "project_id": "darkfiber",
+    "name": "darkfiber",
+    "role": "other",
+    "commits": 17,
+    "authors": 2,
+    "days": 8,
+    "lines": 6939
+   },
+   {
+    "project_id": "das-levels",
+    "name": "DAS_levels",
+    "role": "other",
+    "commits": 17,
+    "authors": 1,
+    "days": 7,
+    "lines": 840
+   },
+   {
+    "project_id": "gridded-slant-stack",
+    "name": "Gridded-SlantStack",
+    "role": "other",
+    "commits": 17,
+    "authors": 1,
+    "days": 0,
+    "lines": 447
+   },
+   {
+    "project_id": "opendas-stream",
+    "name": "OpenDAS-Stream",
+    "role": "other",
+    "commits": 17,
+    "authors": 1,
+    "days": 0,
+    "lines": 2400
+   },
+   {
+    "project_id": "das-source-locator",
+    "name": "DASSourceLocator",
+    "role": "viewer",
+    "commits": 16,
+    "authors": 1,
+    "days": 0,
+    "lines": 2559
+   },
+   {
+    "project_id": "simpledas",
+    "name": "simpleDAS",
+    "role": "other",
+    "commits": 16,
+    "authors": 2,
+    "days": 603,
+    "lines": 1868
+   },
+   {
+    "project_id": "das-to-store",
+    "name": "das-to-store",
+    "role": "other",
+    "commits": 15,
+    "authors": 2,
+    "days": 23,
+    "lines": 867
+   },
+   {
+    "project_id": "remi-das",
+    "name": "ReMi-DAS",
+    "role": "other",
+    "commits": 15,
+    "authors": 1,
+    "days": 185,
+    "lines": 938
+   },
+   {
+    "project_id": "das-realtime",
+    "name": "DAS-realtime",
+    "role": "other",
+    "commits": 13,
+    "authors": 1,
+    "days": 544,
+    "lines": 1230
+   },
+   {
+    "project_id": "das-toolkit-filters",
+    "name": "DAS Processing Toolkit",
+    "role": "other",
+    "commits": 13,
+    "authors": 2,
+    "days": 0,
+    "lines": 4802
+   },
+   {
+    "project_id": "dasvader-ds",
+    "name": "DASVaderDS.jl",
+    "role": "framework",
+    "commits": 13,
+    "authors": 1,
+    "days": 0,
+    "lines": 4695
+   },
+   {
+    "project_id": "multi-res-viewer",
+    "name": "MultiResViewer",
+    "role": "viewer",
+    "commits": 13,
+    "authors": 1,
+    "days": 100,
+    "lines": 334
+   },
+   {
+    "project_id": "unidas",
+    "name": "unidas",
+    "role": "other",
+    "commits": 13,
+    "authors": 1,
+    "days": 522,
+    "lines": 1426
+   },
+   {
+    "project_id": "eth-das-readers",
+    "name": "ETH_DAS_readers",
+    "role": "other",
+    "commits": 12,
+    "authors": 1,
+    "days": 661,
+    "lines": 2920
+   },
+   {
+    "project_id": "dasview",
+    "name": "DASView",
+    "role": "viewer",
+    "commits": 11,
+    "authors": 1,
+    "days": 8,
+    "lines": 0
+   },
+   {
+    "project_id": "das-flink",
+    "name": "DAS-Flink",
+    "role": "framework",
+    "commits": 10,
+    "authors": 1,
+    "days": 40,
+    "lines": 11964
+   },
+   {
+    "project_id": "das-toolkit",
+    "name": "das-toolkit",
+    "role": "other",
+    "commits": 9,
+    "authors": 2,
+    "days": 15,
+    "lines": 409
+   },
+   {
+    "project_id": "generic-cable",
+    "name": "GenericCable",
+    "role": "other",
+    "commits": 9,
+    "authors": 1,
+    "days": 233,
+    "lines": 2921
+   },
+   {
+    "project_id": "sigrecover",
+    "name": "sigrecover",
+    "role": "other",
+    "commits": 9,
+    "authors": 1,
+    "days": 0,
+    "lines": 1863
+   },
+   {
+    "project_id": "das-nidf",
+    "name": "DAS_NIDF",
+    "role": "viewer",
+    "commits": 8,
+    "authors": 1,
+    "days": 16,
+    "lines": 2706
+   },
+   {
+    "project_id": "das-cc-gpu",
+    "name": "DAS_CC_GPU",
+    "role": "other",
+    "commits": 7,
+    "authors": 1,
+    "days": 110,
+    "lines": 4712
+   },
+   {
+    "project_id": "dasgauge",
+    "name": "dasgauge",
+    "role": "other",
+    "commits": 7,
+    "authors": 2,
+    "days": 23,
+    "lines": 5858
+   },
+   {
+    "project_id": "das-grad",
+    "name": "DAS-GRAD",
+    "role": "other",
+    "commits": 6,
+    "authors": 1,
+    "days": 2,
+    "lines": 5722
+   },
+   {
+    "project_id": "jdas",
+    "name": "jDAS",
+    "role": "other",
+    "commits": 6,
+    "authors": 1,
+    "days": 417,
+    "lines": 1165
+   },
+   {
+    "project_id": "dascorepy",
+    "name": "dascorepy",
+    "role": "other",
+    "commits": 5,
+    "authors": 1,
+    "days": 0,
+    "lines": 2039
+   },
+   {
+    "project_id": "dasjax",
+    "name": "dasjax",
+    "role": "other",
+    "commits": 5,
+    "authors": 1,
+    "days": 2,
+    "lines": 5833
+   },
+   {
+    "project_id": "daseventnet",
+    "name": "DASEventNet",
+    "role": "other",
+    "commits": 4,
+    "authors": 1,
+    "days": 0,
+    "lines": 611
+   },
+   {
+    "project_id": "dasmart-infra",
+    "name": "DASmartInfra",
+    "role": "other",
+    "commits": 2,
+    "authors": 2,
+    "days": 0,
+    "lines": 87
+   },
+   {
+    "project_id": "optixutils",
+    "name": "OptixUtils",
+    "role": "other",
+    "commits": 2,
+    "authors": 1,
+    "days": 0,
+    "lines": 2097
+   },
+   {
+    "project_id": "das-tools-eth",
+    "name": "DAS_Tools",
+    "role": "other",
+    "commits": 1,
+    "authors": 1,
+    "days": 0,
+    "lines": 745
+   },
+   {
+    "project_id": "fiber-strain-modeling",
+    "name": "horizontal-fracture-fiber-strain",
+    "role": "other",
+    "commits": 1,
+    "authors": 1,
+    "days": 0,
+    "lines": 1800
+   },
+   {
+    "project_id": "filark",
+    "name": "FiLark",
+    "role": "viewer",
+    "commits": 1,
+    "authors": 1,
+    "days": 0,
+    "lines": 6878
+   },
+   {
+    "project_id": "silixa-dts-tools",
+    "name": "Silixa_DTS_Tools",
+    "role": "other",
+    "commits": 1,
+    "authors": 1,
+    "days": 0,
+    "lines": 0
+   }
+  ]
+ }
+}

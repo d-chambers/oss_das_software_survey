@@ -162,6 +162,48 @@ class Canvas:
         for x in dots:
             self.dot(x, y)
 
+    def rect(
+        self,
+        x: float,
+        y: float,
+        w: float,
+        h: float,
+        *,
+        fill: str = CREAM,
+        rx: float = 0,
+    ) -> None:
+        radius = f' rx="{rx:g}"' if rx else ""
+        self.parts.append(
+            f'<rect x="{x:g}" y="{y:g}" width="{max(w, 0):g}" height="{h:g}"'
+            f'{radius} fill="{fill}"/>'
+        )
+
+    def bar_stack(
+        self,
+        x: float,
+        y: float,
+        width: float,
+        height: float,
+        segments: list[tuple[str, float, str]],
+        *,
+        min_visible: float = 3.0,
+    ) -> list[tuple[str, float, float]]:
+        """Draw one stacked horizontal bar; return each segment's span.
+
+        A segment with a tiny share is widened to ``min_visible`` so that a
+        real category never renders as nothing -- a zero-width bar reads as
+        absence, and absence is a different claim from "small".
+        """
+        total = sum(value for _, value, _ in segments) or 1.0
+        cursor = x
+        spans = []
+        for label, value, colour in segments:
+            span = max(width * value / total, min_visible if value else 0.0)
+            self.rect(cursor, y, span, height, fill=colour)
+            spans.append((label, cursor, span))
+            cursor += span
+        return spans
+
     def to_svg(self) -> str:
         body = "\n  ".join(self.parts)
         return (

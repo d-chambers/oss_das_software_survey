@@ -16,6 +16,9 @@ dependencies = [
   "packaging>=24.0",
   "pydantic>=2.10",
   "pyyaml>=6.0",
+  "marimo>=0.24.0",
+  "pandas>=3.0.5",
+  "pyarrow>=25.0.1",
 ]
 
 [dependency-groups]

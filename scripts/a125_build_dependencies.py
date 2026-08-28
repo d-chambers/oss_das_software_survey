@@ -84,7 +84,10 @@ def dependency_map(data: dict) -> go.Figure:
             mode="markers+text",
             name="Shared external dependency",
             marker={
-                "size": [11 + 3 * math.sqrt(shared[node.removeprefix('dep:')]) for node in external_nodes],
+                "size": [
+                    11 + 3 * math.sqrt(shared[node.removeprefix("dep:")])
+                    for node in external_nodes
+                ],
                 "color": DEPENDENCY_HUE,
                 "symbol": "diamond",
                 "line": {"color": "white", "width": 2},
@@ -140,12 +143,13 @@ def main() -> None:
     incoming = incoming_counts(internal)
     names = {item["id"]: item["name"] for item in data["projects"]}
     ranked = sorted(incoming.items(), key=lambda item: (-item[1], names[item[0]]))
-    rows = "".join(
-        "<tr>"
-        f"<td>{html.escape(names[project_id])}</td><td>{count}</td>"
-        "</tr>"
-        for project_id, count in ranked
-    ) or "<tr><td colspan='2'>No direct in-catalog package requirements observed.</td></tr>"
+    rows = (
+        "".join(
+            f"<tr><td>{html.escape(names[project_id])}</td><td>{count}</td></tr>"
+            for project_id, count in ranked
+        )
+        or "<tr><td colspan='2'>No direct in-catalog package requirements observed.</td></tr>"
+    )
     body = f"""
     <section class="cards">
       <div class="card"><strong>{len(internal)}</strong>direct in-catalog edges</div>
