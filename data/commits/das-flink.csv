@@ -1,0 +1,11 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-flink,included,38713c903e25a419deae1a633fed3ebc3446a36c,CcCalana,22338027@zju.edu.cn,2025-09-09T15:35:47+08:00,2025-09-09T15:35:47+08:00,0,2,377,0,0,feat: add vectorized STA/LTA main class for Kafka source
+das-flink,included,3e3e570d09cb923d1d02aa4b7e1ac2f3d273c3c9,CcCalana,22338027@zju.edu.cn,2025-09-04T21:29:43+08:00,2025-09-04T21:29:43+08:00,0,1,1,1,0,docs: Update the contact email in README.
+das-flink,included,b9a0e184be9c8ab55ff8388a93e0533e8dea9dc8,CcCalana,22338027@zju.edu.cn,2025-09-04T20:48:54+08:00,2025-09-04T20:48:54+08:00,0,21,6206,375,2,feat: Implement DAS-Flink algorithm optimization
+das-flink,included,bbf8252157a4794cfa41feceb20bf1d55e92a25d,JiangZhenglei,22338027@zju.edu.cn,2025-08-05T14:12:46+08:00,2025-08-05T14:12:46+08:00,0,12,0,991,0,"refactor: Excluded unnecessary files and directories (.idea, etc.)​"
+das-flink,included,6badd021e8e65882663ec298da1e11a71b8b9eb9,JiangZhenglei,22338027@zju.edu.cn,2025-08-05T14:07:46+08:00,2025-08-05T14:07:46+08:00,0,1,5,0,0,chore: Adjust gitignore information.
+das-flink,included,44efe6c09f7653500af45d629b59ad7bd80e987c,JiangZhenglei,22338027@zju.edu.cn,2025-08-04T16:43:15+08:00,2025-08-04T16:43:15+08:00,0,1,42,42,0,docs: 更新README文档中的技术细节和性能指标
+das-flink,included,bb5a5a24e9c0a74df64943651fbd6e6147f62375,JiangZhenglei,22338027@zju.edu.cn,2025-08-04T14:24:28+08:00,2025-08-04T14:24:28+08:00,0,56,3352,14997,0,"refactor: Adjusting code structure, refactoring event monitoring logic."
+das-flink,included,f2da509a8335b6445612d35390bc34420f22a4e1,JiangZhenglei,22338027@zju.edu.cn,2025-08-01T14:34:31+08:00,2025-08-01T14:34:31+08:00,0,1,107,107,0,docs: 修改README
+das-flink,included,2cfc4432bdf1f32d5481c1e513d037a9ec8ec80f,JiangZhenglei,22338027@zju.edu.cn,2025-07-31T14:19:13+08:00,2025-07-31T14:19:13+08:00,0,1,0,5,0,feat: 修改README信息
+das-flink,included,89a6bf03f6ee38aa1a70932a3c24a16a3adb1b04,JiangZhenglei,22338027@zju.edu.cn,2025-07-31T11:18:37+08:00,2025-07-31T11:18:37+08:00,0,74,21491,0,0,feat：搭建流处理算法压缩、自适应采样算法的框架

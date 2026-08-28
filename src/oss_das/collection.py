@@ -17,6 +17,7 @@ from oss_das.clients import (
     PyPIStatsClient,
 )
 from oss_das.clients.base import NotFoundError, SourceError
+from oss_das.core import load_rejections
 from oss_das.models import CatalogStatus, ForgeKind, ProjectRecord
 from oss_das.utils import normalize_name, utc_now
 
@@ -271,11 +272,20 @@ def discover_projects(
         candidate["catalog_status"] = project.status.value
         candidate["decision_reason"] = project.decision_reason
 
+    # A curated file always wins: the ledger only speaks for candidates no
+    # catalog entry claims, so cataloguing something later silently retires
+    # its rejection instead of contradicting it.
+    rejections = load_rejections()
     for key, candidate in discovered.items():
         if key not in decisions:
+            rejected = rejections.get(key)
             candidate["catalog_id"] = None
-            candidate["catalog_status"] = "unreviewed"
-            candidate["decision_reason"] = "Awaiting manual review"
+            if rejected:
+                candidate["catalog_status"] = "rejected"
+                candidate["decision_reason"] = rejected["note"] or rejected["reason"]
+            else:
+                candidate["catalog_status"] = "unreviewed"
+                candidate["decision_reason"] = "Awaiting manual review"
         candidate["probes"] = ";".join(sorted(set(candidate["probes"])))
         candidate["source"] = ";".join(sorted(candidate.pop("sources")))
         candidate["probe_class"] = (

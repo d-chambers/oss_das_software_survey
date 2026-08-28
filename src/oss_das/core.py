@@ -135,6 +135,33 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(file))
 
 
+def load_rejections(path: Path | None = None) -> dict[str, dict[str, str]]:
+    """Read the ledger of candidates reviewed and rejected, keyed by forge key.
+
+    A rejection is deliberately not a catalog entry. Writing one curated file
+    per junk repository would bury `data/projects/` under several hundred
+    records that carry no metrics and appear in no figure. The ledger records
+    only that a repository was looked at and is not a project, so discovery
+    stops proposing it at every snapshot.
+    """
+    path = path or PATHS.root / "data" / "rejected.yml"
+    if not path.exists():
+        return {}
+    payload = yaml.safe_load(path.read_text()) or {}
+    rejections = payload.get("rejections") or {}
+    if not isinstance(rejections, dict):
+        raise ValueError(f"{path}: 'rejections' must be a mapping")
+    out: dict[str, dict[str, str]] = {}
+    for key, value in rejections.items():
+        if not isinstance(value, dict) or "reason" not in value:
+            raise ValueError(f"{path}: {key!r} needs a 'reason'")
+        out[str(key).lower()] = {
+            "reason": str(value["reason"]),
+            "note": str(value.get("note", "")),
+        }
+    return out
+
+
 def newest_snapshot() -> str:
     candidates = sorted(
         path.name for path in PATHS.snapshots.glob("????-??-??") if path.is_dir()

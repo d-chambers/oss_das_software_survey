@@ -1,0 +1,23 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-dvv,included,dca96a289f8733d154ee513cad397482707aa2db,yjianggeo,yjianggeo@gmail.com,2026-06-13T21:08:29+08:00,2026-06-13T21:08:29+08:00,0,1,246,29,0,docs: bilingual (English/中文) usage guide in README
+das-dvv,included,5ac6694804b50db149b0059ab24a91838525348b,yjianggeo,yjianggeo@gmail.com,2026-06-13T21:02:35+08:00,2026-06-13T21:02:35+08:00,1,,,,,"Merge v0.2: multi-epoch dv/v time series, npz/plot outputs, example"
+das-dvv,included,c9ddba293bbc2ce268fc1a0a27e95fdb7802167a,yjianggeo,yjianggeo@gmail.com,2026-06-13T21:01:49+08:00,2026-06-13T21:01:49+08:00,0,3,102,0,0,docs: add multi-epoch synthetic example and README section
+das-dvv,included,f40e5133e5e8cd43a4938d84a9a642b8e72d8175,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:58:29+08:00,2026-06-13T20:58:29+08:00,0,2,168,31,0,feat: multi-epoch dv/v time series with npz and plot outputs
+das-dvv,included,0b72565243cefc14b03aab6d82a809196680d277,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:54:53+08:00,2026-06-13T20:54:53+08:00,0,2,96,0,0,feat: add npz and dv/v plot outputs
+das-dvv,included,23b75daca6db7935f25f18c1119270d1fa7887b1,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:52:42+08:00,2026-06-13T20:52:42+08:00,0,2,47,2,0,feat: add multi-epoch and output config fields
+das-dvv,included,8733af7ca325159d57f10c44d539b1d2ec69d25b,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:51:38+08:00,2026-06-13T20:51:38+08:00,0,2,760,0,0,Add das-dvv v0.2 design spec and implementation plan
+das-dvv,included,d12e2d43b20bccf59160199ec328baadb75edf1f,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:27:21+08:00,2026-06-13T20:27:21+08:00,0,3,113,0,0,"docs: add README, quickstart notebook, and CI workflow"
+das-dvv,included,1f2cacaf62057b362018051b5ad837efdd20f756,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:25:19+08:00,2026-06-13T20:25:19+08:00,0,2,56,0,0,feat: add das-dvv CLI
+das-dvv,included,8f95a3a90f1baf9041b43146caef633d45a484c8,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:23:29+08:00,2026-06-13T20:23:29+08:00,0,2,146,0,0,feat: add end-to-end pipeline orchestration
+das-dvv,included,093cfd47150aa7484946c1e61ed1309c55d2d84d,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:21:14+08:00,2026-06-13T20:21:14+08:00,0,3,93,0,0,feat: add YAML configuration loader
+das-dvv,included,321b371e6ed23ecf9a0beedf0ad31da47e0c52f2,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:17:14+08:00,2026-06-13T20:17:14+08:00,0,2,122,2,0,feat: add wavelet cross-spectrum dv/v estimator
+das-dvv,included,937c756d533fdcb91f81ceb329c8dce7c26f4a86,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:12:45+08:00,2026-06-13T20:12:45+08:00,0,2,106,2,0,feat: add MWCS dv/v estimator
+das-dvv,included,a4a3f793fd375c339740ee1b641291bbf9319390,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:09:45+08:00,2026-06-13T20:09:45+08:00,0,2,57,2,0,feat: add stretching dv/v estimator
+das-dvv,included,f51254330eca63ce65fed198a18b9bccc3968684,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:08:06+08:00,2026-06-13T20:08:06+08:00,0,2,117,0,0,feat: add linear/PWS stacking and reference/current builders
+das-dvv,included,474ed2f9572bbcb80f88969fe9297c30db6d359d,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:06:12+08:00,2026-06-13T20:06:12+08:00,0,2,127,0,0,feat: add virtual-source cross-correlation
+das-dvv,included,2324cda2594989c27409b84a5f659c29e9c7dcfb,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:04:06+08:00,2026-06-13T20:04:06+08:00,0,2,127,0,0,feat: add DAS preprocessing functions
+das-dvv,included,cd6d7786732836c71239a73b8d3bdc83279e89c9,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:02:33+08:00,2026-06-13T20:02:33+08:00,0,2,88,0,0,feat: read multi-channel SAC gathers into DASData
+das-dvv,included,e278572c47bc892565831ce62989890e650036b6,yjianggeo,yjianggeo@gmail.com,2026-06-13T20:01:01+08:00,2026-06-13T20:01:01+08:00,0,2,96,0,0,feat: add DASData and CCFSet data structures
+das-dvv,included,fdb9beaa416aa4ba18aa6d74bb3332e9c3763da6,yjianggeo,yjianggeo@gmail.com,2026-06-13T19:59:25+08:00,2026-06-13T19:59:25+08:00,0,11,114,0,0,chore: scaffold das-dvv package
+das-dvv,included,f9c3b56fe090a433b8e5cd40054858774bbe9602,yjianggeo,yjianggeo@gmail.com,2026-06-13T19:55:30+08:00,2026-06-13T19:55:30+08:00,0,1,1883,0,0,Add das-dvv implementation plan
+das-dvv,included,931d6c9ed44e758a3d7e4ff12f4c2f085d7f0647,yjianggeo,yjianggeo@gmail.com,2026-06-13T19:50:01+08:00,2026-06-13T19:50:01+08:00,0,1,137,0,0,Add das-dvv design spec

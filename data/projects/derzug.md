@@ -28,8 +28,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:09+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:16+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 4
@@ -43,9 +43,9 @@ collected:
   archived: false
   lines_of_code_estimate: 88404
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 1495
-  pypi_downloads_30d: 259
-  conda_downloads_total: 2269
+  pypi_downloads_180d: 1532
+  pypi_downloads_30d: 157
+  conda_downloads_total: 2576
   dependencies:
   - package: derzug
     dependency: dascore

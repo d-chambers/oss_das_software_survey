@@ -423,6 +423,12 @@ def build_snapshot(snapshot_date: str, *, paths=PATHS) -> Path:
             ),
             None,
         )
+        # A curated canonical DOI that collection has not seen yet is not the
+        # same as a project that has no publication at all: the first is an
+        # uncollected value, the second a genuine non-answer.
+        declares_canonical = any(
+            item.role == "canonical" for item in project.publications
+        )
         metric_rows.append(
             _metric(
                 project.id,
@@ -432,7 +438,9 @@ def build_snapshot(snapshot_date: str, *, paths=PATHS) -> Path:
                 canonical["source_url"] if canonical else "https://api.openalex.org/",
                 canonical.get("fetched_at", gh_fetched) if canonical else gh_fetched,
                 missing_reason=(
-                    canonical.get("missing_reason") if canonical else "not_applicable"
+                    canonical.get("missing_reason")
+                    if canonical
+                    else ("unavailable" if declares_canonical else "not_applicable")
                 ),
                 window_end=snapshot_date,
             )

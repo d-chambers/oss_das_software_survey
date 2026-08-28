@@ -32,24 +32,24 @@ curated:
     role: canonical
     note: null
 collected:
-  scanned_at: '2026-08-18T06:37:32+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:55:39+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
-  stars: 159
+  stars: 160
   forks: 41
   contributors: 18
-  releases: 34
-  commits: 526
-  last_commit_at: '2026-08-08T11:21:33Z'
+  releases: 35
+  commits: 530
+  last_commit_at: '2026-08-21T11:34:41Z'
   created_at: '2021-10-29T15:34:47Z'
-  latest_release_at: '2026-07-25T10:46:45Z'
+  latest_release_at: '2026-08-21T11:43:22Z'
   archived: false
-  lines_of_code_estimate: 71844
+  lines_of_code_estimate: 73015
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 15268
-  pypi_downloads_30d: 7219
-  conda_downloads_total: 48060
+  pypi_downloads_180d: 15952
+  pypi_downloads_30d: 7139
+  conda_downloads_total: 49005
   canonical_citations: 17
   dependencies:
   - package: dascore

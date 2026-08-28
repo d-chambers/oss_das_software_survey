@@ -24,8 +24,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:37:15+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:55:19+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Jupyter Notebook
   stars: 3

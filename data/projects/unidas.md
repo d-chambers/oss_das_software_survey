@@ -24,11 +24,11 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:39:20+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:57:27+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
-  stars: 2
+  stars: 3
   forks: 1
   contributors: 1
   releases: 1
@@ -39,8 +39,8 @@ collected:
   archived: false
   lines_of_code_estimate: 1499
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 343
-  pypi_downloads_30d: 22
+  pypi_downloads_180d: 346
+  pypi_downloads_30d: 16
   dependencies:
   - package: unidas
     dependency: numpy

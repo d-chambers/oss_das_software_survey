@@ -27,8 +27,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:01+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:08+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 2
@@ -39,8 +39,8 @@ collected:
   created_at: '2019-06-17T01:05:32.741+02:00'
   latest_release_at: '2025-08-26T20:53:40.164+02:00'
   archived: false
-  pypi_downloads_180d: 507
-  pypi_downloads_30d: 31
+  pypi_downloads_180d: 486
+  pypi_downloads_30d: 42
   dependencies:
   - package: dastools
     dependency: click

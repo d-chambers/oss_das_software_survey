@@ -398,7 +398,7 @@ idas-convert,repo_releases,0,releases,,,https://api.github.com/repos/pyrocko/ida
 idas-convert,pypi_downloads_30d,,downloads,,2026-08-17,https://pypistats.org/api/,2026-08-18T06:38:40+00:00,not_published
 idas-convert,pypi_downloads_180d,,downloads,,,https://pypistats.org/api/,2026-08-18T06:38:40+00:00,not_published
 idas-convert,conda_downloads_cumulative,,downloads,,2026-08-17,https://api.anaconda.org/,2026-08-18T06:38:40+00:00,not_published
-idas-convert,canonical_citations,,citations,,2026-08-17,https://api.openalex.org/,2026-08-18T06:38:40+00:00,not_applicable
+idas-convert,canonical_citations,,citations,,2026-08-17,https://api.openalex.org/,2026-08-18T06:38:40+00:00,unavailable
 invisensing,repo_stars,0,stars,,,https://api.github.com/repos/invisensing-io/python-lib,2026-08-18T06:38:42+00:00,
 invisensing,repo_forks,0,forks,,,https://api.github.com/repos/invisensing-io/python-lib,2026-08-18T06:38:42+00:00,
 invisensing,repo_contributors,1,contributors,,,https://api.github.com/repos/invisensing-io/python-lib,2026-08-18T06:38:42+00:00,

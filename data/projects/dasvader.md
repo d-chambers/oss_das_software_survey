@@ -25,8 +25,8 @@ curated:
     - DASVader
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:02+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:10+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Julia
   stars: 7

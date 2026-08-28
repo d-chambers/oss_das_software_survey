@@ -30,12 +30,12 @@ curated:
     role: canonical
     note: null
 collected:
-  scanned_at: '2026-08-18T06:37:56+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:04+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Jupyter Notebook
-  stars: 154
-  forks: 29
+  stars: 157
+  forks: 30
   contributors: 3
   releases: 10
   commits: 457
@@ -45,9 +45,9 @@ collected:
   archived: false
   lines_of_code_estimate: 9319
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 2545
-  pypi_downloads_30d: 458
-  conda_downloads_total: 6926
+  pypi_downloads_180d: 2508
+  pypi_downloads_30d: 340
+  conda_downloads_total: 7168
   canonical_citations: 19
   dependencies:
   - package: DASPy-toolbox

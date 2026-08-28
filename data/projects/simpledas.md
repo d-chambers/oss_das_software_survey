@@ -23,8 +23,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:39:13+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:57:21+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 28

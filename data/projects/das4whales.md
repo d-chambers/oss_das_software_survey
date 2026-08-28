@@ -31,23 +31,23 @@ curated:
     role: canonical
     note: null
 collected:
-  scanned_at: '2026-08-18T06:37:30+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:55:37+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 79
   forks: 21
   contributors: 4
   releases: 4
-  commits: 610
-  last_commit_at: '2026-07-30T14:32:40Z'
+  commits: 619
+  last_commit_at: '2026-08-20T08:05:43Z'
   created_at: '2023-02-21T19:26:59Z'
   latest_release_at: '2026-07-06T14:57:16Z'
   archived: false
-  lines_of_code_estimate: 14726
+  lines_of_code_estimate: 14791
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 806
-  pypi_downloads_30d: 74
+  pypi_downloads_180d: 807
+  pypi_downloads_30d: 52
   canonical_citations: 1
   dependencies:
   - package: das4whales

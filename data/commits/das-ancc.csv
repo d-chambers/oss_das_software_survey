@@ -1,0 +1,20 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-ancc,included,c06fdf4c4317b5463c2c300d2a2ed591c2e7d797,yjianggeo,yjianggeo@gmail.com,2026-06-13T21:22:51+08:00,2026-06-13T21:22:51+08:00,0,1,257,156,0,docs: rewrite README with switchable zh/en sections (das-dvv style)
+das-ancc,included,30e5233da3a05952a8ebe47df41fd5a3cc50e729,yjianggeo,yjianggeo@gmail.com,2026-06-13T21:13:45+08:00,2026-06-13T21:13:45+08:00,0,1,260,0,0,docs: add bilingual README (zh+en)
+das-ancc,included,ac2743dfbf3d1bc5f368f6a02c923f537ddb6ddf,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:39:21+08:00,2026-05-28T21:39:21+08:00,0,3,19,10,0,"fix: channel parsing, FTAN Hilbert envelope, dead variable"
+das-ancc,included,a1656a69dcbf186b3ff132789d9921f50d967b64,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:15:40+08:00,2026-05-28T21:15:40+08:00,0,2,306,0,0,feat: CLI run_pipeline + full integration test
+das-ancc,included,8f23725231f978abfe6c0c6f8e7b8ad801e8d3ca,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:11:46+08:00,2026-05-28T21:11:46+08:00,0,3,92,0,0,"feat: viz -- record section, dispersion image, velocity map"
+das-ancc,included,71baf03c2c971b0013fb8dec8f7d2df4e686a71e,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:09:39+08:00,2026-05-28T21:09:39+08:00,0,2,66,0,0,feat: imaging -- Gaussian-kernel straight-ray tomography
+das-ancc,included,f1c92882d85203cbe5a5be4b9b08c0b7f1e7e428,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:07:01+08:00,2026-05-28T21:07:01+08:00,0,3,98,0,0,feat: dispersion -- FTAN phase-velocity image and auto-picking
+das-ancc,included,7cf9eaf357a4ce6310768b7d933ce606817d8bf4,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:04:45+08:00,2026-05-28T21:04:45+08:00,0,2,63,0,0,feat: stack -- linear and phase-weighted stacking
+das-ancc,included,1ef36e458eac8ef62105e66ac7845b04d17ec9f8,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:02:47+08:00,2026-05-28T21:02:47+08:00,0,2,65,0,0,feat: correlate.component_projection -- ZZ/TT fiber-azimuth weights
+das-ancc,included,f2477b55da3270269914493992e11adfa8435b46,yjianggeo,yjianggeo@gmail.com,2026-05-28T21:01:00+08:00,2026-05-28T21:01:00+08:00,0,2,48,0,0,feat: correlate.cross_correlate -- FFT NCF
+das-ancc,included,d7b31ac6726502ba1919025cafa32f9264be90bd,yjianggeo,yjianggeo@gmail.com,2026-05-28T20:54:19+08:00,2026-05-28T20:54:19+08:00,0,4,109,0,0,"feat: preprocess -- normalize, whiten, pipeline"
+das-ancc,included,0918461068d102d2e24ba5508ad7be9edfc45069,yjianggeo,yjianggeo@gmail.com,2026-05-28T20:42:06+08:00,2026-05-28T20:42:06+08:00,0,2,107,0,0,"feat: io.writer — HDF5 storage for NCF, stacked, dispersion, imaging"
+das-ancc,included,058257b1c65aadc10e0f1c7c37fb45043a27d9c9,yjianggeo,yjianggeo@gmail.com,2026-05-28T18:40:58+08:00,2026-05-28T18:40:58+08:00,0,1,0,1,0,fix: remove unused UTCDateTime import in sac_reader
+das-ancc,included,a74f1fd0040ca29a6049fdc5c3c0086ccbcbb874,yjianggeo,yjianggeo@gmail.com,2026-05-28T18:39:14+08:00,2026-05-28T18:39:14+08:00,0,2,52,0,0,feat: io.sac_reader — SAC batch reader with segmentation
+das-ancc,included,83638764056eed12ad404b71d73f589d6b508770,yjianggeo,yjianggeo@gmail.com,2026-05-28T18:36:57+08:00,2026-05-28T18:36:57+08:00,0,2,31,0,0,feat: io.das_metadata — cable geometry loader
+das-ancc,included,a44263dc8c0e60f9d8945834a37facce6446d89d,yjianggeo,yjianggeo@gmail.com,2026-05-28T18:33:30+08:00,2026-05-28T18:33:30+08:00,0,1,63,0,0,test: shared synthetic-data fixtures
+das-ancc,included,d934991e1861e271b8166a8c528cf705577d8528,yjianggeo,yjianggeo@gmail.com,2026-05-28T18:16:15+08:00,2026-05-28T18:16:15+08:00,0,14,109,0,0,"feat: project scaffold, config loader"
+das-ancc,included,187b1a83ffb1ca723e7b30e1e07d5b60a713cc1f,yjianggeo,yjianggeo@gmail.com,2026-05-28T17:56:43+08:00,2026-05-28T17:56:43+08:00,0,1,1808,0,0,Add implementation plan for DAS ambient noise cross-correlation tomography
+das-ancc,included,18423e2d8b619565f22d79efac8f04bdc2c2c6d3,yjianggeo,yjianggeo@gmail.com,2026-05-28T17:38:06+08:00,2026-05-28T17:38:06+08:00,0,1,221,0,0,Add design spec for DAS ambient noise cross-correlation tomography

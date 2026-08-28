@@ -1,0 +1,767 @@
+# Candidates reviewed and rejected, so they are not proposed again.
+#
+# a010 stamps a discovered candidate `unreviewed` unless a curated project in
+# data/projects/ claims it. Recording a rejection there would mean a curated
+# file per junk repository -- roughly 250 of them, swamping the directory that
+# holds the actual catalogue. This ledger is the lighter half of that record:
+# it says "we looked, and it is not a project", nothing more.
+#
+# A rejection is NOT a catalogue entry. It carries no metrics, appears in no
+# figure, and is never counted as a project. It exists so the same repository
+# is not re-triaged at every snapshot.
+#
+# Keys are `host/owner/name`, lowercased, matching ProjectRecord.forge_key. A
+# curated file always wins: a repository catalogued in data/projects/ is never
+# listed here, and cataloguing one later retires its entry. To un-reject
+# something, delete its entry.
+#
+# Reviewed 2026-08-28 from data/candidate_triage.yml.
+
+rejections:
+  "codeberg.org/barefootstache/das-blog":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/jiggly/das-kleine-bitcoin-lexikon":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/justanother1/das_internet_ethernet_probe_nucleo-f429zi":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/justanother1/das_internet_wifi_probe_pico-w":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/lukascbossert/das-versprechen-der-vernetzung":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/philosopher033427615/das-boot-alarm-alaaaaaaaaaaaarm":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/the-murx-or/das-boe-spiel":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/theseus/das":
+    reason: acronym-collision
+    note: "A PDP-10 assembler."
+  "codeberg.org/thorstenkloehn/das":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/uscensusbureau-public-clone/census2020-das-2010ddp":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "codeberg.org/uscensusbureau-public-clone/census2020-das-e2e":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "git.pyrocko.org/pyrocko/lightguide":
+    reason: duplicate
+    note: "The same project is already catalogued as lightguide."
+  "github.com/0112shiv/das-monitor":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/666yansen/lr-net-for-weak-vibration-event-location-and-recognition-with-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ai4eps/das_seismology_workshop":
+    reason: teaching
+    note: "Teaching or reference material -- a tutorial, workshop, course, or link list rather than software."
+  "github.com/aissah/coherence_analysis_histroy":
+    reason: duplicate
+    note: "Its own README says this is the heavy-history copy and points to aissah/coherence-analysis as the lighter version; that repository is the one to catalogue."
+  "github.com/akrasicka/cv_project1":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/alexldp01/cpdas-rfsoc":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/alinabelyalova/elastic-das-2d":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/aliyev-toghrul/dts-thermodynamic-ml-modeling":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/amirmpakzad/das-classification":
+    reason: not-reusable
+    note: "75 commits and a src/configs layout, but it is a training pipeline for one figshare dataset, methodology \"adapted from\" a published paper, with no license or release."
+  "github.com/antcating/das-prisma-downsample":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/api-evangelist/fibersense":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/api-evangelist/prisma-photonics":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/araza7/whale-vocalization-das-analysis":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/arifme071/railroad-anomaly-detection-cnn-lstm":
+    reason: paper-code
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/arose1234/das-denopick_traindatacurration-utdquake":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/avarouz/fiber-acoustic-classifier":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/balsem2/p2m-das-intrusion-detection":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/bboyapati/comp6228-irp":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/bdau-goog/gdc-das-demo":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/bdestombe/readultima":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/benz-poobua/internal-tsunami-revealed-by-das":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/bialkasss/speed-detection-from-das-recordings":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/bling-bu/fiber-sensing-das-signal-ai":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/bradlipovsky/das-for-telecom-operators":
+    reason: teaching
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/bradlipovsky/plot-sintela-data":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/caizikun/dts-modification":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/cangsy3610/robust-das-detection":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/cegcurtin/dasdenoisingml_multipleinterrogators":
+    reason: paper-code
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/cegcurtin/dasdenoisingml_remotesensing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/cgbterhorst/dts-based-coil-measurement-technique":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/chen-gui/cafnet":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ciscolabs101/fiber-optic-distributed-acoustic-sensing":
+    reason: no-source
+    note: "The default branch publishes no files."
+  "github.com/cuiyang512/unsupervised-das-denoising":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/culturino/das_analyzer":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/danilodjor/forge-das-processing":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/das-rcn/awesome-das":
+    reason: teaching
+    note: "A curated link list, not software."
+  "github.com/das-rcn/continuous_data_handling":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/das-rcn/das-rcn":
+    reason: no-source
+    note: "Empty organisation profile repository."
+  "github.com/das-rcn/jdas":
+    reason: duplicate
+    note: "The same code as the catalogued martijnende/jDAS: identical commit SHAs (bfa1e6e6e297, fb51ca18bd13, cb4d31a55368), which GitHub does not label a fork. It stops at 3 commits taken a week after v1.0.0 in September 2021; upstream continued to 6 through October 2022, so this is a stale snapshot and martijnende/jDAS remains the entry."
+  "github.com/das-rcn/vertical-das-processing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/das4whales/annotate-ooi2021":
+    reason: not-reusable
+    note: "Second pass: three commits of annotation helpers bound to one dataset, archived under a Zenodo DOI. DAS4Whales is already catalogued as das4whales."
+  "github.com/das4whales/goestchel_jasa_2025":
+    reason: duplicate
+    note: "GitHub reports this as a fork of Ocean-Data-Lab/Goestchel_JASA_2025."
+  "github.com/das4whales/goestchel_jasa_2025b":
+    reason: duplicate
+    note: "GitHub reports this as a fork of Ocean-Data-Lab/Goestchel_JASA_2025b."
+  "github.com/dasdae/das_saturation_detection":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/dasdae/dasdae":
+    reason: not-reusable
+    note: "Organisation profile repository, not a software package."
+  "github.com/dasdae/daslowfreqprocessing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/dasdae/low-freq-real-time":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/deeplearningorc/convnets_seismology":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/deepwave-kaust/diffusiondas_denoising-pub":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/deepwave-kaust/dldas_denoising-pub":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/dejong-group/structural-health-monitoring-of-offshore-wind-turbines-using-distributed-acoustic-sensing-das":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/denolle-lab/das-noisepy":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/denolle-lab/greenlandas":
+    reason: not-reusable
+    note: "Analysis code for one glacier, organised as data-exploration/, event-monitoring/, structure-monitoring/ plus a deprecated/ folder and a pickle at the root. No installable package definition."
+  "github.com/dertuncay/koeri_das_tutorial":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/dingding1996/distributed-acoustic-sensing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/domagojhrvojevic/seismo_codes":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/dongukyang/h2_gpr":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/earlybirdy/das-edge-node":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/eikentech/dummydas":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/eileenrmartin/dissertation-reproducibility-passive-das":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/ezviz0202-hash/flexible-line-shape-sensing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/fdsn/das-metadata":
+    reason: duplicate
+    note: "Same metadata specification as the catalogued DAS-RCN/DAS_metadata under a different organisation; confirm whether the work moved to FDSN, in which case the catalogued repository should be repointed."
+  "github.com/felipearocha/integrity-code-series-week9-cui":
+    reason: not-reusable
+    note: "Week nine of a coding exercise series, not a maintained package."
+  "github.com/fibertechnote/fiber-optic-technologies":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/flat-earther/das-processing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/flinder010/firn":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/flinder010/rdm-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/flinder010/zsn2n-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/fqk1994/dctformer":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ganesh-gajjala/waterlevel_sensing_public":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/garretmaloney/das-couplingexperiments":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/gaurishkale/signalguard-ai":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/gccrowther/t-sne":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/gccrowther/visualisation":
+    reason: no-source
+    note: "The default branch publishes no files."
+  "github.com/genrobot-ai/das-ego-stack":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ghjacobsen/das_project":
+    reason: not-reusable
+    note: "Second pass: three commits on one day, no license, cookiecutter-data-science layout with HPC batch scripts for one group's cluster."
+  "github.com/githubtanmay/earthquake-detection-using-machine-learning-on-optical-fiber-das-data":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/giuliopas/daspectraldenoiser":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/gizemu/sintela_das_visualization":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/graeffd/das_performance":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/graeffd/dasrainier_cable_location_optodas":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/grantfischerfrf/das-processing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/guilhermezakarewicz/das-geophone-masw-permafrost":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/guofenxiwu/das-derived-long-range-estimation-of-significant-wave-height":
+    reason: no-source
+    note: "The repository returns 404 and publishes nothing to review."
+  "github.com/haipeng-ustc/cs230-das-compression":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/helenerl/das-source-localization":
+    reason: paper-code
+    note: "Second pass: the README opens \"Specialization Project - Fall 2025\" and exists to reproduce the report's figures."
+  "github.com/hmz-03/daspy-data":
+    reason: not-reusable
+    note: "Test data for the catalogued DASPy, not software."
+  "github.com/hongmaohuang/anomaly-detection-on-das-waterfall-images":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/htwho/dts-education":
+    reason: teaching
+    note: "Teaching or reference material -- a tutorial, workshop, course, or link list rather than software."
+  "github.com/i2azureaccelerator/fall2022-oceanmonitoring":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ippolyte/ocean-das-training":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/isao9/triton":
+    reason: paper-code
+    note: "Second pass: the README says \"Official implementation of\" a Seismological Research Letters paper."
+  "github.com/jack6228/das_privacy":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jacobrdavis/neural-network-based-methods-for-das-ocean-surface-wave-measurement":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jaewonsaw/das-heatmap-realtime":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jakubradziejewski/detecting-moving-objects-in-das-recordings":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jazzola/das-vtx":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jepulidom54/seismic-wave-simulation-using-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jingxiaoliu/das_diff_veh":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jmaen/zero-shot-das-denoising":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/johann-becker/distributed_temperature_sensing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/johannazitt/cryodasdenoising":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/johngage/linken-sensing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/josepinau/cryocube":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/juanx65/deepdeconv":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/juanx65/deepdeconvv2":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jxli2a/das-realtime":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued das-realtime."
+  "github.com/jxli2a/dasbp":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jxli2a/dasfm_demo":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/jxli2a/tutorials-das-processing":
+    reason: duplicate
+    note: "GitHub reports this as a fork of biondiettore/Tutorials-DAS-processing."
+  "github.com/jyreiter/snowfield":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/kaileydougherty/3dviewer":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/kaisen354/earthquake-detection-using-machine-learning":
+    reason: no-source
+    note: "The default branch publishes no files."
+  "github.com/kaisen354/earthquake-detection-using-machine-learning-on--data-optical-fiber-das-":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/kdxy2233/mtl-das.pytorch":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/keatherchalu/vae":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/khencohen/das-for-urban-monitoring":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/kieran-fitzmason/pipelines":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/klapo/bayesianglm_stability":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/klapo/dts":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/klapo/python-dts-calibration":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued dtscalibration."
+  "github.com/klapo/python-geotechnical-profile":
+    reason: duplicate
+    note: "GitHub reports this as a fork of bdestombe/python-geotechnical-profile."
+  "github.com/konietse/das-cn2s":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ktruongme/fin-whale-detection-das":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/laskya/das-vehicle-tracking":
+    reason: not-reusable
+    note: "Second pass: a university assignment crediting two students by matriculation number; the root holds cv_project1_final_improved.ipynb, the same course project as the excluded akrasicka/CV_project1."
+  "github.com/lhy269/das-experiment-management-agent":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/lhy269/das-literature-research-agent":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/magomedovmagomedsh/detectdas":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/magomedovmagomedsh/jdas":
+    reason: not-reusable
+    note: "Shares no history with the catalogued jDAS -- created December 2025, 11 commits of its own -- and is a personal training harness around the method (DVC, Docker, configs, scripts) rather than the library. It reuses the name, not the code."
+  "github.com/maniatisni/idas-self-supervised-denoising":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/mariam262/machine-learning-das-co2-monitoring-slr":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/marianoarnaiz/t2-dasight":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/mariosgeo/dtsviewer":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/martijnende/xdas":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued xdas."
+  "github.com/martinnordli/classical-feature-extraction-for-few-shot--otdr-das-event-classification-using-fft-and-svd":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/mcd-17/sentinel-x-multiphysics-detection":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/mgunjan67/das-himalayan-geohazard-ai":
+    reason: paper-code
+    note: "Second pass: ships CITATION.cff and overleaf_package/; it is the software half of a manuscript."
+  "github.com/micheld-git/dasvit1d":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ming23233/fusion-inception-patchx-das-event-recognition":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/mirianacorsaro/das-loc":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/mirianacorsaro/das-spp":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/mitchelljbrown/dts-data-analysis":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/morswin22/das-detect":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/muzzi85/das-leak-detection-mlops-":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/naveen-astra/das_electricgrid":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/nfarisha/das-forge":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/nimanzik/eadet-convnet":
+    reason: paper-code
+    note: "Second pass: presented as \"the first demonstration of the transferability\" of a ConvNet, and still marked a work in progress."
+  "github.com/ning20260599/das-flow-audit-package":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/niyiyu/das-reconstruction":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/niyiyu/ooi-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/oboue/haddl-das-denoising":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/oboue/lodasdenoising":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/ocean-data-lab/das-finwhale-vocalization":
+    reason: not-reusable
+    note: "Second pass: 43 commits by five people, but shaped as a study -- Notebooks/, model/, data/, no license, untouched since March 2023."
+  "github.com/ocean-data-lab/goestchel_jasa_2025":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/ocean-data-lab/goestchel_jasa_2025b":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/pablodelgado04/das-traffic-denoising_tools":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/pbalewski/movement-detection-in-das-recordings":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/pengchao-he/das-realtime-detection-demos":
+    reason: not-reusable
+    note: "Self-described demonstrations, with a presentation/ directory and CITATION.cff; twelve commits on a single day."
+  "github.com/personlin/das-work":
+    reason: not-reusable
+    note: "Second pass: the README calls it \"this workspace\" for analyzing OpenDATA with DASCore; two commits on one day."
+  "github.com/phd-organization/das-dsp":
+    reason: no-source
+    note: "The repository returns 404 and publishes nothing to review."
+  "github.com/prodbymedea/multiscale-underwater-acoustic-event-analysis":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/qiangua/das-realtime":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued das-realtime."
+  "github.com/qiangua/daslab":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued daslab."
+  "github.com/qiangua/itm":
+    reason: duplicate
+    note: "GitHub reports this as a fork of TTMuTian/itm."
+  "github.com/qiangua/xdas":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued xdas."
+  "github.com/qnyamna/fiber-optics-internship-project":
+    reason: teaching
+    note: "Second pass: titled a \"Learning Project\" and framed as a learning environment with a What You'll Learn section."
+  "github.com/rachelwillis1/das_data_visualization":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/rainyday1026-bit/das_dscnet":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/reeyan-afzal-khan/elsevier-journal_epsc-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/rezamirzaei/distributed_acoustic":
+    reason: paper-code
+    note: "Second pass: built around a 44-page technical report, with report/, tex_tail.txt and regenerate_fig8.py at the root."
+  "github.com/ruiqingtang/lamnet":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sachalapins/das-n2n":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/samortazavi/fibernet-cifar":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sermomon/msr-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/shenyaojin/dascore":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued dascore."
+  "github.com/shenyaojin/dss-history-match-script-backup":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/shhhquiettt/moving-objects-das-system":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/shihao-yuan/cookstrait-das-processing":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/shihao-yuan/csm-bhp_ocelot":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/shoaibulhassaan/adas-preprocessing-pipeline":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/shokor103072/safe-gem":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/skzeng/mfsr-cd":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/smouellet/hhdas":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/sphenhe/das-deep-bayes-beam":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sqs1212/traffic-flow-monitoring-based-on-distributed-acoustic-sensing-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sruthisl94/seismic-data-analysis-from-distributed-acoustic-sensing-das-data":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/stepseight/trafficmonitoringdas":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/subsurface4d/sep-2023":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sumeetksinha/pile_dss_analyzer":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sunmin123456/das_signal_feature":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/sunxy379/paper2025_gji":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/sunxy379/prince-william-sound-sediment-imaging":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/swfsc/cruzplot":
+    reason: acronym-collision
+    note: "Plots marine-mammal survey DAS files; same collision as swfscDAS."
+  "github.com/swfsc/swfscairdas":
+    reason: acronym-collision
+    note: "Aerial survey DAS format from the marine-mammal family, the same collision already recorded for swfscDAS."
+  "github.com/syyuan93/das_veh":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/tccs-codes/dasdenoising":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/teejayflynn/das_tutorial":
+    reason: teaching
+    note: "Teaching or reference material -- a tutorial, workshop, course, or link list rather than software."
+  "github.com/tianshi-liu/southpole_englacial_reflector_manuscript_reproduction":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/tieyuan/foresee":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/tkks22123/das-event-classification-using-vision-transformers":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/tobiashampe/das-boot-localisation-of-signals-in-distributed-acoustic-sensing":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/tompc35/dts-mvco":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ttmutian/itm":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/unpatentable/innovation-distributed-acoustic-maritime-awareness-network-daman-for-open-source-vessel-col":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/uwfiberlab/fiber_response":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/uwfiberlab/fm_segmentation_das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/uwfiberlab/ooi_das_2024":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/uwfiberlab/ooi_das_2025":
+    reason: paper-code
+    note: "Named after a citation: the repository is the analysis behind one publication rather than a tool."
+  "github.com/uwgeod/daspy":
+    reason: duplicate
+    note: "GitHub reports this as a fork of the catalogued daspy."
+  "github.com/velgueta/velgueta-2025":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/verras123/synthetic-das-soil-classification":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/vishnudev-p/fibersenseai-das":
+    reason: not-reusable
+    note: "Second pass: a Flask demo with node_modules/ committed, five commits on one day, no Python package definition."
+  "github.com/wangsulong594-create/das-system-learning":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/wasammy/das-sdg2":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/wfyissuperman/silixa-dts-xmltool":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/whaiman/dts-flowrate-prediction":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/wtrainor/unet_das":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/xinxin-he/geodas-diagnostic-suite":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/xu-sb/das-vsp-data-process":
+    reason: not-reusable
+    note: "Reads as a demonstration or dataset: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/yangliuqing-add/das-fcdnet":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/yangliuqing-add/slknet":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/yangwenze126-a11y/das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/yangzoeli/granadas":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/ymustc/mursense-public":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/yuness996/evaluate-the-high-energy-cosmic-ray-potential-of-discovery-of-a-lunar-seismic-and-gravitational-ant":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/zackspica/awesome-das":
+    reason: duplicate
+    note: "GitHub reports this as a fork of DAS-RCN/awesome-das."
+  "github.com/zackspica/safoddas":
+    reason: duplicate
+    note: "GitHub reports this as a fork of ariellellouch/SAFODDAS."
+  "github.com/zhangrite/dataset2019wr024794":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/zhangrite/datasetgrl2020fibermobaradrilling":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "github.com/zhangzhuorui5850/das-anomaly-detection":
+    reason: not-reusable
+    note: "Second pass: two commits, no license, README is a directory tree with check marks against planned modules."
+  "github.com/zhuchengyuan517/sensorfield-das":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "github.com/zmd142536/mcs-and-das-artifact-suppression":
+    reason: not-reusable
+    note: "Reads as one-off analysis code: no installable package definition, so another group has nothing to install or reuse."
+  "gitlab.com/caducosilva/mogi-onibus":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "gitlab.com/emily.domingos/qive-market-radar-site":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."
+  "gitlab.com/ml4science/publications/paper1":
+    reason: paper-code
+    note: "Code published to accompany a specific paper, thesis, or preprint rather than as a package another group would install."
+  "gitlab.com/renalaupy/mldas":
+    reason: duplicate
+    note: "The same project is already catalogued as mldas."
+  "gitlab.com/waltercarlucci/bp-2027-werk-wetzikon":
+    reason: acronym-collision
+    note: "\"das\" here is an ordinary word or an unrelated acronym, not distributed acoustic sensing."

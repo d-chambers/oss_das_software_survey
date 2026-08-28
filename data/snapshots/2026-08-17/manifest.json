@@ -1,17 +1,17 @@
 {
   "files": {
     "candidates.csv": "515278a50040825dcdf4d14a779f16cb4048501bedd1c98dccc9b02620ea025b",
-    "capabilities.csv": "31caf92e7d9c7c3de924edfee2fe1210c502ef544151c6d171f3074b102cfb12",
+    "capabilities.csv": "2fb671a3f5b70f4fa5f8ba13e1be9c6dd5e6fcb4760b996361feb3fe7a0cb9c0",
     "dependencies.csv": "c320f0416d20681cb961b024745d1963c7496230b8e90f6bcdefaaf25f3dc289",
     "discovery_coverage.csv": "c2f62d85d06b530eb59e898c16a68149333b599a420c4123c97adfb22062c021",
-    "metrics.csv": "bb59ab3460839ab8a191304313c0abbe88362a7c760b4d6c30d2f8883288fb6d",
-    "projects.csv": "f05c3d53628b5f07fa2a5fe153bfa8fa2117d61dae120fea61aeb0ef31f1371d",
+    "metrics.csv": "fe33a1bd0c2cd0018d6584011a26d4aff9dfe119ead18d7a1ab92dfdb33b18c1",
+    "projects.csv": "9d5a85fc3a5e1b622bdc912648fed7bf8ce5c67abc245aeaa4c56c1d41bbeb72",
     "publications.csv": "7f690afeb4b06fd5a7c0e5322aaf9cb9e0cde5a9fdae35c4b8560e212974a900",
     "pypi_daily.csv": "3390c9298e8fd4d98d932b4de173e70598de0c93b7adca47ca63007d77809b20"
   },
-  "generated_at": "2026-08-20T15:30:24+00:00",
+  "generated_at": "2026-08-28T10:43:10+00:00",
   "included_count": 61,
-  "project_count": 80,
+  "project_count": 82,
   "schema_version": "1",
   "snapshot_date": "2026-08-17",
   "source_notes": {

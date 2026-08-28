@@ -240,6 +240,31 @@ def test_a_per_field_reason_beats_the_whole_record_reason(tmp_path: Path) -> Non
     assert metrics["repo_contributors"]["missing_reason"] == "unavailable"
 
 
+def test_a_curated_doi_with_no_collected_record_is_unavailable(
+    tmp_path: Path,
+) -> None:
+    """A curated canonical DOI that collection has not seen is uncollected.
+
+    ``not_applicable`` asserts the project has no publication at all, which is
+    false once a DOI is curated. Reporting it that way would turn a value
+    nobody fetched into a confirmed absence.
+    """
+    paths = ProjectPaths(tmp_path)
+    _write_project(paths.curated)
+    raw = paths.raw("2026-08-03")
+    for name in ("github", "packages", "publications", "pypi_daily"):
+        write_jsonl(raw / f"{name}.jsonl", [])
+    build_snapshot("2026-08-03", paths=paths)
+
+    row = next(
+        item
+        for item in read_csv(paths.snapshot("2026-08-03") / "metrics.csv")
+        if item["metric"] == "canonical_citations"
+    )
+    assert row["value"] == ""
+    assert row["missing_reason"] == "unavailable"
+
+
 def test_validation_rejects_a_license_class_that_contradicts_the_spdx_id(
     tmp_path: Path,
 ) -> None:

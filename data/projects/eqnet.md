@@ -26,20 +26,20 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:21+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:27+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Jupyter Notebook
   stars: 56
   forks: 19
   contributors: 4
   releases: 1
-  commits: 264
-  last_commit_at: '2026-08-10T05:19:39Z'
+  commits: 265
+  last_commit_at: '2026-08-18T06:44:45Z'
   created_at: '2022-07-18T21:30:56Z'
   latest_release_at: '2023-10-26T07:25:18Z'
   archived: false
-  lines_of_code_estimate: 21318
+  lines_of_code_estimate: 21334
   loc_basis: language bytes / 32, notebooks excluded
   dependencies: []
   has_docs: true

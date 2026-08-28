@@ -28,8 +28,8 @@ curated:
     role: canonical
     note: null
 collected:
-  scanned_at: '2026-08-18T06:37:54+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:02+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Rust
   stars: 25
@@ -42,9 +42,9 @@ collected:
   archived: false
   lines_of_code_estimate: 6658
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 314
-  pypi_downloads_30d: 102
-  canonical_citations: 8
+  pypi_downloads_180d: 324
+  pypi_downloads_30d: 81
+  canonical_citations: 9
   dependencies:
   - package: daspack-dev
     dependency: numpy

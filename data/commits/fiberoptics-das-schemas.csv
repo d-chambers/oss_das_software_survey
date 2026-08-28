@@ -1,0 +1,74 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+fiberoptics-das-schemas,included,b867f2b4336d43cf5f537da5fe013799a6aefdd7,Espen Tjønneland,estjo@equinor.com,2026-01-29T11:58:17+01:00,2026-01-29T11:58:17+01:00,0,1,1,1,0,Update latest version in README from 2.0.6 to 2.0.5
+fiberoptics-das-schemas,included,ead6475c38893f01f0385c542d0a6fbcca751774,JSV CI,jsv-ci@equinor.com,2026-01-29T10:56:49+00:00,2026-01-29T10:56:49+00:00,0,1,1,1,0,Current version 2.0.6
+fiberoptics-das-schemas,included,ebe7537e6a28fe76707e986fe191db443c379873,Espen Tjønneland,estjo@equinor.com,2026-01-29T11:56:35+01:00,2026-01-29T11:56:35+01:00,0,1,1,1,0,Update readme.adoc
+fiberoptics-das-schemas,included,d403d694201a71a051f31f43c2f27d5d117f6f7c,Espen Tjønneland,estjo@equinor.com,2026-01-29T11:56:24+01:00,2026-01-29T11:56:24+01:00,0,1,1,1,0,Bump version from 2.0.5 to 2.0.6
+fiberoptics-das-schemas,included,1507e7a5642ebdd4f9ac14d6abd5b713338bb5f1,JSV CI,jsv-ci@equinor.com,2026-01-15T13:21:09+00:00,2026-01-15T13:21:09+00:00,0,1,1,1,0,Next version 2.0.5
+fiberoptics-das-schemas,included,68d0e196e4098d29a1d19c4f0fe3f22b23b628b5,JSV CI,jsv-ci@equinor.com,2026-01-15T13:20:58+00:00,2026-01-15T13:20:58+00:00,0,1,1,1,0,Current version 2.0.4
+fiberoptics-das-schemas,included,b5b734cbfb11697e6f754f55032ebb219731bad8,Espen Tjønneland,estjo@equinor.com,2026-01-15T14:20:39+01:00,2026-01-15T14:20:39+01:00,0,1,6,2,0,Make release step idempotent
+fiberoptics-das-schemas,included,fd2953bc055031416e7e96eaf3815204f6a5eafe,JSV CI,jsv-ci@equinor.com,2026-01-15T13:16:41+00:00,2026-01-15T13:16:41+00:00,0,1,1,1,0,Next version 2.0.4
+fiberoptics-das-schemas,included,5584dcb9aed43ad1875cc9e739e489b0b4816144,Espen Tjønneland,estjo@equinor.com,2026-01-15T14:16:00+01:00,2026-01-15T14:16:00+01:00,0,2,19,11,0,Update workflows for main
+fiberoptics-das-schemas,included,dbb8c7c08df813c97ef507a5ddd8964e12241b03,Espen Tjønneland,estjo@equinor.com,2026-01-15T14:13:25+01:00,2026-01-15T14:13:25+01:00,0,7,113,63,1,Update CI and Maven wrapper
+fiberoptics-das-schemas,included,a739dd1d1198e0dfe77246e33c0b37e32b7130f7,Espen Tjønneland,estjo@equinor.com,2026-01-15T14:07:24+01:00,2026-01-15T14:07:24+01:00,0,1,1,1,0,Bump avro to 1.12.1
+fiberoptics-das-schemas,included,a10f6281184399b0c06a075fa33198c8f9c71569,Lindvar Lægran,lindvar.lagran@gmail.com,2024-09-02T13:38:25+02:00,2024-09-02T13:38:25+02:00,1,,,,,Merge pull request #6 from equinor/feature/500242
+fiberoptics-das-schemas,included,e28a7e95b03cb29fb86639172d1d706163876740,Lindvar Lagran,llag@equinor.com,2024-08-20T08:53:27+02:00,2024-08-20T08:53:27+02:00,0,1,1,1,0,MeasurementStartTime nanos
+fiberoptics-das-schemas,included,d2306124a24c457710127f0033a2839b2aef1de9,Lindvar Lagran,llag@equinor.com,2024-08-01T14:24:01+02:00,2024-08-01T14:24:01+02:00,0,1,2,2,0,avro version
+fiberoptics-das-schemas,included,d6af9da486b5e4e163bf8d21a7a6573a6d2311ac,Lindvar Lagran,llag@equinor.com,2024-08-01T14:18:48+02:00,2024-08-01T14:18:48+02:00,0,10,88,0,9,MeasurementStartTime
+fiberoptics-das-schemas,included,a0b8237337fa255cbac0e3ab2099f1d7919aa65c,Espen Tjønneland,estjo@equinor.com,2024-03-20T15:00:57+01:00,2024-03-20T15:00:57+01:00,0,1,1,1,0,Update readme.adoc
+fiberoptics-das-schemas,included,3f455d6713e4461d9629633e426f78cf6d562c54,Espen Tjønneland,estjo@equinor.com,2023-12-19T13:41:08+01:00,2023-12-19T13:41:08+01:00,0,2,215,0,0,Added Apache 2.0 license file and security guidelines.
+fiberoptics-das-schemas,included,8a93de2297bb865a8236fd141102d1fbe4b75a6d,JSV CI,jsv-ci@equinor.com,2021-11-10T11:08:28+00:00,2021-11-10T11:08:28+00:00,0,1,1,1,0,Next version 2.0.3
+fiberoptics-das-schemas,included,3f68f427f7e650ad0f724b85ba5e45473dbbf97c,JSV CI,jsv-ci@equinor.com,2021-11-10T11:08:15+00:00,2021-11-10T11:08:15+00:00,0,1,1,1,0,Current version 2.0.2
+fiberoptics-das-schemas,included,7da2fd81deda27e6789418beb7e2f7e6b7bafaac,ingeknudsen,iknu@equinor.com,2021-11-10T12:07:51+01:00,2021-11-10T12:07:51+01:00,0,1,1,1,0,Update pom.xml (#3)
+fiberoptics-das-schemas,included,14032b6da4cf9bbdc7f589781501a7ebbac8f5a0,JSV CI,jsv-ci@equinor.com,2021-09-10T13:19:13+00:00,2021-09-10T13:19:13+00:00,0,1,1,1,0,Next version 2.0.2
+fiberoptics-das-schemas,included,14f0746e05988fbb2521af2aceb7c564c97fa154,JSV CI,jsv-ci@equinor.com,2021-09-10T13:19:01+00:00,2021-09-10T13:19:01+00:00,0,1,1,1,0,Current version 2.0.1
+fiberoptics-das-schemas,included,c667f226f8722dd7e623ec5b11821f65d81cc78d,ingeknudsen,iknu@equinor.com,2021-09-10T15:18:32+02:00,2021-09-10T15:18:32+02:00,0,3,5,5,0,Rolled back (#2)
+fiberoptics-das-schemas,included,3e31abcaaaaa1ecb34daacccce99a805b4e98aad,JSV CI,jsv-ci@equinor.com,2021-09-10T09:57:24+00:00,2021-09-10T09:57:24+00:00,0,1,1,1,0,Next version 2.0.1
+fiberoptics-das-schemas,included,6ae4d3069d8d64bec1485771ab45b09bd65819f1,JSV CI,jsv-ci@equinor.com,2021-09-10T09:57:09+00:00,2021-09-10T09:57:09+00:00,0,1,1,1,0,Current version 2.0.0
+fiberoptics-das-schemas,included,70502abd2dc6da65beb09fb0fec4b4a787947c3b,ingeknudsen,iknu@equinor.com,2021-09-10T11:56:41+02:00,2021-09-10T11:56:41+02:00,0,3,90,3,0,New schema version (#1)
+fiberoptics-das-schemas,included,7d030c22d81263cdf6c89cea972a0fb1d5b20df7,JSV CI,jsv-ci@equinor.com,2021-09-01T13:39:34+00:00,2021-09-01T13:39:34+00:00,0,1,1,1,0,Next version 1.0.12
+fiberoptics-das-schemas,included,e98830604578c4adccd088a90764635d6017a5d6,JSV CI,jsv-ci@equinor.com,2021-09-01T13:39:23+00:00,2021-09-01T13:39:23+00:00,0,1,1,1,0,Current version 1.0.11
+fiberoptics-das-schemas,included,b0a51ab4c2c5f6e65410f804885db552596280cd,Inge Knudsen,iknu@equinor.com,2021-09-01T15:38:51+02:00,2021-09-01T15:38:51+02:00,0,1,1,1,0,Attempt another fix
+fiberoptics-das-schemas,included,502e5f5a554cf1ef3d10d405e12bf5432b18e17d,Inge Knudsen,iknu@equinor.com,2021-09-01T15:34:01+02:00,2021-09-01T15:34:01+02:00,0,1,1,1,0,Fix versions
+fiberoptics-das-schemas,included,a6b1057716617210b5e862b080772e925ad14b07,JSV CI,jsv-ci@equinor.com,2021-09-01T13:29:59+00:00,2021-09-01T13:29:59+00:00,0,1,1,1,0,Next version 1.0.10
+fiberoptics-das-schemas,included,5ed3bf6a2766e66efa8aac9a301d165b9db715c9,JSV CI,jsv-ci@equinor.com,2021-09-01T13:29:45+00:00,2021-09-01T13:29:45+00:00,0,1,1,1,0,Current version 1.0.9
+fiberoptics-das-schemas,included,0809f07043ebfdd17e03f45669782ae739ae83b9,ingeknudsen,iknu@equinor.com,2021-09-01T15:29:16+02:00,2021-09-01T15:29:16+02:00,0,1,2,2,0,Update release.yml
+fiberoptics-das-schemas,included,6b5b270f99473e7d60d336e0ce619646f0264e71,JSV CI,jsv-ci@equinor.com,2021-09-01T13:27:06+00:00,2021-09-01T13:27:06+00:00,0,1,1,1,0,Next version 1.0.9
+fiberoptics-das-schemas,included,668bc04c69f8bac0550aac564821fec77b9ca5df,JSV CI,jsv-ci@equinor.com,2021-09-01T13:26:51+00:00,2021-09-01T13:26:51+00:00,0,1,1,1,0,Current version 1.0.8
+fiberoptics-das-schemas,included,d36e338492588b4c272666794940d9969f5538f7,ingeknudsen,iknu@equinor.com,2021-09-01T15:26:20+02:00,2021-09-01T15:26:20+02:00,0,1,2,2,0,Update pom.xml
+fiberoptics-das-schemas,included,938c01c8b4c17e72801e0b092ff55e27a74e1639,Espen Tjønneland,espen@tjonneland.no,2020-11-12T10:42:04+01:00,2020-11-12T10:42:04+01:00,0,1,2,4,0,Update readme.adoc
+fiberoptics-das-schemas,included,02ea851bf166958d074f8f9c091ba927e4495b0d,JSV CI,jsv-ci@equinor.com,2020-10-16T06:52:19+00:00,2020-10-16T06:52:19+00:00,0,1,1,1,0,Next version 1.0.8
+fiberoptics-das-schemas,included,e96e2767098765853a8e9dde2dde35cdc4ff576c,JSV CI,jsv-ci@equinor.com,2020-10-16T06:52:02+00:00,2020-10-16T06:52:02+00:00,0,1,1,1,0,Current version 1.0.7
+fiberoptics-das-schemas,included,0e039df3cee16db357abb19f742fc35521b804e2,espentj,estjo@equinor.com,2020-10-16T08:51:17+02:00,2020-10-16T08:51:17+02:00,0,1,3,3,0,"Update Avro version, and expose setters on the generated Java objects."
+fiberoptics-das-schemas,included,8171d06c00460b5ec1e7f07b8edbf222b28ce7f0,JSV CI,jsv-ci@equinor.com,2020-05-22T11:12:50+00:00,2020-05-22T11:12:50+00:00,0,1,1,1,0,Next version 1.0.7
+fiberoptics-das-schemas,included,7d2a45f809062334ffbc81408801387ca055eac9,JSV CI,jsv-ci@equinor.com,2020-05-22T11:12:31+00:00,2020-05-22T11:12:31+00:00,0,1,1,1,0,Current version 1.0.6
+fiberoptics-das-schemas,included,749d481f92b3a0ce5d79794bd548d271ded8b101,Espen Tjønneland,etj@knowit.no,2020-05-22T13:11:51+02:00,2020-05-22T13:11:51+02:00,0,1,1,1,0,Support distributing built packages to public repo.
+fiberoptics-das-schemas,included,67e6731b131fd2057a94284299842ce40eddbc48,JSV CI,jsv-ci@equinor.com,2020-05-22T11:08:08+00:00,2020-05-22T11:08:08+00:00,0,1,1,1,0,Next version 1.0.6
+fiberoptics-das-schemas,included,2663801d4165a54c042a71f871a7c4d3d904b45e,JSV CI,jsv-ci@equinor.com,2020-05-22T11:07:48+00:00,2020-05-22T11:07:48+00:00,0,1,1,1,0,Current version 1.0.5
+fiberoptics-das-schemas,included,2394cbdcd64a3bac2d676e30eaa89d6bc6438a56,Espen Tjønneland,etj@knowit.no,2020-05-22T13:07:12+02:00,2020-05-22T13:07:12+02:00,0,1,45,42,0,Support distributing built packages to public repo.
+fiberoptics-das-schemas,included,f9ea3e96d548454c397a1ca8b3e9ee1356770500,JSV CI,jsv-ci@equinor.com,2020-04-16T13:24:21+00:00,2020-04-16T13:24:21+00:00,0,1,1,1,0,Next version 1.0.5
+fiberoptics-das-schemas,included,d58afa9dbabe19a92a581e9065482f103dc8bca5,JSV CI,jsv-ci@equinor.com,2020-04-16T13:24:02+00:00,2020-04-16T13:24:02+00:00,0,1,1,1,0,Current version 1.0.4
+fiberoptics-das-schemas,included,0552f1b5301a38b2b90eccabd0152f485d83f097,Espen Tjønneland,espen@tjonneland.no,2020-04-16T15:23:29+02:00,2020-04-16T15:23:29+02:00,0,1,2,3,0,Update release.yml
+fiberoptics-das-schemas,included,e3e1e0695a85a62199a0e37f7a96cf991771df8b,Espen Tjønneland,etj@knowit.no,2020-04-16T15:21:23+02:00,2020-04-16T15:21:23+02:00,0,1,2,1,0,Support distributing built packages to public repo.
+fiberoptics-das-schemas,included,8f89bf7c28604d4f33b190a9b640ac5a79563128,Espen Tjønneland,espen@tjonneland.no,2020-04-16T15:16:48+02:00,2020-04-16T15:16:48+02:00,0,1,0,1,0,Update release.yml
+fiberoptics-das-schemas,included,4fa9ff41e86bf7436b36027d57bd47b3b784f6fd,Espen Tjønneland,espen@tjonneland.no,2020-04-16T15:06:59+02:00,2020-04-16T15:06:59+02:00,0,1,2,0,0,Update release.yml
+fiberoptics-das-schemas,included,bd13872560960b0022c92c4c2b8ab4040c2b3c6b,Espen Tjønneland,espen@tjonneland.no,2020-04-16T15:04:55+02:00,2020-04-16T15:04:55+02:00,0,1,3,1,0,Update release.yml
+fiberoptics-das-schemas,included,662b3eb54b6ed267865e4773751339a0ce0058b1,Espen Tjønneland,etj@knowit.no,2020-04-16T14:50:11+02:00,2020-04-16T14:57:27+02:00,0,4,5,32,0,Support distributing built packages to public repo.
+fiberoptics-das-schemas,included,84874c165153cf077cc439fefd637101d326e67b,Espen Tjønneland,etj@knowit.no,2020-04-16T14:36:11+02:00,2020-04-16T14:36:11+02:00,0,7,159,100,0,Support distributing built packages to internal repo only.
+fiberoptics-das-schemas,included,6236af8e95b808576fe745bcf5b6543f92862703,JSV CI,jsv-ci@equinor.com,2020-03-03T07:59:26+00:00,2020-03-03T07:59:26+00:00,0,1,1,1,0,Next version 1.0.3
+fiberoptics-das-schemas,included,5fcd0bb5b43d116db5352f86a793af52ba71064d,espentj,estjo@equinor.com,2020-03-03T08:58:18+01:00,2020-03-03T08:58:18+01:00,0,1,1,5,0,Update the Custom node to be a map with string for both key and value.
+fiberoptics-das-schemas,included,df873ffb40f312054e3f7f8e95d3095120bea620,JSV CI,jsv-ci@equinor.com,2020-02-13T07:43:52+00:00,2020-02-13T07:43:52+00:00,0,1,1,1,0,Next version 1.0.2
+fiberoptics-das-schemas,included,f943a3cffd3615f6826d624825b56fc6276149e0,espentj,estjo@equinor.com,2020-02-13T08:42:55+01:00,2020-02-13T08:42:55+01:00,0,1,35,33,0,Missing branch on push.
+fiberoptics-das-schemas,included,787a36b5bbb51bad1bda39345807f6d4d5c10bf7,espentj,estjo@equinor.com,2020-02-13T08:37:25+01:00,2020-02-13T08:37:25+01:00,0,1,17,17,0,Fix indentation.
+fiberoptics-das-schemas,included,c9241b8e9946e5f2e767399ddb28dc9afb33a71c,espentj,estjo@equinor.com,2020-02-13T08:35:57+01:00,2020-02-13T08:35:57+01:00,0,1,19,1,0,Fix version update in build action.
+fiberoptics-das-schemas,included,02a107c06e203de6f4e75edc39e56aae02c389c4,espentj,estjo@equinor.com,2020-02-13T08:19:29+01:00,2020-02-13T08:19:29+01:00,0,2,99,100,0,Fix wrong type for MeasurementStartTime.
+fiberoptics-das-schemas,included,27a6c64c782431e0d27cdea4c7a23cc251f60f28,espentj,estjo@equinor.com,2020-02-06T13:24:28+01:00,2020-02-06T13:24:28+01:00,0,1,1,1,0,Bump version and release.
+fiberoptics-das-schemas,included,8991d03e69635a13ff875616042d06d7858b948c,espentj,estjo@equinor.com,2020-02-06T13:17:09+01:00,2020-02-06T13:17:09+01:00,0,1,19,11,0,Allow optional (null) value for either of the amplitude-lists.
+fiberoptics-das-schemas,included,f05323229186e00c95e07cc9948ada7dc0b02eac,espentj,estjo@equinor.com,2020-02-05T15:05:55+01:00,2020-02-05T15:05:55+01:00,0,1,1,1,0,Fix badge
+fiberoptics-das-schemas,included,f23d8916bf0ad111e195b938b71906a37503b9ca,espentj,estjo@equinor.com,2020-02-05T14:06:26+01:00,2020-02-05T14:06:26+01:00,0,1,1,2,0,Name the remote repo correctly in the Action step.
+fiberoptics-das-schemas,included,525400592f4ec88df70c5ad17ef64ae509d5df9b,espentj,estjo@equinor.com,2020-02-05T13:30:52+01:00,2020-02-05T13:30:52+01:00,0,2,5,4,0,Move artifact release to local repo. But keep built packages in release on Github.
+fiberoptics-das-schemas,included,0209d89982d6d8b3db2e151027b1a37ced14f715,espentj,estjo@equinor.com,2020-02-05T13:11:49+01:00,2020-02-05T13:11:49+01:00,0,1,0,1,0,Remove create dir.
+fiberoptics-das-schemas,included,92ff79d2df9269da9cb17d1b3f10c4bfff8e38ac,espentj,estjo@equinor.com,2020-02-05T13:09:43+01:00,2020-02-05T13:09:43+01:00,0,3,16,19,0,Deploy with Github action and packages.
+fiberoptics-das-schemas,included,4ae1423a34b121bd92215e829eb545ebbb45566a,Espen Tjønneland,espen@tjonneland.no,2020-02-05T13:00:41+01:00,2020-02-05T13:00:41+01:00,0,1,17,0,0,Create maven.yml
+fiberoptics-das-schemas,included,f3b249544f1e939b73c48c2a571798d702b114c8,Espen Tjønneland,espen@tjonneland.no,2020-02-05T12:59:11+01:00,2020-02-05T12:59:11+01:00,0,1,17,0,0,Create blank.yml
+fiberoptics-das-schemas,included,081980b3fca777b934233e689d1c04228e1e7b58,espentj,estjo@equinor.com,2020-02-05T08:48:00+01:00,2020-02-05T08:48:00+01:00,0,2,2,2,0,Rename artifact and set build badge.
+fiberoptics-das-schemas,included,dcdf479005a6a30d3027733b60359c3132dcc331,Espen Tjonneland,estjo@equinor.com,2020-02-05T08:38:18+01:00,2020-02-05T08:38:18+01:00,0,13,885,0,1,Initial version.

@@ -25,15 +25,15 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:07+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:14+00:00'
+  snapshot: '2026-08-28'
   visibility: public
-  stars: 8
-  forks: 0
+  stars: 15
+  forks: 2
   contributors: 1
   releases: 1
-  commits: 11
-  last_commit_at: '2025-12-27T04:17:49Z'
+  commits: 13
+  last_commit_at: '2026-08-27T23:19:29Z'
   created_at: '2025-12-19T07:02:43Z'
   latest_release_at: '2025-12-19T11:37:13Z'
   archived: false

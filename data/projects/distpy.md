@@ -26,8 +26,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:12+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:18+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Jupyter Notebook
   stars: 40
@@ -40,8 +40,8 @@ collected:
   archived: false
   lines_of_code_estimate: 8621
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 1199
-  pypi_downloads_30d: 109
+  pypi_downloads_180d: 1083
+  pypi_downloads_30d: 53
   dependencies:
   - package: distpy
     dependency: h5py

@@ -27,8 +27,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:39:00+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:57:09+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: HTML
   stars: 23
@@ -42,8 +42,8 @@ collected:
   archived: false
   lines_of_code_estimate: 62529
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 262
-  pypi_downloads_30d: 26
+  pypi_downloads_180d: 274
+  pypi_downloads_30d: 32
   dependencies:
   - package: pyfocs
     dependency: dtscalibration

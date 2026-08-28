@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import httpx
+import pytest
 
 from oss_das.clients.base import NotFoundError, SourceError
 from oss_das.clients.forge import SearchResult
@@ -14,6 +15,7 @@ from oss_das.collection import (
     missingness,
     probe_conda_forge,
 )
+from oss_das.core import load_projects, load_rejections
 from oss_das.models import Forge, ForgeKind, ProjectRecord
 
 PROJECT = ProjectRecord.model_validate(
@@ -374,3 +376,56 @@ def test_a_curated_project_is_specific_even_if_no_probe_found_it() -> None:
     records, _ = discover_projects([forge], [PROJECT])
 
     assert records[0]["probe_class"] == "domain-specific"
+
+
+class TestRejectionLedger:
+    """A reviewed rejection must stop a candidate coming back as unreviewed."""
+
+    def test_missing_ledger_is_empty_not_an_error(self, tmp_path):
+        assert load_rejections(tmp_path / "absent.yml") == {}
+
+    def test_keys_are_lowercased_to_match_forge_key(self, tmp_path):
+        path = tmp_path / "rejected.yml"
+        path.write_text(
+            "rejections:\n"
+            '  "GitHub.com/Acme/Thing":\n'
+            "    reason: duplicate\n"
+            "    note: Already catalogued.\n"
+        )
+        loaded = load_rejections(path)
+        assert loaded == {
+            "github.com/acme/thing": {
+                "reason": "duplicate",
+                "note": "Already catalogued.",
+            }
+        }
+
+    def test_note_is_optional(self, tmp_path):
+        path = tmp_path / "rejected.yml"
+        path.write_text('rejections:\n  "a.com/x/y":\n    reason: teaching\n')
+        assert load_rejections(path)["a.com/x/y"]["note"] == ""
+
+    def test_entry_without_a_reason_is_rejected(self, tmp_path):
+        path = tmp_path / "rejected.yml"
+        path.write_text('rejections:\n  "a.com/x/y":\n    note: no reason given\n')
+        with pytest.raises(ValueError, match="needs a 'reason'"):
+            load_rejections(path)
+
+    def test_non_mapping_rejections_block_is_rejected(self, tmp_path):
+        path = tmp_path / "rejected.yml"
+        path.write_text("rejections:\n  - a.com/x/y\n")
+        with pytest.raises(ValueError, match="must be a mapping"):
+            load_rejections(path)
+
+    def test_shipped_ledger_loads_and_keys_look_like_forge_keys(self):
+        ledger = load_rejections()
+        assert ledger, "the repository ships a reviewed ledger"
+        for key, value in ledger.items():
+            assert key == key.lower()
+            assert len(key.split("/")) >= 3, key
+            assert value["reason"]
+
+    def test_ledger_never_claims_a_catalogued_project(self):
+        # A curated file wins; a key in both would make the catalog ambiguous.
+        catalogued = {project.forge_key for project in load_projects()}
+        assert not (catalogued & set(load_rejections()))

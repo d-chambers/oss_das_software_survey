@@ -25,8 +25,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:36:52+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:54:39+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   stars: 3
   forks: 1

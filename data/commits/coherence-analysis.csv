@@ -1,0 +1,32 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+coherence-analysis,included,443eabcc04ab2a54750f21ef6cd1dea5e136d22b,Hafiz,issahhafiz@gmail.com,2026-02-03T12:44:14-07:00,2026-02-03T12:44:14-07:00,0,1,7,4,0,low quality image
+coherence-analysis,included,785b482c1bc15a96ab30edf8d9741977ad378bf0,Abdul Hafiz Saeed Issah,issahhafiz@gmail.com,2026-01-28T16:56:39-07:00,2026-01-28T16:56:39-07:00,0,1,1,0,0,Add DOI badge to README
+coherence-analysis,included,fff1462c1bec306f42b2a8bb762975d01213f112,Hafiz,issahhafiz@gmail.com,2026-01-28T16:35:53-07:00,2026-01-28T16:35:53-07:00,0,4,53,115,0,checkout documentation from publication branch
+coherence-analysis,included,84d67f2ad12be56884ac1774a4d52983567d0a68,Hafiz,issahhafiz@gmail.com,2026-01-28T10:01:19-07:00,2026-01-28T10:01:19-07:00,0,1,4,16,0,readme tweaks
+coherence-analysis,included,1472d1502c5f1353e4225df37451777d1b9e6904,Hafiz,issahhafiz@gmail.com,2026-01-28T09:00:53-07:00,2026-01-28T09:00:53-07:00,0,3,61,5,0,documentation
+coherence-analysis,included,5e393ccf3162f18b5fd3e5938d50352722b3db18,Hafiz,issahhafiz@gmail.com,2026-01-28T01:09:13-07:00,2026-01-28T01:09:13-07:00,0,1,8,6,0,bug fix
+coherence-analysis,included,82828c2ee141b369297620d48949142b543dec7b,Hafiz,issahhafiz@gmail.com,2026-01-27T23:34:46-07:00,2026-01-27T23:34:46-07:00,0,1,1,1,0,keep partial = false
+coherence-analysis,included,8dcfa10e3620271a32bdaab4d167c8c80fbdf68f,Hafiz,issahhafiz@gmail.com,2026-01-27T23:08:22-07:00,2026-01-27T23:08:22-07:00,0,2,48,19,0,checkout changes from publication version
+coherence-analysis,included,5a46201a3d3b964945d15fb5658f204b8fd0d7d9,Hafiz,issahhafiz@gmail.com,2026-01-27T22:46:44-07:00,2026-01-27T22:46:44-07:00,0,2,17,8,1,more documentation on files
+coherence-analysis,included,5b7111502f04173194960d5848b403c72db34341,Hafiz,issahhafiz@gmail.com,2026-01-27T22:38:09-07:00,2026-01-27T22:38:09-07:00,1,,,,,Merge branch 'main' of https://github.com/aissah/coherence-analysis license conflict
+coherence-analysis,included,ce18834584848fd86756025070ad597c954672be,Hafiz,issahhafiz@gmail.com,2026-01-27T22:37:50-07:00,2026-01-27T22:37:50-07:00,0,1,22,15,0,checkout publication version changes
+coherence-analysis,included,5f3693d8fef4be029e204efe83a6f1c89d37e078,Abdul Hafiz Saeed Issah,issahhafiz@gmail.com,2026-01-27T19:22:15-07:00,2026-01-27T19:22:15-07:00,0,1,21,0,0,Add MIT License to the project
+coherence-analysis,included,9915c7df061324ff458e66ae951e9b2130c2dfc9,Hafiz,issahhafiz@gmail.com,2026-01-23T15:18:26-07:00,2026-01-23T15:18:26-07:00,0,4,54,0,3,refresh requirements.txt
+coherence-analysis,included,58631dedfa4ca678e8ce4187b96e3ab49c18ac03,Hafiz,issahhafiz@gmail.com,2026-01-23T15:13:18-07:00,2026-01-23T15:13:18-07:00,0,1,10,1,0,fix deepwave requirement
+coherence-analysis,included,14897ea1aec2e5cd88efd83604f2a97ffad58674,Hafiz,issahhafiz@gmail.com,2026-01-23T11:00:43-07:00,2026-01-23T11:00:43-07:00,0,2,7,12,0,clean up scripts
+coherence-analysis,included,dc2b5ae04329b827333abc04da5a019b0dc620f1,Hafiz,issahhafiz@gmail.com,2026-01-23T10:42:30-07:00,2026-01-23T10:42:30-07:00,0,1,6,0,0,documentation about output from cl interface
+coherence-analysis,included,6617400cd39a06f449a756983e67a54357a39eb3,Hafiz,issahhafiz@gmail.com,2026-01-23T10:26:10-07:00,2026-01-23T10:26:10-07:00,0,3,9,7,0,reflect changes in scripts and documents
+coherence-analysis,included,7de72811269c7767a9b717ebc893ff6251e80199,Hafiz,issahhafiz@gmail.com,2026-01-23T10:10:54-07:00,2026-01-23T10:10:54-07:00,0,1,3,9,0,documentation
+coherence-analysis,included,3071a5360478b3bd310bd259b9f4903de6d92f07,Hafiz,issahhafiz@gmail.com,2026-01-23T10:04:37-07:00,2026-01-23T10:04:37-07:00,0,1,163,40,0,restructure input arguments
+coherence-analysis,included,395f973fdc2fa4762ef9bdcdb9718a5765a334e3,Hafiz,issahhafiz@gmail.com,2026-01-20T22:06:23-07:00,2026-01-20T22:06:23-07:00,0,4,411,406,0,reorganization and documentation
+coherence-analysis,included,1e0e5840b21725c95d7dc9dba758eb2cd9e670a8,Hafiz,issahhafiz@gmail.com,2026-01-20T21:26:26-07:00,2026-01-20T21:26:26-07:00,0,10,956,956,0,cleaning and commenting
+coherence-analysis,included,8556e6811a7f662b4cd04841fc7972a8a039d027,Hafiz,issahhafiz@gmail.com,2026-01-20T21:22:29-07:00,2026-01-20T21:22:29-07:00,0,1,12,4,0,cleaning and commenting
+coherence-analysis,included,98c8822e879b680e31c71b9796533d2e72a9a752,Hafiz,issahhafiz@gmail.com,2026-01-20T19:49:01-07:00,2026-01-20T19:49:01-07:00,0,1,2995,0,0,merge numerical experiments nb
+coherence-analysis,included,e033b9b8b39e00540153c7d25c194e504a13298c,Hafiz,issahhafiz@gmail.com,2026-01-20T19:31:57-07:00,2026-01-20T19:31:57-07:00,0,4,84,166,0,cleaning and commenting
+coherence-analysis,included,9354c51ebb0f0f09ecddfef627bdb855e95dbfd0,Hafiz,issahhafiz@gmail.com,2026-01-20T18:43:30-07:00,2026-01-20T18:43:30-07:00,0,1,482,0,0,make figure code into notebook
+coherence-analysis,included,ef5e0deea93386c19e31c4eb109ff41aede6e21c,Hafiz,issahhafiz@gmail.com,2026-01-19T11:28:48-07:00,2026-01-19T11:28:48-07:00,0,2,587,587,0,rename notebook
+coherence-analysis,included,a7cc2d27529b2d4b050a5d2fd36cd10a18667a36,Hafiz,issahhafiz@gmail.com,2026-01-19T11:26:53-07:00,2026-01-19T11:26:53-07:00,0,3,211,179,1,clean up and add notes
+coherence-analysis,included,b44e5f41a2b102c71937bbd8fc0b73601194af0a,Hafiz,issahhafiz@gmail.com,2026-01-19T10:12:34-07:00,2026-01-19T10:12:34-07:00,0,1,29,183,0,clean up
+coherence-analysis,included,12ef16dc4e111864661d1497927e3638f2ea6bbc,Hafiz,issahhafiz@gmail.com,2026-01-19T09:54:32-07:00,2026-01-19T09:54:32-07:00,0,1,6,1,0,add remove center option to exact coherence
+coherence-analysis,included,a196cc8a68ae5f4251c38c2442eb09832748bace,Hafiz,issahhafiz@gmail.com,2026-01-18T10:56:44-07:00,2026-01-18T10:56:44-07:00,0,58,31630,0,6,commit all files from history version
+coherence-analysis,included,8174995981071ebfed9c4b400ac9e9dc6b42065f,Hafiz,issahhafiz@gmail.com,2026-01-18T10:44:02-07:00,2026-01-18T10:44:02-07:00,0,1,181,0,0,first commit

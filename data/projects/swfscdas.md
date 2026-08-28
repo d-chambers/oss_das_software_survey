@@ -24,7 +24,7 @@ curated:
     julia: []
   publications: []
 collected:
-  snapshot: '2026-08-17'
+  snapshot: '2026-08-28'
   dependencies: []
   unavailable:
     pypi_downloads_total: no free source publishes all-time PyPI totals

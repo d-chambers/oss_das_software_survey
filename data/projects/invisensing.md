@@ -26,8 +26,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:42+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:53+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 0
@@ -41,8 +41,8 @@ collected:
   archived: false
   lines_of_code_estimate: 4024
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 6071
-  pypi_downloads_30d: 1319
+  pypi_downloads_180d: 6215
+  pypi_downloads_30d: 304
   dependencies:
   - package: invisensing
     dependency: h5py

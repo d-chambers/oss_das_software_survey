@@ -22,10 +22,13 @@ curated:
     pypi: []
     conda: []
     julia: []
-  publications: []
+  publications:
+  - doi: 10.5880/gfz.2.1.2021.005
+    role: canonical
+    note: null
 collected:
-  scanned_at: '2026-08-18T06:38:40+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:49+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 9
@@ -38,6 +41,7 @@ collected:
   archived: false
   lines_of_code_estimate: 1131
   loc_basis: language bytes / 32, notebooks excluded
+  canonical_citations: 4
   dependencies: []
   has_docs: true
   has_tests: true

@@ -30,8 +30,8 @@ curated:
     role: canonical
     note: null
 collected:
-  scanned_at: '2026-08-18T06:38:46+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:57+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 65
@@ -45,8 +45,8 @@ collected:
   archived: false
   lines_of_code_estimate: 2205
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 781
-  pypi_downloads_30d: 42
+  pypi_downloads_180d: 827
+  pypi_downloads_30d: 94
   canonical_citations: 2
   dependencies:
   - package: lightguide

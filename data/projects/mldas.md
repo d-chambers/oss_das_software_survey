@@ -26,8 +26,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:49+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:59+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 11
@@ -41,7 +41,7 @@ collected:
   lines_of_code_estimate: 8834
   loc_basis: language bytes / 32, notebooks excluded
   pypi_downloads_180d: 108
-  pypi_downloads_30d: 8
+  pypi_downloads_30d: 7
   dependencies: []
   has_docs: false
   has_tests: false

@@ -24,19 +24,19 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:37:46+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:55:54+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 0
   forks: 0
   contributors: 1
   releases: 0
-  commits: 5
-  last_commit_at: '2026-04-13T19:34:43Z'
+  commits: 10
+  last_commit_at: '2026-08-27T09:13:30Z'
   created_at: '2026-04-11T19:36:45Z'
   archived: false
-  lines_of_code_estimate: 6023
+  lines_of_code_estimate: 6204
   loc_basis: language bytes / 32, notebooks excluded
   dependencies: []
   has_docs: false

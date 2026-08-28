@@ -25,12 +25,12 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:39:02+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:57:11+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Jupyter Notebook
-  stars: 7
-  forks: 2
+  stars: 8
+  forks: 3
   contributors: 2
   releases: 1
   commits: 72
@@ -40,8 +40,8 @@ collected:
   archived: false
   lines_of_code_estimate: 4505
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 677
-  pypi_downloads_30d: 50
+  pypi_downloads_180d: 531
+  pypi_downloads_30d: 23
   dependencies:
   - package: pySEAFOM
     dependency: matplotlib

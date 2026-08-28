@@ -27,8 +27,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:37:39+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:55:47+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 7
@@ -42,8 +42,8 @@ collected:
   archived: false
   lines_of_code_estimate: 22890
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 597
-  pypi_downloads_30d: 43
+  pypi_downloads_180d: 617
+  pypi_downloads_30d: 40
   dependencies:
   - package: dasexplorer
     dependency: das4whales

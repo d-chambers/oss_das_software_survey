@@ -204,6 +204,9 @@ pyfocs,calibration,True,curated
 pyfocs,io,True,curated
 pyfocs,processing,True,curated
 pyfocs,temperature-sensing,True,curated
+pyrocko,io,True,curated
+pyrocko,seismology,True,curated
+pyrocko,visualization,True,curated
 pyseafom,benchmarking,True,curated
 pyseafom,interrogator-evaluation,True,curated
 pyseafom,visualization,True,curated
@@ -227,6 +230,8 @@ silixa-dts-tools,io,True,curated
 silixa-dts-tools,temperature-sensing,True,curated
 simpledas,data-management,True,curated
 simpledas,io,True,curated
+simpledas-fork,data-management,True,curated
+simpledas-fork,io,True,curated
 spool-processing,data-management,True,curated
 spool-processing,pipelines,True,curated
 spool-processing,processing,True,curated

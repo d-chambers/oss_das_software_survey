@@ -28,8 +28,8 @@ curated:
     julia: []
   publications: []
 collected:
-  scanned_at: '2026-08-18T06:38:19+00:00'
-  snapshot: '2026-08-17'
+  scanned_at: '2026-08-28T12:56:24+00:00'
+  snapshot: '2026-08-28'
   visibility: public
   language: Python
   stars: 43
@@ -43,9 +43,9 @@ collected:
   archived: false
   lines_of_code_estimate: 16588
   loc_basis: language bytes / 32, notebooks excluded
-  pypi_downloads_180d: 2171
-  pypi_downloads_30d: 192
-  conda_downloads_total: 955
+  pypi_downloads_180d: 2226
+  pypi_downloads_30d: 219
+  conda_downloads_total: 985
   dependencies:
   - package: dtscalibration
     dependency: dask

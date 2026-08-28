@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="1680" height="720" viewBox="0 0 1680 720">
+  <title>How projects were selected</title>
+  <desc>Snapshot 2026-08-17, triage of 2026-08-28: 3,142 candidate repositories discovered, 349 reviewed by hand, 73 in scope. The 275 held back, by reason.</desc>
+
+  <rect x="0" y="0" width="1680" height="720" fill="#ffffff"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+
+    <!-- ================= the funnel ================= -->
+
+    <g font-size="104">
+      <text x="300"  y="150" fill="#2b2620">3,142</text>
+      <text x="840"  y="150" fill="#2b2620">349</text>
+      <text x="1380" y="150" fill="#c98500">73</text>
+    </g>
+
+    <g font-size="24" fill="#2b2620" letter-spacing="3.2">
+      <text x="301.6"  y="200">CANDIDATES</text>
+      <text x="841.6"  y="200">REVIEWED</text>
+      <text x="1381.6" y="200">IN SCOPE</text>
+    </g>
+
+    <g font-size="21" font-style="italic" fill="#7a7266">
+      <text x="300"  y="238">39 queries · 63 namespaces · 7 forges</text>
+      <text x="840"  y="238">82 catalogued · 267 triaged</text>
+      <text x="1380" y="238">Reusable, DAS-focused, public</text>
+    </g>
+
+    <g fill="#cbc3b3">
+      <path d="M 490,118 H 638" stroke="#cbc3b3" stroke-width="3" fill="none"/>
+      <path d="M 638,107 L 664,118 L 638,129 Z"/>
+      <path d="M 1030,118 H 1178" stroke="#cbc3b3" stroke-width="3" fill="none"/>
+      <path d="M 1178,107 L 1204,118 L 1178,129 Z"/>
+    </g>
+
+    <!-- ================= spine ================= -->
+    <path d="M 100,292 H 1580" stroke="#cbc3b3" stroke-width="3" fill="none"/>
+    <g fill="#2b2620">
+      <circle cx="300"  cy="292" r="7"/>
+      <circle cx="840"  cy="292" r="7"/>
+      <circle cx="1380" cy="292" r="7"/>
+    </g>
+
+    <!-- ================= why 275 are held back ================= -->
+
+    <text x="841.6" y="356" font-size="24" fill="#2b2620" letter-spacing="3.2">WHY 275 ARE HELD BACK</text>
+
+    <g font-size="52" fill="#4b4b50">
+      <text x="210"  y="446">163</text>
+      <text x="630"  y="446">39</text>
+      <text x="1050" y="446">24</text>
+      <text x="1470" y="446">18</text>
+      <text x="210"  y="576">10</text>
+      <text x="630"  y="576">10</text>
+      <text x="1050" y="576">7</text>
+      <text x="1470" y="576">4</text>
+    </g>
+
+    <g font-size="20" fill="#2b2620" letter-spacing="2.4">
+      <text x="211.2"  y="480">NOT REUSABLE</text>
+      <text x="631.2"  y="480">PAPER CODE</text>
+      <text x="1051.2" y="480">DUPLICATE</text>
+      <text x="1471.2" y="480">ACRONYM COLLISION</text>
+      <text x="211.2"  y="610">OTHER FIBER</text>
+      <text x="631.2"  y="610">NO PUBLIC SOURCE</text>
+      <text x="1051.2" y="610">TEACHING MATERIAL</text>
+      <text x="1471.2" y="610">GENERAL TOOLKIT</text>
+    </g>
+
+    <g font-size="19" font-style="italic" fill="#7a7266">
+      <text x="210"  y="510">One-off analysis code</text>
+      <text x="630"  y="510">Published alongside a paper</text>
+      <text x="1050" y="510">A mirror or fork already counted</text>
+      <text x="1470" y="510">A different “DAS” entirely</text>
+      <text x="210"  y="640">Temperature or strain</text>
+      <text x="630"  y="640">Private, deleted, or README only</text>
+      <text x="1050" y="640">Tutorials, workshops, link lists</text>
+      <text x="1470" y="640">Seismology tools that added DAS</text>
+    </g>
+
+    <!-- ================= caveat ================= -->
+    <text x="840" y="700" font-size="20" font-style="italic" fill="#a3825a">2,795 candidates are still unreviewed and one could not be measured — every count here is a floor.</text>
+
+  </g>
+</svg>
