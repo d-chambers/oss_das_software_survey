@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
-from oss_das.models import MetricObservation, ProjectRecord
+from oss_das.models import DasFocus, ProjectRecord
 
 
 def test_project_normalizes_and_sorts_capabilities() -> None:
@@ -43,20 +43,6 @@ def test_project_rejects_multiple_canonical_publications() -> None:
                 ],
             }
         )
-
-
-def test_metric_requires_value_or_missing_reason() -> None:
-    base = {
-        "project_id": "example",
-        "metric": "repo_stars",
-        "unit": "stars",
-        "source_url": "https://example.com",
-        "fetched_at": "2026-08-03T00:00:00+00:00",
-    }
-    assert MetricObservation(**base, value=0).value == 0
-    assert MetricObservation(**base, missing_reason="unavailable").value is None
-    with pytest.raises(ValidationError, match="exactly one"):
-        MetricObservation(**base)
 
 
 def _project(**overrides):
@@ -124,3 +110,64 @@ def test_owner_is_the_top_level_namespace_on_any_host() -> None:
     )
     nested = _project(repository="group/subgroup/tool", license_class="unlicensed")
     assert nested.owner == "group"
+
+
+def test_a_registry_only_project_has_no_repository_but_a_key() -> None:
+    project = ProjectRecord(
+        id="daspal",
+        name="DASPAL",
+        description="Processing and analysis library published only on PyPI.",
+        status="included",
+        decision_reason="Reusable; no public source repository located.",
+        primary_category="processing",
+        registries={"pypi": ["daspal"]},
+    )
+    assert project.repository is None
+    assert project.repository_url is None
+    assert project.forge_key is None
+    assert project.owner is None
+    assert project.key == "pypi/daspal"
+
+
+def test_repository_url_without_repository_is_rejected() -> None:
+    with pytest.raises(ValueError):
+        ProjectRecord(
+            id="x",
+            name="x",
+            description="d",
+            status="included",
+            decision_reason="r",
+            primary_category="c",
+            repository_url="https://github.com/a/b",
+        )
+
+
+def test_review_fields_default_and_sources_are_deduplicated() -> None:
+    project = ProjectRecord(
+        id="x",
+        name="x",
+        repository="a/b",
+        description="d",
+        status="included",
+        decision_reason="r",
+        primary_category="c",
+        sources=["github.com/a/b", "pypi/x", "github.com/a/b"],
+    )
+    assert project.das_focus is DasFocus.DAS_NATIVE
+    assert project.reviewed_at is None
+    assert project.sources == ["github.com/a/b", "pypi/x"]
+
+
+def test_registry_names_are_normalized_and_deduplicated() -> None:
+    project = _project(
+        registries={
+            "pypi": ["Foo_Bar", "foo-bar", "foo.bar"],
+            "conda": ["Conda-Forge/X", "conda-forge/x"],
+            "julia": ["A", "A"],
+        }
+    )
+    assert project.registries.pypi == ["foo-bar"]
+    assert project.registries.conda == ["conda-forge/x"]
+    assert project.registries.julia == ["A"]
+    with pytest.raises(ValueError, match="channel/name"):
+        _project(registries={"conda": ["x"]})

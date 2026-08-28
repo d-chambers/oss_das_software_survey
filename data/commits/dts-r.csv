@@ -1,127 +1,127 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-dts-r,watchlist,589bd247848229b2be5b2e8919855642c67f782c,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T16:09:01-05:00,2025-11-07T16:09:01-05:00,0,1,4,3,0,fix trim
-dts-r,watchlist,768a4774d784a14f834161aad2163d5749f62838,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:38:27-05:00,2025-11-07T15:38:27-05:00,0,1,8,1,0,trim options
-dts-r,watchlist,f35ecf0d4062bc52a47536e8977cddd00ea05b18,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:19:42-05:00,2025-11-07T15:19:42-05:00,0,1,1,2,0,clean up
-dts-r,watchlist,fd1580fb219e85ea24bc2f98d0541c31d4e0d3a1,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:16:22-05:00,2025-11-07T15:16:22-05:00,0,1,2,2,0,fix file names
-dts-r,watchlist,23641fdca786d7a6e2bd87764bf513e3c960779d,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:12:07-05:00,2025-11-07T15:12:07-05:00,0,1,4,3,0,clean-up t_dir
-dts-r,watchlist,d84de7bb200a9416210e5cee3d6585c5677f067d,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:07:24-05:00,2025-11-07T15:07:24-05:00,0,4,234,5,0,add new reader
-dts-r,watchlist,c9e662f2e1ebbb532ce92fa62a03c2b6fc6f5fb0,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T14:54:12-05:00,2025-11-07T14:54:12-05:00,0,1,3,6,0,remove aggregation option
-dts-r,watchlist,5432feb05fa9f287a7b91d673ac417d93da5cfdf,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T14:49:33-05:00,2025-11-07T14:49:33-05:00,0,7,509,11,0,variance calculation
-dts-r,watchlist,e5a55d152d84d32212cf3eb4e1f498159cd02cf2,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-05T14:00:40-05:00,2025-11-05T14:00:40-05:00,0,4,241,16,0,new duckdb export
-dts-r,watchlist,7dd54bc20687f6cc1edd025e2e10c6856161afc2,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-04T16:58:55-05:00,2025-11-04T16:58:55-05:00,0,1,30,28,0,use fread no time aggregation
-dts-r,watchlist,607884782cbc2267f559066f326568dcf9bc8d3e,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-04T16:31:02-05:00,2025-11-04T16:31:02-05:00,0,1,296,232,0,check ...
-dts-r,watchlist,16ed2314bbab12eb307a7eea2853b32e9b6bcc3f,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-04T14:58:46-05:00,2025-11-04T14:58:46-05:00,0,6,56,45,0,update to_duckdb
-dts-r,watchlist,5723481ab9a746eb28aa271c8efc625726207115,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T10:10:24-04:00,2025-10-20T10:10:24-04:00,0,1,2,2,0,fix typo
-dts-r,watchlist,f280ec61e410cda2464c96bbee1bd8a67de036b8,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T10:06:27-04:00,2025-10-20T10:06:27-04:00,0,1,2,2,0,fix typo
-dts-r,watchlist,dbfa594f50df7b8e7c4084896b488c0be24c2b19,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T10:00:48-04:00,2025-10-20T10:00:48-04:00,0,2,24,0,0,document
-dts-r,watchlist,1206e2d410297bd1c996416a95f6a4faef4b96dc,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T09:56:52-04:00,2025-10-20T09:56:52-04:00,0,1,48,0,0,add split_up_down
-dts-r,watchlist,9a75d02216dbdbdc4bb12a6c0651127af3b07a69,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:30:01-04:00,2025-10-10T10:30:01-04:00,0,1,1,2,0,fix model fit stats
-dts-r,watchlist,b5dae6302affe166e8387c696e83495bf18eed02,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:24:59-04:00,2025-10-10T10:24:59-04:00,0,1,6,1,0,additional model param
-dts-r,watchlist,981101396644b359044e995be77809535f8f8fcc,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:22:19-04:00,2025-10-10T10:22:19-04:00,0,1,1,1,0,mean of ssr
-dts-r,watchlist,0616d868429d2d969417531f84431b92f9c008cf,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:13:29-04:00,2025-10-10T10:13:29-04:00,0,1,1,1,0,add sum squared residuals
-dts-r,watchlist,b88bcf74733978c15ff2b112da8e4e84f27f81d2,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T17:02:54-04:00,2025-10-06T17:02:54-04:00,0,1,3,4,0,fix log average
-dts-r,watchlist,c4616f3b1266fcfdb4dea75c4edae1422ef7c734,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T16:55:55-04:00,2025-10-06T16:55:55-04:00,0,1,1,1,0,fix naming
-dts-r,watchlist,1402f3311593f4d3e2466d399907fbf53fbfa236,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T16:52:18-04:00,2025-10-06T16:52:18-04:00,0,1,5,1,0,fix naming
-dts-r,watchlist,9507415ece7d4a71d564a252f5a769daa121f12d,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T16:47:19-04:00,2025-10-06T16:47:19-04:00,0,2,3,5,0,average time instead of time interval
-dts-r,watchlist,d0fa9ea8030eeaac1170bd2641d9bc63908348c5,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T15:50:43-04:00,2025-10-06T15:50:43-04:00,0,1,21,25,0,fix problem with duplicate start times
-dts-r,watchlist,26681d6874d66c84afa9df56fe9b454fccea91a5,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T15:44:27-04:00,2025-10-06T15:44:27-04:00,0,1,3,0,0,testing
-dts-r,watchlist,fccf563d46f21af55bae8edcc82f08ca17eb09ff,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T10:46:17-04:00,2025-10-06T10:46:17-04:00,0,1,7,8,0,fix subsetting
-dts-r,watchlist,cff6b1e13e476b8f7829b5c65e466348b3040ca5,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T10:40:50-04:00,2025-10-06T10:40:50-04:00,0,1,20,3,0,add time type
-dts-r,watchlist,fa7c04a1ab371b421d3c954e2407e53403c1d92b,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-03T11:53:20-04:00,2025-10-03T11:53:20-04:00,0,1,1,1,0,fix parameter
-dts-r,watchlist,a0fe536979f88072b3b26a817d79a4972a8f029c,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-03T10:00:35-04:00,2025-10-03T10:00:35-04:00,0,1,2,2,0,fix dup time
-dts-r,watchlist,0b0feb0e7358e16bdf67d15825092c8de57bf447,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T22:08:57-04:00,2025-10-02T22:08:57-04:00,0,1,2,2,0,update group name
-dts-r,watchlist,025b3f94468076b18ffd5bda58e12774c806da7f,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T21:58:54-04:00,2025-10-02T21:58:54-04:00,0,3,18,6,0,fix documentation
-dts-r,watchlist,865465705cfb77c9bd1360552c4a0b6f7e19ac9b,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T21:55:27-04:00,2025-10-02T21:55:27-04:00,0,2,7,6,0,title option for plot
-dts-r,watchlist,799e23f020860eed1430475812c4177a6d081ff2,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T16:03:23-04:00,2025-10-02T16:03:23-04:00,0,1,3,1,0,fix params
-dts-r,watchlist,9c6b5d9de1dd9efcf67cf2940c35b0cbe5c3ab37,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T15:56:53-04:00,2025-10-02T15:56:53-04:00,0,2,3,2,0,fix documentation
-dts-r,watchlist,ff9c8e74f2bf68f8979a2d9e035fa9dddbc11e31,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T15:48:17-04:00,2025-10-02T15:48:17-04:00,0,9,118,7,0,fit_rlm
-dts-r,watchlist,477697412f2035b2db92e25bccb15c6111a09607,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T14:44:56-04:00,2025-10-02T14:44:56-04:00,0,1,95,22,0,log averaging
-dts-r,watchlist,efc22ddb99dfd44866155821a66fe33bdae624ce,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T11:01:56-04:00,2025-10-02T11:01:56-04:00,0,1,1,1,0,fix typo
-dts-r,watchlist,7635afa7be638ef9eb5bd13b4f44b1514754e158,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T10:59:32-04:00,2025-10-02T10:59:32-04:00,0,1,10,1,0,add reverse axis option
-dts-r,watchlist,36decc64045fc8119b6731ad3498f0c2a1b01d12,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T10:55:17-04:00,2025-10-02T10:55:17-04:00,0,1,2,2,0,adjust limits
-dts-r,watchlist,ff72a8c3a17a5514d00edf0c42debbb6b7a7ff6e,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:11:37-04:00,2025-10-01T19:11:37-04:00,0,1,1,1,0,fix typo
-dts-r,watchlist,15a79fd94fbddf06dda3b8cb7d746ca6416b8f59,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:09:23-04:00,2025-10-01T19:09:23-04:00,0,1,2,1,0,convert log axis to numeric
-dts-r,watchlist,65287eea7d15cf7d08a62583299efe9e13a05fac,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:05:19-04:00,2025-10-01T19:05:19-04:00,0,1,1,1,0,fix typo
-dts-r,watchlist,de76054fe05258ca97c806a5f9b7b4e6356c50e8,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:02:46-04:00,2025-10-01T19:02:46-04:00,0,1,2,2,0,add ggplot2
-dts-r,watchlist,9c6ee0a10bd94b9889f24fa3c4beee97f90e53b2,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:00:12-04:00,2025-10-01T19:00:12-04:00,0,1,13,1,0,plot log option
-dts-r,watchlist,932cbdaede30582bbe8005f0c6551e3d187c1f77,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:50:08-04:00,2025-10-01T18:50:08-04:00,0,1,2,2,0,fix error
-dts-r,watchlist,c34d0e498ba0a2a894aa97c48c2d9fdef7c12c8c,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:43:18-04:00,2025-10-01T18:43:18-04:00,0,1,1,1,0,correct typo
-dts-r,watchlist,d7c8516af8f3ccec048f7bde8a844af7b7a0594c,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:02:54-04:00,2025-10-01T18:02:54-04:00,0,5,8,17,0,select_time_ind
-dts-r,watchlist,73f798105c752ddbc089bf67ef3997dfe8ef822e,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:02:29-04:00,2025-10-01T18:02:29-04:00,0,2,25,2,0,add indices selection
-dts-r,watchlist,970de416fe1f36927f2c8aab5b0e2e6dc7648c28,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T17:48:03-04:00,2025-10-01T17:48:03-04:00,0,1,2,2,0,use rlm
-dts-r,watchlist,80773b6d3b198871d1b88e1abd6ef2e38361588b,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T16:43:41-04:00,2025-10-01T16:43:41-04:00,0,2,79,85,0,fix regression
-dts-r,watchlist,667610df168ed1172e969ec4da56106a40cf07b3,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T19:06:34-04:00,2025-09-30T19:06:34-04:00,0,1,5,0,0,calculate elapsed
-dts-r,watchlist,abbe8c09b59462e03f46bcdf7645bb8978f9bb19,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T19:00:00-04:00,2025-09-30T19:00:00-04:00,0,1,31,24,0,trace time subset
-dts-r,watchlist,fcf4ea5881d0155cdc94cad26a5dc13729b1623d,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T16:28:50-04:00,2025-09-30T16:28:50-04:00,0,5,32,45,0,set times fix
-dts-r,watchlist,d7b840d2182c26a3318b2a709fd53c16bf57d4c3,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T14:21:52-04:00,2025-09-30T14:21:52-04:00,0,7,91,10,0,split_distance_type
-dts-r,watchlist,52e53605f6c9969a2ae48c963a26c87ffb160936,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T14:01:17-04:00,2025-09-30T14:01:17-04:00,0,1,4,1,0,set class for set_values_for_distance
-dts-r,watchlist,7404cc2312d993c84ad6b1ca87be8093131c504f,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T13:15:27-04:00,2025-09-30T13:15:27-04:00,0,1,1,0,0,print file name
-dts-r,watchlist,ececba6508a1944c625167a92578800d32c066ff,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T12:09:36-04:00,2025-09-30T12:09:36-04:00,0,1,12,2,0,trim values
-dts-r,watchlist,a203d929043f1709e3a80d192b0437823da88bdd,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T12:04:49-04:00,2025-09-30T12:04:49-04:00,0,1,2,3,0,fix plot times
-dts-r,watchlist,3526ca396bd7148e2bb8cbd14582ae3a90f29977,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:56:50-04:00,2025-09-30T11:56:50-04:00,0,1,2,2,0,fix select error
-dts-r,watchlist,6719f32b6b20116cbbd8efde010bc67d1e5f0ffb,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:52:10-04:00,2025-09-30T11:52:10-04:00,0,1,1,1,0,fix subset
-dts-r,watchlist,5b0852bd91572ed2de5e8eaecde02c0475c64a11,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:48:19-04:00,2025-09-30T11:48:19-04:00,0,3,10,10,0,update parameters
-dts-r,watchlist,6599f6cfe68eb9f6e0483b818ae9c9d268c226f9,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:44:38-04:00,2025-09-30T11:44:38-04:00,0,3,20,2,0,plot_times
-dts-r,watchlist,f085819d1eeb5fef7323b364b2841619b756ab78,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:40:36-04:00,2025-09-30T11:40:36-04:00,0,1,22,1,0,plot_times
-dts-r,watchlist,d1610d5b8ce9c9bfd08e50c791c2db97947274ab,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:30:55-04:00,2025-09-30T11:30:55-04:00,0,1,6,4,0,plotly plotting
-dts-r,watchlist,c7779047dced8032674c65119cd9bcbe9648ca50,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:26:28-04:00,2025-09-30T11:26:28-04:00,0,1,1,1,0,plot
-dts-r,watchlist,3c0ebd1f3f9f977fcce7e0f9e9289c18fddb0ff3,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:20:29-04:00,2025-09-30T11:20:29-04:00,0,1,6,3,0,plotting
-dts-r,watchlist,4ceba881dbc2a6b9f5655db277d945b7daf5b5f5,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:06:06-04:00,2025-09-30T11:06:06-04:00,0,15,490,97,0,select
-dts-r,watchlist,8523c5f2871d05bb6c0762fb670907acd6ded098,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T16:23:05-04:00,2025-09-11T16:23:05-04:00,0,2,3,2,0,fix load_duckdb
-dts-r,watchlist,1b7cd121b7731f97193d9fcf56b3ebfa93b50503,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T13:28:08-04:00,2025-09-11T13:28:08-04:00,0,1,0,2,0,remove example
-dts-r,watchlist,456c1dcca7797d1f684c5173fa18c878dc207a59,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T13:26:57-04:00,2025-09-11T13:26:57-04:00,0,1,0,3,0,documentation
-dts-r,watchlist,8eef0e1d79dca2e67bd0853277c2ffa860c0d884,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T13:22:52-04:00,2025-09-11T13:22:52-04:00,0,78,386,285,0,update
-dts-r,watchlist,885e417c852f445e2789b92a397d1f2f5861e013,Jonathan Kennel,jkennel@users.noreply.github.com,2022-09-08T15:22:13-04:00,2022-09-08T15:22:13-04:00,1,,,,,Merge pull request #2 from mitchelljbrown/master
-dts-r,watchlist,2e1309aee4794a7faefa46973f46220dd745b9aa,Mitchell Brown,mitchbrownuw@gmail.com,2022-09-08T13:13:53-04:00,2022-09-08T13:13:53-04:00,0,1,4,2,0,Update fit_convolve.R
-dts-r,watchlist,63b1f0317618eeb633847789a974454967f2f325,jkennel,jkennel@uoguelph.ca,2022-04-08T16:41:05-04:00,2022-04-08T16:41:05-04:00,0,3,12,10,0,check bath and probe temperatures
-dts-r,watchlist,7ac86431ebd2f2922af2b94f3611f04288b313ab,jkennel,jkennel@uoguelph.ca,2022-03-30T19:39:06-04:00,2022-03-30T19:39:06-04:00,0,2,9,9,0,use hydrorecipes
-dts-r,watchlist,594a24f6ceb10543341a1409b725637a26da4b1c,jkennel,jkennel@uoguelph.ca,2022-03-30T19:12:59-04:00,2022-03-30T19:12:59-04:00,0,4,39,30,0,improve stability fit_convolve
-dts-r,watchlist,869e035422130cfca7753c8bee32aa57b2339417,jkennel,jkennel@uoguelph.ca,2022-03-02T16:20:50-05:00,2022-03-02T16:20:50-05:00,0,1,23,9,0,added raw data
-dts-r,watchlist,c2efe18ccd4b38ecdc095013e11e0bf46b380235,jkennel,jkennel@uoguelph.ca,2022-03-01T16:35:01-05:00,2022-03-01T16:35:01-05:00,0,5,112,97,0,updated fit_convolve
-dts-r,watchlist,8a19749c65a7c6e4c21a64e6eea75c9221a31b2a,jkennel,jkennel@uoguelph.ca,2022-03-01T10:00:18-05:00,2022-03-01T10:00:18-05:00,0,21,1058,15,0,add resample_distance
-dts-r,watchlist,dd879e271440f686d488fe1947e3dd8d40b9e18c,jkennel,jkennel@uoguelph.ca,2022-01-25T09:16:50-05:00,2022-01-25T09:16:50-05:00,0,9,176,109,0,manual setters
-dts-r,watchlist,ebea7cfbd47164662b148878eda1fd4ebf9f1c11,jkennel,jkennel@uoguelph.ca,2022-01-21T10:14:57-05:00,2022-01-21T10:14:57-05:00,0,1,2,2,0,adjust size of search strings
-dts-r,watchlist,b4c22713f07fb2ff82a07594e64d1544293456c6,jkennel,jkennel@uoguelph.ca,2022-01-21T10:07:26-05:00,2022-01-21T10:07:26-05:00,0,8,84,81,0,update reader for xt&ultima
-dts-r,watchlist,9af0475924a75075d845973c096a4203edc5be35,jkennel,jkennel@uoguelph.ca,2022-01-20T18:51:34-05:00,2022-01-20T18:51:34-05:00,0,5,132,84,0,reader update to handle xt and ultima
-dts-r,watchlist,450b3e784aa3ec8f31c1e6d3d167809fdf8375cc,jkennel,jkennel@uoguelph.ca,2022-01-19T15:28:32-05:00,2022-01-19T15:28:32-05:00,0,3,8,4,0,change defaults
-dts-r,watchlist,7b29bc4f3a227398528b9ab91663708edb7e24d1,jkennel,jkennel@uoguelph.ca,2022-01-19T13:10:29-05:00,2022-01-19T13:10:29-05:00,0,1,3,0,0,check input
-dts-r,watchlist,2cd15b5b384b7b858c7c584e2e9311222977a2c1,jkennel,jkennel@uoguelph.ca,2022-01-19T13:09:18-05:00,2022-01-19T13:09:18-05:00,0,8,58,30,0,better detection of heating
-dts-r,watchlist,2a6f96c1d3188341979f20ecc69e3c6515cf2ac7,jkennel,jkennel@uoguelph.ca,2022-01-07T16:25:54-05:00,2022-01-07T16:25:54-05:00,0,13,125,77,0,minor update
-dts-r,watchlist,9b8a988b11ec78e813a60a0146033ff857c05d8c,jkennel,jkennel@uoguelph.ca,2022-01-05T09:30:32-05:00,2022-01-05T09:30:32-05:00,0,8,164,11,0,minor update
-dts-r,watchlist,89457b008a886f0b69ebde68d546b565b466e67b,jkennel,jkennel@uoguelph.ca,2022-01-04T13:34:04-05:00,2022-01-04T13:34:04-05:00,0,19,832,77,0,updates to reader
-dts-r,watchlist,3d167c5b0ac1a767e3fcd0b9b485015eeaa337f3,jkennel,jkennel@uoguelph.ca,2021-11-19T13:14:47-05:00,2021-11-19T13:14:47-05:00,0,1,19,8,0,column names
-dts-r,watchlist,a04cfdafa717d4f30d8ad326cd127e6f002032e0,jkennel,jkennel@uoguelph.ca,2021-11-19T12:59:12-05:00,2021-11-19T12:59:12-05:00,0,13,370,3,0,new xml reader
-dts-r,watchlist,3edcb42a08a132d8a85fc683907866cf587a6a97,jkennel,jkennel@uoguelph.ca,2021-11-17T22:47:09-05:00,2021-11-17T22:47:09-05:00,0,2,123,81,0,windows temp file
-dts-r,watchlist,3e6c7762b23b130e2d14f5e6ed2f22c911223dbc,jkennel,jkennel@uoguelph.ca,2021-11-17T21:19:26-05:00,2021-11-17T21:19:26-05:00,0,1,1,1,0,change location
-dts-r,watchlist,3514734a0b44b5ece2617066cdba5ed39b9bb63b,jkennel,jkennel@uoguelph.ca,2021-11-17T21:18:04-05:00,2021-11-17T21:18:04-05:00,0,1,50,21,0,try to handle memory leak
-dts-r,watchlist,4aed674284d4e86b268b3ac0acf681f1b3d0958f,jkennel,jkennel@uoguelph.ca,2021-11-12T14:23:12-05:00,2021-11-12T14:23:12-05:00,0,32,362,188,0,clean-up
-dts-r,watchlist,5c1777008874f38159b5ebea40f75bc2566c4dca,jkennel,jkennel@uoguelph.ca,2021-09-01T11:17:46-04:00,2021-09-01T11:17:46-04:00,0,1,1,3,0,clean-up
-dts-r,watchlist,b4b9567ae10ebae6b4726f28d9db4aa02a0d1e32,jkennel,jkennel@uoguelph.ca,2021-09-01T11:17:20-04:00,2021-09-01T11:17:20-04:00,0,68,2856,495,0,large update
-dts-r,watchlist,be6aacad7d59c8735b32014e62a4504f21813ed0,jkennel,jkennel@uoguelph.ca,2021-02-03T08:53:57-05:00,2021-02-03T08:53:57-05:00,0,4,23,7,0,minor edits
-dts-r,watchlist,c3d25e4610682bccdbb831a0164342147d869196,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-09-02T12:48:12-04:00,2020-09-02T12:48:12-04:00,0,4,31,2,0,write dts to compressed csv
-dts-r,watchlist,8ed4449bd8825ddbbe2fc6e923a5585fac7e2416,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-09-02T11:43:40-04:00,2020-09-02T11:43:40-04:00,0,1,2,7,0,test change
-dts-r,watchlist,e0db375d1f3ab49a6a49dac802f67add8d894034,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-31T10:14:49-04:00,2020-08-31T10:14:49-04:00,0,4,31,12,0,text updates
-dts-r,watchlist,efbc61160d8bbf69d92442ae33d5e14ff3dc4068,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-31T09:11:27-04:00,2020-08-31T09:11:27-04:00,0,1,7,5,0,text edits
-dts-r,watchlist,47ddb3de7da0c6bb75ac0f0b0d965dde9f579a5b,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-31T09:04:44-04:00,2020-08-31T09:04:44-04:00,0,5,59,135,0,cleanup
-dts-r,watchlist,5538ca599fbd3a0fcf9b258f1ac82103b65d4ed2,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-30T19:31:37-04:00,2020-08-30T19:31:37-04:00,0,1,2,2,0,use remotes package
-dts-r,watchlist,13abee20c74dc8ae7c17c1fc24584f888e3196d4,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-30T19:29:10-04:00,2020-08-30T19:29:10-04:00,0,96,6224,65,0,update
-dts-r,watchlist,b2f0ee6c029bd3fad0bd23ecb05ee3afb1a644de,jkennel,jkennel@uoguelph.ca,2018-12-03T12:11:44-05:00,2018-12-03T12:11:44-05:00,0,1,1,1,0,matlab time fix
-dts-r,watchlist,05e3818b58472865e7cb94d19e6aae18d8c02b5b,jkennel,jkennel@uoguelph.ca,2018-12-03T12:02:58-05:00,2018-12-03T12:02:58-05:00,0,1,4,1,0,fix matlab time
-dts-r,watchlist,c8d506c8ab901d5d6e4340fc9665f8c63d69a834,jkennel,jkennel@uoguelph.ca,2018-12-03T11:45:21-05:00,2018-12-03T11:45:21-05:00,0,1,1,1,0,matlab date reference fix
-dts-r,watchlist,3b2413d3ef73e905b83e5d8ea06c7a5d9779c539,jkennel,jkennel@uoguelph.ca,2018-12-03T11:33:20-05:00,2018-12-03T11:33:20-05:00,0,5,64,6,0,date time fix
-dts-r,watchlist,5d707af110bceab15b4ccbe257ac78774b84623f,jkennel,jkennel@uoguelph.ca,2018-12-03T10:35:14-05:00,2018-12-03T10:35:14-05:00,0,1,4,0,0,zero numbers
-dts-r,watchlist,a42f6a163ebf047ab08c7cdf17b68838cbd059fb,jkennel,jkennel@uoguelph.ca,2018-12-03T10:14:16-05:00,2018-12-03T10:14:16-05:00,0,1,5,0,0,note to change dates
-dts-r,watchlist,d1d5c7c511cd1810a59a5030d9333eb12ccb3b24,jkennel,jkennel@uoguelph.ca,2018-07-30T14:55:14-04:00,2018-07-30T14:55:14-04:00,0,6,62,4,0,add matlab writer
-dts-r,watchlist,6b1451ce613d44857bc1090b33cc913d7534f97c,jkennel,jkennel@uoguelph.ca,2018-07-30T10:53:14-04:00,2018-07-30T10:53:14-04:00,0,13,379,296,0,parallel windows fix
-dts-r,watchlist,e40947e60099bc361a817609f0d408f90a5ed0ec,jkennel,jkennel@uoguelph.ca,2018-07-28T11:37:47-04:00,2018-07-28T11:37:47-04:00,0,9,165,43,0,working
-dts-r,watchlist,200de3dc8dccd3552cc6b0a99b4d070d59aaa720,jkennel,jkennel@uoguelph.ca,2018-07-27T08:20:34-04:00,2018-07-27T08:20:34-04:00,0,6,33,44,0,improved trimming
-dts-r,watchlist,644cf9fd73aa902c1eaa7ebbeecb2a2dee415511,jkennel,jkennel@uoguelph.ca,2018-07-26T22:33:46-04:00,2018-07-26T22:33:46-04:00,0,1,1,1,0,update repo location
-dts-r,watchlist,23e75f8f13ef193f20c0bc24d0dcaf38a2b29b59,jkennel,jkennel@uoguelph.ca,2018-07-26T22:12:44-04:00,2018-07-26T22:12:44-04:00,0,8,84,70,0,updates to reader
-dts-r,watchlist,9521438639fd1d005385e5c547d14ba8d1486565,jkennel,jkennel@uoguelph.ca,2018-07-26T16:22:51-04:00,2018-07-26T16:22:51-04:00,0,1,0,53,0,clean up
-dts-r,watchlist,c12f2fe2623e5642614dde6572ed1437d8631559,jkennel,jkennel@uoguelph.ca,2018-07-26T16:12:27-04:00,2018-07-26T16:12:27-04:00,0,2,3,4,0,remove anytime dependency
-dts-r,watchlist,c4662718bfbb7589a8d3b6fccdef8263393ab1c0,jkennel,jkennel@uoguelph.ca,2018-07-26T15:53:21-04:00,2018-07-26T15:53:21-04:00,0,8,217,31,0,requires testing on windows
-dts-r,watchlist,094bcf83984a0c773f6841a71dcbb030c79a41e2,jkennel,jkennel@uoguelph.ca,2018-07-26T11:44:29-04:00,2018-07-26T11:44:29-04:00,0,1,1,0,0,add blank space
-dts-r,watchlist,19da217eddbee97e7ac4976856a89fd56ad210d9,jkennel,jkennel@uoguelph.ca,2018-07-26T11:39:00-04:00,2018-07-26T11:39:00-04:00,0,1,8,1,0,update readme
-dts-r,watchlist,e8f93946abe445306fb72e3fa989e721ea29783f,jkennel,jkennel@uoguelph.ca,2018-07-26T11:34:40-04:00,2018-07-26T11:34:40-04:00,1,,,,,Merge branch 'master' of https://github.com/g360group/dts
-dts-r,watchlist,8fbae81ca02b606a9d7255b44d9a133b0de4b500,jkennel,jkennel@uoguelph.ca,2018-07-26T11:32:53-04:00,2018-07-26T11:32:53-04:00,0,10,239,0,0,initial commit to read dts xml files
-dts-r,watchlist,9cf4906747cd75157982008076e543bd696566a9,g360group,40066192+g360group@users.noreply.github.com,2018-07-26T11:30:01-04:00,2018-07-26T11:30:01-04:00,0,1,2,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+dts-r,589bd247848229b2be5b2e8919855642c67f782c,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T16:09:01-05:00,2025-11-07T16:09:01-05:00,0,1,4,3,0,fix trim
+dts-r,768a4774d784a14f834161aad2163d5749f62838,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:38:27-05:00,2025-11-07T15:38:27-05:00,0,1,8,1,0,trim options
+dts-r,f35ecf0d4062bc52a47536e8977cddd00ea05b18,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:19:42-05:00,2025-11-07T15:19:42-05:00,0,1,1,2,0,clean up
+dts-r,fd1580fb219e85ea24bc2f98d0541c31d4e0d3a1,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:16:22-05:00,2025-11-07T15:16:22-05:00,0,1,2,2,0,fix file names
+dts-r,23641fdca786d7a6e2bd87764bf513e3c960779d,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:12:07-05:00,2025-11-07T15:12:07-05:00,0,1,4,3,0,clean-up t_dir
+dts-r,d84de7bb200a9416210e5cee3d6585c5677f067d,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T15:07:24-05:00,2025-11-07T15:07:24-05:00,0,4,234,5,0,add new reader
+dts-r,c9e662f2e1ebbb532ce92fa62a03c2b6fc6f5fb0,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T14:54:12-05:00,2025-11-07T14:54:12-05:00,0,1,3,6,0,remove aggregation option
+dts-r,5432feb05fa9f287a7b91d673ac417d93da5cfdf,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-07T14:49:33-05:00,2025-11-07T14:49:33-05:00,0,7,509,11,0,variance calculation
+dts-r,e5a55d152d84d32212cf3eb4e1f498159cd02cf2,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-05T14:00:40-05:00,2025-11-05T14:00:40-05:00,0,4,241,16,0,new duckdb export
+dts-r,7dd54bc20687f6cc1edd025e2e10c6856161afc2,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-04T16:58:55-05:00,2025-11-04T16:58:55-05:00,0,1,30,28,0,use fread no time aggregation
+dts-r,607884782cbc2267f559066f326568dcf9bc8d3e,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-04T16:31:02-05:00,2025-11-04T16:31:02-05:00,0,1,296,232,0,check ...
+dts-r,16ed2314bbab12eb307a7eea2853b32e9b6bcc3f,Jonathan Kennel,jkennel@uoguelph.ca,2025-11-04T14:58:46-05:00,2025-11-04T14:58:46-05:00,0,6,56,45,0,update to_duckdb
+dts-r,5723481ab9a746eb28aa271c8efc625726207115,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T10:10:24-04:00,2025-10-20T10:10:24-04:00,0,1,2,2,0,fix typo
+dts-r,f280ec61e410cda2464c96bbee1bd8a67de036b8,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T10:06:27-04:00,2025-10-20T10:06:27-04:00,0,1,2,2,0,fix typo
+dts-r,dbfa594f50df7b8e7c4084896b488c0be24c2b19,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T10:00:48-04:00,2025-10-20T10:00:48-04:00,0,2,24,0,0,document
+dts-r,1206e2d410297bd1c996416a95f6a4faef4b96dc,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-20T09:56:52-04:00,2025-10-20T09:56:52-04:00,0,1,48,0,0,add split_up_down
+dts-r,9a75d02216dbdbdc4bb12a6c0651127af3b07a69,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:30:01-04:00,2025-10-10T10:30:01-04:00,0,1,1,2,0,fix model fit stats
+dts-r,b5dae6302affe166e8387c696e83495bf18eed02,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:24:59-04:00,2025-10-10T10:24:59-04:00,0,1,6,1,0,additional model param
+dts-r,981101396644b359044e995be77809535f8f8fcc,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:22:19-04:00,2025-10-10T10:22:19-04:00,0,1,1,1,0,mean of ssr
+dts-r,0616d868429d2d969417531f84431b92f9c008cf,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-10T10:13:29-04:00,2025-10-10T10:13:29-04:00,0,1,1,1,0,add sum squared residuals
+dts-r,b88bcf74733978c15ff2b112da8e4e84f27f81d2,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T17:02:54-04:00,2025-10-06T17:02:54-04:00,0,1,3,4,0,fix log average
+dts-r,c4616f3b1266fcfdb4dea75c4edae1422ef7c734,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T16:55:55-04:00,2025-10-06T16:55:55-04:00,0,1,1,1,0,fix naming
+dts-r,1402f3311593f4d3e2466d399907fbf53fbfa236,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T16:52:18-04:00,2025-10-06T16:52:18-04:00,0,1,5,1,0,fix naming
+dts-r,9507415ece7d4a71d564a252f5a769daa121f12d,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T16:47:19-04:00,2025-10-06T16:47:19-04:00,0,2,3,5,0,average time instead of time interval
+dts-r,d0fa9ea8030eeaac1170bd2641d9bc63908348c5,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T15:50:43-04:00,2025-10-06T15:50:43-04:00,0,1,21,25,0,fix problem with duplicate start times
+dts-r,26681d6874d66c84afa9df56fe9b454fccea91a5,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T15:44:27-04:00,2025-10-06T15:44:27-04:00,0,1,3,0,0,testing
+dts-r,fccf563d46f21af55bae8edcc82f08ca17eb09ff,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T10:46:17-04:00,2025-10-06T10:46:17-04:00,0,1,7,8,0,fix subsetting
+dts-r,cff6b1e13e476b8f7829b5c65e466348b3040ca5,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-06T10:40:50-04:00,2025-10-06T10:40:50-04:00,0,1,20,3,0,add time type
+dts-r,fa7c04a1ab371b421d3c954e2407e53403c1d92b,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-03T11:53:20-04:00,2025-10-03T11:53:20-04:00,0,1,1,1,0,fix parameter
+dts-r,a0fe536979f88072b3b26a817d79a4972a8f029c,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-03T10:00:35-04:00,2025-10-03T10:00:35-04:00,0,1,2,2,0,fix dup time
+dts-r,0b0feb0e7358e16bdf67d15825092c8de57bf447,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T22:08:57-04:00,2025-10-02T22:08:57-04:00,0,1,2,2,0,update group name
+dts-r,025b3f94468076b18ffd5bda58e12774c806da7f,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T21:58:54-04:00,2025-10-02T21:58:54-04:00,0,3,18,6,0,fix documentation
+dts-r,865465705cfb77c9bd1360552c4a0b6f7e19ac9b,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T21:55:27-04:00,2025-10-02T21:55:27-04:00,0,2,7,6,0,title option for plot
+dts-r,799e23f020860eed1430475812c4177a6d081ff2,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T16:03:23-04:00,2025-10-02T16:03:23-04:00,0,1,3,1,0,fix params
+dts-r,9c6b5d9de1dd9efcf67cf2940c35b0cbe5c3ab37,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T15:56:53-04:00,2025-10-02T15:56:53-04:00,0,2,3,2,0,fix documentation
+dts-r,ff9c8e74f2bf68f8979a2d9e035fa9dddbc11e31,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T15:48:17-04:00,2025-10-02T15:48:17-04:00,0,9,118,7,0,fit_rlm
+dts-r,477697412f2035b2db92e25bccb15c6111a09607,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T14:44:56-04:00,2025-10-02T14:44:56-04:00,0,1,95,22,0,log averaging
+dts-r,efc22ddb99dfd44866155821a66fe33bdae624ce,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T11:01:56-04:00,2025-10-02T11:01:56-04:00,0,1,1,1,0,fix typo
+dts-r,7635afa7be638ef9eb5bd13b4f44b1514754e158,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T10:59:32-04:00,2025-10-02T10:59:32-04:00,0,1,10,1,0,add reverse axis option
+dts-r,36decc64045fc8119b6731ad3498f0c2a1b01d12,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-02T10:55:17-04:00,2025-10-02T10:55:17-04:00,0,1,2,2,0,adjust limits
+dts-r,ff72a8c3a17a5514d00edf0c42debbb6b7a7ff6e,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:11:37-04:00,2025-10-01T19:11:37-04:00,0,1,1,1,0,fix typo
+dts-r,15a79fd94fbddf06dda3b8cb7d746ca6416b8f59,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:09:23-04:00,2025-10-01T19:09:23-04:00,0,1,2,1,0,convert log axis to numeric
+dts-r,65287eea7d15cf7d08a62583299efe9e13a05fac,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:05:19-04:00,2025-10-01T19:05:19-04:00,0,1,1,1,0,fix typo
+dts-r,de76054fe05258ca97c806a5f9b7b4e6356c50e8,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:02:46-04:00,2025-10-01T19:02:46-04:00,0,1,2,2,0,add ggplot2
+dts-r,9c6ee0a10bd94b9889f24fa3c4beee97f90e53b2,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T19:00:12-04:00,2025-10-01T19:00:12-04:00,0,1,13,1,0,plot log option
+dts-r,932cbdaede30582bbe8005f0c6551e3d187c1f77,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:50:08-04:00,2025-10-01T18:50:08-04:00,0,1,2,2,0,fix error
+dts-r,c34d0e498ba0a2a894aa97c48c2d9fdef7c12c8c,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:43:18-04:00,2025-10-01T18:43:18-04:00,0,1,1,1,0,correct typo
+dts-r,d7c8516af8f3ccec048f7bde8a844af7b7a0594c,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:02:54-04:00,2025-10-01T18:02:54-04:00,0,5,8,17,0,select_time_ind
+dts-r,73f798105c752ddbc089bf67ef3997dfe8ef822e,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T18:02:29-04:00,2025-10-01T18:02:29-04:00,0,2,25,2,0,add indices selection
+dts-r,970de416fe1f36927f2c8aab5b0e2e6dc7648c28,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T17:48:03-04:00,2025-10-01T17:48:03-04:00,0,1,2,2,0,use rlm
+dts-r,80773b6d3b198871d1b88e1abd6ef2e38361588b,Jonathan Kennel,jkennel@uoguelph.ca,2025-10-01T16:43:41-04:00,2025-10-01T16:43:41-04:00,0,2,79,85,0,fix regression
+dts-r,667610df168ed1172e969ec4da56106a40cf07b3,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T19:06:34-04:00,2025-09-30T19:06:34-04:00,0,1,5,0,0,calculate elapsed
+dts-r,abbe8c09b59462e03f46bcdf7645bb8978f9bb19,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T19:00:00-04:00,2025-09-30T19:00:00-04:00,0,1,31,24,0,trace time subset
+dts-r,fcf4ea5881d0155cdc94cad26a5dc13729b1623d,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T16:28:50-04:00,2025-09-30T16:28:50-04:00,0,5,32,45,0,set times fix
+dts-r,d7b840d2182c26a3318b2a709fd53c16bf57d4c3,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T14:21:52-04:00,2025-09-30T14:21:52-04:00,0,7,91,10,0,split_distance_type
+dts-r,52e53605f6c9969a2ae48c963a26c87ffb160936,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T14:01:17-04:00,2025-09-30T14:01:17-04:00,0,1,4,1,0,set class for set_values_for_distance
+dts-r,7404cc2312d993c84ad6b1ca87be8093131c504f,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T13:15:27-04:00,2025-09-30T13:15:27-04:00,0,1,1,0,0,print file name
+dts-r,ececba6508a1944c625167a92578800d32c066ff,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T12:09:36-04:00,2025-09-30T12:09:36-04:00,0,1,12,2,0,trim values
+dts-r,a203d929043f1709e3a80d192b0437823da88bdd,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T12:04:49-04:00,2025-09-30T12:04:49-04:00,0,1,2,3,0,fix plot times
+dts-r,3526ca396bd7148e2bb8cbd14582ae3a90f29977,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:56:50-04:00,2025-09-30T11:56:50-04:00,0,1,2,2,0,fix select error
+dts-r,6719f32b6b20116cbbd8efde010bc67d1e5f0ffb,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:52:10-04:00,2025-09-30T11:52:10-04:00,0,1,1,1,0,fix subset
+dts-r,5b0852bd91572ed2de5e8eaecde02c0475c64a11,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:48:19-04:00,2025-09-30T11:48:19-04:00,0,3,10,10,0,update parameters
+dts-r,6599f6cfe68eb9f6e0483b818ae9c9d268c226f9,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:44:38-04:00,2025-09-30T11:44:38-04:00,0,3,20,2,0,plot_times
+dts-r,f085819d1eeb5fef7323b364b2841619b756ab78,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:40:36-04:00,2025-09-30T11:40:36-04:00,0,1,22,1,0,plot_times
+dts-r,d1610d5b8ce9c9bfd08e50c791c2db97947274ab,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:30:55-04:00,2025-09-30T11:30:55-04:00,0,1,6,4,0,plotly plotting
+dts-r,c7779047dced8032674c65119cd9bcbe9648ca50,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:26:28-04:00,2025-09-30T11:26:28-04:00,0,1,1,1,0,plot
+dts-r,3c0ebd1f3f9f977fcce7e0f9e9289c18fddb0ff3,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:20:29-04:00,2025-09-30T11:20:29-04:00,0,1,6,3,0,plotting
+dts-r,4ceba881dbc2a6b9f5655db277d945b7daf5b5f5,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-30T11:06:06-04:00,2025-09-30T11:06:06-04:00,0,15,490,97,0,select
+dts-r,8523c5f2871d05bb6c0762fb670907acd6ded098,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T16:23:05-04:00,2025-09-11T16:23:05-04:00,0,2,3,2,0,fix load_duckdb
+dts-r,1b7cd121b7731f97193d9fcf56b3ebfa93b50503,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T13:28:08-04:00,2025-09-11T13:28:08-04:00,0,1,0,2,0,remove example
+dts-r,456c1dcca7797d1f684c5173fa18c878dc207a59,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T13:26:57-04:00,2025-09-11T13:26:57-04:00,0,1,0,3,0,documentation
+dts-r,8eef0e1d79dca2e67bd0853277c2ffa860c0d884,Jonathan Kennel,jkennel@uoguelph.ca,2025-09-11T13:22:52-04:00,2025-09-11T13:22:52-04:00,0,78,386,285,0,update
+dts-r,885e417c852f445e2789b92a397d1f2f5861e013,Jonathan Kennel,jkennel@users.noreply.github.com,2022-09-08T15:22:13-04:00,2022-09-08T15:22:13-04:00,1,,,,,Merge pull request #2 from mitchelljbrown/master
+dts-r,2e1309aee4794a7faefa46973f46220dd745b9aa,Mitchell Brown,mitchbrownuw@gmail.com,2022-09-08T13:13:53-04:00,2022-09-08T13:13:53-04:00,0,1,4,2,0,Update fit_convolve.R
+dts-r,63b1f0317618eeb633847789a974454967f2f325,jkennel,jkennel@uoguelph.ca,2022-04-08T16:41:05-04:00,2022-04-08T16:41:05-04:00,0,3,12,10,0,check bath and probe temperatures
+dts-r,7ac86431ebd2f2922af2b94f3611f04288b313ab,jkennel,jkennel@uoguelph.ca,2022-03-30T19:39:06-04:00,2022-03-30T19:39:06-04:00,0,2,9,9,0,use hydrorecipes
+dts-r,594a24f6ceb10543341a1409b725637a26da4b1c,jkennel,jkennel@uoguelph.ca,2022-03-30T19:12:59-04:00,2022-03-30T19:12:59-04:00,0,4,39,30,0,improve stability fit_convolve
+dts-r,869e035422130cfca7753c8bee32aa57b2339417,jkennel,jkennel@uoguelph.ca,2022-03-02T16:20:50-05:00,2022-03-02T16:20:50-05:00,0,1,23,9,0,added raw data
+dts-r,c2efe18ccd4b38ecdc095013e11e0bf46b380235,jkennel,jkennel@uoguelph.ca,2022-03-01T16:35:01-05:00,2022-03-01T16:35:01-05:00,0,5,112,97,0,updated fit_convolve
+dts-r,8a19749c65a7c6e4c21a64e6eea75c9221a31b2a,jkennel,jkennel@uoguelph.ca,2022-03-01T10:00:18-05:00,2022-03-01T10:00:18-05:00,0,21,1058,15,0,add resample_distance
+dts-r,dd879e271440f686d488fe1947e3dd8d40b9e18c,jkennel,jkennel@uoguelph.ca,2022-01-25T09:16:50-05:00,2022-01-25T09:16:50-05:00,0,9,176,109,0,manual setters
+dts-r,ebea7cfbd47164662b148878eda1fd4ebf9f1c11,jkennel,jkennel@uoguelph.ca,2022-01-21T10:14:57-05:00,2022-01-21T10:14:57-05:00,0,1,2,2,0,adjust size of search strings
+dts-r,b4c22713f07fb2ff82a07594e64d1544293456c6,jkennel,jkennel@uoguelph.ca,2022-01-21T10:07:26-05:00,2022-01-21T10:07:26-05:00,0,8,84,81,0,update reader for xt&ultima
+dts-r,9af0475924a75075d845973c096a4203edc5be35,jkennel,jkennel@uoguelph.ca,2022-01-20T18:51:34-05:00,2022-01-20T18:51:34-05:00,0,5,132,84,0,reader update to handle xt and ultima
+dts-r,450b3e784aa3ec8f31c1e6d3d167809fdf8375cc,jkennel,jkennel@uoguelph.ca,2022-01-19T15:28:32-05:00,2022-01-19T15:28:32-05:00,0,3,8,4,0,change defaults
+dts-r,7b29bc4f3a227398528b9ab91663708edb7e24d1,jkennel,jkennel@uoguelph.ca,2022-01-19T13:10:29-05:00,2022-01-19T13:10:29-05:00,0,1,3,0,0,check input
+dts-r,2cd15b5b384b7b858c7c584e2e9311222977a2c1,jkennel,jkennel@uoguelph.ca,2022-01-19T13:09:18-05:00,2022-01-19T13:09:18-05:00,0,8,58,30,0,better detection of heating
+dts-r,2a6f96c1d3188341979f20ecc69e3c6515cf2ac7,jkennel,jkennel@uoguelph.ca,2022-01-07T16:25:54-05:00,2022-01-07T16:25:54-05:00,0,13,125,77,0,minor update
+dts-r,9b8a988b11ec78e813a60a0146033ff857c05d8c,jkennel,jkennel@uoguelph.ca,2022-01-05T09:30:32-05:00,2022-01-05T09:30:32-05:00,0,8,164,11,0,minor update
+dts-r,89457b008a886f0b69ebde68d546b565b466e67b,jkennel,jkennel@uoguelph.ca,2022-01-04T13:34:04-05:00,2022-01-04T13:34:04-05:00,0,19,832,77,0,updates to reader
+dts-r,3d167c5b0ac1a767e3fcd0b9b485015eeaa337f3,jkennel,jkennel@uoguelph.ca,2021-11-19T13:14:47-05:00,2021-11-19T13:14:47-05:00,0,1,19,8,0,column names
+dts-r,a04cfdafa717d4f30d8ad326cd127e6f002032e0,jkennel,jkennel@uoguelph.ca,2021-11-19T12:59:12-05:00,2021-11-19T12:59:12-05:00,0,13,370,3,0,new xml reader
+dts-r,3edcb42a08a132d8a85fc683907866cf587a6a97,jkennel,jkennel@uoguelph.ca,2021-11-17T22:47:09-05:00,2021-11-17T22:47:09-05:00,0,2,123,81,0,windows temp file
+dts-r,3e6c7762b23b130e2d14f5e6ed2f22c911223dbc,jkennel,jkennel@uoguelph.ca,2021-11-17T21:19:26-05:00,2021-11-17T21:19:26-05:00,0,1,1,1,0,change location
+dts-r,3514734a0b44b5ece2617066cdba5ed39b9bb63b,jkennel,jkennel@uoguelph.ca,2021-11-17T21:18:04-05:00,2021-11-17T21:18:04-05:00,0,1,50,21,0,try to handle memory leak
+dts-r,4aed674284d4e86b268b3ac0acf681f1b3d0958f,jkennel,jkennel@uoguelph.ca,2021-11-12T14:23:12-05:00,2021-11-12T14:23:12-05:00,0,32,362,188,0,clean-up
+dts-r,5c1777008874f38159b5ebea40f75bc2566c4dca,jkennel,jkennel@uoguelph.ca,2021-09-01T11:17:46-04:00,2021-09-01T11:17:46-04:00,0,1,1,3,0,clean-up
+dts-r,b4b9567ae10ebae6b4726f28d9db4aa02a0d1e32,jkennel,jkennel@uoguelph.ca,2021-09-01T11:17:20-04:00,2021-09-01T11:17:20-04:00,0,68,2856,495,0,large update
+dts-r,be6aacad7d59c8735b32014e62a4504f21813ed0,jkennel,jkennel@uoguelph.ca,2021-02-03T08:53:57-05:00,2021-02-03T08:53:57-05:00,0,4,23,7,0,minor edits
+dts-r,c3d25e4610682bccdbb831a0164342147d869196,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-09-02T12:48:12-04:00,2020-09-02T12:48:12-04:00,0,4,31,2,0,write dts to compressed csv
+dts-r,8ed4449bd8825ddbbe2fc6e923a5585fac7e2416,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-09-02T11:43:40-04:00,2020-09-02T11:43:40-04:00,0,1,2,7,0,test change
+dts-r,e0db375d1f3ab49a6a49dac802f67add8d894034,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-31T10:14:49-04:00,2020-08-31T10:14:49-04:00,0,4,31,12,0,text updates
+dts-r,efbc61160d8bbf69d92442ae33d5e14ff3dc4068,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-31T09:11:27-04:00,2020-08-31T09:11:27-04:00,0,1,7,5,0,text edits
+dts-r,47ddb3de7da0c6bb75ac0f0b0d965dde9f579a5b,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-31T09:04:44-04:00,2020-08-31T09:04:44-04:00,0,5,59,135,0,cleanup
+dts-r,5538ca599fbd3a0fcf9b258f1ac82103b65d4ed2,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-30T19:31:37-04:00,2020-08-30T19:31:37-04:00,0,1,2,2,0,use remotes package
+dts-r,13abee20c74dc8ae7c17c1fc24584f888e3196d4,Jonathan Kennel,jonathankennel@pop-os.localdomain,2020-08-30T19:29:10-04:00,2020-08-30T19:29:10-04:00,0,96,6224,65,0,update
+dts-r,b2f0ee6c029bd3fad0bd23ecb05ee3afb1a644de,jkennel,jkennel@uoguelph.ca,2018-12-03T12:11:44-05:00,2018-12-03T12:11:44-05:00,0,1,1,1,0,matlab time fix
+dts-r,05e3818b58472865e7cb94d19e6aae18d8c02b5b,jkennel,jkennel@uoguelph.ca,2018-12-03T12:02:58-05:00,2018-12-03T12:02:58-05:00,0,1,4,1,0,fix matlab time
+dts-r,c8d506c8ab901d5d6e4340fc9665f8c63d69a834,jkennel,jkennel@uoguelph.ca,2018-12-03T11:45:21-05:00,2018-12-03T11:45:21-05:00,0,1,1,1,0,matlab date reference fix
+dts-r,3b2413d3ef73e905b83e5d8ea06c7a5d9779c539,jkennel,jkennel@uoguelph.ca,2018-12-03T11:33:20-05:00,2018-12-03T11:33:20-05:00,0,5,64,6,0,date time fix
+dts-r,5d707af110bceab15b4ccbe257ac78774b84623f,jkennel,jkennel@uoguelph.ca,2018-12-03T10:35:14-05:00,2018-12-03T10:35:14-05:00,0,1,4,0,0,zero numbers
+dts-r,a42f6a163ebf047ab08c7cdf17b68838cbd059fb,jkennel,jkennel@uoguelph.ca,2018-12-03T10:14:16-05:00,2018-12-03T10:14:16-05:00,0,1,5,0,0,note to change dates
+dts-r,d1d5c7c511cd1810a59a5030d9333eb12ccb3b24,jkennel,jkennel@uoguelph.ca,2018-07-30T14:55:14-04:00,2018-07-30T14:55:14-04:00,0,6,62,4,0,add matlab writer
+dts-r,6b1451ce613d44857bc1090b33cc913d7534f97c,jkennel,jkennel@uoguelph.ca,2018-07-30T10:53:14-04:00,2018-07-30T10:53:14-04:00,0,13,379,296,0,parallel windows fix
+dts-r,e40947e60099bc361a817609f0d408f90a5ed0ec,jkennel,jkennel@uoguelph.ca,2018-07-28T11:37:47-04:00,2018-07-28T11:37:47-04:00,0,9,165,43,0,working
+dts-r,200de3dc8dccd3552cc6b0a99b4d070d59aaa720,jkennel,jkennel@uoguelph.ca,2018-07-27T08:20:34-04:00,2018-07-27T08:20:34-04:00,0,6,33,44,0,improved trimming
+dts-r,644cf9fd73aa902c1eaa7ebbeecb2a2dee415511,jkennel,jkennel@uoguelph.ca,2018-07-26T22:33:46-04:00,2018-07-26T22:33:46-04:00,0,1,1,1,0,update repo location
+dts-r,23e75f8f13ef193f20c0bc24d0dcaf38a2b29b59,jkennel,jkennel@uoguelph.ca,2018-07-26T22:12:44-04:00,2018-07-26T22:12:44-04:00,0,8,84,70,0,updates to reader
+dts-r,9521438639fd1d005385e5c547d14ba8d1486565,jkennel,jkennel@uoguelph.ca,2018-07-26T16:22:51-04:00,2018-07-26T16:22:51-04:00,0,1,0,53,0,clean up
+dts-r,c12f2fe2623e5642614dde6572ed1437d8631559,jkennel,jkennel@uoguelph.ca,2018-07-26T16:12:27-04:00,2018-07-26T16:12:27-04:00,0,2,3,4,0,remove anytime dependency
+dts-r,c4662718bfbb7589a8d3b6fccdef8263393ab1c0,jkennel,jkennel@uoguelph.ca,2018-07-26T15:53:21-04:00,2018-07-26T15:53:21-04:00,0,8,217,31,0,requires testing on windows
+dts-r,094bcf83984a0c773f6841a71dcbb030c79a41e2,jkennel,jkennel@uoguelph.ca,2018-07-26T11:44:29-04:00,2018-07-26T11:44:29-04:00,0,1,1,0,0,add blank space
+dts-r,19da217eddbee97e7ac4976856a89fd56ad210d9,jkennel,jkennel@uoguelph.ca,2018-07-26T11:39:00-04:00,2018-07-26T11:39:00-04:00,0,1,8,1,0,update readme
+dts-r,e8f93946abe445306fb72e3fa989e721ea29783f,jkennel,jkennel@uoguelph.ca,2018-07-26T11:34:40-04:00,2018-07-26T11:34:40-04:00,1,,,,,Merge branch 'master' of https://github.com/g360group/dts
+dts-r,8fbae81ca02b606a9d7255b44d9a133b0de4b500,jkennel,jkennel@uoguelph.ca,2018-07-26T11:32:53-04:00,2018-07-26T11:32:53-04:00,0,10,239,0,0,initial commit to read dts xml files
+dts-r,9cf4906747cd75157982008076e543bd696566a9,g360group,40066192+g360group@users.noreply.github.com,2018-07-26T11:30:01-04:00,2018-07-26T11:30:01-04:00,0,1,2,0,0,Initial commit

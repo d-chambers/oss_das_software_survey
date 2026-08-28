@@ -9,6 +9,7 @@ import pytest
 
 from oss_das.figures import draw
 from oss_das.figures.data import BOT, unique_authors
+from oss_das.figures.records import frontmatter
 from oss_das.figures.render import RenderError, load_asset, write_figure
 
 
@@ -160,3 +161,55 @@ class TestPdfTextMode:
         outlined = self._pdf(tmp_path, "a")
         kept = self._pdf(tmp_path, "b", keep_text=True)
         assert outlined != kept
+
+
+class TestFrontmatter:
+    """Records are scraped text; the reader must survive what is in them."""
+
+    def write(self, tmp_path, name, text):
+        path = tmp_path / name
+        path.write_text(text, encoding="utf-8")
+        return path
+
+    def test_reads_a_plain_block(self, tmp_path):
+        p = self.write(tmp_path, "a.md", "---\nid: x\nn: 2\n---\nbody\n")
+        assert frontmatter(p) == {"id": "x", "n": 2}
+
+    def test_a_dashed_line_inside_a_quoted_value_does_not_truncate(self, tmp_path):
+        # Scraped descriptions contain "---"; splitting on the string anywhere
+        # cuts the block mid-value and the remainder is not valid YAML.
+        p = self.write(
+            tmp_path, "b.md", '---\nid: x\ndescription: "a --- b"\nn: 3\n---\nbody\n'
+        )
+        assert frontmatter(p) == {"id": "x", "description": "a --- b", "n": 3}
+
+    def test_body_delimiters_are_not_mistaken_for_the_block(self, tmp_path):
+        p = self.write(tmp_path, "c.md", "---\nid: x\n---\nprose\n---\nmore\n")
+        assert frontmatter(p) == {"id": "x"}
+
+    def test_a_file_with_no_frontmatter_is_empty_not_an_error(self, tmp_path):
+        assert frontmatter(self.write(tmp_path, "d.md", "just prose\n")) == {}
+
+    def test_an_unterminated_block_is_empty_not_a_crash(self, tmp_path):
+        assert frontmatter(self.write(tmp_path, "e.md", "---\nid: x\nno end\n")) == {}
+
+    def test_a_non_mapping_block_is_empty(self, tmp_path):
+        assert (
+            frontmatter(self.write(tmp_path, "f.md", "---\n- one\n- two\n---\n")) == {}
+        )
+
+    def test_malformed_yaml_names_the_file(self, tmp_path):
+        p = self.write(tmp_path, "g.md", '---\nid: "unclosed\n---\n')
+        with pytest.raises(ValueError, match=r"g\.md: frontmatter is not valid YAML"):
+            frontmatter(p)
+
+    def test_every_shipped_record_parses(self):
+        # A record the reader cannot open would silently drop out of a figure.
+        import pathlib
+
+        for directory in ("data/curated", "data/measured/git"):
+            root = pathlib.Path(directory)
+            if not root.is_dir():
+                continue
+            for path in root.glob("*.md"):
+                assert frontmatter(path), path

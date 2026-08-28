@@ -19,6 +19,24 @@ from oss_das.clients.base import JsonClient, NotFoundError
 REGISTRY_REPOSITORY = "JuliaRegistries/General"
 
 
+class JuliaRegistryFilesClient(JsonClient):
+    """Read the General registry's TOML files raw, without the GitHub API budget."""
+
+    def __init__(self, *, client: httpx.Client | None = None) -> None:
+        super().__init__(
+            base_url=f"https://raw.githubusercontent.com/{REGISTRY_REPOSITORY}/master",
+            headers={"User-Agent": "oss-das-research"},
+            client=client,
+        )
+
+    def registry_toml(self) -> str:
+        return self.get_response("/Registry.toml").text
+
+    def package_toml(self, path: str) -> str:
+        """``Package.toml`` for one registry path such as ``D/Dascore``."""
+        return self.get_response(f"/{path}/Package.toml").text
+
+
 class JuliaRegistryClient(JsonClient):
     """Read the General registry tree through GitHub's contents API."""
 

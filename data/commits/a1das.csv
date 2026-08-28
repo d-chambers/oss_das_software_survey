@@ -1,53 +1,53 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-a1das,watchlist,3f984ec12a7382bac57d45926014bbc57b5e8083,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:28:41+01:00,2023-12-18T16:28:41+01:00,0,1,1,1,0,Update README
-a1das,watchlist,5385cc8cc551e958846503f91c2151fd20e8cc3d,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:27:53+01:00,2023-12-18T16:27:53+01:00,0,1,1,38,0,Update README
-a1das,watchlist,7b19faacb7f9ce37f339f9dc1fd554c5dfe5f3da,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:26:13+01:00,2023-12-18T16:26:13+01:00,0,1,0,3,0,Delete README.BUILD
-a1das,watchlist,7c771f648ed1ce9af4f19f83004a08dd2c08cafc,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:26:04+01:00,2023-12-18T16:26:04+01:00,0,1,0,8,0,Delete configure_var.sh
-a1das,watchlist,bce27d27944402f6f624d1f5a9d6e24e2ccf7730,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:55+01:00,2023-12-18T16:25:55+01:00,0,1,0,17,0,Delete configure_var.py
-a1das,watchlist,baba29d63c8d3da2d1c3864401e803e88587d81f,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:46+01:00,2023-12-18T16:25:46+01:00,0,1,0,5,0,Delete Makefile.python
-a1das,watchlist,9e8222626b889b90ff631d8f7d60118c646eaee5,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:37+01:00,2023-12-18T16:25:37+01:00,0,1,0,34,0,Delete Makefile.mac.old
-a1das,watchlist,1d1c9f5568b2ccea554b3b05002ecdbf09761c7e,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:26+01:00,2023-12-18T16:25:26+01:00,0,1,0,33,0,Delete Makefile.mac
-a1das,watchlist,dc5c87af4396db745969f553190d03cb9a089f7b,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:17+01:00,2023-12-18T16:25:17+01:00,0,1,0,39,0,Delete Makefile.luke
-a1das,watchlist,d7adf489cd1b82d5f72eaf57ea4cb0e9f1b3467e,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:05+01:00,2023-12-18T16:25:05+01:00,0,1,0,44,0,Delete Makefile.linux
-a1das,watchlist,0eb3041a5e9bc6449869aec5d83e143e0e4e311c,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:56+01:00,2023-12-18T16:24:56+01:00,0,1,0,21,0,Delete Makefile.inc
-a1das,watchlist,9772ff90f0072feda607d8345fab02d98e4ac5b9,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:46+01:00,2023-12-18T16:24:46+01:00,0,1,0,12,0,Delete Makefile
-a1das,watchlist,954f57e9c301e472c053bf3c0e3ec2e0ba0812d6,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:36+01:00,2023-12-18T16:24:36+01:00,0,7,0,230,1,Delete test directory
-a1das,watchlist,f2012e7252a5d473d2c92682f1b74ca7689039ab,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:26+01:00,2023-12-18T16:24:26+01:00,0,7,0,2397,0,Delete example directory
-a1das,watchlist,fe1cf2e5dfbccad324d57e6137500050eea4be4b,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:15+01:00,2023-12-18T16:24:15+01:00,0,11,0,16948,0,Delete documentation directory
-a1das,watchlist,9f3d8f23922c51f3797cfea32aaad82b24309c17,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:04+01:00,2023-12-18T16:24:04+01:00,0,19,0,5520,6,Delete a1das directory
-a1das,watchlist,43dfdab22f47ffc44cfc9d07b16d87f0a9017bf1,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:23:53+01:00,2023-12-18T16:23:53+01:00,0,10,0,2505,0,Delete A1-XCORPY directory
-a1das,watchlist,95ec56bf5eafa60d6f1cbe1ccd41a763e21e0c70,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:23:44+01:00,2023-12-18T16:23:44+01:00,0,2,0,507,0,Delete A1-SOSFILT directory
-a1das,watchlist,01133bf4e0aa01a03100b5c4e17a253a9d245874,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-06-07T18:17:12+02:00,2022-06-07T18:17:12+02:00,0,12,1467,397,0,update
-a1das,watchlist,f84e3184d12f8b795098a67b2a8fa8a1433a2c39,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-05-25T16:02:14+02:00,2022-05-25T16:02:14+02:00,0,9,2453,2003,0,maj
-a1das,watchlist,24f9d153c491b7a325135d3487957f9569098a18,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-03-15T11:47:17+01:00,2022-03-15T11:47:17+01:00,0,8,115,22,0,several updates and bug fixes
-a1das,watchlist,725bf7499f763563f305074a55a18d5002a71d8f,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-03-03T16:26:38+01:00,2022-03-03T16:26:38+01:00,0,3,20,17,0,maj
-a1das,watchlist,ed3830bff8f8748515c8da7cc408b1184f004f32,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-02-14T10:43:02+01:00,2022-02-14T10:43:02+01:00,0,6,8221,0,0,maj doc
-a1das,watchlist,7254d73da7fa1b6223770b74fa814f8bdff63c62,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-02-14T10:41:41+01:00,2022-02-14T10:41:41+01:00,0,1,0,88,0,major update
-a1das,watchlist,8ba4f6c106a90871b772d672381a4992f51e2284,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-02-14T10:41:07+01:00,2022-02-14T10:41:07+01:00,0,18,2169,1462,0,major update
-a1das,watchlist,1706b7c3f46199b3cf69546e0289f1df5e7c2fb4,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-09T15:41:03+01:00,2021-12-09T15:41:03+01:00,0,1,5,4,0,change 1 into kind=1 integer parameter
-a1das,watchlist,3508c91bdec16efa55e5a62c306e46757cef7e48,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-08T11:20:12+01:00,2021-12-08T11:20:12+01:00,0,2,3,3,0,maj
-a1das,watchlist,fcc828e6a942d70b6fdbf585a859ad5f82090398,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-08T08:46:24+01:00,2021-12-08T08:46:24+01:00,0,2,2,3,0,maj
-a1das,watchlist,a0b49e43ae9dc7456c3695474201f78089adebd8,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:39:25+01:00,2021-12-07T17:39:25+01:00,0,2,0,20,1,maj
-a1das,watchlist,b1108e6a849fd883c4ca1a7f26db5dbeaec665b6,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:38:12+01:00,2021-12-07T17:38:12+01:00,0,14,0,97,11,maj
-a1das,watchlist,328fc0d4427181764da06f9f48128e6c237e1fda,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-07T17:36:20+01:00,2021-12-07T17:36:20+01:00,0,1,0,356,0,Delete xcorr.f90.new
-a1das,watchlist,6731c4ecf445d2129c388b46f0a106844bbf512d,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-07T17:36:07+01:00,2021-12-07T17:36:07+01:00,0,1,0,416,0,Delete xcorr-new.f90
-a1das,watchlist,ccf92373455a798e18da3784b4c894952d984dbd,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-07T17:35:54+01:00,2021-12-07T17:35:54+01:00,0,1,0,254,0,Delete a1xcorPy.f90.new
-a1das,watchlist,045b1e4a50a08cf19e09f03ae398a1205f78cd4c,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:34:45+01:00,2021-12-07T17:34:45+01:00,0,2,25,0,0,maj
-a1das,watchlist,5e0aede8cedf2eb4a38522bd405f8e3eeab6e9fa,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:33:19+01:00,2021-12-07T17:33:19+01:00,0,40,4273,0,12,added binary build
-a1das,watchlist,c5b164f1d45f1ec29944f34231554d9df4769bfa,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:28:49+01:00,2021-12-07T17:28:49+01:00,0,3,49,18,0,maj chenge in header
-a1das,watchlist,a8ae6b0d64d3e12d1bfc3e53dc51a8660d70f4d2,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T14:10:34+01:00,2021-12-06T14:10:34+01:00,0,1,1,1,0,maj
-a1das,watchlist,71487ebc54523f5b1c7451ce23fb332a225266e0,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T14:03:56+01:00,2021-12-06T14:03:56+01:00,0,3,0,0,3,maj
-a1das,watchlist,90d1b053b295c0d8c4f309f9d4fd0c2d7e825cf7,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T13:23:27+01:00,2021-12-06T13:23:27+01:00,0,1,12,5,0,maj
-a1das,watchlist,77dbac7d3fa3a85f6cb0f413f857a92bd8e71b8b,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T12:22:00+01:00,2021-12-06T12:22:00+01:00,0,3,0,0,3,initial commit
-a1das,watchlist,0c7b3367a6bcad67859bf976cb992c571df69914,coutanto,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T12:14:23+01:00,2021-12-06T12:14:23+01:00,0,33,14713,0,4,initial commit
-a1das,watchlist,7d6a2c4a09deb082e0f376c9289f96ba68e82c23,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:02:02+01:00,2021-12-06T11:02:02+01:00,0,1,0,462,0,Delete sosfilteringOMP.f90
-a1das,watchlist,b0c0e14047eb9c5f5c13190535fd46ac00bc305d,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:53+01:00,2021-12-06T11:01:53+01:00,0,1,0,52,0,Delete sosfilter.py
-a1das,watchlist,06cce7edd6fedba1e51a686968d8979276e99e4a,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:43+01:00,2021-12-06T11:01:43+01:00,0,1,0,0,1,Delete example.pdf
-a1das,watchlist,a3c5d9ea9eaa7fa3fe7328507acb789ca224d324,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:30+01:00,2021-12-06T11:01:30+01:00,0,1,0,1137,0,Delete a1das.py
-a1das,watchlist,77f9a97084838b02d81287fbb96be8e878bdad9e,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:19+01:00,2021-12-06T11:01:19+01:00,0,1,0,22,0,Delete README
-a1das,watchlist,b2051779cc2dc91912531bb44f11d36d73bad69f,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T13:59:59+01:00,2021-01-13T13:59:59+01:00,0,1,0,2,0,Update a1das.py
-a1das,watchlist,347a1dc987e23c7da3eeabb96b036a027c82f430,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T13:56:15+01:00,2021-01-13T13:56:15+01:00,0,1,0,0,1,Add files via upload
-a1das,watchlist,0a3a69d12e0ca10cf8651bcaa8e5450636a0d2bf,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T10:08:52+01:00,2021-01-13T10:08:52+01:00,0,1,21,10,0,1.1.4 bug corrected
-a1das,watchlist,61c9aa00b56a7232164418d86b60ec1d0ea3b854,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T10:05:40+01:00,2021-01-13T10:05:40+01:00,0,1,1,1,0,Update README
-a1das,watchlist,703b8a2591217bc2d2a1c7948ef7a61ff4231c0d,coutanto,olivier.coutant@univ-grenoble-alpes.fr,2020-06-26T18:12:32+02:00,2020-06-26T18:12:32+02:00,0,1,22,0,0,insertion README
-a1das,watchlist,469e047ca421d2d61d168627c03e4346345f1a9b,coutanto,olivier.coutant@univ-grenoble-alpes.fr,2020-06-26T17:56:17+02:00,2020-06-26T17:56:17+02:00,0,3,1642,0,0,first commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+a1das,3f984ec12a7382bac57d45926014bbc57b5e8083,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:28:41+01:00,2023-12-18T16:28:41+01:00,0,1,1,1,0,Update README
+a1das,5385cc8cc551e958846503f91c2151fd20e8cc3d,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:27:53+01:00,2023-12-18T16:27:53+01:00,0,1,1,38,0,Update README
+a1das,7b19faacb7f9ce37f339f9dc1fd554c5dfe5f3da,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:26:13+01:00,2023-12-18T16:26:13+01:00,0,1,0,3,0,Delete README.BUILD
+a1das,7c771f648ed1ce9af4f19f83004a08dd2c08cafc,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:26:04+01:00,2023-12-18T16:26:04+01:00,0,1,0,8,0,Delete configure_var.sh
+a1das,bce27d27944402f6f624d1f5a9d6e24e2ccf7730,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:55+01:00,2023-12-18T16:25:55+01:00,0,1,0,17,0,Delete configure_var.py
+a1das,baba29d63c8d3da2d1c3864401e803e88587d81f,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:46+01:00,2023-12-18T16:25:46+01:00,0,1,0,5,0,Delete Makefile.python
+a1das,9e8222626b889b90ff631d8f7d60118c646eaee5,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:37+01:00,2023-12-18T16:25:37+01:00,0,1,0,34,0,Delete Makefile.mac.old
+a1das,1d1c9f5568b2ccea554b3b05002ecdbf09761c7e,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:26+01:00,2023-12-18T16:25:26+01:00,0,1,0,33,0,Delete Makefile.mac
+a1das,dc5c87af4396db745969f553190d03cb9a089f7b,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:17+01:00,2023-12-18T16:25:17+01:00,0,1,0,39,0,Delete Makefile.luke
+a1das,d7adf489cd1b82d5f72eaf57ea4cb0e9f1b3467e,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:25:05+01:00,2023-12-18T16:25:05+01:00,0,1,0,44,0,Delete Makefile.linux
+a1das,0eb3041a5e9bc6449869aec5d83e143e0e4e311c,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:56+01:00,2023-12-18T16:24:56+01:00,0,1,0,21,0,Delete Makefile.inc
+a1das,9772ff90f0072feda607d8345fab02d98e4ac5b9,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:46+01:00,2023-12-18T16:24:46+01:00,0,1,0,12,0,Delete Makefile
+a1das,954f57e9c301e472c053bf3c0e3ec2e0ba0812d6,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:36+01:00,2023-12-18T16:24:36+01:00,0,7,0,230,1,Delete test directory
+a1das,f2012e7252a5d473d2c92682f1b74ca7689039ab,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:26+01:00,2023-12-18T16:24:26+01:00,0,7,0,2397,0,Delete example directory
+a1das,fe1cf2e5dfbccad324d57e6137500050eea4be4b,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:15+01:00,2023-12-18T16:24:15+01:00,0,11,0,16948,0,Delete documentation directory
+a1das,9f3d8f23922c51f3797cfea32aaad82b24309c17,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:24:04+01:00,2023-12-18T16:24:04+01:00,0,19,0,5520,6,Delete a1das directory
+a1das,43dfdab22f47ffc44cfc9d07b16d87f0a9017bf1,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:23:53+01:00,2023-12-18T16:23:53+01:00,0,10,0,2505,0,Delete A1-XCORPY directory
+a1das,95ec56bf5eafa60d6f1cbe1ccd41a763e21e0c70,coutanto,60728642+coutanto@users.noreply.github.com,2023-12-18T16:23:44+01:00,2023-12-18T16:23:44+01:00,0,2,0,507,0,Delete A1-SOSFILT directory
+a1das,01133bf4e0aa01a03100b5c4e17a253a9d245874,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-06-07T18:17:12+02:00,2022-06-07T18:17:12+02:00,0,12,1467,397,0,update
+a1das,f84e3184d12f8b795098a67b2a8fa8a1433a2c39,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-05-25T16:02:14+02:00,2022-05-25T16:02:14+02:00,0,9,2453,2003,0,maj
+a1das,24f9d153c491b7a325135d3487957f9569098a18,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-03-15T11:47:17+01:00,2022-03-15T11:47:17+01:00,0,8,115,22,0,several updates and bug fixes
+a1das,725bf7499f763563f305074a55a18d5002a71d8f,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-03-03T16:26:38+01:00,2022-03-03T16:26:38+01:00,0,3,20,17,0,maj
+a1das,ed3830bff8f8748515c8da7cc408b1184f004f32,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-02-14T10:43:02+01:00,2022-02-14T10:43:02+01:00,0,6,8221,0,0,maj doc
+a1das,7254d73da7fa1b6223770b74fa814f8bdff63c62,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-02-14T10:41:41+01:00,2022-02-14T10:41:41+01:00,0,1,0,88,0,major update
+a1das,8ba4f6c106a90871b772d672381a4992f51e2284,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2022-02-14T10:41:07+01:00,2022-02-14T10:41:07+01:00,0,18,2169,1462,0,major update
+a1das,1706b7c3f46199b3cf69546e0289f1df5e7c2fb4,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-09T15:41:03+01:00,2021-12-09T15:41:03+01:00,0,1,5,4,0,change 1 into kind=1 integer parameter
+a1das,3508c91bdec16efa55e5a62c306e46757cef7e48,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-08T11:20:12+01:00,2021-12-08T11:20:12+01:00,0,2,3,3,0,maj
+a1das,fcc828e6a942d70b6fdbf585a859ad5f82090398,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-08T08:46:24+01:00,2021-12-08T08:46:24+01:00,0,2,2,3,0,maj
+a1das,a0b49e43ae9dc7456c3695474201f78089adebd8,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:39:25+01:00,2021-12-07T17:39:25+01:00,0,2,0,20,1,maj
+a1das,b1108e6a849fd883c4ca1a7f26db5dbeaec665b6,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:38:12+01:00,2021-12-07T17:38:12+01:00,0,14,0,97,11,maj
+a1das,328fc0d4427181764da06f9f48128e6c237e1fda,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-07T17:36:20+01:00,2021-12-07T17:36:20+01:00,0,1,0,356,0,Delete xcorr.f90.new
+a1das,6731c4ecf445d2129c388b46f0a106844bbf512d,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-07T17:36:07+01:00,2021-12-07T17:36:07+01:00,0,1,0,416,0,Delete xcorr-new.f90
+a1das,ccf92373455a798e18da3784b4c894952d984dbd,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-07T17:35:54+01:00,2021-12-07T17:35:54+01:00,0,1,0,254,0,Delete a1xcorPy.f90.new
+a1das,045b1e4a50a08cf19e09f03ae398a1205f78cd4c,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:34:45+01:00,2021-12-07T17:34:45+01:00,0,2,25,0,0,maj
+a1das,5e0aede8cedf2eb4a38522bd405f8e3eeab6e9fa,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:33:19+01:00,2021-12-07T17:33:19+01:00,0,40,4273,0,12,added binary build
+a1das,c5b164f1d45f1ec29944f34231554d9df4769bfa,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-07T17:28:49+01:00,2021-12-07T17:28:49+01:00,0,3,49,18,0,maj chenge in header
+a1das,a8ae6b0d64d3e12d1bfc3e53dc51a8660d70f4d2,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T14:10:34+01:00,2021-12-06T14:10:34+01:00,0,1,1,1,0,maj
+a1das,71487ebc54523f5b1c7451ce23fb332a225266e0,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T14:03:56+01:00,2021-12-06T14:03:56+01:00,0,3,0,0,3,maj
+a1das,90d1b053b295c0d8c4f309f9d4fd0c2d7e825cf7,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T13:23:27+01:00,2021-12-06T13:23:27+01:00,0,1,12,5,0,maj
+a1das,77dbac7d3fa3a85f6cb0f413f857a92bd8e71b8b,Olivier.coutant,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T12:22:00+01:00,2021-12-06T12:22:00+01:00,0,3,0,0,3,initial commit
+a1das,0c7b3367a6bcad67859bf976cb992c571df69914,coutanto,olivier.coutant@univ-grenoble-alpes.fr,2021-12-06T12:14:23+01:00,2021-12-06T12:14:23+01:00,0,33,14713,0,4,initial commit
+a1das,7d6a2c4a09deb082e0f376c9289f96ba68e82c23,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:02:02+01:00,2021-12-06T11:02:02+01:00,0,1,0,462,0,Delete sosfilteringOMP.f90
+a1das,b0c0e14047eb9c5f5c13190535fd46ac00bc305d,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:53+01:00,2021-12-06T11:01:53+01:00,0,1,0,52,0,Delete sosfilter.py
+a1das,06cce7edd6fedba1e51a686968d8979276e99e4a,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:43+01:00,2021-12-06T11:01:43+01:00,0,1,0,0,1,Delete example.pdf
+a1das,a3c5d9ea9eaa7fa3fe7328507acb789ca224d324,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:30+01:00,2021-12-06T11:01:30+01:00,0,1,0,1137,0,Delete a1das.py
+a1das,77f9a97084838b02d81287fbb96be8e878bdad9e,coutanto,60728642+coutanto@users.noreply.github.com,2021-12-06T11:01:19+01:00,2021-12-06T11:01:19+01:00,0,1,0,22,0,Delete README
+a1das,b2051779cc2dc91912531bb44f11d36d73bad69f,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T13:59:59+01:00,2021-01-13T13:59:59+01:00,0,1,0,2,0,Update a1das.py
+a1das,347a1dc987e23c7da3eeabb96b036a027c82f430,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T13:56:15+01:00,2021-01-13T13:56:15+01:00,0,1,0,0,1,Add files via upload
+a1das,0a3a69d12e0ca10cf8651bcaa8e5450636a0d2bf,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T10:08:52+01:00,2021-01-13T10:08:52+01:00,0,1,21,10,0,1.1.4 bug corrected
+a1das,61c9aa00b56a7232164418d86b60ec1d0ea3b854,coutanto,60728642+coutanto@users.noreply.github.com,2021-01-13T10:05:40+01:00,2021-01-13T10:05:40+01:00,0,1,1,1,0,Update README
+a1das,703b8a2591217bc2d2a1c7948ef7a61ff4231c0d,coutanto,olivier.coutant@univ-grenoble-alpes.fr,2020-06-26T18:12:32+02:00,2020-06-26T18:12:32+02:00,0,1,22,0,0,insertion README
+a1das,469e047ca421d2d61d168627c03e4346345f1a9b,coutanto,olivier.coutant@univ-grenoble-alpes.fr,2020-06-26T17:56:17+02:00,2020-06-26T17:56:17+02:00,0,3,1642,0,0,first commit

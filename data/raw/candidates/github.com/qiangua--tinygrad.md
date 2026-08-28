@@ -1,0 +1,18 @@
+---
+key: github.com/qiangua/tinygrad
+source: forge
+forge_kind: github
+forge_host: github.com
+repository: QIanGua/tinygrad
+name: tinygrad
+description: 'You like pytorch? You like micrograd? You love tinygrad! ❤️ '
+html_url: https://github.com/QIanGua/tinygrad
+language: null
+stars_at_discovery: 0
+probes:
+- github.com:owner:QIanGua
+probe_class: broad-acronym
+found_by:
+- namespace
+first_seen: '2026-08-28'
+---

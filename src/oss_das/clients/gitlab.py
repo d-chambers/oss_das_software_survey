@@ -14,8 +14,13 @@ from urllib.parse import quote
 
 import httpx
 
-from oss_das.clients.base import JsonClient, SourceError
-from oss_das.clients.forge import SearchResult, candidate, path_signals
+from oss_das.clients.base import JsonClient, NotFoundError, SourceError
+from oss_das.clients.forge import (
+    README_NAMES,
+    SearchResult,
+    candidate,
+    path_signals,
+)
 from oss_das.models import ForgeKind
 
 #: How many search hits to walk before giving up on a query. A short acronym
@@ -108,6 +113,23 @@ class GitLabClient(JsonClient):
     def list_namespace_repositories(self, namespace: str) -> list[dict[str, Any]]:
         items = self.paginate(f"/groups/{self._encode(namespace)}/projects")
         return [self._candidate(item) for item in items]
+
+    def repository(self, repository: str) -> dict[str, Any]:
+        return self._candidate(self.get_json(f"/projects/{self._encode(repository)}"))
+
+    def readme(self, repository: str) -> str:
+        """Try the usual README names against the default branch."""
+        project = self._encode(repository)
+        for name in README_NAMES:
+            try:
+                response = self.get_response(
+                    f"/projects/{project}/repository/files/{quote(name, safe='')}/raw",
+                    params={"ref": "HEAD"},
+                )
+            except NotFoundError:
+                continue
+            return response.text
+        raise NotFoundError(f"{self.host}/{repository}: no README")
 
     def collect_repository(self, repository: str) -> dict[str, Any]:
         project = self._encode(repository)

@@ -1,3 +1,3 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-dasmart-infra,included,b335329dcf38052e447c2af2dd249fe7aeaefb19,Pengchao He,128560139+Pengchao-He@users.noreply.github.com,2026-08-10T12:19:30-06:00,2026-08-10T12:19:30-06:00,0,1,4,1,0,Clarify early testing status (#1)
-dasmart-infra,included,d31729be1d26ac80c9c16abe6c57c0b11d5a8b19,Pengchao-He,Pengchao-He@users.noreply.github.com,2026-08-10T02:54:57-06:00,2026-08-10T02:54:57-06:00,0,29,1157,0,0,Establish DASmartInfra community foundation
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+dasmart-infra,b335329dcf38052e447c2af2dd249fe7aeaefb19,Pengchao He,128560139+Pengchao-He@users.noreply.github.com,2026-08-10T12:19:30-06:00,2026-08-10T12:19:30-06:00,0,1,4,1,0,Clarify early testing status (#1)
+dasmart-infra,d31729be1d26ac80c9c16abe6c57c0b11d5a8b19,Pengchao-He,Pengchao-He@users.noreply.github.com,2026-08-10T02:54:57-06:00,2026-08-10T02:54:57-06:00,0,29,1157,0,0,Establish DASmartInfra community foundation

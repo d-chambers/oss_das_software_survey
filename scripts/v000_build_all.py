@@ -13,38 +13,29 @@ import subprocess
 import sys
 from pathlib import Path
 
-from oss_das.cli import resolve_snapshot_date
 from oss_das.core import PATHS
 from oss_das.figures.cli import figure_parser
 from oss_das.figures.data import (
-    composition,
-    ecosystem_totals,
-    growth,
-    licence_mix,
-    maturity,
-    pipeline_flow,
-    selection_funnel,
+    composition_from_records,
+    funnel_from_records,
+    growth_from_records,
+    licence_from_records,
+    maturity_from_records,
+    pipeline_from_records,
+    totals_from_records,
 )
 
 
 def main() -> int:
     args = figure_parser(__doc__).parse_args()
-    snapshot_date = resolve_snapshot_date(args.snapshot_date, prefer_latest=True)
     out = args.out or PATHS.root / "figures"
     scripts = sorted(Path(__file__).resolve().parent.glob("v0[1-9]0_*.py"))
 
     failed: list[str] = []
     for script in scripts:
-        command = [
-            sys.executable,
-            str(script),
-            "--snapshot-date",
-            snapshot_date,
-            "--out",
-            str(out),
-        ]
-        if args.no_pdf:
-            command.append("--no-pdf")
+        command = [sys.executable, str(script), "--out", str(out)]
+        if args.pdf:
+            command.append("--pdf")
         if args.keep_text:
             command.append("--keep-text")
         result = subprocess.run(command, capture_output=True, text=True)
@@ -53,19 +44,19 @@ def main() -> int:
             failed.append(script.name)
 
     sidecar = {
-        "snapshot": snapshot_date,
-        "ecosystem_totals": ecosystem_totals().sidecar(),
-        "pipeline_flow": pipeline_flow(snapshot_date).sidecar(),
-        "selection_funnel": selection_funnel(snapshot_date).sidecar(),
-        "licence_mix": licence_mix().sidecar(),
-        "composition": composition().sidecar(),
-        "growth": growth().sidecar(),
-        "maturity": maturity().sidecar(),
+        "source": "working tree",
+        "ecosystem_totals": totals_from_records().sidecar(),
+        "pipeline_flow": pipeline_from_records().sidecar(),
+        "funnel": funnel_from_records().sidecar(),
+        "licence_mix": licence_from_records().sidecar(),
+        "composition": composition_from_records().sidecar(),
+        "growth": growth_from_records().sidecar(),
+        "maturity": maturity_from_records().sidecar(),
     }
     (out / "figures.json").write_text(json.dumps(sidecar, indent=1) + "\n")
     print(f"wrote {out / 'figures.json'}", file=sys.stderr)
 
-    totals = ecosystem_totals()
+    totals = totals_from_records()
     if totals.unmirrored:
         print(
             f"note: {len(totals.unmirrored)} included project(s) have no mirror, so "

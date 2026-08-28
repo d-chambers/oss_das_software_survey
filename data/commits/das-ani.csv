@@ -1,126 +1,126 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-das-ani,included,6b293e5390731b5e1df69a9138ca07eaf6acef2c,Benz Poobua,supakorn1207@gmail.com,2026-06-30T20:29:51-07:00,2026-06-30T20:29:51-07:00,0,7,134616,91837,0,Revise inversion + qc
-das-ani,included,a15c873940ab3cf10da19d9f47cb7015e87df499,Benz Poobua,supakorn1207@gmail.com,2026-06-29T19:19:14-07:00,2026-06-29T19:19:14-07:00,0,1,27,245,0,Cosmetic
-das-ani,included,2819a8d03677c36456bbcbbd9ebd1e65cca1ab47,Benz Poobua,supakorn1207@gmail.com,2026-06-29T18:28:01-07:00,2026-06-29T18:28:01-07:00,0,10,91297,83485,0,Fix cc window bugs -- bug-free now
-das-ani,included,ebee204e059bb9e88ab553c34cbb6d3405ef45a5,Benz Poobua,supakorn1207@gmail.com,2026-06-28T17:34:36-07:00,2026-06-28T17:34:36-07:00,0,7,19446,21460,0,Revise inversion profile
-das-ani,included,ec7e7b4e1a6e8fdde62e1cb900193dbabee40cec,Benz Poobua,supakorn1207@gmail.com,2026-06-27T18:03:10-07:00,2026-06-27T18:03:10-07:00,0,52,91101,885887,3,Clean repo
-das-ani,included,67e833a35421b0739bdc17730bcad723f1b08f33,Benz Poobua,supakorn1207@gmail.com,2026-06-27T16:07:44-07:00,2026-06-27T16:07:44-07:00,0,27,6307,2918,0,Update stable core
-das-ani,included,abc172fa9a1f4e6ebacb21d9fcd8203d8086fdf8,Benz Poobua,supakorn1207@gmail.com,2026-05-23T19:17:54-07:00,2026-05-23T19:17:54-07:00,0,2,204,298,0,Revise instructions
-das-ani,included,2508faca658b0510c49bd218ac1f15cdee264d15,Benz Poobua,supakorn1207@gmail.com,2026-05-19T17:52:42-07:00,2026-05-19T17:52:42-07:00,0,4,785397,5,0,Fix channels bugs
-das-ani,included,1c41ada80cb55e696be85147f8732cebec4efaee,Benz Poobua,supakorn1207@gmail.com,2026-05-18T16:03:31-07:00,2026-05-18T16:03:31-07:00,0,4,504,1012,0,Add plot tools
-das-ani,included,fc02e16fdd75d5d1cdaa64123ee9d77a5f69b88f,Benz Poobua,supakorn1207@gmail.com,2026-05-08T17:47:32-07:00,2026-05-08T17:47:32-07:00,0,4,885,306,0,Optimize GPU + Stack
-das-ani,included,76b61b1092456c9586aeb7e3d54122947ebbbe1c,Benz Poobua,supakorn1207@gmail.com,2026-05-08T03:00:52-07:00,2026-05-08T03:00:52-07:00,0,1,0,89,0,Cleanup
-das-ani,included,abd12bfbc4b0baebe9f25e0f7b28cd23610befd2,Benz Poobua,supakorn1207@gmail.com,2026-05-08T03:00:15-07:00,2026-05-08T03:00:15-07:00,0,1,15,13,0,Cleanup
-das-ani,included,b5f7b8cff142ea0654057f4256461518f305a04a,Benz Poobua,supakorn1207@gmail.com,2026-05-08T02:05:23-07:00,2026-05-08T02:05:23-07:00,0,2,87,63,0,GPU safe guards
-das-ani,included,3f776f8b89baaaa75c0495a0dc78ca03f0fd5324,Benz Poobua,supakorn1207@gmail.com,2026-05-07T21:32:07-07:00,2026-05-07T21:32:07-07:00,0,3,598,532,0,Finish v2: fastest
-das-ani,included,f422412b6358fa60a9300fb805765cc823cc219a,Benz Poobua,supakorn1207@gmail.com,2026-05-06T23:29:34-07:00,2026-05-06T23:29:34-07:00,0,2,203,44,0,Optimize
-das-ani,included,efffb332a57af4babc79ed030f15e361c1b882a4,Benz Poobua,supakorn1207@gmail.com,2026-05-06T18:11:50-07:00,2026-05-06T18:11:50-07:00,0,2,108,267,0,3D Frequency Stacking Surgery
-das-ani,included,891c0e0fd45d9a79dbc25d9b3ddba7d2a8ec8080,Benz Poobua,supakorn1207@gmail.com,2026-05-06T16:36:37-07:00,2026-05-06T16:36:37-07:00,0,4,20,19,0,Fix Overriding Bugs
-das-ani,included,4022ef223914e17c1e08e341d609559822ad12f9,Benz Poobua,supakorn1207@gmail.com,2026-05-06T16:32:19-07:00,2026-05-06T16:32:19-07:00,0,3,194,373,0,Remove Bugs
-das-ani,included,5b922c353a0ac0c1b1703346427e1088f8f5589d,Benz Poobua,supakorn1207@gmail.com,2026-05-06T03:48:54-07:00,2026-05-06T03:48:54-07:00,0,1,379,176,0,Add DAS display features
-das-ani,included,d92248a2ba86c4faa5d965c3520a34680296bcde,Benz Poobua,supakorn1207@gmail.com,2026-05-04T16:53:00-07:00,2026-05-04T16:53:00-07:00,0,1,1,2,0,Add converter util
-das-ani,included,b51448f10d021c09a1c4405f043ac128372477d3,Benz Poobua,supakorn1207@gmail.com,2026-05-04T16:52:37-07:00,2026-05-04T16:52:37-07:00,0,1,16,8,0,Optimization temporal and spectral normalization
-das-ani,included,53342880eabe10e364e85c71078ef3541593f4ba,Benz Poobua,supakorn1207@gmail.com,2026-05-04T16:38:01-07:00,2026-05-04T16:38:01-07:00,0,5,335,313,0,"Vectorize Overheads, Add Zarr, Add Plots"
-das-ani,included,61b0ce6034196130335852fe86e429831c0ff245,Benz Poobua,supakorn1207@gmail.com,2026-04-30T14:39:27-07:00,2026-04-30T14:39:27-07:00,0,4,9,9,0,Add Zarr
-das-ani,included,64edde6ebb776a6e31188856c3ca6b6817d62209,Benz Poobua,supakorn1207@gmail.com,2026-04-30T14:05:38-07:00,2026-04-30T14:05:38-07:00,0,6,977,1300,0,Add Zarr + HPC tools
-das-ani,included,2d75f84a2c06185d59752bd9ed55be538c122e95,Benz Poobua,supakorn1207@gmail.com,2026-04-29T12:02:19-07:00,2026-04-29T12:02:19-07:00,0,3,925,0,0,Update eval
-das-ani,included,a39ef527206c1417f35fac6516ca4d7afd773959,Benz Poobua,supakorn1207@gmail.com,2026-04-29T12:01:40-07:00,2026-04-29T12:01:40-07:00,0,6,357,263,0,Clean up ncf
-das-ani,included,e34b3d1c224fd0ba0828046e3cda6c2b8a8e4541,Benz Poobua,supakorn1207@gmail.com,2026-04-29T11:59:09-07:00,2026-04-29T11:59:09-07:00,0,3,116,21,0,Update data display
-das-ani,included,5fb3594984002e64024a523faf323676c140cbf1,Benz Poobua,supakorn1207@gmail.com,2026-04-29T11:58:16-07:00,2026-04-29T11:58:16-07:00,0,2,0,1932,0,Move map to das_map
-das-ani,included,6a9bbc2bc62986c71a748c08e250a885bc3f02a5,Benz Poobua,supakorn1207@gmail.com,2026-04-26T21:18:01-07:00,2026-04-26T21:18:01-07:00,0,3,679,0,0,Add DAS display
-das-ani,included,347e1324746c6ee63638fd1d1f805661df42bd8d,Benz Poobua,supakorn1207@gmail.com,2026-04-26T20:12:10-07:00,2026-04-26T20:12:10-07:00,0,47,33820,133441,1,Update repository and handle large notebooks
-das-ani,included,366365159e839374c656b22609cc526f1ded35f8,Benz Poobua,supakorn1207@gmail.com,2026-03-29T03:42:21-07:00,2026-03-29T03:42:21-07:00,0,7,9355,95,0,Add inversion explanation
-das-ani,included,71e7d7fee905d3044e212e563156628f3ae232e2,Benz Poobua,supakorn1207@gmail.com,2026-03-28T19:37:37-07:00,2026-03-28T19:37:37-07:00,0,5,135,9,1,Add pages + explanation
-das-ani,included,6d4c2bd61aa3158925803578898149f6818b4c37,Benz Poobua,supakorn1207@gmail.com,2026-03-28T19:15:57-07:00,2026-03-28T19:15:57-07:00,0,3,0,0,3,Add fig
-das-ani,included,cd6068230b02e3824f3ca80b75bf42e8cd4d40ac,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:27:59-07:00,2026-03-28T01:27:59-07:00,0,4,95374,0,0,Add html
-das-ani,included,d606e5a35ba79a0778209f5ca37381ba70951b78,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:25:19-07:00,2026-03-28T01:25:19-07:00,0,3,1447,76527,0,Revise pipeline concept
-das-ani,included,2e50732be2df1d0c59f09ca560af86880b66fd6e,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:20:48-07:00,2026-03-28T01:20:48-07:00,0,2,1237,8465,0,Revise map
-das-ani,included,98ca22e6b2f28b83d9ed6ffe92a843222a2b981c,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:11:48-07:00,2026-03-28T01:11:48-07:00,0,4,0,2909,0,Remove Leftovers
-das-ani,included,5cd78faae236d808a3cd935b21cacd3a534cce2a,Benz Poobua,supakorn1207@gmail.com,2026-03-27T18:53:31-07:00,2026-03-27T18:53:31-07:00,0,1,75263,0,0,Try html
-das-ani,included,d4d34935a8f12d0e30b43281630eb894398208f0,Benz Poobua,supakorn1207@gmail.com,2026-03-27T14:32:09-07:00,2026-03-27T14:32:09-07:00,0,4,13,229,0,Remove cpp legacy
-das-ani,included,d859a717ad80053ce9becfccfaabfdfd4e9b9432,Benz Poobua,supakorn1207@gmail.com,2026-03-26T18:46:23-07:00,2026-03-26T18:46:23-07:00,0,3,21925,6,0,Add sensitivity kernels
-das-ani,included,963a0c48205d0ebc8071e7c9a26213a65204afd1,Benz Poobua,supakorn1207@gmail.com,2026-03-26T00:26:00-07:00,2026-03-26T00:26:00-07:00,0,2,1364,0,0,Add DAS map
-das-ani,included,5ff074f603b533f51c5870b44bca2df34bb4bbc0,Benz Poobua,supakorn1207@gmail.com,2026-03-26T00:21:45-07:00,2026-03-26T00:21:45-07:00,0,4,67336,23961,0,Revise inversion
-das-ani,included,b965317553b362262bb8e4a9c97e1023117db31a,Benz Poobua,supakorn1207@gmail.com,2026-02-27T21:04:08-08:00,2026-02-27T21:04:08-08:00,0,21,30689,1588,0,Add notebooks + inversion/plots updates
-das-ani,included,dc371b0e3cd33769c307c272ebffabb6a62e9e1d,Benz Poobua,supakorn1207@gmail.com,2026-02-13T12:38:13-08:00,2026-02-13T12:38:13-08:00,0,2,296,198,0,Fix plot bugs + secure csv
-das-ani,included,65c1e63d1c78c7b35906d81eabff26fee537e7bc,Benz Poobua,supakorn1207@gmail.com,2026-02-12T14:40:44-08:00,2026-02-12T14:40:44-08:00,0,1,184,53,0,Add threshold ratio
-das-ani,included,888254744b07496be0091cd1125b42388af2092a,Benz Poobua,supakorn1207@gmail.com,2026-02-12T11:48:35-08:00,2026-02-12T11:48:35-08:00,0,2,292,4,0,Add sherlock setup tutorial
-das-ani,included,955c813d064b1d02c04c9db532260446fcb424a4,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:54:43-08:00,2026-02-10T16:54:43-08:00,0,2,787,295,0,Update plotting
-das-ani,included,6b21bc90b3650111657401b6ccd189398cd91959,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:40:34-08:00,2026-02-10T16:40:34-08:00,0,2,0,670,0,Delete unused notebook
-das-ani,included,984c5e1eb1cfa542b7c1dc10e6a8dfd6643ef316,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:38:56-08:00,2026-02-10T16:38:56-08:00,0,2,1299,329,0,Revise the evaluation; ready to use
-das-ani,included,cb3588f0f1494230c9acfd5ec94c37b1485ac0dc,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:38:27-08:00,2026-02-10T16:38:27-08:00,0,9,3638,2399,0,"Fix stack bug, revise dispersion"
-das-ani,included,ff04930d9cf59289015cc46f3a001d6316dad2e0,Benz Poobua,supakorn1207@gmail.com,2026-01-30T16:14:39-08:00,2026-01-30T16:14:39-08:00,0,2,44,12,0,Clean up
-das-ani,included,5ceaa0c64df5a1ca0167fcf2d69e5a07fd758a2a,Benz Poobua,supakorn1207@gmail.com,2026-01-29T11:06:54-08:00,2026-01-29T11:06:54-08:00,0,5,659,762,0,BUG-FREE
-das-ani,included,2e604c32d8c8734f597032b3f4f0e2325f7452bf,Benz Poobua,supakorn1207@gmail.com,2026-01-28T16:35:41-08:00,2026-01-28T16:35:41-08:00,0,2,269,175,0,Add C++ extension
-das-ani,included,20fce68486a3ba7baca67c471ed9a86389165e6b,Benz Poobua,supakorn1207@gmail.com,2026-01-28T14:12:29-08:00,2026-01-28T14:12:29-08:00,0,2,227,146,0,Revise error evaluation
-das-ani,included,084ce9de8385f9e29e531ca78bfb25841366e513,Benz Poobua,supakorn1207@gmail.com,2026-01-23T15:56:29-08:00,2026-01-23T15:56:29-08:00,0,1,0,147,0,Remove unused py
-das-ani,included,95b9ecb881a53f91a802f6c72d7f8c4510129025,Benz Poobua,supakorn1207@gmail.com,2026-01-23T15:54:25-08:00,2026-01-23T15:54:25-08:00,0,1,36,3,0,Add requirements
-das-ani,included,2e751ecd08b62c67062ae8cfd7c9b039cf05cb30,Benz Poobua,supakorn1207@gmail.com,2026-01-23T15:53:05-08:00,2026-01-23T15:53:05-08:00,0,4,1249,1,0,Add evaluation
-das-ani,included,c1647e9f8b03f2d61ab087ab0303ff1ec5c0ecf1,Benz Poobua,supakorn1207@gmail.com,2026-01-22T15:55:11-08:00,2026-01-22T15:55:11-08:00,0,2,132,49,0,Account for modes
-das-ani,included,ce91fb135c20223aa76a7fe59a0d2f24b742b8be,Benz Poobua,supakorn1207@gmail.com,2026-01-22T15:28:34-08:00,2026-01-22T15:28:34-08:00,0,1,11,1,0,Revised
-das-ani,included,574c439ce70829fee9d022c972a884b571b8292f,Benz Poobua,supakorn1207@gmail.com,2026-01-14T17:40:22-08:00,2026-01-14T17:40:22-08:00,0,3,131,50,0,Optimize Whitening
-das-ani,included,c86538664c7812f336b39c0ed990e6ef41f0aac8,Benz Poobua,supakorn1207@gmail.com,2026-01-14T16:10:26-08:00,2026-01-14T16:10:26-08:00,0,2,120,99,0,Fix bug
-das-ani,included,b61f063370417ceaffdcf03d624da19f80e8fb9b,Benz Poobua,supakorn1207@gmail.com,2026-01-13T18:06:50-08:00,2026-01-13T18:06:50-08:00,0,5,554,182,0,Optimize CC following Zhang (2025)
-das-ani,included,57167a016d4387c37bf5373c7c8c2ac44f5c6e85,Benz Poobua,supakorn1207@gmail.com,2026-01-13T11:00:26-08:00,2026-01-13T11:00:26-08:00,0,424,5,100927,34,Remove and ignore accidental venv folders (share/include)
-das-ani,included,bdf9f1c488e49d0f44dce499cd9d93fa1e738314,Benz Poobua,supakorn1207@gmail.com,2026-01-13T10:55:33-08:00,2026-01-13T10:55:33-08:00,0,52,19,771,0,Ignore and untrack local venv files
-das-ani,included,57c4c232d2b8866a533bd60b3274295619ccd37e,Benz Poobua,supakorn1207@gmail.com,2026-01-12T16:28:47-08:00,2026-01-12T16:28:47-08:00,0,475,101698,0,34,Revise download data demo
-das-ani,included,20fac46b3f2b634090c78706080eb55af82c827a,Benz Poobua,supakorn1207@gmail.com,2025-12-29T23:16:56-08:00,2025-12-29T23:16:56-08:00,0,7,2018,158814,0,Plotting cleanup
-das-ani,included,e37140280c7c277d97743c67c78ab82f39ee59b6,Benz Poobua,supakorn1207@gmail.com,2025-12-29T15:49:29-08:00,2025-12-29T15:49:29-08:00,0,4,296,111,0,Optimize code
-das-ani,included,8931343b805ef10977a3709ba29b98e9c7b8d104,Benz Poobua,supakorn1207@gmail.com,2025-12-29T01:49:15-08:00,2025-12-29T01:49:15-08:00,0,2,156,0,0,Add pipeline
-das-ani,included,7904c5c292deaedae8c8f97aaf2520ef32dde3df,Benz Poobua,supakorn1207@gmail.com,2025-12-29T01:48:41-08:00,2025-12-29T01:48:41-08:00,0,3,40,14,0,Clean up environment
-das-ani,included,2c7810c10f852f9d6ea39f8dcce998e0f8e9176a,Benz Poobua,supakorn1207@gmail.com,2025-12-28T17:57:52-08:00,2025-12-28T17:57:52-08:00,0,2,86,0,0,Add config files
-das-ani,included,9ec334824658ecfd1521da21feb7d0b23f207ca9,Benz Poobua,supakorn1207@gmail.com,2025-12-28T17:55:33-08:00,2025-12-28T17:55:33-08:00,0,6,1527,1601,0,Revise libraries
-das-ani,included,ea5a0d26e9cf211e0c4bb46dcee98358b183466f,Benz Poobua,supakorn1207@gmail.com,2025-12-04T15:56:20-08:00,2025-12-04T15:56:20-08:00,0,3,80,28,0,Fix stack window bug
-das-ani,included,5a72dd45d18ac423bdcf51b48166d166daaaffcb,Benz Poobua,supakorn1207@gmail.com,2025-12-03T02:49:37-08:00,2025-12-03T02:49:37-08:00,0,2,2,14,0,Cleanup
-das-ani,included,035e317a79743b201d0a7f911c781d56119935e5,Benz Poobua,supakorn1207@gmail.com,2025-12-03T02:47:39-08:00,2025-12-03T02:47:39-08:00,0,3,157229,31823,0,Fix Physics errors; CORRECTED WORKFLOW TO RUN
-das-ani,included,3218c4441462018717de221707ec16d054dc245e,Benz Poobua,supakorn1207@gmail.com,2025-12-03T01:03:20-08:00,2025-12-03T01:03:20-08:00,0,2,28,6,0,Fix bugs
-das-ani,included,fba2b6fd2bb83fa1820ab2de29f6ddb2b85f6697,Benz Poobua,supakorn1207@gmail.com,2025-12-02T18:21:08-08:00,2025-12-02T18:21:08-08:00,0,8,42981,9613,0,Add examples
-das-ani,included,89d682412608c0e50e10bcd6bb24128baed0041c,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-12-02T16:04:44-08:00,2025-12-02T16:04:44-08:00,0,1,19,5,0,Revise data paths and processing commands in README
-das-ani,included,9dd7fcca139416171d136d45e8cfc878c54a3f7d,Benz Poobua,supakorn1207@gmail.com,2025-12-02T15:49:51-08:00,2025-12-02T15:49:51-08:00,0,4,45,63,0,Fix bugs; READY-TO-RUN
-das-ani,included,b49edc98cd5d9498f79a481644703ec6b1361460,Benz Poobua,supakorn1207@gmail.com,2025-12-02T00:20:09-08:00,2025-12-02T00:20:09-08:00,0,1,208,0,0,Add dispersion + pick workflow
-das-ani,included,f140dc5e28de8d0c99205a7df5ee7ff286be694b,Benz Poobua,supakorn1207@gmail.com,2025-12-01T17:12:18-08:00,2025-12-01T17:12:18-08:00,0,3,222,335,0,Clean workflow; move stack
-das-ani,included,40bea3f6ee5b4646e43bd81d866bdd5c507f104d,Benz Poobua,supakorn1207@gmail.com,2025-12-01T16:28:01-08:00,2025-12-01T16:28:01-08:00,0,1,967,29,0,Add useful plot utility
-das-ani,included,9ab6e051b70513ec4237e7f9165d2f67b4ade34f,Benz Poobua,supakorn1207@gmail.com,2025-12-01T16:12:39-08:00,2025-12-01T16:12:39-08:00,0,1,211,40,0,Revise module
-das-ani,included,6b8af16bcf4669be1ba632aee57e29be7c1f4afb,Benz Poobua,supakorn1207@gmail.com,2025-12-01T15:56:31-08:00,2025-12-01T15:56:31-08:00,0,1,151,0,0,Revise utility function
-das-ani,included,14c4b0055b59a1758fcfa2755ff35e45ba5fc17b,Benz Poobua,supakorn1207@gmail.com,2025-12-01T12:12:22-08:00,2025-12-01T12:12:22-08:00,0,3,376,161,0,Add stacking options and flags
-das-ani,included,86fcf807d2c9e2cdd2bc0e355bbaa65ad28a595f,Benz Poobua,supakorn1207@gmail.com,2025-11-30T01:26:03-08:00,2025-11-30T01:26:03-08:00,0,1,85,59,0,Revise fake.py; USELESS NOW
-das-ani,included,d6d3202d3236bdba63f00a27a01b790532f5c19a,Benz Poobua,supakorn1207@gmail.com,2025-11-29T22:45:22-08:00,2025-11-29T22:45:22-08:00,0,1,128,3,0,Add Linear Stack (Daily)
-das-ani,included,8240759cb3e8ec0b4b07541ae6e6589d524ae426,Benz Poobua,supakorn1207@gmail.com,2025-11-29T18:28:32-08:00,2025-11-29T18:28:32-08:00,0,1,59,21,0,Fix bugs
-das-ani,included,0c6fe0b919689f29cf0c87c6700d0cef04f9019b,Benz Poobua,supakorn1207@gmail.com,2025-11-29T16:43:48-08:00,2025-11-29T16:43:48-08:00,0,1,72,18,0,Add resume helper
-das-ani,included,dc5aa5f5a555e083eae558b325a959043de12933,Benz Poobua,supakorn1207@gmail.com,2025-11-29T15:37:42-08:00,2025-11-29T15:37:42-08:00,0,4,69,51,0,READY-TO-RUN; traditional
-das-ani,included,0d9fe22a5c3959ba22652f34dcf962e4c44149a7,Benz Poobua,supakorn1207@gmail.com,2025-11-29T03:14:53-08:00,2025-11-29T03:14:53-08:00,0,1,50,1,0,Add batch size selection tool
-das-ani,included,bf47be7f8a030d4cd252e4f1b5ca8f204eedd97c,Benz Poobua,supakorn1207@gmail.com,2025-11-28T21:14:25-08:00,2025-11-28T21:14:25-08:00,0,1,86,42,0,Revise bugs; waiting for further tools
-das-ani,included,8210af663bd0a72e35d5a4786bb6c1a13377a2f8,Benz Poobua,supakorn1207@gmail.com,2025-11-28T21:05:04-08:00,2025-11-28T21:05:04-08:00,0,2,20,12,0,Fix bugs
-das-ani,included,70a36ca14a70a95f628328c55a9098141f2fe165,Benz Poobua,supakorn1207@gmail.com,2025-11-28T03:47:47-08:00,2025-11-28T03:47:47-08:00,0,1,22,30,0,Revise functions + time track
-das-ani,included,9e316079f41b890e6084c3d23cd611bde35d985a,Benz Poobua,supakorn1207@gmail.com,2025-11-27T23:51:27-08:00,2025-11-27T23:51:27-08:00,0,1,168,101,0,Add timeit + GPU/CPU track
-das-ani,included,7b9b2a6dcb7c11cfcbdee0122922c0c52a257f4f,Benz Poobua,supakorn1207@gmail.com,2025-11-27T01:08:40-08:00,2025-11-27T01:08:40-08:00,0,3,340,22,0,Cleanup
-das-ani,included,407b67cf0fc78d4320e243bc5a39e9d33c09172d,Benz Poobua,supakorn1207@gmail.com,2025-11-26T22:22:00-08:00,2025-11-26T22:22:00-08:00,0,1,144,0,0,Initiate dispersion curve py
-das-ani,included,d3778d26c51514956d57b63c94237b3f4fa1b0b0,Benz Poobua,supakorn1207@gmail.com,2025-11-23T23:45:20-08:00,2025-11-23T23:45:20-08:00,0,2,93,22,0,Add f-k
-das-ani,included,8e80c511ec85078b54a1ffb827c38af6e9462f3a,Benz Poobua,supakorn1207@gmail.com,2025-11-23T23:43:04-08:00,2025-11-23T23:43:04-08:00,0,1,157,23,0,Add spectral whitening + f-k
-das-ani,included,ccfff655afd5d174dc7f5a74b90dd2cab77e7602,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:40:52-08:00,2025-11-23T15:40:52-08:00,1,,,,,Cleanup
-das-ani,included,a0617ed34463a98fc4577c5a4d0159f6c6452a9d,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:37:00-08:00,2025-11-23T15:37:00-08:00,0,1,121,0,0,Add generator
-das-ani,included,6bbd62c0bbfe008d2c94289ac5b5e61d4635f48d,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:35:57-08:00,2025-11-23T15:35:57-08:00,0,1,0,121,0,Remove file
-das-ani,included,fcd9d6582df1c5a804f826c78f936c144472e199,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:33:33-08:00,2025-11-23T15:33:33-08:00,0,1,20,17,0,Revise generator
-das-ani,included,1882098d0e3d67221a31b19df3a09efb6d1878ad,Benz Poobua,supakorn1207@gmail.com,2025-11-23T02:56:16-08:00,2025-11-23T02:56:16-08:00,0,1,0,0,0,Cleanup
-das-ani,included,479c9220028d3de1f0ba729ac4e61bcdbe5216a6,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-23T02:42:44-08:00,2025-11-23T02:42:44-08:00,0,1,9,2,0,Revise README for data structure and processing tutorial
-das-ani,included,1de233fbb4fc55e7a0abae8abaf1c561b22c9542,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-23T02:35:48-08:00,2025-11-23T02:35:48-08:00,0,1,2,2,0,Update README to specify file extensions for data
-das-ani,included,35e027d3d2441ba6477ae1df8a58f0465ebfef93,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-23T02:30:26-08:00,2025-11-23T02:30:26-08:00,0,1,93,2,0,Revise README for clarity and structure
-das-ani,included,eec2f49eba325af7ec84101bb2354975a089327d,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:59:32-08:00,2025-11-23T01:59:32-08:00,0,11,10681,0,0,Add revised code
-das-ani,included,8734f5eec9eba881c3d811ba9df8a9934925d621,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:57:14-08:00,2025-11-23T01:57:14-08:00,0,12,4,10682,0,venv cleanup
-das-ani,included,dcfbf429ec33774979bd9c1dfd9c942f57e315b6,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:51:12-08:00,2025-11-23T01:51:12-08:00,0,1,0,0,0,Cleanup
-das-ani,included,8cf8d458ccb37a85a53e8a8fe0f2c650f4eff112,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:46:35-08:00,2025-11-23T01:46:35-08:00,0,1,15,0,0,Add venv
-das-ani,included,48064ac5f59a78cfa839a4a426badac8ca9dac38,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:29:04-08:00,2025-11-23T01:29:04-08:00,0,4,9480,8654,0,Notebook cleanup
-das-ani,included,f7c999e59417cc14f11a1ec9319c42a8ceae2614,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:27:49-08:00,2025-11-23T01:27:49-08:00,0,2,119,0,0,Add synthetic data generator
-das-ani,included,47ec9edc32fbaf3c7540c2f236d6e96c69ad3551,Benz Poobua,supakorn1207@gmail.com,2025-11-20T18:21:28-08:00,2025-11-20T18:21:28-08:00,0,3,8,9,0,Revise the code
-das-ani,included,3f8b5a4777341602b4add78921d712880211710b,Benz Poobua,supakorn1207@gmail.com,2025-11-19T22:16:29-08:00,2025-11-19T22:16:29-08:00,0,1,3,2,0,Update gitignore
-das-ani,included,7decb7ee9c5d8b2ca227c49afa335ff58930226c,Benz Poobua,supakorn1207@gmail.com,2025-11-19T22:13:25-08:00,2025-11-19T22:13:25-08:00,0,1,0,0,0,Add .gitkeep
-das-ani,included,ef67bd5b839d0d4852fdd68aaf76028ee0c378c9,Benz Poobua,supakorn1207@gmail.com,2025-11-19T20:56:56-08:00,2025-11-19T20:56:56-08:00,0,1,16,10,0,Update cc workflow
-das-ani,included,e7584220d30fd463ba0c9f27c6e9268b3ab3e9e0,Benz Poobua,supakorn1207@gmail.com,2025-11-19T19:12:26-08:00,2025-11-19T19:12:26-08:00,0,3,260,5,0,Clean directory + update CC workflow
-das-ani,included,a36babfc8223d36db7aaea16645671bf080e329f,Benz Poobua,supakorn1207@gmail.com,2025-11-19T14:53:41-08:00,2025-11-19T14:53:41-08:00,0,1,15,0,0,Add cc workflow
-das-ani,included,ba49176c4293cf3cb5e4c4809b25a9662f752ef4,Benz Poobua,supakorn1207@gmail.com,2025-11-19T14:32:40-08:00,2025-11-19T14:32:40-08:00,0,2,93,28,0,Add preprocessing steps
-das-ani,included,0e31c64a6424675cc533aa7bd9dfe7e7157516ad,Benz Poobua,supakorn1207@gmail.com,2025-11-19T01:16:48-08:00,2025-11-19T01:16:48-08:00,0,2,3,2,0,Add data directory
-das-ani,included,78254aec9657ccc5b52c39ae55ffde305a6d7037,Benz Poobua,supakorn1207@gmail.com,2025-11-19T01:09:43-08:00,2025-11-19T01:09:43-08:00,0,1,8652,0,0,Add geometry map
-das-ani,included,5d2b58b4d922b7f3c0b62daee709b4150aec9f0e,Benz Poobua,supakorn1207@gmail.com,2025-11-19T01:07:24-08:00,2025-11-19T01:07:24-08:00,0,2,5,0,0,Add geometry folder with .gitkeep placeholder
-das-ani,included,1a29950309bcbf57e68a8f223fa35e64dd428542,Benz Poobua,supakorn1207@gmail.com,2025-11-19T00:58:50-08:00,2025-11-19T00:58:50-08:00,0,1,28,0,0,Add .gitignore
-das-ani,included,784fcc379215ff36df31a23999071f03f15862fd,Benz Poobua,supakorn1207@gmail.com,2025-11-19T00:45:35-08:00,2025-11-19T00:45:35-08:00,0,2,672,0,0,Initiate src
-das-ani,included,7ee1c033b36d4e07bf19751fe752e823e25825fd,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-19T00:36:17-08:00,2025-11-19T00:36:17-08:00,0,2,23,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-ani,6b293e5390731b5e1df69a9138ca07eaf6acef2c,Benz Poobua,supakorn1207@gmail.com,2026-06-30T20:29:51-07:00,2026-06-30T20:29:51-07:00,0,7,134616,91837,0,Revise inversion + qc
+das-ani,a15c873940ab3cf10da19d9f47cb7015e87df499,Benz Poobua,supakorn1207@gmail.com,2026-06-29T19:19:14-07:00,2026-06-29T19:19:14-07:00,0,1,27,245,0,Cosmetic
+das-ani,2819a8d03677c36456bbcbbd9ebd1e65cca1ab47,Benz Poobua,supakorn1207@gmail.com,2026-06-29T18:28:01-07:00,2026-06-29T18:28:01-07:00,0,10,91297,83485,0,Fix cc window bugs -- bug-free now
+das-ani,ebee204e059bb9e88ab553c34cbb6d3405ef45a5,Benz Poobua,supakorn1207@gmail.com,2026-06-28T17:34:36-07:00,2026-06-28T17:34:36-07:00,0,7,19446,21460,0,Revise inversion profile
+das-ani,ec7e7b4e1a6e8fdde62e1cb900193dbabee40cec,Benz Poobua,supakorn1207@gmail.com,2026-06-27T18:03:10-07:00,2026-06-27T18:03:10-07:00,0,52,91101,885887,3,Clean repo
+das-ani,67e833a35421b0739bdc17730bcad723f1b08f33,Benz Poobua,supakorn1207@gmail.com,2026-06-27T16:07:44-07:00,2026-06-27T16:07:44-07:00,0,27,6307,2918,0,Update stable core
+das-ani,abc172fa9a1f4e6ebacb21d9fcd8203d8086fdf8,Benz Poobua,supakorn1207@gmail.com,2026-05-23T19:17:54-07:00,2026-05-23T19:17:54-07:00,0,2,204,298,0,Revise instructions
+das-ani,2508faca658b0510c49bd218ac1f15cdee264d15,Benz Poobua,supakorn1207@gmail.com,2026-05-19T17:52:42-07:00,2026-05-19T17:52:42-07:00,0,4,785397,5,0,Fix channels bugs
+das-ani,1c41ada80cb55e696be85147f8732cebec4efaee,Benz Poobua,supakorn1207@gmail.com,2026-05-18T16:03:31-07:00,2026-05-18T16:03:31-07:00,0,4,504,1012,0,Add plot tools
+das-ani,fc02e16fdd75d5d1cdaa64123ee9d77a5f69b88f,Benz Poobua,supakorn1207@gmail.com,2026-05-08T17:47:32-07:00,2026-05-08T17:47:32-07:00,0,4,885,306,0,Optimize GPU + Stack
+das-ani,76b61b1092456c9586aeb7e3d54122947ebbbe1c,Benz Poobua,supakorn1207@gmail.com,2026-05-08T03:00:52-07:00,2026-05-08T03:00:52-07:00,0,1,0,89,0,Cleanup
+das-ani,abd12bfbc4b0baebe9f25e0f7b28cd23610befd2,Benz Poobua,supakorn1207@gmail.com,2026-05-08T03:00:15-07:00,2026-05-08T03:00:15-07:00,0,1,15,13,0,Cleanup
+das-ani,b5f7b8cff142ea0654057f4256461518f305a04a,Benz Poobua,supakorn1207@gmail.com,2026-05-08T02:05:23-07:00,2026-05-08T02:05:23-07:00,0,2,87,63,0,GPU safe guards
+das-ani,3f776f8b89baaaa75c0495a0dc78ca03f0fd5324,Benz Poobua,supakorn1207@gmail.com,2026-05-07T21:32:07-07:00,2026-05-07T21:32:07-07:00,0,3,598,532,0,Finish v2: fastest
+das-ani,f422412b6358fa60a9300fb805765cc823cc219a,Benz Poobua,supakorn1207@gmail.com,2026-05-06T23:29:34-07:00,2026-05-06T23:29:34-07:00,0,2,203,44,0,Optimize
+das-ani,efffb332a57af4babc79ed030f15e361c1b882a4,Benz Poobua,supakorn1207@gmail.com,2026-05-06T18:11:50-07:00,2026-05-06T18:11:50-07:00,0,2,108,267,0,3D Frequency Stacking Surgery
+das-ani,891c0e0fd45d9a79dbc25d9b3ddba7d2a8ec8080,Benz Poobua,supakorn1207@gmail.com,2026-05-06T16:36:37-07:00,2026-05-06T16:36:37-07:00,0,4,20,19,0,Fix Overriding Bugs
+das-ani,4022ef223914e17c1e08e341d609559822ad12f9,Benz Poobua,supakorn1207@gmail.com,2026-05-06T16:32:19-07:00,2026-05-06T16:32:19-07:00,0,3,194,373,0,Remove Bugs
+das-ani,5b922c353a0ac0c1b1703346427e1088f8f5589d,Benz Poobua,supakorn1207@gmail.com,2026-05-06T03:48:54-07:00,2026-05-06T03:48:54-07:00,0,1,379,176,0,Add DAS display features
+das-ani,d92248a2ba86c4faa5d965c3520a34680296bcde,Benz Poobua,supakorn1207@gmail.com,2026-05-04T16:53:00-07:00,2026-05-04T16:53:00-07:00,0,1,1,2,0,Add converter util
+das-ani,b51448f10d021c09a1c4405f043ac128372477d3,Benz Poobua,supakorn1207@gmail.com,2026-05-04T16:52:37-07:00,2026-05-04T16:52:37-07:00,0,1,16,8,0,Optimization temporal and spectral normalization
+das-ani,53342880eabe10e364e85c71078ef3541593f4ba,Benz Poobua,supakorn1207@gmail.com,2026-05-04T16:38:01-07:00,2026-05-04T16:38:01-07:00,0,5,335,313,0,"Vectorize Overheads, Add Zarr, Add Plots"
+das-ani,61b0ce6034196130335852fe86e429831c0ff245,Benz Poobua,supakorn1207@gmail.com,2026-04-30T14:39:27-07:00,2026-04-30T14:39:27-07:00,0,4,9,9,0,Add Zarr
+das-ani,64edde6ebb776a6e31188856c3ca6b6817d62209,Benz Poobua,supakorn1207@gmail.com,2026-04-30T14:05:38-07:00,2026-04-30T14:05:38-07:00,0,6,977,1300,0,Add Zarr + HPC tools
+das-ani,2d75f84a2c06185d59752bd9ed55be538c122e95,Benz Poobua,supakorn1207@gmail.com,2026-04-29T12:02:19-07:00,2026-04-29T12:02:19-07:00,0,3,925,0,0,Update eval
+das-ani,a39ef527206c1417f35fac6516ca4d7afd773959,Benz Poobua,supakorn1207@gmail.com,2026-04-29T12:01:40-07:00,2026-04-29T12:01:40-07:00,0,6,357,263,0,Clean up ncf
+das-ani,e34b3d1c224fd0ba0828046e3cda6c2b8a8e4541,Benz Poobua,supakorn1207@gmail.com,2026-04-29T11:59:09-07:00,2026-04-29T11:59:09-07:00,0,3,116,21,0,Update data display
+das-ani,5fb3594984002e64024a523faf323676c140cbf1,Benz Poobua,supakorn1207@gmail.com,2026-04-29T11:58:16-07:00,2026-04-29T11:58:16-07:00,0,2,0,1932,0,Move map to das_map
+das-ani,6a9bbc2bc62986c71a748c08e250a885bc3f02a5,Benz Poobua,supakorn1207@gmail.com,2026-04-26T21:18:01-07:00,2026-04-26T21:18:01-07:00,0,3,679,0,0,Add DAS display
+das-ani,347e1324746c6ee63638fd1d1f805661df42bd8d,Benz Poobua,supakorn1207@gmail.com,2026-04-26T20:12:10-07:00,2026-04-26T20:12:10-07:00,0,47,33820,133441,1,Update repository and handle large notebooks
+das-ani,366365159e839374c656b22609cc526f1ded35f8,Benz Poobua,supakorn1207@gmail.com,2026-03-29T03:42:21-07:00,2026-03-29T03:42:21-07:00,0,7,9355,95,0,Add inversion explanation
+das-ani,71e7d7fee905d3044e212e563156628f3ae232e2,Benz Poobua,supakorn1207@gmail.com,2026-03-28T19:37:37-07:00,2026-03-28T19:37:37-07:00,0,5,135,9,1,Add pages + explanation
+das-ani,6d4c2bd61aa3158925803578898149f6818b4c37,Benz Poobua,supakorn1207@gmail.com,2026-03-28T19:15:57-07:00,2026-03-28T19:15:57-07:00,0,3,0,0,3,Add fig
+das-ani,cd6068230b02e3824f3ca80b75bf42e8cd4d40ac,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:27:59-07:00,2026-03-28T01:27:59-07:00,0,4,95374,0,0,Add html
+das-ani,d606e5a35ba79a0778209f5ca37381ba70951b78,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:25:19-07:00,2026-03-28T01:25:19-07:00,0,3,1447,76527,0,Revise pipeline concept
+das-ani,2e50732be2df1d0c59f09ca560af86880b66fd6e,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:20:48-07:00,2026-03-28T01:20:48-07:00,0,2,1237,8465,0,Revise map
+das-ani,98ca22e6b2f28b83d9ed6ffe92a843222a2b981c,Benz Poobua,supakorn1207@gmail.com,2026-03-28T01:11:48-07:00,2026-03-28T01:11:48-07:00,0,4,0,2909,0,Remove Leftovers
+das-ani,5cd78faae236d808a3cd935b21cacd3a534cce2a,Benz Poobua,supakorn1207@gmail.com,2026-03-27T18:53:31-07:00,2026-03-27T18:53:31-07:00,0,1,75263,0,0,Try html
+das-ani,d4d34935a8f12d0e30b43281630eb894398208f0,Benz Poobua,supakorn1207@gmail.com,2026-03-27T14:32:09-07:00,2026-03-27T14:32:09-07:00,0,4,13,229,0,Remove cpp legacy
+das-ani,d859a717ad80053ce9becfccfaabfdfd4e9b9432,Benz Poobua,supakorn1207@gmail.com,2026-03-26T18:46:23-07:00,2026-03-26T18:46:23-07:00,0,3,21925,6,0,Add sensitivity kernels
+das-ani,963a0c48205d0ebc8071e7c9a26213a65204afd1,Benz Poobua,supakorn1207@gmail.com,2026-03-26T00:26:00-07:00,2026-03-26T00:26:00-07:00,0,2,1364,0,0,Add DAS map
+das-ani,5ff074f603b533f51c5870b44bca2df34bb4bbc0,Benz Poobua,supakorn1207@gmail.com,2026-03-26T00:21:45-07:00,2026-03-26T00:21:45-07:00,0,4,67336,23961,0,Revise inversion
+das-ani,b965317553b362262bb8e4a9c97e1023117db31a,Benz Poobua,supakorn1207@gmail.com,2026-02-27T21:04:08-08:00,2026-02-27T21:04:08-08:00,0,21,30689,1588,0,Add notebooks + inversion/plots updates
+das-ani,dc371b0e3cd33769c307c272ebffabb6a62e9e1d,Benz Poobua,supakorn1207@gmail.com,2026-02-13T12:38:13-08:00,2026-02-13T12:38:13-08:00,0,2,296,198,0,Fix plot bugs + secure csv
+das-ani,65c1e63d1c78c7b35906d81eabff26fee537e7bc,Benz Poobua,supakorn1207@gmail.com,2026-02-12T14:40:44-08:00,2026-02-12T14:40:44-08:00,0,1,184,53,0,Add threshold ratio
+das-ani,888254744b07496be0091cd1125b42388af2092a,Benz Poobua,supakorn1207@gmail.com,2026-02-12T11:48:35-08:00,2026-02-12T11:48:35-08:00,0,2,292,4,0,Add sherlock setup tutorial
+das-ani,955c813d064b1d02c04c9db532260446fcb424a4,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:54:43-08:00,2026-02-10T16:54:43-08:00,0,2,787,295,0,Update plotting
+das-ani,6b21bc90b3650111657401b6ccd189398cd91959,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:40:34-08:00,2026-02-10T16:40:34-08:00,0,2,0,670,0,Delete unused notebook
+das-ani,984c5e1eb1cfa542b7c1dc10e6a8dfd6643ef316,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:38:56-08:00,2026-02-10T16:38:56-08:00,0,2,1299,329,0,Revise the evaluation; ready to use
+das-ani,cb3588f0f1494230c9acfd5ec94c37b1485ac0dc,Benz Poobua,supakorn1207@gmail.com,2026-02-10T16:38:27-08:00,2026-02-10T16:38:27-08:00,0,9,3638,2399,0,"Fix stack bug, revise dispersion"
+das-ani,ff04930d9cf59289015cc46f3a001d6316dad2e0,Benz Poobua,supakorn1207@gmail.com,2026-01-30T16:14:39-08:00,2026-01-30T16:14:39-08:00,0,2,44,12,0,Clean up
+das-ani,5ceaa0c64df5a1ca0167fcf2d69e5a07fd758a2a,Benz Poobua,supakorn1207@gmail.com,2026-01-29T11:06:54-08:00,2026-01-29T11:06:54-08:00,0,5,659,762,0,BUG-FREE
+das-ani,2e604c32d8c8734f597032b3f4f0e2325f7452bf,Benz Poobua,supakorn1207@gmail.com,2026-01-28T16:35:41-08:00,2026-01-28T16:35:41-08:00,0,2,269,175,0,Add C++ extension
+das-ani,20fce68486a3ba7baca67c471ed9a86389165e6b,Benz Poobua,supakorn1207@gmail.com,2026-01-28T14:12:29-08:00,2026-01-28T14:12:29-08:00,0,2,227,146,0,Revise error evaluation
+das-ani,084ce9de8385f9e29e531ca78bfb25841366e513,Benz Poobua,supakorn1207@gmail.com,2026-01-23T15:56:29-08:00,2026-01-23T15:56:29-08:00,0,1,0,147,0,Remove unused py
+das-ani,95b9ecb881a53f91a802f6c72d7f8c4510129025,Benz Poobua,supakorn1207@gmail.com,2026-01-23T15:54:25-08:00,2026-01-23T15:54:25-08:00,0,1,36,3,0,Add requirements
+das-ani,2e751ecd08b62c67062ae8cfd7c9b039cf05cb30,Benz Poobua,supakorn1207@gmail.com,2026-01-23T15:53:05-08:00,2026-01-23T15:53:05-08:00,0,4,1249,1,0,Add evaluation
+das-ani,c1647e9f8b03f2d61ab087ab0303ff1ec5c0ecf1,Benz Poobua,supakorn1207@gmail.com,2026-01-22T15:55:11-08:00,2026-01-22T15:55:11-08:00,0,2,132,49,0,Account for modes
+das-ani,ce91fb135c20223aa76a7fe59a0d2f24b742b8be,Benz Poobua,supakorn1207@gmail.com,2026-01-22T15:28:34-08:00,2026-01-22T15:28:34-08:00,0,1,11,1,0,Revised
+das-ani,574c439ce70829fee9d022c972a884b571b8292f,Benz Poobua,supakorn1207@gmail.com,2026-01-14T17:40:22-08:00,2026-01-14T17:40:22-08:00,0,3,131,50,0,Optimize Whitening
+das-ani,c86538664c7812f336b39c0ed990e6ef41f0aac8,Benz Poobua,supakorn1207@gmail.com,2026-01-14T16:10:26-08:00,2026-01-14T16:10:26-08:00,0,2,120,99,0,Fix bug
+das-ani,b61f063370417ceaffdcf03d624da19f80e8fb9b,Benz Poobua,supakorn1207@gmail.com,2026-01-13T18:06:50-08:00,2026-01-13T18:06:50-08:00,0,5,554,182,0,Optimize CC following Zhang (2025)
+das-ani,57167a016d4387c37bf5373c7c8c2ac44f5c6e85,Benz Poobua,supakorn1207@gmail.com,2026-01-13T11:00:26-08:00,2026-01-13T11:00:26-08:00,0,424,5,100927,34,Remove and ignore accidental venv folders (share/include)
+das-ani,bdf9f1c488e49d0f44dce499cd9d93fa1e738314,Benz Poobua,supakorn1207@gmail.com,2026-01-13T10:55:33-08:00,2026-01-13T10:55:33-08:00,0,52,19,771,0,Ignore and untrack local venv files
+das-ani,57c4c232d2b8866a533bd60b3274295619ccd37e,Benz Poobua,supakorn1207@gmail.com,2026-01-12T16:28:47-08:00,2026-01-12T16:28:47-08:00,0,475,101698,0,34,Revise download data demo
+das-ani,20fac46b3f2b634090c78706080eb55af82c827a,Benz Poobua,supakorn1207@gmail.com,2025-12-29T23:16:56-08:00,2025-12-29T23:16:56-08:00,0,7,2018,158814,0,Plotting cleanup
+das-ani,e37140280c7c277d97743c67c78ab82f39ee59b6,Benz Poobua,supakorn1207@gmail.com,2025-12-29T15:49:29-08:00,2025-12-29T15:49:29-08:00,0,4,296,111,0,Optimize code
+das-ani,8931343b805ef10977a3709ba29b98e9c7b8d104,Benz Poobua,supakorn1207@gmail.com,2025-12-29T01:49:15-08:00,2025-12-29T01:49:15-08:00,0,2,156,0,0,Add pipeline
+das-ani,7904c5c292deaedae8c8f97aaf2520ef32dde3df,Benz Poobua,supakorn1207@gmail.com,2025-12-29T01:48:41-08:00,2025-12-29T01:48:41-08:00,0,3,40,14,0,Clean up environment
+das-ani,2c7810c10f852f9d6ea39f8dcce998e0f8e9176a,Benz Poobua,supakorn1207@gmail.com,2025-12-28T17:57:52-08:00,2025-12-28T17:57:52-08:00,0,2,86,0,0,Add config files
+das-ani,9ec334824658ecfd1521da21feb7d0b23f207ca9,Benz Poobua,supakorn1207@gmail.com,2025-12-28T17:55:33-08:00,2025-12-28T17:55:33-08:00,0,6,1527,1601,0,Revise libraries
+das-ani,ea5a0d26e9cf211e0c4bb46dcee98358b183466f,Benz Poobua,supakorn1207@gmail.com,2025-12-04T15:56:20-08:00,2025-12-04T15:56:20-08:00,0,3,80,28,0,Fix stack window bug
+das-ani,5a72dd45d18ac423bdcf51b48166d166daaaffcb,Benz Poobua,supakorn1207@gmail.com,2025-12-03T02:49:37-08:00,2025-12-03T02:49:37-08:00,0,2,2,14,0,Cleanup
+das-ani,035e317a79743b201d0a7f911c781d56119935e5,Benz Poobua,supakorn1207@gmail.com,2025-12-03T02:47:39-08:00,2025-12-03T02:47:39-08:00,0,3,157229,31823,0,Fix Physics errors; CORRECTED WORKFLOW TO RUN
+das-ani,3218c4441462018717de221707ec16d054dc245e,Benz Poobua,supakorn1207@gmail.com,2025-12-03T01:03:20-08:00,2025-12-03T01:03:20-08:00,0,2,28,6,0,Fix bugs
+das-ani,fba2b6fd2bb83fa1820ab2de29f6ddb2b85f6697,Benz Poobua,supakorn1207@gmail.com,2025-12-02T18:21:08-08:00,2025-12-02T18:21:08-08:00,0,8,42981,9613,0,Add examples
+das-ani,89d682412608c0e50e10bcd6bb24128baed0041c,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-12-02T16:04:44-08:00,2025-12-02T16:04:44-08:00,0,1,19,5,0,Revise data paths and processing commands in README
+das-ani,9dd7fcca139416171d136d45e8cfc878c54a3f7d,Benz Poobua,supakorn1207@gmail.com,2025-12-02T15:49:51-08:00,2025-12-02T15:49:51-08:00,0,4,45,63,0,Fix bugs; READY-TO-RUN
+das-ani,b49edc98cd5d9498f79a481644703ec6b1361460,Benz Poobua,supakorn1207@gmail.com,2025-12-02T00:20:09-08:00,2025-12-02T00:20:09-08:00,0,1,208,0,0,Add dispersion + pick workflow
+das-ani,f140dc5e28de8d0c99205a7df5ee7ff286be694b,Benz Poobua,supakorn1207@gmail.com,2025-12-01T17:12:18-08:00,2025-12-01T17:12:18-08:00,0,3,222,335,0,Clean workflow; move stack
+das-ani,40bea3f6ee5b4646e43bd81d866bdd5c507f104d,Benz Poobua,supakorn1207@gmail.com,2025-12-01T16:28:01-08:00,2025-12-01T16:28:01-08:00,0,1,967,29,0,Add useful plot utility
+das-ani,9ab6e051b70513ec4237e7f9165d2f67b4ade34f,Benz Poobua,supakorn1207@gmail.com,2025-12-01T16:12:39-08:00,2025-12-01T16:12:39-08:00,0,1,211,40,0,Revise module
+das-ani,6b8af16bcf4669be1ba632aee57e29be7c1f4afb,Benz Poobua,supakorn1207@gmail.com,2025-12-01T15:56:31-08:00,2025-12-01T15:56:31-08:00,0,1,151,0,0,Revise utility function
+das-ani,14c4b0055b59a1758fcfa2755ff35e45ba5fc17b,Benz Poobua,supakorn1207@gmail.com,2025-12-01T12:12:22-08:00,2025-12-01T12:12:22-08:00,0,3,376,161,0,Add stacking options and flags
+das-ani,86fcf807d2c9e2cdd2bc0e355bbaa65ad28a595f,Benz Poobua,supakorn1207@gmail.com,2025-11-30T01:26:03-08:00,2025-11-30T01:26:03-08:00,0,1,85,59,0,Revise fake.py; USELESS NOW
+das-ani,d6d3202d3236bdba63f00a27a01b790532f5c19a,Benz Poobua,supakorn1207@gmail.com,2025-11-29T22:45:22-08:00,2025-11-29T22:45:22-08:00,0,1,128,3,0,Add Linear Stack (Daily)
+das-ani,8240759cb3e8ec0b4b07541ae6e6589d524ae426,Benz Poobua,supakorn1207@gmail.com,2025-11-29T18:28:32-08:00,2025-11-29T18:28:32-08:00,0,1,59,21,0,Fix bugs
+das-ani,0c6fe0b919689f29cf0c87c6700d0cef04f9019b,Benz Poobua,supakorn1207@gmail.com,2025-11-29T16:43:48-08:00,2025-11-29T16:43:48-08:00,0,1,72,18,0,Add resume helper
+das-ani,dc5aa5f5a555e083eae558b325a959043de12933,Benz Poobua,supakorn1207@gmail.com,2025-11-29T15:37:42-08:00,2025-11-29T15:37:42-08:00,0,4,69,51,0,READY-TO-RUN; traditional
+das-ani,0d9fe22a5c3959ba22652f34dcf962e4c44149a7,Benz Poobua,supakorn1207@gmail.com,2025-11-29T03:14:53-08:00,2025-11-29T03:14:53-08:00,0,1,50,1,0,Add batch size selection tool
+das-ani,bf47be7f8a030d4cd252e4f1b5ca8f204eedd97c,Benz Poobua,supakorn1207@gmail.com,2025-11-28T21:14:25-08:00,2025-11-28T21:14:25-08:00,0,1,86,42,0,Revise bugs; waiting for further tools
+das-ani,8210af663bd0a72e35d5a4786bb6c1a13377a2f8,Benz Poobua,supakorn1207@gmail.com,2025-11-28T21:05:04-08:00,2025-11-28T21:05:04-08:00,0,2,20,12,0,Fix bugs
+das-ani,70a36ca14a70a95f628328c55a9098141f2fe165,Benz Poobua,supakorn1207@gmail.com,2025-11-28T03:47:47-08:00,2025-11-28T03:47:47-08:00,0,1,22,30,0,Revise functions + time track
+das-ani,9e316079f41b890e6084c3d23cd611bde35d985a,Benz Poobua,supakorn1207@gmail.com,2025-11-27T23:51:27-08:00,2025-11-27T23:51:27-08:00,0,1,168,101,0,Add timeit + GPU/CPU track
+das-ani,7b9b2a6dcb7c11cfcbdee0122922c0c52a257f4f,Benz Poobua,supakorn1207@gmail.com,2025-11-27T01:08:40-08:00,2025-11-27T01:08:40-08:00,0,3,340,22,0,Cleanup
+das-ani,407b67cf0fc78d4320e243bc5a39e9d33c09172d,Benz Poobua,supakorn1207@gmail.com,2025-11-26T22:22:00-08:00,2025-11-26T22:22:00-08:00,0,1,144,0,0,Initiate dispersion curve py
+das-ani,d3778d26c51514956d57b63c94237b3f4fa1b0b0,Benz Poobua,supakorn1207@gmail.com,2025-11-23T23:45:20-08:00,2025-11-23T23:45:20-08:00,0,2,93,22,0,Add f-k
+das-ani,8e80c511ec85078b54a1ffb827c38af6e9462f3a,Benz Poobua,supakorn1207@gmail.com,2025-11-23T23:43:04-08:00,2025-11-23T23:43:04-08:00,0,1,157,23,0,Add spectral whitening + f-k
+das-ani,ccfff655afd5d174dc7f5a74b90dd2cab77e7602,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:40:52-08:00,2025-11-23T15:40:52-08:00,1,,,,,Cleanup
+das-ani,a0617ed34463a98fc4577c5a4d0159f6c6452a9d,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:37:00-08:00,2025-11-23T15:37:00-08:00,0,1,121,0,0,Add generator
+das-ani,6bbd62c0bbfe008d2c94289ac5b5e61d4635f48d,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:35:57-08:00,2025-11-23T15:35:57-08:00,0,1,0,121,0,Remove file
+das-ani,fcd9d6582df1c5a804f826c78f936c144472e199,Benz Poobua,supakorn1207@gmail.com,2025-11-23T15:33:33-08:00,2025-11-23T15:33:33-08:00,0,1,20,17,0,Revise generator
+das-ani,1882098d0e3d67221a31b19df3a09efb6d1878ad,Benz Poobua,supakorn1207@gmail.com,2025-11-23T02:56:16-08:00,2025-11-23T02:56:16-08:00,0,1,0,0,0,Cleanup
+das-ani,479c9220028d3de1f0ba729ac4e61bcdbe5216a6,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-23T02:42:44-08:00,2025-11-23T02:42:44-08:00,0,1,9,2,0,Revise README for data structure and processing tutorial
+das-ani,1de233fbb4fc55e7a0abae8abaf1c561b22c9542,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-23T02:35:48-08:00,2025-11-23T02:35:48-08:00,0,1,2,2,0,Update README to specify file extensions for data
+das-ani,35e027d3d2441ba6477ae1df8a58f0465ebfef93,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-23T02:30:26-08:00,2025-11-23T02:30:26-08:00,0,1,93,2,0,Revise README for clarity and structure
+das-ani,eec2f49eba325af7ec84101bb2354975a089327d,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:59:32-08:00,2025-11-23T01:59:32-08:00,0,11,10681,0,0,Add revised code
+das-ani,8734f5eec9eba881c3d811ba9df8a9934925d621,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:57:14-08:00,2025-11-23T01:57:14-08:00,0,12,4,10682,0,venv cleanup
+das-ani,dcfbf429ec33774979bd9c1dfd9c942f57e315b6,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:51:12-08:00,2025-11-23T01:51:12-08:00,0,1,0,0,0,Cleanup
+das-ani,8cf8d458ccb37a85a53e8a8fe0f2c650f4eff112,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:46:35-08:00,2025-11-23T01:46:35-08:00,0,1,15,0,0,Add venv
+das-ani,48064ac5f59a78cfa839a4a426badac8ca9dac38,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:29:04-08:00,2025-11-23T01:29:04-08:00,0,4,9480,8654,0,Notebook cleanup
+das-ani,f7c999e59417cc14f11a1ec9319c42a8ceae2614,Benz Poobua,supakorn1207@gmail.com,2025-11-23T01:27:49-08:00,2025-11-23T01:27:49-08:00,0,2,119,0,0,Add synthetic data generator
+das-ani,47ec9edc32fbaf3c7540c2f236d6e96c69ad3551,Benz Poobua,supakorn1207@gmail.com,2025-11-20T18:21:28-08:00,2025-11-20T18:21:28-08:00,0,3,8,9,0,Revise the code
+das-ani,3f8b5a4777341602b4add78921d712880211710b,Benz Poobua,supakorn1207@gmail.com,2025-11-19T22:16:29-08:00,2025-11-19T22:16:29-08:00,0,1,3,2,0,Update gitignore
+das-ani,7decb7ee9c5d8b2ca227c49afa335ff58930226c,Benz Poobua,supakorn1207@gmail.com,2025-11-19T22:13:25-08:00,2025-11-19T22:13:25-08:00,0,1,0,0,0,Add .gitkeep
+das-ani,ef67bd5b839d0d4852fdd68aaf76028ee0c378c9,Benz Poobua,supakorn1207@gmail.com,2025-11-19T20:56:56-08:00,2025-11-19T20:56:56-08:00,0,1,16,10,0,Update cc workflow
+das-ani,e7584220d30fd463ba0c9f27c6e9268b3ab3e9e0,Benz Poobua,supakorn1207@gmail.com,2025-11-19T19:12:26-08:00,2025-11-19T19:12:26-08:00,0,3,260,5,0,Clean directory + update CC workflow
+das-ani,a36babfc8223d36db7aaea16645671bf080e329f,Benz Poobua,supakorn1207@gmail.com,2025-11-19T14:53:41-08:00,2025-11-19T14:53:41-08:00,0,1,15,0,0,Add cc workflow
+das-ani,ba49176c4293cf3cb5e4c4809b25a9662f752ef4,Benz Poobua,supakorn1207@gmail.com,2025-11-19T14:32:40-08:00,2025-11-19T14:32:40-08:00,0,2,93,28,0,Add preprocessing steps
+das-ani,0e31c64a6424675cc533aa7bd9dfe7e7157516ad,Benz Poobua,supakorn1207@gmail.com,2025-11-19T01:16:48-08:00,2025-11-19T01:16:48-08:00,0,2,3,2,0,Add data directory
+das-ani,78254aec9657ccc5b52c39ae55ffde305a6d7037,Benz Poobua,supakorn1207@gmail.com,2025-11-19T01:09:43-08:00,2025-11-19T01:09:43-08:00,0,1,8652,0,0,Add geometry map
+das-ani,5d2b58b4d922b7f3c0b62daee709b4150aec9f0e,Benz Poobua,supakorn1207@gmail.com,2025-11-19T01:07:24-08:00,2025-11-19T01:07:24-08:00,0,2,5,0,0,Add geometry folder with .gitkeep placeholder
+das-ani,1a29950309bcbf57e68a8f223fa35e64dd428542,Benz Poobua,supakorn1207@gmail.com,2025-11-19T00:58:50-08:00,2025-11-19T00:58:50-08:00,0,1,28,0,0,Add .gitignore
+das-ani,784fcc379215ff36df31a23999071f03f15862fd,Benz Poobua,supakorn1207@gmail.com,2025-11-19T00:45:35-08:00,2025-11-19T00:45:35-08:00,0,2,672,0,0,Initiate src
+das-ani,7ee1c033b36d4e07bf19751fe752e823e25825fd,Benz Poobua,146503034+Benz-Poobua@users.noreply.github.com,2025-11-19T00:36:17-08:00,2025-11-19T00:36:17-08:00,0,2,23,0,0,Initial commit

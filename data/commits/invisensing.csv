@@ -1,40 +1,40 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-invisensing,included,1f6f49d84532a411424709567a40fa17e27397ed,Prod Server,prod@invisensing.io,2026-07-22T12:21:55+02:00,2026-07-22T12:21:55+02:00,0,2,2,2,0,chore: bump to 1.2.1 (SEGY hex header scan fix + docs)
-invisensing,included,447006a4bc79e51f77166d64410a0fa0baa3aafe,Prod Server,prod@invisensing.io,2026-06-15T13:56:27+02:00,2026-06-15T13:56:27+02:00,0,1,38,18,0,_formats: anchor SEGY hex header scan on the 0x prefix
-invisensing,included,014da006d769ef47ccd515114a44b9729cf55d35,Prod Server,prod@invisensing.io,2026-06-09T13:06:28+02:00,2026-06-09T13:06:28+02:00,0,1,26,0,0,docs: document Header.content_type / content_type_name / acquisition_ns in README
-invisensing,included,bb1853940bc441227d88b004b9b12ffdb05913af,Prod Server,prod@invisensing.io,2026-06-09T12:58:34+02:00,2026-06-09T12:58:34+02:00,0,1,7,4,0,ci(docs): don't deploy on tag pushes — github-pages env only allows the default branch
-invisensing,included,cb5e9b7ee344ca39f305902bf01a6ce6ba17d403,Prod Server,prod@invisensing.io,2026-06-09T12:37:02+02:00,2026-06-09T12:37:02+02:00,0,4,87,16,0,feat: header content_type (byte 64) + i64 acquisition_ns timestamp; bump to 1.2.0
-invisensing,included,7a7e29e6fa06672ad0657b40dee23bde541dbee7,Prod Server,prod@invisensing.io,2026-06-02T16:47:37+02:00,2026-06-02T16:47:37+02:00,0,7,134,45,0,chore: optimized for tdms and segy
-invisensing,included,510ec2d3812c6515ba87d5843406998134eeff96,douxev,maelle.doukhan@invisensing.io,2026-05-25T15:23:15+02:00,2026-05-25T15:23:15+02:00,0,1,36,0,0,ci: add backfill-releases.yml — one-shot to create Releases for existing tags
-invisensing,included,a2794050e22b5e274794fcf1d67ff28c82984d12,douxev,maelle.doukhan@invisensing.io,2026-05-25T15:16:42+02:00,2026-05-25T15:16:42+02:00,0,1,25,14,0,fix(ci): docs build — replace `maturin develop` with wheel + pip install
-invisensing,included,594129c871b9fe4d98a52bf42c4fd9f608cadaa5,douxev,maelle.doukhan@invisensing.io,2026-05-25T15:11:32+02:00,2026-05-25T15:11:32+02:00,0,1,38,0,0,ci(release): auto-create GitHub Release from the annotated tag
-invisensing,included,f7cb8928a455e1c2c21c21c093862376fe003164,douxev,maelle.doukhan@invisensing.io,2026-05-25T14:39:40+02:00,2026-05-25T14:39:40+02:00,0,10,1014,2955,0,docs: full MkDocs Material site with auto API reference
-invisensing,included,57bc41015ce2177f32fc780a9963b2fc97793803,douxev,maelle.doukhan@invisensing.io,2026-05-25T14:25:12+02:00,2026-05-25T14:25:12+02:00,0,6,23,23,0,release: v1.0.1 — Python 3.14 support
-invisensing,included,e3f50918839c578c94178871a76d94975bc66d5b,douxev,maelle.doukhan@invisensing.io,2026-05-25T14:14:33+02:00,2026-05-25T14:14:33+02:00,0,1,10,6,0,fix(ci): drop macOS x86_64 from release matrix (runner pool saturated)
-invisensing,included,750481940d75fece0b888c206608ffe6a166a400,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:55:37+02:00,2026-05-25T13:55:37+02:00,0,1,163,0,0,ci: add release-testpypi.yml — manual TestPyPI staging path
-invisensing,included,7bcb9a7fb9fd180f73a83dc3e2c301709dc92cbb,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:48:39+02:00,2026-05-25T13:48:39+02:00,0,1,8,5,0,fix(ci): linux builds — explicit interpreter list (avoid Python 3.14)
-invisensing,included,144399559f6c5288cf4dfed9557e28b5c59de8f2,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:36:56+02:00,2026-05-25T13:36:56+02:00,0,1,31,45,0,fix(ci): release.yml — explicit Python matrix on macOS / Windows
-invisensing,included,7e5f857ee0eb74e941ef213955abc74cf786a155,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:30:00+02:00,2026-05-25T13:30:00+02:00,0,1,17,7,0,fix(ci): use maturin-action for the build step
-invisensing,included,e947b4a09b30e8cc4b40db2d45f2bb6ae07de44a,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:24:30+02:00,2026-05-25T13:24:30+02:00,0,2,18,15,0,fix(deps): bump pyo3 0.22 → 0.24 to address PyString::from_object overflow
-invisensing,included,5aa6c1de7cf3afddce17133e35cf7ee33f834211,douxev,maelle.doukhan@invisensing.io,2026-05-25T12:58:45+02:00,2026-05-25T12:58:45+02:00,0,2,3,216,0,chore: untrack PUBLISHING.md (internal release runbook)
-invisensing,included,2caa995d12077f2ed65a0fe9c7d5add10457ce67,douxev,maelle.doukhan@invisensing.io,2026-05-25T12:43:16+02:00,2026-05-25T12:43:16+02:00,0,6,24,16,0,release: v1.0.0
-invisensing,included,f0689a45391cc2472dc9c5733222e3a06cc202e0,douxev,maelle.doukhan@invisensing.io,2026-05-25T12:33:54+02:00,2026-05-25T12:36:02+02:00,0,8,540,5,0,release: prepare v0.2.0 PyPI package
-invisensing,included,d02fdb9d75b90b5f9dc31a7d6bd7f54b3ff68aaf,Prod Server,prod@invisensing.io,2026-05-25T12:21:27+02:00,2026-05-25T12:21:27+02:00,0,19,3721,268,3,v0.2.0: Rust-backed reader for all FileWriter formats + PCIe7821 channel extractors
-invisensing,included,a0bcb23a9b5e5390d1f5acf9777def7f69919130,Prod Server,prod@invisensing.io,2024-11-21T14:03:23+01:00,2024-11-21T14:03:23+01:00,0,1,28,12,0,chore: Add doc
-invisensing,included,bd8d8fdd72ea2344253232d791bf2d39709fb828,Prod Server,prod@invisensing.io,2024-11-21T13:15:24+01:00,2024-11-21T13:15:24+01:00,0,1,1,1,0,chore: Add doc
-invisensing,included,9c0ddceda9d08d7bfc59a35e7e14bf300a6a325b,Prod Server,prod@invisensing.io,2024-11-21T13:13:47+01:00,2024-11-21T13:13:47+01:00,0,1,12,17,0,chore: Add doc
-invisensing,included,63dff6f783e04abec0d99271be046595a4fdc79d,Prod Server,prod@invisensing.io,2024-11-21T13:06:43+01:00,2024-11-21T13:06:43+01:00,0,2,26,26,0,chore: Add doc
-invisensing,included,ebc2f76bba181be48b35a2b4cb0957b5a1a74445,Prod Server,prod@invisensing.io,2024-11-21T13:05:24+01:00,2024-11-21T13:05:24+01:00,1,,,,,Merge branch 'master' of github.com:invisensing-io/python-lib
-invisensing,included,9f8d831e9e68c868d21244912f7c8d311aa5e03d,Prod Server,prod@invisensing.io,2024-11-21T13:05:12+01:00,2024-11-21T13:05:12+01:00,0,1,0,26,0,chore: Add doc
-invisensing,included,bf8a0b4fa4168f5092bf873663fe8a51f94e1715,Prod Server,prod@invisensing.io,2024-11-21T13:05:06+01:00,2024-11-21T13:05:06+01:00,0,1,26,0,0,Create docs
-invisensing,included,60dfa10ca86fa7e3f09c2b120fbac431026834de,Prod Server,prod@invisensing.io,2024-11-21T13:03:02+01:00,2024-11-21T13:03:02+01:00,0,1,1,1,0,chore: Add doc
-invisensing,included,85df4a1fb94ef00f6a1296a02dcbcbbec326277a,Prod Server,prod@invisensing.io,2024-11-21T13:02:50+01:00,2024-11-21T13:02:50+01:00,0,1,16,29,0,chore: Add doc
-invisensing,included,26bd37aae7642ae85d8247a9dedbfc66c44f9b0e,Prod Server,prod@invisensing.io,2024-11-21T13:01:27+01:00,2024-11-21T13:01:27+01:00,0,1,30,17,0,chore: Add doc
-invisensing,included,1bbec2522a9aa5e04f6095c0e4334e9a065282a9,Prod Server,prod@invisensing.io,2024-11-21T12:57:12+01:00,2024-11-21T12:57:12+01:00,0,1,1,1,0,chore: Add doc
-invisensing,included,ce12c523953918f83ae35a714145b8e5d37202ac,Prod Server,prod@invisensing.io,2024-11-21T12:56:55+01:00,2024-11-21T12:56:55+01:00,0,1,17,30,0,chore: Add doc
-invisensing,included,5e9cef99cf2167a7efc76a3ab5fb6093a180d945,Prod Server,prod@invisensing.io,2024-11-21T12:42:09+01:00,2024-11-21T12:42:09+01:00,0,1,39,0,0,feat(ci): add GitHub Actions workflow for Doxygen documentation generation and deployment to GitHub Pages
-invisensing,included,361a2aaee4e0ad51f4ddcb8f849ef6bbcc9c591a,Prod Server,prod@invisensing.io,2024-09-13T14:14:08+02:00,2024-09-13T14:14:08+02:00,0,5,29,7,1,chore: Docs
-invisensing,included,f622d50d5fc85359ad8dfc287fe44d1d44f722b2,Prod Server,prod@invisensing.io,2024-09-13T14:07:25+02:00,2024-09-13T14:07:42+02:00,0,1,6,0,0,Added example
-invisensing,included,507ce9f6b3f1419391c139470ac118452cf1c332,Prod Server,prod@invisensing.io,2024-09-13T14:06:48+02:00,2024-09-13T14:06:48+02:00,0,1,21,0,0,Create README.md
-invisensing,included,415e430aaeb3bd7fed157527a965507d74a97d54,Prod Server,prod@invisensing.io,2024-09-13T13:38:28+02:00,2024-09-13T13:38:28+02:00,0,6,2928,0,2,chore: add assets for Doxygen
-invisensing,included,3804443cf2ab48189fd0a86297676cf8bf5f1b3a,Prod Server,prod@invisensing.io,2024-09-13T13:13:27+02:00,2024-09-13T13:13:27+02:00,0,8,271,0,4,Init V0.1
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+invisensing,1f6f49d84532a411424709567a40fa17e27397ed,Prod Server,prod@invisensing.io,2026-07-22T12:21:55+02:00,2026-07-22T12:21:55+02:00,0,2,2,2,0,chore: bump to 1.2.1 (SEGY hex header scan fix + docs)
+invisensing,447006a4bc79e51f77166d64410a0fa0baa3aafe,Prod Server,prod@invisensing.io,2026-06-15T13:56:27+02:00,2026-06-15T13:56:27+02:00,0,1,38,18,0,_formats: anchor SEGY hex header scan on the 0x prefix
+invisensing,014da006d769ef47ccd515114a44b9729cf55d35,Prod Server,prod@invisensing.io,2026-06-09T13:06:28+02:00,2026-06-09T13:06:28+02:00,0,1,26,0,0,docs: document Header.content_type / content_type_name / acquisition_ns in README
+invisensing,bb1853940bc441227d88b004b9b12ffdb05913af,Prod Server,prod@invisensing.io,2026-06-09T12:58:34+02:00,2026-06-09T12:58:34+02:00,0,1,7,4,0,ci(docs): don't deploy on tag pushes — github-pages env only allows the default branch
+invisensing,cb5e9b7ee344ca39f305902bf01a6ce6ba17d403,Prod Server,prod@invisensing.io,2026-06-09T12:37:02+02:00,2026-06-09T12:37:02+02:00,0,4,87,16,0,feat: header content_type (byte 64) + i64 acquisition_ns timestamp; bump to 1.2.0
+invisensing,7a7e29e6fa06672ad0657b40dee23bde541dbee7,Prod Server,prod@invisensing.io,2026-06-02T16:47:37+02:00,2026-06-02T16:47:37+02:00,0,7,134,45,0,chore: optimized for tdms and segy
+invisensing,510ec2d3812c6515ba87d5843406998134eeff96,douxev,maelle.doukhan@invisensing.io,2026-05-25T15:23:15+02:00,2026-05-25T15:23:15+02:00,0,1,36,0,0,ci: add backfill-releases.yml — one-shot to create Releases for existing tags
+invisensing,a2794050e22b5e274794fcf1d67ff28c82984d12,douxev,maelle.doukhan@invisensing.io,2026-05-25T15:16:42+02:00,2026-05-25T15:16:42+02:00,0,1,25,14,0,fix(ci): docs build — replace `maturin develop` with wheel + pip install
+invisensing,594129c871b9fe4d98a52bf42c4fd9f608cadaa5,douxev,maelle.doukhan@invisensing.io,2026-05-25T15:11:32+02:00,2026-05-25T15:11:32+02:00,0,1,38,0,0,ci(release): auto-create GitHub Release from the annotated tag
+invisensing,f7cb8928a455e1c2c21c21c093862376fe003164,douxev,maelle.doukhan@invisensing.io,2026-05-25T14:39:40+02:00,2026-05-25T14:39:40+02:00,0,10,1014,2955,0,docs: full MkDocs Material site with auto API reference
+invisensing,57bc41015ce2177f32fc780a9963b2fc97793803,douxev,maelle.doukhan@invisensing.io,2026-05-25T14:25:12+02:00,2026-05-25T14:25:12+02:00,0,6,23,23,0,release: v1.0.1 — Python 3.14 support
+invisensing,e3f50918839c578c94178871a76d94975bc66d5b,douxev,maelle.doukhan@invisensing.io,2026-05-25T14:14:33+02:00,2026-05-25T14:14:33+02:00,0,1,10,6,0,fix(ci): drop macOS x86_64 from release matrix (runner pool saturated)
+invisensing,750481940d75fece0b888c206608ffe6a166a400,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:55:37+02:00,2026-05-25T13:55:37+02:00,0,1,163,0,0,ci: add release-testpypi.yml — manual TestPyPI staging path
+invisensing,7bcb9a7fb9fd180f73a83dc3e2c301709dc92cbb,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:48:39+02:00,2026-05-25T13:48:39+02:00,0,1,8,5,0,fix(ci): linux builds — explicit interpreter list (avoid Python 3.14)
+invisensing,144399559f6c5288cf4dfed9557e28b5c59de8f2,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:36:56+02:00,2026-05-25T13:36:56+02:00,0,1,31,45,0,fix(ci): release.yml — explicit Python matrix on macOS / Windows
+invisensing,7e5f857ee0eb74e941ef213955abc74cf786a155,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:30:00+02:00,2026-05-25T13:30:00+02:00,0,1,17,7,0,fix(ci): use maturin-action for the build step
+invisensing,e947b4a09b30e8cc4b40db2d45f2bb6ae07de44a,douxev,maelle.doukhan@invisensing.io,2026-05-25T13:24:30+02:00,2026-05-25T13:24:30+02:00,0,2,18,15,0,fix(deps): bump pyo3 0.22 → 0.24 to address PyString::from_object overflow
+invisensing,5aa6c1de7cf3afddce17133e35cf7ee33f834211,douxev,maelle.doukhan@invisensing.io,2026-05-25T12:58:45+02:00,2026-05-25T12:58:45+02:00,0,2,3,216,0,chore: untrack PUBLISHING.md (internal release runbook)
+invisensing,2caa995d12077f2ed65a0fe9c7d5add10457ce67,douxev,maelle.doukhan@invisensing.io,2026-05-25T12:43:16+02:00,2026-05-25T12:43:16+02:00,0,6,24,16,0,release: v1.0.0
+invisensing,f0689a45391cc2472dc9c5733222e3a06cc202e0,douxev,maelle.doukhan@invisensing.io,2026-05-25T12:33:54+02:00,2026-05-25T12:36:02+02:00,0,8,540,5,0,release: prepare v0.2.0 PyPI package
+invisensing,d02fdb9d75b90b5f9dc31a7d6bd7f54b3ff68aaf,Prod Server,prod@invisensing.io,2026-05-25T12:21:27+02:00,2026-05-25T12:21:27+02:00,0,19,3721,268,3,v0.2.0: Rust-backed reader for all FileWriter formats + PCIe7821 channel extractors
+invisensing,a0bcb23a9b5e5390d1f5acf9777def7f69919130,Prod Server,prod@invisensing.io,2024-11-21T14:03:23+01:00,2024-11-21T14:03:23+01:00,0,1,28,12,0,chore: Add doc
+invisensing,bd8d8fdd72ea2344253232d791bf2d39709fb828,Prod Server,prod@invisensing.io,2024-11-21T13:15:24+01:00,2024-11-21T13:15:24+01:00,0,1,1,1,0,chore: Add doc
+invisensing,9c0ddceda9d08d7bfc59a35e7e14bf300a6a325b,Prod Server,prod@invisensing.io,2024-11-21T13:13:47+01:00,2024-11-21T13:13:47+01:00,0,1,12,17,0,chore: Add doc
+invisensing,63dff6f783e04abec0d99271be046595a4fdc79d,Prod Server,prod@invisensing.io,2024-11-21T13:06:43+01:00,2024-11-21T13:06:43+01:00,0,2,26,26,0,chore: Add doc
+invisensing,ebc2f76bba181be48b35a2b4cb0957b5a1a74445,Prod Server,prod@invisensing.io,2024-11-21T13:05:24+01:00,2024-11-21T13:05:24+01:00,1,,,,,Merge branch 'master' of github.com:invisensing-io/python-lib
+invisensing,9f8d831e9e68c868d21244912f7c8d311aa5e03d,Prod Server,prod@invisensing.io,2024-11-21T13:05:12+01:00,2024-11-21T13:05:12+01:00,0,1,0,26,0,chore: Add doc
+invisensing,bf8a0b4fa4168f5092bf873663fe8a51f94e1715,Prod Server,prod@invisensing.io,2024-11-21T13:05:06+01:00,2024-11-21T13:05:06+01:00,0,1,26,0,0,Create docs
+invisensing,60dfa10ca86fa7e3f09c2b120fbac431026834de,Prod Server,prod@invisensing.io,2024-11-21T13:03:02+01:00,2024-11-21T13:03:02+01:00,0,1,1,1,0,chore: Add doc
+invisensing,85df4a1fb94ef00f6a1296a02dcbcbbec326277a,Prod Server,prod@invisensing.io,2024-11-21T13:02:50+01:00,2024-11-21T13:02:50+01:00,0,1,16,29,0,chore: Add doc
+invisensing,26bd37aae7642ae85d8247a9dedbfc66c44f9b0e,Prod Server,prod@invisensing.io,2024-11-21T13:01:27+01:00,2024-11-21T13:01:27+01:00,0,1,30,17,0,chore: Add doc
+invisensing,1bbec2522a9aa5e04f6095c0e4334e9a065282a9,Prod Server,prod@invisensing.io,2024-11-21T12:57:12+01:00,2024-11-21T12:57:12+01:00,0,1,1,1,0,chore: Add doc
+invisensing,ce12c523953918f83ae35a714145b8e5d37202ac,Prod Server,prod@invisensing.io,2024-11-21T12:56:55+01:00,2024-11-21T12:56:55+01:00,0,1,17,30,0,chore: Add doc
+invisensing,5e9cef99cf2167a7efc76a3ab5fb6093a180d945,Prod Server,prod@invisensing.io,2024-11-21T12:42:09+01:00,2024-11-21T12:42:09+01:00,0,1,39,0,0,feat(ci): add GitHub Actions workflow for Doxygen documentation generation and deployment to GitHub Pages
+invisensing,361a2aaee4e0ad51f4ddcb8f849ef6bbcc9c591a,Prod Server,prod@invisensing.io,2024-09-13T14:14:08+02:00,2024-09-13T14:14:08+02:00,0,5,29,7,1,chore: Docs
+invisensing,f622d50d5fc85359ad8dfc287fe44d1d44f722b2,Prod Server,prod@invisensing.io,2024-09-13T14:07:25+02:00,2024-09-13T14:07:42+02:00,0,1,6,0,0,Added example
+invisensing,507ce9f6b3f1419391c139470ac118452cf1c332,Prod Server,prod@invisensing.io,2024-09-13T14:06:48+02:00,2024-09-13T14:06:48+02:00,0,1,21,0,0,Create README.md
+invisensing,415e430aaeb3bd7fed157527a965507d74a97d54,Prod Server,prod@invisensing.io,2024-09-13T13:38:28+02:00,2024-09-13T13:38:28+02:00,0,6,2928,0,2,chore: add assets for Doxygen
+invisensing,3804443cf2ab48189fd0a86297676cf8bf5f1b3a,Prod Server,prod@invisensing.io,2024-09-13T13:13:27+02:00,2024-09-13T13:13:27+02:00,0,8,271,0,4,Init V0.1

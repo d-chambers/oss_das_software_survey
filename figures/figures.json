@@ -1,39 +1,33 @@
 {
- "snapshot": "2026-08-28",
+ "source": "working tree",
  "ecosystem_totals": {
-  "projects": 74,
-  "contributors": 120,
-  "commits": 6848,
-  "lines": 564437,
-  "unmirrored": [
-   "exploredas"
-  ]
+  "projects": 78,
+  "contributors": 125,
+  "commits": 6985,
+  "lines": 595505,
+  "unmirrored": []
  },
  "pipeline_flow": {
-  "snapshot": "2026-08-28",
-  "github_searches": 15,
-  "gitlab_searches": 16,
-  "gitea_searches": 8,
-  "namespace_walks": 71,
-  "probes_ok": 105,
+  "snapshot": "working tree",
+  "github_searches": 30,
+  "gitlab_searches": 32,
+  "gitea_searches": 16,
+  "namespace_walks": 134,
+  "probes_ok": 210,
   "probes_failed": 5,
   "failed_hosts": [
    "git.pyrocko.org"
   ],
-  "rows_retrieved": 3562,
-  "candidates": 3245,
-  "unreviewed": 2906,
-  "reviewed": 339,
+  "rows_retrieved": 7218,
+  "candidates": 3200,
+  "unreviewed": 0,
+  "reviewed": 397,
   "catalogued": 98,
-  "included": 73,
-  "metric_rows": 656,
+  "included": 78,
+  "metric_rows": 278,
   "metric_hosts": [
-   "api.anaconda.org",
    "api.github.com",
-   "api.openalex.org",
-   "git.gfz-potsdam.de",
-   "pypi.org",
-   "pypistats.org"
+   "git.gfz-potsdam.de"
   ],
   "summarised": 71,
   "summary_models": [
@@ -41,65 +35,77 @@
    "claude-sonnet-5"
   ]
  },
- "selection_funnel": {
-  "snapshot": "2026-08-28",
-  "candidates": 3245,
-  "reviewed": 339,
-  "in_scope": 74,
-  "unreviewed": 2906,
-  "held_back": [
+ "funnel": {
+  "snapshot": "working tree",
+  "candidates": 3200,
+  "stages": [
    [
-    "not-reusable",
-    163
+    "Rejected",
+    2803
    ],
    [
-    "paper-code",
+    "Not reusable",
+    182
+   ],
+   [
+    "Paper code",
     39
    ],
    [
-    "duplicate",
-    22
+    "Duplicate or collision",
+    64
    ],
    [
-    "acronym-collision",
-    18
+    "Teaching or no source",
+    14
    ],
    [
-    "other-fiber",
-    12
-   ],
-   [
-    "no-source",
-    10
-   ],
-   [
-    "teaching",
-    7
-   ],
-   [
-    "general-toolkit",
-    4
-   ],
-   [
-    "other",
-    1
+    "Out of scope",
+    8
    ]
   ],
-  "held_back_total": 276
+  "in_scope": 78,
+  "supporting": 5,
+  "other_fiber": 7,
+  "supporting_names": [
+   "EQNet / PhaseNet-DAS",
+   "Pyrocko",
+   "SWPVPSEKMInv",
+   "SeisBench",
+   "pyseistr"
+  ],
+  "other_fiber_names": [
+   "DSS_analyzer_Mariner",
+   "DTSGUI",
+   "Silixa_DTS_Tools",
+   "dts",
+   "fosanalysis",
+   "pyfocs",
+   "python-dts-calibration"
+  ],
+  "searched": [
+   "GitHub",
+   "GitLab",
+   "Gitea",
+   "Registries",
+   "Literature"
+  ],
+  "pending": [],
+  "accounted": 3200
  },
  "licence_mix": {
   "by_class": [
    [
     "osi-approved",
-    71
+    65
    ],
    [
     "source-available",
-    3
+    2
    ],
    [
     "unlicensed",
-    11
+    10
    ],
    [
     "unknown",
@@ -109,33 +115,37 @@
   "lines_by_class": [
    [
     "osi-approved",
-    543755
+    544987
    ],
    [
     "source-available",
-    50222
+    28825
    ],
    [
     "unlicensed",
-    27397
+    21693
    ],
    [
     "unknown",
     0
    ]
   ],
-  "projects": 86,
-  "lines": 621374
+  "projects": 78,
+  "lines": 595505
  },
  "composition": {
   "languages": [
    [
     "Python",
-    462037
+    470676
    ],
    [
     "Jupyter",
-    54107
+    51820
+   ],
+   [
+    "MATLAB",
+    29003
    ],
    [
     "Java",
@@ -150,16 +160,12 @@
     6928
    ],
    [
-    "MATLAB",
-    4253
-   ],
-   [
     "C",
     3837
    ],
    [
     "Shell",
-    2244
+    2210
    ],
    [
     "CUDA",
@@ -182,12 +188,12 @@
     58
    ]
   ],
-  "total_lines": 564437,
-  "projects": 86,
-  "with_pypi": 19,
-  "with_conda": 5,
+  "total_lines": 595505,
+  "projects": 78,
+  "with_pypi": 16,
+  "with_conda": 4,
   "with_julia": 1,
-  "with_none": 66
+  "with_none": 61
  },
  "growth": {
   "years": [
@@ -209,25 +215,25 @@
      46,
      228,
      356,
-     463,
+     470,
      916,
      1559,
-     1993,
+     1997,
      1416
     ]
    ],
    [
     "other-fiber",
     [
-     340,
-     407,
+     345,
+     446,
      450,
      36,
-     83,
-     246,
-     37,
-     88,
-     1
+     199,
+     373,
+     120,
+     106,
+     14
     ]
    ],
    [
@@ -248,11 +254,11 @@
   "class_totals": [
    [
     "das-native",
-    6977
+    6988
    ],
    [
     "other-fiber",
-    1688
+    2089
    ],
    [
     "das-supporting",
@@ -270,15 +276,6 @@
     "authors": 12,
     "days": 1366,
     "lines": 24958
-   },
-   {
-    "project_id": "dtscalibration",
-    "name": "python-dts-calibration",
-    "role": "other",
-    "commits": 1002,
-    "authors": 6,
-    "days": 2835,
-    "lines": 16221
    },
    {
     "project_id": "dastools",
@@ -308,15 +305,6 @@
     "lines": 63692
    },
    {
-    "project_id": "pyfocs",
-    "name": "pyfocs",
-    "role": "other",
-    "commits": 506,
-    "authors": 3,
-    "days": 1947,
-    "lines": 5728
-   },
-   {
     "project_id": "daspy",
     "name": "DASPy",
     "role": "other",
@@ -333,15 +321,6 @@
     "authors": 3,
     "days": 536,
     "lines": 21565
-   },
-   {
-    "project_id": "eqnet",
-    "name": "EQNet / PhaseNet-DAS",
-    "role": "other",
-    "commits": 265,
-    "authors": 3,
-    "days": 1491,
-    "lines": 21397
    },
    {
     "project_id": "das-simulator",
@@ -405,15 +384,6 @@
     "authors": 3,
     "days": 1269,
     "lines": 2171
-   },
-   {
-    "project_id": "dts-r",
-    "name": "dts",
-    "role": "other",
-    "commits": 126,
-    "authors": 3,
-    "days": 2661,
-    "lines": 9454
    },
    {
     "project_id": "das-ani",
@@ -522,15 +492,6 @@
     "authors": 1,
     "days": 73,
     "lines": 3610
-   },
-   {
-    "project_id": "dss-analyzer",
-    "name": "DSS_analyzer_Mariner",
-    "role": "other",
-    "commits": 53,
-    "authors": 1,
-    "days": 484,
-    "lines": 1569
    },
    {
     "project_id": "a1das",
@@ -853,7 +814,7 @@
     "role": "other",
     "commits": 9,
     "authors": 2,
-    "days": 15,
+    "days": 14,
     "lines": 409
    },
    {
@@ -902,6 +863,15 @@
     "lines": 5858
    },
    {
+    "project_id": "exploredas",
+    "name": "ExploreDAS",
+    "role": "other",
+    "commits": 7,
+    "authors": 1,
+    "days": 3,
+    "lines": 24750
+   },
+   {
     "project_id": "das-grad",
     "name": "DAS-GRAD",
     "role": "other",
@@ -947,6 +917,15 @@
     "lines": 611
    },
    {
+    "project_id": "orion",
+    "name": "ORION",
+    "role": "other",
+    "commits": 4,
+    "authors": 1,
+    "days": 30,
+    "lines": 3750
+   },
+   {
     "project_id": "dasmart-infra",
     "name": "DASmartInfra",
     "role": "other",
@@ -990,15 +969,6 @@
     "authors": 1,
     "days": 0,
     "lines": 6878
-   },
-   {
-    "project_id": "silixa-dts-tools",
-    "name": "Silixa_DTS_Tools",
-    "role": "other",
-    "commits": 1,
-    "authors": 1,
-    "days": 0,
-    "lines": 0
    }
   ]
  }

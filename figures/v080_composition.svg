@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="1680" height="720" viewBox="0 0 1680 720">
+  <title>Languages and packaging</title>
+  <desc>595,505 lines across 13 languages; 61 of 78 catalogued projects publish no package.</desc>
+  <rect x="0" y="0" width="1680" height="720" fill="#ffffff"/>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+  <text x="841.6" y="62" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT IT IS WRITTEN IN</text>
+  <rect x="420" y="96" width="980" height="30" rx="3" fill="#c98500"/>
+  <text x="400" y="118" font-size="21" fill="#2b2620" text-anchor="end">Python</text>
+  <text x="1410" y="118" font-size="19" fill="#7a7266" text-anchor="start">470,676  ·  79.0%</text>
+  <rect x="420" y="142" width="123.309" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="164" font-size="21" fill="#2b2620" text-anchor="end">Jupyter</text>
+  <text x="553.309" y="164" font-size="19" fill="#7a7266" text-anchor="start">51,820  ·  8.7%</text>
+  <rect x="420" y="188" width="69.0143" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="210" font-size="21" fill="#2b2620" text-anchor="end">MATLAB</text>
+  <text x="499.014" y="210" font-size="19" fill="#7a7266" text-anchor="start">29,003  ·  4.9%</text>
+  <rect x="420" y="234" width="45.3591" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="256" font-size="21" fill="#2b2620" text-anchor="end">Java</text>
+  <text x="475.359" y="256" font-size="19" fill="#7a7266" text-anchor="start">19,062  ·  3.2%</text>
+  <rect x="420" y="280" width="23.2245" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="302" font-size="21" fill="#2b2620" text-anchor="end">Julia</text>
+  <text x="453.224" y="302" font-size="19" fill="#7a7266" text-anchor="start">9,760  ·  1.6%</text>
+  <rect x="420" y="326" width="16.4856" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="348" font-size="21" fill="#2b2620" text-anchor="end">Rust</text>
+  <text x="446.486" y="348" font-size="19" fill="#7a7266" text-anchor="start">6,928  ·  1.2%</text>
+  <rect x="420" y="372" width="9.13036" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="394" font-size="21" fill="#2b2620" text-anchor="end">C</text>
+  <text x="439.13" y="394" font-size="19" fill="#7a7266" text-anchor="start">3,837  ·  0.6%</text>
+  <rect x="420" y="418" width="5.25882" height="30" rx="3" fill="#e4dccb"/>
+  <text x="400" y="440" font-size="21" fill="#2b2620" text-anchor="end">Shell</text>
+  <text x="435.259" y="440" font-size="19" fill="#7a7266" text-anchor="start">2,210  ·  0.4%</text>
+  <path d="M 100,500 L 1580,500" stroke="#cbc3b3" stroke-width="3" fill="none"/>
+  <circle cx="420" cy="500" r="7" fill="#2b2620"/>
+  <circle cx="840" cy="500" r="7" fill="#2b2620"/>
+  <circle cx="1260" cy="500" r="7" fill="#2b2620"/>
+  <text x="841.6" y="556" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">HOW LITTLE OF IT IS PACKAGED</text>
+  <text x="420" y="616" font-size="52" fill="#2b2620" text-anchor="middle">16</text>
+  <text x="421.2" y="648" font-size="20" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">ON PYPI</text>
+  <text x="840" y="616" font-size="52" fill="#2b2620" text-anchor="middle">4</text>
+  <text x="841.2" y="648" font-size="20" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">ON CONDA</text>
+  <text x="1260" y="616" font-size="52" fill="#2b2620" text-anchor="middle">61</text>
+  <text x="1261.2" y="648" font-size="20" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">NO PACKAGE AT ALL</text>
+  <text x="1260" y="676" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">of 78 catalogued</text>
+  </g>
+</svg>

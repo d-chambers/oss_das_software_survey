@@ -1,8 +1,8 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-das-cc-gpu,included,45911e2640b0cbecb2efbca6c3ae69bb49e69ada,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-08-08T11:51:13-04:00,2024-08-08T11:51:13-04:00,0,1,1,1,0,Update README.md
-das-cc-gpu,included,efd362a10d6897a685d7707a0409bcd4ca235d5e,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:14:29-04:00,2024-05-17T11:14:29-04:00,0,1,2,1,0,Update README.md
-das-cc-gpu,included,c3b8627f28f3ccbaa1b2015e321a98fb12fdf05b,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:13:44-04:00,2024-05-17T11:13:44-04:00,0,1,2,0,0,Create README.md
-das-cc-gpu,included,7fcb05d5fffd905888234e22a93826b65f6b52e4,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:12:21-04:00,2024-05-17T11:12:21-04:00,0,1,0,0,1,Delete Cuda_cc_note.docx
-das-cc-gpu,included,295e57e84694e404e06c4ac55839612101fd80ba,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:10:19-04:00,2024-05-17T11:10:19-04:00,0,2,0,0,2,Rename Cuda_cc_note.pdf to Readme.pdf
-das-cc-gpu,included,a43c05a475d81f3b0a17ab594f4842b593a20ebb,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-04-20T17:13:19-04:00,2024-04-20T17:13:19-04:00,0,45,337459,0,9,Add files via upload
-das-cc-gpu,included,5a734ee28f302f684bfaf13514aa55dfa4b4a6a4,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-04-20T17:12:35-04:00,2024-04-20T17:12:35-04:00,0,2,680,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-cc-gpu,45911e2640b0cbecb2efbca6c3ae69bb49e69ada,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-08-08T11:51:13-04:00,2024-08-08T11:51:13-04:00,0,1,1,1,0,Update README.md
+das-cc-gpu,efd362a10d6897a685d7707a0409bcd4ca235d5e,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:14:29-04:00,2024-05-17T11:14:29-04:00,0,1,2,1,0,Update README.md
+das-cc-gpu,c3b8627f28f3ccbaa1b2015e321a98fb12fdf05b,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:13:44-04:00,2024-05-17T11:13:44-04:00,0,1,2,0,0,Create README.md
+das-cc-gpu,7fcb05d5fffd905888234e22a93826b65f6b52e4,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:12:21-04:00,2024-05-17T11:12:21-04:00,0,1,0,0,1,Delete Cuda_cc_note.docx
+das-cc-gpu,295e57e84694e404e06c4ac55839612101fd80ba,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-05-17T11:10:19-04:00,2024-05-17T11:10:19-04:00,0,2,0,0,2,Rename Cuda_cc_note.pdf to Readme.pdf
+das-cc-gpu,a43c05a475d81f3b0a17ab594f4842b593a20ebb,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-04-20T17:13:19-04:00,2024-04-20T17:13:19-04:00,0,45,337459,0,9,Add files via upload
+das-cc-gpu,5a734ee28f302f684bfaf13514aa55dfa4b4a6a4,zhichaoshen40,159200692+zhichaoshen40@users.noreply.github.com,2024-04-20T17:12:35-04:00,2024-04-20T17:12:35-04:00,0,2,680,0,0,Initial commit

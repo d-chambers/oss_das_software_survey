@@ -1,138 +1,138 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-farmdas,included,56d072f2b67e6587ac0a0b55568286b5b559c62b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2026-02-02T12:53:13-06:00,2026-02-02T12:53:13-06:00,1,,,,,Merge branch 'main' of github.com:Denolle-Lab/FarmDAS updated figures locally and modified readme on the web
-farmdas,included,5ee21fcf969a3e4ad58bcc85361394f197b49f3f,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2026-02-02T12:52:28-06:00,2026-02-02T12:52:28-06:00,0,13,221,55,10,update figures
-farmdas,included,7ea50f0a33bc86f8ccd2e12dc3a9e5ef84ec8b51,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-12-23T20:30:06-06:00,2025-12-23T20:30:06-06:00,0,1,1,1,0,Remove DOI badge from README
-farmdas,included,94137d3865ab7eda60e09013e055154ae186f453,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-12-23T20:25:17-06:00,2025-12-23T20:25:17-06:00,0,1,1,0,0,Add DOI badge to README
-farmdas,included,45e82c12feeca25d5b5411ca4b69a07929b603d5,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T16:11:56-06:00,2025-12-23T16:11:56-06:00,0,13,269,432,5,clean up
-farmdas,included,ceb05292f1e2032926cca8ad649c67f9c09f043b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T11:15:51-06:00,2025-12-23T11:15:51-06:00,0,3,3,452,0,clean up
-farmdas,included,b51e29ed1a9c75a048a804fa4eb956c280845b06,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T10:43:13-06:00,2025-12-23T10:43:13-06:00,0,1,0,379,0,clean up
-farmdas,included,244ec8b06499383583f58ce4f141c722f91feea7,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T10:38:02-06:00,2025-12-23T10:38:02-06:00,0,9,911,294,6,update for figures
-farmdas,included,0ec717bfaa2d56cbb2a00b92cde163db54f85e1b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-09-23T14:34:18-05:00,2025-09-23T14:34:18-05:00,0,8,56,460,5,update figures
-farmdas,included,1ceae86adf78c500f3a5066fc3dc8e31c55a98b9,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-09-23T11:22:50-05:00,2025-09-23T11:22:50-05:00,0,15,0,3098,7,clean up
-farmdas,included,3ccfae7bfed23a553f64ceea3ce24a0c95e5d15e,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:15:49-05:00,2025-09-23T11:15:49-05:00,0,1,13,8,0,Revise README for clarity and additional information
-farmdas,included,e621f681cf257136b4025525e5ffc8f592a0b76e,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:14:28-05:00,2025-09-23T11:14:28-05:00,0,1,2,1,0,Add license information to README.md
-farmdas,included,351113db1ae22fcf14a7517a3db06297402023e8,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:12:57-05:00,2025-09-23T11:12:57-05:00,0,1,2,0,0,Add license section to README
-farmdas,included,8891aaa97db29fbca1a263a9d6e506f475853a35,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:09:58-05:00,2025-09-23T11:09:58-05:00,0,1,1,1,0,Update Jupyter examples link in README
-farmdas,included,139caaf1b190aa2fbb820c0ab3c85536449d1ab5,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T10:12:34-05:00,2025-09-23T10:12:34-05:00,0,1,8,12,0,Update README.md
-farmdas,included,22664f5ae95cd016630d4a580f0a2e64cd40d043,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T10:03:52-05:00,2025-09-23T10:03:52-05:00,0,2,20,33,0,Update and rename LICENSE.txt to LICENSE.md
-farmdas,included,39a57e1afa35635b0b325ad3bb8c8f6de9d2c5b0,施其斌,shiqibin@Mac.attlocal.net,2025-09-23T09:49:14-05:00,2025-09-23T09:49:14-05:00,1,,,,,Merge branch 'main' of github.com:Denolle-Lab/FarmDAS
-farmdas,included,e4f6e7031cd6ca6a96e140f4e56142ccd9acd74a,施其斌,shiqibin@Mac.attlocal.net,2025-09-23T09:47:16-05:00,2025-09-23T09:47:16-05:00,0,31,4672,1968,18,add many local changes
-farmdas,included,a1b98eab02454e108cc5c0b57f5be4951d8a738f,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-09T10:31:58-05:00,2025-09-09T10:31:58-05:00,0,1,30,16,0,Update LICENSE.txt
-farmdas,included,b79eec120a9e1bc5ca1338184f1a7f0096b5ebbd,施其斌,shiqibin@Mac.attlocal.net,2025-05-07T01:22:49-05:00,2025-05-07T01:22:49-05:00,0,11,319,403,8,update figures
-farmdas,included,a009315d9622f6b06b3c6b8f5562e947ff0a250d,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-05-06T12:38:50-05:00,2025-05-06T12:38:50-05:00,0,10,12154,446,5,update figures
-farmdas,included,7e576ffc231520953b39127bfd26d3a8224b5c51,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-05-01T18:34:14-05:00,2025-05-01T18:34:14-05:00,0,8,679,856,3,model all channels
-farmdas,included,bada395bd0c0242e4ee502c51760da3c6342bb74,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-28T20:15:12-05:00,2025-04-28T20:15:12-05:00,0,3,697,488,0,update litho models
-farmdas,included,868d1c6ec037ecbad8a75dbc6ed8dbd2e9359026,施其斌,shiqibin@Mac.attlocal.net,2025-04-25T10:25:58-05:00,2025-04-25T10:25:58-05:00,0,1,69,88,0,refine figures
-farmdas,included,f5a69f6023bf8c77eab654c2361d769397326577,施其斌,shiqibin@Mac.attlocal.net,2025-04-24T18:17:24-05:00,2025-04-24T18:17:24-05:00,0,1,19,11,0,refine figures
-farmdas,included,235e8913add86e790699265911c84b830bbc5d9e,施其斌,shiqibin@Mac.attlocal.net,2025-04-24T18:02:18-05:00,2025-04-24T18:02:18-05:00,0,1,239,377,0,refine figures
-farmdas,included,26e9d40c28caef6547c590b8705f2ce3d01e6309,施其斌,shiqibin@Mac.attlocal.net,2025-04-24T14:02:02-05:00,2025-04-24T14:02:02-05:00,0,2,415,82,0,update capillary taus and remove fake rains
-farmdas,included,1a5150f5c056eb5f9b3f0e0fdffce7eb99fa6b8b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-23T17:19:49-05:00,2025-04-23T17:19:49-05:00,0,1,73,42,0,final lith model with Ae=Ap=1
-farmdas,included,fe93871833d00686806c1b9795fd16961c9916c1,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-23T14:32:20-05:00,2025-04-23T14:32:20-05:00,0,2,248,98,0,update model parameters
-farmdas,included,368225fd5b5403b6ba98c052c8bdd7b63c077e46,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-04-22T12:55:05-05:00,2025-04-22T12:55:05-05:00,0,4,346,89,0,update model parameters
-farmdas,included,22d5837f8481a5309a5bfebed77a6ffc57b6d2ef,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-11T12:21:22-05:00,2025-04-11T12:21:22-05:00,0,5,207,135,2,update figures
-farmdas,included,8a08590c981e8ea8093ff197465fb123b08c4625,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:55:25-05:00,2025-04-09T12:55:25-05:00,0,1,0,0,1,clean up Fig1
-farmdas,included,3736cf2f6155ef73d63161174faaca4e84132e01,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:53:52-05:00,2025-04-09T12:53:52-05:00,0,1,0,0,1,clean up Fig1
-farmdas,included,fceed5dfb6e34b074cf0552a0e931ff6821a2bac,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:51:14-05:00,2025-04-09T12:51:14-05:00,0,1,1,1,0,clean up Fig1
-farmdas,included,2e467131f55f2849a701d9a254d68c9f3c3fe8c6,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:50:05-05:00,2025-04-09T12:50:05-05:00,0,1,3,3,0,clean up Fig1
-farmdas,included,399abd363c7781d455e837fe905e030afa60abbe,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:47:35-05:00,2025-04-09T12:47:35-05:00,0,8,729,256,3,clean up Fig1
-farmdas,included,b5fef555995aa240e143e9de8a7f58b1a3afd743,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-04-08T06:39:54-05:00,2025-04-08T06:39:54-05:00,0,71,12989,13211,19,clean up folders
-farmdas,included,ad2af4c66b80d9d0e78d95c36447922ea49ac299,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-04-08T06:31:34-05:00,2025-04-08T06:31:34-05:00,0,18,14821,14821,0,archive large notebooks
-farmdas,included,5af613e76759e676f2d1a830691cc3e592c08f07,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-07T14:17:07-05:00,2025-04-07T14:17:07-05:00,0,8,106,95,5,update graphics
-farmdas,included,8d265c4b7403a0843a977d0bb829ccc396f52859,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-07T12:52:43-05:00,2025-04-07T12:52:43-05:00,0,11,0,0,11,add path for graphics\
-farmdas,included,be91bf8069ef5f90d7b1206bd426c6cf030817b4,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-07T10:27:16-05:00,2025-04-07T10:27:16-05:00,0,3,100,66,0,update figures
-farmdas,included,f89f0e05e35f4f3850c7fe4ef701b88233f4eefd,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-06T16:21:52-05:00,2025-04-06T16:21:52-05:00,0,3,76,88,1,save small files to data folder
-farmdas,included,d4b4a1af13a1b1104e3b9965e0999b75cb63d1d1,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-06T10:35:03-05:00,2025-04-06T10:35:03-05:00,0,8,385,245,4,save small files to data folder
-farmdas,included,ad98177ff5b6115bbc3d3abd5c79ade03965eb88,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-06T02:57:46-05:00,2025-04-06T02:57:46-05:00,0,9,15,15,8,save small files to data folder
-farmdas,included,ffd461f1efe12ec1520985258c370787fde50f8e,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-01T17:49:02-07:00,2025-04-01T17:49:02-07:00,0,4,718,1620,0,Fig notebooks read small files
-farmdas,included,5d88752b681db13b4092f57e96fd9525dae23c21,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-03-30T17:25:32+08:00,2025-03-30T17:25:32+08:00,0,14,1304,1371,7,update figures
-farmdas,included,b84284ddda5a3784e3b06e6b42d231375d6318c4,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-03-08T12:52:29-08:00,2025-03-08T12:52:29-08:00,0,2,51,0,1,update results for 15-60Hz
-farmdas,included,f715912056fab4588114fba6db7cb87b77a407df,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-03-07T23:44:55-08:00,2025-03-07T23:44:55-08:00,0,1,0,0,1,update attenuation results for 15-60 Hz stretched ac
-farmdas,included,7e961144b2d8592d4340dd5ce9096c98b8014afe,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-03-07T10:07:21-08:00,2025-03-07T23:37:09-08:00,0,16,1971,870,6,re-organize files
-farmdas,included,98584079b6f52feb3dafecf928b0fa4d0f5484b3,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-03-07T18:20:19-06:00,2025-03-07T18:20:19-06:00,0,7,7250,1113,0,update for 15-60Hz
-farmdas,included,1c6e0778558fcd46a243d3e5731d14ee3aa82da8,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-02-27T15:03:52-06:00,2025-02-27T15:03:52-06:00,0,1,3526,0,0,add resonance picking
-farmdas,included,006a5ce3293561dd1f35887869ab0dd4e412c891,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-02-27T15:02:19-06:00,2025-02-27T15:02:19-06:00,0,3,1267,52,0,update fig notebooks
-farmdas,included,558b81cf4dadc08db13eb60e9731d789780d5c29,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-02-26T08:09:36-08:00,2025-02-26T08:09:36-08:00,0,2,51,0,1,adding window file and results on measuring stretched twice ac and their mean ac
-farmdas,included,9efe498fa47fd84874d93f14b3c742b1bea87e4d,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T18:13:48-06:00,2025-02-25T18:13:48-06:00,0,1,70,17,0,update stretched acfs
-farmdas,included,2b5d5ada4303be2172c7bcb7a420bf13449ad078,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T14:59:55-06:00,2025-02-25T14:59:55-06:00,0,1,85,62,0,update
-farmdas,included,d8b4c31270af27cf04e2282356ae95ac6124a702,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T13:04:33-06:00,2025-02-25T13:04:33-06:00,1,,,,,Merge branch 'main' of github.com:Denolle-Lab/FarmDAS
-farmdas,included,129ef0a1f86c7f439c0023d63b5413ebb922eacb,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T13:04:02-06:00,2025-02-25T13:04:02-06:00,0,1,47,41,0,update
-farmdas,included,7a6a899ff59045da0cc8cc126501c64d864774ed,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-02-25T08:44:32-08:00,2025-02-25T08:44:32-08:00,0,2,51,0,1,adding window file and results of measuring stretched ac
-farmdas,included,049f926801a124022ab4a18ff15a1c59259ef30f,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T10:36:49-06:00,2025-02-25T10:36:49-06:00,0,3,0,1696,0,clean up
-farmdas,included,7a59795960865c2c8f51ade8f1e1928c3347f6c1,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T10:35:28-06:00,2025-02-25T10:35:28-06:00,0,3,1394,30,0,conduct 2nd iteration of dvv using strecthed acfs
-farmdas,included,8f7c1e6ecfef34df1e90f3b081d2da249b66a307,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-02-24T09:05:55-08:00,2025-02-24T09:05:55-08:00,0,5,975,33,1,update attenuation results using a measuring window based on signals at each station
-farmdas,included,a580ad5ebbfda7058f589d5c0914cf41f15b76ca,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-23T10:39:45-06:00,2025-02-23T10:39:45-06:00,0,3,1696,0,0,update figure notebooks
-farmdas,included,893688eae592be3cbe6de037be3f6b117bc9df0b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T23:40:31-06:00,2025-02-22T23:40:31-06:00,0,1,607,0,0,add Fig2 notebook
-farmdas,included,b0fa49add35a806e1b79a01120e7418620f9dd4d,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T16:32:56-06:00,2025-02-22T16:32:56-06:00,0,1,5,2,0,update soil water model
-farmdas,included,4b2fb87412c969d4fe89e5d9686f9abcbfcf7ae0,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T16:27:22-06:00,2025-02-22T16:27:22-06:00,0,4,808,561,0,add notebook for figure3
-farmdas,included,db3ffe8c633036f6332998b15e7f80971d99c59b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T15:25:07-06:00,2025-02-22T15:25:07-06:00,0,13,952,252,5,add src folder
-farmdas,included,d44075cb743ed910112e9e024d29e0b647536ca1,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T14:52:27-06:00,2025-02-22T14:52:27-06:00,0,13,4878,4878,1,archive notebooks
-farmdas,included,5322a1bc8be0d955dbf78830bd99fdabf2dd9f39,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:40:12-06:00,2025-02-22T10:40:12-06:00,0,2,33,2474,0,clean up notebooks of dvv enhancement
-farmdas,included,6870e5dab2a61d1aafadde927f89c2ca5d3d5c1f,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:37:45-06:00,2025-02-22T10:37:45-06:00,0,1,1993,0,0,clean up notebooks of dvv enhancement
-farmdas,included,56cd4033bb0ef2cf299c125784c57e4b76727c9d,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:34:33-06:00,2025-02-22T10:34:33-06:00,0,20,504,0,10,add data folder
-farmdas,included,d2440897c21c6991743ea3305e0d66736810242a,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:31:28-06:00,2025-02-22T10:31:28-06:00,0,1,110,897,0,clean up notebooks of dvv enhancement
-farmdas,included,1ef65d95784903d891391c771539c8cc319ea7ab,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-21T15:20:37-06:00,2025-02-21T15:20:37-06:00,0,3,148,137,1,add new dvv file
-farmdas,included,1210e413dd335710dac050a5b186bfdddfa4a0bb,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-21T15:15:17-06:00,2025-02-21T15:15:17-06:00,0,66,19226,19226,6,reorganize path
-farmdas,included,5ee54a0f46d767a4109e750290b5a08277b3da0b,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-02-17T13:18:45-06:00,2025-02-17T13:18:45-06:00,0,2,907,538,0,"finalize dvv ehancement, add to model fitting"
-farmdas,included,f6ff61d99340d6761b17fb7bfcf4971deeb1d6ef,施其斌,shiqibin@sesonotakeshis-MacBook-Air.attlocal.net,2025-02-17T08:10:34-06:00,2025-02-17T08:10:34-06:00,0,1,1053,258,0,add polyfit by Nan You
-farmdas,included,cc9cff7384c38c477d2f6cc3c545b31d3c987577,施其斌,shiqibin@sesonotakeshis-MacBook-Air.attlocal.net,2025-02-16T01:46:00-06:00,2025-02-16T01:46:00-06:00,0,1,577,413,0,dv * specgram
-farmdas,included,1e7f4bda8ecb5491fd92f45c75a1087e1528d45a,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-02-14T15:39:49-06:00,2025-02-14T15:39:49-06:00,0,1,617,363,0,correlate acf spec and dv
-farmdas,included,f7ee0644648e95144d076fbc0fcc0a6e3daa704a,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-13T12:18:14-06:00,2025-02-13T12:18:14-06:00,0,1,893,1281,0,"add comparisons on spectrogram, dv and acf spec"
-farmdas,included,9e288c3812e42618fedb0b38bf73a98c9a2bea4e,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-12T17:08:13-06:00,2025-02-12T17:08:13-06:00,0,2,47,39,1,update resonance freq
-farmdas,included,5fd6d78607b14e1eeb1c5a06610bd55c329abb66,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-12T12:46:22-06:00,2025-02-12T12:46:22-06:00,0,1,19,11,0,update resonance freq
-farmdas,included,ab678e9aa984bc6e72904fdd9ec54c439b7a48b1,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-12T12:18:05-06:00,2025-02-12T12:18:05-06:00,0,1,3406,0,0,update resonance freq
-farmdas,included,84de57be0cb3e126b5308e8e48bb933da3679377,施其斌,shiqibin@sesonoteshisair.dyndns.rice.edu,2025-01-24T11:20:37-06:00,2025-01-24T11:20:37-06:00,0,1,299,17,0,add inversion cells
-farmdas,included,4932378f8bcbadd0d0d2ad6945aa326246430765,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-01-22T13:44:33-06:00,2025-01-22T13:44:33-06:00,0,1,23,16,0,update data variables
-farmdas,included,b531ca4471dee730769ffd616990ff679e61e43e,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-01-21T10:09:02-06:00,2025-01-21T10:09:02-06:00,0,5,201,0,2,add data
-farmdas,included,0c3d74ccf59c1cb4953a1a12e33c855a18d093b8,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-01-21T10:08:13-06:00,2025-01-21T10:08:13-06:00,0,1,843,0,0,add notebook for 2-stage model
-farmdas,included,b6103d9350d95bffc41ae43e5dcde935bcbb3776,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-12-02T15:31:42-08:00,2024-12-02T15:31:42-08:00,0,1,432,409,0,update hydrological model
-farmdas,included,ccbe2b275e96044eb4b5d483b37a40575b7ea0a5,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-11-12T11:35:23-08:00,2024-11-12T11:35:23-08:00,0,1,173,160,0,clean up the notebook
-farmdas,included,fdf34f2e398a6157e53c4644a62993c22fc0f78e,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-11-12T11:17:49-08:00,2024-11-12T11:17:49-08:00,0,1,302,1573,0,clean up the notebook
-farmdas,included,335c0dabb2319e814c82800dc1c43aaafe5cfaa2,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-11-12T06:44:02-06:00,2024-11-12T06:44:02-06:00,0,1,1775,33,0,"add ETo and interpolated tillage, tire"
-farmdas,included,cfbdd038a49a92af84723ebffa05895a8160f22c,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2024-09-26T14:08:55-05:00,2024-09-26T14:08:55-05:00,0,1,191,6,0,clean up the hydrological model
-farmdas,included,ba1f800070b76471e69291ff33d67b6973cc0bc3,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2024-09-26T12:56:26-05:00,2024-09-26T12:56:26-05:00,0,1,23,33,0,clean up the hydrological model
-farmdas,included,b4ac43256d2ac58cd0130f6009a3dbb53d1faac8,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-09-26T12:43:28-05:00,2024-09-26T12:43:28-05:00,0,1,206,564,0,clean up the hydrological model
-farmdas,included,eff661a4e0fff51a8a1c3d2b0f11aea14a105c50,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-09-25T12:23:40-05:00,2024-09-25T12:23:40-05:00,0,1,593,18,0,update the hydrological modeling
-farmdas,included,33bd7c98194cb3cd8939377f58f618a334f4f270,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-09-23T11:38:54-05:00,2024-09-23T11:38:54-05:00,0,1,387,0,0,add hydrological model
-farmdas,included,5ebaf3f5dc959a03dde001d1bb87614029a9c65a,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-26T17:52:29-07:00,2024-08-26T17:52:29-07:00,0,1,41,26,0,add psd to litho modeling
-farmdas,included,054bed099ed0fee2be2ae201e6369c1aab5ef587,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-26T15:30:19-07:00,2024-08-26T15:30:19-07:00,0,1,743,0,0,add comprehensive litho modeling
-farmdas,included,2d778ec5635a50490f889b9407e8fdbe4d9347cd,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-23T04:44:11-07:00,2024-08-23T04:44:11-07:00,0,1,46,29,0,update
-farmdas,included,94955265e40915c1057a5dff1d7ce1fbf7aae611,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T16:15:32-07:00,2024-08-22T16:15:32-07:00,0,1,99,119,0,update
-farmdas,included,1f94051cb075528eebece360c37d2fa2b224be4d,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T09:58:14-07:00,2024-08-22T09:58:14-07:00,0,1,0,0,1,add rock microscpic image
-farmdas,included,e93a4b474f8ea30d152d59934cbc9d8c1d759135,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T07:29:03-07:00,2024-08-22T07:29:03-07:00,0,1,4,2,0,update
-farmdas,included,f22323185dee62d94774b77cff70616d1a7ba6b5,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T00:37:54-07:00,2024-08-22T00:37:54-07:00,0,1,247,153,0,update
-farmdas,included,5aa5deb302165eecc1075e25127356d3a21be8ee,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-21T02:15:13-07:00,2024-08-21T02:15:13-07:00,0,1,496,0,0,add lithology model
-farmdas,included,30a8ff44ba776cc079ddf93b4a7c0e7c1fe4bf85,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-09T11:31:24-05:00,2024-08-09T11:31:24-05:00,0,1,230,7,0,add porosity calculation
-farmdas,included,83eea9a98f83fa25a776031b977f1109554e5fd1,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-08T03:27:45-05:00,2024-08-08T03:27:45-05:00,0,1,176,75,0,add phyical paras to plot
-farmdas,included,5a7397b969073a734664842f5fac254ac1d17edb,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2024-08-07T15:23:53-05:00,2024-08-07T15:23:53-05:00,0,1,991,0,0,add notebook to plot spatial variability
-farmdas,included,a1e44de6e4ba315904a2781c86c8906a70a979c5,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-23T15:26:38-08:00,2024-01-23T15:26:38-08:00,0,2,452,452,0,rename the scripts
-farmdas,included,65746d255a38f8f1c312e7f0ba3dbb0892bb7106,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-18T10:00:12-08:00,2024-01-18T10:00:12-08:00,0,2,0,373,0,remove unused scripts
-farmdas,included,acb6335d6e394eeb211866c31a9fa6a09ec9ae5c,qibinshi,qibins@uw.edu,2024-01-17T11:18:16-08:00,2024-01-17T11:18:16-08:00,0,1,1,1,0,add .idea ti gitignore
-farmdas,included,f74249ab75517e9c488b38acc7c4c18ec525a63d,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-16T16:07:46-08:00,2024-01-16T16:07:46-08:00,0,1,109,97,0,Update attenuation scripts
-farmdas,included,628337c63a1f835085f38297785f1cfc235635df,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-16T16:03:29-08:00,2024-01-16T16:03:29-08:00,0,9,1263,1324,0,Clean up attenuation scripts
-farmdas,included,3771833111325c3160add34c6d99da1106144b24,qibinshi,qibins@uw.edu,2024-01-16T15:54:44-08:00,2024-01-16T15:54:44-08:00,0,3,3,0,0,add src folders
-farmdas,included,518bfc62131058712c87b1361a22fa2d30fbc868,qibinshi,qibins@uw.edu,2024-01-16T15:53:55-08:00,2024-01-16T15:53:55-08:00,0,1,1,0,0,add src folders
-farmdas,included,908fc4257d7a53654602cb434351f57ebb27420b,qibinshi,qibins@uw.edu,2024-01-16T15:50:55-08:00,2024-01-16T15:50:55-08:00,0,23,0,13154,0,mv notebooks to examples
-farmdas,included,ad18b71d55c4a9389cb28f417ab2c21a283e34a1,qibinshi,qibins@uw.edu,2024-01-16T15:49:22-08:00,2024-01-16T15:49:22-08:00,0,23,13154,0,0,mv notebooks to examples
-farmdas,included,59e007b76e9aa6f48ec8f889399c6ae27cb540da,qibinshi,qibins@uw.edu,2024-01-16T15:47:59-08:00,2024-01-16T15:47:59-08:00,0,2,0,19,0,change test to examples
-farmdas,included,1582a0878c8c1bc47a2b8bd128d3ccde79e18104,qibinshi,qibins@uw.edu,2024-01-16T15:46:51-08:00,2024-01-16T15:46:51-08:00,0,2,19,0,0,change test to examples
-farmdas,included,2098187be2e00228003fba79a6eb1b77c99264a5,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2024-01-16T15:46:06-08:00,2024-01-16T15:46:06-08:00,0,1,5,3,0,Update README.md
-farmdas,included,b8ddb899b9766779245cb5eda69e4a2cc4f683f7,qibinshi,qibins@uw.edu,2024-01-16T15:42:32-08:00,2024-01-16T15:42:32-08:00,0,1,12,32,0,add README
-farmdas,included,8cc2fcce23205891b415506ab18993d6cdccd872,qibinshi,qibins@uw.edu,2024-01-16T13:57:04-08:00,2024-01-16T13:57:04-08:00,0,5,5361,0,0,add scripts for the dvv analysis on Harper farm
-farmdas,included,c5a4f96edeb23cba9c7dd44612131dd9d0afce19,qibinshi,qibins@uw.edu,2023-10-23T18:08:37-07:00,2023-10-23T18:08:37-07:00,0,26,6469,6469,0,change folder name to noispy4DAS
-farmdas,included,826132b3bbf4d95ee5964e45286cf35eee82c283,qibinshi,qibins@uw.edu,2023-10-23T18:06:55-07:00,2023-10-23T18:06:55-07:00,0,1,47,528,0,clean up outputs of big notebooks
-farmdas,included,5773a090382fabc0ed440fb4b75f3e771a913f77,qibinshi,qibins@uw.edu,2023-10-23T18:04:50-07:00,2023-10-23T18:04:50-07:00,0,2,1417,0,0,update notebooks about dvv
-farmdas,included,c0b797f3da634381a58bb6d020346c8f1be9c6ae,qibinshi,qibins@uw.edu,2023-10-23T17:47:01-07:00,2023-10-23T17:47:01-07:00,0,11,0,5533,0,change folder name
-farmdas,included,646d62e035094eeea36241f677cba66c5ab1154c,qibinshi,qibins@uw.edu,2023-10-23T17:44:52-07:00,2023-10-23T17:44:52-07:00,0,11,5533,0,0,change folder name
-farmdas,included,09626bc54257bbf1024958618ea6ce78eb97a0e3,Kuan-Fu Feng,kuanfufeng@gmail.com,2023-10-23T17:42:22-07:00,2023-10-23T17:42:22-07:00,0,1,0,1669,0,remove a notebook file for checking
-farmdas,included,8cbfdbefdca004c6232df684aff3fa1efb837cc6,Kuan-Fu Feng,kuanfufeng@gmail.com,2023-10-23T17:39:35-07:00,2023-10-23T17:39:35-07:00,0,4,2482,0,0,add attenuation scripts
-farmdas,included,361d306dfc53e8cd67cd9636daa94d43b0a3cf6d,Kuan-Fu Feng,kuanfufeng@gmail.com,2023-10-23T16:47:15-07:00,2023-10-23T16:47:15-07:00,0,2,511,0,0,add model fitting scripts
-farmdas,included,5f187a1d2faf89c7c0d947792df875eeee5b49d9,qibinshi,qibins@uw.edu,2023-08-23T23:35:34-07:00,2023-08-23T23:35:34-07:00,0,1,0,1052,0,rm redundant script
-farmdas,included,be244eddf9f3a33bb74e45960cc9e38c58cb02cf,qibinshi,qibins@uw.edu,2023-08-23T23:31:12-07:00,2023-08-23T23:31:12-07:00,0,5,1914,190,0,update scripts for resonance modes
-farmdas,included,0bea2fbca699f34d57abc6c010360ab336d53665,qibinshi,qibins@uw.edu,2023-07-11T12:41:22-07:00,2023-07-11T12:41:22-07:00,0,1,87,88,0,update script for FK filter
-farmdas,included,7eb68804a1411b3ffa3fea72f38782f1ce5a0410,qibinshi,qibins@uw.edu,2023-07-11T01:53:58-07:00,2023-07-11T01:53:58-07:00,0,5,1960,1,0,adding script for FK filter
-farmdas,included,933df53bcbfa38f1a118fb86f20f6108150d197c,qibinshi,qibins@uw.edu,2023-06-28T12:52:08-07:00,2023-06-28T12:52:08-07:00,0,2,664,20,0,adding codes to align DTS T and DAS resonance
-farmdas,included,4736757188a8b203a2f7445e8bca01d50bfbeb6e,qibinshi,qibins@uw.edu,2023-06-28T11:23:05-07:00,2023-06-28T11:23:05-07:00,0,1,116,33,0,adding codes to save timestamps for the DAS data
-farmdas,included,0d6c80ca739871ac5e8bbef727e3183aed570442,qibinshi,qibins@uw.edu,2023-06-28T07:30:55-07:00,2023-06-28T07:30:55-07:00,0,1,203,0,0,add scripts for England farmDAS
-farmdas,included,2f72c9bb529753efd21b6d45fc5bd2d246d57517,qibinshi,qibins@uw.edu,2023-06-28T07:29:43-07:00,2023-06-28T07:29:43-07:00,0,1,0,411,0,remove useless scripts
-farmdas,included,c387002b937d3d1678aad259b0000c023d691c89,qibinshi,qibins@uw.edu,2023-06-28T07:28:04-07:00,2023-06-28T07:28:04-07:00,0,4,2378,0,0,add scripts for England farmDAS
-farmdas,included,fcc1f31514d5a0f5726d476747b717c5183fc462,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2023-06-26T10:13:19-07:00,2023-06-26T10:13:19-07:00,0,12,348,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+farmdas,56d072f2b67e6587ac0a0b55568286b5b559c62b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2026-02-02T12:53:13-06:00,2026-02-02T12:53:13-06:00,1,,,,,Merge branch 'main' of github.com:Denolle-Lab/FarmDAS updated figures locally and modified readme on the web
+farmdas,5ee21fcf969a3e4ad58bcc85361394f197b49f3f,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2026-02-02T12:52:28-06:00,2026-02-02T12:52:28-06:00,0,13,221,55,10,update figures
+farmdas,7ea50f0a33bc86f8ccd2e12dc3a9e5ef84ec8b51,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-12-23T20:30:06-06:00,2025-12-23T20:30:06-06:00,0,1,1,1,0,Remove DOI badge from README
+farmdas,94137d3865ab7eda60e09013e055154ae186f453,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-12-23T20:25:17-06:00,2025-12-23T20:25:17-06:00,0,1,1,0,0,Add DOI badge to README
+farmdas,45e82c12feeca25d5b5411ca4b69a07929b603d5,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T16:11:56-06:00,2025-12-23T16:11:56-06:00,0,13,269,432,5,clean up
+farmdas,ceb05292f1e2032926cca8ad649c67f9c09f043b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T11:15:51-06:00,2025-12-23T11:15:51-06:00,0,3,3,452,0,clean up
+farmdas,b51e29ed1a9c75a048a804fa4eb956c280845b06,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T10:43:13-06:00,2025-12-23T10:43:13-06:00,0,1,0,379,0,clean up
+farmdas,244ec8b06499383583f58ce4f141c722f91feea7,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-12-23T10:38:02-06:00,2025-12-23T10:38:02-06:00,0,9,911,294,6,update for figures
+farmdas,0ec717bfaa2d56cbb2a00b92cde163db54f85e1b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-09-23T14:34:18-05:00,2025-09-23T14:34:18-05:00,0,8,56,460,5,update figures
+farmdas,1ceae86adf78c500f3a5066fc3dc8e31c55a98b9,施其斌,shiqibin@sesonotakeshis-MacBook-Air-4.local,2025-09-23T11:22:50-05:00,2025-09-23T11:22:50-05:00,0,15,0,3098,7,clean up
+farmdas,3ccfae7bfed23a553f64ceea3ce24a0c95e5d15e,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:15:49-05:00,2025-09-23T11:15:49-05:00,0,1,13,8,0,Revise README for clarity and additional information
+farmdas,e621f681cf257136b4025525e5ffc8f592a0b76e,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:14:28-05:00,2025-09-23T11:14:28-05:00,0,1,2,1,0,Add license information to README.md
+farmdas,351113db1ae22fcf14a7517a3db06297402023e8,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:12:57-05:00,2025-09-23T11:12:57-05:00,0,1,2,0,0,Add license section to README
+farmdas,8891aaa97db29fbca1a263a9d6e506f475853a35,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T11:09:58-05:00,2025-09-23T11:09:58-05:00,0,1,1,1,0,Update Jupyter examples link in README
+farmdas,139caaf1b190aa2fbb820c0ab3c85536449d1ab5,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T10:12:34-05:00,2025-09-23T10:12:34-05:00,0,1,8,12,0,Update README.md
+farmdas,22664f5ae95cd016630d4a580f0a2e64cd40d043,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-23T10:03:52-05:00,2025-09-23T10:03:52-05:00,0,2,20,33,0,Update and rename LICENSE.txt to LICENSE.md
+farmdas,39a57e1afa35635b0b325ad3bb8c8f6de9d2c5b0,施其斌,shiqibin@Mac.attlocal.net,2025-09-23T09:49:14-05:00,2025-09-23T09:49:14-05:00,1,,,,,Merge branch 'main' of github.com:Denolle-Lab/FarmDAS
+farmdas,e4f6e7031cd6ca6a96e140f4e56142ccd9acd74a,施其斌,shiqibin@Mac.attlocal.net,2025-09-23T09:47:16-05:00,2025-09-23T09:47:16-05:00,0,31,4672,1968,18,add many local changes
+farmdas,a1b98eab02454e108cc5c0b57f5be4951d8a738f,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2025-09-09T10:31:58-05:00,2025-09-09T10:31:58-05:00,0,1,30,16,0,Update LICENSE.txt
+farmdas,b79eec120a9e1bc5ca1338184f1a7f0096b5ebbd,施其斌,shiqibin@Mac.attlocal.net,2025-05-07T01:22:49-05:00,2025-05-07T01:22:49-05:00,0,11,319,403,8,update figures
+farmdas,a009315d9622f6b06b3c6b8f5562e947ff0a250d,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-05-06T12:38:50-05:00,2025-05-06T12:38:50-05:00,0,10,12154,446,5,update figures
+farmdas,7e576ffc231520953b39127bfd26d3a8224b5c51,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-05-01T18:34:14-05:00,2025-05-01T18:34:14-05:00,0,8,679,856,3,model all channels
+farmdas,bada395bd0c0242e4ee502c51760da3c6342bb74,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-28T20:15:12-05:00,2025-04-28T20:15:12-05:00,0,3,697,488,0,update litho models
+farmdas,868d1c6ec037ecbad8a75dbc6ed8dbd2e9359026,施其斌,shiqibin@Mac.attlocal.net,2025-04-25T10:25:58-05:00,2025-04-25T10:25:58-05:00,0,1,69,88,0,refine figures
+farmdas,f5a69f6023bf8c77eab654c2361d769397326577,施其斌,shiqibin@Mac.attlocal.net,2025-04-24T18:17:24-05:00,2025-04-24T18:17:24-05:00,0,1,19,11,0,refine figures
+farmdas,235e8913add86e790699265911c84b830bbc5d9e,施其斌,shiqibin@Mac.attlocal.net,2025-04-24T18:02:18-05:00,2025-04-24T18:02:18-05:00,0,1,239,377,0,refine figures
+farmdas,26e9d40c28caef6547c590b8705f2ce3d01e6309,施其斌,shiqibin@Mac.attlocal.net,2025-04-24T14:02:02-05:00,2025-04-24T14:02:02-05:00,0,2,415,82,0,update capillary taus and remove fake rains
+farmdas,1a5150f5c056eb5f9b3f0e0fdffce7eb99fa6b8b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-23T17:19:49-05:00,2025-04-23T17:19:49-05:00,0,1,73,42,0,final lith model with Ae=Ap=1
+farmdas,fe93871833d00686806c1b9795fd16961c9916c1,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-23T14:32:20-05:00,2025-04-23T14:32:20-05:00,0,2,248,98,0,update model parameters
+farmdas,368225fd5b5403b6ba98c052c8bdd7b63c077e46,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-04-22T12:55:05-05:00,2025-04-22T12:55:05-05:00,0,4,346,89,0,update model parameters
+farmdas,22d5837f8481a5309a5bfebed77a6ffc57b6d2ef,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-11T12:21:22-05:00,2025-04-11T12:21:22-05:00,0,5,207,135,2,update figures
+farmdas,8a08590c981e8ea8093ff197465fb123b08c4625,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:55:25-05:00,2025-04-09T12:55:25-05:00,0,1,0,0,1,clean up Fig1
+farmdas,3736cf2f6155ef73d63161174faaca4e84132e01,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:53:52-05:00,2025-04-09T12:53:52-05:00,0,1,0,0,1,clean up Fig1
+farmdas,fceed5dfb6e34b074cf0552a0e931ff6821a2bac,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:51:14-05:00,2025-04-09T12:51:14-05:00,0,1,1,1,0,clean up Fig1
+farmdas,2e467131f55f2849a701d9a254d68c9f3c3fe8c6,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:50:05-05:00,2025-04-09T12:50:05-05:00,0,1,3,3,0,clean up Fig1
+farmdas,399abd363c7781d455e837fe905e030afa60abbe,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-09T12:47:35-05:00,2025-04-09T12:47:35-05:00,0,8,729,256,3,clean up Fig1
+farmdas,b5fef555995aa240e143e9de8a7f58b1a3afd743,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-04-08T06:39:54-05:00,2025-04-08T06:39:54-05:00,0,71,12989,13211,19,clean up folders
+farmdas,ad2af4c66b80d9d0e78d95c36447922ea49ac299,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-04-08T06:31:34-05:00,2025-04-08T06:31:34-05:00,0,18,14821,14821,0,archive large notebooks
+farmdas,5af613e76759e676f2d1a830691cc3e592c08f07,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-07T14:17:07-05:00,2025-04-07T14:17:07-05:00,0,8,106,95,5,update graphics
+farmdas,8d265c4b7403a0843a977d0bb829ccc396f52859,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-07T12:52:43-05:00,2025-04-07T12:52:43-05:00,0,11,0,0,11,add path for graphics\
+farmdas,be91bf8069ef5f90d7b1206bd426c6cf030817b4,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-07T10:27:16-05:00,2025-04-07T10:27:16-05:00,0,3,100,66,0,update figures
+farmdas,f89f0e05e35f4f3850c7fe4ef701b88233f4eefd,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-06T16:21:52-05:00,2025-04-06T16:21:52-05:00,0,3,76,88,1,save small files to data folder
+farmdas,d4b4a1af13a1b1104e3b9965e0999b75cb63d1d1,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-06T10:35:03-05:00,2025-04-06T10:35:03-05:00,0,8,385,245,4,save small files to data folder
+farmdas,ad98177ff5b6115bbc3d3abd5c79ade03965eb88,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-06T02:57:46-05:00,2025-04-06T02:57:46-05:00,0,9,15,15,8,save small files to data folder
+farmdas,ffd461f1efe12ec1520985258c370787fde50f8e,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-04-01T17:49:02-07:00,2025-04-01T17:49:02-07:00,0,4,718,1620,0,Fig notebooks read small files
+farmdas,5d88752b681db13b4092f57e96fd9525dae23c21,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-03-30T17:25:32+08:00,2025-03-30T17:25:32+08:00,0,14,1304,1371,7,update figures
+farmdas,b84284ddda5a3784e3b06e6b42d231375d6318c4,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-03-08T12:52:29-08:00,2025-03-08T12:52:29-08:00,0,2,51,0,1,update results for 15-60Hz
+farmdas,f715912056fab4588114fba6db7cb87b77a407df,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-03-07T23:44:55-08:00,2025-03-07T23:44:55-08:00,0,1,0,0,1,update attenuation results for 15-60 Hz stretched ac
+farmdas,7e961144b2d8592d4340dd5ce9096c98b8014afe,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-03-07T10:07:21-08:00,2025-03-07T23:37:09-08:00,0,16,1971,870,6,re-organize files
+farmdas,98584079b6f52feb3dafecf928b0fa4d0f5484b3,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-03-07T18:20:19-06:00,2025-03-07T18:20:19-06:00,0,7,7250,1113,0,update for 15-60Hz
+farmdas,1c6e0778558fcd46a243d3e5731d14ee3aa82da8,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-02-27T15:03:52-06:00,2025-02-27T15:03:52-06:00,0,1,3526,0,0,add resonance picking
+farmdas,006a5ce3293561dd1f35887869ab0dd4e412c891,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.local,2025-02-27T15:02:19-06:00,2025-02-27T15:02:19-06:00,0,3,1267,52,0,update fig notebooks
+farmdas,558b81cf4dadc08db13eb60e9731d789780d5c29,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-02-26T08:09:36-08:00,2025-02-26T08:09:36-08:00,0,2,51,0,1,adding window file and results on measuring stretched twice ac and their mean ac
+farmdas,9efe498fa47fd84874d93f14b3c742b1bea87e4d,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T18:13:48-06:00,2025-02-25T18:13:48-06:00,0,1,70,17,0,update stretched acfs
+farmdas,2b5d5ada4303be2172c7bcb7a420bf13449ad078,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T14:59:55-06:00,2025-02-25T14:59:55-06:00,0,1,85,62,0,update
+farmdas,d8b4c31270af27cf04e2282356ae95ac6124a702,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T13:04:33-06:00,2025-02-25T13:04:33-06:00,1,,,,,Merge branch 'main' of github.com:Denolle-Lab/FarmDAS
+farmdas,129ef0a1f86c7f439c0023d63b5413ebb922eacb,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T13:04:02-06:00,2025-02-25T13:04:02-06:00,0,1,47,41,0,update
+farmdas,7a6a899ff59045da0cc8cc126501c64d864774ed,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-02-25T08:44:32-08:00,2025-02-25T08:44:32-08:00,0,2,51,0,1,adding window file and results of measuring stretched ac
+farmdas,049f926801a124022ab4a18ff15a1c59259ef30f,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T10:36:49-06:00,2025-02-25T10:36:49-06:00,0,3,0,1696,0,clean up
+farmdas,7a59795960865c2c8f51ade8f1e1928c3347f6c1,施其斌,shiqibin@sesonotshisair2.dyndns.rice.edu,2025-02-25T10:35:28-06:00,2025-02-25T10:35:28-06:00,0,3,1394,30,0,conduct 2nd iteration of dvv using strecthed acfs
+farmdas,8f7c1e6ecfef34df1e90f3b081d2da249b66a307,Kuan-Fu Feng,kuanfufeng@gmail.com,2025-02-24T09:05:55-08:00,2025-02-24T09:05:55-08:00,0,5,975,33,1,update attenuation results using a measuring window based on signals at each station
+farmdas,a580ad5ebbfda7058f589d5c0914cf41f15b76ca,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-23T10:39:45-06:00,2025-02-23T10:39:45-06:00,0,3,1696,0,0,update figure notebooks
+farmdas,893688eae592be3cbe6de037be3f6b117bc9df0b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T23:40:31-06:00,2025-02-22T23:40:31-06:00,0,1,607,0,0,add Fig2 notebook
+farmdas,b0fa49add35a806e1b79a01120e7418620f9dd4d,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T16:32:56-06:00,2025-02-22T16:32:56-06:00,0,1,5,2,0,update soil water model
+farmdas,4b2fb87412c969d4fe89e5d9686f9abcbfcf7ae0,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T16:27:22-06:00,2025-02-22T16:27:22-06:00,0,4,808,561,0,add notebook for figure3
+farmdas,db3ffe8c633036f6332998b15e7f80971d99c59b,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T15:25:07-06:00,2025-02-22T15:25:07-06:00,0,13,952,252,5,add src folder
+farmdas,d44075cb743ed910112e9e024d29e0b647536ca1,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T14:52:27-06:00,2025-02-22T14:52:27-06:00,0,13,4878,4878,1,archive notebooks
+farmdas,5322a1bc8be0d955dbf78830bd99fdabf2dd9f39,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:40:12-06:00,2025-02-22T10:40:12-06:00,0,2,33,2474,0,clean up notebooks of dvv enhancement
+farmdas,6870e5dab2a61d1aafadde927f89c2ca5d3d5c1f,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:37:45-06:00,2025-02-22T10:37:45-06:00,0,1,1993,0,0,clean up notebooks of dvv enhancement
+farmdas,56cd4033bb0ef2cf299c125784c57e4b76727c9d,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:34:33-06:00,2025-02-22T10:34:33-06:00,0,20,504,0,10,add data folder
+farmdas,d2440897c21c6991743ea3305e0d66736810242a,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-22T10:31:28-06:00,2025-02-22T10:31:28-06:00,0,1,110,897,0,clean up notebooks of dvv enhancement
+farmdas,1ef65d95784903d891391c771539c8cc319ea7ab,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-21T15:20:37-06:00,2025-02-21T15:20:37-06:00,0,3,148,137,1,add new dvv file
+farmdas,1210e413dd335710dac050a5b186bfdddfa4a0bb,施其斌,shiqibin@sesonotakeshis-MacBook-Air-2.attlocal.net,2025-02-21T15:15:17-06:00,2025-02-21T15:15:17-06:00,0,66,19226,19226,6,reorganize path
+farmdas,5ee54a0f46d767a4109e750290b5a08277b3da0b,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-02-17T13:18:45-06:00,2025-02-17T13:18:45-06:00,0,2,907,538,0,"finalize dvv ehancement, add to model fitting"
+farmdas,f6ff61d99340d6761b17fb7bfcf4971deeb1d6ef,施其斌,shiqibin@sesonotakeshis-MacBook-Air.attlocal.net,2025-02-17T08:10:34-06:00,2025-02-17T08:10:34-06:00,0,1,1053,258,0,add polyfit by Nan You
+farmdas,cc9cff7384c38c477d2f6cc3c545b31d3c987577,施其斌,shiqibin@sesonotakeshis-MacBook-Air.attlocal.net,2025-02-16T01:46:00-06:00,2025-02-16T01:46:00-06:00,0,1,577,413,0,dv * specgram
+farmdas,1e7f4bda8ecb5491fd92f45c75a1087e1528d45a,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-02-14T15:39:49-06:00,2025-02-14T15:39:49-06:00,0,1,617,363,0,correlate acf spec and dv
+farmdas,f7ee0644648e95144d076fbc0fcc0a6e3daa704a,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-13T12:18:14-06:00,2025-02-13T12:18:14-06:00,0,1,893,1281,0,"add comparisons on spectrogram, dv and acf spec"
+farmdas,9e288c3812e42618fedb0b38bf73a98c9a2bea4e,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-12T17:08:13-06:00,2025-02-12T17:08:13-06:00,0,2,47,39,1,update resonance freq
+farmdas,5fd6d78607b14e1eeb1c5a06610bd55c329abb66,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-12T12:46:22-06:00,2025-02-12T12:46:22-06:00,0,1,19,11,0,update resonance freq
+farmdas,ab678e9aa984bc6e72904fdd9ec54c439b7a48b1,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2025-02-12T12:18:05-06:00,2025-02-12T12:18:05-06:00,0,1,3406,0,0,update resonance freq
+farmdas,84de57be0cb3e126b5308e8e48bb933da3679377,施其斌,shiqibin@sesonoteshisair.dyndns.rice.edu,2025-01-24T11:20:37-06:00,2025-01-24T11:20:37-06:00,0,1,299,17,0,add inversion cells
+farmdas,4932378f8bcbadd0d0d2ad6945aa326246430765,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-01-22T13:44:33-06:00,2025-01-22T13:44:33-06:00,0,1,23,16,0,update data variables
+farmdas,b531ca4471dee730769ffd616990ff679e61e43e,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-01-21T10:09:02-06:00,2025-01-21T10:09:02-06:00,0,5,201,0,2,add data
+farmdas,0c3d74ccf59c1cb4953a1a12e33c855a18d093b8,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2025-01-21T10:08:13-06:00,2025-01-21T10:08:13-06:00,0,1,843,0,0,add notebook for 2-stage model
+farmdas,b6103d9350d95bffc41ae43e5dcde935bcbb3776,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-12-02T15:31:42-08:00,2024-12-02T15:31:42-08:00,0,1,432,409,0,update hydrological model
+farmdas,ccbe2b275e96044eb4b5d483b37a40575b7ea0a5,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-11-12T11:35:23-08:00,2024-11-12T11:35:23-08:00,0,1,173,160,0,clean up the notebook
+farmdas,fdf34f2e398a6157e53c4644a62993c22fc0f78e,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-11-12T11:17:49-08:00,2024-11-12T11:17:49-08:00,0,1,302,1573,0,clean up the notebook
+farmdas,335c0dabb2319e814c82800dc1c43aaafe5cfaa2,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-11-12T06:44:02-06:00,2024-11-12T06:44:02-06:00,0,1,1775,33,0,"add ETo and interpolated tillage, tire"
+farmdas,cfbdd038a49a92af84723ebffa05895a8160f22c,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2024-09-26T14:08:55-05:00,2024-09-26T14:08:55-05:00,0,1,191,6,0,clean up the hydrological model
+farmdas,ba1f800070b76471e69291ff33d67b6973cc0bc3,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2024-09-26T12:56:26-05:00,2024-09-26T12:56:26-05:00,0,1,23,33,0,clean up the hydrological model
+farmdas,b4ac43256d2ac58cd0130f6009a3dbb53d1faac8,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-09-26T12:43:28-05:00,2024-09-26T12:43:28-05:00,0,1,206,564,0,clean up the hydrological model
+farmdas,eff661a4e0fff51a8a1c3d2b0f11aea14a105c50,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-09-25T12:23:40-05:00,2024-09-25T12:23:40-05:00,0,1,593,18,0,update the hydrological modeling
+farmdas,33bd7c98194cb3cd8939377f58f618a334f4f270,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-09-23T11:38:54-05:00,2024-09-23T11:38:54-05:00,0,1,387,0,0,add hydrological model
+farmdas,5ebaf3f5dc959a03dde001d1bb87614029a9c65a,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-26T17:52:29-07:00,2024-08-26T17:52:29-07:00,0,1,41,26,0,add psd to litho modeling
+farmdas,054bed099ed0fee2be2ae201e6369c1aab5ef587,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-26T15:30:19-07:00,2024-08-26T15:30:19-07:00,0,1,743,0,0,add comprehensive litho modeling
+farmdas,2d778ec5635a50490f889b9407e8fdbe4d9347cd,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-23T04:44:11-07:00,2024-08-23T04:44:11-07:00,0,1,46,29,0,update
+farmdas,94955265e40915c1057a5dff1d7ce1fbf7aae611,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T16:15:32-07:00,2024-08-22T16:15:32-07:00,0,1,99,119,0,update
+farmdas,1f94051cb075528eebece360c37d2fa2b224be4d,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T09:58:14-07:00,2024-08-22T09:58:14-07:00,0,1,0,0,1,add rock microscpic image
+farmdas,e93a4b474f8ea30d152d59934cbc9d8c1d759135,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T07:29:03-07:00,2024-08-22T07:29:03-07:00,0,1,4,2,0,update
+farmdas,f22323185dee62d94774b77cff70616d1a7ba6b5,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-22T00:37:54-07:00,2024-08-22T00:37:54-07:00,0,1,247,153,0,update
+farmdas,5aa5deb302165eecc1075e25127356d3a21be8ee,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-21T02:15:13-07:00,2024-08-21T02:15:13-07:00,0,1,496,0,0,add lithology model
+farmdas,30a8ff44ba776cc079ddf93b4a7c0e7c1fe4bf85,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-09T11:31:24-05:00,2024-08-09T11:31:24-05:00,0,1,230,7,0,add porosity calculation
+farmdas,83eea9a98f83fa25a776031b977f1109554e5fd1,施其斌,shiqibin@sesonotakeshis-MacBook-Air.local,2024-08-08T03:27:45-05:00,2024-08-08T03:27:45-05:00,0,1,176,75,0,add phyical paras to plot
+farmdas,5a7397b969073a734664842f5fac254ac1d17edb,施其斌,shiqibin@sesonoteshisAir.attlocal.net,2024-08-07T15:23:53-05:00,2024-08-07T15:23:53-05:00,0,1,991,0,0,add notebook to plot spatial variability
+farmdas,a1e44de6e4ba315904a2781c86c8906a70a979c5,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-23T15:26:38-08:00,2024-01-23T15:26:38-08:00,0,2,452,452,0,rename the scripts
+farmdas,65746d255a38f8f1c312e7f0ba3dbb0892bb7106,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-18T10:00:12-08:00,2024-01-18T10:00:12-08:00,0,2,0,373,0,remove unused scripts
+farmdas,acb6335d6e394eeb211866c31a9fa6a09ec9ae5c,qibinshi,qibins@uw.edu,2024-01-17T11:18:16-08:00,2024-01-17T11:18:16-08:00,0,1,1,1,0,add .idea ti gitignore
+farmdas,f74249ab75517e9c488b38acc7c4c18ec525a63d,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-16T16:07:46-08:00,2024-01-16T16:07:46-08:00,0,1,109,97,0,Update attenuation scripts
+farmdas,628337c63a1f835085f38297785f1cfc235635df,Kuan-Fu Feng,kuanfufeng@gmail.com,2024-01-16T16:03:29-08:00,2024-01-16T16:03:29-08:00,0,9,1263,1324,0,Clean up attenuation scripts
+farmdas,3771833111325c3160add34c6d99da1106144b24,qibinshi,qibins@uw.edu,2024-01-16T15:54:44-08:00,2024-01-16T15:54:44-08:00,0,3,3,0,0,add src folders
+farmdas,518bfc62131058712c87b1361a22fa2d30fbc868,qibinshi,qibins@uw.edu,2024-01-16T15:53:55-08:00,2024-01-16T15:53:55-08:00,0,1,1,0,0,add src folders
+farmdas,908fc4257d7a53654602cb434351f57ebb27420b,qibinshi,qibins@uw.edu,2024-01-16T15:50:55-08:00,2024-01-16T15:50:55-08:00,0,23,0,13154,0,mv notebooks to examples
+farmdas,ad18b71d55c4a9389cb28f417ab2c21a283e34a1,qibinshi,qibins@uw.edu,2024-01-16T15:49:22-08:00,2024-01-16T15:49:22-08:00,0,23,13154,0,0,mv notebooks to examples
+farmdas,59e007b76e9aa6f48ec8f889399c6ae27cb540da,qibinshi,qibins@uw.edu,2024-01-16T15:47:59-08:00,2024-01-16T15:47:59-08:00,0,2,0,19,0,change test to examples
+farmdas,1582a0878c8c1bc47a2b8bd128d3ccde79e18104,qibinshi,qibins@uw.edu,2024-01-16T15:46:51-08:00,2024-01-16T15:46:51-08:00,0,2,19,0,0,change test to examples
+farmdas,2098187be2e00228003fba79a6eb1b77c99264a5,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2024-01-16T15:46:06-08:00,2024-01-16T15:46:06-08:00,0,1,5,3,0,Update README.md
+farmdas,b8ddb899b9766779245cb5eda69e4a2cc4f683f7,qibinshi,qibins@uw.edu,2024-01-16T15:42:32-08:00,2024-01-16T15:42:32-08:00,0,1,12,32,0,add README
+farmdas,8cc2fcce23205891b415506ab18993d6cdccd872,qibinshi,qibins@uw.edu,2024-01-16T13:57:04-08:00,2024-01-16T13:57:04-08:00,0,5,5361,0,0,add scripts for the dvv analysis on Harper farm
+farmdas,c5a4f96edeb23cba9c7dd44612131dd9d0afce19,qibinshi,qibins@uw.edu,2023-10-23T18:08:37-07:00,2023-10-23T18:08:37-07:00,0,26,6469,6469,0,change folder name to noispy4DAS
+farmdas,826132b3bbf4d95ee5964e45286cf35eee82c283,qibinshi,qibins@uw.edu,2023-10-23T18:06:55-07:00,2023-10-23T18:06:55-07:00,0,1,47,528,0,clean up outputs of big notebooks
+farmdas,5773a090382fabc0ed440fb4b75f3e771a913f77,qibinshi,qibins@uw.edu,2023-10-23T18:04:50-07:00,2023-10-23T18:04:50-07:00,0,2,1417,0,0,update notebooks about dvv
+farmdas,c0b797f3da634381a58bb6d020346c8f1be9c6ae,qibinshi,qibins@uw.edu,2023-10-23T17:47:01-07:00,2023-10-23T17:47:01-07:00,0,11,0,5533,0,change folder name
+farmdas,646d62e035094eeea36241f677cba66c5ab1154c,qibinshi,qibins@uw.edu,2023-10-23T17:44:52-07:00,2023-10-23T17:44:52-07:00,0,11,5533,0,0,change folder name
+farmdas,09626bc54257bbf1024958618ea6ce78eb97a0e3,Kuan-Fu Feng,kuanfufeng@gmail.com,2023-10-23T17:42:22-07:00,2023-10-23T17:42:22-07:00,0,1,0,1669,0,remove a notebook file for checking
+farmdas,8cbfdbefdca004c6232df684aff3fa1efb837cc6,Kuan-Fu Feng,kuanfufeng@gmail.com,2023-10-23T17:39:35-07:00,2023-10-23T17:39:35-07:00,0,4,2482,0,0,add attenuation scripts
+farmdas,361d306dfc53e8cd67cd9636daa94d43b0a3cf6d,Kuan-Fu Feng,kuanfufeng@gmail.com,2023-10-23T16:47:15-07:00,2023-10-23T16:47:15-07:00,0,2,511,0,0,add model fitting scripts
+farmdas,5f187a1d2faf89c7c0d947792df875eeee5b49d9,qibinshi,qibins@uw.edu,2023-08-23T23:35:34-07:00,2023-08-23T23:35:34-07:00,0,1,0,1052,0,rm redundant script
+farmdas,be244eddf9f3a33bb74e45960cc9e38c58cb02cf,qibinshi,qibins@uw.edu,2023-08-23T23:31:12-07:00,2023-08-23T23:31:12-07:00,0,5,1914,190,0,update scripts for resonance modes
+farmdas,0bea2fbca699f34d57abc6c010360ab336d53665,qibinshi,qibins@uw.edu,2023-07-11T12:41:22-07:00,2023-07-11T12:41:22-07:00,0,1,87,88,0,update script for FK filter
+farmdas,7eb68804a1411b3ffa3fea72f38782f1ce5a0410,qibinshi,qibins@uw.edu,2023-07-11T01:53:58-07:00,2023-07-11T01:53:58-07:00,0,5,1960,1,0,adding script for FK filter
+farmdas,933df53bcbfa38f1a118fb86f20f6108150d197c,qibinshi,qibins@uw.edu,2023-06-28T12:52:08-07:00,2023-06-28T12:52:08-07:00,0,2,664,20,0,adding codes to align DTS T and DAS resonance
+farmdas,4736757188a8b203a2f7445e8bca01d50bfbeb6e,qibinshi,qibins@uw.edu,2023-06-28T11:23:05-07:00,2023-06-28T11:23:05-07:00,0,1,116,33,0,adding codes to save timestamps for the DAS data
+farmdas,0d6c80ca739871ac5e8bbef727e3183aed570442,qibinshi,qibins@uw.edu,2023-06-28T07:30:55-07:00,2023-06-28T07:30:55-07:00,0,1,203,0,0,add scripts for England farmDAS
+farmdas,2f72c9bb529753efd21b6d45fc5bd2d246d57517,qibinshi,qibins@uw.edu,2023-06-28T07:29:43-07:00,2023-06-28T07:29:43-07:00,0,1,0,411,0,remove useless scripts
+farmdas,c387002b937d3d1678aad259b0000c023d691c89,qibinshi,qibins@uw.edu,2023-06-28T07:28:04-07:00,2023-06-28T07:28:04-07:00,0,4,2378,0,0,add scripts for England farmDAS
+farmdas,fcc1f31514d5a0f5726d476747b717c5183fc462,Qibin Shi,35798077+qibinshi@users.noreply.github.com,2023-06-26T10:13:19-07:00,2023-06-26T10:13:19-07:00,0,12,348,0,0,Initial commit

@@ -1,0 +1,8 @@
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+exploredas,c47db37cbc6a375dc5a609eedba9149218ec32f2,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-13T13:31:26-05:00,2022-07-13T13:31:26-05:00,0,3,2,1,1,Set up application settings
+exploredas,29cbe02f4209e6f7a19f567aba61b66896306049,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-13T13:24:42-05:00,2022-07-13T13:24:42-05:00,0,7,28,28,1,remove confusion of paths for exporting data
+exploredas,47573a3e4e0af099168c10eb739556d9e921d615,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-13T13:06:19-05:00,2022-07-13T13:06:19-05:00,0,5,72,4,1,Edits from testing on Matlab Drive
+exploredas,b0bae3ef04f2d050814b83de0040cf168efb4189,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-12T16:36:38-05:00,2022-07-12T16:36:38-05:00,0,1,5,3,0,Update README.md
+exploredas,18a343bd38683b32629e78c6eb365de7662e751f,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-10T21:11:03-05:00,2022-07-10T21:11:03-05:00,0,1,1,1,0,Update README.md
+exploredas,51f8b1caaccf0bee0ad6d62789af91af833e2bf6,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-10T20:32:30-05:00,2022-07-10T20:32:30-05:00,0,1,21,0,0,Create LICENSE
+exploredas,5163f1735314e46c59d0642fea2ee8274449dc2b,markewillis,104512927+markewillis@users.noreply.github.com,2022-07-10T20:21:34-05:00,2022-07-10T20:21:34-05:00,0,240,25491,0,10,Initial commit

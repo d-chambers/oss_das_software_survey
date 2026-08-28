@@ -101,6 +101,17 @@ class GitHubClient(JsonClient):
             items = list(self.paginate(f"/users/{namespace}/repos"))
         return [self._candidate(item) for item in items]
 
+    def repository(self, repository: str) -> dict[str, Any]:
+        return self._candidate(self.get_json(f"/repos/{repository}"))
+
+    def readme(self, repository: str) -> str:
+        """One request, whatever the README is called; GitHub resolves the name."""
+        response = self.get_response(
+            f"/repos/{repository}/readme",
+            headers={"Accept": "application/vnd.github.raw+json"},
+        )
+        return response.text
+
     def commit_activity(self, repository: str) -> dict[str, Any]:
         """Total commits and the date of the newest one.
 

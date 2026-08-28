@@ -7,19 +7,24 @@ dataset it describes cannot drift apart.
 
 from __future__ import annotations
 
+from collections.abc import Sequence
 from itertools import pairwise
 from pathlib import Path
 
 from oss_das.figures import draw
 from oss_das.figures.data import (
+    LICENCE_ORDER,
     Composition,
     EcosystemTotals,
     Funnel,
     Growth,
+    LanguageLicence,
     LicenceMix,
     Maturity,
     PipelineFlow,
+    RecordSection,
     SelectionFunnel,
+    Trace,
 )
 from oss_das.figures.render import load_asset
 
@@ -728,13 +733,14 @@ def coverage_plate(flow: PipelineFlow) -> str:
 
 def funnel_shape_plate(f: Funnel) -> str:
     """A literal funnel: every source in at the top, every exclusion out the side."""
-    width, height = WIDTH, 880
-    mouth_y, throat_y = 290, 630
-    mouth_l, mouth_r = 630, 1050
-    throat_l, throat_r = 808, 872
+    width, height = 1220, 850
+    centre = width / 2
+    mouth_y, throat_y = 126, 410
+    mouth_l, mouth_r = centre - 190, centre + 190
+    throat_l, throat_r = centre - 28, centre + 28
     # A cone alone reads as a triangle. The short parallel spout below it is
     # what makes the shape legible as a funnel at a glance.
-    spout_y = throat_y + 56
+    spout_y = throat_y + 48
 
     c = draw.Canvas(
         width=width,
@@ -754,7 +760,7 @@ def funnel_shape_plate(f: Funnel) -> str:
         )
 
     def head(
-        x: float, y: float, dx: float, dy: float, colour: str, size: float = 8
+        x: float, y: float, dx: float, dy: float, colour: str, size: float = 7
     ) -> None:
         """A small arrowhead at (x, y), pointing along the unit vector (dx, dy)."""
         px, py = -dy, dx
@@ -766,20 +772,24 @@ def funnel_shape_plate(f: Funnel) -> str:
         )
 
     # ---- sources feeding the mouth --------------------------------------
+    # Kept close to the mouth: a long inflow spends canvas on empty space and
+    # makes the funnel itself read as smaller than the arrows pointing at it.
     import math
 
-    label_y = 140
+    label_y = 66
+    label_size = 21
     sources = list(f.searched) + list(f.pending)
-    step = 1180 / max(len(sources) - 1, 1)
     for index, name in enumerate(sources):
-        x = 250 + step * index
+        # Each label sits above the point it enters, splayed out just enough to
+        # keep the words apart, so its arrow drops from the centre of the word.
         target = mouth_l + (mouth_r - mouth_l) * (index + 0.5) / len(sources)
-        c.text(x, label_y, name, size=draw.SUB, fill=draw.INK)
-        x0, y0 = x, label_y + 20
-        x1, y1 = target, mouth_y - 10
+        x = centre + (target - centre) * 1.55
+        c.text(x, label_y, name, size=label_size, fill=draw.INK)
+        x0, y0 = x, label_y + 13
+        x1, y1 = target, mouth_y - 6
         length = math.hypot(x1 - x0, y1 - y0) or 1
         dx, dy = (x1 - x0) / length, (y1 - y0) / length
-        c.line(x0, y0, x1, y1, stroke=draw.SLATE, width=2.5)
+        c.line(x0, y0, x1, y1, stroke=draw.SLATE, width=2)
         head(x1, y1, dx, dy, draw.SLATE)
 
     # ---- the funnel ------------------------------------------------------
@@ -788,54 +798,376 @@ def funnel_shape_plate(f: Funnel) -> str:
         f"L {throat_r},{throat_y} L {throat_r},{spout_y} "
         f'L {throat_l},{spout_y} L {throat_l},{throat_y} Z" fill="{draw.PALE}"/>'
     )
-    c.text(840, mouth_y + 74, f"{f.candidates:,}", size=68, fill=draw.INK)
+    c.text(centre, mouth_y + 62, f"{f.candidates:,}", size=58, fill=draw.INK)
     c.text(
-        840,
-        mouth_y + 118,
+        centre,
+        mouth_y + 92,
         "Candidates found",
-        size=draw.LABEL_SM,
+        size=15,
         fill=draw.INK,
-        spacing=2.6,
+        spacing=2.2,
         upper=True,
     )
 
     # ---- what leaves, and where ------------------------------------------
-    first, last = mouth_y + 140, throat_y - 20
-    span = (last - first) / max(len(f.stages) - 1, 1)
+    first, last = mouth_y + 112, throat_y - 16
+    gap = (last - first) / max(len(f.stages) - 1, 1)
     for index, (label, count) in enumerate(f.stages):
-        y = first + span * index
+        y = first + gap * index
         left, right = wall(y)
         rightward = index % 2 == 0
         edge = right if rightward else left
-        tip = edge + (96 if rightward else -96)
-        c.line(edge, y, tip, y, stroke=draw.RULE, width=2.5)
+        tip = edge + (78 if rightward else -78)
+        c.line(edge, y, tip, y, stroke=draw.RULE, width=2)
         head(tip, y, 1.0 if rightward else -1.0, 0.0, draw.RULE)
         anchor = "start" if rightward else "end"
-        text_x = tip + (24 if rightward else -24)
-        c.text(text_x, y + 2, f"{count:,}", size=34, fill=draw.SLATE, anchor=anchor)
+        text_x = tip + (18 if rightward else -18)
+        c.text(text_x, y + 1, f"{count:,}", size=26, fill=draw.SLATE, anchor=anchor)
         c.text(
             text_x,
-            y + 28,
+            y + 19,
             label,
-            size=16,
+            size=13,
             fill=draw.MUTED,
             anchor=anchor,
-            spacing=1.8,
+            spacing=1.4,
             upper=True,
         )
 
     # ---- what comes out --------------------------------------------------
     # Below the spout, not inside it: what leaves the funnel has left it.
-    c.line(840, spout_y + 6, 840, spout_y + 38, stroke=draw.AMBER, width=4)
-    head(840, spout_y + 44, 0.0, 1.0, draw.AMBER, size=9)
-    c.text(840, spout_y + 110, f"{f.in_scope}", size=68, fill=draw.AMBER)
+    # Three outcomes, not one -- a general seismology tool that reads DAS and a
+    # distributed-temperature package are both real findings, and burying them
+    # in "out of scope" loses them.
+    c.line(centre, spout_y + 6, centre, spout_y + 30, stroke=draw.AMBER, width=3.5)
+    head(centre, spout_y + 36, 0.0, 1.0, draw.AMBER, size=8)
+
+    outputs = (
+        (
+            centre - 300,
+            f"{f.supporting}",
+            ("Seismology tools", "that also read DAS"),
+            f.supporting_names,
+            draw.SLATE,
+            32,
+        ),
+        (centre, f"{f.in_scope}", ("DAS projects",), (), draw.AMBER, 58),
+        (
+            centre + 300,
+            f"{f.other_fiber}",
+            ("Other fibre sensing", "temperature or strain"),
+            f.other_fiber_names,
+            draw.SLATE,
+            32,
+        ),
+    )
+    for x, number, lines, names, colour, size in outputs:
+        c.text(x, spout_y + 96, number, size=size, fill=colour)
+        for offset, line in enumerate(lines):
+            c.text(
+                x,
+                spout_y + 126 + offset * 21,
+                line,
+                size=15,
+                fill=draw.INK if size > 40 else draw.MUTED,
+                spacing=2.2,
+                upper=offset == 0,
+            )
+        # Naming the flanking groups is the point of splitting them out: five
+        # and seven are only interesting if a reader can see which projects.
+        for offset, name in enumerate(names):
+            c.text(
+                x,
+                spout_y + 126 + len(lines) * 21 + 14 + offset * 20,
+                name,
+                size=15,
+                fill=draw.INK,
+            )
+    return c.to_svg()
+
+
+#: Always named, whatever the data does. Pinning the whole set means the
+#: figure keeps saying the same thing when the catalogue grows: a project that
+#: is labelled today does not silently lose its label to a busier newcomer.
+PINNED = (
+    "dastools",
+    "dascore",
+    "xdas",
+    "das4whales",
+    "daspy",
+    "fiberis",
+    "fiberwatch-cli",
+    "das-ani",
+    "derzug",
+    "dasexplorer",
+    "das-processing-pipeline",
+)
+
+#: How many labels to aim for, and how many rows must separate two of them.
+LABEL_BANDS = 10
+LABEL_GAP = 4
+
+
+def _label_rows(traces: Sequence[Trace]) -> set[int]:
+    """Choose which rows to name: the pinned projects, then the busiest in
+    each band of rows, skipping any that would crowd a label already chosen.
+
+    Picking by band rather than by a fixed list keeps the labels spread down
+    the plot as the catalogue grows, and picking the busiest within a band
+    means the named project is one a reader is likely to recognise.
+    """
+    chosen = {i for i, t in enumerate(traces) if t.project_id in PINNED}
+    total = len(traces)
+    for band in range(LABEL_BANDS):
+        lo = round(band * total / LABEL_BANDS)
+        hi = round((band + 1) * total / LABEL_BANDS)
+        rows = range(lo, min(hi, total))
+        if not rows:
+            continue
+        row = max(rows, key=lambda i: traces[i].commits)
+        if all(abs(row - taken) >= LABEL_GAP for taken in chosen):
+            chosen.add(row)
+    return chosen
+
+
+#: Sequential ramp for commit counts, low to high, in the figure's own palette.
+COMMIT_RAMP = ("#f4efe3", "#e4dccb", "#d9a63f", "#c98500", "#8a5f1c", "#5c3d0f")
+
+
+def _ramp(t: float) -> str:
+    """Colour for a normalised position on :data:`COMMIT_RAMP`."""
+    t = min(max(t, 0.0), 1.0)
+    span = len(COMMIT_RAMP) - 1
+    lo = min(int(t * span), span - 1)
+    frac = t * span - lo
+    a, b = COMMIT_RAMP[lo], COMMIT_RAMP[lo + 1]
+    parts = []
+    for channel in (1, 3, 5):
+        av = int(a[channel : channel + 2], 16)
+        bv = int(b[channel : channel + 2], 16)
+        parts.append(round(av + (bv - av) * frac))
+    return "#" + "".join(f"{v:02x}" for v in parts)
+
+
+def record_section_plate(section: RecordSection) -> str:
+    """One bar per project, ordered by first commit and shaded by commit count.
+
+    Sized 16:9 for a slide. A bar spans the project's first commit to its last,
+    so the diagonal front of onsets is the shape; colour carries how much work
+    went in, on a log scale because the busiest repository has three orders of
+    magnitude more commits than the quietest.
+    """
+    import math
+
+    width, height = 1680, 945
+    top, bottom = 236.0, 762.0
+    left, right = 150.0, 1560.0
+    rows = len(section.traces)
+    row_h = (bottom - top) / max(rows - 1, 1)
+    periods = section.periods
+    step = (right - left) / max(len(periods) - 1, 1)
+    index_of = {period: i for i, period in enumerate(periods)}
+    # Colour is the commits in each month, not the project's lifetime total,
+    # so a bar shows when the work happened rather than only how much.
+    lo, hi = 0.0, math.log10(max(section.peak_period, 2))
+
+    def shade(commits: int) -> str:
+        return _ramp((math.log10(max(commits, 1)) - lo) / (hi - lo or 1))
+
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="The DAS record section",
+        desc=(
+            f"{rows} projects, one bar each, ordered by first commit from "
+            f"{periods[0]} to {periods[-1]}, shaded by commit count. "
+            f"{section.since_2020} began in 2020 or later."
+        ),
+    )
+    c.text(840, 86, "One bar per project, oldest first", size=38, fill=draw.INK)
     c.text(
         840,
-        spout_y + 142,
-        "Projects in scope",
-        size=17,
+        126,
+        f"{rows} distributed acoustic sensing projects, each bar from its first "
+        "commit to its last, shaded quarter by quarter",
+        size=23,
+        fill=draw.MUTED,
+        italic=True,
+    )
+
+    # colour bar
+    bar_x, bar_y, bar_w, bar_h = 620.0, 166.0, 440.0, 14.0
+    slices = 120
+    for i in range(slices):
+        c.rect(
+            bar_x + bar_w * i / slices,
+            bar_y,
+            bar_w / slices + 0.6,
+            bar_h,
+            fill=_ramp(i / (slices - 1)),
+        )
+    for value in (1, 10, 100):
+        if not lo <= math.log10(value) <= hi:
+            continue
+        x = bar_x + bar_w * (math.log10(value) - lo) / (hi - lo)
+        c.line(x, bar_y + bar_h, x, bar_y + bar_h + 6, stroke=draw.RULE, width=1.5)
+        c.text(x, bar_y + bar_h + 26, f"{value:,}", size=16, fill=draw.MUTED)
+    c.text(
+        bar_x - 16,
+        bar_y + 12,
+        "commits / quarter",
+        size=18,
         fill=draw.INK,
-        spacing=2.4,
-        upper=True,
+        anchor="end",
+    )
+
+    for i, period in enumerate(periods):
+        if period.endswith("-01"):
+            x = left + step * i
+            c.line(x, top - 22, x, bottom + 20, stroke=draw.PALE, width=1.5)
+            c.text(x, bottom + 60, period[:4], size=22, fill=draw.MUTED)
+
+    named = _label_rows(section.traces)
+    thickness = max(row_h - 1.6, 2.4)
+    for row, trace in enumerate(section.traces):
+        y = top + row * row_h - thickness / 2
+        x0 = left + step * index_of[trace.first_period]
+        x1 = left + step * index_of[trace.periods[-1][0]]
+        # The pale underlay carries the lifespan, including silent months; the
+        # cells above it carry the months that saw work.
+        c.rect(x0, y, max(x1 - x0, 2.0), thickness, fill=draw.PALE)
+        for period, commits in trace.periods:
+            c.rect(
+                left + step * index_of[period],
+                y,
+                max(step, 1.6),
+                thickness,
+                fill=shade(commits),
+            )
+        if row in named:
+            # Centred on the bar, not hung from its lower edge: the type is
+            # several times the bar's height.
+            c.text(
+                x0 - 14,
+                y + thickness / 2 + 6.5,
+                trace.name,
+                size=19,
+                fill=draw.INK,
+                anchor="end",
+            )
+
+    c.text(
+        840,
+        884,
+        f"{section.since_2020} of {rows} projects began in 2020 or later",
+        size=28,
+        fill=draw.FAINT,
+        italic=True,
+    )
+    return c.to_svg()
+
+
+#: Licence colours, shared with the licence figure so a reader who has seen one
+#: reads the other without relearning.
+LICENCE_COLOUR = {
+    "osi-approved": draw.AMBER,
+    "source-available": draw.CREAM,
+    "unlicensed": draw.SLATE,
+    "unknown": draw.GRAY,
+}
+LICENCE_NAME = {
+    "osi-approved": "OSI-approved",
+    "source-available": "Source-available",
+    "unlicensed": "No licence",
+    "unknown": "Unresolved",
+}
+
+
+def language_licence_plate(d: LanguageLicence) -> str:
+    """What the ecosystem is written in, and on what terms it may be reused."""
+    width, height = 1680, 800
+    left, right = 330.0, 1250.0
+    top = 236.0
+    row_h = 58.0
+    widest = max((r.projects for r in d.rows), default=1)
+    scale = (right - left) / widest
+
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="Language and licence",
+        desc=(
+            f"{d.projects} DAS projects by primary language, split by reuse terms. "
+            f"{d.osi} are OSI-approved; {d.lines:,} lines of source."
+        ),
+    )
+    c.text(
+        840,
+        88,
+        "What it is written in, and how it may be reused",
+        size=36,
+        fill=draw.INK,
+    )
+    c.text(
+        840,
+        128,
+        f"{d.projects} DAS projects · {d.lines:,} lines of source",
+        size=22,
+        fill=draw.MUTED,
+        italic=True,
+    )
+
+    cursor = 330.0
+    for licence, count in d.licence_totals:
+        c.rect(cursor, 166, 26, 12, fill=LICENCE_COLOUR.get(licence, draw.GRAY), rx=2)
+        label = f"{LICENCE_NAME.get(licence, licence)}  {count}"
+        c.text(cursor + 36, 178, label, size=17, fill=draw.INK, anchor="start")
+        cursor += 36 + len(label) * 8.4 + 46
+
+    for index, row in enumerate(d.rows):
+        y = top + index * row_h
+        c.text(left - 22, y + 8, row.language, size=22, fill=draw.INK, anchor="end")
+        segments = [
+            (licence, float(count), LICENCE_COLOUR.get(licence, draw.GRAY))
+            for licence, count in row.by_licence
+        ]
+        c.bar_stack(left, y - 15, row.projects * scale, 30, segments, min_visible=0.0)
+        for licence, count in row.by_licence:
+            offset = sum(
+                n
+                for lic, n in row.by_licence
+                if LICENCE_ORDER.index(lic) < LICENCE_ORDER.index(licence)
+            )
+            span = count * scale
+            if span < 26:
+                continue
+            c.text(
+                left + offset * scale + span / 2,
+                y + 8,
+                f"{count}",
+                size=19,
+                fill=draw.PAPER
+                if licence in ("osi-approved", "unlicensed")
+                else draw.INK,
+            )
+        tail = f"{row.lines:,} lines" if row.lines else "no source published"
+        c.text(
+            left + row.projects * scale + 22,
+            y + 7,
+            tail,
+            size=18,
+            fill=draw.MUTED,
+            anchor="start",
+            italic=True,
+        )
+
+    c.text(
+        840,
+        height - 40,
+        f"{d.osi} of {d.projects} carry an OSI-approved licence; "
+        f"{d.projects - d.osi} do not",
+        size=26,
+        fill=draw.FAINT,
+        italic=True,
     )
     return c.to_svg()

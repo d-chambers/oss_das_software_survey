@@ -1,21 +1,21 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-spool-processing,included,bf890b123e5d34dc4cacc637518d150160745a72,Ge Jin,jinwar@gmail.com,2023-10-16T11:18:13-06:00,2023-10-16T11:18:13-06:00,0,1,6,1,0,Update README.md
-spool-processing,included,c2aecae2e0f73fb103a17063c32101edb2042ea9,Ge Jin,jinwar@gmail.com,2023-10-16T11:15:29-06:00,2023-10-16T11:15:29-06:00,0,1,0,0,1,Update .DS_Store
-spool-processing,included,76ab828a513022214ebcccd917e7469e096ce621,Ge Jin,jinwar@gmail.com,2023-10-16T09:34:37-06:00,2023-10-16T09:34:37-06:00,0,1,458,0,0,Create Downsampling processing example.ipynb
-spool-processing,included,deb21f60c7d1083a50b75e079c07ea1cb4e03763,Ge Jin,jinwar@gmail.com,2023-10-16T09:31:40-06:00,2023-10-16T09:31:40-06:00,0,1,11,11,0,update typo
-spool-processing,included,004890b5af789d946722d6b3f6939a2c099d29c1,Ge Jin,jinwar@gmail.com,2023-10-16T09:19:27-06:00,2023-10-16T09:19:27-06:00,0,2,42,23,1,update
-spool-processing,included,55a62ccff8d56b0299e13a4e512642fda6c2ebb6,Ge Jin,jinwar@gmail.com,2023-10-16T09:08:29-06:00,2023-10-16T09:08:29-06:00,0,2,434,0,1,adding example for standard deviation processing
-spool-processing,included,6df4900f6ac8703a4132b224824a92082b7655e9,Jin Ge,gjin@lightwave.mines.edu,2023-08-23T17:13:39-06:00,2023-08-23T17:13:39-06:00,0,1,0,0,1,update
-spool-processing,included,38084925c4cda4e8f41f32043bfee5aedac1f20f,Ge Jin,jinwar@gmail.com,2023-08-23T17:13:54-06:00,2023-08-23T17:13:54-06:00,0,2,4,1,1,update pre-process
-spool-processing,included,705cd522ba96bc1750d1f0ba2b13003541cea02d,Ge Jin,jinwar@gmail.com,2023-08-14T22:22:31-05:00,2023-08-14T22:22:31-05:00,0,1,14,1,0,make filename legal
-spool-processing,included,5d971ce4233e25a3460edabd2ff574a587049d99,Ge Jin,jinwar@gmail.com,2023-07-21T08:39:04-05:00,2023-07-21T08:39:04-05:00,0,2,15,7,0,update downsample
-spool-processing,included,9fd71633664e507c09be1f67de671c6058d03ff7,Ge Jin,jinwar@gmail.com,2023-07-08T17:48:05+08:00,2023-07-08T17:48:05+08:00,0,2,138,13,0,first working version for down_sample
-spool-processing,included,dfbc122582961d39d8142f6f9187d3ffd6a5b7f5,Jin Ge,gjin@lightwave.mines.edu,2023-06-23T10:26:39-06:00,2023-06-23T10:26:39-06:00,1,,,,,Merge branch 'master' of github.com:DASDAE/SpoolProcessing
-spool-processing,included,227db6ab1b46aa4b9d87b17d2bd65a0e327f974d,Jin Ge,gjin@lightwave.mines.edu,2023-06-23T10:25:12-06:00,2023-06-23T10:25:12-06:00,0,1,1,1,0,"Revert ""format update"""
-spool-processing,included,b3402217391f7fbe0cdd9f25fd8b59b59ab2511b,Jin Ge,gjin@lightwave.mines.edu,2023-06-23T10:20:28-06:00,2023-06-23T10:20:28-06:00,0,1,1,1,0,format update
-spool-processing,included,35e953a3b0f2ce07b2f0cf2a95ce819dd2ec1d86,Ge Jin,jinwar@gmail.com,2023-06-23T09:54:21-06:00,2023-06-23T09:54:21-06:00,0,1,1,0,0,Update README.md
-spool-processing,included,790acd0963766fbb088e2ec2e515747994c11d4d,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T13:46:52-06:00,2023-06-18T13:46:52-06:00,0,2,10,6,0,"update pre_process function, allow splitting spool into continuous chunks."
-spool-processing,included,55cd8d738eaa5e382af3b8667aad97cf5adaa266,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T11:00:05-06:00,2023-06-18T11:00:05-06:00,0,1,19,15,0,allow multiple continous datasets in the spool. process them seperately.
-spool-processing,included,569565da6217a75b887430679c7d0e50ecc44ac7,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T10:56:36-06:00,2023-06-18T10:56:36-06:00,0,1,3,1,0,update README
-spool-processing,included,95b7646e30a3229f5098da975d60190f421ae97f,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T10:55:54-06:00,2023-06-18T10:55:54-06:00,0,2,128,0,0,first stable version
-spool-processing,included,dafeae48778e18af39973e16215b4be1ee3d2560,Ge Jin,jinwar@gmail.com,2023-06-17T10:00:42-06:00,2023-06-17T10:00:42-06:00,0,3,182,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+spool-processing,bf890b123e5d34dc4cacc637518d150160745a72,Ge Jin,jinwar@gmail.com,2023-10-16T11:18:13-06:00,2023-10-16T11:18:13-06:00,0,1,6,1,0,Update README.md
+spool-processing,c2aecae2e0f73fb103a17063c32101edb2042ea9,Ge Jin,jinwar@gmail.com,2023-10-16T11:15:29-06:00,2023-10-16T11:15:29-06:00,0,1,0,0,1,Update .DS_Store
+spool-processing,76ab828a513022214ebcccd917e7469e096ce621,Ge Jin,jinwar@gmail.com,2023-10-16T09:34:37-06:00,2023-10-16T09:34:37-06:00,0,1,458,0,0,Create Downsampling processing example.ipynb
+spool-processing,deb21f60c7d1083a50b75e079c07ea1cb4e03763,Ge Jin,jinwar@gmail.com,2023-10-16T09:31:40-06:00,2023-10-16T09:31:40-06:00,0,1,11,11,0,update typo
+spool-processing,004890b5af789d946722d6b3f6939a2c099d29c1,Ge Jin,jinwar@gmail.com,2023-10-16T09:19:27-06:00,2023-10-16T09:19:27-06:00,0,2,42,23,1,update
+spool-processing,55a62ccff8d56b0299e13a4e512642fda6c2ebb6,Ge Jin,jinwar@gmail.com,2023-10-16T09:08:29-06:00,2023-10-16T09:08:29-06:00,0,2,434,0,1,adding example for standard deviation processing
+spool-processing,6df4900f6ac8703a4132b224824a92082b7655e9,Jin Ge,gjin@lightwave.mines.edu,2023-08-23T17:13:39-06:00,2023-08-23T17:13:39-06:00,0,1,0,0,1,update
+spool-processing,38084925c4cda4e8f41f32043bfee5aedac1f20f,Ge Jin,jinwar@gmail.com,2023-08-23T17:13:54-06:00,2023-08-23T17:13:54-06:00,0,2,4,1,1,update pre-process
+spool-processing,705cd522ba96bc1750d1f0ba2b13003541cea02d,Ge Jin,jinwar@gmail.com,2023-08-14T22:22:31-05:00,2023-08-14T22:22:31-05:00,0,1,14,1,0,make filename legal
+spool-processing,5d971ce4233e25a3460edabd2ff574a587049d99,Ge Jin,jinwar@gmail.com,2023-07-21T08:39:04-05:00,2023-07-21T08:39:04-05:00,0,2,15,7,0,update downsample
+spool-processing,9fd71633664e507c09be1f67de671c6058d03ff7,Ge Jin,jinwar@gmail.com,2023-07-08T17:48:05+08:00,2023-07-08T17:48:05+08:00,0,2,138,13,0,first working version for down_sample
+spool-processing,dfbc122582961d39d8142f6f9187d3ffd6a5b7f5,Jin Ge,gjin@lightwave.mines.edu,2023-06-23T10:26:39-06:00,2023-06-23T10:26:39-06:00,1,,,,,Merge branch 'master' of github.com:DASDAE/SpoolProcessing
+spool-processing,227db6ab1b46aa4b9d87b17d2bd65a0e327f974d,Jin Ge,gjin@lightwave.mines.edu,2023-06-23T10:25:12-06:00,2023-06-23T10:25:12-06:00,0,1,1,1,0,"Revert ""format update"""
+spool-processing,b3402217391f7fbe0cdd9f25fd8b59b59ab2511b,Jin Ge,gjin@lightwave.mines.edu,2023-06-23T10:20:28-06:00,2023-06-23T10:20:28-06:00,0,1,1,1,0,format update
+spool-processing,35e953a3b0f2ce07b2f0cf2a95ce819dd2ec1d86,Ge Jin,jinwar@gmail.com,2023-06-23T09:54:21-06:00,2023-06-23T09:54:21-06:00,0,1,1,0,0,Update README.md
+spool-processing,790acd0963766fbb088e2ec2e515747994c11d4d,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T13:46:52-06:00,2023-06-18T13:46:52-06:00,0,2,10,6,0,"update pre_process function, allow splitting spool into continuous chunks."
+spool-processing,55cd8d738eaa5e382af3b8667aad97cf5adaa266,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T11:00:05-06:00,2023-06-18T11:00:05-06:00,0,1,19,15,0,allow multiple continous datasets in the spool. process them seperately.
+spool-processing,569565da6217a75b887430679c7d0e50ecc44ac7,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T10:56:36-06:00,2023-06-18T10:56:36-06:00,0,1,3,1,0,update README
+spool-processing,95b7646e30a3229f5098da975d60190f421ae97f,Jin Ge,gjin@lightwave.mines.edu,2023-06-18T10:55:54-06:00,2023-06-18T10:55:54-06:00,0,2,128,0,0,first stable version
+spool-processing,dafeae48778e18af39973e16215b4be1ee3d2560,Ge Jin,jinwar@gmail.com,2023-06-17T10:00:42-06:00,2023-06-17T10:00:42-06:00,0,3,182,0,0,Initial commit

@@ -16,6 +16,9 @@ from oss_das.models import ForgeKind
 #: Path prefixes that count as published documentation, on any host.
 DOC_PREFIXES = ("docs/", "documentation/", "doc/")
 
+#: README filenames tried, in order, on hosts that cannot resolve the name.
+README_NAMES = ("README.md", "README.rst", "README.txt", "README", "readme.md")
+
 #: Path prefixes that count as a test suite, on any host.
 TEST_PREFIXES = ("tests/", "test/")
 
@@ -61,6 +64,12 @@ class ForgeClient(Protocol):
 
     def collect_repository(self, repository: str) -> dict[str, Any]:
         """Return one normalized point-in-time record for a single repository."""
+
+    def repository(self, repository: str) -> dict[str, Any]:
+        """Return one repository as a normalized candidate, or raise SourceError."""
+
+    def readme(self, repository: str) -> str:
+        """Return the README text, or raise SourceError when the host has none."""
 
 
 def _matches(path: str, patterns: Iterable[str]) -> bool:

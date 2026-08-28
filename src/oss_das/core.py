@@ -1,21 +1,25 @@
-"""Filesystem paths and serialization shared by all numbered scripts."""
+"""Filesystem layout and record I/O shared by every numbered script.
+
+Every per-project record is a Markdown file with YAML frontmatter: facts in
+the frontmatter, prose in the body. This module owns reading and writing that
+shape, the directory layout from the README, and the two ledgers.
+"""
 
 from __future__ import annotations
 
 import csv
-import json
+import re
 from collections.abc import Iterable
 from dataclasses import dataclass
-from datetime import date
 from pathlib import Path
-from typing import Any, TypeVar
+from typing import Any
 
 import yaml
-from pydantic import BaseModel
 
 from oss_das.models import ProjectRecord
 
-RecordT = TypeVar("RecordT", bound=BaseModel)
+#: Sources a measured record can come from; each is one B script's directory.
+MEASURED_SOURCES = ("mirror", "git", "forge", "registry", "publications")
 
 
 @dataclass(frozen=True)
@@ -27,124 +31,126 @@ class ProjectPaths:
         return cls(Path(__file__).resolve().parents[2])
 
     @property
+    def data(self) -> Path:
+        return self.root / "data"
+
+    # --- A: curate -----------------------------------------------------------
+    @property
+    def candidates(self) -> Path:
+        """Write-once discovery findings, ``<source>/<key>.md``."""
+        return self.data / "raw" / "candidates"
+
+    @property
+    def coverage(self) -> Path:
+        """Append-only ledger: every discovery probe and what it returned."""
+        return self.data / "raw" / "coverage.csv"
+
+    @property
+    def triage(self) -> Path:
+        """Append-only ledger of is-it-DAS verdicts; the last row per key wins."""
+        return self.data / "triage.csv"
+
+    @property
+    def enriched(self) -> Path:
+        return self.data / "enriched"
+
+    @property
     def curated(self) -> Path:
-        """One markdown file per project; the frontmatter is the registry."""
-        return self.root / "data" / "projects"
+        return self.data / "curated"
 
     @property
-    def snapshots(self) -> Path:
-        return self.root / "data" / "snapshots"
+    def rejected(self) -> Path:
+        return self.data / "rejected.yml"
+
+    # --- B: measure ----------------------------------------------------------
+    @property
+    def repos(self) -> Path:
+        return self.data / "repos"
 
     @property
-    def docs(self) -> Path:
-        return self.root / "docs"
+    def commits(self) -> Path:
+        return self.data / "commits"
 
-    def snapshot(self, snapshot_date: str) -> Path:
-        date.fromisoformat(snapshot_date)
-        return self.snapshots / snapshot_date
+    def measured(self, source: str) -> Path:
+        assert source in MEASURED_SOURCES, source
+        return self.data / "measured" / source
 
-    def raw(self, snapshot_date: str) -> Path:
-        return self.snapshot(snapshot_date) / "raw"
+    # --- C: present ----------------------------------------------------------
+    @property
+    def notebooks(self) -> Path:
+        return self.root / "notebooks"
+
+    @property
+    def public(self) -> Path:
+        """Tables the notebook reads; marimo ships this directory with the export."""
+        return self.notebooks / "public"
 
 
 PATHS = ProjectPaths.discover()
 
 
-#: Frontmatter blocks a rebuild owns. They sit beside the curated record but
-#: are not part of it, so they are stripped before validation rather than being
-#: allowed to widen the schema a reviewer is responsible for.
-GENERATED_BLOCKS = ("collected", "summary")
+# --- markdown records ---------------------------------------------------------
+
+_FRONT = re.compile(r"\A---\n(.*?)\n---\n?(.*)\Z", re.S)
+
+
+def read_record(path: Path) -> tuple[dict[str, Any], str]:
+    """Split a record into its frontmatter mapping and prose body."""
+    match = _FRONT.match(path.read_text())
+    if not match:
+        raise ValueError(f"{path} has no frontmatter block")
+    front = yaml.safe_load(match.group(1)) or {}
+    if not isinstance(front, dict):
+        raise ValueError(f"{path}: frontmatter must be a mapping")
+    return front, match.group(2).strip()
+
+
+def write_record(path: Path, front: dict[str, Any], body: str = "") -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = yaml.safe_dump(front, sort_keys=False, allow_unicode=True, width=100)
+    path.write_text(f"---\n{text}---\n" + (f"\n{body.strip()}\n" if body else ""))
 
 
 def read_frontmatter(path: Path) -> dict[str, Any]:
-    text = path.read_text()
-    if not text.startswith("---\n"):
-        raise ValueError(f"{path} has no frontmatter block")
-    _, _, rest = text.partition("---\n")
-    front, marker, _ = rest.partition("\n---")
-    if not marker:
-        raise ValueError(f"{path} has an unterminated frontmatter block")
-    return yaml.safe_load(front) or {}
+    return read_record(path)[0]
+
+
+# --- candidate keys -----------------------------------------------------------
+
+
+def candidate_key(source: str, path: str) -> str:
+    """The identity of one finding: ``host/owner/name`` or ``pypi/name``."""
+    return f"{source}/{path.strip('/')}".lower()
+
+
+def candidate_path(key: str, root: Path | None = None) -> Path:
+    """Where a candidate is written; nested paths fold into one filename."""
+    source, _, rest = key.partition("/")
+    return (root or PATHS.candidates) / source / f"{rest.replace('/', '--')}.md"
+
+
+# --- loaders ------------------------------------------------------------------
 
 
 def load_projects(path: Path | None = None) -> list[ProjectRecord]:
-    """Load the curated registry from the per-project files.
-
-    Each file also carries collected metrics and agent provenance, which are
-    regenerated rather than reviewed; only the ``curated`` block is the
-    authority for identity, scope, and licensing.
-    """
+    """Load the human-approved catalogue from ``data/curated/``."""
     source = path or PATHS.curated
-    documents = []
-    for file in sorted(source.glob("*.md")):
-        document = read_frontmatter(file)
-        if "curated" not in document:
-            raise ValueError(f"{file} has no curated block")
-        documents.append(document["curated"])
-    projects = [ProjectRecord.model_validate(item) for item in documents]
+    projects = [
+        ProjectRecord.model_validate(read_frontmatter(file))
+        for file in sorted(source.glob("*.md"))
+    ]
     ids = [project.id for project in projects]
-    repositories = [project.forge_key for project in projects]
     if len(ids) != len(set(ids)):
         raise ValueError("project ids must be unique")
-    if len(repositories) != len(set(repositories)):
+    keys = [project.key for project in projects]
+    if len(keys) != len(set(keys)):
         raise ValueError("project repositories must be unique")
     return sorted(projects, key=lambda project: project.id)
 
 
-def write_json(path: Path, value: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, sort_keys=True, default=str) + "\n")
-
-
-def read_json(path: Path) -> Any:
-    return json.loads(path.read_text())
-
-
-def write_jsonl(path: Path, values: Iterable[dict[str, Any] | BaseModel]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    lines = []
-    for value in values:
-        payload = (
-            value.model_dump(mode="json") if isinstance(value, BaseModel) else value
-        )
-        lines.append(json.dumps(payload, sort_keys=True, default=str))
-    path.write_text("\n".join(lines) + ("\n" if lines else ""))
-
-
-def read_jsonl(path: Path) -> list[dict[str, Any]]:
-    if not path.exists():
-        return []
-    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
-
-
-def write_csv(path: Path, rows: Iterable[dict[str, Any]], fields: list[str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=fields, extrasaction="ignore")
-        writer.writeheader()
-        for row in rows:
-            writer.writerow(
-                {key: "" if value is None else value for key, value in row.items()}
-            )
-
-
-def read_csv(path: Path) -> list[dict[str, str]]:
-    if not path.exists():
-        return []
-    with path.open(newline="") as file:
-        return list(csv.DictReader(file))
-
-
 def load_rejections(path: Path | None = None) -> dict[str, dict[str, str]]:
-    """Read the ledger of candidates reviewed and rejected, keyed by forge key.
-
-    A rejection is deliberately not a catalog entry. Writing one curated file
-    per junk repository would bury `data/projects/` under several hundred
-    records that carry no metrics and appear in no figure. The ledger records
-    only that a repository was looked at and is not a project, so discovery
-    stops proposing it at every snapshot.
-    """
-    path = path or PATHS.root / "data" / "rejected.yml"
+    """Read the ledger of candidates reviewed and rejected, keyed by candidate key."""
+    path = path or PATHS.rejected
     if not path.exists():
         return {}
     payload = yaml.safe_load(path.read_text()) or {}
@@ -162,10 +168,59 @@ def load_rejections(path: Path | None = None) -> dict[str, dict[str, str]]:
     return out
 
 
-def newest_snapshot() -> str:
-    candidates = sorted(
-        path.name for path in PATHS.snapshots.glob("????-??-??") if path.is_dir()
+def append_rejections(
+    entries: dict[str, dict[str, str]], path: Path | None = None
+) -> None:
+    """Add rejections to the ledger, keeping existing entries and comments' intent."""
+    path = path or PATHS.rejected
+    current = load_rejections(path)
+    current.update(entries)
+    payload = {"rejections": dict(sorted(current.items()))}
+    path.write_text(
+        "# Candidates reviewed and rejected, so they are not proposed again.\n"
+        "# Keys are candidate keys (host/owner/name or pypi/name), lowercased.\n"
+        "# A rejection is not a catalogue entry: it carries no metrics and appears\n"
+        "# in no figure. A curated file always wins over an entry here.\n\n"
+        + yaml.safe_dump(payload, sort_keys=False, allow_unicode=True, width=100)
     )
-    if not candidates:
-        raise FileNotFoundError("no dated snapshots are available")
-    return candidates[-1]
+
+
+# --- csv ----------------------------------------------------------------------
+
+
+def write_csv(path: Path, rows: Iterable[dict[str, Any]], fields: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fields, extrasaction="ignore")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({k: "" if v is None else v for k, v in row.items()})
+
+
+def append_csv(path: Path, rows: Iterable[dict[str, Any]], fields: list[str]) -> int:
+    """Append rows to a ledger, writing the header only when the file is new."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    new = not path.exists() or path.stat().st_size == 0
+    count = 0
+    with path.open("a", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fields, extrasaction="ignore")
+        if new:
+            writer.writeheader()
+        for row in rows:
+            writer.writerow({k: "" if v is None else v for k, v in row.items()})
+            count += 1
+    return count
+
+
+def read_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(newline="") as file:
+        return list(csv.DictReader(file))
+
+
+def newest_snapshot() -> str:
+    """Kept only so the untouched `v` figure scripts still import; snapshots are gone."""
+    raise FileNotFoundError(
+        "dated snapshots no longer exist; figures read notebooks/public/"
+    )

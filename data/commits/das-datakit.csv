@@ -1,43 +1,43 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-das-datakit,excluded,f85ced63c85a9bb4aa096570ba011285674b679d,Dasuda,dasuda2015@163.com,2026-07-06T18:05:17+08:00,2026-07-06T18:05:17+08:00,1,,,,,Merge pull request #17 from genrobot-ai/feature/depth_v2_decoder
-das-datakit,excluded,c08f3218b03dfad575a33bf5f9702a4acee093e6,dongchen.wei,dongchen.wei@genrobot.ai,2026-07-06T16:54:46+08:00,2026-07-06T16:54:46+08:00,0,3,232,20,0,feature: add camera2 depth  rgb ply export.
-das-datakit,excluded,0c7f772c2f1a57b66c3176e7a308c25bf60d4c8e,Dasuda,dasuda2015@163.com,2026-07-06T11:02:32+08:00,2026-07-06T11:02:32+08:00,1,,,,,Merge pull request #16 from genrobot-ai/feature/depth_v2_decoder
-das-datakit,excluded,7dc513569c2a0435052a3d9d26bb99be4711df67,dongchen.wei,dongchen.wei@genrobot.ai,2026-07-06T10:49:19+08:00,2026-07-06T10:49:19+08:00,0,6,392,1,0,feature: add camera2 depth decoder and ply export support.
-das-datakit,excluded,b60e4fe378f44b4da6ce3c430077f2d5e93032cb,Dasuda,dasuda2015@163.com,2026-06-12T19:48:40+08:00,2026-06-12T19:48:40+08:00,1,,,,,Merge pull request #15 from genliuxj/fix0612
-das-datakit,excluded,2d2b40afabd751892fbe6666c69c6ebe5a510338,xianjun.liu,xianjun.liu@genrobot.ai,2026-06-12T19:44:50+08:00,2026-06-12T19:44:50+08:00,0,1,2,2,0,Comment out load_topics
-das-datakit,excluded,edd43f669478718de51f1abc1ebdfce5008b0811,walker591,leoyang94@hotmail.com,2026-05-14T20:58:47+08:00,2026-05-14T20:58:47+08:00,1,,,,,Merge pull request #13 from genliuxj/mcap_merge0514
-das-datakit,excluded,8cb51e0039ec45d322405c4281048226acde4b6a,xianjun.liu,xianjun.liu@genrobot.ai,2026-05-14T20:28:45+08:00,2026-05-14T20:55:23+08:00,0,2,213,162,0,"update merge ego finger script,"
-das-datakit,excluded,5d4c5d9ff3aaf037b9b13052e1086c74ff33808f,Dasuda,dasuda2015@163.com,2026-05-07T15:38:12+08:00,2026-05-07T15:38:12+08:00,1,,,,,Merge pull request #12 from genrobot-ai/DasudaRunner-patch-1
-das-datakit,excluded,01e91442cedf749553557a6fd1b2e91170294a91,Dasuda,dasuda2015@163.com,2026-05-07T15:37:52+08:00,2026-05-07T15:37:52+08:00,0,1,1,1,0,update homepage url
-das-datakit,excluded,d8e429a5018f27afb7f884da7a985799296e6e5f,Dasuda,dasuda2015@163.com,2026-05-07T15:32:11+08:00,2026-05-07T15:32:11+08:00,1,,,,,Merge pull request #11 from genliuxj/update_sysinfo_proto0507
-das-datakit,excluded,09701fb9055f2a097f31b9383fc5e6fa0e8aa87c,xianjun.liu,xianjun.liu@genrobot.ai,2026-05-07T15:19:28+08:00,2026-05-07T15:19:28+08:00,0,4,16,5,0,update systeminfo and compressedimage proto
-das-datakit,excluded,f18538f8b43526395a63d39207c8b30b264bd29e,walker591,leoyang94@hotmail.com,2026-05-03T20:58:39+08:00,2026-05-03T20:58:39+08:00,1,,,,,Merge pull request #10 from genrobot-ai/ego/merge
-das-datakit,excluded,9bc048e55545dc55f96d183b2cd93823a30a2f59,yang.li,1073891522@qq.com,2026-05-03T18:53:42+08:00,2026-05-03T18:54:12+08:00,0,3,578,415,0,add merge_ego_finger_mcap_by_uuid.py
-das-datakit,excluded,2d38a505ee978e43a0e3a57e94221f147b274edc,yang.li,1073891522@qq.com,2026-01-19T00:38:32+08:00,2026-05-03T15:48:48+08:00,0,2,734,0,0,convert to mp4
-das-datakit,excluded,f1b1580c233c86e6fc849e1feec9e83118c3edf6,wddr955,496628393@qq.com,2026-04-27T21:53:46+08:00,2026-04-27T21:53:46+08:00,1,,,,,Merge pull request #9 from genrobot-ai/feature/depth_decoder
-das-datakit,excluded,187a414061b45a6dd211f30323dbfa086da216d1,dongchen.wei,dongchen.wei@genrobot.ai,2026-04-27T21:51:18+08:00,2026-04-27T21:51:18+08:00,0,2,40,1,0,Fix requirements and add StereoCalibration pb2
-das-datakit,excluded,80646175bba078f909ef4281b3734aef7b466817,dongchen.wei,dongchen.wei@genrobot.ai,2026-04-27T21:14:10+08:00,2026-04-27T21:14:10+08:00,0,6,518,42,0,Add depth map decoding and point cloud conversion.
-das-datakit,excluded,e66d36493e63fc6d34a69c1a81a8b444613d20cc,XiaofeiGuo222,archekray@gmail.com,2026-04-20T15:00:38+08:00,2026-04-20T15:00:38+08:00,1,,,,,Merge pull request #8 from genrobot-ai/xiaofei/mcap2lerobot
-das-datakit,excluded,e9af076a219e032e1c798749a2dadccdbdadf103,xiaofei.guo,xiaofei.guo@genrobot.ai,2026-04-20T15:00:09+08:00,2026-04-20T15:00:09+08:00,0,2,546,0,0,gripper mcap to lerobot script
-das-datakit,excluded,0dcd8b0461113e266eaa2a413f46f097246949c0,Dasuda,dasuda2015@163.com,2026-04-14T16:38:32+08:00,2026-04-14T16:38:32+08:00,1,,,,,Merge pull request #7 from genrobot-ai/feature/luzhensss
-das-datakit,excluded,c07657fba8208cf70a2fcd48f8d76a66091ae34f,zhensheng.lu,zhensheng.lu@genrobot.ai,2026-04-14T16:20:39+08:00,2026-04-14T16:20:39+08:00,0,2,1094,0,0,add projected
-das-datakit,excluded,8ca3b37c2235969ba7b5a2690ea29b9a6054087a,Dasuda,dasuda2015@163.com,2026-02-13T22:18:21+08:00,2026-02-13T22:18:21+08:00,1,,,,,Merge pull request #4 from walker591/patch-1
-das-datakit,excluded,f735f187ccf36a5cdf649e138ce5449387e53e93,walker591,leoyang94@hotmail.com,2026-02-13T21:54:30+08:00,2026-02-13T21:54:30+08:00,0,1,415,0,0,Add MCAP merging tool by UUID8
-das-datakit,excluded,3a36dd82b2491d74ea32d12b21f2dcc893e846b8,Dasuda,dasuda2015@163.com,2026-01-19T12:17:22+08:00,2026-01-19T12:17:22+08:00,1,,,,,Merge pull request #3 from walker591/converter
-das-datakit,excluded,11ea2be9f55e7c1c934d33d8b1d4b45a1d77636b,walker591,leoyang94@hotmail.com,2026-01-18T16:46:52+00:00,2026-01-18T16:46:52+00:00,0,1,734,0,0,convert mcpa to mp4
-das-datakit,excluded,ca5030d8aaafe5076af2ceb42c65cfc87af2465f,david,dasuda2015@163.com,2026-01-05T22:33:54+08:00,2026-01-05T22:33:54+08:00,0,1,2,1,0,load all topics in demo script
-das-datakit,excluded,9b4aa62e3fe5d1c9069b6321ae9ddf88120caea8,david,dasuda2015@163.com,2026-01-05T22:26:12+08:00,2026-01-05T22:26:12+08:00,0,3,57,79,0,update demo script
-das-datakit,excluded,04e6893df47891d2fdcbdacf2758c0aa849d6b83,david,dasuda2015@163.com,2026-01-05T21:41:26+08:00,2026-01-05T21:41:26+08:00,0,102,3517,27,0,manual decode proto data
-das-datakit,excluded,69805906a7879334ecf75d5a14d4b07e8c3cf2a3,haibo.wang,dasuda2015@163.com,2025-12-30T22:45:49+08:00,2025-12-30T22:45:49+08:00,0,2,64,27,0,update demo scripts
-das-datakit,excluded,4e83be3b03d170027b27a4a931258084bbcfd818,haibo.wang,dasuda2015@163.com,2025-12-30T22:05:12+08:00,2025-12-30T22:05:12+08:00,0,3,55,12,0,using non seek reader for compatible
-das-datakit,excluded,478465abf2f1584364bf67e26f3626c4e9aeb246,haibo.wang,dasuda2015@163.com,2025-12-25T21:42:50+08:00,2025-12-25T21:42:50+08:00,0,2,25,9,0,fix stereo camera dump bug and img None problem
-das-datakit,excluded,6a866cb25970f7dacda786c4bcd787e385974856,haibo.wang,dasuda2015@163.com,2025-12-17T23:34:25+08:00,2025-12-17T23:34:25+08:00,0,1,1,0,0,support CompressedVideo proto
-das-datakit,excluded,f48e40f947250fa593b58dcf3185e98636b55e5a,haibo.wang,dasuda2015@163.com,2025-12-10T20:32:12+08:00,2025-12-10T20:32:12+08:00,0,1,4,1,0,update readme
-das-datakit,excluded,5660f7fef49630e0c6d759e37dd2597e64c4d12e,haibo.wang,dasuda2015@163.com,2025-12-10T20:28:14+08:00,2025-12-10T20:28:14+08:00,0,2,16,5,0,add img resize
-das-datakit,excluded,980ba4c576b53e225efc55f19e3fbd99ec7508aa,haibo.wang,dasuda2015@163.com,2025-11-23T21:28:05+08:00,2025-11-23T21:28:05+08:00,0,3,14,7,0,support new task dir file
-das-datakit,excluded,9db1d92116c42ac474946def46c75a8a3a52ebf2,haibo.wang,dasuda2015@163.com,2025-11-20T21:24:17+08:00,2025-11-20T21:24:17+08:00,0,1,1,1,0,update readme
-das-datakit,excluded,7f7714648eafe734d1921565dedb50f160b6c650,haibo.wang,dasuda2015@163.com,2025-11-20T20:38:09+08:00,2025-11-20T21:02:26+08:00,0,1,2,1,0,fix out-path dir bug
-das-datakit,excluded,24c661002cb934493758b7f8849fdf001f53b916,haibo.wang,dasuda2015@163.com,2025-11-20T20:29:18+08:00,2025-11-20T20:29:18+08:00,0,11,994,1,0,update base version
-das-datakit,excluded,acc81b86bc8a68a80813057c886af7f3e44a0b4d,Dasuda,dasuda2015@163.com,2025-11-18T22:42:30+08:00,2025-11-18T22:42:30+08:00,0,1,2,2,0,Fix header alignment and styling in README
-das-datakit,excluded,ed494c603a472b7fb19746b506d4315b2d9664e0,haibo.wang,dasuda2015@163.com,2025-11-18T22:40:13+08:00,2025-11-18T22:40:13+08:00,0,1,217,1,0,update readme
-das-datakit,excluded,d17d8991e84ce0630d9854c52420c50d9fda24e1,Dasuda,dasuda2015@163.com,2025-11-18T22:09:17+08:00,2025-11-18T22:09:17+08:00,0,3,229,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-datakit,f85ced63c85a9bb4aa096570ba011285674b679d,Dasuda,dasuda2015@163.com,2026-07-06T18:05:17+08:00,2026-07-06T18:05:17+08:00,1,,,,,Merge pull request #17 from genrobot-ai/feature/depth_v2_decoder
+das-datakit,c08f3218b03dfad575a33bf5f9702a4acee093e6,dongchen.wei,dongchen.wei@genrobot.ai,2026-07-06T16:54:46+08:00,2026-07-06T16:54:46+08:00,0,3,232,20,0,feature: add camera2 depth  rgb ply export.
+das-datakit,0c7f772c2f1a57b66c3176e7a308c25bf60d4c8e,Dasuda,dasuda2015@163.com,2026-07-06T11:02:32+08:00,2026-07-06T11:02:32+08:00,1,,,,,Merge pull request #16 from genrobot-ai/feature/depth_v2_decoder
+das-datakit,7dc513569c2a0435052a3d9d26bb99be4711df67,dongchen.wei,dongchen.wei@genrobot.ai,2026-07-06T10:49:19+08:00,2026-07-06T10:49:19+08:00,0,6,392,1,0,feature: add camera2 depth decoder and ply export support.
+das-datakit,b60e4fe378f44b4da6ce3c430077f2d5e93032cb,Dasuda,dasuda2015@163.com,2026-06-12T19:48:40+08:00,2026-06-12T19:48:40+08:00,1,,,,,Merge pull request #15 from genliuxj/fix0612
+das-datakit,2d2b40afabd751892fbe6666c69c6ebe5a510338,xianjun.liu,xianjun.liu@genrobot.ai,2026-06-12T19:44:50+08:00,2026-06-12T19:44:50+08:00,0,1,2,2,0,Comment out load_topics
+das-datakit,edd43f669478718de51f1abc1ebdfce5008b0811,walker591,leoyang94@hotmail.com,2026-05-14T20:58:47+08:00,2026-05-14T20:58:47+08:00,1,,,,,Merge pull request #13 from genliuxj/mcap_merge0514
+das-datakit,8cb51e0039ec45d322405c4281048226acde4b6a,xianjun.liu,xianjun.liu@genrobot.ai,2026-05-14T20:28:45+08:00,2026-05-14T20:55:23+08:00,0,2,213,162,0,"update merge ego finger script,"
+das-datakit,5d4c5d9ff3aaf037b9b13052e1086c74ff33808f,Dasuda,dasuda2015@163.com,2026-05-07T15:38:12+08:00,2026-05-07T15:38:12+08:00,1,,,,,Merge pull request #12 from genrobot-ai/DasudaRunner-patch-1
+das-datakit,01e91442cedf749553557a6fd1b2e91170294a91,Dasuda,dasuda2015@163.com,2026-05-07T15:37:52+08:00,2026-05-07T15:37:52+08:00,0,1,1,1,0,update homepage url
+das-datakit,d8e429a5018f27afb7f884da7a985799296e6e5f,Dasuda,dasuda2015@163.com,2026-05-07T15:32:11+08:00,2026-05-07T15:32:11+08:00,1,,,,,Merge pull request #11 from genliuxj/update_sysinfo_proto0507
+das-datakit,09701fb9055f2a097f31b9383fc5e6fa0e8aa87c,xianjun.liu,xianjun.liu@genrobot.ai,2026-05-07T15:19:28+08:00,2026-05-07T15:19:28+08:00,0,4,16,5,0,update systeminfo and compressedimage proto
+das-datakit,f18538f8b43526395a63d39207c8b30b264bd29e,walker591,leoyang94@hotmail.com,2026-05-03T20:58:39+08:00,2026-05-03T20:58:39+08:00,1,,,,,Merge pull request #10 from genrobot-ai/ego/merge
+das-datakit,9bc048e55545dc55f96d183b2cd93823a30a2f59,yang.li,1073891522@qq.com,2026-05-03T18:53:42+08:00,2026-05-03T18:54:12+08:00,0,3,578,415,0,add merge_ego_finger_mcap_by_uuid.py
+das-datakit,2d38a505ee978e43a0e3a57e94221f147b274edc,yang.li,1073891522@qq.com,2026-01-19T00:38:32+08:00,2026-05-03T15:48:48+08:00,0,2,734,0,0,convert to mp4
+das-datakit,f1b1580c233c86e6fc849e1feec9e83118c3edf6,wddr955,496628393@qq.com,2026-04-27T21:53:46+08:00,2026-04-27T21:53:46+08:00,1,,,,,Merge pull request #9 from genrobot-ai/feature/depth_decoder
+das-datakit,187a414061b45a6dd211f30323dbfa086da216d1,dongchen.wei,dongchen.wei@genrobot.ai,2026-04-27T21:51:18+08:00,2026-04-27T21:51:18+08:00,0,2,40,1,0,Fix requirements and add StereoCalibration pb2
+das-datakit,80646175bba078f909ef4281b3734aef7b466817,dongchen.wei,dongchen.wei@genrobot.ai,2026-04-27T21:14:10+08:00,2026-04-27T21:14:10+08:00,0,6,518,42,0,Add depth map decoding and point cloud conversion.
+das-datakit,e66d36493e63fc6d34a69c1a81a8b444613d20cc,XiaofeiGuo222,archekray@gmail.com,2026-04-20T15:00:38+08:00,2026-04-20T15:00:38+08:00,1,,,,,Merge pull request #8 from genrobot-ai/xiaofei/mcap2lerobot
+das-datakit,e9af076a219e032e1c798749a2dadccdbdadf103,xiaofei.guo,xiaofei.guo@genrobot.ai,2026-04-20T15:00:09+08:00,2026-04-20T15:00:09+08:00,0,2,546,0,0,gripper mcap to lerobot script
+das-datakit,0dcd8b0461113e266eaa2a413f46f097246949c0,Dasuda,dasuda2015@163.com,2026-04-14T16:38:32+08:00,2026-04-14T16:38:32+08:00,1,,,,,Merge pull request #7 from genrobot-ai/feature/luzhensss
+das-datakit,c07657fba8208cf70a2fcd48f8d76a66091ae34f,zhensheng.lu,zhensheng.lu@genrobot.ai,2026-04-14T16:20:39+08:00,2026-04-14T16:20:39+08:00,0,2,1094,0,0,add projected
+das-datakit,8ca3b37c2235969ba7b5a2690ea29b9a6054087a,Dasuda,dasuda2015@163.com,2026-02-13T22:18:21+08:00,2026-02-13T22:18:21+08:00,1,,,,,Merge pull request #4 from walker591/patch-1
+das-datakit,f735f187ccf36a5cdf649e138ce5449387e53e93,walker591,leoyang94@hotmail.com,2026-02-13T21:54:30+08:00,2026-02-13T21:54:30+08:00,0,1,415,0,0,Add MCAP merging tool by UUID8
+das-datakit,3a36dd82b2491d74ea32d12b21f2dcc893e846b8,Dasuda,dasuda2015@163.com,2026-01-19T12:17:22+08:00,2026-01-19T12:17:22+08:00,1,,,,,Merge pull request #3 from walker591/converter
+das-datakit,11ea2be9f55e7c1c934d33d8b1d4b45a1d77636b,walker591,leoyang94@hotmail.com,2026-01-18T16:46:52+00:00,2026-01-18T16:46:52+00:00,0,1,734,0,0,convert mcpa to mp4
+das-datakit,ca5030d8aaafe5076af2ceb42c65cfc87af2465f,david,dasuda2015@163.com,2026-01-05T22:33:54+08:00,2026-01-05T22:33:54+08:00,0,1,2,1,0,load all topics in demo script
+das-datakit,9b4aa62e3fe5d1c9069b6321ae9ddf88120caea8,david,dasuda2015@163.com,2026-01-05T22:26:12+08:00,2026-01-05T22:26:12+08:00,0,3,57,79,0,update demo script
+das-datakit,04e6893df47891d2fdcbdacf2758c0aa849d6b83,david,dasuda2015@163.com,2026-01-05T21:41:26+08:00,2026-01-05T21:41:26+08:00,0,102,3517,27,0,manual decode proto data
+das-datakit,69805906a7879334ecf75d5a14d4b07e8c3cf2a3,haibo.wang,dasuda2015@163.com,2025-12-30T22:45:49+08:00,2025-12-30T22:45:49+08:00,0,2,64,27,0,update demo scripts
+das-datakit,4e83be3b03d170027b27a4a931258084bbcfd818,haibo.wang,dasuda2015@163.com,2025-12-30T22:05:12+08:00,2025-12-30T22:05:12+08:00,0,3,55,12,0,using non seek reader for compatible
+das-datakit,478465abf2f1584364bf67e26f3626c4e9aeb246,haibo.wang,dasuda2015@163.com,2025-12-25T21:42:50+08:00,2025-12-25T21:42:50+08:00,0,2,25,9,0,fix stereo camera dump bug and img None problem
+das-datakit,6a866cb25970f7dacda786c4bcd787e385974856,haibo.wang,dasuda2015@163.com,2025-12-17T23:34:25+08:00,2025-12-17T23:34:25+08:00,0,1,1,0,0,support CompressedVideo proto
+das-datakit,f48e40f947250fa593b58dcf3185e98636b55e5a,haibo.wang,dasuda2015@163.com,2025-12-10T20:32:12+08:00,2025-12-10T20:32:12+08:00,0,1,4,1,0,update readme
+das-datakit,5660f7fef49630e0c6d759e37dd2597e64c4d12e,haibo.wang,dasuda2015@163.com,2025-12-10T20:28:14+08:00,2025-12-10T20:28:14+08:00,0,2,16,5,0,add img resize
+das-datakit,980ba4c576b53e225efc55f19e3fbd99ec7508aa,haibo.wang,dasuda2015@163.com,2025-11-23T21:28:05+08:00,2025-11-23T21:28:05+08:00,0,3,14,7,0,support new task dir file
+das-datakit,9db1d92116c42ac474946def46c75a8a3a52ebf2,haibo.wang,dasuda2015@163.com,2025-11-20T21:24:17+08:00,2025-11-20T21:24:17+08:00,0,1,1,1,0,update readme
+das-datakit,7f7714648eafe734d1921565dedb50f160b6c650,haibo.wang,dasuda2015@163.com,2025-11-20T20:38:09+08:00,2025-11-20T21:02:26+08:00,0,1,2,1,0,fix out-path dir bug
+das-datakit,24c661002cb934493758b7f8849fdf001f53b916,haibo.wang,dasuda2015@163.com,2025-11-20T20:29:18+08:00,2025-11-20T20:29:18+08:00,0,11,994,1,0,update base version
+das-datakit,acc81b86bc8a68a80813057c886af7f3e44a0b4d,Dasuda,dasuda2015@163.com,2025-11-18T22:42:30+08:00,2025-11-18T22:42:30+08:00,0,1,2,2,0,Fix header alignment and styling in README
+das-datakit,ed494c603a472b7fb19746b506d4315b2d9664e0,haibo.wang,dasuda2015@163.com,2025-11-18T22:40:13+08:00,2025-11-18T22:40:13+08:00,0,1,217,1,0,update readme
+das-datakit,d17d8991e84ce0630d9854c52420c50d9fda24e1,Dasuda,dasuda2015@163.com,2025-11-18T22:09:17+08:00,2025-11-18T22:09:17+08:00,0,3,229,0,0,Initial commit

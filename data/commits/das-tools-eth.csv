@@ -1,2 +1,2 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-das-tools-eth,included,ee5052e05055e9edf1566d3c5ebba84562b26138,afichtner,andreas.fichtner@erdw.ethz.ch,2022-10-04T12:01:05+02:00,2022-10-04T12:01:05+02:00,0,2,747,0,0,Initial commit. helpers and f-k analysis tools.
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-tools-eth,ee5052e05055e9edf1566d3c5ebba84562b26138,afichtner,andreas.fichtner@erdw.ethz.ch,2022-10-04T12:01:05+02:00,2022-10-04T12:01:05+02:00,0,2,747,0,0,Initial commit. helpers and f-k analysis tools.

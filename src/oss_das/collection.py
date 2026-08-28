@@ -17,7 +17,6 @@ from oss_das.clients import (
     PyPIStatsClient,
 )
 from oss_das.clients.base import NotFoundError, SourceError
-from oss_das.core import load_rejections
 from oss_das.models import CatalogStatus, ForgeKind, ProjectRecord
 from oss_das.utils import normalize_name, utc_now
 
@@ -93,205 +92,19 @@ def missingness(
 
 
 def open_forges(github_token: str | None = None) -> list[ForgeClient]:
-    """Build one client per configured host, GitHub first.
+    """Build one client per configured host, GitHub first when a token is given.
 
-    Callers own the returned clients and are expected to close them; every
-    client is a context manager, so an ``ExitStack`` closes the whole set.
+    Without a token GitHub is left out rather than probed anonymously: the
+    unauthenticated search budget is ten requests a minute, and a discovery
+    run that hammers it produces a coverage ledger full of throttled rows
+    instead of one honest "skipped". Callers own the returned clients and are
+    expected to close them; every client is a context manager, so an
+    ``ExitStack`` closes the whole set.
     """
     builders = {ForgeKind.GITLAB: GitLabClient, ForgeKind.GITEA: GiteaClient}
-    forges: list[ForgeClient] = [GitHubClient(github_token)]
+    forges: list[ForgeClient] = [GitHubClient(github_token)] if github_token else []
     forges.extend(builders[kind](host) for kind, host in FORGE_HOSTS)
     return forges
-
-
-def _candidate_key(item: dict[str, Any]) -> str:
-    return f"{item['forge_host']}/{item['repository']}".lower()
-
-
-def _record_hits(
-    discovered: dict[str, dict[str, Any]],
-    hits: Iterable[dict[str, Any]],
-    *,
-    probe: str,
-    source: str,
-    fetched_at: str,
-    specific: bool,
-) -> int:
-    """Merge one probe's hits, keeping every probe that found each candidate."""
-    count = 0
-    for hit in hits:
-        count += 1
-        candidate = discovered.setdefault(
-            _candidate_key(hit),
-            {**hit, "probes": [], "sources": set(), "fetched_at": fetched_at},
-        )
-        candidate["probes"].append(probe)
-        candidate["sources"].add(source)
-        candidate["specific"] = candidate.get("specific", False) or specific
-        if candidate.get("stars_at_discovery") is None:
-            candidate["stars_at_discovery"] = hit.get("stars_at_discovery")
-    return count
-
-
-def _search_forge(
-    forge: ForgeClient,
-    queries: Iterable[str],
-    discovered: dict[str, dict[str, Any]],
-    coverage: list[dict[str, Any]],
-    *,
-    fetched_at: str,
-) -> None:
-    """Run one host's searches, recording what each probe could and could not see."""
-    for query in queries:
-        probe = f"{forge.host}:{query}"
-        entry: dict[str, Any] = {
-            "host": forge.host,
-            "kind": forge.kind.value,
-            "probe": "search",
-            "query": query,
-            "fetched_at": fetched_at,
-        }
-        try:
-            result = forge.search_repositories(query)
-        except SOURCE_FAILURES as error:
-            coverage.append(entry | {"status": "failed", "error": str(error)})
-            continue
-        entry["reported_total"] = result.reported_total
-        entry["truncated"] = result.truncated
-        entry["specific"] = query not in BROAD_QUERIES
-        entry["retrieved"] = _record_hits(
-            discovered,
-            result.hits,
-            probe=probe,
-            source="search",
-            fetched_at=fetched_at,
-            specific=entry["specific"],
-        )
-        coverage.append(entry | {"status": "ok"})
-
-
-def _enumerate_namespaces(
-    forges: dict[ForgeKind, dict[str, ForgeClient]],
-    curated: Iterable[ProjectRecord],
-    discovered: dict[str, dict[str, Any]],
-    coverage: list[dict[str, Any]],
-    *,
-    fetched_at: str,
-) -> None:
-    """List every repository owned by an organization already in the catalog.
-
-    Keyword search finds a package only once it describes itself in the words
-    the searcher chose. A DAS group's newest repository often has an empty
-    description for months, so walking the owners the catalog already trusts
-    surfaces work that no phrase query can reach yet.
-    """
-    namespaces = {
-        (project.forge.kind, project.forge.host, project.repository.split("/")[0])
-        for project in curated
-    }
-    for kind, host, namespace in sorted(namespaces, key=lambda item: item[1:]):
-        forge = forges.get(kind, {}).get(host)
-        entry = {
-            "host": host,
-            "kind": kind.value,
-            "probe": "namespace",
-            "query": namespace,
-            "fetched_at": fetched_at,
-        }
-        if forge is None:
-            coverage.append(
-                entry | {"status": "skipped", "error": "no client for host"}
-            )
-            continue
-        try:
-            hits = forge.list_namespace_repositories(namespace)
-        except SOURCE_FAILURES as error:
-            coverage.append(entry | {"status": "failed", "error": str(error)})
-            continue
-        entry["retrieved"] = _record_hits(
-            discovered,
-            hits,
-            probe=f"{host}:owner:{namespace}",
-            source="namespace",
-            fetched_at=fetched_at,
-            # An owner's repository list is not evidence about any one
-            # repository's subject, so these hits are not counted as specific.
-            specific=False,
-        )
-        coverage.append(entry | {"status": "ok", "reported_total": entry["retrieved"]})
-
-
-def discover_projects(
-    forges: Iterable[ForgeClient], curated: Iterable[ProjectRecord]
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """Search every configured host and report candidates plus probe coverage.
-
-    The second return value is the point: a candidate list alone cannot say
-    whether a query was truncated or a host was unreachable, and a census that
-    cannot say so is indistinguishable from one that found nothing.
-    """
-    projects = list(curated)
-    fetched_at = utc_now()
-    discovered: dict[str, dict[str, Any]] = {}
-    coverage: list[dict[str, Any]] = []
-    by_host: dict[ForgeKind, dict[str, ForgeClient]] = {}
-    for forge in forges:
-        by_host.setdefault(forge.kind, {})[forge.host] = forge
-        queries = (
-            GITHUB_DISCOVERY_QUERIES
-            if forge.kind == ForgeKind.GITHUB
-            else PATH_SEARCH_QUERIES
-        )
-        _search_forge(forge, queries, discovered, coverage, fetched_at=fetched_at)
-    _enumerate_namespaces(
-        by_host, projects, discovered, coverage, fetched_at=fetched_at
-    )
-
-    decisions = {project.forge_key: project for project in projects}
-    for key, project in decisions.items():
-        candidate = discovered.setdefault(
-            key,
-            {
-                "forge_kind": project.forge.kind.value,
-                "forge_host": project.forge.host,
-                "repository": project.repository,
-                "name": project.name,
-                "description": project.description,
-                "html_url": project.repository_url,
-                "stars_at_discovery": None,
-                "language": None,
-                "probes": [],
-                "sources": set(),
-                "specific": True,
-                "fetched_at": fetched_at,
-            },
-        )
-        candidate["sources"].add("curated-seed")
-        candidate["specific"] = True
-        candidate["catalog_id"] = project.id
-        candidate["catalog_status"] = project.status.value
-        candidate["decision_reason"] = project.decision_reason
-
-    # A curated file always wins: the ledger only speaks for candidates no
-    # catalog entry claims, so cataloguing something later silently retires
-    # its rejection instead of contradicting it.
-    rejections = load_rejections()
-    for key, candidate in discovered.items():
-        if key not in decisions:
-            rejected = rejections.get(key)
-            candidate["catalog_id"] = None
-            if rejected:
-                candidate["catalog_status"] = "rejected"
-                candidate["decision_reason"] = rejected["note"] or rejected["reason"]
-            else:
-                candidate["catalog_status"] = "unreviewed"
-                candidate["decision_reason"] = "Awaiting manual review"
-        candidate["probes"] = ";".join(sorted(set(candidate["probes"])))
-        candidate["source"] = ";".join(sorted(candidate.pop("sources")))
-        candidate["probe_class"] = (
-            "domain-specific" if candidate.pop("specific", False) else "broad-acronym"
-        )
-    return sorted(discovered.values(), key=_candidate_key), coverage
 
 
 def collect_repositories(

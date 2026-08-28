@@ -1,53 +1,53 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-xpick,included,d7658869f02e4ebcd32fab2aedbe44ca4329866d,Alister Trabattoni,alister.trabattoni@gmail.com,2024-11-15T11:32:31+01:00,2024-11-15T11:32:31+01:00,0,1,1,1,0,Restrict nodejs version.
-xpick,included,1fda1138b54e85eb61904e563663a6e07e7ea15b,Alister Trabattoni,alister.trabattoni@gmail.com,2024-08-09T14:07:53+02:00,2024-08-09T14:07:53+02:00,0,2,1,2,0,Update to xdas 0.1.1.
-xpick,included,b34b446c04601426d113adcfee112e681400c5d9,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T17:30:31+02:00,2024-07-18T17:30:31+02:00,0,3,81,7,1,Improves documentation.
-xpick,included,0bcd152c3d0d289abc8d7e5eecef2c09984f3a9b,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:59:01+02:00,2024-07-18T14:59:01+02:00,0,1,2,2,0,Remove hard coded default values.
-xpick,included,f36edfdbba0fef1e3bc69a5d57f2da22cdd1017d,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:58:22+02:00,2024-07-18T14:58:22+02:00,0,2,18,7,0,Add automatic color palete.
-xpick,included,df0a3f9504063ca524cc38a5109a4b7db335e0a4,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:15:49+02:00,2024-07-18T14:15:49+02:00,0,1,9,2,0,Add minimal xdas version.
-xpick,included,969c9a161069c6993a051d11858924680d894abb,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:14:29+02:00,2024-07-18T14:14:29+02:00,0,1,1,0,0,Add minimal python version.
-xpick,included,9d28c6ec6042eddd3012d7c5d6c4e7e63d890478,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T10:09:02+02:00,2024-07-18T10:09:02+02:00,0,1,1,2,0,Use bokeh 3.4.2 as newer version does not work.
-xpick,included,b80d4ba8b21445da75d3faaf1d8f9e44b1788d01,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-17T18:27:05+02:00,2024-07-17T18:27:05+02:00,0,1,1,0,0,Import netCDF4 before h5py solve some bugs...
-xpick,included,01f8c02360d45e089740c43d60ac38a949099b5e,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-17T18:09:16+02:00,2024-07-17T18:09:16+02:00,0,3,94,14,0,WIP
-xpick,included,e2a3ff3b11be2a75d188a1b0ffa578f994eb8a3b,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T15:19:08+02:00,2024-04-24T15:19:08+02:00,0,2,8,2,0,Format
-xpick,included,4b5a591b589b00829d589a9c18dfbc104ed7b48e,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T15:12:18+02:00,2024-04-24T15:12:18+02:00,0,1,3,2,0,Only print phase colors warning if not empty.
-xpick,included,9bc46c866a42396b5c7598a2019e2f6970ff5f26,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T15:09:20+02:00,2024-04-24T15:09:20+02:00,0,2,16,2,0,Add way to customize phases.
-xpick,included,a23007d53bb75c189828f0e604ddf8e4f13d32b5,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T14:40:28+02:00,2024-04-24T14:40:28+02:00,0,1,17,5,0,Allow empty value for time/space selection.
-xpick,included,30349495b311465c94a9ab50560e0e86614171cc,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T14:40:11+02:00,2024-04-24T14:40:11+02:00,0,2,9,10,0,Remove xarray dependency.
-xpick,included,d3a8b9c66e4282de6e833d6c5d760a39d66bef7a,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T14:22:04+02:00,2024-04-24T14:22:04+02:00,0,4,7,7,0,change database -> dataarray
-xpick,included,f5eb7873f45702dbff4df1d4bab8495d0f6064f7,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-02-19T11:51:24+01:00,2024-02-19T11:51:24+01:00,0,1,2,0,0,Update README.md
-xpick,included,aa1610c28283e282e733629933ec35c14e4dd6ec,Alister Trabattoni,alister.trabattoni@gmail.com,2024-02-01T16:14:37+01:00,2024-02-01T16:14:37+01:00,0,1,1,0,0,Fix loading picks.
-xpick,included,8c236247fbfb3491b09acf51b14d283f7938a814,Alister Trabattoni,alister.trabattoni@gmail.com,2024-02-01T15:33:13+01:00,2024-02-01T15:33:13+01:00,0,1,1,1,0,Fix time highpass filtering.
-xpick,included,b2eda9b29dad98d5f97009bfb8629af2bfe4c784,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T16:50:42+01:00,2024-01-19T16:50:42+01:00,0,1,3,3,0,Small error handling improvement.
-xpick,included,2b2ac87aa690d9b14463c25a4b5b727f66aebecc,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T16:46:02+01:00,2024-01-19T16:46:02+01:00,0,1,9,6,0,Error message when no data.
-xpick,included,1e77cce8b6ecdb8a2b98c59fb851faadd2f4b627,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T16:37:34+01:00,2024-01-19T16:37:34+01:00,0,2,57,40,0,Add console.
-xpick,included,0047c75d43937dde78d42924dcf000272bb49aa2,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T15:47:27+01:00,2024-01-19T15:47:27+01:00,0,2,88,23,0,Smarter updates of the plot.
-xpick,included,8173576f0479cb1e877c2b3d231c4aa4816bf494,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T14:44:35+01:00,2024-01-19T14:44:35+01:00,0,1,1,1,0,Small doc change.
-xpick,included,79d3d1787c4ec3ba11d92a43f3990281de56043d,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T14:39:01+01:00,2024-01-19T14:39:01+01:00,0,4,19,13,0,Load several databases on command.
-xpick,included,c343159e67e13cbc3af6ea38cc7fa7ce188d2e28,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T17:13:34+01:00,2024-01-18T17:13:34+01:00,0,3,7,2,0,Allow to change the database.
-xpick,included,79c403734b7aabc29bda44f020d44256003454d6,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T15:34:57+01:00,2024-01-18T15:34:57+01:00,0,1,24,3,0,Allow to chose picks colors.
-xpick,included,dbb69922ee895d247f36f3de7546c68444582dc8,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T11:36:54+01:00,2024-01-18T11:36:54+01:00,0,1,2,0,0,Add port forwarding explanation.
-xpick,included,005eab14be0f56351a1745ddd1932d79507f9dd2,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T11:32:26+01:00,2024-01-18T11:32:26+01:00,0,1,8,0,0,Update README.md to explain nodejs requirements
-xpick,included,f70c260ae2f1b69509f5b7315da31303a76774ee,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T11:06:22+01:00,2024-01-18T11:06:22+01:00,0,2,3,2,0,Fix package-data.
-xpick,included,85e0b073114bcad37d3ad0bab15a65e48d1b0148,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T10:54:19+01:00,2024-01-18T10:54:19+01:00,0,1,2,2,0,Fix dependencies and package-data.
-xpick,included,7e4399dba3fbe798b15402bd58887affe25aa2c4,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T10:52:46+01:00,2024-01-18T10:52:46+01:00,0,1,2,2,0,Update README.md to fix pip installation
-xpick,included,6f3548751fd68985252ac630ca35f3bcf470af28,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T10:52:20+01:00,2024-01-18T10:52:20+01:00,0,1,3,0,0,Update pyproject.toml to include *.ts files
-xpick,included,3e0271f331c95285ec19090b71490172fc83ba6f,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T14:40:34+01:00,2024-01-17T14:40:34+01:00,0,2,695,0,0,Add readme and licence.
-xpick,included,48becf52cbb265c32dcb823ac1d4c7780c9d3e24,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T14:35:29+01:00,2024-01-17T14:35:29+01:00,0,4,10,6,0,Minor imporvements.
-xpick,included,0f5235ee181b35dc2c9d18c0841f3fe69891e5be,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T14:28:15+01:00,2024-01-17T14:28:15+01:00,0,2,135,95,0,Major refactoring.
-xpick,included,aa7a9f98a8fb3de7ee00f8e7bbb91fb8714740f7,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:46:39+01:00,2024-01-17T13:46:39+01:00,0,1,1,1,0,Fix default marker size.
-xpick,included,8504b332b6d285e707a951db58353bb1b2874886,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:46:16+01:00,2024-01-17T13:46:16+01:00,0,1,2,2,0,Ssmaller default image size.
-xpick,included,2cf53124825498812f28d25355ad53e952ed8f08,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:41:48+01:00,2024-01-17T13:41:48+01:00,0,3,17,15,0,Connect picker tool to phase selector.
-xpick,included,f3255bc316f2f1298e9423f1caa483e12cb94787,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:00:39+01:00,2024-01-17T13:00:39+01:00,0,1,13,1,0,Add slider for marker size.
-xpick,included,e96a229e6b2758bbb2b511dfe56802c62d16abd8,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:00:25+01:00,2024-01-17T13:00:25+01:00,0,1,9,4,0,Revert to global range.
-xpick,included,6ba1da2edd62788016d4cfacc929e387e47020d5,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T12:41:40+01:00,2024-01-17T12:41:40+01:00,0,1,16,1,0,Add some logging.
-xpick,included,3b26448c4ad35abfe25bcbf0b05009c1ecb67b28,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T12:31:49+01:00,2024-01-17T12:31:49+01:00,0,1,18,22,0,Fix bounding issue.
-xpick,included,5359addddc494408a87472e66ed110555c806abb,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T11:55:34+01:00,2024-01-17T11:55:34+01:00,0,1,2,2,0,Save picks where cmd is run.
-xpick,included,45be691a2422ae561088d66ea4b5893d04f877a2,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T11:55:19+01:00,2024-01-17T11:55:19+01:00,0,1,42,38,0,Improve layout compactness.
-xpick,included,890d46ced5a5d691171b769afc418b2200fa0d7a,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T11:09:02+01:00,2024-01-17T11:09:02+01:00,0,8,392,391,0,Reorganize files.
-xpick,included,832f4d1f140e0685ac57202b762b5398c70d9f9c,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T10:24:53+01:00,2024-01-17T10:24:53+01:00,0,2,11,3,0,Add heigh and width input.
-xpick,included,72e62b0683a82640e8527d862d69996ff37633ad,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T10:13:56+01:00,2024-01-17T10:13:56+01:00,0,1,25,18,0,Improve layout
-xpick,included,1f7e51173da93dd834a7145c820f9ce5425af898,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T10:00:16+01:00,2024-01-17T10:00:16+01:00,0,1,8,14,0,Minor refactoring.
-xpick,included,35f7c82b87a63e1e35440ed1b756638c4e7f3751,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T09:51:40+01:00,2024-01-17T09:51:40+01:00,0,1,30,9,0,Gui for processing.
-xpick,included,c3cc4001ed4ed296c1c8c8eb5b19541f243ed795,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T09:16:16+01:00,2024-01-17T09:16:16+01:00,0,1,9,3,0,Faster palette swiching.
-xpick,included,8a4ec80bb202d1761d8ffc718d0168bbeb2cba2c,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T09:01:41+01:00,2024-01-17T09:01:41+01:00,0,7,403,0,0,Initial commit.
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+xpick,d7658869f02e4ebcd32fab2aedbe44ca4329866d,Alister Trabattoni,alister.trabattoni@gmail.com,2024-11-15T11:32:31+01:00,2024-11-15T11:32:31+01:00,0,1,1,1,0,Restrict nodejs version.
+xpick,1fda1138b54e85eb61904e563663a6e07e7ea15b,Alister Trabattoni,alister.trabattoni@gmail.com,2024-08-09T14:07:53+02:00,2024-08-09T14:07:53+02:00,0,2,1,2,0,Update to xdas 0.1.1.
+xpick,b34b446c04601426d113adcfee112e681400c5d9,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T17:30:31+02:00,2024-07-18T17:30:31+02:00,0,3,81,7,1,Improves documentation.
+xpick,0bcd152c3d0d289abc8d7e5eecef2c09984f3a9b,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:59:01+02:00,2024-07-18T14:59:01+02:00,0,1,2,2,0,Remove hard coded default values.
+xpick,f36edfdbba0fef1e3bc69a5d57f2da22cdd1017d,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:58:22+02:00,2024-07-18T14:58:22+02:00,0,2,18,7,0,Add automatic color palete.
+xpick,df0a3f9504063ca524cc38a5109a4b7db335e0a4,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:15:49+02:00,2024-07-18T14:15:49+02:00,0,1,9,2,0,Add minimal xdas version.
+xpick,969c9a161069c6993a051d11858924680d894abb,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T14:14:29+02:00,2024-07-18T14:14:29+02:00,0,1,1,0,0,Add minimal python version.
+xpick,9d28c6ec6042eddd3012d7c5d6c4e7e63d890478,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-18T10:09:02+02:00,2024-07-18T10:09:02+02:00,0,1,1,2,0,Use bokeh 3.4.2 as newer version does not work.
+xpick,b80d4ba8b21445da75d3faaf1d8f9e44b1788d01,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-17T18:27:05+02:00,2024-07-17T18:27:05+02:00,0,1,1,0,0,Import netCDF4 before h5py solve some bugs...
+xpick,01f8c02360d45e089740c43d60ac38a949099b5e,Alister Trabattoni,alister.trabattoni@gmail.com,2024-07-17T18:09:16+02:00,2024-07-17T18:09:16+02:00,0,3,94,14,0,WIP
+xpick,e2a3ff3b11be2a75d188a1b0ffa578f994eb8a3b,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T15:19:08+02:00,2024-04-24T15:19:08+02:00,0,2,8,2,0,Format
+xpick,4b5a591b589b00829d589a9c18dfbc104ed7b48e,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T15:12:18+02:00,2024-04-24T15:12:18+02:00,0,1,3,2,0,Only print phase colors warning if not empty.
+xpick,9bc46c866a42396b5c7598a2019e2f6970ff5f26,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T15:09:20+02:00,2024-04-24T15:09:20+02:00,0,2,16,2,0,Add way to customize phases.
+xpick,a23007d53bb75c189828f0e604ddf8e4f13d32b5,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T14:40:28+02:00,2024-04-24T14:40:28+02:00,0,1,17,5,0,Allow empty value for time/space selection.
+xpick,30349495b311465c94a9ab50560e0e86614171cc,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T14:40:11+02:00,2024-04-24T14:40:11+02:00,0,2,9,10,0,Remove xarray dependency.
+xpick,d3a8b9c66e4282de6e833d6c5d760a39d66bef7a,Alister Trabattoni,alister.trabattoni@gmail.com,2024-04-24T14:22:04+02:00,2024-04-24T14:22:04+02:00,0,4,7,7,0,change database -> dataarray
+xpick,f5eb7873f45702dbff4df1d4bab8495d0f6064f7,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-02-19T11:51:24+01:00,2024-02-19T11:51:24+01:00,0,1,2,0,0,Update README.md
+xpick,aa1610c28283e282e733629933ec35c14e4dd6ec,Alister Trabattoni,alister.trabattoni@gmail.com,2024-02-01T16:14:37+01:00,2024-02-01T16:14:37+01:00,0,1,1,0,0,Fix loading picks.
+xpick,8c236247fbfb3491b09acf51b14d283f7938a814,Alister Trabattoni,alister.trabattoni@gmail.com,2024-02-01T15:33:13+01:00,2024-02-01T15:33:13+01:00,0,1,1,1,0,Fix time highpass filtering.
+xpick,b2eda9b29dad98d5f97009bfb8629af2bfe4c784,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T16:50:42+01:00,2024-01-19T16:50:42+01:00,0,1,3,3,0,Small error handling improvement.
+xpick,2b2ac87aa690d9b14463c25a4b5b727f66aebecc,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T16:46:02+01:00,2024-01-19T16:46:02+01:00,0,1,9,6,0,Error message when no data.
+xpick,1e77cce8b6ecdb8a2b98c59fb851faadd2f4b627,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T16:37:34+01:00,2024-01-19T16:37:34+01:00,0,2,57,40,0,Add console.
+xpick,0047c75d43937dde78d42924dcf000272bb49aa2,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T15:47:27+01:00,2024-01-19T15:47:27+01:00,0,2,88,23,0,Smarter updates of the plot.
+xpick,8173576f0479cb1e877c2b3d231c4aa4816bf494,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T14:44:35+01:00,2024-01-19T14:44:35+01:00,0,1,1,1,0,Small doc change.
+xpick,79d3d1787c4ec3ba11d92a43f3990281de56043d,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-19T14:39:01+01:00,2024-01-19T14:39:01+01:00,0,4,19,13,0,Load several databases on command.
+xpick,c343159e67e13cbc3af6ea38cc7fa7ce188d2e28,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T17:13:34+01:00,2024-01-18T17:13:34+01:00,0,3,7,2,0,Allow to change the database.
+xpick,79c403734b7aabc29bda44f020d44256003454d6,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T15:34:57+01:00,2024-01-18T15:34:57+01:00,0,1,24,3,0,Allow to chose picks colors.
+xpick,dbb69922ee895d247f36f3de7546c68444582dc8,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T11:36:54+01:00,2024-01-18T11:36:54+01:00,0,1,2,0,0,Add port forwarding explanation.
+xpick,005eab14be0f56351a1745ddd1932d79507f9dd2,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T11:32:26+01:00,2024-01-18T11:32:26+01:00,0,1,8,0,0,Update README.md to explain nodejs requirements
+xpick,f70c260ae2f1b69509f5b7315da31303a76774ee,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T11:06:22+01:00,2024-01-18T11:06:22+01:00,0,2,3,2,0,Fix package-data.
+xpick,85e0b073114bcad37d3ad0bab15a65e48d1b0148,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-18T10:54:19+01:00,2024-01-18T10:54:19+01:00,0,1,2,2,0,Fix dependencies and package-data.
+xpick,7e4399dba3fbe798b15402bd58887affe25aa2c4,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T10:52:46+01:00,2024-01-18T10:52:46+01:00,0,1,2,2,0,Update README.md to fix pip installation
+xpick,6f3548751fd68985252ac630ca35f3bcf470af28,Alister Trabattoni,32540975+atrabattoni@users.noreply.github.com,2024-01-18T10:52:20+01:00,2024-01-18T10:52:20+01:00,0,1,3,0,0,Update pyproject.toml to include *.ts files
+xpick,3e0271f331c95285ec19090b71490172fc83ba6f,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T14:40:34+01:00,2024-01-17T14:40:34+01:00,0,2,695,0,0,Add readme and licence.
+xpick,48becf52cbb265c32dcb823ac1d4c7780c9d3e24,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T14:35:29+01:00,2024-01-17T14:35:29+01:00,0,4,10,6,0,Minor imporvements.
+xpick,0f5235ee181b35dc2c9d18c0841f3fe69891e5be,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T14:28:15+01:00,2024-01-17T14:28:15+01:00,0,2,135,95,0,Major refactoring.
+xpick,aa7a9f98a8fb3de7ee00f8e7bbb91fb8714740f7,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:46:39+01:00,2024-01-17T13:46:39+01:00,0,1,1,1,0,Fix default marker size.
+xpick,8504b332b6d285e707a951db58353bb1b2874886,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:46:16+01:00,2024-01-17T13:46:16+01:00,0,1,2,2,0,Ssmaller default image size.
+xpick,2cf53124825498812f28d25355ad53e952ed8f08,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:41:48+01:00,2024-01-17T13:41:48+01:00,0,3,17,15,0,Connect picker tool to phase selector.
+xpick,f3255bc316f2f1298e9423f1caa483e12cb94787,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:00:39+01:00,2024-01-17T13:00:39+01:00,0,1,13,1,0,Add slider for marker size.
+xpick,e96a229e6b2758bbb2b511dfe56802c62d16abd8,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T13:00:25+01:00,2024-01-17T13:00:25+01:00,0,1,9,4,0,Revert to global range.
+xpick,6ba1da2edd62788016d4cfacc929e387e47020d5,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T12:41:40+01:00,2024-01-17T12:41:40+01:00,0,1,16,1,0,Add some logging.
+xpick,3b26448c4ad35abfe25bcbf0b05009c1ecb67b28,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T12:31:49+01:00,2024-01-17T12:31:49+01:00,0,1,18,22,0,Fix bounding issue.
+xpick,5359addddc494408a87472e66ed110555c806abb,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T11:55:34+01:00,2024-01-17T11:55:34+01:00,0,1,2,2,0,Save picks where cmd is run.
+xpick,45be691a2422ae561088d66ea4b5893d04f877a2,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T11:55:19+01:00,2024-01-17T11:55:19+01:00,0,1,42,38,0,Improve layout compactness.
+xpick,890d46ced5a5d691171b769afc418b2200fa0d7a,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T11:09:02+01:00,2024-01-17T11:09:02+01:00,0,8,392,391,0,Reorganize files.
+xpick,832f4d1f140e0685ac57202b762b5398c70d9f9c,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T10:24:53+01:00,2024-01-17T10:24:53+01:00,0,2,11,3,0,Add heigh and width input.
+xpick,72e62b0683a82640e8527d862d69996ff37633ad,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T10:13:56+01:00,2024-01-17T10:13:56+01:00,0,1,25,18,0,Improve layout
+xpick,1f7e51173da93dd834a7145c820f9ce5425af898,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T10:00:16+01:00,2024-01-17T10:00:16+01:00,0,1,8,14,0,Minor refactoring.
+xpick,35f7c82b87a63e1e35440ed1b756638c4e7f3751,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T09:51:40+01:00,2024-01-17T09:51:40+01:00,0,1,30,9,0,Gui for processing.
+xpick,c3cc4001ed4ed296c1c8c8eb5b19541f243ed795,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T09:16:16+01:00,2024-01-17T09:16:16+01:00,0,1,9,3,0,Faster palette swiching.
+xpick,8a4ec80bb202d1761d8ffc718d0168bbeb2cba2c,Alister Trabattoni,alister.trabattoni@gmail.com,2024-01-17T09:01:41+01:00,2024-01-17T09:01:41+01:00,0,7,403,0,0,Initial commit.

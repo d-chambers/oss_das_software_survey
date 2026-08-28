@@ -12,8 +12,13 @@ from typing import Any
 
 import httpx
 
-from oss_das.clients.base import JsonClient, SourceError
-from oss_das.clients.forge import SearchResult, candidate, path_signals
+from oss_das.clients.base import JsonClient, NotFoundError, SourceError
+from oss_das.clients.forge import (
+    README_NAMES,
+    SearchResult,
+    candidate,
+    path_signals,
+)
 from oss_das.models import ForgeKind
 
 #: Matching cap per query, for the same reason GitLab has one: a short
@@ -98,6 +103,19 @@ class GiteaClient(JsonClient):
     def list_namespace_repositories(self, namespace: str) -> list[dict[str, Any]]:
         items = self.paginate(f"/orgs/{namespace}/repos")
         return [self._candidate(item) for item in items]
+
+    def repository(self, repository: str) -> dict[str, Any]:
+        return self._candidate(self.get_json(f"/repos/{repository}"))
+
+    def readme(self, repository: str) -> str:
+        """Try the usual README names; the raw endpoint serves the default branch."""
+        for name in README_NAMES:
+            try:
+                response = self.get_response(f"/repos/{repository}/raw/{name}")
+            except NotFoundError:
+                continue
+            return response.text
+        raise NotFoundError(f"{self.host}/{repository}: no README")
 
     def collect_repository(self, repository: str) -> dict[str, Any]:
         repo = self.get_json(f"/repos/{repository}")

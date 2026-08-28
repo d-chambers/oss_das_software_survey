@@ -1,16 +1,16 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-das-to-store,included,39751e34f9b30c6197a5d27a58c905ed2aa54433,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:40:01-04:00,2026-06-10T13:40:01-04:00,0,4,19,0,0,Docstrings
-das-to-store,included,13b69bd426c3c20afa98077b4b3fa1dd7cf27433,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:28:02-04:00,2026-06-10T13:28:02-04:00,0,1,1,0,0,Add HPC logs to gitignore
-das-to-store,included,1f76e6a974dd0cae0e6064597ea05cf3e4623e99,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:26:06-04:00,2026-06-10T13:26:06-04:00,0,1,60,0,0,Add module for generating intake catalogs.
-das-to-store,included,c5615ee6e16329e6fa8bcdea6f5332a408b38a18,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:25:37-04:00,2026-06-10T13:25:37-04:00,0,5,247,10,0,Implement combined reference batching
-das-to-store,included,5a6bf0217260a83958de1d6fe80a81add0fc7ba5,jacobrdavis,jacob.davis@whoi.edu,2026-05-26T13:22:40-04:00,2026-05-26T13:22:40-04:00,0,1,18,0,0,Add installation to README
-das-to-store,included,45fc6e161949cefd9014aa4b14631aba478c3141,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T16:26:21-04:00,2026-05-22T16:26:21-04:00,0,2,1,5,0,Delete test line
-das-to-store,included,7f1f2e21d3a89823b32935bc60a7dd96e9eeae97,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T11:57:03-04:00,2026-05-22T11:57:03-04:00,0,1,1,2,0,Fix bug in ref loop when baseline is not the first file.
-das-to-store,included,903fe2c321f2f270eceeb3561bc24817bb916c7e,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T11:56:47-04:00,2026-05-22T11:56:47-04:00,0,2,32,14,0,Memory and logging improvements
-das-to-store,included,a4cb269a4177df3df61ba0da082b166348ba42bc,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T09:58:39-04:00,2026-05-22T09:58:39-04:00,0,2,21,1,0,Create CSV for inconsistent ref files
-das-to-store,included,02e50b8191075e1b4ade14479b78c3e1fb78a773,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T09:39:38-04:00,2026-05-22T09:39:38-04:00,0,3,128,15,0,Add check for inconsistent dims
-das-to-store,included,c6811cf6392cd663f2b99f94556e725bf42ef25f,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T08:34:00-04:00,2026-05-22T08:34:00-04:00,0,1,1,1,0,Update demo comments.
-das-to-store,included,24fb1dd54aee63ccf7773d5fe8d58f23291ece4d,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T08:33:02-04:00,2026-05-22T08:33:02-04:00,0,1,102,33,0,Update demo comments.
-das-to-store,included,b93a5936338ebc74060de8848e4b3bcd34b23fe6,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T08:19:41-04:00,2026-05-22T08:19:41-04:00,0,13,2042,0,0,Upload basic functions and sintela onyx template.
-das-to-store,included,c6730ab0eb1138e08fd2045cc1c61bdb790a8998,Jacob Davis,63017854+jacobrdavis@users.noreply.github.com,2026-05-18T18:45:46-04:00,2026-05-18T18:45:46-04:00,0,1,1,1,0,Expand acronym for DAS in README
-das-to-store,included,8995bd30a9a0dc18973c83d0581df379a5cf705c,Jacob Davis,63017854+jacobrdavis@users.noreply.github.com,2026-05-18T18:45:17-04:00,2026-05-18T18:45:17-04:00,0,3,241,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-to-store,39751e34f9b30c6197a5d27a58c905ed2aa54433,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:40:01-04:00,2026-06-10T13:40:01-04:00,0,4,19,0,0,Docstrings
+das-to-store,13b69bd426c3c20afa98077b4b3fa1dd7cf27433,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:28:02-04:00,2026-06-10T13:28:02-04:00,0,1,1,0,0,Add HPC logs to gitignore
+das-to-store,1f76e6a974dd0cae0e6064597ea05cf3e4623e99,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:26:06-04:00,2026-06-10T13:26:06-04:00,0,1,60,0,0,Add module for generating intake catalogs.
+das-to-store,c5615ee6e16329e6fa8bcdea6f5332a408b38a18,jacobrdavis,jacob.davis@whoi.edu,2026-06-10T13:25:37-04:00,2026-06-10T13:25:37-04:00,0,5,247,10,0,Implement combined reference batching
+das-to-store,5a6bf0217260a83958de1d6fe80a81add0fc7ba5,jacobrdavis,jacob.davis@whoi.edu,2026-05-26T13:22:40-04:00,2026-05-26T13:22:40-04:00,0,1,18,0,0,Add installation to README
+das-to-store,45fc6e161949cefd9014aa4b14631aba478c3141,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T16:26:21-04:00,2026-05-22T16:26:21-04:00,0,2,1,5,0,Delete test line
+das-to-store,7f1f2e21d3a89823b32935bc60a7dd96e9eeae97,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T11:57:03-04:00,2026-05-22T11:57:03-04:00,0,1,1,2,0,Fix bug in ref loop when baseline is not the first file.
+das-to-store,903fe2c321f2f270eceeb3561bc24817bb916c7e,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T11:56:47-04:00,2026-05-22T11:56:47-04:00,0,2,32,14,0,Memory and logging improvements
+das-to-store,a4cb269a4177df3df61ba0da082b166348ba42bc,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T09:58:39-04:00,2026-05-22T09:58:39-04:00,0,2,21,1,0,Create CSV for inconsistent ref files
+das-to-store,02e50b8191075e1b4ade14479b78c3e1fb78a773,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T09:39:38-04:00,2026-05-22T09:39:38-04:00,0,3,128,15,0,Add check for inconsistent dims
+das-to-store,c6811cf6392cd663f2b99f94556e725bf42ef25f,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T08:34:00-04:00,2026-05-22T08:34:00-04:00,0,1,1,1,0,Update demo comments.
+das-to-store,24fb1dd54aee63ccf7773d5fe8d58f23291ece4d,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T08:33:02-04:00,2026-05-22T08:33:02-04:00,0,1,102,33,0,Update demo comments.
+das-to-store,b93a5936338ebc74060de8848e4b3bcd34b23fe6,jacobrdavis,jacob.davis@whoi.edu,2026-05-22T08:19:41-04:00,2026-05-22T08:19:41-04:00,0,13,2042,0,0,Upload basic functions and sintela onyx template.
+das-to-store,c6730ab0eb1138e08fd2045cc1c61bdb790a8998,Jacob Davis,63017854+jacobrdavis@users.noreply.github.com,2026-05-18T18:45:46-04:00,2026-05-18T18:45:46-04:00,0,1,1,1,0,Expand acronym for DAS in README
+das-to-store,8995bd30a9a0dc18973c83d0581df379a5cf705c,Jacob Davis,63017854+jacobrdavis@users.noreply.github.com,2026-05-18T18:45:17-04:00,2026-05-18T18:45:17-04:00,0,3,241,0,0,Initial commit

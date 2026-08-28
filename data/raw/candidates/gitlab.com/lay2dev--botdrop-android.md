@@ -1,0 +1,18 @@
+---
+key: gitlab.com/lay2dev/botdrop-android
+source: forge
+forge_kind: gitlab
+forge_host: gitlab.com
+repository: lay2dev/botdrop-android
+name: botdrop-android
+description: null
+html_url: https://gitlab.com/lay2dev/botdrop-android
+language: null
+stars_at_discovery: 0
+probes:
+- gitlab.com:otdr
+probe_class: broad-acronym
+found_by:
+- search
+first_seen: '2026-08-28'
+---

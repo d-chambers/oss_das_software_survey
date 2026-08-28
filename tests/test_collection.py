@@ -4,15 +4,12 @@ import httpx
 import pytest
 
 from oss_das.clients.base import NotFoundError, SourceError
-from oss_das.clients.forge import SearchResult
 from oss_das.clients.packages import CondaClient, PyPIClient, PyPIStatsClient
 from oss_das.collection import (
-    GITHUB_DISCOVERY_QUERIES,
-    PATH_SEARCH_QUERIES,
     collect_packages,
     collect_repositories,
-    discover_projects,
     missingness,
+    open_forges,
     probe_conda_forge,
 )
 from oss_das.core import load_projects, load_rejections
@@ -200,126 +197,24 @@ def test_probe_skips_packages_already_declared() -> None:
     assert probe_conda_forge(conda, [declared]) == []
 
 
-class _FakeForge:
-    """A forge whose answers are fixed, so discovery logic is what is tested."""
-
-    def __init__(self, kind, host, results=None, total=None, namespaces=None):
-        self.kind = kind
-        self.host = host
-        self._results = results or {}
-        self._total = total
-        self._namespaces = namespaces or {}
-
-    def search_repositories(self, query):
-        hits = self._results.get(query)
-        if hits is None:
-            raise SourceError(f"{self.host} refused {query}")
-        truncated = None if self._total is None else self._total > len(hits)
-        return SearchResult(hits, self._total, truncated)
-
-    def list_namespace_repositories(self, namespace):
-        return self._namespaces.get(namespace, [])
-
-
-def _answers(queries, hits):
-    """Give every query its own result list, so no test shares mutable state."""
-    return {query: list(hits) for query in queries}
-
-
-def _hit(host, repository, kind=ForgeKind.GITHUB):
-    return {
-        "forge_kind": kind.value,
-        "forge_host": host,
-        "repository": repository,
-        "name": repository.split("/")[-1],
-        "description": None,
-        "html_url": f"https://{host}/{repository}",
-        "stars_at_discovery": 3,
-        "language": "Python",
-    }
-
-
-def test_discovery_merges_the_same_project_found_on_one_host_by_two_probes() -> None:
-    forge = _FakeForge(
-        ForgeKind.GITHUB,
-        "github.com",
-        results=_answers(GITHUB_DISCOVERY_QUERIES, [_hit("github.com", "org/tool")]),
-        total=1,
-        namespaces={"owner": [_hit("github.com", "org/tool")]},
-    )
-    records, _ = discover_projects([forge], [PROJECT])
-
-    tool = next(item for item in records if item["repository"] == "org/tool")
-    assert len(tool["probes"].split(";")) == len(GITHUB_DISCOVERY_QUERIES) + 1
-    assert tool["source"] == "namespace;search"
-    assert tool["catalog_status"] == "unreviewed"
-
-
-def test_discovery_keeps_same_path_on_two_hosts_apart() -> None:
-    """github.com/org/tool and a GitLab org/tool are different projects."""
-    forges = [
-        _FakeForge(
-            ForgeKind.GITHUB,
-            "github.com",
-            results=_answers(
-                GITHUB_DISCOVERY_QUERIES, [_hit("github.com", "org/tool")]
-            ),
-            total=1,
-        ),
-        _FakeForge(
+def test_open_forges_leaves_github_out_without_a_token() -> None:
+    """Anonymous GitHub search is ten requests a minute; skipping beats hammering."""
+    anonymous = open_forges(None)
+    try:
+        assert ForgeKind.GITHUB not in {forge.kind for forge in anonymous}
+        assert {forge.kind for forge in anonymous} == {
             ForgeKind.GITLAB,
-            "git.example.org",
-            results=_answers(
-                PATH_SEARCH_QUERIES,
-                [_hit("git.example.org", "org/tool", ForgeKind.GITLAB)],
-            ),
-        ),
-    ]
-    records, _ = discover_projects(forges, [])
-
-    assert [item["forge_host"] for item in records] == [
-        "git.example.org",
-        "github.com",
-    ]
-
-
-def test_discovery_records_a_truncated_query_rather_than_hiding_it() -> None:
-    forge = _FakeForge(
-        ForgeKind.GITHUB,
-        "github.com",
-        results=_answers(GITHUB_DISCOVERY_QUERIES, [_hit("github.com", "org/tool")]),
-        total=2366,
-    )
-    _, coverage = discover_projects([forge], [])
-
-    assert all(entry["truncated"] for entry in coverage)
-    assert {entry["reported_total"] for entry in coverage} == {2366}
-
-
-def test_discovery_records_a_host_that_refused_a_query() -> None:
-    """A failed probe must be distinguishable from a probe that found nothing."""
-    queries = _answers(GITHUB_DISCOVERY_QUERIES, [])
-    queries.pop(GITHUB_DISCOVERY_QUERIES[0])
-    forge = _FakeForge(ForgeKind.GITHUB, "github.com", results=queries, total=0)
-
-    _, coverage = discover_projects([forge], [])
-
-    failed = [entry for entry in coverage if entry["status"] == "failed"]
-    assert [entry["query"] for entry in failed] == [GITHUB_DISCOVERY_QUERIES[0]]
-    assert "refused" in failed[0]["error"]
-
-
-def test_discovery_keeps_a_curated_project_no_search_returned() -> None:
-    forge = _FakeForge(
-        ForgeKind.GITHUB,
-        "github.com",
-        results=_answers(GITHUB_DISCOVERY_QUERIES, []),
-    )
-    records, _ = discover_projects([forge], [PROJECT])
-
-    seed = next(item for item in records if item["repository"] == "owner/example")
-    assert seed["source"] == "curated-seed"
-    assert seed["catalog_id"] == "example"
+            ForgeKind.GITEA,
+        }
+    finally:
+        for forge in anonymous:
+            forge.close()
+    with_token = open_forges("token")
+    try:
+        assert with_token[0].kind == ForgeKind.GITHUB
+    finally:
+        for forge in with_token:
+            forge.close()
 
 
 def test_repository_collection_reports_a_host_with_no_client() -> None:
@@ -331,51 +226,6 @@ def test_repository_collection_reports_a_host_with_no_client() -> None:
 
     assert records[0]["missing_reason"] == "unavailable"
     assert "no client configured" in records[0]["error"]
-
-
-def test_a_candidate_found_only_by_an_acronym_probe_is_labelled_broad() -> None:
-    """ "das" matches German prose and dashboards; the label keeps that visible."""
-    forge = _FakeForge(
-        ForgeKind.GITLAB,
-        "git.example.org",
-        results={
-            "das": [_hit("git.example.org", "user/dashboard", ForgeKind.GITLAB)],
-            "otdr": [],
-            "distributed acoustic sensing": [],
-            "fiber optic sensing": [],
-        },
-    )
-    records, coverage = discover_projects([forge], [])
-
-    assert records[0]["probe_class"] == "broad-acronym"
-    broad = {entry["query"] for entry in coverage if entry["specific"] is False}
-    assert broad == {"das", "otdr"}
-
-
-def test_a_candidate_any_specific_probe_found_is_labelled_specific() -> None:
-    hit = _hit("git.example.org", "group/dastools", ForgeKind.GITLAB)
-    forge = _FakeForge(
-        ForgeKind.GITLAB,
-        "git.example.org",
-        results={
-            "das": [hit],
-            "distributed acoustic sensing": [hit],
-            "fiber optic sensing": [],
-            "otdr": [],
-        },
-    )
-    records, _ = discover_projects([forge], [])
-
-    assert records[0]["probe_class"] == "domain-specific"
-
-
-def test_a_curated_project_is_specific_even_if_no_probe_found_it() -> None:
-    forge = _FakeForge(
-        ForgeKind.GITHUB, "github.com", results=_answers(GITHUB_DISCOVERY_QUERIES, [])
-    )
-    records, _ = discover_projects([forge], [PROJECT])
-
-    assert records[0]["probe_class"] == "domain-specific"
 
 
 class TestRejectionLedger:
@@ -417,12 +267,13 @@ class TestRejectionLedger:
         with pytest.raises(ValueError, match="must be a mapping"):
             load_rejections(path)
 
-    def test_shipped_ledger_loads_and_keys_look_like_forge_keys(self):
+    def test_shipped_ledger_loads_and_keys_look_like_candidate_keys(self):
+        """Forge keys are host/owner/name; registry keys are registry/name."""
         ledger = load_rejections()
         assert ledger, "the repository ships a reviewed ledger"
         for key, value in ledger.items():
             assert key == key.lower()
-            assert len(key.split("/")) >= 3, key
+            assert len(key.split("/")) >= 2, key
             assert value["reason"]
 
     def test_ledger_never_claims_a_catalogued_project(self):

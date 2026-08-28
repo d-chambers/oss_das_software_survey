@@ -1,0 +1,49 @@
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+dtsgui,5ecac3eab64b6f1d136d3deef08f707362f4cdf8,"Tucker, Annie E",aetucker@usgs.gov,2026-03-04T20:22:06+00:00,2026-03-04T20:22:06+00:00,0,1,3,1,0,Edit README.md to note Google Maps issue
+dtsgui,1e1c1e9fff493c0a6a049b4cb2930caefd33d642,"Tucker, Annie E",aetucker@usgs.gov,2026-03-04T19:09:20+00:00,2026-03-04T19:09:20+00:00,0,1,1,1,0,updated emails
+dtsgui,c49a15b312edb4e9ab8a47a37ebb7519a2fb4c48,"Tucker, Annie E",aetucker@usgs.gov,2026-03-04T19:08:56+00:00,2026-03-04T19:08:56+00:00,0,1,2,1,0,Updated emails
+dtsgui,54096a7a6e69c050accf502db90a680610ff63cf,"Tucker, Annie E",aetucker@usgs.gov,2026-03-03T17:36:47+00:00,2026-03-03T17:36:47+00:00,0,1,0,0,1,Upload Executable
+dtsgui,39168e1d74822f52b1fb81dfcec813b0f14cc13a,Marian Domanski,mdomanski@usgs.gov,2019-12-10T08:16:04-06:00,2019-12-10T08:16:04-06:00,0,1,0,3,0,remove provisional disclaimer from readme
+dtsgui,4998c7a9492826337aefb728366e387cfcf27b48,Marian Domanski,mdomanski@usgs.gov,2019-11-21T14:02:01-06:00,2019-11-21T14:02:01-06:00,0,1,3,3,0,update metadata
+dtsgui,fce206fb326abe9e8c59278d060a4ce8a52d716e,Marian Domanski,mdomanski@usgs.gov,2019-11-21T14:00:02-06:00,2019-11-21T14:00:02-06:00,0,1,9,8,0,update disclaimer
+dtsgui,761baea2ae34abcad2cfa15e9c4c63d260a692a0,Marian Domanski,mdomanski@usgs.gov,2019-10-18T16:05:44-05:00,2019-10-18T16:05:44-05:00,0,1,37,0,0,add code.json
+dtsgui,d0be305dbf66898facfd0422b57ec81c4c07a7b3,Marian Domanski,mdomanski@usgs.gov,2019-10-18T16:02:04-05:00,2019-10-18T16:02:04-05:00,0,1,11,0,0,add preliminary disclaimer
+dtsgui,2caa385c21536b1ea3004f35c91444cc94b825ab,Marian Domanski,mdomanski@usgs.gov,2019-09-10T15:22:15-05:00,2019-09-10T15:22:15-05:00,0,1,0,0,1,update multi-channel image after utm zone correction
+dtsgui,0376037cbb1ed1d1f891c061abef7b8bbeb57df0,Marian Domanski,mdomanski@usgs.gov,2019-09-10T14:37:39-05:00,2019-09-10T14:37:39-05:00,0,1,3,1,0,correct multi-channel statistics map view
+dtsgui,496ea314f77efa9176f166c1318c304f939df0b1,Marian Domanski,mdomanski@usgs.gov,2019-09-09T14:56:35-05:00,2019-09-09T14:56:35-05:00,0,3,13,0,2,update utm zone in tutorial
+dtsgui,9001d8347c2a82b9a7aea2f5fe51695850b168f8,Marian Domanski,mdomanski@usgs.gov,2019-09-09T14:56:04-05:00,2019-09-09T14:56:04-05:00,0,1,3,0,0,add email for api key
+dtsgui,8f1ed542e0576e7c8660f9fc21aadf5210fc61bb,Marian Domanski,mdomanski@usgs.gov,2019-09-05T13:26:17-05:00,2019-09-05T13:26:17-05:00,0,1,8,1,0,fix apikey dir for pyinstaller
+dtsgui,7556660acfd9422c436db6bbf408668159dc40c0,Marian Domanski,mdomanski@usgs.gov,2019-09-05T10:53:08-05:00,2019-09-05T10:53:08-05:00,0,2,90,63,0,modify html for external apikey
+dtsgui,ad94c664b904aba41880ac34317dbdb062184574,Marian Domanski,mdomanski@usgs.gov,2019-09-05T10:40:50-05:00,2019-09-05T10:40:50-05:00,0,1,1,1,0,set console to false
+dtsgui,b6ac24b1a5ac5be2c5387db3ac3f4fde8498a668,Marian Domanski,mdomanski@usgs.gov,2019-09-04T11:10:53-05:00,2019-09-04T11:10:53-05:00,0,1,1,1,0,correct link to tutorial
+dtsgui,3d6f394b4404a14c0181d2ca7f7b418bf956b784,Marian Domanski,mdomanski@usgs.gov,2019-09-04T11:10:12-05:00,2019-09-04T11:10:12-05:00,1,,,,,Merge branch 'master' of code.usgs.gov:dtsgui/DTSGUI
+dtsgui,c5697b42ba0cb0a1cff6dde1d54cc48e8e55ce88,Marian Domanski,mdomanski@usgs.gov,2019-09-04T11:09:00-05:00,2019-09-04T11:09:00-05:00,0,1,3,0,0,add link to tutorial
+dtsgui,fc4fd23f0fa288aece33d64e080b410aa32faa37,Marian Domanski,mdomanski@usgs.gov,2019-08-29T10:59:00-05:00,2019-08-29T10:59:00-05:00,0,1,6,2,0,exclude negative laf values from silixa import
+dtsgui,833d5bdb70459c5bc0099cea7b2274552dc7d653,Marian Domanski,mdomanski@usgs.gov,2019-08-01T09:46:56-05:00,2019-08-01T09:52:57-05:00,0,5,131,126,0,corrected silixa spelling error
+dtsgui,7ce8cd0eb29a392b781befde012542e42b5bf298,Marian Domanski,mdomanski@usgs.gov,2019-06-26T09:40:41-05:00,2019-06-26T09:40:41-05:00,0,1,14,8,0,corrected the removal of the subplots button
+dtsgui,27a9ee3a324128a00d8bc3a2ee4bd1a93e66ad92,Marian Domanski,mdomanski@usgs.gov,2019-06-25T15:57:11-05:00,2019-06-25T15:57:11-05:00,0,2,29,1,1,add multi-channel view and save data to tutorial
+dtsgui,99f546c64ecfe2c066bb6d7a18936e0d2d9b837c,Marian Domanski,mdomanski@usgs.gov,2019-06-25T14:52:15-05:00,2019-06-25T14:52:15-05:00,0,2,11,0,0,add apikey to .gitignore
+dtsgui,6c881a046a48fd6ed5b290852a460d01d1b4450d,Marian Domanski,mdomanski@usgs.gov,2019-06-13T11:42:09-05:00,2019-06-13T11:42:09-05:00,0,2,127,2,1,add narrative to tutorial
+dtsgui,7fcb551baf1f14ac4dfee033a41b6d966d0a3792,Marian Domanski,mdomanski@usgs.gov,2019-06-12T14:33:22-05:00,2019-06-12T14:33:22-05:00,0,17,39,3,16,add images to tutorial
+dtsgui,321dcb6d4e6b0a2ba819d6c6a9f6b0e60ac07cef,Marian Domanski,mdomanski@usgs.gov,2019-06-11T16:22:18-05:00,2019-06-11T16:22:18-05:00,0,1,3,3,0,update tutorial
+dtsgui,ba861d7112b8aa1970a521a0cb9b80a8559faa09,Marian Domanski,mdomanski@usgs.gov,2019-06-11T16:21:48-05:00,2019-06-11T16:21:48-05:00,0,1,5,7,0,update tutorial
+dtsgui,0df8948c0c40891f2d2fe638a69a13a06df06db1,Marian Domanski,mdomanski@usgs.gov,2019-06-11T16:18:15-05:00,2019-06-11T16:18:15-05:00,0,1,17,0,0,add tutorial outline
+dtsgui,f0381969152496612e5c9089c940e450314a4ef8,Marian Domanski,mdomanski@usgs.gov,2019-06-11T15:21:55-05:00,2019-06-11T15:21:55-05:00,0,1,1,1,0,change name of packaged executable to DTSGUI.exe
+dtsgui,9a70da1fef78ff9b6823444be9a02d2f80f6f5bb,Marian Domanski,mdomanski@usgs.gov,2019-06-11T14:58:35-05:00,2019-06-11T14:58:35-05:00,0,1,11,11,0,modified web map html
+dtsgui,09975a38a6deac84eb6fa61c03aaa992beb8e6a9,Marian Domanski,mdomanski@usgs.gov,2019-06-11T14:38:37-05:00,2019-06-11T14:38:37-05:00,0,1,29,0,0,add pyinstaller spec file
+dtsgui,c2704e8dc26856dbf0eb5ff7798ce3a46ebc0026,Marian Domanski,mdomanski@usgs.gov,2019-06-11T11:00:49-05:00,2019-06-11T11:00:49-05:00,0,1,29,21,0,fix bug encountered during invalid boundary array index
+dtsgui,91ce621cd37c172f71393fc2558e755df2d08475,Marian Domanski,mdomanski@usgs.gov,2019-06-11T10:57:04-05:00,2019-06-11T10:57:04-05:00,0,1,22,11,0,handle PyDeadObjectError on clim changed
+dtsgui,a0bcc1f903b5f9fb6a831130258adc862189eb91,Marian Domanski,mdomanski@usgs.gov,2019-05-29T14:01:58-05:00,2019-05-29T14:01:58-05:00,0,189,1707993,0,0,add santuit data set
+dtsgui,d3ef9c6d4480f3e071d6c017c4f56d094fb50e5c,Marian Domanski,mdomanski@usgs.gov,2019-05-29T12:45:10-05:00,2019-05-29T12:45:10-05:00,0,531,564,0,0,add quashnet test data
+dtsgui,18508c80abfd87a063e5aae66d4351c4f346c58f,Marian Domanski,mdomanski@usgs.gov,2019-05-29T10:37:04-05:00,2019-05-29T10:37:04-05:00,0,1,113,39,0,add docstrings
+dtsgui,bee5ef90adf33a5d90648f40185b7f854938b928,Marian Domanski,mdomanski@usgs.gov,2019-05-29T10:36:54-05:00,2019-05-29T10:36:54-05:00,0,1,17,4,0,handle exception for invalid notebook page on delete
+dtsgui,1ae156660e273ed5692f1511c6e048941663d734,Marian Domanski,mdomanski@usgs.gov,2019-05-17T16:19:59-05:00,2019-05-17T16:19:59-05:00,0,4,134,40,0,add docstrings
+dtsgui,492078c2bdb3f86785f2440f0b967588fe739974,Marian Domanski,mdomanski@usgs.gov,2019-05-17T15:19:14-05:00,2019-05-17T15:19:14-05:00,0,20,857,0,0,add rst docs
+dtsgui,6cfb2f6c8af363d6033edc5a925299cde947bc36,Marian Domanski,mdomanski@usgs.gov,2019-05-17T15:06:21-05:00,2019-05-17T15:08:13-05:00,0,2,169,130,0,update development environment
+dtsgui,ce8f2e31f0549ca7c88c6e9c3fc41e179d0ef6e6,Marian Domanski,mdomanski@usgs.gov,2019-05-17T14:20:33-05:00,2019-05-17T14:20:33-05:00,0,1,0,7,0,removed unused method from Channel
+dtsgui,4dfab9372577bec8a34c636fc8b2941a2d426502,Marian Domanski,mdomanski@usgs.gov,2019-05-17T14:02:26-05:00,2019-05-17T14:02:26-05:00,0,1,4,1,0,add .vscode to .gitignore
+dtsgui,468e65537d60f6c096ab2699b898e9e3d54f6762,Marian Domanski,mdomanski@usgs.gov,2018-10-05T14:23:09-05:00,2018-10-05T14:23:09-05:00,0,1,1,1,0,Update setup.py
+dtsgui,be9a80e86c72596d34cc40a3115e399428798ebc,Marian Domanski,mdomanski@usgs.gov,2018-10-05T13:16:15-05:00,2018-10-05T13:16:15-05:00,0,1,121,0,0,Added LICENSE.md
+dtsgui,6c6addfbb72e66d112a06b97c767c3a1f4025151,Marian Domanski,mdomanski@usgs.gov,2018-10-05T13:15:59-05:00,2018-10-05T13:15:59-05:00,0,1,3,0,0,Added provisional software statement
+dtsgui,adb6bc74bafa19b21e62a17c6caa2901c45cf290,Marian Domanski,mdomanski@usgs.gov,2018-10-05T13:11:27-05:00,2018-10-05T13:11:27-05:00,0,1,3,0,0,Create README.md
+dtsgui,db97dab5d6be0eff99e2098dee5852fd1dfa6984,Marian Domanski,mdomanski@usgs.gov,2018-10-05T12:48:12-05:00,2018-10-05T12:48:12-05:00,0,66,8299,0,0,Initial commit

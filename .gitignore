@@ -9,4 +9,6 @@ htmlcov/
 .scratch/*
 !.scratch/.gitkeep
 data/cache/
-data/repos
+data/repos/
+site/
+notebooks/__marimo__/

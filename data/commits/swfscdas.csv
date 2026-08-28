@@ -1,326 +1,326 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-swfscdas,excluded,dd9ffc1f5e67319e17d1f51baca144636889a86e,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-27T18:18:34-07:00,2026-07-27T18:18:34-07:00,1,,,,,Merge pull request #20 from SWFSC/dev
-swfscdas,excluded,e115f1db89a4520cc76dd58a84f965a7da952426,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-27T17:47:36-07:00,2026-07-27T17:47:36-07:00,0,5,6,7,0,update docs
-swfscdas,excluded,f5d73bfdc47d267cfd886a1eb496d0b6405395a1,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-26T08:26:59-07:00,2026-07-26T08:26:59-07:00,1,,,,,Merge pull request #19 from SWFSC/tz
-swfscdas,excluded,d7b1a081dcafc36fc59a58ce73e110affde069f1,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-26T08:21:15-07:00,2026-07-26T08:21:15-07:00,1,,,,,Merge branch 'dev' into tz
-swfscdas,excluded,3be5f3706f409444d0c792163a5fe9a5eef8ae5f,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-20T21:57:06-07:00,2026-07-20T21:57:06-07:00,0,3,7,5,0,Fixes #16 - force as.Date to use tz=''. Correct docs
-swfscdas,excluded,f09781bd0ac5d53a731d14a0b2e73a41db7f5b4b,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-20T21:57:06-07:00,2026-07-20T21:57:06-07:00,0,8,22,12,0,version bump to v0.6.5 dev. Fixes #17
-swfscdas,excluded,0de9e39139f5a9edab1190cf6970066b969cc544,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T16:28:30-07:00,2025-08-11T16:28:30-07:00,0,3,9,1,0,add examples
-swfscdas,excluded,cb9259103eb1f4bcd66ac7a76c0c1bf3a56211c5,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T16:25:33-07:00,2025-08-11T16:25:33-07:00,0,2,194,0,0,added spcodes
-swfscdas,excluded,ff2988c282f148c623249e178285f50932ccb29c,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T16:03:57-07:00,2025-08-11T16:03:57-07:00,0,2,4,4,0,doc fix
-swfscdas,excluded,0ebed6463addb012af53cbd9a57e97b3ae4b7e5a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T15:55:19-07:00,2025-08-11T15:55:19-07:00,0,62,1532,1390,0,"Added das_spcodes_read, extdata, big doc updates"
-swfscdas,excluded,6ee107156e19c846d77f812745d95c498617ec1b,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-10T08:21:08-07:00,2025-06-10T08:21:08-07:00,0,1,0,3,0,v0.6.4 on cran
-swfscdas,excluded,d3f76269cf7efb0d6aba27b7f41530dc47f9a37a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-09T12:45:15-07:00,2025-06-09T12:45:15-07:00,0,1,3,0,0,initial submission ov v0.6.4 to cran
-swfscdas,excluded,c326a5c0330af77c140e85bbe791e5265c808d6a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-09T12:42:51-07:00,2025-06-09T12:42:51-07:00,0,1,1,1,0,comment update
-swfscdas,excluded,7fc4b23c5e7516b0500c374216a2f895f935e791,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-09T12:37:16-07:00,2025-06-09T12:37:16-07:00,0,3,6,7,0,cran comments for v0.6.4
-swfscdas,excluded,a86ef5df8d9e96213c653eda985e64da090d2e27,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-04T07:54:05-07:00,2025-06-04T07:54:05-07:00,1,,,,,Merge branch 'main' of https://github.com/SWFSC/swfscDAS
-swfscdas,excluded,7191f39d31e2d24cce2eb68a741d71e4bc510f70,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-04T07:53:40-07:00,2025-06-04T07:53:40-07:00,0,2,2,1,0,small updates
-swfscdas,excluded,3f11eca82fff6ff1e1fe777fc21c99ddd86e4706,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T17:12:46-07:00,2025-03-14T17:12:46-07:00,0,1,4,2,0,Update README.md
-swfscdas,excluded,03bb833e89ee539b6171e1797e37d1119cfd9052,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T17:10:03-07:00,2025-03-14T17:10:03-07:00,0,4,96,98,0,Closes #12
-swfscdas,excluded,62c166eba79b9ee6c0bbc6dc4c2ef0cf8b7c5278,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T17:05:24-07:00,2025-03-14T17:05:24-07:00,0,3,14,10,0,more tidyselect; use pivot_longer instead of gather
-swfscdas,excluded,b903a0f501d634862014b8a8d748bfadad12cbf7,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T16:10:56-07:00,2025-03-14T16:10:56-07:00,0,15,100,94,0,remove .data from tidyselect
-swfscdas,excluded,01c51cee6cfff424e147ee5df361d99a3f437327,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T15:04:20-07:00,2025-03-14T15:04:20-07:00,0,4,39,33,0,closes #13 removing incorrect UTC timezone
-swfscdas,excluded,a2fe11970b2efe9eedfa88c30999e4a1a428c5dd,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T15:03:48-07:00,2025-03-14T15:03:48-07:00,0,7,478,471,0,cleanup
-swfscdas,excluded,da205adec1690da8d40643c8cb5d3b463d1ce70e,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T14:40:47-07:00,2025-03-14T14:40:47-07:00,0,2,6,2,0,version bump to 0.6.4 dev
-swfscdas,excluded,30fbaf24eaab2dd9850d9864f879e979b2a0000a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-17T12:05:28-07:00,2024-07-17T12:05:28-07:00,0,1,1,1,0,doc update
-swfscdas,excluded,9225ca0e82ab19447fbcf20bca1c4ca4e99aeca0,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-10T11:14:14-07:00,2024-07-10T11:14:14-07:00,0,1,2,2,0,semantics update
-swfscdas,excluded,898a39e2a92bc4abeb4eee2161b2fef3e9619e75,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-10T11:12:16-07:00,2024-07-10T11:12:16-07:00,0,1,3,3,0,clean up readme
-swfscdas,excluded,b88e1b6541cd4f6c833c9c7a1aacf43a76f9223e,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-03T11:00:35-07:00,2024-07-03T11:00:35-07:00,0,1,0,3,0,R version 0.6.3 on its way to CRAN
-swfscdas,excluded,1cd557b446305bc271cf0e8d794462856565b67f,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-03T08:08:18-07:00,2024-07-03T08:08:18-07:00,0,1,3,0,0,v0.6.3 resubmission
-swfscdas,excluded,1514ca009618d121b581ec2afe43464754b6422b,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T17:34:50-07:00,2024-07-02T17:34:50-07:00,0,1,1,1,0,update cran comments for resubmission
-swfscdas,excluded,27790e71d423963e60e141021444abae8f570fb4,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T14:28:56-07:00,2024-07-02T14:28:56-07:00,0,5,10,13,0,remove more smwoodman refs
-swfscdas,excluded,b15926190ef5c8a699e8056832c8df0b5ad1ff25,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T13:05:46-07:00,2024-07-02T13:05:46-07:00,0,1,3,0,0,"v0.6.3, cran initial submission"
-swfscdas,excluded,900a90c59e90655269e1bbae074be606f294cc8c,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T13:03:19-07:00,2024-07-02T13:03:19-07:00,0,3,3,3,0,update to v0.6.3. ready to submit to CRAN
-swfscdas,excluded,9581083d2ed9c10355c2c5fa3d77df2469447018,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T11:36:17-07:00,2024-07-02T11:36:17-07:00,0,6,195,603,0,"Doc updates, change to apache 2 license"
-swfscdas,excluded,8a631785a08a130421b9ff62ee4f053b39f32dbd,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-19T17:58:39-07:00,2024-06-19T17:58:39-07:00,0,4,5,5,0,text updates
-swfscdas,excluded,be5c068ad1525ba9e5cbaaff7b10460bc5d03bf6,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-18T18:20:20-07:00,2024-06-18T18:20:20-07:00,0,6,20,91,0,updating text
-swfscdas,excluded,acefd6dc43747e3127d5a2f889ada22c4ceba3bd,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-18T17:41:17-07:00,2024-06-18T17:41:17-07:00,0,4,96,82,0,"added revdep checks, fixed typos"
-swfscdas,excluded,9b53915c1ee506eac41b2df274582f80007e4a41,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-18T17:11:38-07:00,2024-06-18T17:11:38-07:00,0,10,615,31,0,bumb to 0.6.3 dev. working through documentation updates
-swfscdas,excluded,408d5cf21f7152dd8c49fdad8297e8488e5ff1b9,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:48:23-07:00,2023-08-08T16:48:23-07:00,0,2,2,2,0,try usethis for gh actions
-swfscdas,excluded,839ee3f2495c7ca9213753aa7a7b7a5cf62c99a5,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:45:41-07:00,2023-08-08T16:45:41-07:00,0,1,80,16,0,belated revdep check
-swfscdas,excluded,41fb2e111174b94ad4bf804ba574d7c3fa24a33a,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:37:33-07:00,2023-08-08T16:37:33-07:00,0,2,5,3,0,Update gh action workflows
-swfscdas,excluded,73ee1939f86c3214ecb10f040252f01326c55757,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:37:01-07:00,2023-08-08T16:37:01-07:00,0,1,3,0,0,v0.6.2 initial submission to CRAN
-swfscdas,excluded,6af596cb81c9c07e493b391deff012b429a71060,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:02:08-07:00,2023-08-08T16:02:08-07:00,0,3,6,6,0,ready for v0.6.2 release to cran
-swfscdas,excluded,e3ef07760dbea0684ee99fc4ac9a8c2605ca1696,Sam Woodman,sam.woodman@noaa.gov,2023-07-28T10:53:54-07:00,2023-07-28T10:53:54-07:00,0,2,0,12,0,Update readme
-swfscdas,excluded,d97e8c6a1313764a4b6a795d23d83679bc232b4d,Sam Woodman,sam.woodman@noaa.gov,2023-07-28T10:31:17-07:00,2023-07-28T10:31:17-07:00,0,3,67,33,0,Closes #9
-swfscdas,excluded,39962963054ed7d551f2312406c5d844b5afd3a0,Sam Woodman,sam.woodman@noaa.gov,2023-06-08T17:36:08-07:00,2023-06-08T17:36:08-07:00,0,1,1,1,0,typo so issue was not linked
-swfscdas,excluded,6cb2baed0dfaa20dbed7cb1596d54e56efedcb99,Sam Woodman,sam.woodman@noaa.gov,2023-06-06T20:09:02-07:00,2023-06-06T20:09:02-07:00,0,4,30,24,0,Use reframe in sightings processing for when a particular event is not present (#8)
-swfscdas,excluded,03ff00df48b3397d6c901033cc7b3a7ed880a03c,Sam Woodman,sam.woodman@noaa.gov,2023-06-06T20:05:08-07:00,2023-06-06T20:05:08-07:00,0,1,3,3,0,Increment version number to 0.6.2.9000
-swfscdas,excluded,ed658129180b441dbf6b9e298f5d425da495e51d,Sam Woodman,sam.woodman@noaa.gov,2022-06-01T17:42:14-07:00,2022-06-01T17:42:14-07:00,0,3,21,74,0,update gh action checks
-swfscdas,excluded,d0695bbfd1b749b8d26ea105e3c7da542a299750,Sam Woodman,sam.woodman@noaa.gov,2022-06-01T15:20:57-07:00,2022-06-01T15:20:57-07:00,0,4,69,65,0,update roxygen + pkgdown
-swfscdas,excluded,e56e6601e92a2ac59e1627b55bf23bd30d6ebb8c,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T12:00:18-08:00,2022-01-31T12:00:18-08:00,0,1,13,12,0,update revdep readme
-swfscdas,excluded,8d0c9ea29481d7068ba9fcbb9b8d64d414cc187c,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:56:41-08:00,2022-01-31T11:56:41-08:00,0,208,9,13514,36,Whoops. get rid of html
-swfscdas,excluded,fa265272718190af33ae4c01492282b6e1c44a66,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:47:51-08:00,2022-01-31T11:47:51-08:00,0,1,0,3,0,v0.6.1 on cran
-swfscdas,excluded,589db84b3291f116a12ddd2f491f89889327fa5c,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:23:58-08:00,2022-01-31T11:23:58-08:00,0,2,4,0,0,v0.6.1 cran submission
-swfscdas,excluded,aa80f0b588696af4eee45d70231536e0414b2d5a,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:22:29-08:00,2022-01-31T11:22:29-08:00,0,4,15,587,0,Update license to gov+CC0
-swfscdas,excluded,4fa1b2f94627b9255f04ff742d398ffe88a81d0b,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T10:24:44-08:00,2022-01-31T10:24:44-08:00,0,213,13524,21,36,ready for cran submission
-swfscdas,excluded,0d4395e5e7603db0ed5c35ca0c3dfe8548bd9100,Sam Woodman,sam.woodman@noaa.gov,2022-01-18T21:35:04-08:00,2022-01-18T21:35:04-08:00,0,7,75,17,0,Fixed bug in das_sight and das_effort when there are no sighting events in the DAS file
-swfscdas,excluded,74bb4ffa40ad2e254addd83040e6d556f4638ff3,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T13:59:42-07:00,2021-09-03T13:59:42-07:00,0,1,0,2,0,v0.6 on cran
-swfscdas,excluded,2aea4e2701b4d5751d0963bfc0005a65c7c2d258,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T12:17:22-07:00,2021-09-03T12:17:22-07:00,0,1,2,0,0,Initial submission of v0.6.0
-swfscdas,excluded,647fb417bfcc81d4d736894998e59b435d25b0f1,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T11:43:21-07:00,2021-09-03T11:43:21-07:00,0,4,13,20,0,"Cran comments, fix note on cran check page, do revdep checks. Ready for cran submission"
-swfscdas,excluded,9bbf6a002ed59b7ff2d3d058ef1c4a4bcac905df,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T11:24:59-07:00,2021-09-03T11:24:59-07:00,0,1,3,3,0,try ubuntu 20.04 for gh actions
-swfscdas,excluded,68b5e4f0e5f6e109865fe07e7a7706498457859f,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T11:13:09-07:00,2021-09-03T11:13:09-07:00,0,3,4,4,0,version bump 0.6.0 - more accurate for these changes. Updated vignette text.
-swfscdas,excluded,96c7c6537f8779a39d75b3cb3441e5020cca9e60,Sam Woodman,sam.woodman@noaa.gov,2021-08-10T16:03:45-07:00,2021-08-10T16:03:45-07:00,0,10,108,41,0,remove tz from das_read and include OffsetGMT in das_process output
-swfscdas,excluded,7f4155774c3268e728389b75502885ea5f3693dd,Sam Woodman,sam.woodman@noaa.gov,2021-08-09T12:20:35-07:00,2021-08-09T12:20:35-07:00,0,1,0,2,0,forgot to delete this
-swfscdas,excluded,f89b57ee451fe20fd118b617bd8235c030e3fbb7,Sam Woodman,sam.woodman@noaa.gov,2021-08-09T12:17:37-07:00,2021-08-09T12:17:37-07:00,0,7,47,19,0,"Closes #5, add documentation about time zones/effort"
-swfscdas,excluded,ad6feadcaa3337f463f124283e62c96719658396,Sam Woodman,sam.woodman@noaa.gov,2021-05-27T08:52:06-07:00,2021-05-27T08:52:06-07:00,0,1,2,0,0,v0.5.1 first resubmission
-swfscdas,excluded,360f2a9cb0ac0f314d1fb58ee1c1608cb37ef63e,Sam Woodman,sam.woodman@noaa.gov,2021-05-27T08:40:44-07:00,2021-05-27T08:40:44-07:00,0,4,6,5,0,clean up url for resubmission
-swfscdas,excluded,89e45c7176dc75b7462f3c35268c9c3c63796c90,Sam Woodman,sam.woodman@noaa.gov,2021-05-26T11:48:27-07:00,2021-05-26T11:48:27-07:00,0,1,2,0,0,v0.5.1 release note
-swfscdas,excluded,8d5cf0469d0be047e5f3b391f4fb4b731459a228,Sam Woodman,sam.woodman@noaa.gov,2021-05-26T08:16:00-07:00,2021-05-26T08:16:00-07:00,0,3,10,11,0,doc fix
-swfscdas,excluded,d1fcc0fad9d4cb7000375bcffc7c79c7308b2195,Sam Woodman,sam.woodman@noaa.gov,2021-05-25T17:33:00-07:00,2021-05-25T17:33:00-07:00,0,3,13,6,0,ran revdeps
-swfscdas,excluded,4186db4cf6ce2f713b750fb7d9d50cdd9ada057a,Sam Woodman,sam.woodman@noaa.gov,2021-05-25T16:52:51-07:00,2021-05-25T16:52:51-07:00,0,5,19,13,0,fix broken link
-swfscdas,excluded,e92b6e696ffa69d4a18f56265f105a2a12db546b,Sam Woodman,sam.woodman@noaa.gov,2021-03-22T12:12:05-07:00,2021-03-22T12:12:05-07:00,0,3,21,0,0,add noaa disclaimrer
-swfscdas,excluded,e5f975259fb26e1a2d05e8b8041cdbb156e0fa4f,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:49:34-08:00,2021-01-07T17:49:34-08:00,0,2,2,2,0,ugh
-swfscdas,excluded,90a37a035365b35b98ede933f8674a93a7488c8f,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:40:49-08:00,2021-01-07T17:40:49-08:00,0,1,3,3,0,Try with xenial
-swfscdas,excluded,f1802a362111c847d5177b067c56c1f6da731d53,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:33:17-08:00,2021-01-07T17:33:17-08:00,0,3,9,32,0,Use standard gh action checks
-swfscdas,excluded,f7925191e70c8d4147edc8c99af36646b237f255,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:20:15-08:00,2021-01-07T17:20:15-08:00,0,1,16,2,0,gh actions refined
-swfscdas,excluded,3376f5f49973c2626338b8a55f802c7800e43931,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:05:58-08:00,2021-01-07T17:05:58-08:00,0,5,109,19,0,"Try binary deps, gh actions full check"
-swfscdas,excluded,68f9c15e27c41a8101955a9f8a4d0208af6fc8c8,Sam Woodman,swoodman213@gmail.com,2021-01-06T19:18:50-08:00,2021-01-06T19:18:50-08:00,0,1,3,10,0,release notes
-swfscdas,excluded,f1d53a4786a58bdc855eaee551933d51c9da5a3e,Sam Woodman,swoodman213@gmail.com,2020-12-31T11:30:24-08:00,2020-12-31T11:30:24-08:00,0,11,66,28,0,"Add revdep checks, das_sight doc clarifications"
-swfscdas,excluded,2dcd4691b604fd0c0312ee8789ea51f4bc10d96b,Sam Woodman,swoodman213@gmail.com,2020-12-28T18:11:16-08:00,2020-12-28T18:11:16-08:00,0,2,2,2,0,Docs
-swfscdas,excluded,01c9330e4dbb24bf93b81abf772f3347b0ba30c2,Sam Woodman,swoodman213@gmail.com,2020-12-01T21:16:27-08:00,2020-12-01T21:16:27-08:00,0,2,2,1,0,add for tails
-swfscdas,excluded,4a9b613d7d5d6430deefd030a4438cb8dd350293,Sam Woodman,swoodman213@gmail.com,2020-12-01T21:10:00-08:00,2020-12-01T21:10:00-08:00,0,8,68,21,0,"docs, move relevant warning message out of parallel funcs, fixed bug in das_segdata for 0- len segments"
-swfscdas,excluded,bcba29700d526a45204bc9cc3f84d2b39fb2b0d9,Sam Woodman,swoodman213@gmail.com,2020-11-16T20:34:48-08:00,2020-11-16T20:34:48-08:00,0,1,1,4,0,try simplifying
-swfscdas,excluded,c8430b9acc8216105c3c971445a0173f42d9eba2,Sam Woodman,swoodman213@gmail.com,2020-11-16T20:06:41-08:00,2020-11-16T20:06:41-08:00,0,1,4,0,0,"use r, not ruby"
-swfscdas,excluded,6ba184aed8396da9a1244403e9f24d2846eea394,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:48:50-08:00,2020-11-16T19:48:50-08:00,0,1,1,0,0,travis use bionic - fails without
-swfscdas,excluded,d9de56666624118a9abb04e72a4ecd7fa1e59c1f,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:43:25-08:00,2020-11-16T19:43:25-08:00,0,1,4,10,0,simplify simplify
-swfscdas,excluded,b4c0e0824d02daf38d4ad75e24cb346697c97677,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:38:12-08:00,2020-11-16T19:38:12-08:00,0,1,1,1,0,trav
-swfscdas,excluded,84e3217cfd106873e1153ee6a1e03d86bbc75ae6,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:30:02-08:00,2020-11-16T19:30:02-08:00,0,3,11,4,0,"travis, rm appveyor badge"
-swfscdas,excluded,f7d9f1afed75db8693a9731575a0f2bab98f45ce,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:27:57-08:00,2020-11-16T19:27:57-08:00,0,1,14,0,0,travis
-swfscdas,excluded,36720eab66abd1e552e8d864053339ac29bf423e,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:17:56-08:00,2020-11-16T19:17:56-08:00,0,7,50,109,0,use gh actions for pkgdown
-swfscdas,excluded,c01a48a4a4a12214c1fb11fabc6d0f6c1785e85c,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:05:20-08:00,2020-11-16T19:05:20-08:00,0,1,3,13,0,travis
-swfscdas,excluded,5302ab8914025e72f0acb745b930e105f0d9725b,Sam Woodman,swoodman213@gmail.com,2020-11-16T18:58:00-08:00,2020-11-16T18:58:00-08:00,0,2,51,49,0,travis
-swfscdas,excluded,09582f8dd1176e62257b4dc1c04de33dc475273b,Sam Woodman,swoodman213@gmail.com,2020-11-13T15:55:29-08:00,2020-11-13T15:55:29-08:00,0,2,2,2,0,readme typo
-swfscdas,excluded,5603d0cefa3c5860954680c7145544d18e49daca,Sam Woodman,swoodman213@gmail.com,2020-11-13T15:44:38-08:00,2020-11-13T15:44:38-08:00,0,8,8,8,0,Phrasing fix
-swfscdas,excluded,da35446a2cecaedae70def5649c32d45784963a7,Sam Woodman,swoodman213@gmail.com,2020-11-13T15:39:21-08:00,2020-11-13T15:39:21-08:00,0,11,97,40,0,"Added start/end time to segdata output, exported functions for docs"
-swfscdas,excluded,e280f713f5519b982b4ec1775ff9914175e9f037,Sam Woodman,swoodman213@gmail.com,2020-09-30T08:09:30-07:00,2020-09-30T08:09:30-07:00,0,1,1,1,0,Added clarifying text to vignette strata secction
-swfscdas,excluded,71f0b2c697ba316723823c2c5ea824596ed89a60,Sam Woodman,swoodman213@gmail.com,2020-09-23T16:52:27-07:00,2020-09-23T16:52:27-07:00,0,4,23,8,0,"add sperm whale details to das_sight docs, fixed das_sight small issue"
-swfscdas,excluded,0294b5f4a3eabba7f0d354d3e3b893231eadf3bb,Sam Woodman,swoodman213@gmail.com,2020-09-04T18:05:24-07:00,2020-09-04T18:05:24-07:00,0,1,37,31,0,appveyor hopefully fix
-swfscdas,excluded,1c75eccd9bf2c7e8258dd1aac95f39563b7c6df6,Sam Woodman,swoodman213@gmail.com,2020-09-03T08:55:32-07:00,2020-09-03T08:55:32-07:00,0,1,1,1,0,Fix web address
-swfscdas,excluded,85d7c613cf155a55284dd8b1c7912cdb599aa510,Sam Woodman,swoodman213@gmail.com,2020-09-02T11:44:00-07:00,2020-09-02T11:44:00-07:00,0,1,5,5,0,Formatting fix
-swfscdas,excluded,41bd0c35c131e4e008ff6ff0b029cf7462af39ea,Sam Woodman,swoodman213@gmail.com,2020-09-02T11:42:48-07:00,2020-09-02T11:42:48-07:00,0,1,24,44,0,Travis.?
-swfscdas,excluded,f74c318d52906f6390794390cc7645b28eed5e30,Sam Woodman,swoodman213@gmail.com,2020-09-02T10:08:45-07:00,2020-09-02T10:08:45-07:00,0,2,46,23,0,travis
-swfscdas,excluded,0fd6b8c9bdf4ec1db27bf4ef49e6d4cb4ea40224,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:59:06-07:00,2020-09-02T09:59:06-07:00,0,1,0,4,0,travis..
-swfscdas,excluded,080a4498becc0b83b4b5059c1a309fe70e2cbdc9,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:54:46-07:00,2020-09-02T09:54:46-07:00,0,1,3,0,0,travis
-swfscdas,excluded,6fbc2fe43ba3c6bf316d8309a18c910f483eb22e,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:46:35-07:00,2020-09-02T09:46:35-07:00,1,,,,,Merge pull request #4 from smwoodman/effort_strata
-swfscdas,excluded,369d31dab74ba3cffe3013abe85ff9d2d754435e,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:43:18-07:00,2020-09-02T09:43:18-07:00,0,19,499,115,0,Added effort-split-by-strata functionality
-swfscdas,excluded,90287debd58a1c8ea7a3529a155a02874f3d3bf6,Sam Woodman,swoodman213@gmail.com,2020-08-31T18:03:52-07:00,2020-08-31T18:03:52-07:00,0,4,7,7,0,"url, doc cleaning"
-swfscdas,excluded,5dcab914edf1eb6da3046293d707cce58b69aa0d,Sam Woodman,swoodman213@gmail.com,2020-07-14T10:48:11-07:00,2020-07-14T10:48:11-07:00,0,8,94,59,0,"Standardize description with CruzPlot, bug fixes, doc fixes"
-swfscdas,excluded,37d8dcc697b13bdd40f6b28dcebb926e55910541,Sam Woodman,swoodman213@gmail.com,2020-07-02T09:08:06-07:00,2020-07-02T09:08:06-07:00,0,9,330,208,0,"CRAN badge, use tabular function for tables, improve das_sight doc"
-swfscdas,excluded,bd6848b668b509af544d8ae115bd0ac07d02479c,Sam Woodman,swoodman213@gmail.com,2020-07-01T09:30:30-07:00,2020-07-01T09:30:30-07:00,0,7,43,18,0,"versin bump, developmental v0.5.0"
-swfscdas,excluded,c2ba3dbc31e949e3e3dc5225fd9d7c0f9c2eec66,Sam Woodman,swoodman213@gmail.com,2020-06-30T09:05:53-07:00,2020-06-30T09:05:53-07:00,0,1,0,2,0,v0.4.0 on CRAN
-swfscdas,excluded,786d25f224328063ca07240140d46dcaca0608dd,Sam Woodman,swoodman213@gmail.com,2020-06-29T11:42:39-07:00,2020-06-29T11:42:39-07:00,0,1,2,0,0,v0.4.0 resubmitted to CRAN
-swfscdas,excluded,278173517846c5d005fd0a098454ceb24bd4913b,Sam Woodman,swoodman213@gmail.com,2020-06-29T11:33:22-07:00,2020-06-29T11:33:22-07:00,0,2,11,11,0,Format fix
-swfscdas,excluded,ecacdf4d303921aad2098bbea6add4411367c3a2,Sam Woodman,swoodman213@gmail.com,2020-06-29T10:50:38-07:00,2020-06-29T10:50:38-07:00,0,8,10,8,0,Fixes for v0.4.0 CRAN resubmission
-swfscdas,excluded,f9f08f91fdffc7230d19d41d0a2a6819aaea2636,Sam Woodman,swoodman213@gmail.com,2020-06-29T10:37:11-07:00,2020-06-29T10:37:11-07:00,0,10,315,301,0,Fixes for CRAN
-swfscdas,excluded,8ba85e9fb17ffc8a2176777328e54bd2a93c5de1,Sam Woodman,swoodman213@gmail.com,2020-06-27T18:46:08-07:00,2020-06-27T18:46:08-07:00,0,2,1,4,0,Need to leave a v0.4.0 for CRAN
-swfscdas,excluded,7bd744ab8fe0c55313ae55ac16915dfd620d6447,Sam Woodman,swoodman213@gmail.com,2020-06-27T18:42:05-07:00,2020-06-27T18:42:05-07:00,0,2,4,1,0,Version bump
-swfscdas,excluded,6e75f55d28f32881b4a2e6c448857044736cc22a,Sam Woodman,swoodman213@gmail.com,2020-06-27T11:02:36-07:00,2020-06-27T11:02:36-07:00,0,2,8,8,0,readme update
-swfscdas,excluded,8d3d610a5970b646662ed716f6fafe4068dd9e40,Sam Woodman,swoodman213@gmail.com,2020-06-27T10:13:02-07:00,2020-06-27T10:13:02-07:00,0,1,2,0,0,v0.4.0 submission
-swfscdas,excluded,a83504090933d766838a4c25afe15e63538b4c3a,Sam Woodman,swoodman213@gmail.com,2020-06-27T10:09:25-07:00,2020-06-27T10:09:25-07:00,0,2,2,2,0,Typo
-swfscdas,excluded,aadeec549978725e514f34673af64c5fdf10f62c,Sam Woodman,swoodman213@gmail.com,2020-06-27T10:00:04-07:00,2020-06-27T10:00:04-07:00,0,3,5,5,0,actually ready for CRAN resubmission
-swfscdas,excluded,e41314361649dde0c56f711797b089462bd028af,Sam Woodman,swoodman213@gmail.com,2020-06-27T09:53:54-07:00,2020-06-27T09:53:54-07:00,0,4,8,10,0,ready for cran resubmission
-swfscdas,excluded,9d034c5f6633d38b7fc8f943f7f0ab0275e5f375,Sam Woodman,swoodman213@gmail.com,2020-06-26T17:37:29-07:00,2020-06-26T17:37:29-07:00,0,25,329,312,0,Fixes for CRAN resubmission. Name consistency/accuracy
-swfscdas,excluded,b841c9bd90d7a9b48092b2da48d0ee73f4ab9685,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:18:14-07:00,2020-06-17T19:18:14-07:00,0,2,3,0,0,CRAN initial submission
-swfscdas,excluded,9cc0788a369547c4d008577dc4b3e92cd310cd19,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:15:59-07:00,2020-06-17T19:15:59-07:00,0,1,3,3,0,typo
-swfscdas,excluded,43c3847b832d5c2848ed4c84a07de60fa3f0f962,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:05:38-07:00,2020-06-17T19:05:38-07:00,0,1,1,1,0,v0.3.0
-swfscdas,excluded,06c63b5444ad13d319350fa201917878e4de814a,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:03:33-07:00,2020-06-17T19:03:33-07:00,0,6,8,8,0,spellcheck
-swfscdas,excluded,0282b422077c9554c17b7650efa1546ef3af2e35,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:58:33-07:00,2020-06-17T18:58:33-07:00,0,1,17,13,0,da travis
-swfscdas,excluded,5f6e325cd3c382f852a7f07d3d09563303391c4d,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:49:36-07:00,2020-06-17T18:49:36-07:00,0,2,9,2,0,"Text update, cran comments"
-swfscdas,excluded,57a77bce732c66fd95fa3e271545ba4ad2dfc37a,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:44:51-07:00,2020-06-17T18:44:51-07:00,0,1,22,13,0,travis being travis
-swfscdas,excluded,71cbc6ee57516134290bebbe7de9e450fd336842,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:27:54-07:00,2020-06-17T18:27:54-07:00,0,2,15,0,0,Added CRAN comments
-swfscdas,excluded,793c96fd35c2a79a5a0c4140cbf8c782425ca87f,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:08:52-07:00,2020-06-17T18:08:52-07:00,0,1,38,38,0,travis
-swfscdas,excluded,25b0340e42b0f35047a4eae2e94944e0a00cf3d8,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:03:41-07:00,2020-06-17T18:03:41-07:00,0,8,38,105,0,"docs, v0.3"
-swfscdas,excluded,b4f21405a87aadf8e33aea8c8755386006a8bcbe,Sam Woodman,swoodman213@gmail.com,2020-06-16T13:46:42-07:00,2020-06-16T13:46:42-07:00,0,19,564,576,2,Change das_chop_equal to das_chop_equallength for consistency
-swfscdas,excluded,00969d9198c9a4ced41595aac43c72d4c3d615da,Sam Woodman,swoodman213@gmail.com,2020-06-16T10:52:48-07:00,2020-06-16T10:52:48-07:00,0,18,97,80,0,"More useful fiule+line number messages, general cleanup"
-swfscdas,excluded,40476f1cc58f222b4ac0022d773d6abff3a6719c,Sam Woodman,swoodman213@gmail.com,2020-06-15T14:51:19-07:00,2020-06-15T14:51:19-07:00,0,5,138,108,0,das_sight fixed to now match segchopr output
-swfscdas,excluded,4901e748239954212007264b3d6df7bcbf6bde61,Sam Woodman,swoodman213@gmail.com,2020-06-15T00:09:45-07:00,2020-06-15T00:09:45-07:00,0,5,64,31,0,Added gs.low.use to das_effort_sight
-swfscdas,excluded,28c4c9fd9eaed2f6a696cf77bb8d3a413b184b94,Sam Woodman,swoodman213@gmail.com,2020-06-13T10:08:27-07:00,2020-06-13T10:08:27-07:00,0,5,108,1,0,Add DAS_data_join vignette
-swfscdas,excluded,8b60351678f6f220a6e644c3edda76d2388690d9,Sam Woodman,swoodman213@gmail.com,2020-06-11T23:59:20-07:00,2020-06-11T23:59:20-07:00,0,2,2,2,0,great circle ref
-swfscdas,excluded,f3846541ae7b5dbe781f7a3a4665e73540322451,Sam Woodman,swoodman213@gmail.com,2020-06-11T23:53:14-07:00,2020-06-11T23:53:14-07:00,0,27,64,64,0,Doc cleanup
-swfscdas,excluded,c42340035b7c29350605a281a29d6a83f3108eb4,Sam Woodman,swoodman213@gmail.com,2020-06-11T23:21:05-07:00,2020-06-11T23:21:05-07:00,0,10,322,5,0,Determine strata for points
-swfscdas,excluded,bc883bcb13e2a3a5904b00940bedb3c2b3f1443e,Sam Woodman,swoodman213@gmail.com,2020-06-07T22:05:56-07:00,2020-06-07T22:05:56-07:00,0,2,4,1,0,Version bump
-swfscdas,excluded,7e1b86fda2cbd3f2d7127f1b135d0e378095f6e3,Sam Woodman,swoodman213@gmail.com,2020-06-07T16:28:08-07:00,2020-06-07T16:28:08-07:00,0,3,3,3,0,Version bump
-swfscdas,excluded,8cc70edc5e18dd57ac3512c148dda765b7c3c446,Sam Woodman,swoodman213@gmail.com,2020-06-07T16:09:33-07:00,2020-06-07T16:09:33-07:00,0,10,375,253,0,Lots of das_sight updates
-swfscdas,excluded,e85b3bdb1ec4d089c0319c99bd56e875add508e4,Sam Woodman,swoodman213@gmail.com,2020-06-05T23:55:28-07:00,2020-06-05T23:55:28-07:00,0,7,187,114,0,"Finish standardizing das_sight names, include high and low estimates in the output. Next: complete output"
-swfscdas,excluded,3fa3eb0cc7161abf10f487f2d7312369acbdd04f,Sam Woodman,swoodman213@gmail.com,2020-06-05T21:26:19-07:00,2020-06-05T21:26:19-07:00,0,3,17,1,0,Add to das_check
-swfscdas,excluded,30b9782c34ead6faf5170ed36a3a61d7505359ee,Sam Woodman,swoodman213@gmail.com,2020-06-05T21:19:30-07:00,2020-06-05T21:19:30-07:00,0,6,38,13,0,Add ship speed and wind speed to das_process output
-swfscdas,excluded,df0d95d3c62ffdcd333a6b8fae758f2301c8dcb0,Sam Woodman,swoodman213@gmail.com,2020-06-05T19:55:04-07:00,2020-06-05T19:55:04-07:00,0,5,57,63,0,Fixed das_sight G/g bug
-swfscdas,excluded,56e9a249d23a454b2235faa2a10268eba50e7551,Sam Woodman,swoodman213@gmail.com,2020-06-04T12:53:00-07:00,2020-06-04T12:53:00-07:00,0,1,2,1,0,Forgot news detail
-swfscdas,excluded,af7a2517b5a82811957c54381cf43a24c2faf522,Sam Woodman,swoodman213@gmail.com,2020-06-04T12:52:25-07:00,2020-06-04T12:52:25-07:00,0,16,139,73,0,"Accounted for Data10, Data11, and Data12 columns in das_ read/process/sight/check"
-swfscdas,excluded,80727295cfa5ecac07c8cc8df13b11afa2ad9d1d,Sam Woodman,swoodman213@gmail.com,2020-06-04T10:52:25-07:00,2020-06-04T10:52:25-07:00,0,2,4,4,0,Default now correctly handles CCES cruise data
-swfscdas,excluded,74121417cef668259c92ec70d4bc33951bdbc501,Sam Woodman,swoodman213@gmail.com,2020-06-03T19:46:45-07:00,2020-06-03T19:46:45-07:00,0,2,2,2,0,segdata columns names are now e.g. nSI_075
-swfscdas,excluded,405f5ff2bfa319f68d538aba06193a84513d2682,Sam Woodman,swoodman213@gmail.com,2020-06-03T19:37:13-07:00,2020-06-03T19:37:13-07:00,0,7,38,34,0,"Version bump, changed 'siteinfo' to 'sightinfo'"
-swfscdas,excluded,389a17e2330768044ad7632ce72ed9a9d6220e82,Sam Woodman,swoodman213@gmail.com,2020-05-21T21:08:36-07:00,2020-05-21T21:08:36-07:00,0,3,6,3,0,Version bump to 0.1 - version presented to NMFS/NOAA end-users
-swfscdas,excluded,2b20b8bf3f2e2d15effe7db53ed5c7d7f4291c62,Sam Woodman,swoodman213@gmail.com,2020-05-21T09:51:57-07:00,2020-05-21T09:51:57-07:00,0,10,21,19,0,Docs update
-swfscdas,excluded,732c4aeee08666879c31b0f4bee5fb587edc88df,Sam Woodman,swoodman213@gmail.com,2020-05-20T23:29:27-07:00,2020-05-20T23:29:27-07:00,0,5,27,15,0,"Consistency, comments"
-swfscdas,excluded,b3250dbb311a9eb78881f333aa7dd2f799fea0c1,Sam Woodman,swoodman213@gmail.com,2020-05-20T22:54:03-07:00,2020-05-20T22:54:03-07:00,0,8,224,51,0,"Added m event to das_sight, and added das_chop_section"
-swfscdas,excluded,1e89992b17f41ceaace718022cc45c8766c458e1,Sam Woodman,swoodman213@gmail.com,2020-05-20T21:41:24-07:00,2020-05-20T21:41:24-07:00,0,1,1,1,0,Bug fix
-swfscdas,excluded,35c0ad81d671442aa04c8b4aa671f1d34787622b,Sam Woodman,swoodman213@gmail.com,2020-05-20T16:19:07-07:00,2020-05-20T16:19:07-07:00,0,3,121,0,0,Added vignette
-swfscdas,excluded,dc576e1102ab569ecf4a167905872effb60ee302,Sam Woodman,swoodman213@gmail.com,2020-05-19T14:50:06-07:00,2020-05-19T14:50:06-07:00,0,3,115,0,0,Add das_comments function
-swfscdas,excluded,c3a018706b7142426560d6e153e8bfdbcdf4d3e4,Sam Woodman,swoodman213@gmail.com,2020-05-19T14:35:13-07:00,2020-05-19T14:35:13-07:00,0,2,11,20,0,Forgot a match.arg opportunity
-swfscdas,excluded,e294f8785d99da482ce8383f11171567004d9a69,Sam Woodman,swoodman213@gmail.com,2020-05-19T14:22:10-07:00,2020-05-19T14:22:10-07:00,0,7,120,112,0,"Consistent: naming, struction, condition check"
-swfscdas,excluded,2bae9c2f7e10e2d0fd9b117c7383585ee088d24d,Sam Woodman,swoodman213@gmail.com,2020-05-19T13:34:06-07:00,2020-05-19T13:34:06-07:00,0,8,104,104,0,Spell out distance for clarity
-swfscdas,excluded,d1a95ad62fafc345440449d31c43b53f77ef7e23,Sam Woodman,swoodman213@gmail.com,2020-05-17T11:24:55-07:00,2020-05-17T11:24:55-07:00,0,3,54,30,0,Added p events to output of das_sight
-swfscdas,excluded,8aafbf0e125bae89a99ec7c1e64d6edbe70f32de,Sam Woodman,swoodman213@gmail.com,2020-05-16T23:03:04-07:00,2020-05-16T23:03:04-07:00,0,1,1,0,0,Fix bug where Prob was NA instead of FALSE
-swfscdas,excluded,faa62defd864011b7347babe50c8789a73a18da9,Sam Woodman,swoodman213@gmail.com,2020-05-16T12:10:13-07:00,2020-05-16T12:10:13-07:00,0,12,95,73,0,Make great-circle distance calc an offical exported function. Clean up docs
-swfscdas,excluded,d42092ea898c51b9ebcadc90d19a67c00263b72f,Sam Woodman,swoodman213@gmail.com,2020-05-16T11:46:46-07:00,2020-05-16T11:46:46-07:00,0,8,52,54,0,"Use match.args, clean up docs"
-swfscdas,excluded,5ead041ba8ec5ff39e2a287bc035625a924b5a4b,Sam Woodman,swoodman213@gmail.com,2020-05-16T11:12:38-07:00,2020-05-16T11:12:38-07:00,0,7,119,84,0,"Fix Prob bug and add probable species. Provide returnformat options, more flexible and descriptive than mixed.multi. Update das_effort, and make effort processing less restrictive"
-swfscdas,excluded,8a77375a2e0961e7e115ed31b642ca1624e86456,Sam Woodman,swoodman213@gmail.com,2020-05-14T23:06:26-07:00,2020-05-14T23:06:26-07:00,0,5,15,19,0,Add PerpDistKm column to das_sight output; makes more sense here than das_effort
-swfscdas,excluded,3bdd1a72f0b1e18b6621258e2f1196c5b1832f8b,Sam Woodman,swoodman213@gmail.com,2020-05-14T21:12:15-07:00,2020-05-14T21:12:15-07:00,0,4,210,166,0,"Make package name consistent, add catch in segdata for when cont_eff_sect is 0"
-swfscdas,excluded,58c6e2d9811dd6939cb84c9eceda62b36e8d9e24,Sam Woodman,swoodman213@gmail.com,2020-05-10T13:26:06-07:00,2020-05-10T13:26:06-07:00,0,7,200,89,0,Split summarizing sightings in segdata to another function to give user greater control. Cleaned up comments
-swfscdas,excluded,30aafdf111120d0b7d80468bcec7f9d2d3a5d372,Sam Woodman,swoodman213@gmail.com,2020-05-10T12:51:05-07:00,2020-05-10T12:51:05-07:00,0,6,20,0,1,Add checks that Event cannot be NA
-swfscdas,excluded,35bafd80dccbedbca121ef6102b006ec56e13873,Sam Woodman,swoodman213@gmail.com,2020-05-08T17:31:08-07:00,2020-05-08T17:31:08-07:00,0,6,53,33,1,verbosely convert r events to R events with N effort
-swfscdas,excluded,3e6312ebef6dee7aeecdaa668cf31cc1b4aa517b,Sam Woodman,swoodman213@gmail.com,2020-05-08T16:32:36-07:00,2020-05-08T16:32:36-07:00,0,5,83,28,0,"Add event.use param for more user control. Start segments (ces's) at R, not B. Simplify siteinfo output. Make sure st/end/mid point lons are between -180 and 180"
-swfscdas,excluded,dfb1b6f52cd613a95306d0cc3cd7fe146d4a169e,Sam Woodman,swoodman213@gmail.com,2020-05-08T16:29:22-07:00,2020-05-08T16:29:22-07:00,0,3,22,16,0,Add nSp (number of species) column
-swfscdas,excluded,c38f2d014c04b0ccfa6f8d630a034dc7902e037c,Sam Woodman,swoodman213@gmail.com,2020-05-07T11:46:08-07:00,2020-05-07T11:46:08-07:00,0,5,128,107,0,Fixed bug in das_sight; das_sight also now handles G/g events
-swfscdas,excluded,933b08b9d4a81b022ced04df15a26c449e8a2c7b,Sam Woodman,swoodman213@gmail.com,2020-05-02T18:17:28-07:00,2020-05-02T18:17:28-07:00,0,4,20,18,0,"In segdat, split seg_idx into two columns for easier use by user"
-swfscdas,excluded,be67b165885f4b1becc93713efc821260df7f52f,Sam Woodman,swoodman213@gmail.com,2020-04-30T11:25:50-07:00,2020-04-30T11:25:50-07:00,0,4,81,53,0,Try tic
-swfscdas,excluded,97d80ac7c8fe115b2e61809f03dbd509d1f30837,Sam Woodman,swoodman213@gmail.com,2020-04-30T11:09:26-07:00,2020-04-30T11:09:26-07:00,0,4,2,4,0,Cleanup
-swfscdas,excluded,23daa9c1be1cfef0e3d7cf88535c3217274b1d8a,Sam Woodman,swoodman213@gmail.com,2020-04-29T10:38:47-07:00,2020-04-29T10:38:47-07:00,0,1,37,37,0,For consistency
-swfscdas,excluded,793155e52bea0c043b5efda89499873be96d00be,Sam Woodman,swoodman213@gmail.com,2020-04-29T09:35:30-07:00,2020-04-29T09:35:30-07:00,0,1,1,1,0,Fix bug
-swfscdas,excluded,f1300f33b2b16e5fce4c981be9ce8f43b10e1f5f,Sam Woodman,swoodman213@gmail.com,2020-04-28T18:48:53-07:00,2020-04-28T18:48:53-07:00,0,2,24,6,0,"Add checks for NA Events, i.e. if 'skip' should be used. Always report line numbers in warning messages"
-swfscdas,excluded,e9ef52a7d35a86983a3d32348df36acf4a3b147c,smwoodman,swoodman213@gmail.com,2020-04-24T15:03:18-07:00,2020-04-24T15:03:18-07:00,0,1,21,21,0,proj
-swfscdas,excluded,2d80629535d8c6b0bf149573df8102caf91199d6,smwoodman,swoodman213@gmail.com,2020-04-24T11:17:52-07:00,2020-04-24T11:17:52-07:00,0,2,500,495,1,V events can have stuff in Data6 column
-swfscdas,excluded,c93576100c76707bb71d191bdac67f032892bc88,Sam Woodman,swoodman213@gmail.com,2020-04-23T11:47:13-07:00,2020-04-23T11:47:13-07:00,0,1,16,16,0,travis..
-swfscdas,excluded,6f33ff3aee7eecfb9f98a8259c30ba5e13a2d1ea,Sam Woodman,swoodman213@gmail.com,2020-04-23T11:37:22-07:00,2020-04-23T11:37:22-07:00,0,4,715,435,0,Migrated over some checks from swfscAirDAS
-swfscdas,excluded,c284970b4982121de92dbee2a15574b507368a41,Sam Woodman,swoodman213@gmail.com,2020-04-22T12:39:47-07:00,2020-04-22T12:39:47-07:00,0,6,1202,1097,0,Added seg0.drop and comment.drop arguments to be able to match segchopr. Consolidated format checks in begining of das_effort
-swfscdas,excluded,1f756fe4c986a20aa7c0190d241dfe096f3cf4ba,Sam Woodman,swoodman213@gmail.com,2020-04-14T23:05:20-07:00,2020-04-14T23:05:20-07:00,0,1,1,1,0,Updated name
-swfscdas,excluded,b19357fa49e86fe695ee9b96df4145cd2fe0ca15,Sam Woodman,swoodman213@gmail.com,2020-04-14T22:53:47-07:00,2020-04-14T22:53:47-07:00,0,1,31,31,0,Title case
-swfscdas,excluded,af6946e35360547f945b4211d023086e488ac2a0,Sam Woodman,swoodman213@gmail.com,2020-04-14T22:24:24-07:00,2020-04-14T22:24:24-07:00,0,1,21,21,0,Update?
-swfscdas,excluded,ab9469bdbc70296e9520bf4ba133cb2081fe88f8,Sam Woodman,swoodman213@gmail.com,2020-03-30T17:18:02-07:00,2020-03-30T17:18:02-07:00,0,4,16,16,0,Simplified some links
-swfscdas,excluded,e251cf756557c870d74bcc331d709a3fc03e174c,Sam Woodman,swoodman213@gmail.com,2020-03-30T17:17:51-07:00,2020-03-30T17:17:51-07:00,0,7,20,10,0,"Added Obs_std column indicating if a sighting was made by ObsL, Rec, or ObsR"
-swfscdas,excluded,19a72dbb9a3dd393b7296c10b3bb5f39a5639c8f,Sam Woodman,swoodman213@gmail.com,2020-03-30T16:47:51-07:00,2020-03-30T16:47:51-07:00,0,7,61,12,0,"Added ObsL, Rec, ObsR, and ObsInd to das_process output and docs. Todo: incorporate into _sight and _effort"
-swfscdas,excluded,0549f301818bbb3adf46225784ce6775f4205312,Sam Woodman,swoodman213@gmail.com,2020-03-27T16:35:09-07:00,2020-03-27T16:35:09-07:00,0,2,4,4,0,Make vicenty default distance method to match other swfscMisc function use
-swfscdas,excluded,fc49f91ddd8677b3d70f494a99290276ed3e7a2c,Sam Woodman,swoodman213@gmail.com,2020-03-27T14:30:24-07:00,2020-03-27T14:30:24-07:00,0,4,6,6,0,Spell check
-swfscdas,excluded,cfb52f31c49d4b6b50c0199ee2fb7267a1f42d48,Sam Woodman,swoodman213@gmail.com,2020-03-27T14:01:48-07:00,2020-03-27T14:01:48-07:00,0,1,5,8,0,travis
-swfscdas,excluded,f8e47191517caf4574787cbf37439801b475d020,Sam Woodman,swoodman213@gmail.com,2020-03-27T13:59:23-07:00,2020-03-27T13:59:23-07:00,0,1,4,4,0,travis
-swfscdas,excluded,51072dcf86355b365598221a94348dee3f28c9cd,Sam Woodman,swoodman213@gmail.com,2020-03-27T13:45:40-07:00,2020-03-27T13:45:40-07:00,0,1,5,6,0,Travis test
-swfscdas,excluded,b2caca200e2f2a4c8fbd9c56a895a3e4fc71869a,Sam Woodman,swoodman213@gmail.com,2020-03-27T13:18:20-07:00,2020-03-27T13:18:20-07:00,0,2,11,4,0,Randpicks can be passed as a data frame as well
-swfscdas,excluded,f53bb8801dbadecf3e7942781c6bf7c00fcda00d,Sam Woodman,swoodman213@gmail.com,2020-03-27T11:25:43-07:00,2020-03-27T11:25:43-07:00,0,8,156,98,0,Bug 2 (char) in aggregating segdata; cleaning up code/docs with swfscAirDAS
-swfscdas,excluded,9786e379796007444cabcc5c4d42a0c49e5020ed,Sam Woodman,swoodman213@gmail.com,2020-03-26T17:54:56-07:00,2020-03-26T17:54:56-07:00,0,1,1,1,0,Fixed bug when processing character data
-swfscdas,excluded,3ad948230af81bbd0dbdffe17143f2de5d7cc53c,Sam Woodman,swoodman213@gmail.com,2020-03-26T16:25:51-07:00,2020-03-26T16:25:51-07:00,0,3,27,95,0,"Switched to single segdata_aggr - data collected in the same way, change is in how it is summarized"
-swfscdas,excluded,25cdec904d9ee84c21d2342103364ebef3da140b,Sam Woodman,swoodman213@gmail.com,2020-03-26T14:55:52-07:00,2020-03-26T14:55:52-07:00,0,3,12,18,0,condition aggr method - character now pastes things together (i.e. for observer codes)
-swfscdas,excluded,ed04b12b38a831deda8341df8f8a0047f49acc15,Sam Woodman,swoodman213@gmail.com,2020-03-26T13:40:09-07:00,2020-03-26T13:40:09-07:00,0,2,6,6,0,Doc typos
-swfscdas,excluded,4feaffdd4ad63cd834c61ddb6d1a5b1feecfa619,Sam Woodman,swoodman213@gmail.com,2020-03-26T11:28:28-07:00,2020-03-26T11:28:28-07:00,0,8,20,14,0,Doc updates
-swfscdas,excluded,5214c8f91312ca1b455065abbfb9b6ed454880b2,Sam Woodman,swoodman213@gmail.com,2020-03-26T11:11:40-07:00,2020-03-26T11:11:40-07:00,0,1,2,2,0,error in test - didn't skip whole cont eff sect
-swfscdas,excluded,bf40c95f785b776b8809370d0d7dbc41154e9689,Sam Woodman,swoodman213@gmail.com,2020-03-26T11:09:12-07:00,2020-03-26T11:09:12-07:00,0,8,92,93,0,Changed seg.km.min to seg.min.km for consistency. Added num.cores as explicit argument in das_effort. Improved docs
-swfscdas,excluded,3867da1c546899b921c5bfd9cd6edd0d609b9938,Sam Woodman,swoodman213@gmail.com,2020-03-25T19:59:26-07:00,2020-03-25T19:59:26-07:00,0,7,145,85,0,Implemented maxdist method for segdata
-swfscdas,excluded,5504827e8fec177af927fdf6d6296dedb9896a67,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:39:07-07:00,2020-03-25T13:39:07-07:00,0,5,111,107,0,"Put exported internals with their top-level functions, rename .fn_aggregate"
-swfscdas,excluded,ccf451d7f6875825d50164a9dcbff9295f3499f0,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:33:09-07:00,2020-03-25T13:33:09-07:00,0,2,2,2,0,Rename files pt2.....
-swfscdas,excluded,13d5e0ca29eef0703d6ddcd67d2bf8e2d488a900,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:32:21-07:00,2020-03-25T13:32:21-07:00,0,2,360,360,0,Rename file..
-swfscdas,excluded,b1cc01b31cd6e9a45af33e63de50b25c9ddff413,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:31:46-07:00,2020-03-25T13:31:46-07:00,0,10,153,106,0,Rename das_segdata_avg as das_segdata; add segdata.method argument to for max vs avg aggregation. todo: implement max
-swfscdas,excluded,385cb0a6db831a25b1b8de5aaba40797326dd48f,Sam Woodman,swoodman213@gmail.com,2020-03-25T12:26:50-07:00,2020-03-25T12:26:50-07:00,0,10,224,130,0,Made for loop of segdata_avg a separate function to be exported for swfscAirDAS. Users can now specify which conditions used in effort method
-swfscdas,excluded,fd315fa2377022a423b63ef205cf27ed5dcf94c6,Sam Woodman,swoodman213@gmail.com,2020-03-25T09:13:00-07:00,2020-03-25T09:13:00-07:00,0,1,0,2,0,Belated
-swfscdas,excluded,870bd01057c3bd28a6b6dc66c308f71ee53241c5,Sam Woodman,swoodman213@gmail.com,2020-03-25T08:59:49-07:00,2020-03-25T08:59:49-07:00,0,10,192,136,0,Export additional internals for swfscAirDAS
-swfscdas,excluded,4faa8d33bea033598dbfc0ce1c83ad9f86149369,Sam Woodman,swoodman213@gmail.com,2020-03-24T19:16:43-07:00,2020-03-24T19:16:43-07:00,0,2,6,6,0,Added . prefix to internals
-swfscdas,excluded,60e4efc07a167537119c19049dfd9e3ff35a7caa,Sam Woodman,swoodman213@gmail.com,2020-03-24T19:03:05-07:00,2020-03-24T19:03:05-07:00,0,2,8,18,0,Don't need call.func2 - as_() work done vis s3 method
-swfscdas,excluded,824b8bcf496d9170cb9a4fa778a0fa79acbcf817,Sam Woodman,swoodman213@gmail.com,2020-03-21T15:08:03-07:00,2020-03-21T15:08:03-07:00,0,4,34,17,0,"No messages come out of parallel, so must print messages from internals once back in top level"
-swfscdas,excluded,535a2aab5ff3d83e677fe4df6be6cb4431d9c190,Sam Woodman,swoodman213@gmail.com,2020-03-14T09:15:59-07:00,2020-03-14T09:15:59-07:00,0,11,186,65,0,Bug fix: Can pass args from _process to _read. Improved docs to match AirDAS.
-swfscdas,excluded,494ad1acaf64d54925cbc08cb09e868c0643cea8,Sam Woodman,swoodman213@gmail.com,2020-03-12T09:49:09-07:00,2020-03-12T09:49:09-07:00,0,3,6,5,0,"Roxygen update, account for skip in line numbers, make _process consistent with swfscAirDAS"
-swfscdas,excluded,5d108ee023f24e9df671ede2754aa0c5451ec5b0,Sam Woodman,swoodman213@gmail.com,2020-03-11T14:48:54-07:00,2020-03-11T14:48:54-07:00,0,2,2,4,0,doc update
-swfscdas,excluded,5baa135f3ce02e303bf4a7cfe3be9d454895e2ac,Sam Woodman,swoodman213@gmail.com,2020-03-11T14:46:26-07:00,2020-03-11T14:46:26-07:00,0,2,11,8,0,Add skip argument to das_read
-swfscdas,excluded,cadd8c3b06b443656764a898ba36c735c12e60dd,Sam Woodman,swoodman213@gmail.com,2020-03-07T00:36:07-08:00,2020-03-07T00:36:07-08:00,0,2,8,1,0,Docs
-swfscdas,excluded,2b44889cce3a5eb7cbe8e5018e8c291077a16440,Sam Woodman,swoodman213@gmail.com,2020-03-07T00:30:19-08:00,2020-03-07T00:30:19-08:00,0,9,94,61,0,Export distance calculations to be used by swfscAirDAS
-swfscdas,excluded,8c8a14a474b8875237d6db0b35502f2b234c4c29,Sam Woodman,swoodman213@gmail.com,2020-03-07T00:02:31-08:00,2020-03-07T00:02:31-08:00,0,2,9,5,0,Stop das_read from warning about C events missing Lat/Lon/DateTime - too frequent of an occurrence
-swfscdas,excluded,6b1cd0956e7b0ce70bd66641a3f77e4e5dfa6287,Sam Woodman,swoodman213@gmail.com,2020-03-06T23:59:20-08:00,2020-03-06T23:59:20-08:00,0,7,122,26,0,"Export internal chop functions for use by swfscAirDAS, a la sf and stars"
-swfscdas,excluded,db5ba59a6a7e7f4010faec45ff4ea1d4e4a1b0ce,Sam Woodman,swoodman213@gmail.com,2020-03-06T23:58:46-08:00,2020-03-06T23:58:46-08:00,0,2,10,3,0,Added ESWSides check
-swfscdas,excluded,8d92dd6af11569f84731f8d9526db6b51d46db58,Sam Woodman,swoodman213@gmail.com,2020-03-06T14:40:41-08:00,2020-03-06T14:40:41-08:00,0,16,82,61,0,Make package file and clean importFrom's
-swfscdas,excluded,49b9b290f3d7e6bf273aac4d38535daa9a58194c,Sam Woodman,swoodman213@gmail.com,2020-03-05T16:50:09-08:00,2020-03-05T16:50:09-08:00,0,8,287,166,0,chop functions now use parallel
-swfscdas,excluded,d424ac14b7909207cb0df0969650d640737a8be0,Sam Woodman,swoodman213@gmail.com,2020-03-05T15:32:05-08:00,2020-03-05T15:32:05-08:00,0,2,10,7,0,Addede ESWsides to segdata
-swfscdas,excluded,2411a564a81c3978254371bad6fb1116c2648b4a,Sam Woodman,swoodman213@gmail.com,2020-03-05T15:30:57-08:00,2020-03-05T15:30:57-08:00,0,1,6,8,0,"Fixed ESWsides bugs. Mode, EffType, and ESWsides now (actuallY) go to defualt when data is NA"
-swfscdas,excluded,c180365227ac7e9ca55713f1b0ac8bedaf7d29d5,Sam Woodman,swoodman213@gmail.com,2020-03-05T13:36:01-08:00,2020-03-05T13:36:01-08:00,0,5,46,29,0,Added ESWsides to _process output
-swfscdas,excluded,ab31baef1a42e2c006ca041b0a851d314885a8c7,Sam Woodman,swoodman213@gmail.com,2020-03-05T13:19:55-08:00,2020-03-05T13:19:55-08:00,0,4,86,1,0,Added randpicks_convert for converting randpicks from EAB to swfscDAS format
-swfscdas,excluded,804801b8a57ab9c6ff56eb990565c7ae57da7db9,Sam Woodman,swoodman213@gmail.com,2020-03-04T11:00:52-08:00,2020-03-04T11:00:52-08:00,0,1,5,3,0,semantics
-swfscdas,excluded,478b358218ba6e9fbe2cf7fa721006d0d44814a1,Sam Woodman,swoodman213@gmail.com,2020-03-04T10:29:44-08:00,2020-03-04T10:29:44-08:00,0,7,172,69,0,Added option for user to specify lat/lon distance calculation method.
-swfscdas,excluded,62bff529b278518af971c1af88af5f15380db996,Sam Woodman,swoodman213@gmail.com,2020-03-03T16:33:08-08:00,2020-03-03T16:33:08-08:00,0,2,72,48,0,Added 'reset.effort' argument
-swfscdas,excluded,78315862c268541ffd1766c1d8ded0b02cd1683e,Sam Woodman,swoodman213@gmail.com,2020-02-28T16:23:13-08:00,2020-02-28T16:23:13-08:00,0,5,75,37,0,"Cleaned up and made das_read and das_process more verbose. Added ""M"" to expected event codes"
-swfscdas,excluded,49621575a73e49d3c448e24405da597513fd6e97,Sam Woodman,swoodman213@gmail.com,2020-02-28T10:37:08-08:00,2020-02-28T10:37:08-08:00,0,5,7,12,0,EventNum read in as character for sake of project-specific event numbers
-swfscdas,excluded,42856bd6284f5d8b6dde4d35950789cefa8d85d3,Sam Woodman,swoodman213@gmail.com,2020-02-25T16:47:27-08:00,2020-02-25T16:47:27-08:00,0,2,3,3,0,Change order for consistency with swfscAirDAS
-swfscdas,excluded,b35cf30c6dafc6c69c9691fa906ea316ef9f3fe2,Sam Woodman,swoodman213@gmail.com,2020-02-25T16:37:24-08:00,2020-02-25T16:37:24-08:00,0,3,21,16,0,Fixed bug in das_sight where SightNo was not extracted for resights
-swfscdas,excluded,6694f786ee08a1b9e0546b221bc4f3b78e8afcae,Sam Woodman,swoodman213@gmail.com,2020-02-18T16:07:26-08:00,2020-02-18T16:07:26-08:00,0,5,339,9,0,"Added das_chop_condition, improved error messages"
-swfscdas,excluded,b2a5302f017734fbbe3628ad2688f82795d57c93,Sam Woodman,swoodman213@gmail.com,2020-02-18T14:11:01-08:00,2020-02-18T14:11:01-08:00,0,2,2,0,0,Added multi example
-swfscdas,excluded,0cc5e30d85eda88c67cb8be6a7c43115bdfffe3a,Sam Woodman,swoodman213@gmail.com,2020-02-18T13:54:24-08:00,2020-02-18T13:54:24-08:00,0,5,25,21,0,More effort docs and cleaning
-swfscdas,excluded,a0f54509fb2cbff007d1305e1b42ecd723d50929,Sam Woodman,swoodman213@gmail.com,2020-02-18T13:07:41-08:00,2020-02-18T13:07:41-08:00,0,2,23,4,0,Reset BRPVNW conditions at every BR sequence
-swfscdas,excluded,89e91b8961992aab2716334692e0d95e236ffc52,Sam Woodman,swoodman213@gmail.com,2020-02-18T13:07:11-08:00,2020-02-18T13:07:11-08:00,0,1,6,0,0,Check before calculating dist_from_prev.
-swfscdas,excluded,31ee45b88f42dbd885d26d7e5537387f93cb0191,Sam Woodman,swoodman213@gmail.com,2020-02-18T10:10:01-08:00,2020-02-18T10:10:01-08:00,0,2,2,0,0,Q's
-swfscdas,excluded,8620d7a718c57e116a66fa507b5e2ce0933fa999,Sam Woodman,swoodman213@gmail.com,2020-02-18T10:09:45-08:00,2020-02-18T10:09:45-08:00,0,4,53,13,0,Created sample randpicks and re-integrate ? and 1:8 events after effort processing
-swfscdas,excluded,fa060ed19a5c918efd3d143932aa53cfc54a2355,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:25:22-08:00,2020-02-18T09:25:22-08:00,0,1,0,1,0,semantics
-swfscdas,excluded,600dde14be6081fc40e91e3509b4a687d6ab9674,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:24:28-08:00,2020-02-18T09:24:28-08:00,0,1,27,27,0,For consistency
-swfscdas,excluded,ba6c183b373d97c7b28c4459160ed31795e8c1b7,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:17:43-08:00,2020-02-18T09:17:43-08:00,0,9,1100,0,1,"First draft of _effort, _chop_equal, and _segdata_avg"
-swfscdas,excluded,0eac0e9592e8b95b9eb67840aae6982703185288,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:16:55-08:00,2020-02-18T09:16:55-08:00,0,2,54,13,0,das_sight doesn't drop extra columns when mixed.multi is true
-swfscdas,excluded,41c8a94b4dabc14e5d0be4e9098fad485993793d,Sam Woodman,swoodman213@gmail.com,2020-02-11T13:58:39-08:00,2020-02-11T13:58:39-08:00,0,7,48,25,0,Added EffortDot to das_df object. Changed das_process so that it only throws a warning if number of R and E events are not equal (thus had to make how OnEffort was determined like swfscAirDAS)
-swfscdas,excluded,a3bf15675e4f6933d40c97a1cff8baf5046d4eee,Sam Woodman,swoodman213@gmail.com,2020-02-07T14:22:33-08:00,2020-02-07T14:22:33-08:00,0,6,100,113,0,"Docs, some updating _check with AirDAS lessons"
-swfscdas,excluded,db313df4821706632c18a8ef8a3b94d020896195,Sam Woodman,swoodman213@gmail.com,2020-02-03T17:01:44-08:00,2020-02-03T17:01:44-08:00,0,2,4,4,0,Doc
-swfscdas,excluded,7eeb46b94969c10658255db639d18c43839e02cb,Sam Woodman,swoodman213@gmail.com,2020-02-03T16:28:13-08:00,2020-02-03T16:28:13-08:00,0,2,20,10,0,Fix data-raw
-swfscdas,excluded,45c0f785e24bdabba2e685cc5b10237ac0d713e6,Sam Woodman,swoodman213@gmail.com,2020-02-03T12:00:35-08:00,2020-02-03T12:00:35-08:00,0,7,44,47,0,"das_sight returns a data frame without Data# columns, das_process doc improvement"
-swfscdas,excluded,afa53d81608087d8e7cb795b68922cc17fa32600,Sam Woodman,swoodman213@gmail.com,2020-02-03T16:00:47-03:00,2020-02-03T16:00:47-03:00,1,,,,,Merge pull request #3 from smwoodman/class_test
-swfscdas,excluded,3b18a35bf3c9d69925368438fafa7b4d4e129642,Sam Woodman,swoodman213@gmail.com,2020-02-03T10:59:25-08:00,2020-02-03T10:59:25-08:00,0,5,133,91,0,"Cleaning up docs and tests, pre merging branch"
-swfscdas,excluded,236d8d0ef93bdc1b4779a5fb65c7a2a7438b3b93,Sam Woodman,swoodman213@gmail.com,2020-02-01T18:20:22-08:00,2020-02-01T18:20:22-08:00,0,4,120,11,0,Added some function output checks
-swfscdas,excluded,4c0acf72d0cbe8777c21ba3b63f4cf48846c4f32,Sam Woodman,swoodman213@gmail.com,2020-02-01T17:56:10-08:00,2020-02-01T17:56:10-08:00,0,8,227,4,0,das_sight now returns a das_df object. Added subset methods based on sf and tibble. Added some tests
-swfscdas,excluded,8802d728c55eec662aebbf49e1429ecfaa45dfd9,Sam Woodman,swoodman213@gmail.com,2020-01-27T17:26:59-08:00,2020-01-27T17:26:59-08:00,0,3,73,22,0,Added a couple more sighitngs checks
-swfscdas,excluded,a1fe7ab9d4a52de05e1f537ac586c0f90a7e7327,Sam Woodman,swoodman213@gmail.com,2020-01-27T16:53:25-08:00,2020-01-27T16:53:25-08:00,0,3,185,52,0,Added some sighting checks to das_check
-swfscdas,excluded,33d24e164e10695dcc4933734c933e9d09a7668c,Sam Woodman,swoodman213@gmail.com,2020-01-27T15:02:49-08:00,2020-01-27T15:02:49-08:00,0,2,24,18,0,"Change bearing, reticle, and distance to numeric in output. Doc fixes"
-swfscdas,excluded,1d1a83e49107aba1e9f2609009b1101fd28ac8ec,Sam Woodman,swoodman213@gmail.com,2020-01-27T14:24:02-08:00,2020-01-27T14:24:02-08:00,0,4,25,2,0,More das_check..
-swfscdas,excluded,69cac6e71f050f666dff5ef205513404c46fcebb,Sam Woodman,swoodman213@gmail.com,2020-01-27T14:06:41-08:00,2020-01-27T14:06:41-08:00,0,3,47,37,0,"Cleaning up das_check, added line number column"
-swfscdas,excluded,4c48b39d5b7aec0910ea15adca4029d9fea9e224,Sam Woodman,swoodman213@gmail.com,2020-01-27T13:45:50-08:00,2020-01-27T13:45:50-08:00,0,3,110,28,0,Working on das_check - checks data added in das_process
-swfscdas,excluded,2e038010c89595deeaad2acb88caeea1cb562e43,smwoodman,swoodman213@gmail.com,2020-01-27T10:02:02-08:00,2020-01-27T10:02:02-08:00,0,4,147,0,0,Working on das_check
-swfscdas,excluded,7f9420f0ebbb14b7eb8fbbb31bb5e5e72f29053e,smwoodman,swoodman213@gmail.com,2020-01-20T19:14:20-03:00,2020-01-20T19:14:20-03:00,0,4,34,26,0,Made columns not have to be in order for as_ functions
-swfscdas,excluded,f9b64eff45b8673dec8650bced5f88c3ed9b465a,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:48:32-08:00,2020-01-14T13:48:32-08:00,0,4,2,6,0,Cleanup now that travis-pkgdown works
-swfscdas,excluded,7d263a6328b9dc30fdf2974581397d24a8c7e6c5,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:22:02-08:00,2020-01-14T13:22:02-08:00,0,1,11,7,0,travis..
-swfscdas,excluded,5ba519a3fe32d7fabb31e70b0702345e8e88dec0,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:17:27-08:00,2020-01-14T13:17:27-08:00,0,2,2,2,0,tavis pkgdown..
-swfscdas,excluded,ddcfb11810ca06dc4faac002b33d81d57cf9dfce,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:11:56-08:00,2020-01-14T13:11:56-08:00,0,2,4,0,0,testing pkgdown..
-swfscdas,excluded,f4298565e9569a0005b1ec832d18ddd69dd6208b,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:11:11-08:00,2020-01-14T13:11:11-08:00,0,1,12,0,0,travis pkgdown..
-swfscdas,excluded,5ed7254ad9e47c6c869aaddde9202365ede6e80b,Sam Woodman,swoodman213@gmail.com,2020-01-14T12:54:06-08:00,2020-01-14T12:54:06-08:00,0,3,3,19,0,Migrate travis to travis-ci.com
-swfscdas,excluded,4a42b5406af52bf6428b10bcd399039c388a8601,Sam Woodman,swoodman213@gmail.com,2020-01-10T11:33:22-08:00,2020-01-10T11:33:22-08:00,0,2,10,3,0,"Added g, p, X, Y, and Z event codes for 2014-2018 event codes"
-swfscdas,excluded,5675f45c17b8c43968c64b3b1063290475261f86,Sam Woodman,swoodman213@gmail.com,2020-01-06T14:18:38-08:00,2020-01-06T14:18:38-08:00,0,2,261,270,0,Cleaning das_sample code
-swfscdas,excluded,1219b74cfc7d73e864e20bf39f2a9abf74dca791,Sam Woodman,swoodman213@gmail.com,2020-01-06T14:05:12-08:00,2020-01-06T14:05:12-08:00,0,2,2,2,0,Doc update
-swfscdas,excluded,78f4811c05201e3edb65064a10a5fda5dde50b08,Sam Woodman,swoodman213@gmail.com,2020-01-06T12:33:54-08:00,2020-01-06T12:33:54-08:00,0,1,77,0,0,Started creating simple das file for unit testing
-swfscdas,excluded,ada25e541122f6d34122a7b64a1a887297ab37e0,Sam Woodman,swoodman213@gmail.com,2020-01-03T17:08:41-08:00,2020-01-03T17:08:41-08:00,0,2,10,11,0,Cleaning up
-swfscdas,excluded,c22ee204f1b498c210813647cf4eeac8898a96ff,Sam Woodman,swoodman213@gmail.com,2020-01-03T15:54:27-08:00,2020-01-03T15:54:27-08:00,0,2,322,227,0,Made sample file more general (aka without K events)
-swfscdas,excluded,58290319d8f8a7b46aaf9e4d1f9349bf6ef2904c,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:24:51-08:00,2020-01-03T11:24:51-08:00,0,4,7,9,0,auto deployment of pkgdown on travis
-swfscdas,excluded,b3cd5ed451bc41cc9930675160f3784be86bd30b,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:10:49-08:00,2020-01-03T11:10:49-08:00,0,1,9,5,0,trying dplyr travis
-swfscdas,excluded,81fe071454333cc93e2f1e4644508bec2d5149ea,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:09:22-08:00,2020-01-03T11:09:22-08:00,0,1,6,0,0,travis
-swfscdas,excluded,9e8fa100251eb1c872c4f5d4f84a9500ef5e6d34,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:05:51-08:00,2020-01-03T11:05:51-08:00,0,1,0,6,0,test3
-swfscdas,excluded,b05be586d3c8b7ef0fb0112f418c65ccc350ee3b,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:02:44-08:00,2020-01-03T11:02:44-08:00,0,1,1,1,0,test 2
-swfscdas,excluded,01a161e94f31b1c4b2c03765e9e0cc333af8211e,Sam Woodman,swoodman213@gmail.com,2020-01-03T10:54:40-08:00,2020-01-03T10:54:40-08:00,0,3,8,6,0,Testing pkgdown-travis integration
-swfscdas,excluded,65fccddd9a894204530112f2593a4a0d7405e3c5,Sam Woodman,swoodman213@gmail.com,2020-01-03T10:37:15-08:00,2020-01-03T10:37:15-08:00,0,21,7,5530,0,"Remove docs, working on pkgdown-travis"
-swfscdas,excluded,d0e2a3a4a6e67c838f335c873578a8d92b64244b,Sam Woodman,swoodman213@gmail.com,2020-01-02T17:31:30-08:00,2020-01-02T17:31:30-08:00,0,5,457,18,0,pkgdown update
-swfscdas,excluded,aad096d1cab1787f6f2c500ddc1c423d6dda5ad4,Sam Woodman,swoodman213@gmail.com,2020-01-02T17:29:58-08:00,2020-01-02T17:29:58-08:00,0,8,262,26,0,Documentation describing das_dfr and das_df classes
-swfscdas,excluded,ea168d05ec2f4f514711fd78e0aeeb4cca3ea0a8,Sam Woodman,swoodman213@gmail.com,2020-01-02T17:06:49-08:00,2020-01-02T17:06:49-08:00,0,3,4,3,0,Change eventNum from numeric to integer
-swfscdas,excluded,405d7a240bb307b1ed1eef5485d1e45bd1c456bf,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:56:32-08:00,2020-01-02T14:56:32-08:00,0,6,1524,1478,0,Update pkgdown
-swfscdas,excluded,886e86604b91789cba056397bf7ad13c2becf3d9,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:54:23-08:00,2020-01-02T14:54:23-08:00,0,2,50,80,0,Made all sighitng columns Pascal case
-swfscdas,excluded,e4e349d0a0b8de015f7194f0fc4ab003eb7845d2,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:32:56-08:00,2020-01-02T14:32:56-08:00,0,7,48,59,0,Consistency..event_num to EventNum
-swfscdas,excluded,90b252ea518d45a934aa8e2f82b075f4fe0f1539,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:22:29-08:00,2020-01-02T14:22:29-08:00,0,6,184,58,0,Added mixed multi functionality to das_sight. made progress on documentation
-swfscdas,excluded,f67721fedbee6b81364e387171775a7d38232eb2,Sam Woodman,swoodman213@gmail.com,2020-01-02T11:42:36-08:00,2020-01-02T11:42:36-08:00,0,2,162,152,0,Added turtle sighting to sample data
-swfscdas,excluded,7c3c8d21dd6a1a0d279bd84e0a38426f2adccf3a,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:56:16-08:00,2019-12-31T16:56:16-08:00,0,16,2911,55,0,Added examples using sample das file; updated some docs and pkgdown site
-swfscdas,excluded,e581230ba95c50e44dc8a4cd04e087567b852883,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:25:39-08:00,2019-12-31T16:25:39-08:00,1,,,,,Merge pull request #2 from smwoodman/das_class
-swfscdas,excluded,044247f824077b92f7e65646552e5807b9519017,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:20:15-08:00,2019-12-31T16:20:15-08:00,0,1,27,29,0,Doc
-swfscdas,excluded,6d7b2190ebadfe16a42d90a68161e667d1e18fb6,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:12:01-08:00,2019-12-31T16:12:01-08:00,0,4,411,0,0,Created das sample file
-swfscdas,excluded,d27b2a2cebcf8e9ea69df73edd0092b1430b24b3,Sam Woodman,swoodman213@gmail.com,2019-12-24T14:27:49-08:00,2019-12-24T14:27:49-08:00,0,12,362,114,0,"Created das_dfr and das_df classes, and created das_read, das_process, and das_sight methods for them. Todo: documentation"
-swfscdas,excluded,fc0f307d194474148a0351489989bff8ed0caf02,Sam Woodman,swoodman213@gmail.com,2019-12-18T17:23:00-08:00,2019-12-18T17:23:00-08:00,0,4,209,0,0,Working on das_sight; basic SKM sighting code is in place
-swfscdas,excluded,8fcc555ea21b41bf4953b59ae9e1787af0be31fb,Sam Woodman,swoodman213@gmail.com,2019-12-12T18:07:07-08:00,2019-12-12T18:07:07-08:00,0,3,14,11,0,Added Data9 column
-swfscdas,excluded,5b2af61f3dfcfe721fe52ea397572cb6217c56bd,Sam Woodman,swoodman213@gmail.com,2019-12-12T16:55:30-08:00,2019-12-12T16:55:30-08:00,0,1,2,1,0,doc update
-swfscdas,excluded,fedceab5ac7c064491a71fae23fa4028076a2b51,Sam Woodman,swoodman213@gmail.com,2019-12-05T18:38:27-08:00,2019-12-05T18:38:27-08:00,0,5,27,20,0,Making das_read doc consistent with airdas_read
-swfscdas,excluded,b0a8fc14f3affbf81e6af4177c01b452da77782e,Sam Woodman,swoodman213@gmail.com,2019-12-05T18:26:27-08:00,2019-12-05T18:26:27-08:00,0,4,23,7,0,das_read can now handle multiple file names
-swfscdas,excluded,8acc0b7c946ecf1a0948bd1ab61a45acafa6ac61,Sam Woodman,swoodman213@gmail.com,2019-12-05T17:43:18-08:00,2019-12-05T17:43:18-08:00,0,27,2269,116,4,Removed format vignette b/c of display issues on pkgdown sites; added links to format pdf to download
-swfscdas,excluded,a7990ce63e65a4e4f96d73ae43d2fc737951b2ad,Sam Woodman,swoodman213@gmail.com,2019-11-26T13:24:23-08:00,2019-11-26T13:24:23-08:00,0,4,50,29,0,Doc update. B events immediatley preceding R events are on effort. Added warning check for event code
-swfscdas,excluded,1e9884fe873f49cf47d6d02b286f828a2bf6fbc7,Sam Woodman,swoodman213@gmail.com,2019-11-25T14:59:00-08:00,2019-11-25T14:59:00-08:00,0,12,105,0,5,"Added inst with format pdf, vignette displaying pdf, function to save pdf where desired by user"
-swfscdas,excluded,f5dbec760125b4d93764373aac1008dfc199e4e7,Sam Woodman,swoodman213@gmail.com,2019-11-25T14:48:39-08:00,2019-11-25T14:48:39-08:00,0,1,1,0,0,forgot to incldue with last commit
-swfscdas,excluded,ecc8b7930cb7bb42fe4b3d76f61724bb207e7271,Sam Woodman,swoodman213@gmail.com,2019-11-25T14:46:43-08:00,2019-11-25T14:46:43-08:00,0,2,13,15,0,"Remove old args, fixed day gap bug"
-swfscdas,excluded,39efc759a07bbf7daf8cc2357c925f8e7d080962,Sam Woodman,swoodman213@gmail.com,2019-11-25T13:05:18-08:00,2019-11-25T13:05:18-08:00,0,2,3,9,0,Fixed indexing bug
-swfscdas,excluded,8e16801b01f1561b946a00afecb39751caa7f9e9,Sam Woodman,swoodman213@gmail.com,2019-11-22T16:38:13-08:00,2019-11-22T16:38:13-08:00,0,6,220,211,0,Standardizing das/airdas doc
-swfscdas,excluded,83b60f4c86f48d4413d599be01d65f7ddce8bcc2,Sam Woodman,swoodman213@gmail.com,2019-11-22T12:09:37-08:00,2019-11-22T12:09:37-08:00,0,4,22,22,0,use names() instead of purrr::setnames (simpler)
-swfscdas,excluded,cf129ef8738650c68949f803245a2f5fd4821db4,Sam Woodman,swoodman213@gmail.com,2019-11-15T11:38:30-08:00,2019-11-15T11:38:30-08:00,0,2,72,131,0,"Doc update, removed cruise.name, cruise.num, and ship.name args for simplicity at the moment"
-swfscdas,excluded,3786f0742858706a929a68aa098071bb48220919,Sam Woodman,swoodman213@gmail.com,2019-11-15T11:33:12-08:00,2019-11-15T11:33:12-08:00,0,2,32,25,0,Added tz arg to das_read; makes strptime much faster
-swfscdas,excluded,0699ac6ef21a5043db4a8a66beb187aa31579377,Sam Woodman,swoodman213@gmail.com,2019-11-15T09:14:57-08:00,2019-11-15T09:14:57-08:00,0,4,155,88,0,"Roxygen update, cleaned up das_process"
-swfscdas,excluded,1c4d33718ddd9593636e89b2e2cabe850627661d,Sam Woodman,swoodman213@gmail.com,2019-11-04T10:15:53-08:00,2019-11-04T10:15:53-08:00,0,2,13,16,0,Internals start with '.'
-swfscdas,excluded,49c49b93b40882c06010c60dc7788635f871758e,Sam Woodman,swoodman213@gmail.com,2019-11-01T17:37:33-07:00,2019-11-01T17:37:33-07:00,0,1,21,39,0,Cleaning - do all extra variable processing after for loop
-swfscdas,excluded,14b6987a8fa4a50f180f5c192a54d65e2e557722,Sam Woodman,swoodman213@gmail.com,2019-11-01T16:11:34-07:00,2019-11-01T16:11:34-07:00,0,4,78,93,0,Added internals to streamline das_process
-swfscdas,excluded,ffbaf0a333e44618d5f42d82238a9af929e508c3,Sam Woodman,swoodman213@gmail.com,2019-11-01T12:53:17-07:00,2019-11-01T12:53:17-07:00,0,4,153,87,0,"Modeled das_read after airdas_read, i.e. using read_fwf, better processing of Data# columns, etc. Todo: handle non UTF-8 characters in comments as necessary per Jim's decision"
-swfscdas,excluded,67ab9dcf665fb4a41f0fabf82cf697fa46170180,Sam Woodman,swoodman213@gmail.com,2019-11-01T10:59:17-07:00,2019-11-01T10:59:17-07:00,0,5,70,0,0,Added travis and appveyor
-swfscdas,excluded,957a1b12d6466e897a6358739311094acefbd1f1,Sam Woodman,swoodman213@gmail.com,2019-10-30T18:10:06-07:00,2019-10-30T18:10:06-07:00,0,2,7,4,0,Doc update
-swfscdas,excluded,ccb798e00915a9bf050bdf8a9c8122f551c45c66,Sam Woodman,swoodman213@gmail.com,2019-10-29T16:45:57-07:00,2019-10-29T16:45:57-07:00,0,7,455,24,0,Added das_process and formatted documentation
-swfscdas,excluded,1824c102c30849af64d873078264a8020fd56ee7,Sam Woodman,swoodman213@gmail.com,2019-10-29T13:19:16-07:00,2019-10-29T13:19:16-07:00,0,7,752,677,0,"Added das_read, created licence.md with usethis"
-swfscdas,excluded,d58a5e39729866d8d6a9171f6e768df3404c7a0f,Sam Woodman,swoodman213@gmail.com,2019-10-29T12:33:36-07:00,2019-10-29T12:33:36-07:00,0,7,845,22,0,Secondary commit
-swfscdas,excluded,3bfaf224447016b8258c31d0400de780dc6fa51f,Sam Woodman,swoodman213@gmail.com,2019-10-29T12:10:04-07:00,2019-10-29T12:10:04-07:00,0,3,59,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+swfscdas,dd9ffc1f5e67319e17d1f51baca144636889a86e,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-27T18:18:34-07:00,2026-07-27T18:18:34-07:00,1,,,,,Merge pull request #20 from SWFSC/dev
+swfscdas,e115f1db89a4520cc76dd58a84f965a7da952426,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-27T17:47:36-07:00,2026-07-27T17:47:36-07:00,0,5,6,7,0,update docs
+swfscdas,f5d73bfdc47d267cfd886a1eb496d0b6405395a1,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-26T08:26:59-07:00,2026-07-26T08:26:59-07:00,1,,,,,Merge pull request #19 from SWFSC/tz
+swfscdas,d7b1a081dcafc36fc59a58ce73e110affde069f1,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-26T08:21:15-07:00,2026-07-26T08:21:15-07:00,1,,,,,Merge branch 'dev' into tz
+swfscdas,3be5f3706f409444d0c792163a5fe9a5eef8ae5f,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-20T21:57:06-07:00,2026-07-20T21:57:06-07:00,0,3,7,5,0,Fixes #16 - force as.Date to use tz=''. Correct docs
+swfscdas,f09781bd0ac5d53a731d14a0b2e73a41db7f5b4b,Sam Woodman - NOAA,sam.woodman@noaa.gov,2026-07-20T21:57:06-07:00,2026-07-20T21:57:06-07:00,0,8,22,12,0,version bump to v0.6.5 dev. Fixes #17
+swfscdas,0de9e39139f5a9edab1190cf6970066b969cc544,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T16:28:30-07:00,2025-08-11T16:28:30-07:00,0,3,9,1,0,add examples
+swfscdas,cb9259103eb1f4bcd66ac7a76c0c1bf3a56211c5,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T16:25:33-07:00,2025-08-11T16:25:33-07:00,0,2,194,0,0,added spcodes
+swfscdas,ff2988c282f148c623249e178285f50932ccb29c,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T16:03:57-07:00,2025-08-11T16:03:57-07:00,0,2,4,4,0,doc fix
+swfscdas,0ebed6463addb012af53cbd9a57e97b3ae4b7e5a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-08-11T15:55:19-07:00,2025-08-11T15:55:19-07:00,0,62,1532,1390,0,"Added das_spcodes_read, extdata, big doc updates"
+swfscdas,6ee107156e19c846d77f812745d95c498617ec1b,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-10T08:21:08-07:00,2025-06-10T08:21:08-07:00,0,1,0,3,0,v0.6.4 on cran
+swfscdas,d3f76269cf7efb0d6aba27b7f41530dc47f9a37a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-09T12:45:15-07:00,2025-06-09T12:45:15-07:00,0,1,3,0,0,initial submission ov v0.6.4 to cran
+swfscdas,c326a5c0330af77c140e85bbe791e5265c808d6a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-09T12:42:51-07:00,2025-06-09T12:42:51-07:00,0,1,1,1,0,comment update
+swfscdas,7fc4b23c5e7516b0500c374216a2f895f935e791,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-09T12:37:16-07:00,2025-06-09T12:37:16-07:00,0,3,6,7,0,cran comments for v0.6.4
+swfscdas,a86ef5df8d9e96213c653eda985e64da090d2e27,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-04T07:54:05-07:00,2025-06-04T07:54:05-07:00,1,,,,,Merge branch 'main' of https://github.com/SWFSC/swfscDAS
+swfscdas,7191f39d31e2d24cce2eb68a741d71e4bc510f70,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-06-04T07:53:40-07:00,2025-06-04T07:53:40-07:00,0,2,2,1,0,small updates
+swfscdas,3f11eca82fff6ff1e1fe777fc21c99ddd86e4706,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T17:12:46-07:00,2025-03-14T17:12:46-07:00,0,1,4,2,0,Update README.md
+swfscdas,03bb833e89ee539b6171e1797e37d1119cfd9052,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T17:10:03-07:00,2025-03-14T17:10:03-07:00,0,4,96,98,0,Closes #12
+swfscdas,62c166eba79b9ee6c0bbc6dc4c2ef0cf8b7c5278,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T17:05:24-07:00,2025-03-14T17:05:24-07:00,0,3,14,10,0,more tidyselect; use pivot_longer instead of gather
+swfscdas,b903a0f501d634862014b8a8d748bfadad12cbf7,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T16:10:56-07:00,2025-03-14T16:10:56-07:00,0,15,100,94,0,remove .data from tidyselect
+swfscdas,01c51cee6cfff424e147ee5df361d99a3f437327,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T15:04:20-07:00,2025-03-14T15:04:20-07:00,0,4,39,33,0,closes #13 removing incorrect UTC timezone
+swfscdas,a2fe11970b2efe9eedfa88c30999e4a1a428c5dd,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T15:03:48-07:00,2025-03-14T15:03:48-07:00,0,7,478,471,0,cleanup
+swfscdas,da205adec1690da8d40643c8cb5d3b463d1ce70e,Sam Woodman - NOAA,sam.woodman@noaa.gov,2025-03-14T14:40:47-07:00,2025-03-14T14:40:47-07:00,0,2,6,2,0,version bump to 0.6.4 dev
+swfscdas,30fbaf24eaab2dd9850d9864f879e979b2a0000a,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-17T12:05:28-07:00,2024-07-17T12:05:28-07:00,0,1,1,1,0,doc update
+swfscdas,9225ca0e82ab19447fbcf20bca1c4ca4e99aeca0,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-10T11:14:14-07:00,2024-07-10T11:14:14-07:00,0,1,2,2,0,semantics update
+swfscdas,898a39e2a92bc4abeb4eee2161b2fef3e9619e75,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-10T11:12:16-07:00,2024-07-10T11:12:16-07:00,0,1,3,3,0,clean up readme
+swfscdas,b88e1b6541cd4f6c833c9c7a1aacf43a76f9223e,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-03T11:00:35-07:00,2024-07-03T11:00:35-07:00,0,1,0,3,0,R version 0.6.3 on its way to CRAN
+swfscdas,1cd557b446305bc271cf0e8d794462856565b67f,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-03T08:08:18-07:00,2024-07-03T08:08:18-07:00,0,1,3,0,0,v0.6.3 resubmission
+swfscdas,1514ca009618d121b581ec2afe43464754b6422b,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T17:34:50-07:00,2024-07-02T17:34:50-07:00,0,1,1,1,0,update cran comments for resubmission
+swfscdas,27790e71d423963e60e141021444abae8f570fb4,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T14:28:56-07:00,2024-07-02T14:28:56-07:00,0,5,10,13,0,remove more smwoodman refs
+swfscdas,b15926190ef5c8a699e8056832c8df0b5ad1ff25,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T13:05:46-07:00,2024-07-02T13:05:46-07:00,0,1,3,0,0,"v0.6.3, cran initial submission"
+swfscdas,900a90c59e90655269e1bbae074be606f294cc8c,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T13:03:19-07:00,2024-07-02T13:03:19-07:00,0,3,3,3,0,update to v0.6.3. ready to submit to CRAN
+swfscdas,9581083d2ed9c10355c2c5fa3d77df2469447018,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-07-02T11:36:17-07:00,2024-07-02T11:36:17-07:00,0,6,195,603,0,"Doc updates, change to apache 2 license"
+swfscdas,8a631785a08a130421b9ff62ee4f053b39f32dbd,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-19T17:58:39-07:00,2024-06-19T17:58:39-07:00,0,4,5,5,0,text updates
+swfscdas,be5c068ad1525ba9e5cbaaff7b10460bc5d03bf6,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-18T18:20:20-07:00,2024-06-18T18:20:20-07:00,0,6,20,91,0,updating text
+swfscdas,acefd6dc43747e3127d5a2f889ada22c4ceba3bd,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-18T17:41:17-07:00,2024-06-18T17:41:17-07:00,0,4,96,82,0,"added revdep checks, fixed typos"
+swfscdas,9b53915c1ee506eac41b2df274582f80007e4a41,Sam Woodman - NOAA,sam.woodman@noaa.gov,2024-06-18T17:11:38-07:00,2024-06-18T17:11:38-07:00,0,10,615,31,0,bumb to 0.6.3 dev. working through documentation updates
+swfscdas,408d5cf21f7152dd8c49fdad8297e8488e5ff1b9,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:48:23-07:00,2023-08-08T16:48:23-07:00,0,2,2,2,0,try usethis for gh actions
+swfscdas,839ee3f2495c7ca9213753aa7a7b7a5cf62c99a5,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:45:41-07:00,2023-08-08T16:45:41-07:00,0,1,80,16,0,belated revdep check
+swfscdas,41fb2e111174b94ad4bf804ba574d7c3fa24a33a,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:37:33-07:00,2023-08-08T16:37:33-07:00,0,2,5,3,0,Update gh action workflows
+swfscdas,73ee1939f86c3214ecb10f040252f01326c55757,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:37:01-07:00,2023-08-08T16:37:01-07:00,0,1,3,0,0,v0.6.2 initial submission to CRAN
+swfscdas,6af596cb81c9c07e493b391deff012b429a71060,Sam Woodman,sam.woodman@noaa.gov,2023-08-08T16:02:08-07:00,2023-08-08T16:02:08-07:00,0,3,6,6,0,ready for v0.6.2 release to cran
+swfscdas,e3ef07760dbea0684ee99fc4ac9a8c2605ca1696,Sam Woodman,sam.woodman@noaa.gov,2023-07-28T10:53:54-07:00,2023-07-28T10:53:54-07:00,0,2,0,12,0,Update readme
+swfscdas,d97e8c6a1313764a4b6a795d23d83679bc232b4d,Sam Woodman,sam.woodman@noaa.gov,2023-07-28T10:31:17-07:00,2023-07-28T10:31:17-07:00,0,3,67,33,0,Closes #9
+swfscdas,39962963054ed7d551f2312406c5d844b5afd3a0,Sam Woodman,sam.woodman@noaa.gov,2023-06-08T17:36:08-07:00,2023-06-08T17:36:08-07:00,0,1,1,1,0,typo so issue was not linked
+swfscdas,6cb2baed0dfaa20dbed7cb1596d54e56efedcb99,Sam Woodman,sam.woodman@noaa.gov,2023-06-06T20:09:02-07:00,2023-06-06T20:09:02-07:00,0,4,30,24,0,Use reframe in sightings processing for when a particular event is not present (#8)
+swfscdas,03ff00df48b3397d6c901033cc7b3a7ed880a03c,Sam Woodman,sam.woodman@noaa.gov,2023-06-06T20:05:08-07:00,2023-06-06T20:05:08-07:00,0,1,3,3,0,Increment version number to 0.6.2.9000
+swfscdas,ed658129180b441dbf6b9e298f5d425da495e51d,Sam Woodman,sam.woodman@noaa.gov,2022-06-01T17:42:14-07:00,2022-06-01T17:42:14-07:00,0,3,21,74,0,update gh action checks
+swfscdas,d0695bbfd1b749b8d26ea105e3c7da542a299750,Sam Woodman,sam.woodman@noaa.gov,2022-06-01T15:20:57-07:00,2022-06-01T15:20:57-07:00,0,4,69,65,0,update roxygen + pkgdown
+swfscdas,e56e6601e92a2ac59e1627b55bf23bd30d6ebb8c,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T12:00:18-08:00,2022-01-31T12:00:18-08:00,0,1,13,12,0,update revdep readme
+swfscdas,8d0c9ea29481d7068ba9fcbb9b8d64d414cc187c,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:56:41-08:00,2022-01-31T11:56:41-08:00,0,208,9,13514,36,Whoops. get rid of html
+swfscdas,fa265272718190af33ae4c01492282b6e1c44a66,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:47:51-08:00,2022-01-31T11:47:51-08:00,0,1,0,3,0,v0.6.1 on cran
+swfscdas,589db84b3291f116a12ddd2f491f89889327fa5c,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:23:58-08:00,2022-01-31T11:23:58-08:00,0,2,4,0,0,v0.6.1 cran submission
+swfscdas,aa80f0b588696af4eee45d70231536e0414b2d5a,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T11:22:29-08:00,2022-01-31T11:22:29-08:00,0,4,15,587,0,Update license to gov+CC0
+swfscdas,4fa1b2f94627b9255f04ff742d398ffe88a81d0b,Sam Woodman,sam.woodman@noaa.gov,2022-01-31T10:24:44-08:00,2022-01-31T10:24:44-08:00,0,213,13524,21,36,ready for cran submission
+swfscdas,0d4395e5e7603db0ed5c35ca0c3dfe8548bd9100,Sam Woodman,sam.woodman@noaa.gov,2022-01-18T21:35:04-08:00,2022-01-18T21:35:04-08:00,0,7,75,17,0,Fixed bug in das_sight and das_effort when there are no sighting events in the DAS file
+swfscdas,74bb4ffa40ad2e254addd83040e6d556f4638ff3,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T13:59:42-07:00,2021-09-03T13:59:42-07:00,0,1,0,2,0,v0.6 on cran
+swfscdas,2aea4e2701b4d5751d0963bfc0005a65c7c2d258,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T12:17:22-07:00,2021-09-03T12:17:22-07:00,0,1,2,0,0,Initial submission of v0.6.0
+swfscdas,647fb417bfcc81d4d736894998e59b435d25b0f1,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T11:43:21-07:00,2021-09-03T11:43:21-07:00,0,4,13,20,0,"Cran comments, fix note on cran check page, do revdep checks. Ready for cran submission"
+swfscdas,9bbf6a002ed59b7ff2d3d058ef1c4a4bcac905df,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T11:24:59-07:00,2021-09-03T11:24:59-07:00,0,1,3,3,0,try ubuntu 20.04 for gh actions
+swfscdas,68b5e4f0e5f6e109865fe07e7a7706498457859f,Sam Woodman,sam.woodman@noaa.gov,2021-09-03T11:13:09-07:00,2021-09-03T11:13:09-07:00,0,3,4,4,0,version bump 0.6.0 - more accurate for these changes. Updated vignette text.
+swfscdas,96c7c6537f8779a39d75b3cb3441e5020cca9e60,Sam Woodman,sam.woodman@noaa.gov,2021-08-10T16:03:45-07:00,2021-08-10T16:03:45-07:00,0,10,108,41,0,remove tz from das_read and include OffsetGMT in das_process output
+swfscdas,7f4155774c3268e728389b75502885ea5f3693dd,Sam Woodman,sam.woodman@noaa.gov,2021-08-09T12:20:35-07:00,2021-08-09T12:20:35-07:00,0,1,0,2,0,forgot to delete this
+swfscdas,f89b57ee451fe20fd118b617bd8235c030e3fbb7,Sam Woodman,sam.woodman@noaa.gov,2021-08-09T12:17:37-07:00,2021-08-09T12:17:37-07:00,0,7,47,19,0,"Closes #5, add documentation about time zones/effort"
+swfscdas,ad6feadcaa3337f463f124283e62c96719658396,Sam Woodman,sam.woodman@noaa.gov,2021-05-27T08:52:06-07:00,2021-05-27T08:52:06-07:00,0,1,2,0,0,v0.5.1 first resubmission
+swfscdas,360f2a9cb0ac0f314d1fb58ee1c1608cb37ef63e,Sam Woodman,sam.woodman@noaa.gov,2021-05-27T08:40:44-07:00,2021-05-27T08:40:44-07:00,0,4,6,5,0,clean up url for resubmission
+swfscdas,89e45c7176dc75b7462f3c35268c9c3c63796c90,Sam Woodman,sam.woodman@noaa.gov,2021-05-26T11:48:27-07:00,2021-05-26T11:48:27-07:00,0,1,2,0,0,v0.5.1 release note
+swfscdas,8d5cf0469d0be047e5f3b391f4fb4b731459a228,Sam Woodman,sam.woodman@noaa.gov,2021-05-26T08:16:00-07:00,2021-05-26T08:16:00-07:00,0,3,10,11,0,doc fix
+swfscdas,d1fcc0fad9d4cb7000375bcffc7c79c7308b2195,Sam Woodman,sam.woodman@noaa.gov,2021-05-25T17:33:00-07:00,2021-05-25T17:33:00-07:00,0,3,13,6,0,ran revdeps
+swfscdas,4186db4cf6ce2f713b750fb7d9d50cdd9ada057a,Sam Woodman,sam.woodman@noaa.gov,2021-05-25T16:52:51-07:00,2021-05-25T16:52:51-07:00,0,5,19,13,0,fix broken link
+swfscdas,e92b6e696ffa69d4a18f56265f105a2a12db546b,Sam Woodman,sam.woodman@noaa.gov,2021-03-22T12:12:05-07:00,2021-03-22T12:12:05-07:00,0,3,21,0,0,add noaa disclaimrer
+swfscdas,e5f975259fb26e1a2d05e8b8041cdbb156e0fa4f,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:49:34-08:00,2021-01-07T17:49:34-08:00,0,2,2,2,0,ugh
+swfscdas,90a37a035365b35b98ede933f8674a93a7488c8f,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:40:49-08:00,2021-01-07T17:40:49-08:00,0,1,3,3,0,Try with xenial
+swfscdas,f1802a362111c847d5177b067c56c1f6da731d53,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:33:17-08:00,2021-01-07T17:33:17-08:00,0,3,9,32,0,Use standard gh action checks
+swfscdas,f7925191e70c8d4147edc8c99af36646b237f255,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:20:15-08:00,2021-01-07T17:20:15-08:00,0,1,16,2,0,gh actions refined
+swfscdas,3376f5f49973c2626338b8a55f802c7800e43931,Sam Woodman,swoodman213@gmail.com,2021-01-07T17:05:58-08:00,2021-01-07T17:05:58-08:00,0,5,109,19,0,"Try binary deps, gh actions full check"
+swfscdas,68f9c15e27c41a8101955a9f8a4d0208af6fc8c8,Sam Woodman,swoodman213@gmail.com,2021-01-06T19:18:50-08:00,2021-01-06T19:18:50-08:00,0,1,3,10,0,release notes
+swfscdas,f1d53a4786a58bdc855eaee551933d51c9da5a3e,Sam Woodman,swoodman213@gmail.com,2020-12-31T11:30:24-08:00,2020-12-31T11:30:24-08:00,0,11,66,28,0,"Add revdep checks, das_sight doc clarifications"
+swfscdas,2dcd4691b604fd0c0312ee8789ea51f4bc10d96b,Sam Woodman,swoodman213@gmail.com,2020-12-28T18:11:16-08:00,2020-12-28T18:11:16-08:00,0,2,2,2,0,Docs
+swfscdas,01c9330e4dbb24bf93b81abf772f3347b0ba30c2,Sam Woodman,swoodman213@gmail.com,2020-12-01T21:16:27-08:00,2020-12-01T21:16:27-08:00,0,2,2,1,0,add for tails
+swfscdas,4a9b613d7d5d6430deefd030a4438cb8dd350293,Sam Woodman,swoodman213@gmail.com,2020-12-01T21:10:00-08:00,2020-12-01T21:10:00-08:00,0,8,68,21,0,"docs, move relevant warning message out of parallel funcs, fixed bug in das_segdata for 0- len segments"
+swfscdas,bcba29700d526a45204bc9cc3f84d2b39fb2b0d9,Sam Woodman,swoodman213@gmail.com,2020-11-16T20:34:48-08:00,2020-11-16T20:34:48-08:00,0,1,1,4,0,try simplifying
+swfscdas,c8430b9acc8216105c3c971445a0173f42d9eba2,Sam Woodman,swoodman213@gmail.com,2020-11-16T20:06:41-08:00,2020-11-16T20:06:41-08:00,0,1,4,0,0,"use r, not ruby"
+swfscdas,6ba184aed8396da9a1244403e9f24d2846eea394,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:48:50-08:00,2020-11-16T19:48:50-08:00,0,1,1,0,0,travis use bionic - fails without
+swfscdas,d9de56666624118a9abb04e72a4ecd7fa1e59c1f,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:43:25-08:00,2020-11-16T19:43:25-08:00,0,1,4,10,0,simplify simplify
+swfscdas,b4c0e0824d02daf38d4ad75e24cb346697c97677,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:38:12-08:00,2020-11-16T19:38:12-08:00,0,1,1,1,0,trav
+swfscdas,84e3217cfd106873e1153ee6a1e03d86bbc75ae6,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:30:02-08:00,2020-11-16T19:30:02-08:00,0,3,11,4,0,"travis, rm appveyor badge"
+swfscdas,f7d9f1afed75db8693a9731575a0f2bab98f45ce,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:27:57-08:00,2020-11-16T19:27:57-08:00,0,1,14,0,0,travis
+swfscdas,36720eab66abd1e552e8d864053339ac29bf423e,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:17:56-08:00,2020-11-16T19:17:56-08:00,0,7,50,109,0,use gh actions for pkgdown
+swfscdas,c01a48a4a4a12214c1fb11fabc6d0f6c1785e85c,Sam Woodman,swoodman213@gmail.com,2020-11-16T19:05:20-08:00,2020-11-16T19:05:20-08:00,0,1,3,13,0,travis
+swfscdas,5302ab8914025e72f0acb745b930e105f0d9725b,Sam Woodman,swoodman213@gmail.com,2020-11-16T18:58:00-08:00,2020-11-16T18:58:00-08:00,0,2,51,49,0,travis
+swfscdas,09582f8dd1176e62257b4dc1c04de33dc475273b,Sam Woodman,swoodman213@gmail.com,2020-11-13T15:55:29-08:00,2020-11-13T15:55:29-08:00,0,2,2,2,0,readme typo
+swfscdas,5603d0cefa3c5860954680c7145544d18e49daca,Sam Woodman,swoodman213@gmail.com,2020-11-13T15:44:38-08:00,2020-11-13T15:44:38-08:00,0,8,8,8,0,Phrasing fix
+swfscdas,da35446a2cecaedae70def5649c32d45784963a7,Sam Woodman,swoodman213@gmail.com,2020-11-13T15:39:21-08:00,2020-11-13T15:39:21-08:00,0,11,97,40,0,"Added start/end time to segdata output, exported functions for docs"
+swfscdas,e280f713f5519b982b4ec1775ff9914175e9f037,Sam Woodman,swoodman213@gmail.com,2020-09-30T08:09:30-07:00,2020-09-30T08:09:30-07:00,0,1,1,1,0,Added clarifying text to vignette strata secction
+swfscdas,71f0b2c697ba316723823c2c5ea824596ed89a60,Sam Woodman,swoodman213@gmail.com,2020-09-23T16:52:27-07:00,2020-09-23T16:52:27-07:00,0,4,23,8,0,"add sperm whale details to das_sight docs, fixed das_sight small issue"
+swfscdas,0294b5f4a3eabba7f0d354d3e3b893231eadf3bb,Sam Woodman,swoodman213@gmail.com,2020-09-04T18:05:24-07:00,2020-09-04T18:05:24-07:00,0,1,37,31,0,appveyor hopefully fix
+swfscdas,1c75eccd9bf2c7e8258dd1aac95f39563b7c6df6,Sam Woodman,swoodman213@gmail.com,2020-09-03T08:55:32-07:00,2020-09-03T08:55:32-07:00,0,1,1,1,0,Fix web address
+swfscdas,85d7c613cf155a55284dd8b1c7912cdb599aa510,Sam Woodman,swoodman213@gmail.com,2020-09-02T11:44:00-07:00,2020-09-02T11:44:00-07:00,0,1,5,5,0,Formatting fix
+swfscdas,41bd0c35c131e4e008ff6ff0b029cf7462af39ea,Sam Woodman,swoodman213@gmail.com,2020-09-02T11:42:48-07:00,2020-09-02T11:42:48-07:00,0,1,24,44,0,Travis.?
+swfscdas,f74c318d52906f6390794390cc7645b28eed5e30,Sam Woodman,swoodman213@gmail.com,2020-09-02T10:08:45-07:00,2020-09-02T10:08:45-07:00,0,2,46,23,0,travis
+swfscdas,0fd6b8c9bdf4ec1db27bf4ef49e6d4cb4ea40224,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:59:06-07:00,2020-09-02T09:59:06-07:00,0,1,0,4,0,travis..
+swfscdas,080a4498becc0b83b4b5059c1a309fe70e2cbdc9,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:54:46-07:00,2020-09-02T09:54:46-07:00,0,1,3,0,0,travis
+swfscdas,6fbc2fe43ba3c6bf316d8309a18c910f483eb22e,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:46:35-07:00,2020-09-02T09:46:35-07:00,1,,,,,Merge pull request #4 from smwoodman/effort_strata
+swfscdas,369d31dab74ba3cffe3013abe85ff9d2d754435e,Sam Woodman,swoodman213@gmail.com,2020-09-02T09:43:18-07:00,2020-09-02T09:43:18-07:00,0,19,499,115,0,Added effort-split-by-strata functionality
+swfscdas,90287debd58a1c8ea7a3529a155a02874f3d3bf6,Sam Woodman,swoodman213@gmail.com,2020-08-31T18:03:52-07:00,2020-08-31T18:03:52-07:00,0,4,7,7,0,"url, doc cleaning"
+swfscdas,5dcab914edf1eb6da3046293d707cce58b69aa0d,Sam Woodman,swoodman213@gmail.com,2020-07-14T10:48:11-07:00,2020-07-14T10:48:11-07:00,0,8,94,59,0,"Standardize description with CruzPlot, bug fixes, doc fixes"
+swfscdas,37d8dcc697b13bdd40f6b28dcebb926e55910541,Sam Woodman,swoodman213@gmail.com,2020-07-02T09:08:06-07:00,2020-07-02T09:08:06-07:00,0,9,330,208,0,"CRAN badge, use tabular function for tables, improve das_sight doc"
+swfscdas,bd6848b668b509af544d8ae115bd0ac07d02479c,Sam Woodman,swoodman213@gmail.com,2020-07-01T09:30:30-07:00,2020-07-01T09:30:30-07:00,0,7,43,18,0,"versin bump, developmental v0.5.0"
+swfscdas,c2ba3dbc31e949e3e3dc5225fd9d7c0f9c2eec66,Sam Woodman,swoodman213@gmail.com,2020-06-30T09:05:53-07:00,2020-06-30T09:05:53-07:00,0,1,0,2,0,v0.4.0 on CRAN
+swfscdas,786d25f224328063ca07240140d46dcaca0608dd,Sam Woodman,swoodman213@gmail.com,2020-06-29T11:42:39-07:00,2020-06-29T11:42:39-07:00,0,1,2,0,0,v0.4.0 resubmitted to CRAN
+swfscdas,278173517846c5d005fd0a098454ceb24bd4913b,Sam Woodman,swoodman213@gmail.com,2020-06-29T11:33:22-07:00,2020-06-29T11:33:22-07:00,0,2,11,11,0,Format fix
+swfscdas,ecacdf4d303921aad2098bbea6add4411367c3a2,Sam Woodman,swoodman213@gmail.com,2020-06-29T10:50:38-07:00,2020-06-29T10:50:38-07:00,0,8,10,8,0,Fixes for v0.4.0 CRAN resubmission
+swfscdas,f9f08f91fdffc7230d19d41d0a2a6819aaea2636,Sam Woodman,swoodman213@gmail.com,2020-06-29T10:37:11-07:00,2020-06-29T10:37:11-07:00,0,10,315,301,0,Fixes for CRAN
+swfscdas,8ba85e9fb17ffc8a2176777328e54bd2a93c5de1,Sam Woodman,swoodman213@gmail.com,2020-06-27T18:46:08-07:00,2020-06-27T18:46:08-07:00,0,2,1,4,0,Need to leave a v0.4.0 for CRAN
+swfscdas,7bd744ab8fe0c55313ae55ac16915dfd620d6447,Sam Woodman,swoodman213@gmail.com,2020-06-27T18:42:05-07:00,2020-06-27T18:42:05-07:00,0,2,4,1,0,Version bump
+swfscdas,6e75f55d28f32881b4a2e6c448857044736cc22a,Sam Woodman,swoodman213@gmail.com,2020-06-27T11:02:36-07:00,2020-06-27T11:02:36-07:00,0,2,8,8,0,readme update
+swfscdas,8d3d610a5970b646662ed716f6fafe4068dd9e40,Sam Woodman,swoodman213@gmail.com,2020-06-27T10:13:02-07:00,2020-06-27T10:13:02-07:00,0,1,2,0,0,v0.4.0 submission
+swfscdas,a83504090933d766838a4c25afe15e63538b4c3a,Sam Woodman,swoodman213@gmail.com,2020-06-27T10:09:25-07:00,2020-06-27T10:09:25-07:00,0,2,2,2,0,Typo
+swfscdas,aadeec549978725e514f34673af64c5fdf10f62c,Sam Woodman,swoodman213@gmail.com,2020-06-27T10:00:04-07:00,2020-06-27T10:00:04-07:00,0,3,5,5,0,actually ready for CRAN resubmission
+swfscdas,e41314361649dde0c56f711797b089462bd028af,Sam Woodman,swoodman213@gmail.com,2020-06-27T09:53:54-07:00,2020-06-27T09:53:54-07:00,0,4,8,10,0,ready for cran resubmission
+swfscdas,9d034c5f6633d38b7fc8f943f7f0ab0275e5f375,Sam Woodman,swoodman213@gmail.com,2020-06-26T17:37:29-07:00,2020-06-26T17:37:29-07:00,0,25,329,312,0,Fixes for CRAN resubmission. Name consistency/accuracy
+swfscdas,b841c9bd90d7a9b48092b2da48d0ee73f4ab9685,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:18:14-07:00,2020-06-17T19:18:14-07:00,0,2,3,0,0,CRAN initial submission
+swfscdas,9cc0788a369547c4d008577dc4b3e92cd310cd19,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:15:59-07:00,2020-06-17T19:15:59-07:00,0,1,3,3,0,typo
+swfscdas,43c3847b832d5c2848ed4c84a07de60fa3f0f962,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:05:38-07:00,2020-06-17T19:05:38-07:00,0,1,1,1,0,v0.3.0
+swfscdas,06c63b5444ad13d319350fa201917878e4de814a,Sam Woodman,swoodman213@gmail.com,2020-06-17T19:03:33-07:00,2020-06-17T19:03:33-07:00,0,6,8,8,0,spellcheck
+swfscdas,0282b422077c9554c17b7650efa1546ef3af2e35,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:58:33-07:00,2020-06-17T18:58:33-07:00,0,1,17,13,0,da travis
+swfscdas,5f6e325cd3c382f852a7f07d3d09563303391c4d,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:49:36-07:00,2020-06-17T18:49:36-07:00,0,2,9,2,0,"Text update, cran comments"
+swfscdas,57a77bce732c66fd95fa3e271545ba4ad2dfc37a,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:44:51-07:00,2020-06-17T18:44:51-07:00,0,1,22,13,0,travis being travis
+swfscdas,71cbc6ee57516134290bebbe7de9e450fd336842,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:27:54-07:00,2020-06-17T18:27:54-07:00,0,2,15,0,0,Added CRAN comments
+swfscdas,793c96fd35c2a79a5a0c4140cbf8c782425ca87f,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:08:52-07:00,2020-06-17T18:08:52-07:00,0,1,38,38,0,travis
+swfscdas,25b0340e42b0f35047a4eae2e94944e0a00cf3d8,Sam Woodman,swoodman213@gmail.com,2020-06-17T18:03:41-07:00,2020-06-17T18:03:41-07:00,0,8,38,105,0,"docs, v0.3"
+swfscdas,b4f21405a87aadf8e33aea8c8755386006a8bcbe,Sam Woodman,swoodman213@gmail.com,2020-06-16T13:46:42-07:00,2020-06-16T13:46:42-07:00,0,19,564,576,2,Change das_chop_equal to das_chop_equallength for consistency
+swfscdas,00969d9198c9a4ced41595aac43c72d4c3d615da,Sam Woodman,swoodman213@gmail.com,2020-06-16T10:52:48-07:00,2020-06-16T10:52:48-07:00,0,18,97,80,0,"More useful fiule+line number messages, general cleanup"
+swfscdas,40476f1cc58f222b4ac0022d773d6abff3a6719c,Sam Woodman,swoodman213@gmail.com,2020-06-15T14:51:19-07:00,2020-06-15T14:51:19-07:00,0,5,138,108,0,das_sight fixed to now match segchopr output
+swfscdas,4901e748239954212007264b3d6df7bcbf6bde61,Sam Woodman,swoodman213@gmail.com,2020-06-15T00:09:45-07:00,2020-06-15T00:09:45-07:00,0,5,64,31,0,Added gs.low.use to das_effort_sight
+swfscdas,28c4c9fd9eaed2f6a696cf77bb8d3a413b184b94,Sam Woodman,swoodman213@gmail.com,2020-06-13T10:08:27-07:00,2020-06-13T10:08:27-07:00,0,5,108,1,0,Add DAS_data_join vignette
+swfscdas,8b60351678f6f220a6e644c3edda76d2388690d9,Sam Woodman,swoodman213@gmail.com,2020-06-11T23:59:20-07:00,2020-06-11T23:59:20-07:00,0,2,2,2,0,great circle ref
+swfscdas,f3846541ae7b5dbe781f7a3a4665e73540322451,Sam Woodman,swoodman213@gmail.com,2020-06-11T23:53:14-07:00,2020-06-11T23:53:14-07:00,0,27,64,64,0,Doc cleanup
+swfscdas,c42340035b7c29350605a281a29d6a83f3108eb4,Sam Woodman,swoodman213@gmail.com,2020-06-11T23:21:05-07:00,2020-06-11T23:21:05-07:00,0,10,322,5,0,Determine strata for points
+swfscdas,bc883bcb13e2a3a5904b00940bedb3c2b3f1443e,Sam Woodman,swoodman213@gmail.com,2020-06-07T22:05:56-07:00,2020-06-07T22:05:56-07:00,0,2,4,1,0,Version bump
+swfscdas,7e1b86fda2cbd3f2d7127f1b135d0e378095f6e3,Sam Woodman,swoodman213@gmail.com,2020-06-07T16:28:08-07:00,2020-06-07T16:28:08-07:00,0,3,3,3,0,Version bump
+swfscdas,8cc70edc5e18dd57ac3512c148dda765b7c3c446,Sam Woodman,swoodman213@gmail.com,2020-06-07T16:09:33-07:00,2020-06-07T16:09:33-07:00,0,10,375,253,0,Lots of das_sight updates
+swfscdas,e85b3bdb1ec4d089c0319c99bd56e875add508e4,Sam Woodman,swoodman213@gmail.com,2020-06-05T23:55:28-07:00,2020-06-05T23:55:28-07:00,0,7,187,114,0,"Finish standardizing das_sight names, include high and low estimates in the output. Next: complete output"
+swfscdas,3fa3eb0cc7161abf10f487f2d7312369acbdd04f,Sam Woodman,swoodman213@gmail.com,2020-06-05T21:26:19-07:00,2020-06-05T21:26:19-07:00,0,3,17,1,0,Add to das_check
+swfscdas,30b9782c34ead6faf5170ed36a3a61d7505359ee,Sam Woodman,swoodman213@gmail.com,2020-06-05T21:19:30-07:00,2020-06-05T21:19:30-07:00,0,6,38,13,0,Add ship speed and wind speed to das_process output
+swfscdas,df0d95d3c62ffdcd333a6b8fae758f2301c8dcb0,Sam Woodman,swoodman213@gmail.com,2020-06-05T19:55:04-07:00,2020-06-05T19:55:04-07:00,0,5,57,63,0,Fixed das_sight G/g bug
+swfscdas,56e9a249d23a454b2235faa2a10268eba50e7551,Sam Woodman,swoodman213@gmail.com,2020-06-04T12:53:00-07:00,2020-06-04T12:53:00-07:00,0,1,2,1,0,Forgot news detail
+swfscdas,af7a2517b5a82811957c54381cf43a24c2faf522,Sam Woodman,swoodman213@gmail.com,2020-06-04T12:52:25-07:00,2020-06-04T12:52:25-07:00,0,16,139,73,0,"Accounted for Data10, Data11, and Data12 columns in das_ read/process/sight/check"
+swfscdas,80727295cfa5ecac07c8cc8df13b11afa2ad9d1d,Sam Woodman,swoodman213@gmail.com,2020-06-04T10:52:25-07:00,2020-06-04T10:52:25-07:00,0,2,4,4,0,Default now correctly handles CCES cruise data
+swfscdas,74121417cef668259c92ec70d4bc33951bdbc501,Sam Woodman,swoodman213@gmail.com,2020-06-03T19:46:45-07:00,2020-06-03T19:46:45-07:00,0,2,2,2,0,segdata columns names are now e.g. nSI_075
+swfscdas,405f5ff2bfa319f68d538aba06193a84513d2682,Sam Woodman,swoodman213@gmail.com,2020-06-03T19:37:13-07:00,2020-06-03T19:37:13-07:00,0,7,38,34,0,"Version bump, changed 'siteinfo' to 'sightinfo'"
+swfscdas,389a17e2330768044ad7632ce72ed9a9d6220e82,Sam Woodman,swoodman213@gmail.com,2020-05-21T21:08:36-07:00,2020-05-21T21:08:36-07:00,0,3,6,3,0,Version bump to 0.1 - version presented to NMFS/NOAA end-users
+swfscdas,2b20b8bf3f2e2d15effe7db53ed5c7d7f4291c62,Sam Woodman,swoodman213@gmail.com,2020-05-21T09:51:57-07:00,2020-05-21T09:51:57-07:00,0,10,21,19,0,Docs update
+swfscdas,732c4aeee08666879c31b0f4bee5fb587edc88df,Sam Woodman,swoodman213@gmail.com,2020-05-20T23:29:27-07:00,2020-05-20T23:29:27-07:00,0,5,27,15,0,"Consistency, comments"
+swfscdas,b3250dbb311a9eb78881f333aa7dd2f799fea0c1,Sam Woodman,swoodman213@gmail.com,2020-05-20T22:54:03-07:00,2020-05-20T22:54:03-07:00,0,8,224,51,0,"Added m event to das_sight, and added das_chop_section"
+swfscdas,1e89992b17f41ceaace718022cc45c8766c458e1,Sam Woodman,swoodman213@gmail.com,2020-05-20T21:41:24-07:00,2020-05-20T21:41:24-07:00,0,1,1,1,0,Bug fix
+swfscdas,35c0ad81d671442aa04c8b4aa671f1d34787622b,Sam Woodman,swoodman213@gmail.com,2020-05-20T16:19:07-07:00,2020-05-20T16:19:07-07:00,0,3,121,0,0,Added vignette
+swfscdas,dc576e1102ab569ecf4a167905872effb60ee302,Sam Woodman,swoodman213@gmail.com,2020-05-19T14:50:06-07:00,2020-05-19T14:50:06-07:00,0,3,115,0,0,Add das_comments function
+swfscdas,c3a018706b7142426560d6e153e8bfdbcdf4d3e4,Sam Woodman,swoodman213@gmail.com,2020-05-19T14:35:13-07:00,2020-05-19T14:35:13-07:00,0,2,11,20,0,Forgot a match.arg opportunity
+swfscdas,e294f8785d99da482ce8383f11171567004d9a69,Sam Woodman,swoodman213@gmail.com,2020-05-19T14:22:10-07:00,2020-05-19T14:22:10-07:00,0,7,120,112,0,"Consistent: naming, struction, condition check"
+swfscdas,2bae9c2f7e10e2d0fd9b117c7383585ee088d24d,Sam Woodman,swoodman213@gmail.com,2020-05-19T13:34:06-07:00,2020-05-19T13:34:06-07:00,0,8,104,104,0,Spell out distance for clarity
+swfscdas,d1a95ad62fafc345440449d31c43b53f77ef7e23,Sam Woodman,swoodman213@gmail.com,2020-05-17T11:24:55-07:00,2020-05-17T11:24:55-07:00,0,3,54,30,0,Added p events to output of das_sight
+swfscdas,8aafbf0e125bae89a99ec7c1e64d6edbe70f32de,Sam Woodman,swoodman213@gmail.com,2020-05-16T23:03:04-07:00,2020-05-16T23:03:04-07:00,0,1,1,0,0,Fix bug where Prob was NA instead of FALSE
+swfscdas,faa62defd864011b7347babe50c8789a73a18da9,Sam Woodman,swoodman213@gmail.com,2020-05-16T12:10:13-07:00,2020-05-16T12:10:13-07:00,0,12,95,73,0,Make great-circle distance calc an offical exported function. Clean up docs
+swfscdas,d42092ea898c51b9ebcadc90d19a67c00263b72f,Sam Woodman,swoodman213@gmail.com,2020-05-16T11:46:46-07:00,2020-05-16T11:46:46-07:00,0,8,52,54,0,"Use match.args, clean up docs"
+swfscdas,5ead041ba8ec5ff39e2a287bc035625a924b5a4b,Sam Woodman,swoodman213@gmail.com,2020-05-16T11:12:38-07:00,2020-05-16T11:12:38-07:00,0,7,119,84,0,"Fix Prob bug and add probable species. Provide returnformat options, more flexible and descriptive than mixed.multi. Update das_effort, and make effort processing less restrictive"
+swfscdas,8a77375a2e0961e7e115ed31b642ca1624e86456,Sam Woodman,swoodman213@gmail.com,2020-05-14T23:06:26-07:00,2020-05-14T23:06:26-07:00,0,5,15,19,0,Add PerpDistKm column to das_sight output; makes more sense here than das_effort
+swfscdas,3bdd1a72f0b1e18b6621258e2f1196c5b1832f8b,Sam Woodman,swoodman213@gmail.com,2020-05-14T21:12:15-07:00,2020-05-14T21:12:15-07:00,0,4,210,166,0,"Make package name consistent, add catch in segdata for when cont_eff_sect is 0"
+swfscdas,58c6e2d9811dd6939cb84c9eceda62b36e8d9e24,Sam Woodman,swoodman213@gmail.com,2020-05-10T13:26:06-07:00,2020-05-10T13:26:06-07:00,0,7,200,89,0,Split summarizing sightings in segdata to another function to give user greater control. Cleaned up comments
+swfscdas,30aafdf111120d0b7d80468bcec7f9d2d3a5d372,Sam Woodman,swoodman213@gmail.com,2020-05-10T12:51:05-07:00,2020-05-10T12:51:05-07:00,0,6,20,0,1,Add checks that Event cannot be NA
+swfscdas,35bafd80dccbedbca121ef6102b006ec56e13873,Sam Woodman,swoodman213@gmail.com,2020-05-08T17:31:08-07:00,2020-05-08T17:31:08-07:00,0,6,53,33,1,verbosely convert r events to R events with N effort
+swfscdas,3e6312ebef6dee7aeecdaa668cf31cc1b4aa517b,Sam Woodman,swoodman213@gmail.com,2020-05-08T16:32:36-07:00,2020-05-08T16:32:36-07:00,0,5,83,28,0,"Add event.use param for more user control. Start segments (ces's) at R, not B. Simplify siteinfo output. Make sure st/end/mid point lons are between -180 and 180"
+swfscdas,dfb1b6f52cd613a95306d0cc3cd7fe146d4a169e,Sam Woodman,swoodman213@gmail.com,2020-05-08T16:29:22-07:00,2020-05-08T16:29:22-07:00,0,3,22,16,0,Add nSp (number of species) column
+swfscdas,c38f2d014c04b0ccfa6f8d630a034dc7902e037c,Sam Woodman,swoodman213@gmail.com,2020-05-07T11:46:08-07:00,2020-05-07T11:46:08-07:00,0,5,128,107,0,Fixed bug in das_sight; das_sight also now handles G/g events
+swfscdas,933b08b9d4a81b022ced04df15a26c449e8a2c7b,Sam Woodman,swoodman213@gmail.com,2020-05-02T18:17:28-07:00,2020-05-02T18:17:28-07:00,0,4,20,18,0,"In segdat, split seg_idx into two columns for easier use by user"
+swfscdas,be67b165885f4b1becc93713efc821260df7f52f,Sam Woodman,swoodman213@gmail.com,2020-04-30T11:25:50-07:00,2020-04-30T11:25:50-07:00,0,4,81,53,0,Try tic
+swfscdas,97d80ac7c8fe115b2e61809f03dbd509d1f30837,Sam Woodman,swoodman213@gmail.com,2020-04-30T11:09:26-07:00,2020-04-30T11:09:26-07:00,0,4,2,4,0,Cleanup
+swfscdas,23daa9c1be1cfef0e3d7cf88535c3217274b1d8a,Sam Woodman,swoodman213@gmail.com,2020-04-29T10:38:47-07:00,2020-04-29T10:38:47-07:00,0,1,37,37,0,For consistency
+swfscdas,793155e52bea0c043b5efda89499873be96d00be,Sam Woodman,swoodman213@gmail.com,2020-04-29T09:35:30-07:00,2020-04-29T09:35:30-07:00,0,1,1,1,0,Fix bug
+swfscdas,f1300f33b2b16e5fce4c981be9ce8f43b10e1f5f,Sam Woodman,swoodman213@gmail.com,2020-04-28T18:48:53-07:00,2020-04-28T18:48:53-07:00,0,2,24,6,0,"Add checks for NA Events, i.e. if 'skip' should be used. Always report line numbers in warning messages"
+swfscdas,e9ef52a7d35a86983a3d32348df36acf4a3b147c,smwoodman,swoodman213@gmail.com,2020-04-24T15:03:18-07:00,2020-04-24T15:03:18-07:00,0,1,21,21,0,proj
+swfscdas,2d80629535d8c6b0bf149573df8102caf91199d6,smwoodman,swoodman213@gmail.com,2020-04-24T11:17:52-07:00,2020-04-24T11:17:52-07:00,0,2,500,495,1,V events can have stuff in Data6 column
+swfscdas,c93576100c76707bb71d191bdac67f032892bc88,Sam Woodman,swoodman213@gmail.com,2020-04-23T11:47:13-07:00,2020-04-23T11:47:13-07:00,0,1,16,16,0,travis..
+swfscdas,6f33ff3aee7eecfb9f98a8259c30ba5e13a2d1ea,Sam Woodman,swoodman213@gmail.com,2020-04-23T11:37:22-07:00,2020-04-23T11:37:22-07:00,0,4,715,435,0,Migrated over some checks from swfscAirDAS
+swfscdas,c284970b4982121de92dbee2a15574b507368a41,Sam Woodman,swoodman213@gmail.com,2020-04-22T12:39:47-07:00,2020-04-22T12:39:47-07:00,0,6,1202,1097,0,Added seg0.drop and comment.drop arguments to be able to match segchopr. Consolidated format checks in begining of das_effort
+swfscdas,1f756fe4c986a20aa7c0190d241dfe096f3cf4ba,Sam Woodman,swoodman213@gmail.com,2020-04-14T23:05:20-07:00,2020-04-14T23:05:20-07:00,0,1,1,1,0,Updated name
+swfscdas,b19357fa49e86fe695ee9b96df4145cd2fe0ca15,Sam Woodman,swoodman213@gmail.com,2020-04-14T22:53:47-07:00,2020-04-14T22:53:47-07:00,0,1,31,31,0,Title case
+swfscdas,af6946e35360547f945b4211d023086e488ac2a0,Sam Woodman,swoodman213@gmail.com,2020-04-14T22:24:24-07:00,2020-04-14T22:24:24-07:00,0,1,21,21,0,Update?
+swfscdas,ab9469bdbc70296e9520bf4ba133cb2081fe88f8,Sam Woodman,swoodman213@gmail.com,2020-03-30T17:18:02-07:00,2020-03-30T17:18:02-07:00,0,4,16,16,0,Simplified some links
+swfscdas,e251cf756557c870d74bcc331d709a3fc03e174c,Sam Woodman,swoodman213@gmail.com,2020-03-30T17:17:51-07:00,2020-03-30T17:17:51-07:00,0,7,20,10,0,"Added Obs_std column indicating if a sighting was made by ObsL, Rec, or ObsR"
+swfscdas,19a72dbb9a3dd393b7296c10b3bb5f39a5639c8f,Sam Woodman,swoodman213@gmail.com,2020-03-30T16:47:51-07:00,2020-03-30T16:47:51-07:00,0,7,61,12,0,"Added ObsL, Rec, ObsR, and ObsInd to das_process output and docs. Todo: incorporate into _sight and _effort"
+swfscdas,0549f301818bbb3adf46225784ce6775f4205312,Sam Woodman,swoodman213@gmail.com,2020-03-27T16:35:09-07:00,2020-03-27T16:35:09-07:00,0,2,4,4,0,Make vicenty default distance method to match other swfscMisc function use
+swfscdas,fc49f91ddd8677b3d70f494a99290276ed3e7a2c,Sam Woodman,swoodman213@gmail.com,2020-03-27T14:30:24-07:00,2020-03-27T14:30:24-07:00,0,4,6,6,0,Spell check
+swfscdas,cfb52f31c49d4b6b50c0199ee2fb7267a1f42d48,Sam Woodman,swoodman213@gmail.com,2020-03-27T14:01:48-07:00,2020-03-27T14:01:48-07:00,0,1,5,8,0,travis
+swfscdas,f8e47191517caf4574787cbf37439801b475d020,Sam Woodman,swoodman213@gmail.com,2020-03-27T13:59:23-07:00,2020-03-27T13:59:23-07:00,0,1,4,4,0,travis
+swfscdas,51072dcf86355b365598221a94348dee3f28c9cd,Sam Woodman,swoodman213@gmail.com,2020-03-27T13:45:40-07:00,2020-03-27T13:45:40-07:00,0,1,5,6,0,Travis test
+swfscdas,b2caca200e2f2a4c8fbd9c56a895a3e4fc71869a,Sam Woodman,swoodman213@gmail.com,2020-03-27T13:18:20-07:00,2020-03-27T13:18:20-07:00,0,2,11,4,0,Randpicks can be passed as a data frame as well
+swfscdas,f53bb8801dbadecf3e7942781c6bf7c00fcda00d,Sam Woodman,swoodman213@gmail.com,2020-03-27T11:25:43-07:00,2020-03-27T11:25:43-07:00,0,8,156,98,0,Bug 2 (char) in aggregating segdata; cleaning up code/docs with swfscAirDAS
+swfscdas,9786e379796007444cabcc5c4d42a0c49e5020ed,Sam Woodman,swoodman213@gmail.com,2020-03-26T17:54:56-07:00,2020-03-26T17:54:56-07:00,0,1,1,1,0,Fixed bug when processing character data
+swfscdas,3ad948230af81bbd0dbdffe17143f2de5d7cc53c,Sam Woodman,swoodman213@gmail.com,2020-03-26T16:25:51-07:00,2020-03-26T16:25:51-07:00,0,3,27,95,0,"Switched to single segdata_aggr - data collected in the same way, change is in how it is summarized"
+swfscdas,25cdec904d9ee84c21d2342103364ebef3da140b,Sam Woodman,swoodman213@gmail.com,2020-03-26T14:55:52-07:00,2020-03-26T14:55:52-07:00,0,3,12,18,0,condition aggr method - character now pastes things together (i.e. for observer codes)
+swfscdas,ed04b12b38a831deda8341df8f8a0047f49acc15,Sam Woodman,swoodman213@gmail.com,2020-03-26T13:40:09-07:00,2020-03-26T13:40:09-07:00,0,2,6,6,0,Doc typos
+swfscdas,4feaffdd4ad63cd834c61ddb6d1a5b1feecfa619,Sam Woodman,swoodman213@gmail.com,2020-03-26T11:28:28-07:00,2020-03-26T11:28:28-07:00,0,8,20,14,0,Doc updates
+swfscdas,5214c8f91312ca1b455065abbfb9b6ed454880b2,Sam Woodman,swoodman213@gmail.com,2020-03-26T11:11:40-07:00,2020-03-26T11:11:40-07:00,0,1,2,2,0,error in test - didn't skip whole cont eff sect
+swfscdas,bf40c95f785b776b8809370d0d7dbc41154e9689,Sam Woodman,swoodman213@gmail.com,2020-03-26T11:09:12-07:00,2020-03-26T11:09:12-07:00,0,8,92,93,0,Changed seg.km.min to seg.min.km for consistency. Added num.cores as explicit argument in das_effort. Improved docs
+swfscdas,3867da1c546899b921c5bfd9cd6edd0d609b9938,Sam Woodman,swoodman213@gmail.com,2020-03-25T19:59:26-07:00,2020-03-25T19:59:26-07:00,0,7,145,85,0,Implemented maxdist method for segdata
+swfscdas,5504827e8fec177af927fdf6d6296dedb9896a67,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:39:07-07:00,2020-03-25T13:39:07-07:00,0,5,111,107,0,"Put exported internals with their top-level functions, rename .fn_aggregate"
+swfscdas,ccf451d7f6875825d50164a9dcbff9295f3499f0,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:33:09-07:00,2020-03-25T13:33:09-07:00,0,2,2,2,0,Rename files pt2.....
+swfscdas,13d5e0ca29eef0703d6ddcd67d2bf8e2d488a900,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:32:21-07:00,2020-03-25T13:32:21-07:00,0,2,360,360,0,Rename file..
+swfscdas,b1cc01b31cd6e9a45af33e63de50b25c9ddff413,Sam Woodman,swoodman213@gmail.com,2020-03-25T13:31:46-07:00,2020-03-25T13:31:46-07:00,0,10,153,106,0,Rename das_segdata_avg as das_segdata; add segdata.method argument to for max vs avg aggregation. todo: implement max
+swfscdas,385cb0a6db831a25b1b8de5aaba40797326dd48f,Sam Woodman,swoodman213@gmail.com,2020-03-25T12:26:50-07:00,2020-03-25T12:26:50-07:00,0,10,224,130,0,Made for loop of segdata_avg a separate function to be exported for swfscAirDAS. Users can now specify which conditions used in effort method
+swfscdas,fd315fa2377022a423b63ef205cf27ed5dcf94c6,Sam Woodman,swoodman213@gmail.com,2020-03-25T09:13:00-07:00,2020-03-25T09:13:00-07:00,0,1,0,2,0,Belated
+swfscdas,870bd01057c3bd28a6b6dc66c308f71ee53241c5,Sam Woodman,swoodman213@gmail.com,2020-03-25T08:59:49-07:00,2020-03-25T08:59:49-07:00,0,10,192,136,0,Export additional internals for swfscAirDAS
+swfscdas,4faa8d33bea033598dbfc0ce1c83ad9f86149369,Sam Woodman,swoodman213@gmail.com,2020-03-24T19:16:43-07:00,2020-03-24T19:16:43-07:00,0,2,6,6,0,Added . prefix to internals
+swfscdas,60e4efc07a167537119c19049dfd9e3ff35a7caa,Sam Woodman,swoodman213@gmail.com,2020-03-24T19:03:05-07:00,2020-03-24T19:03:05-07:00,0,2,8,18,0,Don't need call.func2 - as_() work done vis s3 method
+swfscdas,824b8bcf496d9170cb9a4fa778a0fa79acbcf817,Sam Woodman,swoodman213@gmail.com,2020-03-21T15:08:03-07:00,2020-03-21T15:08:03-07:00,0,4,34,17,0,"No messages come out of parallel, so must print messages from internals once back in top level"
+swfscdas,535a2aab5ff3d83e677fe4df6be6cb4431d9c190,Sam Woodman,swoodman213@gmail.com,2020-03-14T09:15:59-07:00,2020-03-14T09:15:59-07:00,0,11,186,65,0,Bug fix: Can pass args from _process to _read. Improved docs to match AirDAS.
+swfscdas,494ad1acaf64d54925cbc08cb09e868c0643cea8,Sam Woodman,swoodman213@gmail.com,2020-03-12T09:49:09-07:00,2020-03-12T09:49:09-07:00,0,3,6,5,0,"Roxygen update, account for skip in line numbers, make _process consistent with swfscAirDAS"
+swfscdas,5d108ee023f24e9df671ede2754aa0c5451ec5b0,Sam Woodman,swoodman213@gmail.com,2020-03-11T14:48:54-07:00,2020-03-11T14:48:54-07:00,0,2,2,4,0,doc update
+swfscdas,5baa135f3ce02e303bf4a7cfe3be9d454895e2ac,Sam Woodman,swoodman213@gmail.com,2020-03-11T14:46:26-07:00,2020-03-11T14:46:26-07:00,0,2,11,8,0,Add skip argument to das_read
+swfscdas,cadd8c3b06b443656764a898ba36c735c12e60dd,Sam Woodman,swoodman213@gmail.com,2020-03-07T00:36:07-08:00,2020-03-07T00:36:07-08:00,0,2,8,1,0,Docs
+swfscdas,2b44889cce3a5eb7cbe8e5018e8c291077a16440,Sam Woodman,swoodman213@gmail.com,2020-03-07T00:30:19-08:00,2020-03-07T00:30:19-08:00,0,9,94,61,0,Export distance calculations to be used by swfscAirDAS
+swfscdas,8c8a14a474b8875237d6db0b35502f2b234c4c29,Sam Woodman,swoodman213@gmail.com,2020-03-07T00:02:31-08:00,2020-03-07T00:02:31-08:00,0,2,9,5,0,Stop das_read from warning about C events missing Lat/Lon/DateTime - too frequent of an occurrence
+swfscdas,6b1cd0956e7b0ce70bd66641a3f77e4e5dfa6287,Sam Woodman,swoodman213@gmail.com,2020-03-06T23:59:20-08:00,2020-03-06T23:59:20-08:00,0,7,122,26,0,"Export internal chop functions for use by swfscAirDAS, a la sf and stars"
+swfscdas,db5ba59a6a7e7f4010faec45ff4ea1d4e4a1b0ce,Sam Woodman,swoodman213@gmail.com,2020-03-06T23:58:46-08:00,2020-03-06T23:58:46-08:00,0,2,10,3,0,Added ESWSides check
+swfscdas,8d92dd6af11569f84731f8d9526db6b51d46db58,Sam Woodman,swoodman213@gmail.com,2020-03-06T14:40:41-08:00,2020-03-06T14:40:41-08:00,0,16,82,61,0,Make package file and clean importFrom's
+swfscdas,49b9b290f3d7e6bf273aac4d38535daa9a58194c,Sam Woodman,swoodman213@gmail.com,2020-03-05T16:50:09-08:00,2020-03-05T16:50:09-08:00,0,8,287,166,0,chop functions now use parallel
+swfscdas,d424ac14b7909207cb0df0969650d640737a8be0,Sam Woodman,swoodman213@gmail.com,2020-03-05T15:32:05-08:00,2020-03-05T15:32:05-08:00,0,2,10,7,0,Addede ESWsides to segdata
+swfscdas,2411a564a81c3978254371bad6fb1116c2648b4a,Sam Woodman,swoodman213@gmail.com,2020-03-05T15:30:57-08:00,2020-03-05T15:30:57-08:00,0,1,6,8,0,"Fixed ESWsides bugs. Mode, EffType, and ESWsides now (actuallY) go to defualt when data is NA"
+swfscdas,c180365227ac7e9ca55713f1b0ac8bedaf7d29d5,Sam Woodman,swoodman213@gmail.com,2020-03-05T13:36:01-08:00,2020-03-05T13:36:01-08:00,0,5,46,29,0,Added ESWsides to _process output
+swfscdas,ab31baef1a42e2c006ca041b0a851d314885a8c7,Sam Woodman,swoodman213@gmail.com,2020-03-05T13:19:55-08:00,2020-03-05T13:19:55-08:00,0,4,86,1,0,Added randpicks_convert for converting randpicks from EAB to swfscDAS format
+swfscdas,804801b8a57ab9c6ff56eb990565c7ae57da7db9,Sam Woodman,swoodman213@gmail.com,2020-03-04T11:00:52-08:00,2020-03-04T11:00:52-08:00,0,1,5,3,0,semantics
+swfscdas,478b358218ba6e9fbe2cf7fa721006d0d44814a1,Sam Woodman,swoodman213@gmail.com,2020-03-04T10:29:44-08:00,2020-03-04T10:29:44-08:00,0,7,172,69,0,Added option for user to specify lat/lon distance calculation method.
+swfscdas,62bff529b278518af971c1af88af5f15380db996,Sam Woodman,swoodman213@gmail.com,2020-03-03T16:33:08-08:00,2020-03-03T16:33:08-08:00,0,2,72,48,0,Added 'reset.effort' argument
+swfscdas,78315862c268541ffd1766c1d8ded0b02cd1683e,Sam Woodman,swoodman213@gmail.com,2020-02-28T16:23:13-08:00,2020-02-28T16:23:13-08:00,0,5,75,37,0,"Cleaned up and made das_read and das_process more verbose. Added ""M"" to expected event codes"
+swfscdas,49621575a73e49d3c448e24405da597513fd6e97,Sam Woodman,swoodman213@gmail.com,2020-02-28T10:37:08-08:00,2020-02-28T10:37:08-08:00,0,5,7,12,0,EventNum read in as character for sake of project-specific event numbers
+swfscdas,42856bd6284f5d8b6dde4d35950789cefa8d85d3,Sam Woodman,swoodman213@gmail.com,2020-02-25T16:47:27-08:00,2020-02-25T16:47:27-08:00,0,2,3,3,0,Change order for consistency with swfscAirDAS
+swfscdas,b35cf30c6dafc6c69c9691fa906ea316ef9f3fe2,Sam Woodman,swoodman213@gmail.com,2020-02-25T16:37:24-08:00,2020-02-25T16:37:24-08:00,0,3,21,16,0,Fixed bug in das_sight where SightNo was not extracted for resights
+swfscdas,6694f786ee08a1b9e0546b221bc4f3b78e8afcae,Sam Woodman,swoodman213@gmail.com,2020-02-18T16:07:26-08:00,2020-02-18T16:07:26-08:00,0,5,339,9,0,"Added das_chop_condition, improved error messages"
+swfscdas,b2a5302f017734fbbe3628ad2688f82795d57c93,Sam Woodman,swoodman213@gmail.com,2020-02-18T14:11:01-08:00,2020-02-18T14:11:01-08:00,0,2,2,0,0,Added multi example
+swfscdas,0cc5e30d85eda88c67cb8be6a7c43115bdfffe3a,Sam Woodman,swoodman213@gmail.com,2020-02-18T13:54:24-08:00,2020-02-18T13:54:24-08:00,0,5,25,21,0,More effort docs and cleaning
+swfscdas,a0f54509fb2cbff007d1305e1b42ecd723d50929,Sam Woodman,swoodman213@gmail.com,2020-02-18T13:07:41-08:00,2020-02-18T13:07:41-08:00,0,2,23,4,0,Reset BRPVNW conditions at every BR sequence
+swfscdas,89e91b8961992aab2716334692e0d95e236ffc52,Sam Woodman,swoodman213@gmail.com,2020-02-18T13:07:11-08:00,2020-02-18T13:07:11-08:00,0,1,6,0,0,Check before calculating dist_from_prev.
+swfscdas,31ee45b88f42dbd885d26d7e5537387f93cb0191,Sam Woodman,swoodman213@gmail.com,2020-02-18T10:10:01-08:00,2020-02-18T10:10:01-08:00,0,2,2,0,0,Q's
+swfscdas,8620d7a718c57e116a66fa507b5e2ce0933fa999,Sam Woodman,swoodman213@gmail.com,2020-02-18T10:09:45-08:00,2020-02-18T10:09:45-08:00,0,4,53,13,0,Created sample randpicks and re-integrate ? and 1:8 events after effort processing
+swfscdas,fa060ed19a5c918efd3d143932aa53cfc54a2355,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:25:22-08:00,2020-02-18T09:25:22-08:00,0,1,0,1,0,semantics
+swfscdas,600dde14be6081fc40e91e3509b4a687d6ab9674,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:24:28-08:00,2020-02-18T09:24:28-08:00,0,1,27,27,0,For consistency
+swfscdas,ba6c183b373d97c7b28c4459160ed31795e8c1b7,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:17:43-08:00,2020-02-18T09:17:43-08:00,0,9,1100,0,1,"First draft of _effort, _chop_equal, and _segdata_avg"
+swfscdas,0eac0e9592e8b95b9eb67840aae6982703185288,Sam Woodman,swoodman213@gmail.com,2020-02-18T09:16:55-08:00,2020-02-18T09:16:55-08:00,0,2,54,13,0,das_sight doesn't drop extra columns when mixed.multi is true
+swfscdas,41c8a94b4dabc14e5d0be4e9098fad485993793d,Sam Woodman,swoodman213@gmail.com,2020-02-11T13:58:39-08:00,2020-02-11T13:58:39-08:00,0,7,48,25,0,Added EffortDot to das_df object. Changed das_process so that it only throws a warning if number of R and E events are not equal (thus had to make how OnEffort was determined like swfscAirDAS)
+swfscdas,a3bf15675e4f6933d40c97a1cff8baf5046d4eee,Sam Woodman,swoodman213@gmail.com,2020-02-07T14:22:33-08:00,2020-02-07T14:22:33-08:00,0,6,100,113,0,"Docs, some updating _check with AirDAS lessons"
+swfscdas,db313df4821706632c18a8ef8a3b94d020896195,Sam Woodman,swoodman213@gmail.com,2020-02-03T17:01:44-08:00,2020-02-03T17:01:44-08:00,0,2,4,4,0,Doc
+swfscdas,7eeb46b94969c10658255db639d18c43839e02cb,Sam Woodman,swoodman213@gmail.com,2020-02-03T16:28:13-08:00,2020-02-03T16:28:13-08:00,0,2,20,10,0,Fix data-raw
+swfscdas,45c0f785e24bdabba2e685cc5b10237ac0d713e6,Sam Woodman,swoodman213@gmail.com,2020-02-03T12:00:35-08:00,2020-02-03T12:00:35-08:00,0,7,44,47,0,"das_sight returns a data frame without Data# columns, das_process doc improvement"
+swfscdas,afa53d81608087d8e7cb795b68922cc17fa32600,Sam Woodman,swoodman213@gmail.com,2020-02-03T16:00:47-03:00,2020-02-03T16:00:47-03:00,1,,,,,Merge pull request #3 from smwoodman/class_test
+swfscdas,3b18a35bf3c9d69925368438fafa7b4d4e129642,Sam Woodman,swoodman213@gmail.com,2020-02-03T10:59:25-08:00,2020-02-03T10:59:25-08:00,0,5,133,91,0,"Cleaning up docs and tests, pre merging branch"
+swfscdas,236d8d0ef93bdc1b4779a5fb65c7a2a7438b3b93,Sam Woodman,swoodman213@gmail.com,2020-02-01T18:20:22-08:00,2020-02-01T18:20:22-08:00,0,4,120,11,0,Added some function output checks
+swfscdas,4c0acf72d0cbe8777c21ba3b63f4cf48846c4f32,Sam Woodman,swoodman213@gmail.com,2020-02-01T17:56:10-08:00,2020-02-01T17:56:10-08:00,0,8,227,4,0,das_sight now returns a das_df object. Added subset methods based on sf and tibble. Added some tests
+swfscdas,8802d728c55eec662aebbf49e1429ecfaa45dfd9,Sam Woodman,swoodman213@gmail.com,2020-01-27T17:26:59-08:00,2020-01-27T17:26:59-08:00,0,3,73,22,0,Added a couple more sighitngs checks
+swfscdas,a1fe7ab9d4a52de05e1f537ac586c0f90a7e7327,Sam Woodman,swoodman213@gmail.com,2020-01-27T16:53:25-08:00,2020-01-27T16:53:25-08:00,0,3,185,52,0,Added some sighting checks to das_check
+swfscdas,33d24e164e10695dcc4933734c933e9d09a7668c,Sam Woodman,swoodman213@gmail.com,2020-01-27T15:02:49-08:00,2020-01-27T15:02:49-08:00,0,2,24,18,0,"Change bearing, reticle, and distance to numeric in output. Doc fixes"
+swfscdas,1d1a83e49107aba1e9f2609009b1101fd28ac8ec,Sam Woodman,swoodman213@gmail.com,2020-01-27T14:24:02-08:00,2020-01-27T14:24:02-08:00,0,4,25,2,0,More das_check..
+swfscdas,69cac6e71f050f666dff5ef205513404c46fcebb,Sam Woodman,swoodman213@gmail.com,2020-01-27T14:06:41-08:00,2020-01-27T14:06:41-08:00,0,3,47,37,0,"Cleaning up das_check, added line number column"
+swfscdas,4c48b39d5b7aec0910ea15adca4029d9fea9e224,Sam Woodman,swoodman213@gmail.com,2020-01-27T13:45:50-08:00,2020-01-27T13:45:50-08:00,0,3,110,28,0,Working on das_check - checks data added in das_process
+swfscdas,2e038010c89595deeaad2acb88caeea1cb562e43,smwoodman,swoodman213@gmail.com,2020-01-27T10:02:02-08:00,2020-01-27T10:02:02-08:00,0,4,147,0,0,Working on das_check
+swfscdas,7f9420f0ebbb14b7eb8fbbb31bb5e5e72f29053e,smwoodman,swoodman213@gmail.com,2020-01-20T19:14:20-03:00,2020-01-20T19:14:20-03:00,0,4,34,26,0,Made columns not have to be in order for as_ functions
+swfscdas,f9b64eff45b8673dec8650bced5f88c3ed9b465a,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:48:32-08:00,2020-01-14T13:48:32-08:00,0,4,2,6,0,Cleanup now that travis-pkgdown works
+swfscdas,7d263a6328b9dc30fdf2974581397d24a8c7e6c5,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:22:02-08:00,2020-01-14T13:22:02-08:00,0,1,11,7,0,travis..
+swfscdas,5ba519a3fe32d7fabb31e70b0702345e8e88dec0,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:17:27-08:00,2020-01-14T13:17:27-08:00,0,2,2,2,0,tavis pkgdown..
+swfscdas,ddcfb11810ca06dc4faac002b33d81d57cf9dfce,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:11:56-08:00,2020-01-14T13:11:56-08:00,0,2,4,0,0,testing pkgdown..
+swfscdas,f4298565e9569a0005b1ec832d18ddd69dd6208b,Sam Woodman,swoodman213@gmail.com,2020-01-14T13:11:11-08:00,2020-01-14T13:11:11-08:00,0,1,12,0,0,travis pkgdown..
+swfscdas,5ed7254ad9e47c6c869aaddde9202365ede6e80b,Sam Woodman,swoodman213@gmail.com,2020-01-14T12:54:06-08:00,2020-01-14T12:54:06-08:00,0,3,3,19,0,Migrate travis to travis-ci.com
+swfscdas,4a42b5406af52bf6428b10bcd399039c388a8601,Sam Woodman,swoodman213@gmail.com,2020-01-10T11:33:22-08:00,2020-01-10T11:33:22-08:00,0,2,10,3,0,"Added g, p, X, Y, and Z event codes for 2014-2018 event codes"
+swfscdas,5675f45c17b8c43968c64b3b1063290475261f86,Sam Woodman,swoodman213@gmail.com,2020-01-06T14:18:38-08:00,2020-01-06T14:18:38-08:00,0,2,261,270,0,Cleaning das_sample code
+swfscdas,1219b74cfc7d73e864e20bf39f2a9abf74dca791,Sam Woodman,swoodman213@gmail.com,2020-01-06T14:05:12-08:00,2020-01-06T14:05:12-08:00,0,2,2,2,0,Doc update
+swfscdas,78f4811c05201e3edb65064a10a5fda5dde50b08,Sam Woodman,swoodman213@gmail.com,2020-01-06T12:33:54-08:00,2020-01-06T12:33:54-08:00,0,1,77,0,0,Started creating simple das file for unit testing
+swfscdas,ada25e541122f6d34122a7b64a1a887297ab37e0,Sam Woodman,swoodman213@gmail.com,2020-01-03T17:08:41-08:00,2020-01-03T17:08:41-08:00,0,2,10,11,0,Cleaning up
+swfscdas,c22ee204f1b498c210813647cf4eeac8898a96ff,Sam Woodman,swoodman213@gmail.com,2020-01-03T15:54:27-08:00,2020-01-03T15:54:27-08:00,0,2,322,227,0,Made sample file more general (aka without K events)
+swfscdas,58290319d8f8a7b46aaf9e4d1f9349bf6ef2904c,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:24:51-08:00,2020-01-03T11:24:51-08:00,0,4,7,9,0,auto deployment of pkgdown on travis
+swfscdas,b3cd5ed451bc41cc9930675160f3784be86bd30b,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:10:49-08:00,2020-01-03T11:10:49-08:00,0,1,9,5,0,trying dplyr travis
+swfscdas,81fe071454333cc93e2f1e4644508bec2d5149ea,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:09:22-08:00,2020-01-03T11:09:22-08:00,0,1,6,0,0,travis
+swfscdas,9e8fa100251eb1c872c4f5d4f84a9500ef5e6d34,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:05:51-08:00,2020-01-03T11:05:51-08:00,0,1,0,6,0,test3
+swfscdas,b05be586d3c8b7ef0fb0112f418c65ccc350ee3b,Sam Woodman,swoodman213@gmail.com,2020-01-03T11:02:44-08:00,2020-01-03T11:02:44-08:00,0,1,1,1,0,test 2
+swfscdas,01a161e94f31b1c4b2c03765e9e0cc333af8211e,Sam Woodman,swoodman213@gmail.com,2020-01-03T10:54:40-08:00,2020-01-03T10:54:40-08:00,0,3,8,6,0,Testing pkgdown-travis integration
+swfscdas,65fccddd9a894204530112f2593a4a0d7405e3c5,Sam Woodman,swoodman213@gmail.com,2020-01-03T10:37:15-08:00,2020-01-03T10:37:15-08:00,0,21,7,5530,0,"Remove docs, working on pkgdown-travis"
+swfscdas,d0e2a3a4a6e67c838f335c873578a8d92b64244b,Sam Woodman,swoodman213@gmail.com,2020-01-02T17:31:30-08:00,2020-01-02T17:31:30-08:00,0,5,457,18,0,pkgdown update
+swfscdas,aad096d1cab1787f6f2c500ddc1c423d6dda5ad4,Sam Woodman,swoodman213@gmail.com,2020-01-02T17:29:58-08:00,2020-01-02T17:29:58-08:00,0,8,262,26,0,Documentation describing das_dfr and das_df classes
+swfscdas,ea168d05ec2f4f514711fd78e0aeeb4cca3ea0a8,Sam Woodman,swoodman213@gmail.com,2020-01-02T17:06:49-08:00,2020-01-02T17:06:49-08:00,0,3,4,3,0,Change eventNum from numeric to integer
+swfscdas,405d7a240bb307b1ed1eef5485d1e45bd1c456bf,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:56:32-08:00,2020-01-02T14:56:32-08:00,0,6,1524,1478,0,Update pkgdown
+swfscdas,886e86604b91789cba056397bf7ad13c2becf3d9,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:54:23-08:00,2020-01-02T14:54:23-08:00,0,2,50,80,0,Made all sighitng columns Pascal case
+swfscdas,e4e349d0a0b8de015f7194f0fc4ab003eb7845d2,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:32:56-08:00,2020-01-02T14:32:56-08:00,0,7,48,59,0,Consistency..event_num to EventNum
+swfscdas,90b252ea518d45a934aa8e2f82b075f4fe0f1539,Sam Woodman,swoodman213@gmail.com,2020-01-02T14:22:29-08:00,2020-01-02T14:22:29-08:00,0,6,184,58,0,Added mixed multi functionality to das_sight. made progress on documentation
+swfscdas,f67721fedbee6b81364e387171775a7d38232eb2,Sam Woodman,swoodman213@gmail.com,2020-01-02T11:42:36-08:00,2020-01-02T11:42:36-08:00,0,2,162,152,0,Added turtle sighting to sample data
+swfscdas,7c3c8d21dd6a1a0d279bd84e0a38426f2adccf3a,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:56:16-08:00,2019-12-31T16:56:16-08:00,0,16,2911,55,0,Added examples using sample das file; updated some docs and pkgdown site
+swfscdas,e581230ba95c50e44dc8a4cd04e087567b852883,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:25:39-08:00,2019-12-31T16:25:39-08:00,1,,,,,Merge pull request #2 from smwoodman/das_class
+swfscdas,044247f824077b92f7e65646552e5807b9519017,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:20:15-08:00,2019-12-31T16:20:15-08:00,0,1,27,29,0,Doc
+swfscdas,6d7b2190ebadfe16a42d90a68161e667d1e18fb6,Sam Woodman,swoodman213@gmail.com,2019-12-31T16:12:01-08:00,2019-12-31T16:12:01-08:00,0,4,411,0,0,Created das sample file
+swfscdas,d27b2a2cebcf8e9ea69df73edd0092b1430b24b3,Sam Woodman,swoodman213@gmail.com,2019-12-24T14:27:49-08:00,2019-12-24T14:27:49-08:00,0,12,362,114,0,"Created das_dfr and das_df classes, and created das_read, das_process, and das_sight methods for them. Todo: documentation"
+swfscdas,fc0f307d194474148a0351489989bff8ed0caf02,Sam Woodman,swoodman213@gmail.com,2019-12-18T17:23:00-08:00,2019-12-18T17:23:00-08:00,0,4,209,0,0,Working on das_sight; basic SKM sighting code is in place
+swfscdas,8fcc555ea21b41bf4953b59ae9e1787af0be31fb,Sam Woodman,swoodman213@gmail.com,2019-12-12T18:07:07-08:00,2019-12-12T18:07:07-08:00,0,3,14,11,0,Added Data9 column
+swfscdas,5b2af61f3dfcfe721fe52ea397572cb6217c56bd,Sam Woodman,swoodman213@gmail.com,2019-12-12T16:55:30-08:00,2019-12-12T16:55:30-08:00,0,1,2,1,0,doc update
+swfscdas,fedceab5ac7c064491a71fae23fa4028076a2b51,Sam Woodman,swoodman213@gmail.com,2019-12-05T18:38:27-08:00,2019-12-05T18:38:27-08:00,0,5,27,20,0,Making das_read doc consistent with airdas_read
+swfscdas,b0a8fc14f3affbf81e6af4177c01b452da77782e,Sam Woodman,swoodman213@gmail.com,2019-12-05T18:26:27-08:00,2019-12-05T18:26:27-08:00,0,4,23,7,0,das_read can now handle multiple file names
+swfscdas,8acc0b7c946ecf1a0948bd1ab61a45acafa6ac61,Sam Woodman,swoodman213@gmail.com,2019-12-05T17:43:18-08:00,2019-12-05T17:43:18-08:00,0,27,2269,116,4,Removed format vignette b/c of display issues on pkgdown sites; added links to format pdf to download
+swfscdas,a7990ce63e65a4e4f96d73ae43d2fc737951b2ad,Sam Woodman,swoodman213@gmail.com,2019-11-26T13:24:23-08:00,2019-11-26T13:24:23-08:00,0,4,50,29,0,Doc update. B events immediatley preceding R events are on effort. Added warning check for event code
+swfscdas,1e9884fe873f49cf47d6d02b286f828a2bf6fbc7,Sam Woodman,swoodman213@gmail.com,2019-11-25T14:59:00-08:00,2019-11-25T14:59:00-08:00,0,12,105,0,5,"Added inst with format pdf, vignette displaying pdf, function to save pdf where desired by user"
+swfscdas,f5dbec760125b4d93764373aac1008dfc199e4e7,Sam Woodman,swoodman213@gmail.com,2019-11-25T14:48:39-08:00,2019-11-25T14:48:39-08:00,0,1,1,0,0,forgot to incldue with last commit
+swfscdas,ecc8b7930cb7bb42fe4b3d76f61724bb207e7271,Sam Woodman,swoodman213@gmail.com,2019-11-25T14:46:43-08:00,2019-11-25T14:46:43-08:00,0,2,13,15,0,"Remove old args, fixed day gap bug"
+swfscdas,39efc759a07bbf7daf8cc2357c925f8e7d080962,Sam Woodman,swoodman213@gmail.com,2019-11-25T13:05:18-08:00,2019-11-25T13:05:18-08:00,0,2,3,9,0,Fixed indexing bug
+swfscdas,8e16801b01f1561b946a00afecb39751caa7f9e9,Sam Woodman,swoodman213@gmail.com,2019-11-22T16:38:13-08:00,2019-11-22T16:38:13-08:00,0,6,220,211,0,Standardizing das/airdas doc
+swfscdas,83b60f4c86f48d4413d599be01d65f7ddce8bcc2,Sam Woodman,swoodman213@gmail.com,2019-11-22T12:09:37-08:00,2019-11-22T12:09:37-08:00,0,4,22,22,0,use names() instead of purrr::setnames (simpler)
+swfscdas,cf129ef8738650c68949f803245a2f5fd4821db4,Sam Woodman,swoodman213@gmail.com,2019-11-15T11:38:30-08:00,2019-11-15T11:38:30-08:00,0,2,72,131,0,"Doc update, removed cruise.name, cruise.num, and ship.name args for simplicity at the moment"
+swfscdas,3786f0742858706a929a68aa098071bb48220919,Sam Woodman,swoodman213@gmail.com,2019-11-15T11:33:12-08:00,2019-11-15T11:33:12-08:00,0,2,32,25,0,Added tz arg to das_read; makes strptime much faster
+swfscdas,0699ac6ef21a5043db4a8a66beb187aa31579377,Sam Woodman,swoodman213@gmail.com,2019-11-15T09:14:57-08:00,2019-11-15T09:14:57-08:00,0,4,155,88,0,"Roxygen update, cleaned up das_process"
+swfscdas,1c4d33718ddd9593636e89b2e2cabe850627661d,Sam Woodman,swoodman213@gmail.com,2019-11-04T10:15:53-08:00,2019-11-04T10:15:53-08:00,0,2,13,16,0,Internals start with '.'
+swfscdas,49c49b93b40882c06010c60dc7788635f871758e,Sam Woodman,swoodman213@gmail.com,2019-11-01T17:37:33-07:00,2019-11-01T17:37:33-07:00,0,1,21,39,0,Cleaning - do all extra variable processing after for loop
+swfscdas,14b6987a8fa4a50f180f5c192a54d65e2e557722,Sam Woodman,swoodman213@gmail.com,2019-11-01T16:11:34-07:00,2019-11-01T16:11:34-07:00,0,4,78,93,0,Added internals to streamline das_process
+swfscdas,ffbaf0a333e44618d5f42d82238a9af929e508c3,Sam Woodman,swoodman213@gmail.com,2019-11-01T12:53:17-07:00,2019-11-01T12:53:17-07:00,0,4,153,87,0,"Modeled das_read after airdas_read, i.e. using read_fwf, better processing of Data# columns, etc. Todo: handle non UTF-8 characters in comments as necessary per Jim's decision"
+swfscdas,67ab9dcf665fb4a41f0fabf82cf697fa46170180,Sam Woodman,swoodman213@gmail.com,2019-11-01T10:59:17-07:00,2019-11-01T10:59:17-07:00,0,5,70,0,0,Added travis and appveyor
+swfscdas,957a1b12d6466e897a6358739311094acefbd1f1,Sam Woodman,swoodman213@gmail.com,2019-10-30T18:10:06-07:00,2019-10-30T18:10:06-07:00,0,2,7,4,0,Doc update
+swfscdas,ccb798e00915a9bf050bdf8a9c8122f551c45c66,Sam Woodman,swoodman213@gmail.com,2019-10-29T16:45:57-07:00,2019-10-29T16:45:57-07:00,0,7,455,24,0,Added das_process and formatted documentation
+swfscdas,1824c102c30849af64d873078264a8020fd56ee7,Sam Woodman,swoodman213@gmail.com,2019-10-29T13:19:16-07:00,2019-10-29T13:19:16-07:00,0,7,752,677,0,"Added das_read, created licence.md with usethis"
+swfscdas,d58a5e39729866d8d6a9171f6e768df3404c7a0f,Sam Woodman,swoodman213@gmail.com,2019-10-29T12:33:36-07:00,2019-10-29T12:33:36-07:00,0,7,845,22,0,Secondary commit
+swfscdas,3bfaf224447016b8258c31d0400de780dc6fa51f,Sam Woodman,swoodman213@gmail.com,2019-10-29T12:10:04-07:00,2019-10-29T12:10:04-07:00,0,3,59,0,0,Initial commit

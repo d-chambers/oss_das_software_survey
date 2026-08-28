@@ -1,8 +1,8 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-dasgauge,included,5cedb2b556e6391b2dd8509d61cde787d14baae9,Chao,cwu377@wisc.edu,2026-08-22T01:23:00-05:00,2026-08-22T01:23:00-05:00,0,5,1286,0,0,Archive no-gap C2ST diagnostic
-dasgauge,included,b45a8d9b3ead7777d15b3701f44901bdd4d4b10c,Chao,cwu377@wisc.edu,2026-08-21T16:10:22-05:00,2026-08-21T16:10:22-05:00,0,2,25,4,0,Fix ResNet input dtype with NumPy 2
-dasgauge,included,cb71d81c99bb745140b53f6023a0a473b1e31ee6,Chao,cwu377@wisc.edu,2026-08-21T14:33:46-05:00,2026-08-21T14:33:46-05:00,0,1,13,4,0,List runtime requirements explicitly
-dasgauge,included,3224376d7719ef8e7114a8e7932c117708c00169,Chao,cwu377@wisc.edu,2026-08-21T14:26:35-05:00,2026-08-21T14:26:35-05:00,0,33,8454,41,0,Add reproducible paired C2ST workflow
-dasgauge,included,59bf5be2da615b7bd069fa3c4c0f2d932e22807d,Chao,cwu377@wisc.edu,2026-07-31T17:53:15-05:00,2026-07-31T17:53:15-05:00,0,1,147,0,0,Add CLAUDE.md with architecture notes and behavioral guidelines
-dasgauge,included,1f23d2181caabf5b96a75073850a4ae4f2330d1d,Chao,cwu377@wisc.edu,2026-07-31T00:39:03-05:00,2026-07-31T00:39:03-05:00,0,14,2412,0,0,Import selected DAS utilities from DAS_Preprocessing
-dasgauge,included,c71615e145808baeee3d60a2882f8f567a3cdb78,cwu377,115200108+cwu377@users.noreply.github.com,2026-07-30T23:49:01-05:00,2026-07-30T23:49:01-05:00,0,1,21,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+dasgauge,5cedb2b556e6391b2dd8509d61cde787d14baae9,Chao,cwu377@wisc.edu,2026-08-22T01:23:00-05:00,2026-08-22T01:23:00-05:00,0,5,1286,0,0,Archive no-gap C2ST diagnostic
+dasgauge,b45a8d9b3ead7777d15b3701f44901bdd4d4b10c,Chao,cwu377@wisc.edu,2026-08-21T16:10:22-05:00,2026-08-21T16:10:22-05:00,0,2,25,4,0,Fix ResNet input dtype with NumPy 2
+dasgauge,cb71d81c99bb745140b53f6023a0a473b1e31ee6,Chao,cwu377@wisc.edu,2026-08-21T14:33:46-05:00,2026-08-21T14:33:46-05:00,0,1,13,4,0,List runtime requirements explicitly
+dasgauge,3224376d7719ef8e7114a8e7932c117708c00169,Chao,cwu377@wisc.edu,2026-08-21T14:26:35-05:00,2026-08-21T14:26:35-05:00,0,33,8454,41,0,Add reproducible paired C2ST workflow
+dasgauge,59bf5be2da615b7bd069fa3c4c0f2d932e22807d,Chao,cwu377@wisc.edu,2026-07-31T17:53:15-05:00,2026-07-31T17:53:15-05:00,0,1,147,0,0,Add CLAUDE.md with architecture notes and behavioral guidelines
+dasgauge,1f23d2181caabf5b96a75073850a4ae4f2330d1d,Chao,cwu377@wisc.edu,2026-07-31T00:39:03-05:00,2026-07-31T00:39:03-05:00,0,14,2412,0,0,Import selected DAS utilities from DAS_Preprocessing
+dasgauge,c71615e145808baeee3d60a2882f8f567a3cdb78,cwu377,115200108+cwu377@users.noreply.github.com,2026-07-30T23:49:01-05:00,2026-07-30T23:49:01-05:00,0,1,21,0,0,Initial commit

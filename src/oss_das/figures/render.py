@@ -26,7 +26,7 @@ def _converter() -> str:
     if found is None:
         raise RenderError(
             "inkscape is not installed, so no PDF can be written. "
-            "Install it (apt install inkscape), or pass --no-pdf to write SVG only."
+            "Install it (apt install inkscape), or drop --pdf to write SVG only."
         )
     return found
 

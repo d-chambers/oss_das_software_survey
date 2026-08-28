@@ -119,12 +119,16 @@ class JsonClient:
         return min(requested, MAX_RETRY_DELAY)
 
     def get_response(
-        self, path: str, *, params: dict[str, str | int] | None = None
+        self,
+        path: str,
+        *,
+        params: dict[str, str | int] | None = None,
+        headers: dict[str, str] | None = None,
     ) -> httpx.Response:
         for attempt in range(self.max_attempts):
             self._wait_for_slot()
             try:
-                response = self.client.get(path, params=params)
+                response = self.client.get(path, params=params, headers=headers)
             except httpx.RequestError as error:
                 # Timeouts and connection resets are transient. Retrying them
                 # here, and reporting them as a SourceError once the attempts
@@ -147,8 +151,14 @@ class JsonClient:
                 time.sleep(self._retry_delay(response, attempt))
         raise SourceError(f"{response.url}: repeated HTTP {response.status_code}")
 
-    def get_json(self, path: str, *, params: dict[str, str | int] | None = None) -> Any:
-        response = self.get_response(path, params=params)
+    def get_json(
+        self,
+        path: str,
+        *,
+        params: dict[str, str | int] | None = None,
+        headers: dict[str, str] | None = None,
+    ) -> Any:
+        response = self.get_response(path, params=params, headers=headers)
         try:
             return response.json()
         except ValueError as error:

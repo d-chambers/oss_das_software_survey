@@ -1,14 +1,14 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-das-realtime,included,f7ebe1eecfb7cfdf0cda72470faee72d430fa331,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2026-01-06T08:49:34-08:00,2026-01-06T08:49:34-08:00,0,1,119,25,0,Added OptaSenseStreamReader
-das-realtime,included,ec2e312d5b7c2d82c737d6ee5c849ca1462b94b4,Ettore Biondi,ettore88@sep.stanford.edu,2025-09-18T19:22:13-07:00,2025-09-18T19:22:13-07:00,0,1,2,2,0,Fixed peak amplitude extraction description
-das-realtime,included,3a7f77672694a79119d81cbdcf534412a594d48f,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-07-19T10:41:33-07:00,2025-07-19T10:41:33-07:00,0,1,3,2,0,Fixed deallocation cuda for DAS_ML in case cpu is used
-das-realtime,included,d650afe523d07255c0f38b8e3089c89860fc4b75,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-05-29T16:53:24-07:00,2025-05-29T16:53:24-07:00,0,1,5,0,0,Updated README
-das-realtime,included,6d9cde0ed2b7179e0d2033a456ce51cf0a99a6d9,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-05-01T15:39:21-07:00,2025-05-01T15:39:21-07:00,0,4,459,240,0,Updated code for release
-das-realtime,included,b5f42a8a4e5666d30fe7049fd22fc2ecd739c77a,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-19T14:03:10-08:00,2025-02-19T14:03:10-08:00,0,3,55,27,0,Fixed minor issues
-das-realtime,included,e134b87d4cb435795c0ee5c6cafcb9318e8f2c68,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-06T19:15:22-08:00,2025-02-06T19:15:22-08:00,0,1,19,0,0,Added extract_peak_amp to DAS_ML.py
-das-realtime,included,b39fe8325b96ea432d483d31aca24702a3db6c59,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-03T15:35:21-08:00,2025-02-03T15:35:21-08:00,0,1,0,2,0,Updated installation
-das-realtime,included,b2f2a1ea462e054f9d9fa57e938a82a5063a5f59,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-03T15:34:26-08:00,2025-02-03T15:34:26-08:00,0,1,1,1,0,Updated installation
-das-realtime,included,9948716ad21a5cfc3480ed779525cf37c965f6c0,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-03T15:33:11-08:00,2025-02-03T15:33:11-08:00,0,5,508,273,0,Added installation guide and tested program
-das-realtime,included,93351c0c9d840a6291a0418e479a349b839a3749,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-01-28T17:57:51-08:00,2025-01-28T17:57:51-08:00,0,2,4,0,0,Added EQNet
-das-realtime,included,2d1ab6fce04e904210e0169be0d1de8a1eb5d857,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2024-07-12T10:35:18-07:00,2024-07-12T10:35:18-07:00,0,4,849,1,0,Added initial commit
-das-realtime,included,8fa041b1a0bf86eb7a3a6b34b7c4387a93f91f6e,Ettore Biondi,45108114+biondiettore@users.noreply.github.com,2024-07-11T13:09:10-07:00,2024-07-11T13:09:10-07:00,0,3,837,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-realtime,f7ebe1eecfb7cfdf0cda72470faee72d430fa331,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2026-01-06T08:49:34-08:00,2026-01-06T08:49:34-08:00,0,1,119,25,0,Added OptaSenseStreamReader
+das-realtime,ec2e312d5b7c2d82c737d6ee5c849ca1462b94b4,Ettore Biondi,ettore88@sep.stanford.edu,2025-09-18T19:22:13-07:00,2025-09-18T19:22:13-07:00,0,1,2,2,0,Fixed peak amplitude extraction description
+das-realtime,3a7f77672694a79119d81cbdcf534412a594d48f,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-07-19T10:41:33-07:00,2025-07-19T10:41:33-07:00,0,1,3,2,0,Fixed deallocation cuda for DAS_ML in case cpu is used
+das-realtime,d650afe523d07255c0f38b8e3089c89860fc4b75,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-05-29T16:53:24-07:00,2025-05-29T16:53:24-07:00,0,1,5,0,0,Updated README
+das-realtime,6d9cde0ed2b7179e0d2033a456ce51cf0a99a6d9,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-05-01T15:39:21-07:00,2025-05-01T15:39:21-07:00,0,4,459,240,0,Updated code for release
+das-realtime,b5f42a8a4e5666d30fe7049fd22fc2ecd739c77a,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-19T14:03:10-08:00,2025-02-19T14:03:10-08:00,0,3,55,27,0,Fixed minor issues
+das-realtime,e134b87d4cb435795c0ee5c6cafcb9318e8f2c68,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-06T19:15:22-08:00,2025-02-06T19:15:22-08:00,0,1,19,0,0,Added extract_peak_amp to DAS_ML.py
+das-realtime,b39fe8325b96ea432d483d31aca24702a3db6c59,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-03T15:35:21-08:00,2025-02-03T15:35:21-08:00,0,1,0,2,0,Updated installation
+das-realtime,b2f2a1ea462e054f9d9fa57e938a82a5063a5f59,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-03T15:34:26-08:00,2025-02-03T15:34:26-08:00,0,1,1,1,0,Updated installation
+das-realtime,9948716ad21a5cfc3480ed779525cf37c965f6c0,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-02-03T15:33:11-08:00,2025-02-03T15:33:11-08:00,0,5,508,273,0,Added installation guide and tested program
+das-realtime,93351c0c9d840a6291a0418e479a349b839a3749,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2025-01-28T17:57:51-08:00,2025-01-28T17:57:51-08:00,0,2,4,0,0,Added EQNet
+das-realtime,2d1ab6fce04e904210e0169be0d1de8a1eb5d857,Ettore Biondi,ebiondi@glass.gps.caltech.edu,2024-07-12T10:35:18-07:00,2024-07-12T10:35:18-07:00,0,4,849,1,0,Added initial commit
+das-realtime,8fa041b1a0bf86eb7a3a6b34b7c4387a93f91f6e,Ettore Biondi,45108114+biondiettore@users.noreply.github.com,2024-07-11T13:09:10-07:00,2024-07-11T13:09:10-07:00,0,3,837,0,0,Initial commit

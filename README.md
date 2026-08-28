@@ -24,7 +24,7 @@ notebooks/
   review.py                         A  local marimo app
   ecosystem.py                      C  published notebook, slides layout
   public/*.csv                      C  tables; marimo ships public/ with the export
-figures/<name>.svg + .json          V  one per script, with its numbers
+figures/<name>.svg, .pdf, figures.json V  one per script; the sidecar holds their numbers
 scripts/                               docstrings say what each reads and writes
 ```
 
@@ -39,6 +39,8 @@ scripts/                               docstrings say what each reads and writes
 
 ## Run
 
+`scripts/run_all.sh` runs A (without the model layer unless `RUN_MODELS=1`), B, and C in order, stopping at the first failure. Step by step:
+
 ```bash
 uv sync && export GITHUB_TOKEN=... ANTHROPIC_API_KEY=...
 uv run python scripts/a010_discover_forges.py      # then a011, a020, a021
@@ -47,7 +49,7 @@ uv run python scripts/b010_mirror.py               # then b011–b014
 uv run python scripts/c010_build_tables.py
 uv run marimo run notebooks/ecosystem.py           # offline talk
 uv run marimo export html-wasm notebooks/ecosystem.py -o site/   # GitHub Pages
-uv run python scripts/v010_ecosystem_totals.py
+uv run python scripts/v000_build_all.py           # or any v0NN script alone
 ```
 
 Code MIT; dataset and site content CC BY 4.0.

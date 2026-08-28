@@ -1,14 +1,14 @@
-project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
-multi-res-viewer,included,448d593c44da6cf81ea38fed145693ef12f4063c,Ge Jin,jinwar@gmail.com,2023-10-16T21:24:23-06:00,2023-10-16T21:24:23-06:00,0,1,4,0,0,Update .gitignore
-multi-res-viewer,included,ae7d17cb10553f3bdd522cc3c5a1faa7def7c427,Ge Jin,jinwar@gmail.com,2023-10-16T21:23:50-06:00,2023-10-16T21:23:50-06:00,0,1,0,0,1,Update .DS_Store
-multi-res-viewer,included,c73e4e9375dab6d34e5e5b74d7726601d9409103,Ge Jin,jinwar@gmail.com,2023-10-16T14:40:15-06:00,2023-10-16T14:40:15-06:00,0,3,358,26,1,update input from folder to spool to give user more flexibility.
-multi-res-viewer,included,c084f35eacdad87b9222bb35d07608abcbabbcca,Ge Jin,jinwar@gmail.com,2023-10-16T14:39:00-06:00,2023-10-16T14:39:00-06:00,0,1,5,5,0,Update viz.py
-multi-res-viewer,included,6967ac4058cc03ca7295329dff4c805b5c2b7902,Ge Jin,jinwar@gmail.com,2023-10-16T12:10:55-06:00,2023-10-16T12:10:55-06:00,0,1,3,3,0,Update process.py
-multi-res-viewer,included,0c62603da41c2ea5a14f915b9a8d425eaf04d975,Ge Jin,jinwar@gmail.com,2023-10-16T11:19:20-06:00,2023-10-16T11:19:20-06:00,0,1,4,1,0,Update README.md
-multi-res-viewer,included,85dd9cf97874fc1e9c947cff4ccb67bb57f248c9,Ge Jin,jinwar@gmail.com,2023-10-16T11:11:21-06:00,2023-10-16T11:11:21-06:00,0,1,10,22,0,Update Multi-resolution interactive viewer example.ipynb
-multi-res-viewer,included,4423eb83caf4d6faebc8be70a67b4360f1971cc2,Ge Jin,jinwar@gmail.com,2023-10-16T11:03:28-06:00,2023-10-16T11:03:28-06:00,0,4,1927,3,1,update examples
-multi-res-viewer,included,492ba71b64db36f7da23e016000030724ddb4b0f,Ge Jin,jinwar@gmail.com,2023-10-16T10:27:26-06:00,2023-10-16T10:27:26-06:00,0,1,17,0,0,adding check_folder function
-multi-res-viewer,included,533927664f736cbecff594346a272474bab81425,Ge Jin,jinwar@gmail.com,2023-08-15T10:12:00-05:00,2023-08-15T10:12:00-05:00,0,1,8,6,0,first stable version
-multi-res-viewer,included,c84608aa85e26a7028c0146b60c0d9adb33450fe,Ge Jin,jinwar@gmail.com,2023-08-14T22:22:47-05:00,2023-08-14T22:22:47-05:00,0,1,143,0,0,adding interactive viewer
-multi-res-viewer,included,ce7b38dde1ae381fd84717d4963c261ee0857367,Ge Jin,jinwar@gmail.com,2023-07-21T08:39:30-05:00,2023-07-21T08:39:30-05:00,0,1,78,0,0,adding downsample processing
-multi-res-viewer,included,4640e5676ce2d9d868cfcdb601ec04d6f6f72f0a,Ge Jin,jinwar@gmail.com,2023-07-08T18:08:31+08:00,2023-07-08T18:08:31+08:00,0,4,830,0,0,Initial commit
+project_id,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+multi-res-viewer,448d593c44da6cf81ea38fed145693ef12f4063c,Ge Jin,jinwar@gmail.com,2023-10-16T21:24:23-06:00,2023-10-16T21:24:23-06:00,0,1,4,0,0,Update .gitignore
+multi-res-viewer,ae7d17cb10553f3bdd522cc3c5a1faa7def7c427,Ge Jin,jinwar@gmail.com,2023-10-16T21:23:50-06:00,2023-10-16T21:23:50-06:00,0,1,0,0,1,Update .DS_Store
+multi-res-viewer,c73e4e9375dab6d34e5e5b74d7726601d9409103,Ge Jin,jinwar@gmail.com,2023-10-16T14:40:15-06:00,2023-10-16T14:40:15-06:00,0,3,358,26,1,update input from folder to spool to give user more flexibility.
+multi-res-viewer,c084f35eacdad87b9222bb35d07608abcbabbcca,Ge Jin,jinwar@gmail.com,2023-10-16T14:39:00-06:00,2023-10-16T14:39:00-06:00,0,1,5,5,0,Update viz.py
+multi-res-viewer,6967ac4058cc03ca7295329dff4c805b5c2b7902,Ge Jin,jinwar@gmail.com,2023-10-16T12:10:55-06:00,2023-10-16T12:10:55-06:00,0,1,3,3,0,Update process.py
+multi-res-viewer,0c62603da41c2ea5a14f915b9a8d425eaf04d975,Ge Jin,jinwar@gmail.com,2023-10-16T11:19:20-06:00,2023-10-16T11:19:20-06:00,0,1,4,1,0,Update README.md
+multi-res-viewer,85dd9cf97874fc1e9c947cff4ccb67bb57f248c9,Ge Jin,jinwar@gmail.com,2023-10-16T11:11:21-06:00,2023-10-16T11:11:21-06:00,0,1,10,22,0,Update Multi-resolution interactive viewer example.ipynb
+multi-res-viewer,4423eb83caf4d6faebc8be70a67b4360f1971cc2,Ge Jin,jinwar@gmail.com,2023-10-16T11:03:28-06:00,2023-10-16T11:03:28-06:00,0,4,1927,3,1,update examples
+multi-res-viewer,492ba71b64db36f7da23e016000030724ddb4b0f,Ge Jin,jinwar@gmail.com,2023-10-16T10:27:26-06:00,2023-10-16T10:27:26-06:00,0,1,17,0,0,adding check_folder function
+multi-res-viewer,533927664f736cbecff594346a272474bab81425,Ge Jin,jinwar@gmail.com,2023-08-15T10:12:00-05:00,2023-08-15T10:12:00-05:00,0,1,8,6,0,first stable version
+multi-res-viewer,c84608aa85e26a7028c0146b60c0d9adb33450fe,Ge Jin,jinwar@gmail.com,2023-08-14T22:22:47-05:00,2023-08-14T22:22:47-05:00,0,1,143,0,0,adding interactive viewer
+multi-res-viewer,ce7b38dde1ae381fd84717d4963c261ee0857367,Ge Jin,jinwar@gmail.com,2023-07-21T08:39:30-05:00,2023-07-21T08:39:30-05:00,0,1,78,0,0,adding downsample processing
+multi-res-viewer,4640e5676ce2d9d868cfcdb601ec04d6f6f72f0a,Ge Jin,jinwar@gmail.com,2023-07-08T18:08:31+08:00,2023-07-08T18:08:31+08:00,0,4,830,0,0,Initial commit

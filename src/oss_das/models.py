@@ -1,7 +1,8 @@
-"""Validated records shared by collection, analysis, and rendering scripts."""
+"""Validated records shared by the numbered scripts."""
 
 from __future__ import annotations
 
+import re
 from enum import StrEnum
 from typing import Any, Literal
 
@@ -39,21 +40,31 @@ DEFAULT_FORGE_HOSTS = {
 class LicenseClass(StrEnum):
     """How freely a catalogued code can actually be reused.
 
-    Licensing is treated as a measured property of the ecosystem rather than
-    as an entry gate. Excluding non-OSI code would answer "how much OSI
-    software exists" with a list built by excluding everything else, which
-    cannot then be used to say what share of the ecosystem is open.
+    Licensing is a measured property of the ecosystem rather than an entry
+    gate: excluding non-OSI code would make "what share is open" unanswerable.
     """
 
     #: An OSI-approved license, or a public-domain dedication such as CC0.
     OSI_APPROVED = "osi-approved"
-    #: Published source under terms that fail the Open Source Definition,
-    #: typically a NonCommercial clause or an academic/commercial split.
+    #: Published source under terms that fail the Open Source Definition.
     SOURCE_AVAILABLE = "source-available"
     #: Public source with no license file, which grants no reuse rights at all.
     UNLICENSED = "unlicensed"
     #: Terms exist but could not be resolved to either class on review.
     UNKNOWN = "unknown"
+
+
+class DasFocus(StrEnum):
+    """What the project is for; distinct from ``status``, which is scope."""
+
+    #: Distributed acoustic sensing is the reason the project exists.
+    DAS_NATIVE = "das-native"
+    #: Fiber sensing, but temperature or strain rather than acoustic.
+    OTHER_FIBER = "other-fiber"
+    #: A general tool that supports DAS among other data types.
+    DAS_SUPPORTING = "das-supporting"
+    #: "DAS" expands to something else entirely.
+    NOT_DAS = "not-das"
 
 
 class MissingReason(StrEnum):
@@ -74,8 +85,7 @@ class PublicationRef(BaseModel):
     def normalize_doi(cls, value: str) -> str:
         value = value.strip().lower()
         for prefix in ("https://doi.org/", "http://doi.org/", "doi:"):
-            if value.startswith(prefix):
-                value = value.removeprefix(prefix)
+            value = value.removeprefix(prefix)
         if "/" not in value:
             raise ValueError("DOI must contain a slash")
         return value
@@ -86,14 +96,30 @@ class RegistryIds(BaseModel):
     conda: list[str] = Field(default_factory=list)
     julia: list[str] = Field(default_factory=list)
 
+    @field_validator("pypi")
+    @classmethod
+    def normalize_pypi(cls, value: list[str]) -> list[str]:
+        """PEP 503 names, so ``Foo_Bar`` and ``foo-bar`` are measured once."""
+        return sorted({re.sub(r"[-_.]+", "-", name).lower() for name in value})
+
+    @field_validator("conda")
+    @classmethod
+    def normalize_conda(cls, value: list[str]) -> list[str]:
+        out = set()
+        for item in value:
+            if "/" not in item:
+                raise ValueError(f"conda id {item!r} must be channel/name")
+            out.add(item.lower())
+        return sorted(out)
+
+    @field_validator("julia")
+    @classmethod
+    def unique_julia(cls, value: list[str]) -> list[str]:
+        return sorted(set(value))
+
 
 class Forge(BaseModel):
-    """Where a project's source actually lives.
-
-    Defaulting to GitHub keeps existing entries unchanged, but the field is
-    explicit so that "GitHub" is a recorded finding about a project rather
-    than an assumption baked into every URL the pipeline builds.
-    """
+    """Where a project's source lives; recorded, not assumed."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -106,10 +132,8 @@ class Forge(BaseModel):
         if value is None:
             return None
         host = value.strip().rstrip("/")
-        if "://" in host or "/" in host:
+        if "://" in host or "/" in host or not host:
             raise ValueError("forge host must be a bare hostname")
-        if not host:
-            raise ValueError("forge host must not be empty")
         return host
 
     @model_validator(mode="after")
@@ -120,11 +144,19 @@ class Forge(BaseModel):
 
 
 class ProjectRecord(BaseModel):
+    """One catalogue entry: the frontmatter of ``data/curated/<id>.md``.
+
+    The same schema is what an agent proposes in ``data/enriched/`` and what a
+    reviewer approves in ``data/curated/``; ``sources`` and ``reviewed_at``
+    are what the review step adds.
+    """
+
     model_config = ConfigDict(extra="forbid")
 
     id: str = Field(pattern=r"^[a-z0-9][a-z0-9-]*$")
     name: str
-    repository: str
+    #: ``owner/name`` path on the forge; None for a registry-only package.
+    repository: str | None = None
     repository_url: str | None = None
     homepage: str | None = None
     description: str
@@ -132,71 +164,76 @@ class ProjectRecord(BaseModel):
     decision_reason: str
     primary_category: str
     capabilities: list[str] = Field(default_factory=list)
+    das_focus: DasFocus = DasFocus.DAS_NATIVE
     license_spdx: str | None = None
     license_class: LicenseClass = LicenseClass.UNKNOWN
     forge: Forge = Field(default_factory=Forge)
     registries: RegistryIds = Field(default_factory=RegistryIds)
     publications: list[PublicationRef] = Field(default_factory=list)
+    #: Candidate keys merged into this project: the map from findings to ids.
+    sources: list[str] = Field(default_factory=list)
+    reviewed_at: str | None = None
+    #: Agent provenance carried over from the enriched proposal, if any.
+    provenance: dict[str, Any] | None = None
 
     @field_validator("repository")
     @classmethod
-    def validate_repository(cls, value: str) -> str:
+    def validate_repository(cls, value: str | None) -> str | None:
         """Accept the nested groups that GitLab allows and GitHub does not."""
+        if value is None:
+            return None
         parts = [part for part in value.strip("/").split("/") if part]
         if len(parts) < 2 or len(parts) != len(value.strip("/").split("/")):
             raise ValueError("repository must be a namespace/name path")
         return "/".join(parts)
 
+    @field_validator("capabilities", "sources")
+    @classmethod
+    def unique_sorted(cls, value: list[str]) -> list[str]:
+        return sorted(set(value))
+
     @property
-    def derived_url(self) -> str:
+    def derived_url(self) -> str | None:
+        if self.repository is None:
+            return None
         return f"https://{self.forge.host}/{self.repository}"
 
     @property
-    def owner(self) -> str:
-        """The account or top-level group that publishes the repository.
-
-        Recorded as its own field rather than left implicit in the path,
-        because who builds an ecosystem is a claim the dataset should be able
-        to state and be checked on — including where one organization, this
-        study's own included, accounts for an outsized share of it.
-        """
-        return self.repository.split("/")[0]
+    def owner(self) -> str | None:
+        return None if self.repository is None else self.repository.split("/")[0]
 
     @property
-    def forge_key(self) -> str:
-        """The identity used to detect duplicate catalog entries.
-
-        Two forges can host the same ``owner/name`` path for unrelated
-        projects, so the host has to be part of the key.
-        """
+    def forge_key(self) -> str | None:
+        """``host/owner/name``, lowercased; the candidate key of the repository."""
+        if self.repository is None:
+            return None
         return f"{self.forge.host}/{self.repository}".lower()
 
-    @field_validator("capabilities")
-    @classmethod
-    def unique_capabilities(cls, value: list[str]) -> list[str]:
-        return sorted(set(value))
+    @property
+    def key(self) -> str:
+        """Identity used to detect duplicate catalogue entries."""
+        if self.forge_key:
+            return self.forge_key
+        if self.registries.pypi:
+            return f"pypi/{self.registries.pypi[0].lower()}"
+        return f"id/{self.id}"
 
     @model_validator(mode="after")
     def fill_repository_url(self) -> ProjectRecord:
-        """Keep the written link and the repository path from disagreeing.
-
-        The URL is stored so a reader has the address in front of them, but a
-        stored copy of a derived value goes stale the moment someone corrects
-        the path it came from. Rather than trust it, a mismatch is rejected at
-        load time — a wrong link in a catalog is worse than no link.
-        """
+        """A stored link that disagrees with the path it came from is rejected."""
+        derived = self.derived_url
         if self.repository_url is None:
-            self.repository_url = self.derived_url
-        elif self.repository_url.rstrip("/") != self.derived_url:
+            self.repository_url = derived
+        elif derived is None:
+            raise ValueError("repository_url given without a repository")
+        elif self.repository_url.rstrip("/") != derived:
             raise ValueError(
-                f"repository_url {self.repository_url!r} does not match "
-                f"{self.derived_url!r}"
+                f"repository_url {self.repository_url!r} does not match {derived!r}"
             )
         return self
 
     @model_validator(mode="after")
     def validate_license_class(self) -> ProjectRecord:
-        """Keep the license class and the identifier from contradicting each other."""
         if self.license_class == LicenseClass.UNLICENSED and self.license_spdx:
             raise ValueError("an unlicensed project must not carry an SPDX id")
         classified = {LicenseClass.OSI_APPROVED, LicenseClass.SOURCE_AVAILABLE}
@@ -213,52 +250,3 @@ class ProjectRecord(BaseModel):
         if len(dois) != len(set(dois)):
             raise ValueError("publication DOIs must be unique within a project")
         return self
-
-
-class MetricObservation(BaseModel):
-    project_id: str
-    metric: str
-    value: float | int | None = None
-    unit: str
-    window_start: str | None = None
-    window_end: str | None = None
-    source_url: str
-    fetched_at: str
-    missing_reason: MissingReason | None = None
-
-    @model_validator(mode="after")
-    def validate_value_or_reason(self) -> MetricObservation:
-        if (self.value is None) == (self.missing_reason is None):
-            raise ValueError("exactly one of value and missing_reason is required")
-        return self
-
-
-class PublicationRecord(BaseModel):
-    project_id: str
-    doi: str
-    role: Literal["canonical", "related"]
-    title: str | None = None
-    publication_year: int | None = None
-    work_type: str | None = None
-    cited_by_count: int | None = None
-    openalex_id: str | None = None
-    source_url: str
-    fetched_at: str
-    missing_reason: MissingReason | None = None
-
-
-class CapabilityRecord(BaseModel):
-    project_id: str
-    capability: str
-    present: bool = True
-    source: str = "curated"
-
-
-class SnapshotManifest(BaseModel):
-    schema_version: str = "1"
-    snapshot_date: str
-    generated_at: str
-    project_count: int
-    included_count: int
-    files: dict[str, str]
-    source_notes: dict[str, Any] = Field(default_factory=dict)

@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import argparse
+from datetime import date
 from pathlib import Path
 
-from oss_das.cli import resolve_snapshot_date
 from oss_das.core import PATHS
 
 
@@ -18,7 +18,7 @@ def figure_parser(description: str | None = None) -> argparse.ArgumentParser:
     )
     parser.add_argument("--out", type=Path, default=None, help="Output directory.")
     parser.add_argument(
-        "--no-pdf", action="store_true", help="Write SVG only, skipping the PDF."
+        "--pdf", action="store_true", help="Also write a PDF beside the SVG."
     )
     parser.add_argument(
         "--keep-text",
@@ -33,4 +33,13 @@ def resolve_out(args: argparse.Namespace) -> Path:
 
 
 def snapshot(args: argparse.Namespace) -> str:
-    return resolve_snapshot_date(args.snapshot_date, prefer_latest=True)
+    """The snapshot to read: the one asked for, else the newest on disk."""
+    if args.snapshot_date:
+        date.fromisoformat(args.snapshot_date)
+        return args.snapshot_date
+    dated = sorted(
+        p.name
+        for p in (PATHS.root / "data" / "snapshots").glob("????-??-??")
+        if p.is_dir()
+    )
+    return dated[-1] if dated else date.today().isoformat()
