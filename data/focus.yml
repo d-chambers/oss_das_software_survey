@@ -1,0 +1,44 @@
+# How central is DAS to each catalogued project?
+#
+# PROVENANCE: this file is a *proposal*, derived by reading each project's own
+# `curated.description` and `decision_reason`. It is not part of the curated
+# record and no script writes it. Review it, correct it, or fold it into the
+# curated blocks — the analysis reads whatever is here.
+#
+# The distinction it draws is not the same as `status`. `status` asks whether a
+# project belongs in the comparison at all; this asks what the project is *for*.
+# A tool can be firmly in scope and still have DAS as a side interest.
+
+classes:
+  das-native: >-
+    Distributed acoustic sensing is the reason the project exists. Includes
+    multi-modal DFOS platforms where DAS is a first-class target.
+  other-fiber: >-
+    Fiber-optic sensing, but not acoustic — distributed temperature (DTS) or
+    distributed strain (DSS) is the primary modality.
+  das-supporting: >-
+    A general tool in a wider domain (seismology, signal processing) that
+    supports DAS among other data types.
+  not-das: >-
+    "DAS" expands to something else entirely. Caught by acronym collision
+    during discovery.
+
+projects:
+  # ── other fiber modalities: temperature and strain, not acoustic ──
+  dtscalibration: other-fiber   # raw DTS calibration
+  pyfocs: other-fiber           # DTS temperature processing pipeline
+  dts-r: other-fiber            # R tools for reading DTS
+  silixa-dts-tools: other-fiber # Silixa DTS utilities
+  dss-analyzer: other-fiber     # distributed strain sensing, Bakken Mariner
+
+  # ── general-domain tools that happen to read DAS ──
+  seisbench: das-supporting     # seismology ML toolbox; DAS support added in v0.12
+  eqnet: das-supporting         # earthquake detection and picking, "with DAS support"
+  pyseistr: das-supporting      # multi-channel seismic denoising, no DAS specialisation
+  swpvpsekminv: das-supporting  # surface-wave dispersion inversion, method not instrument
+
+  # ── acronym collisions: not fiber sensing at all ──
+  swfscdas: not-das             # shipboard marine-mammal survey Data Acquisition System
+  das-datakit: not-das          # embodied-AI Data Acquisition System
+
+# Every project not listed above is das-native.

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "candidates.csv": "7638cafdefc33ab57adc485e70d660350aba6b7fe5a47373de9c2245988ed1e9",
+    "capabilities.csv": "81daa3c88f9f35dfeb9b14d84cbd71de16c43f19cc7efca321b159379a508cc3",
+    "metrics.csv": "160c896fb7dc88c0285656bedc7d9da78f89dcb13dd8e48ebfde34e63aeb38fa",
+    "projects.csv": "63f69de4098ea9448ea88f4f60b8390d2f02bd07802405f86633d5c1562fe3f3",
+    "publications.csv": "d19395425592424dc4b95cc3c569745e8490f4698da727bada68e26d0544240d",
+    "pypi_daily.csv": "72c04abf7d91b14404314c528329a6231ca0a97c6061272136a60d28a57d4fe5"
+  },
+  "generated_at": "2026-08-03T14:05:26+00:00",
+  "included_count": 18,
+  "project_count": 23,
+  "schema_version": "1",
+  "snapshot_date": "2026-08-03",
+  "source_notes": {
+    "citations": "OpenAlex cited_by_count snapshot for curated DOIs.",
+    "conda": "Cumulative sum of declared-channel artifact download counts.",
+    "github": "Point-in-time public repository metadata.",
+    "pypi": "Mirror-filtered PyPI Stats counts; downloads include automation."
+  }
+}

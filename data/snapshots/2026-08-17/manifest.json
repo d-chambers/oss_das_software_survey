@@ -1,0 +1,25 @@
+{
+  "files": {
+    "candidates.csv": "515278a50040825dcdf4d14a779f16cb4048501bedd1c98dccc9b02620ea025b",
+    "capabilities.csv": "31caf92e7d9c7c3de924edfee2fe1210c502ef544151c6d171f3074b102cfb12",
+    "dependencies.csv": "c320f0416d20681cb961b024745d1963c7496230b8e90f6bcdefaaf25f3dc289",
+    "discovery_coverage.csv": "c2f62d85d06b530eb59e898c16a68149333b599a420c4123c97adfb22062c021",
+    "metrics.csv": "bb59ab3460839ab8a191304313c0abbe88362a7c760b4d6c30d2f8883288fb6d",
+    "projects.csv": "f05c3d53628b5f07fa2a5fe153bfa8fa2117d61dae120fea61aeb0ef31f1371d",
+    "publications.csv": "7f690afeb4b06fd5a7c0e5322aaf9cb9e0cde5a9fdae35c4b8560e212974a900",
+    "pypi_daily.csv": "3390c9298e8fd4d98d932b4de173e70598de0c93b7adca47ca63007d77809b20"
+  },
+  "generated_at": "2026-08-20T15:30:24+00:00",
+  "included_count": 61,
+  "project_count": 80,
+  "schema_version": "1",
+  "snapshot_date": "2026-08-17",
+  "source_notes": {
+    "citations": "OpenAlex cited_by_count snapshot for curated DOIs.",
+    "conda": "Cumulative sum of declared-channel artifact download counts.",
+    "github": "Point-in-time public repository metadata.",
+    "hosts": "Repository signals come from whichever host publishes each project; contributor counts state their basis and are not strictly comparable across hosts.",
+    "licensing": "Every reusable DAS code is catalogued regardless of license; license_class records reuse terms and never gates inclusion.",
+    "pypi": "Mirror-filtered PyPI Stats counts; downloads include automation."
+  }
+}

@@ -1,0 +1,39 @@
+Open Source DAS Ecosystem
+Galileo Fiber Optic Conference, 2026
+
+Brief Intro
+From US
+Geophysical Engineer working in Mining
+Architect of DASCore, one of the libraries we will discuss
+
+Outline
+Why care about tools? 
+Current DAS Tools, analysis
+Gaps in the ecosystem
+Future directions
+
+Why Care About Tools
+Progress is marked by accomplishments, but accomplishments are enable by tools
+
+Stone age …
+Seismology ages (instruments and software)
+
+Current Landscape
+List of projects
+List of publications
+
+Current Landscape
+more 
+
+Current Gaps
+Interoperability
+Metadata
+GPU accelerations
+Large Scale visualizations
+Agentic support
+
+Where this is Going
+Unidas
+Inventory
+DASJax
+DerZug

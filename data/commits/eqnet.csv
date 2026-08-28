@@ -1,0 +1,266 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+eqnet,included,af94a08a85de4b2c917a1b9429b044e7f38e4c28,Weiqiang Zhu,zhuwq0@gmail.com,2026-08-17T23:44:45-07:00,2026-08-17T23:44:45-07:00,0,4,16,16,0,"Measure the S/P amplitude ratio as a vector-amplitude peak, and keep the input record raw"
+eqnet,included,0257f0f03fa636a3396858d395e0f3144c62175f,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2026-08-09T22:19:39-07:00,2026-08-09T22:19:39-07:00,0,1,2,2,0,Update deprecated GitHub Actions in the docs workflow
+eqnet,included,ad492ef0fe93493662d324f7747851be2c9fc7b8,Weiqiang Zhu,zhuwq0@gmail.com,2026-03-21T21:57:34-07:00,2026-03-21T21:57:34-07:00,0,1,5,16,0,huggingface path changed
+eqnet,included,371084fa25f905bd79eae7c1fb70a7b247a44010,Weiqiang Zhu,zhuwq0@gmail.com,2025-04-09T17:56:40-07:00,2025-04-09T17:56:40-07:00,0,6,823,0,0,add forge data
+eqnet,included,93f44ea342f77e38f7a8d329c47e85f180db4fb5,Weiqiang Zhu,zhuwq0@gmail.com,2025-04-07T14:07:13-07:00,2025-04-07T14:07:13-07:00,0,10,214,121,0,change projection
+eqnet,included,98eb258a29c99f145011efe5ab4659423108fd29,wanghaoyu,justgoback@126.com,2025-03-12T02:23:11-07:00,2025-03-12T02:23:11-07:00,0,1,1,1,0,fix begin time index scale for event
+eqnet,included,c8cdc0dbf4b7f2906d9c51470a893241c492c90f,wanghaoyu,justgoback@126.com,2025-02-18T01:43:06-08:00,2025-02-18T01:43:06-08:00,0,1,4,1,0,fix possible s phase missing
+eqnet,included,3d63f317c7956b586046a8829c2ccd4ab0ce4f27,wanghaoyu,justgoback@126.com,2025-02-13T21:53:55-08:00,2025-02-13T21:53:55-08:00,0,1,2,2,0,fix sp_ratio cutting
+eqnet,included,e945e9fbe475bad2bef6ccf95c4f35ed549fcbde,wanghaoyu,justgoback@126.com,2025-02-09T23:45:44-08:00,2025-02-09T23:45:44-08:00,0,1,7,17,0,update pick filtering
+eqnet,included,4c21ef2e261aa1ec90a3f65bca3adf846743b396,zhuwq,zhuwq0@gmail.com,2024-12-16T18:21:42-08:00,2024-12-16T18:21:42-08:00,0,1,31,35,0,fix
+eqnet,included,9f64cc72da0a7a32debbe437c36c306e357712fc,zhuwq,zhuwq0@gmail.com,2024-12-16T18:20:47-08:00,2024-12-16T18:20:47-08:00,0,1,24,6,0,add event filtering
+eqnet,included,0718be891cae636ae25e5feaabbc2240c31d489f,zhuwq,zhuwq0@gmail.com,2024-11-27T21:50:53-08:00,2024-11-27T21:50:53-08:00,0,2,35,7,0,measure PS ratio
+eqnet,included,25dbc2cd537659d0067271f541d176117c6a9c7f,zhuwq,zhuwq0@gmail.com,2024-11-27T20:30:20-08:00,2024-11-27T20:30:20-08:00,0,1,4,2,0,filter out duplicates
+eqnet,included,b6646161681dd479617329c17c7451197a30224a,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-10-15T09:39:34-07:00,2024-10-15T09:39:34-07:00,0,1,1,1,0,Update README.md
+eqnet,included,fbc1f50cd90c48bd8bb73c09edf90f1160e36706,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-09-09T23:07:13-07:00,2024-09-09T23:07:13-07:00,0,1,1,1,0,Update mkdocs.yml
+eqnet,included,11bd2e66b91d8741850d4734fea952fa10c2a791,zhuwq,zhuwq0@gmail.com,2024-09-05T22:37:33-07:00,2024-09-05T22:37:33-07:00,0,3,6,6,0,fix highpass_filt None to 0.0
+eqnet,included,99c513c26480c9e14268273c8cb083937bfb9bb9,zhuwq,zhuwq0@gmail.com,2024-05-12T14:12:02-07:00,2024-05-12T14:12:02-07:00,0,3,306,6,0,update
+eqnet,included,753c1d1c96d0f5e4bcdab1d909acae8dd8293297,zhuwq,zhuwq0@gmail.com,2024-05-11T15:07:40-07:00,2024-05-11T15:07:40-07:00,0,1,32,20,0,update paper figure
+eqnet,included,bdc9edfcf9be89abb9e406c1be26058caf609b7e,zhuwq,zhuwq0@gmail.com,2024-05-11T14:52:04-07:00,2024-05-11T14:52:04-07:00,0,1,6,5,0,improve hdf5 cache
+eqnet,included,43d156e0d6e6d17c4e787ab009608acf4ca600de,zhuwq,zhuwq0@gmail.com,2024-05-11T14:51:47-07:00,2024-05-11T14:51:47-07:00,0,1,359,163,0,update paper figure
+eqnet,included,24632cd738c409e1b01a5df6b7875f455dd24ae3,zhuwq,zhuwq0@gmail.com,2024-05-10T10:20:01-07:00,2024-05-10T10:20:01-07:00,0,1,229,0,0,add performance evalution
+eqnet,included,13e45297712bf225d0f6ef1a41560d13d56d1f8b,zhuwq,zhuwq0@gmail.com,2024-05-08T16:23:13-07:00,2024-05-08T16:23:13-07:00,0,1,2,2,0,improve visulization
+eqnet,included,b158e05bad01cd31ff326562b270dbe913624bea,zhuwq,zhuwq0@gmail.com,2024-05-08T16:21:05-07:00,2024-05-08T16:21:05-07:00,0,2,23,9,0,improve visulization
+eqnet,included,99c03cadda2085468e0165270dbdc5317ca4c249,zhuwq,zhuwq0@gmail.com,2024-05-08T15:19:10-07:00,2024-05-08T15:19:10-07:00,0,7,76,41,0,update phasenet-plus
+eqnet,included,b77c14deb3c45cb19405f61faca7260d0cfbea8d,zhuwq,zhuwq0@gmail.com,2024-04-24T22:15:55-07:00,2024-04-24T22:15:55-07:00,0,1,1,1,0,update plotting
+eqnet,included,14ddbf58380a2233ebf338432f2eeb202dec3f0e,zhuwq,zhuwq0@gmail.com,2024-04-24T22:14:10-07:00,2024-04-24T22:14:10-07:00,0,1,7,1,0,remove hardcode
+eqnet,included,d5dbeb0628a205613b9c78d6189ebeda0bd89231,zhuwq,zhuwq0@gmail.com,2024-04-24T21:34:55-07:00,2024-04-24T21:34:55-07:00,0,3,37,14,0,update prediction plot
+eqnet,included,75ef9ea49b5dc9ac842d4c8c894485c309198441,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-04-24T17:40:10-07:00,2024-04-24T17:40:10-07:00,0,1,2,0,0,Update README.md
+eqnet,included,05f041a46e47c16727ea80016033a5169191207c,zhuwq,zhuwq0@gmail.com,2024-04-24T17:28:24-07:00,2024-04-24T17:28:24-07:00,0,1,1,1,0,comment out autoencoder
+eqnet,included,9af40cb770a3e463e5ce8a8316e88d9d724af92c,zhuwq,zhuwq0@gmail.com,2024-04-24T17:24:00-07:00,2024-04-24T17:24:00-07:00,0,4,8,9,0,fix plotting polarity
+eqnet,included,253a00e1564187362f08429497a4e156e8cdfb53,zhuwq,zhuwq0@gmail.com,2024-04-24T16:50:58-07:00,2024-04-24T16:50:58-07:00,0,1,3,1,0,update test hdf5
+eqnet,included,54fae8f7bacf14dc4582845f203778ffb185358b,zhuwq,zhuwq0@gmail.com,2024-04-24T16:16:09-07:00,2024-04-24T16:16:09-07:00,1,,,,,Merge branch 'master' of https://github.com/AI4EPS/EQNet
+eqnet,included,4f85725054051c83e95f7bc61b20af74cea1f06a,zhuwq,zhuwq0@gmail.com,2024-04-24T16:15:53-07:00,2024-04-24T16:15:53-07:00,0,9,142,94,0,add LCSN
+eqnet,included,97015c6437576edee30a599b8fd3de550e38722d,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-04-24T14:48:18-07:00,2024-04-24T14:48:18-07:00,0,1,1,1,0,Update README.md
+eqnet,included,45ada29bd947d1cef0bca53f6a07360a027b58c3,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-04-18T07:32:23+00:00,2024-04-18T07:32:23+00:00,0,2,58,77,0,update
+eqnet,included,6236f5cead1d234ae1a7594d109e96610c0e2267,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-04-17T23:40:37-07:00,2024-04-17T23:40:37-07:00,0,1,1,3,0,Update README.md
+eqnet,included,27c8e6cbc35cfa32baeaff0bf8134a3e6753631b,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2024-03-05T15:35:14-08:00,2024-03-05T15:35:14-08:00,1,,,,,Merge pull request #5 from d-chambers/patch-1
+eqnet,included,6986f6f4204321a794024e8e39e153599a7a3535,derrick chambers,djachambeador@gmail.com,2024-03-05T12:34:18-07:00,2024-03-05T12:34:18-07:00,0,1,2,2,0,more typos
+eqnet,included,32365306d435b1daeee4fe1b25b39ac148405a1d,Derrick Chambers,d-chambers@users.noreply.github.com,2024-03-05T12:30:38-07:00,2024-03-05T12:30:38-07:00,0,1,1,1,0,fix typo
+eqnet,included,d63ed5cf91a27ef701f0fb1b8257ba7891657afc,zhuwq,zhuwq0@gmail.com,2024-01-28T10:28:04-08:00,2024-01-28T10:28:04-08:00,0,1,1,0,0,update gitignore
+eqnet,included,4ee35958cdd119d6cde6ba82a976d6d3dc0c0669,zhuwq,zhuwq0@gmail.com,2024-01-15T00:08:16-08:00,2024-01-15T00:08:16-08:00,0,4,42,23,0,fix bug
+eqnet,included,7f773588ed22cb6ccabdfeefb6c2b83c0f8229a8,zhuwq,zhuwq0@gmail.com,2024-01-15T00:02:12-08:00,2024-01-15T00:02:12-08:00,0,1,1,0,0,save travel time
+eqnet,included,75b6611e155a97ec5ebbd0f7839664d3d54b1f23,zhuwq,zhuwq0@gmail.com,2024-01-11T11:27:44-08:00,2024-01-11T11:27:44-08:00,0,3,90,2,0,update
+eqnet,included,b05abddbeb549ff3d2b3a86c7347c7c5131a8bc9,zhuwq,zhuwq0@gmail.com,2024-01-01T22:21:43-08:00,2024-01-01T22:21:43-08:00,0,1,1,1,0,update
+eqnet,included,5bec875bfee8944b46b5e3d19dfd5f3706a1c201,zhuwq,zhuwq0@gmail.com,2024-01-01T22:01:44-08:00,2024-01-01T22:01:44-08:00,0,8,533,141,0,"Update train.yaml and train.py, and add phasenet_plus.ipynb"
+eqnet,included,343d3e2248eb270dc42b323f0c995989f9a387c3,zhuwq,zhuwq0@gmail.com,2023-12-25T19:25:31-08:00,2023-12-25T19:25:31-08:00,0,3,52,19,0,update train
+eqnet,included,626f64cf99acb74ca3bed5ac24e8bf9abca034f4,zhuwq,zhuwq0@gmail.com,2023-12-24T16:09:04-08:00,2023-12-24T16:09:04-08:00,0,2,16,8,0,update
+eqnet,included,b4e732b88c8ab6467302a13e3c9b94e9c2b962dd,zhuwq,zhuwq0@gmail.com,2023-12-23T23:11:57-08:00,2023-12-23T23:11:57-08:00,0,7,231,92,0,update PhaseNet-Plus
+eqnet,included,cc4aee4a2b8b47526d6404e30ad9c849c282b4e6,zhuwq,zhuwq0@gmail.com,2023-12-22T23:06:13-08:00,2023-12-22T23:06:13-08:00,0,1,1,1,0,update train.yaml
+eqnet,included,cc56ac29d984cae8e68f63ee2a47cf325b5b528c,zhuwq,zhuwq0@gmail.com,2023-12-22T22:45:51-08:00,2023-12-22T22:45:51-08:00,0,3,40,30,0,update
+eqnet,included,d2f6626beacb0b3ab5f0e28a935d9a8a49ad4a6e,zhuwq,zhuwq0@gmail.com,2023-12-22T21:44:04-08:00,2023-12-22T21:44:04-08:00,0,10,291,144,0,update phasenet phasenet_plus training
+eqnet,included,3607432bd1789636b5b9ad21cd01b8a59bf6cfdf,zhuwq,zhuwq0@gmail.com,2023-11-24T21:23:54-08:00,2023-11-24T21:23:54-08:00,0,1,27,7,0,update plot_topo.py
+eqnet,included,6d89e47758f883f11c00904610f73f5f945ab631,zhuwq,zhuwq0@gmail.com,2023-11-23T11:16:10-08:00,2023-11-23T11:16:10-08:00,0,1,0,3,0,merge
+eqnet,included,591577053e646ec95316b83f97e9ddf9ec940c73,zhuwq,zhuwq0@gmail.com,2023-11-23T11:12:54-08:00,2023-11-23T11:12:54-08:00,0,1,3,2,0,merge
+eqnet,included,a16d0de0558e0104ca1ed304d16e4a5aaaf58151,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-11-20T16:07:04-08:00,2023-11-20T16:07:04-08:00,0,1,1,1,0,change tqdm.auto to tqdm
+eqnet,included,8a0c86be880f978c4f3d0f53a866dbb1d5c5d399,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-11-20T16:06:14-08:00,2023-11-20T16:06:14-08:00,0,1,1,1,0,Update predict.py
+eqnet,included,c11d373ce8578f7eccf5cbd021ce7c40ae8a3eb9,zhuwq,zhuwq0@gmail.com,2023-11-19T05:06:05+00:00,2023-11-19T05:06:05+00:00,1,,,,,Merge branch 'master' of https://github.com/AI4EPS/EQNet
+eqnet,included,705785e00bd77c8137f568d8e63c91381d8434fe,zhuwq,zhuwq0@gmail.com,2023-11-19T04:58:03+00:00,2023-11-19T04:58:03+00:00,0,2,20,1,0,skip existing files
+eqnet,included,c78b2e30ef8553d82ede1d727055cc8a5cce6a94,zhuwq,zhuwq0@gmail.com,2023-11-19T04:04:11+00:00,2023-11-19T04:04:11+00:00,0,2,10,6,0,test for cpu
+eqnet,included,29ac82f0187798655c6b2852ddf15cd10d1ad124,zhuwq,zhuwq0@gmail.com,2023-11-19T04:02:18+00:00,2023-11-19T04:02:18+00:00,0,1,4,4,0,update for cpu parallel processing
+eqnet,included,2c88341ce8fe533881262a4f1a7fbaed893d9852,zhuwq,zhuwq0@gmail.com,2023-11-19T03:45:49+00:00,2023-11-19T03:45:49+00:00,0,2,16,15,0,cpu multi node
+eqnet,included,83a2cd349c4247b4b9345f9e257443cd2c5cfe67,zhuwq,zhuwq0@gmail.com,2023-11-18T23:19:59+00:00,2023-11-18T23:19:59+00:00,0,3,30,16,0,fix subfolder error
+eqnet,included,2b91bed5f429fed6cb9fd75d9f57d85ef37f3e83,zhuwq,zhuwq0@gmail.com,2023-11-18T12:39:02-08:00,2023-11-18T12:39:02-08:00,0,1,6,10,0,fix empty folder
+eqnet,included,65115258c6c85a0eb03de54e675456cbee634f1f,zhuwq,zhuwq0@gmail.com,2023-11-10T13:33:56-08:00,2023-11-10T13:33:56-08:00,0,2,2,2,0,update
+eqnet,included,63cda47923fbd471fb1a99486e990e5c444438fe,zhuwq,zhuwq0@gmail.com,2023-11-10T13:30:02-08:00,2023-11-10T13:30:02-08:00,0,1,1,1,0,update
+eqnet,included,76bb4ef33ab14e099317951335a37df18efcfbbe,zhuwq,zhuwq0@gmail.com,2023-11-10T13:28:50-08:00,2023-11-10T13:28:50-08:00,0,1,13,8,0,update
+eqnet,included,165ce11ce60451c1ef85c98546fc62d96e5482f9,zhuwq,zhuwq0@gmail.com,2023-11-10T13:26:03-08:00,2023-11-10T13:26:03-08:00,0,1,8,8,0,update
+eqnet,included,1cf6c27c707c695f099b43abc97c30b76a7d92bb,zhuwq,zhuwq0@gmail.com,2023-11-10T13:24:42-08:00,2023-11-10T13:24:48-08:00,0,1,1,1,0,update mkdocs
+eqnet,included,0022257b8462eccbb79fa2ffc1e440cdc1d1f2d2,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-11-10T13:02:10-08:00,2023-11-10T13:02:10-08:00,0,1,1,1,0,Update README.md
+eqnet,included,00c4e581dd42758e79170be5b6a7a441d72b6da5,zhuwq,zhuwq0@gmail.com,2023-11-10T12:55:21-08:00,2023-11-10T12:55:39-08:00,0,1,4,2,0,update
+eqnet,included,5881a8c4b6a9ba6a6e71d755c0f9a02d4568e3e4,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-11-10T12:52:59-08:00,2023-11-10T12:52:59-08:00,0,1,1,1,0,Update README.md
+eqnet,included,20abd33e05dae3522cff341d28ab5f20a99e630d,zhuwq,zhuwq0@gmail.com,2023-11-10T12:51:49-08:00,2023-11-10T12:51:49-08:00,0,3,467,14,0,update
+eqnet,included,a29ec84297c837414a3c9dc8fe9c87684c504d8b,zhuwq,zhuwq0@gmail.com,2023-11-10T10:33:13-08:00,2023-11-10T10:33:13-08:00,1,,,,,Merge branch 'develop'
+eqnet,included,aba8e72c515be4ece535c798f38ddf214be1d6dd,zhuwq,zhuwq0@gmail.com,2023-11-05T18:24:40-08:00,2023-11-05T18:24:56-08:00,0,6,226,15,0,update
+eqnet,included,744bfe51f6a2eb317d8a73febe7ecc8ea2f07eaa,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-10-26T00:15:44-07:00,2023-10-26T00:15:44-07:00,0,1,31,0,0,Create LICENSE
+eqnet,included,4719d9446830fbbe2888ba894fa187d12ba04adb,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-10-26T00:15:06-07:00,2023-10-26T00:15:06-07:00,0,1,31,0,0,Create LICENSE
+eqnet,included,55e35903673b79a92b68108c1ce6bb4b210cc2f6,zhuwq,zhuwq0@gmail.com,2023-10-23T13:57:03-07:00,2023-10-23T13:57:03-07:00,0,3,75,36,0,update
+eqnet,included,3be2600cbe883a8c28bef9dfdfb6faf10c5535f7,zhuwq,zhuwq0@gmail.com,2023-10-13T20:08:11+00:00,2023-10-13T20:08:11+00:00,0,14,981,99,0,paper revision v2
+eqnet,included,75be85795bcb5582e2ba13744ba3cb20d64cc5b2,zhuwq,zhuwq0@gmail.com,2023-08-22T22:19:55-07:00,2023-08-22T22:19:55-07:00,0,2,60,19,0,update run_gamma.py
+eqnet,included,1f07012a89d97b36be4471394cca396b2e2523b4,zhuwq,zhuwq0@gmail.com,2023-08-20T18:52:52-07:00,2023-08-20T18:52:52-07:00,0,1,40,26,0,fix app
+eqnet,included,a280a1a3cd9f5f7dbdc8966428b9dc1c1b45c15e,zhuwq,zhuwq0@gmail.com,2023-08-20T18:52:36-07:00,2023-08-20T18:52:36-07:00,0,4,236,73,0,update plots
+eqnet,included,11fbd7cfddb954a1a7fe637458ad472ac1016d26,zhuwq,zhuwq0@gmail.com,2023-08-06T07:04:58+00:00,2023-08-06T07:04:58+00:00,0,1,68,0,0,add plotting mammoth together
+eqnet,included,0946972c73a39b03538be5834f57574232b2cab3,zhuwq,zhuwq0@gmail.com,2023-08-05T22:18:45+00:00,2023-08-05T22:18:45+00:00,0,1,41,0,0,add file
+eqnet,included,55d08b515b162a2013403b7dccf838bafffa7104,zhuwq,zhuwq0@gmail.com,2023-07-31T00:08:26+00:00,2023-07-31T00:08:26+00:00,0,3,512,32,0,update plotting
+eqnet,included,bc6fc597e49b2f8c09b171d49c4b2a0ed75dfef1,zhuwq,zhuwq0@gmail.com,2023-07-25T00:36:38+00:00,2023-07-25T00:36:38+00:00,0,9,1747,111,0,update plotting
+eqnet,included,5705463e5b0018c59af3fff5140e9ea3afce5b36,zhuwq,zhuwq0@gmail.com,2023-07-23T05:36:01+00:00,2023-07-23T05:36:01+00:00,0,1,33,1,0,add workflow.sh
+eqnet,included,a800efe43fea70adcd0de44dd05cef58b2ae899f,zhuwq,zhuwq0@gmail.com,2023-07-21T20:54:05+00:00,2023-07-21T20:54:05+00:00,0,1,12,11,0,change loading model from github
+eqnet,included,963fcf61dbb8c5a1f42796d8e2cdff5004ac6304,zhuwq,zhuwq0@gmail.com,2023-07-19T23:32:02+00:00,2023-07-19T23:32:02+00:00,0,1,111,0,0,add stats.py
+eqnet,included,49014ffde424c61b9afd357f4819d17668c1b99a,zhuwq,zhuwq0@gmail.com,2023-07-19T06:06:56+00:00,2023-07-19T06:06:56+00:00,0,4,15,5,0,update training.py
+eqnet,included,42ad9e051f212d9a5855b8796fec8f475b5e1134,zhuwq,zhuwq0@gmail.com,2023-07-13T04:46:31+00:00,2023-07-13T04:46:31+00:00,0,2,37,18,0,update training
+eqnet,included,9889b860a73848248573572f532b1dc010f8d640,zhuwq,zhuwq0@gmail.com,2023-07-11T04:47:27+00:00,2023-07-11T04:47:27+00:00,0,3,69,31,0,update train_phasenet_das
+eqnet,included,a40d88f39b0124b47de3f4c866e1550a9453dab9,zhuwq,zhuwq0@gmail.com,2023-07-11T01:45:52+00:00,2023-07-11T01:45:52+00:00,0,2,22,21,0,update run gamma
+eqnet,included,8a18dda1a7c0095daa318bfe55395afb36ed978a,zhuwq,zhuwq0@gmail.com,2023-07-11T00:24:58+00:00,2023-07-11T00:24:58+00:00,0,1,49,29,0,update run_gamma.py
+eqnet,included,d6c16f857922b25339cef1b90300c1901e743602,zhuwq,zhuwq0@gmail.com,2023-07-10T04:44:58+00:00,2023-07-10T04:44:58+00:00,0,6,54,33,0,improve logic
+eqnet,included,52b200579df54403fd7f9d0b5eec6c30fa3ca7d0,zhuwq,zhuwq0@gmail.com,2023-07-09T00:44:12+00:00,2023-07-09T00:44:12+00:00,0,2,21,16,0,import data loading
+eqnet,included,f46ba5e52a258e2064996b3e6ba399ecc186dd07,zhuwq,zhuwq0@gmail.com,2023-07-09T00:05:56+00:00,2023-07-09T00:05:56+00:00,0,3,24,18,0,update wand model
+eqnet,included,ba5f1ed7f8d6dcaa8103fa8b0156b7b381b5527a,zhuwq,zhuwq0@gmail.com,2023-07-08T21:43:32+00:00,2023-07-08T21:43:32+00:00,0,7,126,135,0,improve prediction for das data
+eqnet,included,5d10df3dc441891aa9e1cbeab70c20e5c87035f2,zhuwq,zhuwq0@gmail.com,2023-07-08T06:15:53+00:00,2023-07-08T06:15:53+00:00,0,2,62,8,0,update datasts
+eqnet,included,b6889bb509eb01fdac85c3c3f4cbd3b23ab07996,zhuwq,zhuwq0@gmail.com,2023-07-07T23:08:37+00:00,2023-07-07T23:08:37+00:00,0,1,56,33,0,add split_datasets.py
+eqnet,included,b98b38a4539def50a78abc522783e761d1d26ec0,zhuwq,zhuwq0@gmail.com,2023-07-07T17:24:10+00:00,2023-07-07T17:24:10+00:00,0,1,14,16,0,fix typo
+eqnet,included,62f4ea2eb26e98da9c8eb3f964ff343244b7c4bc,zhuwq,zhuwq0@gmail.com,2023-07-07T17:15:29+00:00,2023-07-07T17:16:29+00:00,0,1,7,3,0,fix bug in masking_edge
+eqnet,included,7f301cf716f9ee66f5cd167a61a122d4d297b43e,Weiqiang Zhu,75299929+zhuwq0@users.noreply.github.com,2023-07-06T23:58:28-07:00,2023-07-06T23:58:28-07:00,1,,,,,Merge pull request #1 from wanghaoyucn/develop
+eqnet,included,4cbb2852650c66f7d831cec46e770aaa573b9488,wanghaoyu,justgoback@126.com,2023-07-06T23:40:19-07:00,2023-07-06T23:40:19-07:00,0,1,3,1,0,small change in station sampler test
+eqnet,included,87ba4f826cbe6ee26f79919e15545c358623a920,wanghaoyu,justgoback@126.com,2023-07-06T23:25:20-07:00,2023-07-06T23:25:20-07:00,0,2,113,97,0,merge eqnet model and train
+eqnet,included,7a5be1d2a240c3d64d5ccc34a14a29d79d9e0420,wanghaoyu,justgoback@126.com,2023-07-06T23:06:29-07:00,2023-07-06T23:06:29-07:00,1,,,,,Merge branch 'develop' of into develop
+eqnet,included,382844dffae4aac46ebb249c2f5a71e1af119ab4,zhuwq,zhuwq0@gmail.com,2023-07-07T05:15:51+00:00,2023-07-07T05:15:51+00:00,0,9,511,334,0,update training
+eqnet,included,68c53a0fd6905ed0b1378c36dc61361b6a2add90,zhuwq,zhuwq0@gmail.com,2023-07-07T03:55:41+00:00,2023-07-07T03:55:41+00:00,0,20,1752,502,0,add confirmed edits from develop
+eqnet,included,4cb500f1f1d55365405e6b727a879f7b353421d1,wanghaoyu,justgoback@126.com,2023-07-06T17:57:09-07:00,2023-07-06T17:57:09-07:00,0,2,14,7,0,fix small bugs in train.py
+eqnet,included,70249e9fe241250cadf7efd3f2ab3a27bc9961e6,wanghaoyu,justgoback@126.com,2023-07-06T16:49:39-07:00,2023-07-06T16:49:39-07:00,0,3,89,20,0,update eqnet dataset to formal one
+eqnet,included,608f84a911b1b64b96152ccf20ff4a609a62e129,wanghaoyu,justgoback@126.com,2023-07-05T20:11:59-07:00,2023-07-05T20:11:59-07:00,0,1,87,37,0,add huggingface dataset and improve wandb logger
+eqnet,included,940e418693935d5800517309872f17fc6d240d12,wanghaoyu,justgoback@126.com,2023-07-05T16:08:31-07:00,2023-07-05T16:08:31-07:00,0,1,2,0,0,fix the bugs of sampler unit test
+eqnet,included,def7ca3c4e028bfbf86df8936497abdf6a6030b9,wanghaoyu,justgoback@126.com,2023-07-04T23:40:00-07:00,2023-07-04T23:40:00-07:00,0,1,1,2,0,fix bugs of unit test
+eqnet,included,531d774e76dcc200035612e33913e25c81a63395,wanghaoyu,justgoback@126.com,2023-07-04T23:16:29-07:00,2023-07-04T23:16:29-07:00,0,1,1,0,0,add drop_last=True for unit test
+eqnet,included,79369ab6f04dd1f1a2e01a15a8f1be7e6200eda2,wanghaoyu,justgoback@126.com,2023-07-04T23:13:47-07:00,2023-07-04T23:13:47-07:00,0,4,411,1,0,add variable station number dataset
+eqnet,included,857b1310a88862df27efc2a22eccc594dc01aaaf,zhuwq,zhuwq0@gmail.com,2023-07-05T05:00:53+00:00,2023-07-05T05:00:53+00:00,0,3,31,14,0,update utils.py
+eqnet,included,ee8bf77fc13c02a1779984e76943d2544a9d8a97,zhuwq,zhuwq0@gmail.com,2023-07-05T01:05:05+00:00,2023-07-05T01:05:05+00:00,0,3,43,4,0,add wandb
+eqnet,included,6510e5d1bdd50065929406eefaa4899a81ee8a44,zhuwq,zhuwq0@gmail.com,2023-07-04T23:56:37+00:00,2023-07-04T23:56:37+00:00,0,1,4,15,0,clean up training
+eqnet,included,a866ee612d0e47c55ccca4afd72c5fedff2e5622,zhuwq,zhuwq0@gmail.com,2023-07-04T23:47:15+00:00,2023-07-04T23:47:15+00:00,0,12,933,487,0,improve training
+eqnet,included,168c3d734b992aa8ca0c44eabad4a5121a7f834a,zhuwq,zhuwq0@gmail.com,2023-07-02T21:56:37+00:00,2023-07-02T21:56:37+00:00,0,1,102,0,0,add filter training.py
+eqnet,included,9d9fa598d0ec0df12eea2edb4bb053fe9bbb7c7e,zhuwq,zhuwq0@gmail.com,2023-06-28T06:57:14+00:00,2023-06-28T06:57:14+00:00,0,4,188,1,0,add reformat_ridgecrest.py
+eqnet,included,829974e8c84525c4efaf6042e96736cf86b1f50e,zhuwq,zhuwq0@gmail.com,2023-06-28T03:51:38+00:00,2023-06-28T03:51:38+00:00,0,2,196,158,0,update
+eqnet,included,fe345f2b9b37d72360d9d1781586c7bd7c09a240,zhuwq,zhuwq0@gmail.com,2023-06-27T06:05:38+00:00,2023-06-27T06:05:38+00:00,0,1,1,3,0,update run_gamma.py
+eqnet,included,db78f59f5595bf8369b0ca624d16f3de80b7c723,zhuwq,zhuwq0@gmail.com,2023-06-27T06:05:19+00:00,2023-06-27T06:05:19+00:00,0,2,262,6,0,update run_gamma.py
+eqnet,included,3d1d5291ceeb6003e2116dfe5a006c568372c503,zhuwq,zhuwq0@gmail.com,2023-06-26T18:28:04+00:00,2023-06-26T18:28:04+00:00,0,1,8,17,0,update run_phasenet.py
+eqnet,included,0f48df5c0bf3b18df398c0d4c305f40a9f0883d0,zhuwq,zhuwq0@gmail.com,2023-06-26T07:33:04+00:00,2023-06-26T07:33:04+00:00,0,4,68,64,0,improve postprocessing
+eqnet,included,338229ba6ee0351806a0a6a80d8ef62b3ee8c0ac,zhuwq,zhuwq0@gmail.com,2023-06-26T05:09:47+00:00,2023-06-26T05:09:47+00:00,0,1,25,3,0,update patch
+eqnet,included,3d4c04842be17d4aaa0d87e2418c84a146c131cc,zhuwq,zhuwq0@gmail.com,2023-06-26T05:08:54+00:00,2023-06-26T05:08:54+00:00,0,1,6,2,0,add cut patch
+eqnet,included,0b97d71b602b32549b66688ea11215a0ace7f257,zhuwq,zhuwq0@gmail.com,2023-06-26T00:28:29+00:00,2023-06-26T00:28:29+00:00,0,7,78,26,0,tmp for migration
+eqnet,included,ae644341617c0a60b908076aa2e9dd044d1a5b46,Weiqiang,zhuwq0@gmail.com,2023-06-07T14:30:54-07:00,2023-06-07T14:30:54-07:00,0,1,45,0,0,add merge_gamma_picks.py
+eqnet,included,7f819dffd31c69cf224ee8fdc8f58b9db37daa39,zhuwq,zhuwq0@gmail.com,2023-06-04T06:28:01+00:00,2023-06-04T06:28:01+00:00,0,4,84,64,0,improve remote processing
+eqnet,included,252e1fb6a9fd451e878fc5533c7b1bb8b1cf452d,zhuwq,zhuwq0@gmail.com,2023-06-04T00:52:15+00:00,2023-06-04T00:52:15+00:00,0,2,28,38,0,add fsspec
+eqnet,included,4d3a58c1eab0adeb3b313c04afd0512c6b319b2f,Weiqiang,zhuwq0@gmail.com,2023-06-01T11:47:05-07:00,2023-06-01T11:47:05-07:00,1,,,,,Merge branch 'master' of github.com:AI4EPS/EQNet
+eqnet,included,d70b6a097b2713fa4ac73f14978e10d5d2cc7c6b,Weiqiang,zhuwq0@gmail.com,2023-06-01T11:44:20-07:00,2023-06-01T11:44:20-07:00,0,1,1047,0,0,add visulization
+eqnet,included,3808da4c9ae0c0033f107ab1d6141de360a27c82,zhuwq,zhuwq0@gmail.com,2023-06-01T00:06:30+00:00,2023-06-01T00:06:30+00:00,0,2,27,8,0,add support for google cloud
+eqnet,included,103087e9fe184ed3559275491b0a0aed097d8af6,Weiqiang,zhuwq0@gmail.com,2023-05-30T15:14:38-07:00,2023-05-30T15:14:38-07:00,0,4,1476,0,0,add LAX
+eqnet,included,64003f4f8284f35d734341478395016f34debb71,Weiqiang,zhuwq0@gmail.com,2023-05-14T15:38:55-07:00,2023-05-14T15:38:55-07:00,0,3,90,36,0,update local changes
+eqnet,included,ebf97e0593163142e5440590ab1937092b1dd1a7,Weiqiang,zhuwq0@gmail.com,2023-04-01T15:19:09-07:00,2023-04-01T15:19:09-07:00,0,2,7,1,0,remove padding in prediction in data.py
+eqnet,included,4b0f1084c0cef60a863e2013495deb537cc61831,Weiqiang,zhuwq0@gmail.com,2023-03-31T14:58:19-07:00,2023-03-31T14:58:19-07:00,0,5,72,42,0,improve training
+eqnet,included,330ca8bd5ab61d4d484a054a43b7c9a1cb9f36cf,Weiqiang,zhuwq0@gmail.com,2023-03-23T15:35:22-07:00,2023-03-23T15:35:22-07:00,0,2,159,0,0,add app.py
+eqnet,included,3d0ce0d08ed8b500f085b99e47359f12d2ae23d0,Weiqiang,75299929+zhuwq0@users.noreply.github.com,2023-02-13T14:45:46-08:00,2023-02-13T14:45:46-08:00,0,1,4,3,0,Update seismic_trace.py
+eqnet,included,62c3bdddee0f47d88bcd4617d324e264e20b74ae,Weiqiang,75299929+zhuwq0@users.noreply.github.com,2023-02-05T20:44:31-08:00,2023-02-05T20:44:31-08:00,0,1,0,20,0,Delete .devcontainer directory
+eqnet,included,22c02cbb49e25df9ae3f82ff3ac4f2301bb8307f,Weiqiang,75299929+zhuwq0@users.noreply.github.com,2023-02-05T20:35:41-08:00,2023-02-05T20:35:41-08:00,0,2,20,20,0,Rename devcontainer.json to devcontainer_bak.json
+eqnet,included,ec5fb884a708a271ffa7eb8712b8ea9a4235c3e7,Weiqiang,zhuwq0@gmail.com,2023-01-28T22:33:11-08:00,2023-01-28T22:33:11-08:00,0,6,3328,111,0,update paper figures
+eqnet,included,8bf6e39d14424a9be9d5f81737a5a94d7845597d,Weiqiang,75299929+zhuwq0@users.noreply.github.com,2023-01-27T18:05:19-08:00,2023-01-27T18:05:19-08:00,0,1,20,0,0,Create devcontainer.json
+eqnet,included,885c51a1c0a05307f80b8237e38339409666a97a,Weiqiang,zhuwq0@gmail.com,2023-01-26T11:22:58-08:00,2023-01-26T11:22:58-08:00,0,4,17,6,0,add highpass filter
+eqnet,included,d0f583f7fdf9ba3993c9dc04c40d3f1821be69c4,Weiqiang,75299929+zhuwq0@users.noreply.github.com,2023-01-23T11:09:03-08:00,2023-01-23T11:09:03-08:00,0,1,3,3,0,Update README.md
+eqnet,included,b70e355ee3bbcb4f0c8d5f492bb82c5cbace0bff,Weiqiang,zhuwq0@gmail.com,2023-01-16T21:51:19-08:00,2023-01-16T21:51:19-08:00,0,1,56,0,0,add split_dataset.py
+eqnet,included,b17b0f9aa4d28b17f7c73e4dff90c4b40b59714c,Weiqiang,zhuwq0@gmail.com,2023-01-15T12:00:14-08:00,2023-01-15T12:00:14-08:00,0,6,272,44,0,small updates
+eqnet,included,422c10f1e90e75f10d4b2d69bb99298595a63da5,Weiqiang,zhuwq0@gmail.com,2023-01-10T14:29:19-08:00,2023-01-10T14:29:19-08:00,0,2,7,4,0,update models in predict.py
+eqnet,included,9883f4fa064ee4151eeedb37c4dffa8a90a31780,Weiqiang,zhuwq0@gmail.com,2023-01-10T14:19:11-08:00,2023-01-10T14:19:11-08:00,0,7,446,589,0,update unet and merge phasenet_das with phasenet
+eqnet,included,36fd0ba2b18da5bd6ebaa9b2eb393bd67506fd7b,Weiqiang,zhuwq0@gmail.com,2023-01-10T14:14:32-08:00,2023-01-10T14:14:32-08:00,0,5,418,26,0,update dataset to build hdf5 files
+eqnet,included,6eee768c3169a9da67fb83f69441d4fa46164091,Weiqiang,zhuwq0@gmail.com,2023-01-10T14:10:28-08:00,2023-01-10T14:10:28-08:00,0,1,5,4,0,rename center_heatmap to event_center
+eqnet,included,be189f1a3a82632da6d78236227b3488552eacf5,Weiqiang,zhuwq0@gmail.com,2023-01-10T14:07:43-08:00,2023-01-10T14:07:43-08:00,0,2,123,7,0,update seismic_network.py
+eqnet,included,2af1ae1bddaf59553ac64d63e1c9887d39285cf2,Weiqiang,zhuwq0@gmail.com,2023-01-05T15:49:11-08:00,2023-01-05T15:49:11-08:00,0,3,20,9,0,fix small bugs for poggiali's dataset
+eqnet,included,9871951f4a45b7cccc30da1e5b93844b8b9d3e42,Weiqiang,zhuwq0@gmail.com,2022-12-29T10:08:33-08:00,2022-12-29T10:08:33-08:00,0,1,10,5,0,update read_segy
+eqnet,included,9cbb819004292cdc15abe2d6752601cae94ca584,Weiqiang,zhuwq0@gmail.com,2022-12-28T17:12:30-08:00,2022-12-28T17:12:30-08:00,0,4,40,5,0,add support for segy format
+eqnet,included,d99762fa5fd435d984378c1e18e6eb028f6764fe,Weiqiang,zhuwq0@gmail.com,2022-12-28T16:20:57-08:00,2022-12-28T16:20:57-08:00,0,1,1,1,0,update phasenet-polarity model
+eqnet,included,0b15480acdc9f65272eacc87e86c71c4857d1353,Weiqiang,zhuwq0@gmail.com,2022-12-28T16:19:35-08:00,2022-12-28T16:19:35-08:00,0,1,1,1,0,update default phasenet-das model
+eqnet,included,35b5963801dc58815ece6565dd17920a5b95bb2a,Weiqiang,zhuwq0@gmail.com,2022-12-28T16:14:05-08:00,2022-12-28T16:14:05-08:00,0,7,324,167,0,update phasenet & phasenet-das
+eqnet,included,446264c5d3a351d975146d99a90d794f7d496d8f,Weiqiang,zhuwq0@gmail.com,2022-12-01T21:50:32-08:00,2022-12-01T21:50:32-08:00,0,6,55,11,0,some forgotted small changes
+eqnet,included,3b221d8da18f32a000d5dbf0611b690a8362a9e4,Weiqiang,zhuwq0@gmail.com,2022-12-01T12:48:54-08:00,2022-12-01T12:48:54-08:00,0,6,196,104,0,improve prediction & add high pass filtering
+eqnet,included,70b2ed865d5e66c83a808ee28ee58cc8a027f7e9,Weiqiang,zhuwq0@gmail.com,2022-11-30T10:03:34-08:00,2022-11-30T10:03:34-08:00,0,2,4,2,0,fix single file in data_list
+eqnet,included,41596dde1adad4d9b78625d2eb6a654fca2dcd56,Weiqiang,zhuwq0@gmail.com,2022-11-29T23:23:01-08:00,2022-11-29T23:23:01-08:00,0,1,17,14,0,update filt_3c.py
+eqnet,included,fa4f214460e7815ce5e16586b93d2cbdf5313b8e,Weiqiang,zhuwq0@gmail.com,2022-11-29T23:03:08-08:00,2022-11-29T23:03:08-08:00,0,2,7,4,0,increase kernel for detect_peaks
+eqnet,included,9f9a8d889e7d9e50c3dfac734665b4e3cba5148b,Weiqiang,zhuwq0@gmail.com,2022-11-29T22:32:43-08:00,2022-11-29T22:32:43-08:00,0,1,8,7,0,update plot phasenet
+eqnet,included,742897635d48b375d7a6f50bbd788dcf2fcd3283,Weiqiang,zhuwq0@gmail.com,2022-11-29T22:27:28-08:00,2022-11-29T22:27:28-08:00,0,1,1,1,0,fix small bug in read_mseed
+eqnet,included,b7750578853bbfd48074361a9c2477e4ba503573,Weiqiang,zhuwq0@gmail.com,2022-11-29T22:16:44-08:00,2022-11-29T22:16:44-08:00,0,5,198,109,0,fix missing normalization error
+eqnet,included,24590afbb2040e933910d3a796a3a1eaa8cad0a8,Weiqiang,zhuwq0@gmail.com,2022-11-28T16:52:19-08:00,2022-11-28T16:52:19-08:00,0,3,302,92,0,add visulization
+eqnet,included,4251c14bd2895e5c53c1011981fa4b86e5088a76,Weiqiang,zhuwq0@gmail.com,2022-11-28T16:45:12-08:00,2022-11-28T16:45:12-08:00,0,1,16,9,0,update model
+eqnet,included,5eeaafca416f045cf3dcd4d103281f66edbb9cf2,Weiqiang,zhuwq0@gmail.com,2022-11-28T12:14:40-08:00,2022-11-28T12:14:40-08:00,0,1,37,21,0,update README
+eqnet,included,239afc692ae812f220f39e89916d7b8164ed014b,Weiqiang,zhuwq0@gmail.com,2022-11-28T12:05:54-08:00,2022-11-28T12:05:54-08:00,0,7,352,93,0,polarity working
+eqnet,included,195955266b6c5def7eef01ee4dcad4c3e218bcbe,Weiqiang,zhuwq0@gmail.com,2022-11-26T15:27:18-08:00,2022-11-26T15:27:18-08:00,0,4,1787,56,0,update training for phasenet
+eqnet,included,3c69cd83584b059e5da800f7edf6bbb55485fa00,Weiqiang,zhuwq0@gmail.com,2022-11-24T17:07:53-08:00,2022-11-24T17:07:53-08:00,0,7,338,328,0,fix phasenet
+eqnet,included,8a36f092e69af0abf9cec5b1147d811600efd338,Weiqiang,zhuwq0@gmail.com,2022-11-24T13:25:00-08:00,2022-11-24T13:25:00-08:00,0,1,93,46,0,update unet1d.py
+eqnet,included,dfdae943d128c84b9b1d47e47e8f155b0a2bb1e9,Weiqiang,zhuwq0@gmail.com,2022-11-24T11:28:44-08:00,2022-11-24T11:28:44-08:00,0,1,166,244,0,update seismic trace loading
+eqnet,included,64736c21d945c028c30ac26419cc8d3495049748,Weiqiang,zhuwq0@gmail.com,2022-11-22T19:15:42-08:00,2022-11-22T19:15:42-08:00,0,2,181,117,0,add laplace smoothing
+eqnet,included,68febfc70290c2aa4864a544eab99ffa06134d2e,Weiqiang,zhuwq0@gmail.com,2022-11-21T16:39:06-08:00,2022-11-21T16:39:06-08:00,0,1,9,9,0,update utils.py
+eqnet,included,0b9762ef438a0433e7d1979c5f3448a274db281d,Weiqiang,zhuwq0@gmail.com,2022-11-20T23:37:54-08:00,2022-11-20T23:37:54-08:00,0,1,89,43,0,update das.py
+eqnet,included,8cb2fcf0698746ade45ea87a30d6e6447eca812f,Weiqiang,zhuwq0@gmail.com,2022-11-20T23:36:22-08:00,2022-11-20T23:36:22-08:00,0,1,37,71,0,update train.py
+eqnet,included,67d7c060b34793353c139d503c900aadabca01e1,Weiqiang,zhuwq0@gmail.com,2022-11-20T23:34:45-08:00,2022-11-20T23:34:45-08:00,0,1,15,39,0,format phasenet_das.py
+eqnet,included,0606acfbc8cd76b0eb00812865918738eb82adbb,Weiqiang,zhuwq0@gmail.com,2022-11-20T22:58:08-08:00,2022-11-20T22:58:08-08:00,0,1,17,14,0,update predict.py for converted phase
+eqnet,included,f996489f41e3b35d7a57d40409fcdec8cc044ff8,Weiqiang,zhuwq0@gmail.com,2022-11-20T18:28:25-08:00,2022-11-20T18:28:25-08:00,0,1,164,49,0,format phasenet_das.py
+eqnet,included,111ebcae7522f292e40c13e7c4fe78b0e1e91303,Weiqiang,zhuwq0@gmail.com,2022-11-20T17:06:47-08:00,2022-11-20T17:06:47-08:00,0,1,151,55,0,update format
+eqnet,included,2e5b8a626044ac43ca520706df2fc849e5e935f7,Weiqiang,zhuwq0@gmail.com,2022-11-20T17:00:03-08:00,2022-11-20T17:00:03-08:00,0,1,236,274,0,reformating
+eqnet,included,bce6c4ddee4cd15191572297e4bcf4d02ea74551,Weiqiang,zhuwq0@gmail.com,2022-11-20T16:59:53-08:00,2022-11-20T16:59:53-08:00,0,4,477,237,0,update training
+eqnet,included,22fc9ee078936bfbaf8d703197e00f950499a7bb,Weiqiang,zhuwq0@gmail.com,2022-11-18T15:25:29-08:00,2022-11-18T15:25:29-08:00,0,10,400,343,0,clean code and add merge_patch and merge_picks
+eqnet,included,a7ef60f0d4fcb03a67399e31251429d6b437d52b,Weiqiang,zhuwq0@gmail.com,2022-11-03T13:30:22-07:00,2022-11-03T13:30:22-07:00,0,1,1,1,0,update version
+eqnet,included,7e539df53c60d449797f13f7ad5012eb9a1067fc,Weiqiang,zhuwq0@gmail.com,2022-11-03T13:22:58-07:00,2022-11-03T13:22:58-07:00,0,6,138,46,0,add documentation
+eqnet,included,ea2dab0327153226828e01ae77805dadf360d6c0,Weiqiang,zhuwq0@gmail.com,2022-09-22T17:52:19-07:00,2022-09-22T17:52:19-07:00,0,3,10,13,0,add caching h5py keys
+eqnet,included,6be2d89dc1f8de511a1d14b6d4326a71782185e8,Weiqiang,zhuwq0@gmail.com,2022-09-22T16:56:59-07:00,2022-09-22T16:56:59-07:00,0,1,1,1,0,update readme
+eqnet,included,c44385cb23b94faaf9284c0b059ad1c0d36fdd03,Weiqiang,zhuwq0@gmail.com,2022-09-22T13:57:34-07:00,2022-09-22T13:57:34-07:00,0,7,491,277,0,"works for phasenet training, but need to improve augmentation"
+eqnet,included,72f57de937ffdb16901cf2b2161a56a16964ff7d,Weiqiang,zhuwq0@gmail.com,2022-09-04T11:13:37-07:00,2022-09-04T11:13:37-07:00,0,2,291,110,0,update seismic trace for training
+eqnet,included,ae3dffd7697a144b6efd28988bb664222c9b04f0,Weiqiang,zhuwq0@gmail.com,2022-09-04T11:11:13-07:00,2022-09-04T11:11:13-07:00,0,2,11,10,0,update format of hdf5
+eqnet,included,a83d59fec1018a05f0cb655e98b219b3151f41c6,Weiqiang,zhuwq0@gmail.com,2022-09-04T10:58:09-07:00,2022-09-04T10:58:09-07:00,0,7,215,50,0,update for phasenet-das
+eqnet,included,7bc107b5d34924532ad681bd5adde8b20abd1e9c,Weiqiang,zhuwq0@gmail.com,2022-08-24T22:25:42-07:00,2022-08-24T22:25:42-07:00,0,6,88,33,0,add phasenet training
+eqnet,included,3f0e4229e159ad97afb806d209649818731bf7e9,Weiqiang,zhuwq0@gmail.com,2022-08-24T22:23:35-07:00,2022-08-24T22:23:35-07:00,0,1,98,332,0,add phasenet.py
+eqnet,included,924787a04f3ec0909223072ce4fd5f6381462b66,Weiqiang,zhuwq0@gmail.com,2022-08-24T22:20:55-07:00,2022-08-24T22:20:55-07:00,0,1,5,16,0,format unet.py
+eqnet,included,05ffe39eb1356db42636ac33e6f5c0f24aa18d9e,Weiqiang,zhuwq0@gmail.com,2022-08-24T22:20:27-07:00,2022-08-24T22:20:27-07:00,0,1,98,0,0,add unet.py
+eqnet,included,d11ffb181b523b83362567171ecf3e5c2a2ab217,Weiqiang,zhuwq0@gmail.com,2022-08-24T22:15:44-07:00,2022-08-24T22:15:44-07:00,0,1,99,75,0,format resnet1d
+eqnet,included,bbf2b9451284ac5bccf8d592f22251a9a62b5dae,Weiqiang,zhuwq0@gmail.com,2022-08-24T21:44:43-07:00,2022-08-24T21:44:43-07:00,0,2,395,397,0,rename deeplabv3 to phasenet
+eqnet,included,cd64b0d3a2eb99ffbc977375ea64659267b4b746,Weiqiang,zhuwq0@gmail.com,2022-08-24T17:32:13-07:00,2022-08-24T17:32:13-07:00,0,1,397,0,0,add raw deeplabv3.py
+eqnet,included,bd91824c7bb95a2f0b5e4b163135978c6761608f,Weiqiang,zhuwq0@gmail.com,2022-08-24T17:22:56-07:00,2022-08-24T17:22:56-07:00,0,1,183,0,0,add seismic trace
+eqnet,included,04c3e196ea5cef8266060eb3138930cc30248915,Weiqiang,zhuwq0@gmail.com,2022-08-23T14:20:57-07:00,2022-08-23T14:20:57-07:00,0,4,553,130,0,add scripts for continuous data
+eqnet,included,7964842a67473bf8d01d1822b69225beab43b38b,Weiqiang,zhuwq0@gmail.com,2022-08-22T23:21:43-07:00,2022-08-22T23:21:43-07:00,0,3,272,0,0,add run_gamma to continous data
+eqnet,included,c9d0c672a67d1609f52c440b1647136df85d8bdd,Weiqiang,zhuwq0@gmail.com,2022-08-22T23:10:25-07:00,2022-08-22T23:10:25-07:00,0,4,205,127,0,update code
+eqnet,included,e5f425cb8ba025b82a1663e53c31b95ad45cc2a7,weiqiang,wayne.weiqiang@gmail.com,2022-08-22T15:41:42-07:00,2022-08-22T15:41:42-07:00,0,1,38,27,0,update build_dataset.py
+eqnet,included,a03c8df873437d604828f950e104dfe5e4d8dcac,weiqiang,wayne.weiqiang@gmail.com,2022-08-04T23:30:08-07:00,2022-08-04T23:30:08-07:00,0,3,64,55,0,improve parallel prediction
+eqnet,included,1b99dc94deec4847a15d2e24479aaeab51d25402,zhuwq0,75299929+zhuwq0@users.noreply.github.com,2022-08-03T14:08:50-07:00,2022-08-03T14:08:50-07:00,0,1,1,1,0,Update requirements.txt
+eqnet,included,3bc740780fb8114cc6ce3cb31bc437e274face4a,weiqiang,wayne.weiqiang@gmail.com,2022-08-03T13:59:12-07:00,2022-08-03T13:59:12-07:00,0,2,4,2,0,add data_path argument
+eqnet,included,89adb665e61bbcdf492ff3033166db2d3a91875f,weiqiang,wayne.weiqiang@gmail.com,2022-08-01T17:05:35-07:00,2022-08-01T17:05:35-07:00,0,2,645,55,0,update paper_figures
+eqnet,included,1d768909be50d333fb20337ea45a2cdf78d71081,weiqiang,wayne.weiqiang@gmail.com,2022-08-01T15:51:54-07:00,2022-08-01T15:51:54-07:00,0,3,101,1541,0,clean up phasenet_das figures
+eqnet,included,347d634ef4acdc2af6b85c879b2dd4c284464057,weiqiang,wayne.weiqiang@gmail.com,2022-08-01T14:10:56-07:00,2022-08-01T14:10:56-07:00,0,5,318,586,0,clean up association
+eqnet,included,dcb7d0a7e538245b29878913fb48725fbe672666,weiqiang,wayne.weiqiang@gmail.com,2022-08-01T13:29:19-07:00,2022-08-01T13:29:19-07:00,0,1,48,0,0,add merge_catalogs_mammoth.py
+eqnet,included,f1e475cfe2bf18d2579d9c385c20036af53dcbe3,weiqiang,wayne.weiqiang@gmail.com,2022-08-01T12:04:09-07:00,2022-08-01T12:04:09-07:00,0,3,2571,0,0,add tests/phasenet_das
+eqnet,included,22a54946e0aab7600b99a92319a58571c3280bcd,weiqiang,wayne.weiqiang@gmail.com,2022-08-01T12:01:51-07:00,2022-08-01T12:01:51-07:00,0,1,259,0,0,add noisy_label.py for building das training data
+eqnet,included,6fa122c9ae64f35e7dbf2293529aff6e80c7b26a,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T13:30:56-07:00,2022-07-31T13:30:56-07:00,0,2,6,4,0,remove layer norm in Patch Merging
+eqnet,included,3db0edff8fe8d0fdffee6d84c720f8126afabbbf,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T13:13:41-07:00,2022-07-31T13:13:41-07:00,0,2,6,0,0,add layer norm back to PatchMerging
+eqnet,included,b01d95ef503c74a84127e44012db86f1665eec24,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T12:42:15-07:00,2022-07-31T12:42:15-07:00,0,1,18,6,0,hardcode only using time information without station information
+eqnet,included,7a982de6a5bc5b4f9b360d3c2d7023eafa5a9668,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T12:16:41-07:00,2022-07-31T12:16:41-07:00,0,1,2,2,0,change swin2 to swin_transformer_v2
+eqnet,included,a4ebfaef5fba0fcb5818d64cb3930d3c4472c6e4,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T12:16:08-07:00,2022-07-31T12:16:08-07:00,0,2,532,662,0,clean up swin_transformer_v2
+eqnet,included,1e9a7e146dced95dc97337571c1153a937d75c4b,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T11:14:51-07:00,2022-07-31T11:14:51-07:00,0,1,1,1,0,remove positional coding from swin for seismic network
+eqnet,included,13bcfc756293ed4f37021d56ea9ad806b7da1adc,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T11:13:18-07:00,2022-07-31T11:13:18-07:00,0,3,150,131,0,add relative positional ecoding works
+eqnet,included,d91fe9b2d93e5131682024a8e917bd1acac59a65,weiqiang,wayne.weiqiang@gmail.com,2022-07-31T10:36:56-07:00,2022-07-31T10:36:56-07:00,0,1,658,0,0,add swin2.py
+eqnet,included,06d8acc1935d9f63ef988a4a315bac6c9c6f7d36,weiqiang,wayne.weiqiang@gmail.com,2022-07-30T17:13:53-07:00,2022-07-30T17:13:53-07:00,0,2,22,11,0,update autoencoder training
+eqnet,included,c1ab64767d3f5ceb361bfafcb4519b43f9545ab4,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T21:47:52-07:00,2022-07-29T21:47:52-07:00,0,5,269,136,0,clean up autoencoder using unet
+eqnet,included,d0268e9c33c41e67eddf0039a806cbda5bea2b32,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T13:21:04-07:00,2022-07-29T13:21:04-07:00,0,3,14,12,0,remove unused layers to prevent error in torch.nn.parallel.DistributedDataParallel
+eqnet,included,aff8f788075a9b6125f14beca010f6d3361c5efd,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T11:35:21-07:00,2022-07-29T11:35:21-07:00,0,6,98,107,0,update PhaseNet-DAS model and training script
+eqnet,included,3e22563a7666ead03e211dea6a2a67963a6856bb,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T11:22:36-07:00,2022-07-29T11:22:36-07:00,0,2,11,3,0,add swin_transformer
+eqnet,included,6388c6950481682125086ae1aa8d017be0822924,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T11:02:16-07:00,2022-07-29T11:02:16-07:00,0,1,66,51,0,fix training data size
+eqnet,included,d18cf561a7d3e8508903159e912afdb8ad57593f,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T11:00:51-07:00,2022-07-29T11:00:51-07:00,0,3,174,122,0,swin works without positional encoding
+eqnet,included,981c3e53eb8bd1014643f50d630c080e81af1331,weiqiang,wayne.weiqiang@gmail.com,2022-07-29T09:53:00-07:00,2022-07-29T09:53:00-07:00,0,2,8,5,0,eqnet works well with resnet1d
+eqnet,included,e18a0827eeebcd10134bd460991f25199e82074a,weiqiang,wayne.weiqiang@gmail.com,2022-07-28T22:16:49-07:00,2022-07-28T22:16:49-07:00,0,1,27,24,0,eqnet works for indenpendent stations
+eqnet,included,553ccab16bb883b82b5bbb2b228f7089792c762a,weiqiang,wayne.weiqiang@gmail.com,2022-07-28T15:42:15-07:00,2022-07-28T15:42:15-07:00,0,1,623,0,0,add swin_transformer
+eqnet,included,31c3d4068a218520b3cc6a211e8835903d3ad197,Weiqiang,zhuwq0@gmail.com,2022-07-27T22:55:46-07:00,2022-07-27T22:55:46-07:00,0,4,22,13,0,update train.py for training basic eqnet
+eqnet,included,a9df49a18e05d15c24f98a5e61aa87b0e45cdaeb,Weiqiang,zhuwq0@gmail.com,2022-07-27T22:47:11-07:00,2022-07-27T22:47:11-07:00,0,1,65,264,0,basic version of eqnet
+eqnet,included,ecd3d195bdb0ede4209d6af6a88274ede26a0850,Weiqiang,zhuwq0@gmail.com,2022-07-27T22:43:00-07:00,2022-07-27T22:43:00-07:00,0,2,418,418,0,rename resnet.py
+eqnet,included,7af70e20b9d410bb4a80e787fd7e84666850b30d,Weiqiang,zhuwq0@gmail.com,2022-07-27T17:06:55-07:00,2022-07-27T17:06:55-07:00,0,1,418,0,0,add resnet.py
+eqnet,included,f4e3cb2a9a324ded78bd0adf98b16f1ab02a90f9,Weiqiang,zhuwq0@gmail.com,2022-07-27T15:28:10-07:00,2022-07-27T15:28:10-07:00,0,1,111,41,0,update eqnet
+eqnet,included,21283b1248c9f2c600a40cd7efa861027ff585ec,Weiqiang,zhuwq0@gmail.com,2022-07-27T15:16:32-07:00,2022-07-27T15:16:32-07:00,0,1,3,2,0,improve window of select waveforms
+eqnet,included,21b8970e24d25663c0d9914de55e0196648e2ef1,Weiqiang,zhuwq0@gmail.com,2022-07-27T15:13:25-07:00,2022-07-27T15:13:25-07:00,0,1,4,6,0,add convert ncedc datasets
+eqnet,included,5990870274a2326356f7c4a8a6a53cf7a05f730d,Weiqiang,zhuwq0@gmail.com,2022-07-27T14:54:57-07:00,2022-07-27T14:54:57-07:00,0,1,271,0,0,add eqnet.py
+eqnet,included,ed5f2060671bcacb47b8f426d37611f0fd0610a3,Weiqiang,zhuwq0@gmail.com,2022-07-27T14:52:21-07:00,2022-07-27T14:52:21-07:00,0,4,128,0,0,add eqnet.py
+eqnet,included,7fe12bcf20eb24d20acbef0abd0c3f8e6698c933,Weiqiang,zhuwq0@gmail.com,2022-07-26T18:21:51-07:00,2022-07-26T18:21:51-07:00,0,1,121,0,0,add build_datasets.py
+eqnet,included,0d994f018753164e6fa70aec9cf9fe2f1127131b,weiqiang,wayne.weiqiang@gmail.com,2022-07-26T17:53:16-07:00,2022-07-26T17:53:16-07:00,0,6,116,22,0,add autoencoder
+eqnet,included,d4ed284a77f866e1f677a784df616d58033a81fc,Weiqiang,zhuwq0@gmail.com,2022-07-26T17:08:00-07:00,2022-07-26T17:08:00-07:00,0,2,332,1,0,add autoencoder
+eqnet,included,2706f3b2db372f5b2e9d0962e0b478e1407e24db,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T14:49:44-07:00,2022-07-20T14:49:44-07:00,0,4,101,54,0,add merge_picks
+eqnet,included,3ac3009c15539ee976ca541270e3a7c756923248,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T11:42:34-07:00,2022-07-20T11:42:34-07:00,0,15,1420,1408,0,impove code structure
+eqnet,included,ef173193b20cd2b52df3f58ecd466a360f5d5ff6,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T11:10:27-07:00,2022-07-20T11:10:27-07:00,0,1,6,0,0,Update README.md
+eqnet,included,cdf9591fda1cb29e0efa5828a285fcda2e644860,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T11:08:57-07:00,2022-07-20T11:08:57-07:00,1,,,,,Merge branch 'master' of github.com:AI4EPS/EQNet
+eqnet,included,2d9d3e416f8f50c3b08d6094778d06c9d1e6d4e8,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T11:08:55-07:00,2022-07-20T11:08:55-07:00,0,6,1295,1288,0,move utils.py into eqnet
+eqnet,included,731ed86f558976bbc00e48f472f0d6bd0d49e4d6,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T11:02:07-07:00,2022-07-20T11:02:07-07:00,0,1,0,0,0,add postprocess.py
+eqnet,included,b1083ea0b848b78c834069f8c65edbc9ed4fefc0,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T11:00:30-07:00,2022-07-20T11:00:30-07:00,0,1,0,0,0,add data.py
+eqnet,included,d1bf2c4e48d9e31142e939c6574abbb8dabc6a5b,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:52:12-07:00,2022-07-20T10:52:12-07:00,0,1,1,1,0,Update README.md
+eqnet,included,2a033680964f055cff274b8c05682e3714a1719c,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:47:03-07:00,2022-07-20T10:47:03-07:00,0,1,1,0,0,Update README.md
+eqnet,included,1eabf6a2ef8a585de8ef6ccadb11af54332287c5,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:36:18-07:00,2022-07-20T10:36:18-07:00,0,1,4,38,0,clean up predict.py
+eqnet,included,8288a6cbaa44055aa1b2ea39cbd3f3f602326dcb,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:32:43-07:00,2022-07-20T10:32:43-07:00,1,,,,,Merge branch 'master' of github.com:AI4EPS/EQNet
+eqnet,included,b70eb29b6eaac6d9d04839eea208d721425939cd,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:32:24-07:00,2022-07-20T10:32:24-07:00,0,1,2,13,0,add matplotlib.use agg
+eqnet,included,f928cd462587db4170d2e4c07cabe566e58d497c,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:27:39-07:00,2022-07-20T10:27:39-07:00,0,1,1,2,0,Update README.md
+eqnet,included,c18a122be61f36a71d6b7b2eef46bfbbc5b212f0,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:26:57-07:00,2022-07-20T10:26:57-07:00,0,1,8,0,0,Create requirements.txt
+eqnet,included,12aa457df77ad143b757a47d1fdb47d2349e4252,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:19:32-07:00,2022-07-20T10:19:32-07:00,0,1,7,0,0,Update README.md
+eqnet,included,0d69d710ae0e509dd75339ad505c76e0a5cdf7ae,Weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:18:16-07:00,2022-07-20T10:18:16-07:00,0,1,3,3,0,Update README.md
+eqnet,included,0f54740d3bd2682c920445fa95203de64d7a1fc2,weiqiang,wayne.weiqiang@gmail.com,2022-07-20T10:17:05-07:00,2022-07-20T10:17:05-07:00,0,6,117,50,0,remove detectron2
+eqnet,included,a495cd41cbb3fb0632964c2c2a1cace08b0a2bd4,Weiqiang,zhuwq0@gmail.com,2022-07-18T14:57:17-07:00,2022-07-18T14:57:17-07:00,0,1,1,1,0,add nn.module
+eqnet,included,3757ff771a269d97db7d02e58e9883a954901eef,Weiqiang,zhuwq0@gmail.com,2022-07-18T14:52:19-07:00,2022-07-18T14:52:19-07:00,0,4,299,360,0,init
+eqnet,included,55559c69c7a41f90792611af7a2c847059f632af,Weiqiang,zhuwq0@gmail.com,2022-07-18T14:34:27-07:00,2022-07-18T14:34:27-07:00,0,6,2334,0,0,init

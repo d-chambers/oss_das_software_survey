@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oss-das"
+version = "0.1.0"
+description = "Reproducible analysis of the open-source distributed acoustic sensing ecosystem"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "httpx>=0.28",
+  "jinja2>=3.1",
+  "plotly>=6.0",
+  "packaging>=24.0",
+  "pydantic>=2.10",
+  "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3",
+  "pytest-cov>=6.0",
+  "ruff>=0.11",
+  # Quarto renders docs/presentation.qmd through its Jupyter engine.
+  "ipykernel>=6.29",
+  "nbclient>=0.10",
+  "nbformat>=5.10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oss_das"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF"]
+ignore = ["E501"]

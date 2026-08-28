@@ -1,0 +1,21 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+daspack,included,ec268cd5abdfb52511d6e9eadc8188871e817200,Aleix Segui,asegui@student.ethz.ch,2025-10-16T16:06:15+01:00,2025-10-16T16:06:15+01:00,0,1,2,2,0,Update DOI
+daspack,included,8463f42eec5e742278acffd312b1ee6fe39b5350,Aleix Segui,asegui@student.ethz.ch,2025-10-07T13:05:34+01:00,2025-10-07T13:05:34+01:00,0,1,86,6,0,Update benchmark readme with DOI
+daspack,included,e035c383c07feeb3e92bc24ffe78dece59df3bcc,Aleix Segui,asegui@student.ethz.ch,2025-09-29T18:18:28+02:00,2025-09-29T18:18:28+02:00,0,4,428,0,0,Add benchmark folder and examples
+daspack,included,64bf6159c8603d38a09c042ec12404decb989d2e,Aleix Segui,asegui@student.ethz.ch,2025-08-26T15:15:09+02:00,2025-08-26T15:15:09+02:00,0,1,1,4,0,Clarify parameters at README
+daspack,included,46dd223b9c3e7ac5f79de7b21f0a6b26eb761a68,Aleix Segui,asegui@student.ethz.ch,2025-08-26T15:10:51+02:00,2025-08-26T15:10:51+02:00,0,1,13,7,0,Update README for initial release
+daspack,included,4d6d35debdef25892d421d5fd6e0c14ecb92b87c,Aleix Segui,asegui@student.ethz.ch,2025-08-26T15:09:47+02:00,2025-08-26T15:09:47+02:00,0,1,21,1,0,Add warning when clamping values
+daspack,included,4237a6a4bffa04ac09d4ee992a3402ba9e9ec9a5,Aleix Segui,asegui@student.ethz.ch,2025-08-09T20:46:39+02:00,2025-08-09T20:46:39+02:00,0,2,3,3,0,Update pip installation name
+daspack,included,2f71e40624ad740ba4f1103e335cad326ee14b37,Aleix Segui,asegui@student.ethz.ch,2025-08-09T20:01:28+02:00,2025-08-09T20:01:28+02:00,0,1,4,19,0,Remove API reference from the readme
+daspack,included,8e8f6c71a31468fea3dbd2e6cd5337c2ebf3d0a9,Aleix Segui,asegui@student.ethz.ch,2025-08-09T19:51:32+02:00,2025-08-09T19:51:32+02:00,0,1,92,43,0,Update README
+daspack,included,51e49a2b88d510f04f8b998ab7e5d403aa203f0b,Aleix Segui,asegui@student.ethz.ch,2025-08-09T19:37:09+02:00,2025-08-09T19:38:01+02:00,0,9,547,53,0,Add simple decoding interface
+daspack,included,651984ddf90ad260975e9bf328abdd1e77300268,Aleix Segui,asegui@student.ethz.ch,2025-08-08T20:26:20+02:00,2025-08-09T19:38:01+02:00,0,6,373,41,0,Add top-level api DASCoder
+daspack,included,dddaefe91dff6f3f10c4c2940f0d55e9e2b232c2,Aleix Segui,asegui@student.ethz.ch,2025-08-08T17:26:46+02:00,2025-08-09T19:38:01+02:00,0,6,536,195,0,Add Lossy Codec implementation
+daspack,included,216fbe09fce6475357feba962ab6c1c30565c8a5,Aleix Segui,asegui@student.ethz.ch,2025-08-06T18:19:36+02:00,2025-08-09T19:38:01+02:00,0,7,130,40,0,Major update: hdf5 is now optional
+daspack,included,4a786f17f3b0d429f1f8f343afb5ca19ba1047e6,Aleix Seguí,46848811+asleix@users.noreply.github.com,2025-08-06T02:13:34+02:00,2025-08-06T02:13:34+02:00,0,1,2,0,0,Update README.md: add notice
+daspack,included,153a97ade30f2836404fed03e3651268c29d1dbe,Aleix Segui,asegui@student.ethz.ch,2025-08-06T02:11:16+02:00,2025-08-06T02:11:16+02:00,0,3,71,9,0,Fix hdf5 interface: wrong compression_opts
+daspack,included,ea3a9125ae150d89af7694cc21f770656852b9cf,Aleix Segui,asegui@student.ethz.ch,2025-08-06T01:48:22+02:00,2025-08-06T01:48:22+02:00,0,31,3741,4055,0,Refactor: improve file structure
+daspack,included,27b3ca08644fcc0c807288d74ede6a3bf64620a4,Aleix Segui,asegui@student.ethz.ch,2025-08-05T00:40:35+02:00,2025-08-05T00:40:35+02:00,0,7,560,138,0,Add tests and improve data structures
+daspack,included,34d2870762617cf6a218e5eb5dcc6f11038909b1,Aleix Segui,asegui@student.ethz.ch,2025-08-04T16:32:13+02:00,2025-08-04T16:32:13+02:00,0,37,4528,3602,0,Re-structure project
+daspack,included,81e98fa8ef118bb846e8b604bcf9d69e058a6e08,Aleix Segui,asegui@student.ethz.ch,2025-07-24T09:16:57+02:00,2025-07-24T09:16:57+02:00,0,1,15,0,0,Add citation
+daspack,included,a82f86fe9b7e0e6879e71190152191e7e6fb95a8,Aleix Segui,asegui@student.ethz.ch,2025-07-11T17:03:07+02:00,2025-07-11T17:03:07+02:00,0,23,4080,0,0,Open-source alpha version of DASPack

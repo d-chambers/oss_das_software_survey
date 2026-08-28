@@ -1,0 +1,173 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+rnn-das,included,55093c94e08216d2b464816f9caec895869fe527,Javier Fernández-Carabantes,javignp8@gmail.com,2026-07-06T19:01:31+02:00,2026-07-06T19:01:31+02:00,0,1,1,1,0,Update DOI badge link in README.md
+rnn-das,included,85cc6292f22c180cac2fb79dbef066718f70878e,Javier Fernández-Carabantes,javignp8@gmail.com,2026-06-13T12:36:30+02:00,2026-06-13T12:36:30+02:00,0,1,1,1,0,Add logo and enhance README formatting
+rnn-das,included,4ac130a3fe7f3dbcfee4bbc94077c304479977cd,Javier Fernández-Carabantes,javignp8@gmail.com,2026-06-13T12:35:45+02:00,2026-06-13T12:35:45+02:00,0,1,0,0,1,Add files via upload
+rnn-das,included,eac60f3ec586f733acde06d06b657b6b6c609edc,Javier Fernández-Carabantes,javignp8@gmail.com,2026-06-13T10:48:55+02:00,2026-06-13T10:48:55+02:00,0,1,4,2,0,Restore project title in README.md
+rnn-das,included,aa9ebe600df12513f7ae242e189e4ced6dce5974,Javier Fernández-Carabantes,javignp8@gmail.com,2026-06-13T10:15:03+02:00,2026-06-13T10:15:03+02:00,0,1,0,1,0,Update README.md
+rnn-das,included,14b01723c91095d0e3421735cf002bf59115dc53,Javier Fernández-Carabantes,javignp8@gmail.com,2026-04-20T13:43:03+02:00,2026-04-20T13:43:03+02:00,0,1,1,1,0,Update README to change downloads badge to visitors
+rnn-das,included,e118a769e0345c508bcad1a1091f68c1eb7148fd,Javier Fernández-Carabantes,javignp8@gmail.com,2026-04-20T13:41:56+02:00,2026-04-20T13:41:56+02:00,0,1,1,0,0,Add downloads badge to README
+rnn-das,included,0c34322f263cc8f264fd2162b7a42829b3d029de,Javier Fernández-Carabantes,javignp8@gmail.com,2026-04-20T13:41:02+02:00,2026-04-20T13:41:02+02:00,0,1,7,0,0,Enhance README with additional badges
+rnn-das,included,4bb592ff49b8820d75e7bddc34fd8e9ad8b78adf,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-26T10:48:28+02:00,2025-09-26T10:48:28+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,e37a730fb87f5c1f23c62af166ad32d6629f5c1e,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-26T10:40:13+02:00,2025-09-26T10:40:13+02:00,0,1,4,4,0,Update README.md
+rnn-das,included,82a6865dbdb620a4a1396befe3052e9c48b62464,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-23T17:14:28+02:00,2025-09-23T17:14:28+02:00,0,1,0,0,1,Added the published paper file (JGR: Solid Earth)
+rnn-das,included,dae1e8a8a8bea5ac2a50d136e4114a193a87b04e,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-18T16:02:43+02:00,2025-09-18T16:02:43+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,4e9384765963c636c28fc923dc42c83157b213f4,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-18T15:52:31+02:00,2025-09-18T15:52:31+02:00,0,1,52,0,0,Add files via upload
+rnn-das,included,c1a892bc5f7824419162515b6725128bddfb0011,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-18T15:52:17+02:00,2025-09-18T15:52:17+02:00,0,1,0,53,0,Delete scripts/run_RNN_das.py
+rnn-das,included,bc1e2003d6911aeee065a2dda07e887f1fcbfd84,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-18T15:49:27+02:00,2025-09-18T15:49:27+02:00,0,1,53,0,0,Fixed a bug with the device selection
+rnn-das,included,db2abfd8b79639b4cf79df1e09bcd56601f210b2,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-18T15:48:29+02:00,2025-09-18T15:48:29+02:00,0,1,0,50,0,Delete scripts/run_RNN_das.py
+rnn-das,included,a5d2ca2643c2bcc63056c5d7899ebf866d57d0b5,Javier Fernández-Carabantes,javignp8@gmail.com,2025-09-12T10:13:29+02:00,2025-09-12T10:13:29+02:00,0,1,6,3,0,Update README.md
+rnn-das,included,d50ca50ac9f8929adfc8e5616e4a13b5660d2ca4,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T20:06:07+02:00,2025-07-28T20:06:07+02:00,0,1,1,1,0,Update requirements_RNN_DAS.txt
+rnn-das,included,5bc02313daa256a56ea8b55b34a02b6644aad8a1,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T19:39:43+02:00,2025-07-28T19:39:43+02:00,0,1,6,6,0,Add files via upload
+rnn-das,included,7c441773a551e4d7a32c5ec590cf855345945b7d,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T19:19:26+02:00,2025-07-28T19:19:26+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,fe8ed57f624e53cbd2f309066db3bfb67e42a7aa,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T19:19:07+02:00,2025-07-28T19:19:07+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,a7e8cce9d5b6a37f7d6db2699a0c053019d4d6bc,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T19:14:29+02:00,2025-07-28T19:14:29+02:00,0,1,13,13,0,Add files via upload
+rnn-das,included,a4bb98791a15267aeca86c62cfa8f29905a7facb,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T18:36:55+02:00,2025-07-28T18:36:55+02:00,0,1,1,1,0,Update RNN_DAS.yml
+rnn-das,included,8b6cd60408ee54db5e03d5d68c4781b5680585ed,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T18:30:39+02:00,2025-07-28T18:30:39+02:00,0,1,9,22,0,Update README.md
+rnn-das,included,e6b317da8b911bbc32a2de14dd6372812ec9c4e2,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T18:24:22+02:00,2025-07-28T18:24:22+02:00,0,2,29,0,0,Add files via upload
+rnn-das,included,ccb721d183b5906aa5d84fdbe40deb61d4535cd5,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T18:23:32+02:00,2025-07-28T18:23:32+02:00,0,4,0,272,0,Delete requirements directory
+rnn-das,included,42c697dccf019336c9b76d9205e27bb604f438cf,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:31:14+02:00,2025-07-28T15:31:14+02:00,0,1,0,1,0,Update requirements_RNN_DAS_windows.txt
+rnn-das,included,6b4a62bf94aa189bcadc99848f6de9819c2bb4c5,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:31:01+02:00,2025-07-28T15:31:01+02:00,0,1,1,2,0,Update requirements_RNN_DAS_linux.txt
+rnn-das,included,7f0fa05b1f1b9bcbf00933e860a6c39db5e7afd8,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:30:39+02:00,2025-07-28T15:30:39+02:00,0,1,0,1,0,Update RNN_DAS_windows.yml
+rnn-das,included,c5ac214e19f83be1d0bf9718a0fb8f36ea0a09d4,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:30:17+02:00,2025-07-28T15:30:17+02:00,0,1,0,1,0,Update RNN_DAS_linux.yml
+rnn-das,included,9ebba7acd2bb17fd5f874351446585c84d9d27ed,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:29:12+02:00,2025-07-28T15:29:12+02:00,0,1,4,4,0,Update README.md
+rnn-das,included,456207215060258e131ea33d9fefe98712ef1217,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:26:37+02:00,2025-07-28T15:26:37+02:00,0,1,2,1,0,bug fixxed
+rnn-das,included,1bbb271edfba2679c14bf69ef21f390033e486a2,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T15:22:41+02:00,2025-07-28T15:22:41+02:00,0,1,1,1,0,Update RNN_DAS_linux.yml
+rnn-das,included,5220edddb830c87417b7430682d846fb189f463d,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T14:29:21+02:00,2025-07-28T14:29:21+02:00,0,2,7,3,0,Add files via upload
+rnn-das,included,be8d537ff5dd28451b5657ac952e3ea29c9ab61c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-28T12:49:31+02:00,2025-07-28T12:49:31+02:00,0,1,18,18,0,Add files via upload
+rnn-das,included,b7bfa6f61b47f4d0eecb10760d52745b9e77f043,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-10T23:04:13+02:00,2025-07-10T23:04:13+02:00,0,1,2,1,0,Update README.md
+rnn-das,included,23c2649ac27c5baf88ace5f05bdf9c4931cd764a,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-10T23:03:41+02:00,2025-07-10T23:03:41+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,be1f5f887d19cb4fd0a7e39b0b271672f0c3a114,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-10T23:03:20+02:00,2025-07-10T23:03:20+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,0874609080ab3fe7c0ab7a52d5e3b2aaa487a841,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:07:55+02:00,2025-07-01T22:07:55+02:00,0,1,0,102,0,Delete RNN-DAS_picks/d_c_20211120_064137_064337_RNN-DAS.csv
+rnn-das,included,e5e0e1c5c0eb8ead8e16c139dfc799aa1fef3327,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:07:12+02:00,2025-07-01T22:07:12+02:00,0,1,1,1,0,Add files via upload
+rnn-das,included,205a3d1c55daa153259a9033b71ae788723b2eeb,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:06:49+02:00,2025-07-01T22:06:49+02:00,0,3,101,0,2,Add files via upload
+rnn-das,included,385a9ac91d42f565f734b03eae26bc72f0b6894f,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:06:12+02:00,2025-07-01T22:06:12+02:00,0,1,0,0,1,Delete RNN-DAS_predictions directory
+rnn-das,included,338a118c84ef5120fa91cb26be6bd9d582f0e85c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:06:03+02:00,2025-07-01T22:06:03+02:00,0,1,0,0,1,Delete RNN-DAS_waveforms directory
+rnn-das,included,143f9ff1f475686d987b155bc5b42b136ba03b0c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:05:15+02:00,2025-07-01T22:05:15+02:00,0,1,0,0,1,Delete plots/d_c_20211120_064137_064337_bi.png
+rnn-das,included,9143fbdfa0ef3f3d93dc699d4e4a14cb61b5e650,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T22:04:51+02:00,2025-07-01T22:04:51+02:00,0,1,0,0,1,Add files via upload
+rnn-das,included,87c686344d434f9162c9675f2053a8762ae6475c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:57:59+02:00,2025-07-01T21:57:59+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,506c8a5299f77fbf1da1623ab3d441dba13d3629,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:53:33+02:00,2025-07-01T21:53:33+02:00,0,1,2,0,0,Update README.md
+rnn-das,included,edfd8dd8f7e474728d6b24beb4373ec2cf15bc70,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:53:07+02:00,2025-07-01T21:53:07+02:00,0,1,6,0,0,Update README.md
+rnn-das,included,b3c114e23f5cf069886f8ddafa426de3ee32053f,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:49:14+02:00,2025-07-01T21:49:14+02:00,0,1,3,0,0,Update README.md
+rnn-das,included,22a45e797425a33ce4405eb565c6f695bdf97065,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:47:45+02:00,2025-07-01T21:47:45+02:00,0,1,1,0,0,Update README.md
+rnn-das,included,b5784068d9347d879402c1c58b9ceaacee5dce4a,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:47:07+02:00,2025-07-01T21:47:07+02:00,0,1,2,0,0,Update README.md
+rnn-das,included,ee77232a3595c89bb5d19b79a8d2281d45390a2f,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:46:24+02:00,2025-07-01T21:46:24+02:00,0,1,4,1,0,Update README.md
+rnn-das,included,c580b009cf6e3e8a35d897421f516438f42d3265,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:44:24+02:00,2025-07-01T21:44:24+02:00,0,3,0,0,3,Add files via upload
+rnn-das,included,68731ec590d5c8068aeecd641dc12f2adf1c1f28,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:42:33+02:00,2025-07-01T21:42:33+02:00,0,1,3,4,0,Update README.md
+rnn-das,included,28bfa610c2296c4f73c7321950c945dc6228a91c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:41:04+02:00,2025-07-01T21:41:04+02:00,0,1,6,3,0,Update README.md
+rnn-das,included,4438377cdeea0e6504905cde29df4b7d80b21e98,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:37:45+02:00,2025-07-01T21:37:45+02:00,0,1,7,2,0,Update README.md
+rnn-das,included,b6eec32860a2cd54603da6b6f29f85b99476a166,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:35:30+02:00,2025-07-01T21:35:30+02:00,0,1,27,23,0,Add files via upload
+rnn-das,included,62eda2849ac27e852206aff33cc9f9dded6ef3fa,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:31:30+02:00,2025-07-01T21:31:30+02:00,0,1,0,0,1,Delete example/RNN-DAS_waveforms/d_c_20211120_064137_064337.mseed
+rnn-das,included,268884af0bf743a95754b232a892fa95c9db075c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:31:10+02:00,2025-07-01T21:31:10+02:00,0,1,0,0,1,Delete example/RNN-DAS_predictions/d_c_20211120_064137_064337_grammar
+rnn-das,included,59afb38b18ed16a13c5a0c311d2d705c4412d29f,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:30:54+02:00,2025-07-01T21:30:54+02:00,0,1,0,0,1,Delete example/RNN-DAS_predictions/d_c_20211120_064137_064337
+rnn-das,included,8d0c4c7e0169f3152ee7ee364701a5a11b4267b9,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:30:35+02:00,2025-07-01T21:30:35+02:00,0,1,0,102,0,Delete example/RNN-DAS_picks/d_c_20211120_064137_064337_RNN-DAS.csv
+rnn-das,included,7b151dda1483b35f9e8fd6311a442ac62c7998c1,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:30:19+02:00,2025-07-01T21:30:19+02:00,0,1,0,6617,0,Delete example/RNN-DAS_picks/d_20211120_064137_064337_RNN-DAS.csv
+rnn-das,included,859ec9241b89b7ee84ebc12e95ed2e3f8d177c65,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:29:53+02:00,2025-07-01T21:29:53+02:00,0,1,0,0,1,Delete example/H5_data/d_c_20211120_064137_064337.h5
+rnn-das,included,4c366c7f04e54624bb1baf74a0eec811d7fd3b83,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:29:04+02:00,2025-07-01T21:29:04+02:00,0,9,310,111,5,Add files via upload
+rnn-das,included,59eec518ded85aaff4590b6c90b2c9489c19055e,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:10:54+02:00,2025-07-01T21:10:54+02:00,0,1,0,0,1,Delete d_c_20211129_083430_083630.h5
+rnn-das,included,dc5b415b9badf3fc80b6fdffeb9a618b80eed0dc,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:10:37+02:00,2025-07-01T21:10:37+02:00,0,1,0,0,1,Add files via upload
+rnn-das,included,4f45d7b12fed1c6b47fe5d6bedfe2193c7a9e62c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:09:14+02:00,2025-07-01T21:09:14+02:00,0,1,0,0,1,Add files via upload
+rnn-das,included,c37fa4663c99dc06dc8d8830b1ac3698105065fc,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:07:52+02:00,2025-07-01T21:07:52+02:00,0,1,0,0,1,Delete data_to_predict/d_c_20211120_064137_064337.h5
+rnn-das,included,dfac0f97f6d76f23f3eac6024a34d5c89c9e70eb,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T21:07:19+02:00,2025-07-01T21:07:19+02:00,0,1,1,1,0,Add files via upload
+rnn-das,included,260dc05a1b9f463d0d169b425a0a6a8869349ec0,Javier Fernández-Carabantes,javignp8@gmail.com,2025-07-01T20:45:27+02:00,2025-07-01T20:45:27+02:00,0,2,48,44,0,Add files via upload
+rnn-das,included,299fa2cf7f103151d91276fa54dd39415a7b6a7c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-04-09T11:25:09+02:00,2025-04-09T11:25:09+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,92189cbbf14100f2a528b839f04322a0bc809486,Javier Fernández-Carabantes,javignp8@gmail.com,2025-04-07T10:18:28+02:00,2025-04-07T10:18:28+02:00,0,1,1,2,0,Update README.md
+rnn-das,included,15632b39ecec6c54ecb8e18ffdb75d2483e0a10a,Javier Fernández-Carabantes,javignp8@gmail.com,2025-04-07T10:18:02+02:00,2025-04-07T10:18:02+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,73c78b4bcb5e09998c4fd280cc22e982552a702a,Javier Fernández-Carabantes,javignp8@gmail.com,2025-04-07T10:17:33+02:00,2025-04-07T10:17:33+02:00,0,1,3,1,0,Update README.md
+rnn-das,included,026cb498a001364fdf5355861fe43f4db266c308,Javier Fernández-Carabantes,javignp8@gmail.com,2025-04-07T10:16:47+02:00,2025-04-07T10:16:47+02:00,0,1,2,1,0,Update README.md
+rnn-das,included,be3860da35f2b731db64b62583f7d214d844ece6,Javier Fernández-Carabantes,javignp8@gmail.com,2025-04-07T10:15:00+02:00,2025-04-07T10:15:00+02:00,0,1,1,1,0,Update README.md
+rnn-das,included,f8a6e0222a8db97aa1a8e61a11e336ba32059af2,Javier Fernández-Carabantes,javignp8@gmail.com,2025-03-18T12:35:20+01:00,2025-03-18T12:35:20+01:00,0,1,0,1,0,Update RNN_DAS_windows.yml
+rnn-das,included,2e636009ac6659edc1f61ce746975318e5c21f14,Javier Fernández-Carabantes,javignp8@gmail.com,2025-03-18T12:32:09+01:00,2025-03-18T12:32:09+01:00,0,1,0,1,0,Update RNN_DAS_linux.yml
+rnn-das,included,662114435e81fbca19b18ce9c3afd51d0a0550f7,Javier Fernández-Carabantes,javignp8@gmail.com,2025-03-18T12:28:54+01:00,2025-03-18T12:28:54+01:00,0,1,19,18,0,Update requirements_RNN_DAS_windows.txt
+rnn-das,included,df9bc104d030e132700bca4e123d92beab257234,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-24T10:33:58+01:00,2025-02-24T10:33:58+01:00,0,1,4,0,0,Update README.md
+rnn-das,included,534c02d1c42c8b289a934e35b22ac24e725877e1,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-24T10:31:33+01:00,2025-02-24T10:31:33+01:00,0,1,73,84,0,Add files via upload
+rnn-das,included,35153d92907ed19b89371d7972f45d4944bd5353,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-24T10:31:04+01:00,2025-02-24T10:31:04+01:00,0,1,5,2,0,Add files via upload
+rnn-das,included,414c40a7d91b18306b110d17271e56d45196f7b8,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-19T13:26:41+01:00,2025-02-19T13:26:41+01:00,0,8,0,0,8,Delete scripts/__pycache__ directory
+rnn-das,included,6d844a0d15b8e1890f0e074619f4bfb156787d2b,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-19T13:23:31+01:00,2025-02-19T13:23:31+01:00,1,,,,,Merge branch 'main' of https://github.com/Javier-FernandezCarabantes/RNN-DAS
+rnn-das,included,378d361348caefb19bb4a31b2fe877bbd980b2b3,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-19T13:22:12+01:00,2025-02-19T13:22:12+01:00,0,13,106,1,11,test
+rnn-das,included,1c190e5c770828bce57980ab6bc20b0977e4b059,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-19T12:43:24+01:00,2025-02-19T12:43:24+01:00,0,1,4,1,0,Add files via upload
+rnn-das,included,5f5e2079469cfdada1d76c5b5a820d6a1c5f8c5b,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-15T23:44:40+01:00,2025-02-15T23:44:40+01:00,0,1,1,1,0,remove comments
+rnn-das,included,156b316b09ef86ad991737f61540e614e385b9ab,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-15T23:42:34+01:00,2025-02-15T23:42:34+01:00,0,1,1,0,0,hola
+rnn-das,included,7e3b4bca92a712acd6eaf73cb0ca5935350f4420,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-14T21:55:05+01:00,2025-02-14T21:55:05+01:00,0,1,552,0,0,Add files via upload
+rnn-das,included,bb9542a79e7e896a56467d0ff047197b718e022c,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-14T21:53:42+01:00,2025-02-14T21:53:42+01:00,0,1,0,553,0,Delete example/RNN-DAS_LaPalma.ipynb
+rnn-das,included,50bcba366307dbc6f156f68e6f2bcbad46f3301d,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-14T21:46:06+01:00,2025-02-14T21:46:06+01:00,0,1,1,1,0,Update RNN-DAS_LaPalma.ipynb
+rnn-das,included,d37518b9e4b1ef8b02b8c4994096c2b78d16c473,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-13T17:28:11+01:00,2025-02-13T17:28:11+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,b414a94e8a26722adfbae077309dd31947c1ddb2,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-13T12:58:48+01:00,2025-02-13T12:58:48+01:00,0,1,4,2,0,Add files via upload
+rnn-das,included,737a3133cd4314a00e861952598f2c54b8d903b9,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-12T14:11:01+01:00,2025-02-12T14:11:01+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,b4c9ce13641b2c8a96475776b6a3dece2fb80cfc,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-12T14:08:27+01:00,2025-02-12T14:08:27+01:00,0,1,10,33,0,Add files via upload
+rnn-das,included,505d4e7df186b83ba72954e803847938b999d1d0,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-12T14:03:45+01:00,2025-02-12T14:03:45+01:00,0,1,3,3,0,Update README.md
+rnn-das,included,418153b480dd1579d2f0b2b623277db48ed68d08,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-12T14:03:02+01:00,2025-02-12T14:03:02+01:00,0,2,1,1,0,Update and rename files_ids.txt to files.txt
+rnn-das,included,df8b8663945a584a73050edce5f69cb5ea470d06,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-10T11:00:42+01:00,2025-02-10T11:00:42+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,2cf8e1dd8335a75b67329094b3c38fd9daae15df,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-10T10:59:22+01:00,2025-02-10T10:59:22+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,b1aebb33fe0caa8faaa546818b93edc51f39cceb,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-09T21:08:39+01:00,2025-02-09T21:08:39+01:00,0,1,1,0,0,Add gitignore
+rnn-das,included,de090958eee37acd2fa906469788d39e47839e50,Javier Fernández-Carabantes,javignp8@gmail.com,2025-02-09T20:57:12+01:00,2025-02-09T20:57:12+01:00,0,1,0,144,0,Delete model/Normalization_RNN_DAS_1150.txt
+rnn-das,included,382be6c9a41d80e9da5858547a9b153771a18c1c,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:53:06+01:00,2025-02-07T11:53:06+01:00,0,16,0,0,16,Delete scripts/__pycache__ directory
+rnn-das,included,c8cdb4aead7642cdaf02ce2862542b819e8a0501,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:52:28+01:00,2025-02-07T11:52:28+01:00,0,1,40,40,0,Add files via upload
+rnn-das,included,456120943a32a09cc68cedb0694f88e861be3b0a,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:51:07+01:00,2025-02-07T11:51:07+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,937cf82537235c76f1e1ab9664622cf881a52dc7,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:49:13+01:00,2025-02-07T11:49:13+01:00,0,1,6,0,0,Update README.md
+rnn-das,included,c4208af0628595cb7d7aaf842ed2bd0bf318ca58,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:37:52+01:00,2025-02-07T11:37:52+01:00,0,1,36,55,0,Update README.md
+rnn-das,included,7a76cbdd3e7fb81d0ca80c20c9bbc2666978523d,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:29:06+01:00,2025-02-07T11:29:06+01:00,0,1,84,2,0,Update README.md
+rnn-das,included,9bbc316be724a2aa3f1ef71f11debfc34e96410b,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:25:05+01:00,2025-02-07T11:25:05+01:00,0,1,10,8,0,Update README.md
+rnn-das,included,495f64e7ec4c6c1d7398100f9e256032a29ae8e5,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:24:03+01:00,2025-02-07T11:24:03+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,6f83da7c8a2d37b3ad4237a8052742a9a17be98b,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:21:54+01:00,2025-02-07T11:21:54+01:00,0,1,1,0,0,Update README.md
+rnn-das,included,b720639e8ef93506adf91afb8f4d2e106af9f7df,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:21:38+01:00,2025-02-07T11:21:38+01:00,0,1,3,0,0,Update README.md
+rnn-das,included,8f4ae1b4a5d029424f054355fb5b5d744942074e,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:20:31+01:00,2025-02-07T11:20:31+01:00,0,2,0,0,2,Rename image.png to trace_example.png
+rnn-das,included,4d373e1b39b9686754a4244d20ac58a926d61fac,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:19:46+01:00,2025-02-07T11:19:46+01:00,0,1,0,0,1,Add files via upload
+rnn-das,included,a6036d68f91748b09cc2af2e706b899dfdb9cfc8,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:14:31+01:00,2025-02-07T11:14:31+01:00,0,1,0,0,1,Delete example.png
+rnn-das,included,1321841571c6b5d389bd09d4272401a610be539c,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:14:08+01:00,2025-02-07T11:14:08+01:00,0,1,0,0,1,Add files via upload
+rnn-das,included,7663632a36cc8daa7a1bcbe91c7f0c2ce79a9ff7,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:13:07+01:00,2025-02-07T11:13:07+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,24116eb7c985d7ef9854931cf05fffcd8c85ea84,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:12:37+01:00,2025-02-07T11:12:37+01:00,0,1,3,1,0,Update README.md
+rnn-das,included,acc014cd612387474277c69d3b6626d969d42759,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:06:26+01:00,2025-02-07T11:06:26+01:00,0,1,196,0,0,Add files via upload
+rnn-das,included,fb76dabc34ccb0108dca0419be5d51cd72e729ba,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:06:09+01:00,2025-02-07T11:06:09+01:00,0,1,0,196,0,Delete RNN_DAS.py
+rnn-das,included,d07b95e21c4b82f64f08fc1bbce0915e0786da6b,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T11:05:26+01:00,2025-02-07T11:05:26+01:00,0,1,4,4,0,Add files via upload
+rnn-das,included,b10db17cd165b057ead70abc4a1b3758a0acd06e,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T10:58:12+01:00,2025-02-07T10:58:12+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,8f39bf4bb2d1f2fb2407b321a1e771a4344e283a,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T10:48:55+01:00,2025-02-07T10:48:55+01:00,0,1,7,7,0,Update README.md
+rnn-das,included,803e9fb86953021ba9e8dd8f9e9e73ebb694243d,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T10:47:52+01:00,2025-02-07T10:47:52+01:00,0,1,4,4,0,Update README.md
+rnn-das,included,cd7f0e9389439ab46b30f9f9810187b922e31493,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T10:44:08+01:00,2025-02-07T10:44:08+01:00,0,1,4,6,0,Update README.md
+rnn-das,included,e00eb557e59ff7232a529c4e1e0b5ce7bbd3c153,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-07T10:39:59+01:00,2025-02-07T10:39:59+01:00,0,1,53,10,0,Update README.md
+rnn-das,included,7857f608a7c17f9a23ad32338c2ca79afb0ac1a8,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-06T22:55:04+01:00,2025-02-06T22:55:04+01:00,0,31,1083,188,21,Add files via upload
+rnn-das,included,2b9dad5ef3bb8ccd5745e82efc26ad303deab5ed,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T23:03:57+01:00,2025-02-05T23:03:57+01:00,0,1,38,3,0,Update README.md
+rnn-das,included,f260d7b7c79a0baaa20fa621fd87805f6ddbb4a7,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:52:15+01:00,2025-02-05T22:52:15+01:00,0,1,11,9,0,Update README.md
+rnn-das,included,d4a5a17abeb2cce270d5bf4b48d0690c7adbe5c5,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:46:57+01:00,2025-02-05T22:46:57+01:00,0,1,30,9,0,Update README.md
+rnn-das,included,c4c29bccdabab0551306bd8698e5b6b3d75af1b5,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:34:48+01:00,2025-02-05T22:34:48+01:00,0,1,1,2,0,Add files via upload
+rnn-das,included,622466e1f769c6eb407653818f9681715f7b7a79,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:34:24+01:00,2025-02-05T22:34:24+01:00,0,1,2,2,0,Add files via upload
+rnn-das,included,d01a164af61cd4c1555b1c422bdf9e22af282fe7,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:30:32+01:00,2025-02-05T22:30:32+01:00,0,4,273,0,0,Add files via upload
+rnn-das,included,52895b932bbda2e8b093d9293e372e45a90eb013,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:26:57+01:00,2025-02-05T22:26:57+01:00,0,9,1119,0,0,Add files via upload
+rnn-das,included,84e20ee99dd23d46b356779e79b943fa3b9fb947,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:26:34+01:00,2025-02-05T22:26:34+01:00,0,9,0,1177,0,Delete scripts directory
+rnn-das,included,ed4e0192b4bf681e842703176c468fc5dc035384,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T22:25:00+01:00,2025-02-05T22:25:00+01:00,0,1,26,26,0,Add files via upload
+rnn-das,included,e7df102f7c137744ea9bd7f063bf1d5561389261,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T16:40:33+01:00,2025-02-05T16:40:33+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,9573c3b30cdf1d3542e9e3cdcc79188759753a9e,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T16:39:49+01:00,2025-02-05T16:39:49+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,74e70042f19a7b46a36cfc9eb8f53787c2af5693,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T16:37:23+01:00,2025-02-05T16:37:23+01:00,0,1,6,2,0,Update README.md
+rnn-das,included,0db51dc72fec31cf3082226f1c9d4eb0cfc7d15f,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T16:19:46+01:00,2025-02-05T16:19:46+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,8241adcc28e9b5dd1a0383fc8ccb29bdff48ff3c,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T16:18:59+01:00,2025-02-05T16:18:59+01:00,0,1,13,4,0,Update README.md
+rnn-das,included,5fd8a34502e36ad41cfce41a33871649459ce20f,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:40:35+01:00,2025-02-05T14:40:35+01:00,0,9,1177,0,0,Add files via upload
+rnn-das,included,eaf009e17d039a6c09917b8bfbb77e7eb9202dc9,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:40:00+01:00,2025-02-05T14:40:00+01:00,0,2,144,0,1,Add files via upload
+rnn-das,included,fffcf074096d29f3960eedbee5bd097d55e547bf,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:37:59+01:00,2025-02-05T14:37:59+01:00,0,1,3,3,0,Add files via upload
+rnn-das,included,644510b9a7a03272d56e4144d3b07fad841f04a8,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:35:57+01:00,2025-02-05T14:35:57+01:00,0,4,0,288,2,Delete model directory
+rnn-das,included,b98ba1189cf74893e7eeda5fec19312b1186e03f,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:34:34+01:00,2025-02-05T14:34:34+01:00,0,1,0,0,1,Add files via upload
+rnn-das,included,d9cd782d12d1acc8568780c129a447db115150ce,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:34:29+01:00,2025-02-05T14:34:29+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,32d8a3467b58531d4b526d0c520723f1bd4e0c1f,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:30:14+01:00,2025-02-05T14:30:14+01:00,0,1,65,66,0,Add files via upload
+rnn-das,included,5c0df95ac25eae764e846bd2ed6f315a1e82dc7d,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:27:11+01:00,2025-02-05T14:27:11+01:00,0,5,6728,0,3,Add files via upload
+rnn-das,included,7526e7d2ee09e7b0059a8f0697c6e23b0e3a9b32,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:13:45+01:00,2025-02-05T14:13:45+01:00,0,0,0,0,0,Add files via upload
+rnn-das,included,0c666a6067864ebee58621399569e317bc87102b,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:10:53+01:00,2025-02-05T14:10:53+01:00,0,1,0,0,1,Add files via upload
+rnn-das,included,09d17b530006537d46f2905eefd3e45708b32deb,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:08:47+01:00,2025-02-05T14:08:47+01:00,0,2,539,0,1,Add files via upload
+rnn-das,included,0c9d9484c9c4e96a0759da2940ab2434b6aa139a,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:05:29+01:00,2025-02-05T14:05:29+01:00,0,2,0,0,2,Delete RNN-DAS_predictions directory
+rnn-das,included,367c6611d7226d43eed18e1f71105f3420a3a7d9,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:05:17+01:00,2025-02-05T14:05:17+01:00,0,1,0,6617,0,Delete RNN-DAS_picks directory
+rnn-das,included,3c2dbbf33f3644f1752395490e9f01cbb27228f6,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T14:03:45+01:00,2025-02-05T14:03:45+01:00,0,1,2,0,0,Update README.md
+rnn-das,included,999f5fa730e4b50ba61aa8f1441913b7237aad6c,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:53:37+01:00,2025-02-05T13:53:37+01:00,0,1,1,7,0,Update README.md
+rnn-das,included,da2b911fd4044fa0ba9d6ef28334ce53cf1b5070,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:52:23+01:00,2025-02-05T13:52:23+01:00,0,1,14,2,0,Update README.md
+rnn-das,included,7a54e33b3042a5f9547d83562cd44f50defc2ae8,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:24:18+01:00,2025-02-05T13:24:18+01:00,0,1,0,248,0,Delete Features.py
+rnn-das,included,41fa95aae5458c262fc29a46c56bfde8dc614e03,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:23:58+01:00,2025-02-05T13:23:58+01:00,0,1,0,60,0,Delete Pre_processing.py
+rnn-das,included,b59215f3099c0a252d59688ada80c27fbf8a4cae,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:23:48+01:00,2025-02-05T13:23:48+01:00,0,1,0,143,0,Delete grammar.py
+rnn-das,included,a63750c918b23aa815fb986543f61db13cbbb4fc,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:23:30+01:00,2025-02-05T13:23:30+01:00,0,1,0,22,0,Delete model_RNN_DAS.py
+rnn-das,included,0a1ef0b7ceb34985a8dae27a449dd07a17b64e4a,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:23:19+01:00,2025-02-05T13:23:19+01:00,0,1,0,159,0,Delete model_builder_RNN_DAS.py
+rnn-das,included,84901361646aa476afafa99375fb1b326cd1caaa,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:23:06+01:00,2025-02-05T13:23:06+01:00,0,1,0,169,0,Delete picks.py
+rnn-das,included,43538f009795956fed8a848052565e21026aef5d,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:22:57+01:00,2025-02-05T13:22:57+01:00,0,1,0,296,0,Delete plots.py
+rnn-das,included,c7b5dcc37b272d798bccaaf2ef333c931a5d804d,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:22:23+01:00,2025-02-05T13:22:23+01:00,0,1,0,84,0,Delete run_RNN_das.py
+rnn-das,included,8168a104f0150959dc56fc59dde705bffb7090a9,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T13:00:52+01:00,2025-02-05T13:00:52+01:00,0,1,0,4197,0,Delete examples directory
+rnn-das,included,a2b188adfbde98c9f76f7416800233c6f8701423,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T12:57:53+01:00,2025-02-05T12:57:53+01:00,0,1,4197,0,0,Add files via upload
+rnn-das,included,ce1220af012b17549abb75d6d2fb17fece11bc49,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T12:55:23+01:00,2025-02-05T12:55:23+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,ac8f1c032079145e07c3f1171e0226c719bada84,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T12:53:04+01:00,2025-02-05T12:53:04+01:00,0,15,8086,0,4,Add files via upload
+rnn-das,included,4090700350030aff13476e18158b1220a2d00a02,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T09:57:20+01:00,2025-02-05T09:57:20+01:00,0,1,1,1,0,Update README.md
+rnn-das,included,c9f1d8b67c7238c2d7fac20f318089dfa646d0ea,Javier-FernandezCarabantes,javignp8@gmail.com,2025-02-05T09:41:23+01:00,2025-02-05T09:41:23+01:00,0,1,57,0,0,Update README.md
+rnn-das,included,5b4dc68cc17a806b8d1a066ea32ef69423e1a915,Javier-FernandezCarabantes,javignp8@gmail.com,2025-01-30T13:10:58+01:00,2025-01-30T13:10:58+01:00,0,1,2,2,0,Update README.md
+rnn-das,included,adc232ff76d79556be50254f02e911e4f3b8a433,Javier-FernandezCarabantes,javignp8@gmail.com,2025-01-30T13:10:20+01:00,2025-01-30T13:10:20+01:00,0,2,676,0,0,Initial commit

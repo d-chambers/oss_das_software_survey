@@ -1,0 +1,45 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+cqi-das,included,ec7946801343db62a82d4eb04ca7a26f1c9bc794,Aleix Segui,asegui@student.ethz.ch,2025-10-21T09:52:48+01:00,2025-10-21T09:52:48+01:00,0,1,3,3,0,Update with correct DOI to data
+cqi-das,included,ad725475bf4cc1b2dcc76d760b09cf1c095fa435,Aleix Segui,asegui@student.ethz.ch,2025-02-04T13:24:41+01:00,2025-02-04T13:24:41+01:00,0,1,3,2,0,Set correct channel numbers (shift) in calculate_cqi
+cqi-das,included,579e2330b3868cdebc2ada0c9709a65940679638,Aleix Segui,asegui@student.ethz.ch,2025-01-24T16:50:26+01:00,2025-01-24T16:50:26+01:00,0,1,1,3,0,Fix LICENSE
+cqi-das,included,3c9618239ae5ea55066b04bf7e24dd4da7274559,Aleix Segui,asegui@student.ethz.ch,2025-01-22T17:58:54+01:00,2025-01-22T17:58:54+01:00,0,1,3,2,0,Change errors to warnings
+cqi-das,included,1a6813ccccfd50f7e553ac7039dbfaf4c730e6ca,Aleix Segui,asegui@student.ethz.ch,2025-01-21T19:18:52+01:00,2025-01-21T19:18:52+01:00,0,1,1,1,0,Update README
+cqi-das,included,2536e4aee2c75b5820fdf20cc930482263a1a9b0,Aleix Segui,asegui@student.ethz.ch,2025-01-21T19:07:22+01:00,2025-01-21T19:07:22+01:00,0,4,72,10,0,Add plot parameters and save plot ability
+cqi-das,included,ec3c096a12435c42d8c6922943c42e097400352c,Aleix Segui,asegui@student.ethz.ch,2025-01-21T18:29:36+01:00,2025-01-21T18:29:36+01:00,0,5,49,10,0,Add edge effects solution and fix fft warnings in mfcc
+cqi-das,included,c6e8ccecb1c6deb5a32831ba7f5a9760d7385b07,Aleix Segui,asegui@student.ethz.ch,2025-01-17T13:31:02+01:00,2025-01-17T13:31:02+01:00,0,7,4039,4037,0,Rename parameters for best user experience
+cqi-das,included,b73b8fadb7050b6c3181f499296f69a2664cbfcc,Aleix Segui,asegui@student.ethz.ch,2025-01-16T18:52:28+01:00,2025-01-16T18:52:28+01:00,0,2,25,3,0,"Add sanity checks, warnings and save message in the interactive plot"
+cqi-das,included,cbb94d2ba0ba7afda02a8cdc3951d0ece4da53cb,Aleix Segui,asegui@student.ethz.ch,2025-01-16T18:28:07+01:00,2025-01-16T18:28:07+01:00,0,1,8,3,0,Update README
+cqi-das,included,e40862f6a643d6e1bcac1e524ec29e4a450e6ee5,Aleix Segui,asegui@student.ethz.ch,2025-01-16T17:43:47+01:00,2025-01-16T17:43:47+01:00,0,1,63,3,0,Interactive plot: cache background and use blit for smooth dragging
+cqi-das,included,402cbd8172e7a053b98f0d2aa7d1140b41ebfd9d,Aleix Segui,asegui@student.ethz.ch,2025-01-16T14:00:53+01:00,2025-01-16T14:00:53+01:00,0,1,1,1,0,Fix XGBoost version
+cqi-das,included,6c98eb59ba9ce1f51fb9c933bcfb0bf853dc5c96,Aleix Segui,asegui@student.ethz.ch,2025-01-16T13:44:45+01:00,2025-01-16T13:44:45+01:00,0,4,6,8,0,Quickfix versioning problems
+cqi-das,included,29c5af2ade7b12c23e87f869d2fc030b26294abe,Aleix Segui,asegui@student.ethz.ch,2025-01-16T03:15:25+01:00,2025-01-16T03:15:25+01:00,0,1,1,0,0,hotfix README
+cqi-das,included,3597e16aa5cb07dbb569e72d028cadd324def1a5,Aleix Segui,asegui@student.ethz.ch,2025-01-16T03:07:24+01:00,2025-01-16T03:07:24+01:00,0,12,499,321,2,Minor fixes and add parallelism
+cqi-das,included,10f32c5b9c4e8ad36277655f9c57bc114b55bfb1,Aleix Segui,asegui@student.ethz.ch,2025-01-16T00:12:02+01:00,2025-01-16T00:12:02+01:00,0,11,135,821,0,Sort out files add license headers
+cqi-das,included,9057e064636c61a387522db7de08c7e5bb22b87d,Aleix Segui,asegui@student.ethz.ch,2025-01-16T00:00:44+01:00,2025-01-16T00:00:44+01:00,0,16,76,2011,2,Clean up old files
+cqi-das,included,91dbf95b2d1d22223ecd51728e66bc9af3d7899c,Aleix Segui,asegui@student.ethz.ch,2025-01-15T22:16:06+01:00,2025-01-15T22:16:06+01:00,0,1,1,1,0,hotfix README
+cqi-das,included,831ca389609c884b63e3a28242bf93f088e60dc0,Aleix Segui,asegui@student.ethz.ch,2025-01-15T22:09:52+01:00,2025-01-15T22:09:52+01:00,0,3,3,1,2,Add first trained models
+cqi-das,included,626025f7713031680f39bba7cbfa2619b611b414,Aleix Segui,asegui@student.ethz.ch,2025-01-15T22:08:11+01:00,2025-01-15T22:08:11+01:00,0,2,4028,0,0,Add paper calculations notebook
+cqi-das,included,0256ed1c2b6008be333946a26c87db176bdb275b,Aleix Segui,asegui@student.ethz.ch,2025-01-15T22:06:00+01:00,2025-01-15T22:06:00+01:00,0,5,104,1,4,Update README explanations
+cqi-das,included,e7e0e3ecfea06cd763afabe19ec27da394167e9e,Aleix Segui,asegui@student.ethz.ch,2025-01-15T20:44:37+01:00,2025-01-15T20:44:37+01:00,0,1,277,0,0,Add CQI feature subset calculation
+cqi-das,included,1dcf41c9be6e004189bd487ae8d612696205dfc3,Aleix Segui,asegui@student.ethz.ch,2025-01-15T20:05:25+01:00,2025-01-15T20:05:25+01:00,0,1,392,161,0,Refactor and improve docstring of ChannelSelector
+cqi-das,included,0defda6b420f86aba23bb0364142f59810cd14b6,Aleix Segui,asegui@student.ethz.ch,2025-01-15T19:44:31+01:00,2025-01-15T19:44:31+01:00,0,1,261,0,0,Add interactive threshold decision plot
+cqi-das,included,db343f710d9646552f687a9882506c32bc72525d,Aleix Segui,asegui@student.ethz.ch,2025-01-15T19:23:11+01:00,2025-01-15T19:23:11+01:00,0,1,210,90,0,Add calculate_cqi API function
+cqi-das,included,9c46670b259264dab22ee39aeb41f815553e4a84,Aleix Segui,asegui@student.ethz.ch,2025-01-11T19:00:09+01:00,2025-01-11T19:00:09+01:00,0,11,2190,21,0,Rearrange project as a python module
+cqi-das,included,5e3ee005f8695919455b771c9974c662806d0543,Aleix Segui,asegui@student.ethz.ch,2025-01-02T17:56:41+01:00,2025-01-02T17:56:41+01:00,0,1,31,3,0,Update dataset creation scripts
+cqi-das,included,0d70f9d405a61cac57b267cd370917dc82221f48,Aleix Segui,asegui@student.ethz.ch,2024-12-31T15:52:14+01:00,2024-12-31T15:52:14+01:00,0,3,361,53,0,Add script for creating datasets
+cqi-das,included,126a5cb617358d925e67965a165bba94c5cc6fbf,Tatiana,tatiana.rodriguez@gmail.com,2024-12-29T15:41:18+01:00,2024-12-29T15:41:18+01:00,0,1,3,3,0,Update model fitting and visualization functions to return selected features and accept customizable figure size
+cqi-das,included,eec498d8c5889c5cba9625e2f3dce7e1d722a545,Tatiana,tatiana.rodriguez@gmail.com,2024-11-12T16:18:26+01:00,2024-11-12T16:18:26+01:00,0,2,0,0,2,uploading trained models
+cqi-das,included,ace39908329a3282c6a3141bfbf797e47388def1,Tatiana,tatiana.rodriguez@gmail.com,2024-11-12T15:58:32+01:00,2024-11-12T16:02:35+01:00,0,4,66,7711,0,fixing branch status
+cqi-das,included,bb0127e3e0c57907cecc9b59c644c4fb2d993781,Tatiana,tatiana.rodriguez@gmail.com,2024-11-11T19:48:34+01:00,2024-11-12T16:02:30+01:00,0,1,7230,0,0,finalized model
+cqi-das,included,06e1ef08c1d305dd56dce55b20aa7af8ce982306,Tatiana,tatiana.rodriguez@gmail.com,2024-11-11T18:58:38+01:00,2024-11-12T16:01:32+01:00,0,1,0,6981,0,Created models.py; updated all features; uploaded example ipynb to demonstrate method
+cqi-das,included,a6b9490310833e55144287e28ed4d8ab18b865b6,Tatiana Rodriguez,tatiana.rodriguez@gmail.com,2024-11-12T12:58:02+01:00,2024-11-12T12:58:02+01:00,0,1,6981,0,0,Add files via upload
+cqi-das,included,2142f9254436dda3eee1d56acfecf34b734682f6,Tatiana Rodriguez,tatiana.rodriguez@gmail.com,2024-11-11T19:52:24+01:00,2024-11-11T19:52:24+01:00,0,6,736,75,0,Add files via upload
+cqi-das,included,bcf93143f4e3aef5492921c8bfe47eef521dab59,Aleix Segui,aleix.segui@estudiantat.upc.edu,2024-09-09T18:18:45+02:00,2024-09-09T18:18:45+02:00,0,1,457,0,0,Add Channel Selector: renamed and improved from channel picker
+cqi-das,included,433b3785ba12b6a64ca8143b22df8560982f20c0,Aleix Segui,aleix.segui@estudiantat.upc.edu,2024-07-18T19:21:53+02:00,2024-07-18T19:21:53+02:00,0,1,299,0,0,Add new channel picker class with improved features
+cqi-das,included,629926fdca05fad685164ee846f0f231f8cb11e6,Tatiana,tatiana.rodriguez@gmail.com,2024-07-18T15:35:05+02:00,2024-07-18T15:35:05+02:00,0,1,13,10,0,Added timestamp to saved quality_labels and added Path for when importing miniseed instead of h5
+cqi-das,included,b23975a833dc5b1e89543387e4ad77ea06e33187,Tatiana,tatiana.rodriguez@gmail.com,2024-07-18T15:04:10+02:00,2024-07-18T15:05:23+02:00,0,2,202,38,0,Added feature creation functions and utility functions
+cqi-das,included,7bd56c62e67af645e0c4f4fcec789d3fc314e0fc,Tatiana,tatiana.rodriguez@gmail.com,2024-07-18T15:03:03+02:00,2024-07-18T15:03:03+02:00,0,2,294,0,0,Added graphing functions and manual picking software
+cqi-das,included,bc8e71288988b4dabd1906f058c9b509d7b313d1,Tatiana,tatiana.rodriguez@gmail.com,2024-07-02T15:02:12+02:00,2024-07-02T15:02:12+02:00,0,2,121,121,0,Move feature_engineering.py
+cqi-das,included,8beb7e4145fe25d8770c42222770b3fd81a448bf,Tatiana,tatiana.rodriguez@gmail.com,2024-07-02T14:58:02+02:00,2024-07-02T14:58:02+02:00,0,3,623,0,0,"Add main, utilities and feature engineering scripts"
+cqi-das,included,3e6e3f345d2662461d77478329560b960de4cbd6,Tatiana,tatiana.rodriguez@gmail.com,2024-06-25T21:03:17+02:00,2024-06-25T21:03:17+02:00,0,1,0,0,0,init commit
+cqi-das,included,9649026276adf1d7d93f2d25726daa6845cd938f,Tatiana Rodriguez,tatiana.rodriguez@gmail.com,2024-06-25T20:42:02+02:00,2024-06-25T20:42:02+02:00,0,2,183,0,0,Initial commit

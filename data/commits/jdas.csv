@@ -1,0 +1,7 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+jdas,included,24bf9a5a06d24d7e3f242e49973cb2c3325da55c,Martijn van den Ende,martijnende@gmail.com,2022-10-12T19:13:12+02:00,2022-10-12T19:13:12+02:00,0,1,2,0,0,Made explicit trash collect call to fix OOM bug
+jdas,included,0ca110c4a936032d025312674bdc1b5632f72fb8,Martijn van den Ende,martijnende@users.noreply.github.com,2022-01-17T19:42:45+01:00,2022-01-17T19:42:45+01:00,0,5,4810,98,0,"Updated reference, fixed bug in dataloader (#4)"
+jdas,included,4ce2d144fd7fcb965c15a7e8b61c99a42aaa91d4,Martijn van den Ende,martijnende@users.noreply.github.com,2021-12-11T11:29:44+01:00,2021-12-11T11:29:44+01:00,0,2,6,6,0,Ensured that verbose output step > 0 in denoise function (#2)
+jdas,included,cb4d31a553683cacea23f585068b14c977e947d7,Martijn van den Ende,martijnende@users.noreply.github.com,2021-09-08T14:56:26+02:00,2021-09-08T14:56:26+02:00,0,34,2481,78,6,v1.0.0 (#1)
+jdas,included,fb51ca18bd13682d37399f6227472eea98080d9d,Martijn van den Ende,martijnende@gmail.com,2021-08-21T15:50:15+02:00,2021-08-21T15:50:15+02:00,0,5,128,1,0,Added documentation boilerplate
+jdas,included,bfa1e6e6e297de244fe84e7a9858999527c0cc70,Martijn van den Ende,martijnende@users.noreply.github.com,2021-08-21T15:35:25+02:00,2021-08-21T15:35:25+02:00,0,3,152,0,0,Initial commit

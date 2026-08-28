@@ -1,0 +1,542 @@
+---
+title: "The Open-Source DAS Ecosystem"
+subtitle: "What exists, what is missing, and where it is going"
+author: "Derrick Chambers"
+institute: "Galileo Fiber Optic Conference &middot; 2026"
+format:
+  revealjs:
+    theme: [default, presentation.scss]
+    embed-resources: true
+    slide-number: c/t
+    width: 1200
+    height: 750
+    center-title-slide: true
+    history: false
+    # Reveal's stretch wrapper resizes the container without telling plotly,
+    # which leaves axis labels drawn on top of the bottom row.
+    auto-stretch: false
+jupyter: python3
+execute:
+  echo: false
+  warning: false
+---
+
+```{python}
+# | tags: [setup]
+"""Slide figures built from the newest dated snapshot.
+
+The deck reads the same curated snapshot the website is generated from, so a
+number on a slide can always be traced back to a row in the public CSVs.
+"""
+
+from collections import Counter
+
+import plotly.graph_objects as go
+from IPython.display import HTML
+from plotly.offline import get_plotlyjs
+from plotly.io import to_html
+
+from oss_das.cli import resolve_snapshot_date
+from oss_das.core import PATHS, read_csv
+from oss_das.site import load_plot_data, metric_lookup
+
+SNAPSHOT_DATE = resolve_snapshot_date(None, prefer_latest=True)
+DATA = load_plot_data(SNAPSHOT_DATE)
+
+# Discovery is a much wider net than the curated catalog, and most of it has not
+# been looked at yet. Saying so on stage is cheaper than being corrected from the
+# floor by someone whose package is in the unreviewed pile.
+CANDIDATES = read_csv(PATHS.snapshot(SNAPSHOT_DATE) / "candidates.csv")
+# Bare-acronym probes are what reach a package like dastools on an institutional
+# GitLab, but "das" also matches German prose and dashboards. Quoting the total
+# would dress thousands of unrelated repositories up as an ecosystem, so the
+# headline counts only candidates a domain-specific probe actually named.
+SPECIFIC = [item for item in CANDIDATES if item["probe_class"] == "domain-specific"]
+DISCOVERED = len(SPECIFIC)
+SWEPT = len(CANDIDATES)
+UNREVIEWED = sum(item["catalog_status"] == "unreviewed" for item in SPECIFIC)
+
+PROJECTS = [item for item in DATA["projects"] if item["status"] == "included"]
+WATCHLIST = [item for item in DATA["projects"] if item["status"] == "watchlist"]
+REVIEWED = len(DATA["projects"])
+INCLUDED = len(PROJECTS)
+INCLUDED_IDS = {item["id"] for item in PROJECTS}
+VALUES = metric_lookup(DATA["metrics"])
+
+INK = "#13293d"
+TEAL = "#087e8b"
+CORAL = "#ff5a5f"
+COLORWAY = [TEAL, CORAL, "#f5b700", "#5c4d7d", "#4c956c"]
+
+_figure_count = 0
+
+
+def show(figure: go.Figure, height: int = 470) -> HTML:
+    """Render a figure sized for a slide.
+
+    The plotly library itself is emitted separately below. Bundling it with the
+    first figure makes Quarto hoist that whole block, div included, out of
+    reveal's slide container and onto every slide.
+    """
+    global _figure_count
+    _figure_count += 1
+    figure.update_layout(
+        template="plotly_white",
+        colorway=COLORWAY,
+        font={"family": "system-ui, sans-serif", "color": INK, "size": 15},
+        margin={"l": 10, "r": 20, "t": 10, "b": 40},
+        height=height,
+    )
+    return HTML(
+        to_html(
+            figure,
+            full_html=False,
+            include_plotlyjs=False,
+            config={"displaylogo": False, "displayModeBar": False, "responsive": True},
+            # A stable id keeps an unchanged rebuild byte-identical.
+            div_id=f"slide-figure-{_figure_count}",
+        )
+    )
+
+
+def count_flag(field: str) -> int:
+    return sum(item[field] == "True" for item in PROJECTS)
+
+
+def share(count: int) -> str:
+    return f"{count} of {INCLUDED}"
+
+
+def portraits() -> HTML:
+    """Render whichever portrait files are actually present in docs/assets.
+
+    Drop a new file in, re-render, and it appears; nothing here needs editing.
+    A missing file is skipped rather than left as a broken image on stage.
+    """
+    wanted = [
+        ("github-avatar.png", "github.com/d-chambers"),
+        ("linkedin-photo.jpg", "linkedin.com/in/derrick-chambers"),
+    ]
+    tiles = [
+        f'<figure class="portrait"><img src="assets/{name}" alt="{caption}">'
+        f"<figcaption>{caption}</figcaption></figure>"
+        for name, caption in wanted
+        if (PATHS.docs / "assets" / name).exists()
+    ]
+    return HTML(f'<div class="portrait-row">{"".join(tiles)}</div>')
+
+
+ON_PYPI = sum(bool(item["pypi_packages"]) for item in PROJECTS)
+NO_RELEASE = sum(not item["latest_release_at"] for item in PROJECTS)
+# A project whose repository lookup failed carries no push date. Counting the
+# projects known to be recent, rather than subtracting the stale ones, keeps an
+# unknown from being reported as activity — the same way the flag counts do.
+RECENT = sum(
+    bool(item["days_since_push"]) and int(item["days_since_push"]) <= 365
+    for item in PROJECTS
+)
+# Licensing is measured, not required for inclusion, so these counts describe
+# the ecosystem instead of describing the rule that selected it.
+COPYLEFT = sum(
+    (item["license_spdx"] or "").startswith(("GPL", "LGPL", "AGPL")) for item in PROJECTS
+)
+OPEN_SOURCE = sum(item["license_class"] == "osi-approved" for item in PROJECTS)
+# The slide title counts the next one, so it cannot go stale as the catalog grows.
+NEXT_LIBRARY = INCLUDED + 1
+# Stated rather than left for the audience to tally: applying the inclusion
+# policy as written makes the speaker's own organisation the largest single
+# publisher in the catalog, and a disclosure is worth more with a number on it.
+OWNERS = Counter(item["owner"] for item in PROJECTS)
+DASDAE_COUNT = OWNERS["DASDAE"]
+SOLO_OWNERS = sum(1 for count in OWNERS.values() if count == 1)
+NO_LICENSE = sum(item["license_class"] == "unlicensed" for item in PROJECTS)
+```
+
+```{python}
+# Inlined so the deck needs no conference internet access.
+HTML(f"<script type='text/javascript'>{get_plotlyjs()}</script>")
+```
+
+## Who is talking {.smaller}
+
+:::: {.columns}
+
+::: {.column width="62%"}
+::: {.incremental}
+- Geophysical engineer working in **mining**
+- Architect of **DASCore** — and DASDAE publishes `{python} DASDAE_COUNT` of the
+  `{python} INCLUDED` projects counted here, the largest share of any one owner
+- So I am not a neutral observer
+:::
+
+::: {.fragment}
+Everything here comes from a dated, public snapshot. The collection code, the
+inclusion decisions, and the raw responses are all in the open — please check my
+work.
+:::
+:::
+
+::: {.column width="38%"}
+```{python}
+portraits()
+```
+:::
+
+::::
+
+::: {.provenance}
+Snapshot `{python} SNAPSHOT_DATE` &middot; github.com/DASDAE/oss_das
+:::
+
+## Why care about tools?
+
+::: {.quotation}
+> New directions in science are launched by new tools much more often than by new
+> concepts. The effect of a concept-driven revolution is to explain old things in
+> new ways. The effect of a tool-driven revolution is to discover new things that
+> have to be explained.
+
+::: {.attribution}
+Freeman Dyson, *Imagined Worlds* (1997)
+:::
+:::
+
+. . .
+
+We name whole eras after the tools that set their ceiling — stone, bronze, iron.
+This conference is named after a man who did not invent the telescope, but pointed
+a better one at the sky.
+
+. . .
+
+Seismology's own version: C and Fortran driven from the shell, then Python, R,
+MATLAB and Julia, then shared formats, then shared libraries. ObsPy never
+discovered anything by itself. It lowered the barrier, and a generation of
+discoveries followed.
+
+## DAS is earlier on that curve
+
+DAS gives us more channels than seismology has ever had, and far less shared
+infrastructure to handle them. Several foundational packages have appeared, each
+with real strengths — and no guarantee that any two of them fit together.
+
+. . .
+
+::: {.headline}
+So: what already exists, and where does it fail to fit?
+:::
+
+## How the list was built {.smaller}
+
+::: {.incremental}
+- Candidate discovery from GitHub topics and the DAS literature
+- Every candidate is **reviewed by hand** before inclusion — discovery never
+  silently promotes a repository
+- Included means *reusable software*: a package, framework, or CLI. Not a paper's
+  supplementary notebook
+- Every value records its source and retrieval time
+- A missing metric stays missing. **Never converted to zero**
+:::
+
+. . .
+
+::: {.headline}
+`{python} DISCOVERED` discovered &rarr; `{python} REVIEWED` reviewed &rarr;
+`{python} INCLUDED` included
+:::
+
+::: {.provenance}
+`{python} len(WATCHLIST)` sit on a watchlist for scope or reusability questions, not
+for licensing — and **`{python} UNREVIEWED` candidates are still unreviewed**. A further
+`{python} SWEPT - DISCOVERED` repositories matched only a bare-acronym sweep and are
+almost all something else called DAS.
+This is a floor on the ecosystem, not a census. If your package is missing, that is
+a backlog, not a judgement.
+:::
+
+## The ecosystem is broader than it feels
+
+```{python}
+categories = Counter(item["primary_category"] for item in PROJECTS)
+languages = ["Python", "Jupyter Notebook", "Rust", "Julia", ""]
+labels = {"": "unspecified", "Jupyter Notebook": "notebooks"}
+# Coral is reserved for "thinly covered" elsewhere in the deck, so language
+# colours deliberately avoid it.
+language_colors = ["#087e8b", "#f5b700", "#5c4d7d", "#4c956c", "#9aa5ab"]
+order = [name for name, _ in categories.most_common()][::-1]
+
+figure = go.Figure()
+for language, color in zip(languages, language_colors, strict=True):
+    counts = [
+        sum(
+            1
+            for item in PROJECTS
+            if item["primary_category"] == category and item["language"] == language
+        )
+        for category in order
+    ]
+    if not any(counts):
+        continue
+    figure.add_bar(
+        y=[name.replace("-", " ") for name in order],
+        x=counts,
+        name=labels.get(language, language),
+        orientation="h",
+        marker_color=color,
+        hovertemplate="%{y}<br>%{x} project(s)<extra>%{fullData.name}</extra>",
+    )
+
+for category in order:
+    figure.add_annotation(
+        x=categories[category] + 0.06,
+        y=category.replace("-", " "),
+        text=str(categories[category]),
+        showarrow=False,
+        xanchor="left",
+        font={"color": INK},
+    )
+
+figure.update_layout(
+    barmode="stack",
+    showlegend=True,
+    legend={"orientation": "h", "y": -0.08, "x": 0, "traceorder": "normal"},
+    xaxis={
+        "title": "",
+        "showticklabels": False,
+        "showgrid": False,
+        "range": [0, max(categories.values()) + 0.45],
+    },
+    yaxis={"title": ""},
+)
+show(figure)
+```
+
+::: {.provenance}
+Primary category is a manual judgement; several projects span more than one.
+:::
+
+## And adoption thins out fast
+
+```{python}
+# The 30-day window is dominated by a two-day spike immediately before the
+# snapshot, which flatters the leader by roughly a factor of four. Six months is
+# the honest window here.
+downloads = sorted(
+    (
+        (item["name"], VALUES[(item["id"], "pypi_downloads_180d")])
+        for item in PROJECTS
+        if (item["id"], "pypi_downloads_180d") in VALUES
+    ),
+    key=lambda row: row[1],
+)
+
+figure = go.Figure(
+    go.Bar(
+        y=[name for name, _ in downloads],
+        x=[value for _, value in downloads],
+        orientation="h",
+        marker_color=[
+            TEAL if value == downloads[-1][1] else "#9fbfc4" for _, value in downloads
+        ],
+        hovertemplate="%{y}<br>%{x:,.0f} downloads<extra></extra>",
+    )
+)
+figure.update_layout(
+    showlegend=False,
+    xaxis={"title": "PyPI downloads, previous 180 days"},
+    yaxis={"title": ""},
+)
+show(figure)
+```
+
+::: {.provenance}
+Registry counts include CI and mirror traffic, so read them as an upper bound on
+human use. Only `{python} share(ON_PYPI)` included projects publish to PyPI at all,
+and one of those reports no traffic — a blank, not a zero. Conda ships
+`{python} sum(bool(i["conda_packages"]) for i in PROJECTS)`. Everything else is clone-and-hope.
+:::
+
+## Most of it is research code, not infrastructure
+
+```{python}
+checks = [
+    ("Documentation", count_flag("has_docs")),
+    ("Tests", count_flag("has_tests")),
+    ("Continuous integration", count_flag("has_ci")),
+    ("Any tagged release", INCLUDED - NO_RELEASE),
+    ("Touched in the last year", RECENT),
+]
+
+figure = go.Figure()
+figure.add_bar(
+    y=[label for label, _ in checks][::-1],
+    x=[INCLUDED - value for _, value in checks][::-1],
+    orientation="h",
+    name="absent",
+    marker_color="#e8ecee",
+    hovertemplate="%{y}: %{x} without<extra></extra>",
+)
+figure.add_bar(
+    y=[label for label, _ in checks][::-1],
+    x=[value for _, value in checks][::-1],
+    orientation="h",
+    name="present",
+    marker_color=TEAL,
+    text=[f"{value} of {INCLUDED}" for _, value in checks][::-1],
+    textposition="inside",
+    insidetextanchor="end",
+    textfont={"color": "white"},
+    hovertemplate="%{y}: %{x} with<extra></extra>",
+)
+figure.update_layout(
+    barmode="stack",
+    showlegend=False,
+    xaxis={"title": "", "showticklabels": False, "showgrid": False},
+    yaxis={"title": ""},
+)
+show(figure)
+```
+
+::: {.provenance}
+Signals are detected from repository structure, so they under-count projects that
+document or test somewhere unusual. Licensing is recorded rather than required, so
+the numbers are a measurement: `{python} share(OPEN_SOURCE)` carry an OSI-approved
+license, `{python} share(COPYLEFT)` are copyleft, and `{python} NO_LICENSE` publish
+source with no license at all — which grants nobody the right to reuse them.
+:::
+
+## What everyone builds, and what nobody does
+
+```{python}
+present = Counter(
+    row["capability"]
+    for row in DATA["capabilities"]
+    if row["present"] == "True" and row["project_id"] in INCLUDED_IDS
+)
+ranked = present.most_common()
+singletons = sum(1 for _, value in ranked if value == 1)
+top = ranked[:11][::-1]
+
+figure = go.Figure(
+    go.Bar(
+        y=[name.replace("-", " ") for name, _ in top],
+        x=[value for _, value in top],
+        orientation="h",
+        marker_color=[TEAL if value > 2 else CORAL for _, value in top],
+        text=[str(value) for _, value in top],
+        textposition="outside",
+        cliponaxis=False,
+        hovertemplate="%{y}<br>%{x} project(s)<extra></extra>",
+    )
+)
+figure.update_layout(
+    showlegend=False,
+    xaxis={
+        "title": "",
+        "showticklabels": False,
+        "showgrid": False,
+        "range": [0, max(present.values()) + 0.7],
+    },
+    yaxis={"title": ""},
+)
+show(figure, height=420)
+```
+
+::: {.headline}
+`{python} singletons` of `{python} len(ranked)` capabilities have exactly one implementation.
+:::
+
+::: {.provenance}
+Curated tags, not feature audits. If that one project stops, the capability leaves
+the ecosystem with it.
+:::
+
+## The gaps that actually hurt {.smaller}
+
+::: {.incremental}
+- **Interoperability** — every library invented its own data model. The fix is
+  conversion between them, not consolidation into one
+- **Metadata** — there is a standard proposal, and almost no tooling that enforces it
+- **GPU acceleration** — DAS volumes outgrew single-threaded NumPy years ago
+- **Large-scale visualization** — nobody can look at a full survey interactively
+:::
+
+## Build library `{python} NEXT_LIBRARY`, if you want to {.smaller}
+
+A second implementation is not the problem. Competition is how a better data model,
+a faster reader, or a nicer API actually arrives — and the earlier chart shows a
+field that is *under*-built, not over-built.
+
+. . .
+
+What costs us is work nobody else can pick up: no license, no docs, no release, a
+data model nothing can read. That is not fragmentation, it is evaporation.
+
+. . .
+
+**If you use these tools:** cite the software, report the bugs, send the patch.
+
+**If you write them:** publish to a registry, choose a license deliberately, and
+treat your data structures as a public interface — a converter can only reach what
+it can see.
+
+. . .
+
+::: {.headline}
+The bar is not "don't build it." The bar is "build it so someone else can use it."
+:::
+
+## Coding agents change the arithmetic {.smaller}
+
+::: {.incremental}
+- The cost of *writing* a DAS library just fell through the floor
+- More tools is fine. More **unmaintained** tools is the risk
+- Agents write against whatever they can read — clear APIs, real docstrings,
+  honest error messages
+- The libraries that are legible to an agent are about to get used far more than
+  the ones that are not
+:::
+
+. . .
+
+::: {.headline}
+Documentation is no longer only for humans.
+:::
+
+## Four experiments {.smaller}
+
+Each of these started as a gap on the earlier slide. All are recent, and all were
+built far faster than I could have built them three years ago.
+
+::: {.incremental}
+- **unidas** — convert between the data structures of the major libraries, so the
+  choice of library stops being a lock-in
+- **Inventory** — shared metadata handling that matches the emerging standard
+- **DASJax** — GPU and autodiff-capable processing
+- **DerZug** — large-scale visualization for data you cannot fit on a screen
+:::
+
+. . .
+
+None of these needs to be built by me. I would rather be out-competed than be the
+only option.
+
+## Takeaways
+
+::: {.incremental}
+1. There are more DAS tools than you think — and fewer than you need
+2. The ecosystem is one library deep in most niches, and zero deep in some
+3. The gap is not algorithms. It is the boring infrastructure between them
+4. Agents make building cheap, which makes *finishing* the hard part
+:::
+
+. . .
+
+::: {.headline}
+Build the thing. Publish the tool, not just the paper.
+:::
+
+::: {.provenance}
+Data, methodology, and interactive versions of every figure:<br>
+github.com/DASDAE/oss_das &middot; snapshot `{python} SNAPSHOT_DATE` &middot; code MIT, data CC BY 4.0
+:::

@@ -1,0 +1,170 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+das-anomaly,included,b82c9b79c7f744bf270fa12e561cd6c8df867122,Ahmad Tourei,ahmadtourei@gmail.com,2025-12-10T15:43:00-07:00,2025-12-10T15:43:00-07:00,0,2,4,0,1,logo (#21)
+das-anomaly,included,dfd1cbc467aab32d1ccbf3a834a9eac4ea3b3a57,Ahmad Tourei,ahmadtourei@gmail.com,2025-12-10T15:29:19-07:00,2025-12-10T15:29:19-07:00,0,14,1451,579,1,Improve docs (#20)
+das-anomaly,included,f30d714276a6fffc40c24d472592bed4bee75532,Ahmad Tourei,ahmadtourei@gmail.com,2025-12-09T11:18:08-07:00,2025-12-09T11:18:08-07:00,0,1,1,1,0,update org info (#19)
+das-anomaly,included,9730bd82a3c14070cfa970ea11f6c96c0c6dff70,Ahmad Tourei,ahmadtourei@gmail.com,2025-12-03T13:54:38-07:00,2025-12-03T13:54:38-07:00,1,,,,,Merge pull request #18 from ahmadtourei/classifier_count
+das-anomaly,included,0f77c7df6232771ee696070f1dc1318d7f48e4c2,ahmadtourei,ahmadtourei@gmail.com,2025-12-03T13:37:49-07:00,2025-12-03T13:37:49-07:00,0,1,3,0,0,try fix Windows interactive plotting
+das-anomaly,included,7f667a3379a11c2a56bc8e7f16f2192270628e33,ahmadtourei,ahmadtourei@gmail.com,2025-12-03T13:30:45-07:00,2025-12-03T13:30:45-07:00,0,1,43,16,0,try fix Ubunto dir file system iterate
+das-anomaly,included,2bb7ad28c973587535118fec6cd000f1dd1cad89,ahmadtourei,ahmadtourei@gmail.com,2025-12-03T13:10:23-07:00,2025-12-03T13:10:23-07:00,0,2,1,1,1,try fix CI
+das-anomaly,included,b804e0d4c9188a304ae319827ff5b8c2f0a67a49,ahmadtourei,ahmadtourei@gmail.com,2025-10-13T14:35:40-06:00,2025-10-13T14:35:40-06:00,0,1,1,1,0,update docs
+das-anomaly,included,b379d46b23b43c680820a997a6dd981b428df57c,ahmadtourei,ahmadtourei@gmail.com,2025-10-13T14:29:01-06:00,2025-10-13T14:29:01-06:00,0,2,207,71,0,feat(counter): distinguish transient vs impulsive anomalies
+das-anomaly,included,036e9fa0e54cafd15c8d73d23f75c688d1321d85,Ahmad Tourei,ahmadtourei@gmail.com,2025-09-15T09:59:52-06:00,2025-09-15T09:59:52-06:00,1,,,,,Merge pull request #17 from ahmadtourei/improve_docs
+das-anomaly,included,913e3d365a9359b4754a9d01505c9ee16c9967d5,ahmadtourei,ahmadtourei@gmail.com,2025-09-15T09:28:55-06:00,2025-09-15T09:28:55-06:00,0,3,30,3,2,add figures for readme
+das-anomaly,included,37e07033e0d3bc40c5c504e243da8c9cc34b99ca,ahmadtourei,ahmadtourei@gmail.com,2025-09-15T08:54:04-06:00,2025-09-15T08:54:04-06:00,0,3,924,2,0,add f score and thresholding examples
+das-anomaly,included,70d01ef833d4ab6d0e3a88eed3d6b49831c0b0c2,ahmadtourei,ahmadtourei@gmail.com,2025-09-14T17:50:49-06:00,2025-09-14T17:50:49-06:00,0,8,262,11,0,add bash scripts
+das-anomaly,included,3619873c155889b6ef0f438b3cd9ab141d523fa0,Ahmad Tourei,ahmadtourei@gmail.com,2025-09-05T17:57:28-06:00,2025-09-05T17:57:28-06:00,1,,,,,Merge pull request #16 from ahmadtourei/mse_thresholding
+das-anomaly,included,4f91327c83870a7e53558961f926efcf3c7cc8a0,ahmadtourei,ahmadtourei@gmail.com,2025-09-05T17:20:48-06:00,2025-09-05T17:20:48-06:00,0,2,16,10,0,count number of upsampling based on maxpooling
+das-anomaly,included,a0d74dd1539aa94db06f6bb13b9417f893e9ddac,ahmadtourei,ahmadtourei@gmail.com,2025-09-05T16:46:37-06:00,2025-09-05T16:46:37-06:00,0,1,12,1,0,update gitignore
+das-anomaly,included,ebcf4742b6fcab8676606999334ae183b30c2149,ahmadtourei,ahmadtourei@gmail.com,2025-09-05T16:37:54-06:00,2025-09-05T16:37:54-06:00,0,1,28,3,0,"fix decoder, avoid layer name collisions by prefixing decoder layers"
+das-anomaly,included,a4b41f8814cdf84d4591c1d820255d86390b9585,ahmadtourei,ahmadtourei@gmail.com,2025-09-05T13:33:50-06:00,2025-09-05T13:33:50-06:00,0,6,134,71,0,add mse thresholding
+das-anomaly,included,1c55f4872053e01ba8e01ced612ff7168eb7084a,Ahmad Tourei,ahmadtourei@gmail.com,2025-09-02T18:07:12-06:00,2025-09-02T18:07:12-06:00,1,,,,,Merge pull request #15 from ahmadtourei/layers
+das-anomaly,included,74a937878072d4e90ce09ae2631b14195386b924,ahmadtourei,ahmadtourei@gmail.com,2025-09-02T17:50:34-06:00,2025-09-02T17:50:34-06:00,0,1,0,44,0,generalize the _extract_encoder()
+das-anomaly,included,a62c01789afa461aa0164f0892ab78a200c03d2a,ahmadtourei,ahmadtourei@gmail.com,2025-08-23T17:00:44-06:00,2025-09-02T17:48:17-06:00,0,5,142,68,0,generalize _extract_encoder()
+das-anomaly,included,57a835efd59f6e8067845b7eb59a5fa07ae60d76,ahmadtourei,ahmadtourei@gmail.com,2025-09-02T17:40:24-06:00,2025-09-02T17:40:24-06:00,0,1,7,0,0,try fix png collection for Ubuntu
+das-anomaly,included,0336053a4eaa4e231651550fc7c737a690df6a6f,ahmadtourei,ahmadtourei@gmail.com,2025-08-23T17:07:36-06:00,2025-08-23T17:07:36-06:00,1,,,,,Merge remote-tracking branch 'origin' into layers merge master
+das-anomaly,included,824b0910801e0ad07c2dbc3f2758c5843468a873,ahmadtourei,ahmadtourei@gmail.com,2025-08-07T09:14:14-06:00,2025-08-07T09:14:14-06:00,0,2,7,3,0,address tests
+das-anomaly,included,6c1bf6504b3bb457a1368996b4ef9fd0808d0758,ahmadtourei,ahmadtourei@gmail.com,2025-08-07T08:48:04-06:00,2025-08-07T08:48:04-06:00,0,4,12,6,0,make number of filters flexible
+das-anomaly,included,2993ef5e0a67f3945f999d45ba8f7c29d3488b00,Ahmad Tourei,ahmadtourei@gmail.com,2025-08-04T19:49:01-06:00,2025-08-04T19:49:01-06:00,1,,,,,Merge pull request #13 from ahmadtourei/generalize_layers
+das-anomaly,included,ac61bcec1f7ed0ef32881e64b2927a9b647dd7d7,ahmadtourei,ahmadtourei@gmail.com,2025-08-01T00:27:06-06:00,2025-08-01T00:27:06-06:00,0,5,104,20,0,feat: make encoder layer count configurable
+das-anomaly,included,b71fe32e99237398ce3407174dd33e5373316a6a,Ahmad Tourei,ahmadtourei@gmail.com,2025-07-22T17:50:43-06:00,2025-07-22T17:50:43-06:00,1,,,,,Merge pull request #12 from ahmadtourei/get_sr_each_patch
+das-anomaly,included,4f88ba4a9ce49cf8dcc3f8687046b1efdcb7a054,ahmadtourei,ahmadtourei@gmail.com,2025-07-21T16:45:33-06:00,2025-07-21T16:45:33-06:00,0,1,3,1,0,unlink spool's index file
+das-anomaly,included,0abf401ee9999e29fb058c3ab1bf56384e17424b,ahmadtourei,ahmadtourei@gmail.com,2025-07-21T11:25:54-06:00,2025-07-21T11:25:54-06:00,0,1,3,0,0,generalize the condition for time_step
+das-anomaly,included,19f5418ddacab8a5787acde938b5b5371a22103a,ahmadtourei,ahmadtourei@gmail.com,2025-07-21T10:59:46-06:00,2025-07-21T10:59:46-06:00,0,1,6,4,0,calculate sampling_rate if DASCore returns None
+das-anomaly,included,8957d456ab85cb28d78a62cb38a0fd193f4379fe,ahmadtourei,ahmadtourei@gmail.com,2025-07-21T08:55:09-06:00,2025-07-21T08:55:09-06:00,0,2,4,2,0,update readme
+das-anomaly,included,d9ffc5cd1de3f5283ed5db3f3418796dd127233d,ahmadtourei,ahmadtourei@gmail.com,2025-07-21T08:48:16-06:00,2025-07-21T08:48:16-06:00,0,2,3,5,0,update counter docs
+das-anomaly,included,dccabd1f27f1d23234a7cbb8c13840bbb062ca4c,ahmadtourei,ahmadtourei@gmail.com,2025-07-18T19:37:28-06:00,2025-07-18T19:37:28-06:00,0,2,2,1,0,update docs
+das-anomaly,included,924352d7ddf10f232e0387fcb3be4fb097544844,ahmadtourei,ahmadtourei@gmail.com,2025-07-18T17:57:49-06:00,2025-07-18T17:57:49-06:00,0,1,3,1,0,add docs for creating spool using DASCore
+das-anomaly,included,f887806442af7a12d6121ef6cfd476f9210309c5,ahmadtourei,ahmadtourei@gmail.com,2025-07-18T17:50:29-06:00,2025-07-18T17:50:29-06:00,0,1,2,2,0,fix _iter_patches so it gets sampling rate for each patch
+das-anomaly,included,6d9b81210b8c7e4eb19175aab1c300ff56223dfe,Ahmad Tourei,ahmadtourei@gmail.com,2025-07-18T17:28:57-06:00,2025-07-18T17:28:57-06:00,1,,,,,Merge pull request #11 from ahmadtourei/fix_bugs
+das-anomaly,included,f6170ced2893533af0fa904223e75c7e6702fc6d,ahmadtourei,ahmadtourei@gmail.com,2025-07-16T21:21:22-06:00,2025-07-16T21:21:22-06:00,0,1,53,43,0,debug run_parallel() method for mpi run
+das-anomaly,included,7b5dbb206a3b001c2873a0248dcc6ccb21ca43d0,ahmadtourei,ahmadtourei@gmail.com,2025-07-16T16:20:52-06:00,2025-07-16T16:20:52-06:00,0,5,216,4,0,add an example for excluding knwon events from training
+das-anomaly,included,9b30fcbbf3eb2ef3502d9117de029ce3b00141c1,ahmadtourei,ahmadtourei@gmail.com,2025-07-14T21:21:26-06:00,2025-07-14T21:21:26-06:00,0,1,9,3,0,support test/train ratio of 0 and 1
+das-anomaly,included,b59db128014ba265905b98274063d01106f8b46c,ahmadtourei,ahmadtourei@gmail.com,2025-07-14T20:30:36-06:00,2025-07-14T20:30:36-06:00,0,1,5,0,0,create images subdir for anomaly dataset dir
+das-anomaly,included,46c86289695ff8577a46d82c7839a404b6467a1a,ahmadtourei,ahmadtourei@gmail.com,2025-07-14T20:23:37-06:00,2025-07-14T20:23:37-06:00,0,3,13,8,0,create images subdir for training and testing datasets to make TF happy
+das-anomaly,included,4f3fad2ffae122d90fe2f33f945b0c76fa9c6ea9,ahmadtourei,ahmadtourei@gmail.com,2025-07-11T17:05:10-06:00,2025-07-11T17:05:10-06:00,0,1,4,1,0,invert y axis of PSDs
+das-anomaly,included,15bf918e10604396390aa6253c20520a15c0b4b0,ahmadtourei,ahmadtourei@gmail.com,2025-07-11T16:49:14-06:00,2025-07-11T16:49:14-06:00,0,3,24,18,0,allow different percentile values for run_get_psd_val method
+das-anomaly,included,00d00f8beac197ac6b8438cf4671511eada32bc6,ahmadtourei,ahmadtourei@gmail.com,2025-07-11T15:35:10-06:00,2025-07-11T15:35:10-06:00,0,3,10,10,0,capitalize attibutes of mpi4py.MPI.Intracomm
+das-anomaly,included,bcdb4e2004dbbfbd31008f965a7cb12cae163d99,ahmadtourei,ahmadtourei@gmail.com,2025-07-10T19:35:04-06:00,2025-07-10T19:35:04-06:00,0,1,1,1,0,update readme
+das-anomaly,included,f1eb0fb0231875fbea32d1dfb39c6ca5921cab17,ahmadtourei,ahmadtourei@gmail.com,2025-07-10T19:14:19-06:00,2025-07-10T19:14:19-06:00,0,1,9,6,0,no sub_sp for getting the max_clip value
+das-anomaly,included,91b521b5681fef1fdcac5a15503f6c1eaa88ceb9,ahmadtourei,ahmadtourei@gmail.com,2025-07-10T19:05:06-06:00,2025-07-10T19:05:06-06:00,0,1,2,2,0,fix a typo in readme
+das-anomaly,included,67ed19e7a2b0f31b5401b9211f301c9a0cf295c8,ahmadtourei,ahmadtourei@gmail.com,2025-07-10T18:32:45-06:00,2025-07-10T18:32:45-06:00,0,1,1,1,0,fix a typo in readme
+das-anomaly,included,d1fe9089da4a435e042b1cdf7d6c759176f1c9db,ahmadtourei,ahmadtourei@gmail.com,2025-07-10T18:31:59-06:00,2025-07-10T18:31:59-06:00,0,1,2,0,0,ruff cache to gitignore
+das-anomaly,included,229c251bc5483bb51ffa3d21525a9f617c8bcc2b,Ahmad Tourei,ahmadtourei@gmail.com,2025-07-09T21:25:43-06:00,2025-07-09T21:25:43-06:00,1,,,,,Merge pull request #10 from ahmadtourei/fix_doi
+das-anomaly,included,02026ea594a21cce44a418da56c5a520141f4708,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T21:21:11-06:00,2025-07-09T21:21:11-06:00,0,1,6,6,0,fix the broken test
+das-anomaly,included,6c46644110568d28132fa890b6cb6f1aeb1e5feb,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T21:16:43-06:00,2025-07-09T21:16:43-06:00,0,2,33,45,0,fix the broken test
+das-anomaly,included,50e92205175902efce793494084fba169e939590,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T20:33:48-06:00,2025-07-09T20:33:48-06:00,0,1,20,0,0,third try to address coverage
+das-anomaly,included,7f8d390b96344c97c1dc5a714197987723328e94,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T20:18:48-06:00,2025-07-09T20:18:48-06:00,0,1,44,0,0,third try to address coverage
+das-anomaly,included,c2886c0ebe6ffadb15e35c42f4571dd00d3d8fd5,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T20:10:47-06:00,2025-07-09T20:10:47-06:00,0,2,50,2,0,second try to address coverage
+das-anomaly,included,a8ef7e11a35e0e215efe73b80d3ad5a6269362a1,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T19:48:19-06:00,2025-07-09T19:48:19-06:00,0,1,37,0,0,address coverage
+das-anomaly,included,6028433ecf08ba459bc3463e708d4cbc2c887291,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T18:55:31-06:00,2025-07-09T18:55:31-06:00,0,1,13,3,0,ensure psd_path can include either directories or pngs
+das-anomaly,included,34ee1329656e0e3e7dc8ab189da78dc84540ffd9,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T17:52:39-06:00,2025-07-09T17:52:39-06:00,0,1,1,1,0,clarify how detec module copies the detected anomalies
+das-anomaly,included,1adf8240a7b3c5ca5020862d269435a0ef5ce46b,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T17:39:24-06:00,2025-07-09T17:39:24-06:00,0,1,16,11,0,improve docs
+das-anomaly,included,d7df0a8717a3a468dfd96a1b2400b5c30dd02390,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T17:06:03-06:00,2025-07-09T17:06:03-06:00,0,4,6,63,0,replace np.percentile
+das-anomaly,included,d2058cfa5d3ee7d579170a3a3047b6f625d1fb04,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T15:37:48-06:00,2025-07-09T15:37:48-06:00,0,1,13,13,0,update jupyter notebook
+das-anomaly,included,7ed40889913741051af4ecedb85862ace40ba012,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T15:36:35-06:00,2025-07-09T15:36:35-06:00,0,2,5,5,0,fix path for example
+das-anomaly,included,d3a54e2d72e0907d8bab77272dcb698de6a1cb2e,ahmadtourei,ahmadtourei@gmail.com,2025-07-09T15:26:39-06:00,2025-07-09T15:26:39-06:00,0,1,5,5,0,update readme
+das-anomaly,included,69eca1388852d38133b243b84edc28264741cc4b,Ahmad Tourei,ahmadtourei@gmail.com,2025-07-02T10:29:51-06:00,2025-07-02T10:29:51-06:00,1,,,,,Merge pull request #9 from ahmadtourei/dependency
+das-anomaly,included,f4b21c1c56373ab6b269e03a8e3ca02847044add,ahmadtourei,ahmadtourei@gmail.com,2025-07-02T10:20:51-06:00,2025-07-02T10:20:51-06:00,0,2,19,17,1,update python requirement
+das-anomaly,included,5ebca63bfad7b9ca53fd90ac36da53f9ca7586ab,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-30T15:25:52-06:00,2025-06-30T15:25:52-06:00,1,,,,,Merge pull request #8 from ahmadtourei/end_to_end_test
+das-anomaly,included,211d263c2fec48dad9d01096cdca22939abfabbf,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T15:18:35-06:00,2025-06-30T15:18:35-06:00,0,1,0,1,0,remove path from gitignore
+das-anomaly,included,db4e32880150c1b1c26afd587a1d5b2a97dcec5f,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T15:18:02-06:00,2025-06-30T15:18:02-06:00,0,6,69,65,0,change default paths for tests
+das-anomaly,included,cd0e77e9d09568d2aa90f17e595a3d9282ccb784,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T10:04:53-06:00,2025-06-30T10:04:53-06:00,0,1,0,20,0,data to gitignore
+das-anomaly,included,e8435536fc98ecb4c3b51450785c7432863f958b,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T10:04:38-06:00,2025-06-30T10:04:38-06:00,0,2,21,1,0,data to gitignore
+das-anomaly,included,e6c04ae3e257d3b07f0159564da693228b1dde7e,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T10:02:01-06:00,2025-06-30T10:02:01-06:00,0,3,18,17,0,data to gitignore
+das-anomaly,included,8e497376c41e56ab93126eaacc32bc9aea493d72,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T09:45:26-06:00,2025-06-30T09:45:26-06:00,0,4,115,4,0,address coverage
+das-anomaly,included,3fab05a102d02df4e1031044230ef6adc0ff33f2,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T08:56:09-06:00,2025-06-30T08:56:09-06:00,0,1,8,8,0,remove pth dir
+das-anomaly,included,060e59e2503ae9a6c59bf7927b42c7f99d81a850,ahmadtourei,ahmadtourei@gmail.com,2025-06-30T08:39:05-06:00,2025-06-30T08:39:05-06:00,0,3,10,2,0,make 'images' sub dir for train and test plots
+das-anomaly,included,a3df99ec38f26f7c8e8b11a3f746b38698edcceb,ahmadtourei,ahmadtourei@gmail.com,2025-06-27T15:55:35-06:00,2025-06-27T15:55:35-06:00,0,1,4,1,0,Restrict package discovery to das_anomaly
+das-anomaly,included,18d90788c99486e4be2705e772a4671ae48aea6b,ahmadtourei,ahmadtourei@gmail.com,2025-06-27T15:40:44-06:00,2025-06-27T15:40:44-06:00,0,2,55,52,0,tests for counter
+das-anomaly,included,d5753151d6956f320a1c29e3913e84cbdbd025bb,ahmadtourei,ahmadtourei@gmail.com,2025-06-27T15:33:24-06:00,2025-06-27T15:33:24-06:00,0,8,50,44,0,debug counter
+das-anomaly,included,0df3b031706cf4d4a8faf436fed2a4542e81871c,ahmadtourei,ahmadtourei@gmail.com,2025-06-27T10:34:41-06:00,2025-06-27T10:34:41-06:00,0,1,3,1,0,fix model loading path
+das-anomaly,included,ea25b44d39e5331810e13e198df73ec677594b90,ahmadtourei,ahmadtourei@gmail.com,2025-06-27T10:18:49-06:00,2025-06-27T10:18:49-06:00,0,5,94,28,0,add support for PSD with axes
+das-anomaly,included,432a6024da93a28adf08ee11cf77b87358979c2d,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T21:06:52-06:00,2025-06-26T21:06:52-06:00,0,1,2,7,0,fix saving model
+das-anomaly,included,844cf9d72c651abe57038e06018a781ad4af8aad,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T15:05:48-06:00,2025-06-26T15:05:48-06:00,0,1,1,1,0,update psd  readme
+das-anomaly,included,4802ece0ca908670d8e504b492298c0c954ee5c5,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T14:48:46-06:00,2025-06-26T14:48:46-06:00,0,1,1,1,0,support strain rate patches
+das-anomaly,included,cd39830ec3481f92ff794c30bc6afedf3d57d22f,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T14:47:23-06:00,2025-06-26T14:47:23-06:00,0,3,22,6,0,support strain rate patches
+das-anomaly,included,4327378e4f72b71d9aeed0488fdba95ec9b15022,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T14:36:59-06:00,2025-06-26T14:36:59-06:00,0,1,1,1,0,modify example docs
+das-anomaly,included,ea78df845318c8235da8952a42ae242bdb27d743,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T14:33:29-06:00,2025-06-26T14:33:29-06:00,0,3,11,5,0,fix mpi import
+das-anomaly,included,f4d5fb374ea2b4a8859710d91e3ac99b6e0ebb19,ahmadtourei,ahmadtourei@gmail.com,2025-06-26T14:03:38-06:00,2025-06-26T14:03:38-06:00,0,2,9,4,0,fix decoder function
+das-anomaly,included,9712926da58629d46b9e4c337ba1f056672b1ab8,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-20T15:36:29-06:00,2025-06-20T15:36:29-06:00,1,,,,,Merge pull request #7 from ahmadtourei/run_jn_example
+das-anomaly,included,e0995a0c9c27fb672748cfa9f2795c44aa7946fd,ahmadtourei,ahmadtourei@gmail.com,2025-06-20T15:27:25-06:00,2025-06-20T15:27:25-06:00,1,,,,,improve docs
+das-anomaly,included,2b10f1fe6d6b48bb8f6e24fa686c34883b3a9740,ahmadtourei,ahmadtourei@gmail.com,2025-06-20T14:52:45-06:00,2025-06-20T14:52:45-06:00,0,4,253,36,0,exclude jn from pre-commit
+das-anomaly,included,cd4a5256c4dc2af96844b523524ad646c103810f,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-19T10:52:49-06:00,2025-06-19T10:52:49-06:00,0,1,7,6,0,Update README.md
+das-anomaly,included,d45f82e75a469342f9c446300159bd4fc8c09cb3,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-19T10:40:58-06:00,2025-06-19T10:40:58-06:00,1,,,,,Merge pull request #6 from ahmadtourei/start_lint
+das-anomaly,included,c684bdb95d68a3df008bc829881e3691c39ccad6,ahmadtourei,ahmadtourei@gmail.com,2025-06-19T10:36:17-06:00,2025-06-19T10:36:17-06:00,0,1,51,7,0,address coverage
+das-anomaly,included,b97e4cc99cc4fe2f1ae410103401099a95598082,ahmadtourei,ahmadtourei@gmail.com,2025-06-19T10:04:20-06:00,2025-06-19T10:04:20-06:00,0,9,186,17,0,add run_get_psd_val and improve docs
+das-anomaly,included,8f3519f1f8f1afb90a7fdd12fb83e918b3ea4824,ahmadtourei,ahmadtourei@gmail.com,2025-06-18T22:44:22-06:00,2025-06-18T22:44:22-06:00,0,1,1,1,0,test install
+das-anomaly,included,b94be6f9e15d3911c3258b5b46426065e3d5151d,ahmadtourei,ahmadtourei@gmail.com,2025-06-18T22:40:10-06:00,2025-06-18T22:40:10-06:00,0,2,55,4,0,address coverage
+das-anomaly,included,c96699d8bec4daebc5e61caedd44e09b97f19c25,ahmadtourei,ahmadtourei@gmail.com,2025-06-18T22:15:55-06:00,2025-06-18T22:15:55-06:00,0,2,17,20,0,pre-commit for commits
+das-anomaly,included,d57f84dbcf89d2dbaabf7f8d7a1a2120d57ce337,ahmadtourei,ahmadtourei@gmail.com,2025-06-18T21:37:21-06:00,2025-06-18T21:37:21-06:00,0,27,540,611,0,lint
+das-anomaly,included,4b7e5d919485f538b19906e435504b754f3fd85b,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-18T21:00:19-06:00,2025-06-18T21:00:19-06:00,1,,,,,Merge pull request #5 from ahmadtourei/counter
+das-anomaly,included,203d1a02acb6e6527be34e76a39e4ec1832b4bf5,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-13T18:22:40-06:00,2025-06-13T18:22:40-06:00,1,,,,,Merge pull request #4 from ahmadtourei/mpi_for_detector
+das-anomaly,included,45f9c6644e0c4a1dfb39126500b6ab657bdbdb2a,ahmadtourei,ahmadtourei@gmail.com,2025-06-13T18:22:12-06:00,2025-06-13T18:22:12-06:00,0,1,72,0,0,tests_for_counter
+das-anomaly,included,0811590870601cc2ad9a75836062bd93c0641b35,ahmadtourei,ahmadtourei@gmail.com,2025-06-13T18:19:09-06:00,2025-06-13T18:19:09-06:00,0,1,79,0,0,modularize_counter
+das-anomaly,included,bee4971230e96720d3580d386487553d016a165e,ahmadtourei,ahmadtourei@gmail.com,2025-06-13T18:16:05-06:00,2025-06-13T18:16:05-06:00,0,1,0,110,0,delete_old_mpi_script
+das-anomaly,included,498a69edf364935f5b5184dc693dd7b069f75696,ahmadtourei,ahmadtourei@gmail.com,2025-06-13T18:14:00-06:00,2025-06-13T18:14:00-06:00,0,1,29,1,0,address_coverage
+das-anomaly,included,acd30c8bd843b3ce478e3dccd1dccfe1b20bc83f,ahmadtourei,ahmadtourei@gmail.com,2025-06-13T18:01:13-06:00,2025-06-13T18:01:13-06:00,0,1,30,0,0,address_coverage
+das-anomaly,included,ac6a9baaf17387cdb00e3a841a8aca5c8bf58e80,ahmadtourei,ahmadtourei@gmail.com,2025-06-13T18:00:45-06:00,2025-06-13T18:00:45-06:00,0,5,254,215,0,modularize_detector_mpi
+das-anomaly,included,74f5f209284baeba830d943785bae638cd75c8ef,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-13T10:58:04-06:00,2025-06-13T10:58:04-06:00,1,,,,,Merge pull request #3 from ahmadtourei/modularize_detect
+das-anomaly,included,7c3b898735b6c63e0a8e74e2b2591f4f7c66feb7,ahmadtourei,ahmadtourei@gmail.com,2025-06-12T18:24:12-06:00,2025-06-12T18:24:12-06:00,0,6,370,5,0,detect module and tests
+das-anomaly,included,10c2c3548f4d30559c5991df4563227687ac7897,ahmadtourei,ahmadtourei@gmail.com,2025-06-12T09:55:32-06:00,2025-06-12T09:55:32-06:00,0,1,3,3,0,update readme
+das-anomaly,included,042e987138d5215d2c96594088b89d44f47dc73e,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-05T17:45:51-06:00,2025-06-05T17:45:51-06:00,1,,,,,modify percentile func and add tests for utils
+das-anomaly,included,9298305778c1998d65e8074bc33499f20cbdb585,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T17:27:23-06:00,2025-06-05T17:27:23-06:00,0,1,0,2,0,make test_utils class based
+das-anomaly,included,f26d231e4a3c38974cfc09bd54215517c5d9c64b,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T17:26:49-06:00,2025-06-05T17:26:49-06:00,0,1,85,146,0,make test_utils class based
+das-anomaly,included,7b7d9390211663182377243761ebefabcc5e3226,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T17:20:51-06:00,2025-06-05T17:20:51-06:00,0,1,36,5,0,coverage for plot_spec
+das-anomaly,included,a0c6f3588ca10f802ff33208a73f9bf5ff6a5f8e,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T17:10:40-06:00,2025-06-05T17:10:40-06:00,0,2,79,16,0,coverage for test_utils
+das-anomaly,included,46559073598c8f1fce35a9ab7d78f8eefc806df8,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T16:53:53-06:00,2025-06-05T16:53:53-06:00,0,6,174,40,0,modify percentile func and add tests for utils
+das-anomaly,included,976c8f95d2e93c31678fc2c188196b2b2c0c3f68,Ahmad Tourei,ahmadtourei@gmail.com,2025-06-05T13:54:20-06:00,2025-06-05T13:54:20-06:00,1,,,,,Merge pull request #1 from ahmadtourei/modulate_train_script
+das-anomaly,included,a4c110f67b89ede39933697c7b3a1ea854c7c262,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T13:46:38-06:00,2025-06-05T13:46:38-06:00,0,1,4,1,0,improve autoencoder module docs
+das-anomaly,included,45bcf7b0cd3466705f14f51945ba1e36c8ee2123,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T13:36:27-06:00,2025-06-05T13:36:27-06:00,0,2,48,8,0,add a test for saving train results
+das-anomaly,included,fdf1d7febba856deb7089e9eae7b2c0cb50b0045,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T13:18:05-06:00,2025-06-05T13:18:05-06:00,0,8,233,212,0,modulate train_ae script
+das-anomaly,included,26a78e13508695bda7fd9226da82aa750afe9abd,ahmadtourei,ahmadtourei@gmail.com,2025-06-05T13:08:27-06:00,2025-06-05T13:08:27-06:00,0,9,227,2,0,modulate randomly_select_train_and_test_data script
+das-anomaly,included,c3e70d87871c6d3172828978cb59a68f4c71bf9e,ahmadtourei,ahmadtourei@gmail.com,2025-06-04T09:59:29-06:00,2025-06-04T09:59:29-06:00,0,1,1,1,0,improve docs for MPI installation
+das-anomaly,included,a07a3e1bbaf142f9b6dd819befe1a90b9b2ab9dd,ahmadtourei,ahmadtourei@gmail.com,2025-06-04T09:52:47-06:00,2025-06-04T09:52:47-06:00,0,2,13,21,0,docs for generator in parallel mode
+das-anomaly,included,fa48c7770b3311ff9763ba6133a4b894dbff65b0,ahmadtourei,ahmad9@vt.edu,2025-06-03T15:42:26-06:00,2025-06-03T15:42:26-06:00,0,2,12,1,0,try a dummy communicator to facilitate MPI testing
+das-anomaly,included,5c10255dc95a9604a7cf2be087a6bd31856af0b0,ahmadtourei,ahmad9@vt.edu,2025-06-03T14:35:40-06:00,2025-06-03T14:35:40-06:00,0,2,98,8,0,tests for parallel PSD plotting
+das-anomaly,included,5daa4aafdf38db9eb5028b592ad7f80dfab4446d,ahmadtourei,ahmadtourei@gmail.com,2025-06-03T13:47:17-06:00,2025-06-03T13:47:17-06:00,0,8,126,186,0,modulate MPI in PSD generator
+das-anomaly,included,0dca3b4b999c1f3ff665140c0248477d9097247b,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T20:13:00-06:00,2025-05-28T20:13:00-06:00,0,2,1,1,1,fix code coverage badge
+das-anomaly,included,819d111e856f09176ede5263733771fbc401a564,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:53:03-06:00,2025-05-28T19:53:03-06:00,0,1,1,1,0,editable install for tests so match coverage filenames to files in the repository tree
+das-anomaly,included,143c85ba4ea358ded264df3f1dcbf8ca532b2f8f,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:46:03-06:00,2025-05-28T19:46:03-06:00,0,2,2,5,0,single line run for shell compatibility
+das-anomaly,included,824e9e8a998a7fe2d8efdc2aa981b35a8212919f,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:38:36-06:00,2025-05-28T19:38:36-06:00,0,1,1,1,0,drop 3.13 from CI for now because of tensorflow
+das-anomaly,included,cc3d2c7623da6cb36128b2369f179e4cb23ad855,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:34:17-06:00,2025-05-28T19:34:17-06:00,0,1,1,1,0,2nd try token for code coverage
+das-anomaly,included,ed09b09ed42355f0bf081a5cac6ce038cff21591,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:27:47-06:00,2025-05-28T19:27:47-06:00,0,1,1,1,0,try token for code coverage
+das-anomaly,included,bbc9825c13e33bdac9dbd8099613854be94ea3bd,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:23:36-06:00,2025-05-28T19:23:36-06:00,0,3,25,4,0,add pytest code coverage
+das-anomaly,included,410a7bfb24225ccffacc09cee8188903ba3d0493,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T19:11:50-06:00,2025-05-28T19:11:50-06:00,0,3,38,1,0,ci: add GitHub Actions run for pytest
+das-anomaly,included,fb3e051e1c37e40a04b08dc5e592fb9764273a1a,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T18:54:46-06:00,2025-05-28T18:54:46-06:00,0,18,442,442,0,moved conftest under tests
+das-anomaly,included,a917859c2e6466d511375b3156bbac7fe0b5cdad,ahmadtourei,ahmadtourei@gmail.com,2025-05-28T18:51:14-06:00,2025-05-28T18:51:14-06:00,0,12,411,157,0,modularize PSD workflow and add unit tests
+das-anomaly,included,cab37bdcab753b5ae50791ff8ee1e8e27a189997,ahmadtourei,ahmadtourei@gmail.com,2025-05-02T18:49:14-06:00,2025-05-02T18:49:14-06:00,0,1,37,37,0,update jupyter nb
+das-anomaly,included,615b6cb28ac1d1332e2a0eb64c2c778647ba3f35,ahmadtourei,ahmadtourei@gmail.com,2025-05-02T18:45:20-06:00,2025-05-02T18:45:20-06:00,0,1,1,1,0,update readme
+das-anomaly,included,1ad3af40f317950ed25a0a2efc3725a287beae50,ahmadtourei,ahmadtourei@gmail.com,2025-05-02T18:33:25-06:00,2025-05-02T18:34:15-06:00,0,6,40,29,0,update example jupyter nb
+das-anomaly,included,2f516098866eb76a221f8f44ac77920f742bf7a2,ahmadtourei,ahmadtourei@gmail.com,2025-05-02T18:14:43-06:00,2025-05-02T18:14:43-06:00,0,2,2,2,0,update readme
+das-anomaly,included,32fc0b9bc6f3933435a8cd2ac348ef32f83c545b,ahmadtourei,ahmadtourei@gmail.com,2025-05-02T18:06:05-06:00,2025-05-02T18:06:05-06:00,0,6,572,41,0,added data for the jupyter notebook
+das-anomaly,included,6e440b026226316d61543e672c447201aa2c42f5,ahmadtourei,ahmadtourei@gmail.com,2025-05-02T17:02:27-06:00,2025-05-02T17:02:27-06:00,0,3,2,305,0,Stop tracking examples directory
+das-anomaly,included,e8ccf73c8a94adfbfdbe841ea99e8d248ae0332d,ahmadtourei,ahmadtourei@gmail.com,2025-05-01T10:42:14-06:00,2025-05-01T10:42:14-06:00,0,1,2,2,0,update installation guide
+das-anomaly,included,f0a90f8ecea2d6b7a522d61d624bfccde10a773f,ahmadtourei,ahmadtourei@gmail.com,2025-05-01T10:26:17-06:00,2025-05-01T10:26:17-06:00,0,13,224,149,0,extract constans and add to separate file
+das-anomaly,included,26b28f13fd8f91424991f61f1ebac67ac5600587,ahmadtourei,ahmadtourei@gmail.com,2025-05-01T09:03:41-06:00,2025-05-01T09:03:41-06:00,0,11,614,498,0,use dc chunk for plot_psd
+das-anomaly,included,a65ba33152850091db09b283cb92d3606671b64c,ahmadtourei,ahmadtourei@gmail.com,2025-04-07T17:58:09-06:00,2025-04-07T17:58:09-06:00,0,3,0,0,3,Remove __pycache__ from repo
+das-anomaly,included,8d6940b87e215d785b99e7beb6d0243fbe5e73e0,ahmadtourei,ahmadtourei@gmail.com,2025-04-07T17:56:51-06:00,2025-04-07T17:56:51-06:00,0,5,0,105,0,Remove egg-info from repo
+das-anomaly,included,c116d0882608f4e4be1dff15ca4c30d12ba7c30f,ahmadtourei,ahmadtourei@gmail.com,2025-04-07T17:51:23-06:00,2025-04-07T17:51:23-06:00,0,1,8,9,0,update readme
+das-anomaly,included,6c477680a6f35d2f893db51b96ddb106f600893e,ahmadtourei,ahmadtourei@gmail.com,2025-04-07T17:50:49-06:00,2025-04-07T17:50:49-06:00,0,12,123,134,0,generalize the inputs
+das-anomaly,included,3a35cffff655be3c855b80412505323c7229a29c,ahmadtourei,ahmadtourei@gmail.com,2025-03-06T20:33:41-07:00,2025-03-06T20:33:41-07:00,0,2,3,3,0,mute Keras progress bar
+das-anomaly,included,6013100cdb76ae26861a7e80eae5dd596841f004,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T14:12:00-07:00,2025-02-25T14:12:00-07:00,0,3,1,1,2,update installation readme
+das-anomaly,included,ed610fb3edf959f55a4ba5a955b0423b83454c51,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T14:04:00-07:00,2025-02-25T14:04:00-07:00,0,3,5,7,2,second try fix versioning
+das-anomaly,included,cb0ad67bf917ad30b57bdb82a59fc86289a2dee6,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T13:33:43-07:00,2025-02-25T13:33:43-07:00,0,4,24,3,2,try dynamic version
+das-anomaly,included,26a9ba95b7d2b7eb9470ba354f68ae3765a5e7db,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T13:03:11-07:00,2025-02-25T13:03:11-07:00,0,7,37,15,2,fix installation issue and moved the nb
+das-anomaly,included,7df31cfbbf542490d45e6012ca108abb307dddbf,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T12:32:22-07:00,2025-02-25T12:32:22-07:00,0,3,309,312,0,update the validate jupyter nb
+das-anomaly,included,edae864c7084bae5063923e17c56ff3b415330a4,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T12:24:50-07:00,2025-02-25T12:24:50-07:00,0,8,36,74,2,Ignore egg-info and dist directories
+das-anomaly,included,a1bc7b8bf8b2edcd9dbe943d64a93e8f069a15c2,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T12:17:31-07:00,2025-02-25T12:17:31-07:00,0,9,119,7,2,installation
+das-anomaly,included,d2ad6f536d96e08f551a35e8ceb8ad6f3ff16988,ahmadtourei,ahmadtourei@gmail.com,2025-02-25T11:37:15-07:00,2025-02-25T11:37:15-07:00,0,39,940,758,4,init and toml files
+das-anomaly,included,54402fe9af71474c9a842ce45b8d2d89da929c8d,ahmadtourei,ahmadtourei@gmail.com,2025-02-03T19:12:27-07:00,2025-02-03T19:12:27-07:00,0,3,51,41,0,"save encoder model, lint"
+das-anomaly,included,e2b2f9f496846a9cc612c2652d8f33c8ce3c24a9,ahmadtourei,ahmadtourei@gmail.com,2025-01-29T15:27:48-07:00,2025-01-29T15:27:48-07:00,0,1,1,3,0,remove distance_step param
+das-anomaly,included,3c18fe5b039c79bb5bed46f055b29a2cead41c72,ahmadtourei,ahmadtourei@gmail.com,2025-01-24T13:11:29-07:00,2025-01-24T13:11:29-07:00,0,2,5,5,0,dpi for images
+das-anomaly,included,6d5d78b52c29a1af5ad8a9cb1ff17880de13fb78,ahmadtourei,ahmadtourei@gmail.com,2025-01-13T17:26:19-07:00,2025-01-13T17:26:19-07:00,0,2,2,1,0,make psd plots square
+das-anomaly,included,b279e0f61dffdec2bf48b1c93ec18bd80a941299,ahmadtourei,ahmad9@vt.edu,2024-12-01T21:33:02-07:00,2024-12-01T21:33:02-07:00,0,6,49,39,1,gpu bash script
+das-anomaly,included,c7164ad7d2e8a16491686754f695a5670f9c7692,ahmadtourei,ahmad9@vt.edu,2024-11-21T12:27:57-07:00,2024-11-21T12:27:57-07:00,0,1,5,0,0,update dependencies in readme.md
+das-anomaly,included,323312b3857fd6c964c6f4cbab02c16dfca19291,ahmadtourei,ahmad9@vt.edu,2024-11-21T12:19:30-07:00,2024-11-21T12:19:30-07:00,0,2,7,8,0,update readme.md
+das-anomaly,included,447ab69aea6ca15a8ff193a2c606a249a9786193,ahmadtourei,ahmad9@vt.edu,2024-11-21T12:07:05-07:00,2024-11-21T12:07:05-07:00,0,7,131,61,1,script for train and test data. improve docs for plot_psd and train_model
+das-anomaly,included,527991b31e9832a310b4489579161d64b3ec5b71,Ahmad Tourei,92008628+ahmadtourei@users.noreply.github.com,2024-07-15T18:15:28-06:00,2024-07-15T18:15:28-06:00,0,1,5,2,0,Update readme to include doi
+das-anomaly,included,d69c68563ac8f7a6daca6c98ca49d9da0de8cab6,Ahmad Tourei,92008628+ahmadtourei@users.noreply.github.com,2024-07-15T17:57:57-06:00,2024-07-15T17:57:57-06:00,0,1,162,499,0,Update LICENSE
+das-anomaly,included,daacd35415d9664d0906843d0a6282d862c4ee2d,ahmadtourei,ahmad9@vt.edu,2024-07-03T00:14:58-06:00,2024-07-03T00:14:58-06:00,0,12,935,1,1,first
+das-anomaly,included,217f3328dea7d002f827b2f6775593e81bd97815,Ahmad Tourei,92008628+ahmadtourei@users.noreply.github.com,2024-07-02T18:33:27-06:00,2024-07-02T18:33:27-06:00,0,2,506,0,0,Initial commit

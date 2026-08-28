@@ -1,0 +1,2 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+fiber-strain-modeling,included,1f412addb5769cc53c293670fa774b6179d88902,Pengchao He,Pengchao-He@users.noreply.github.com,2026-07-19T02:01:55-06:00,2026-07-19T02:01:55-06:00,0,38,2007,0,15,Initial open-source release

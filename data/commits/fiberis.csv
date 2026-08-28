@@ -1,0 +1,314 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+fiberis,watchlist,926891ea05b8ce97dcd669a8b7b89ba441be9b9f,"Shenyao ""Keith"" Jin",shenyaojin@mines.edu,2026-07-21T10:47:10-05:00,2026-07-21T10:47:10-05:00,1,,,,,Merge pull request #8 from shenyaojin/claude/fix-stitched-mesh-generator-type
+fiberis,watchlist,15a244a124ba331a78bd476a8552c52d95dfb4f7,shenyaojin,shenyaojin@mines.edu,2026-07-21T09:12:47-06:00,2026-07-21T09:12:47-06:00,0,1,4,4,0,Fix mesh generator type: StitchMeshGenerator -> StitchedMeshGenerator
+fiberis,watchlist,98c10829816106e49123aea53f818e6043c125c9,shenyaojin,shenyaojin@mines.edu,2026-07-20T17:33:16-06:00,2026-07-20T17:33:16-06:00,0,1,97,0,0,Add support for prescribed displacement-discontinuity bands in ModelBuilder
+fiberis,watchlist,832ec5fc0d3cdf94bb435586a375c5f0e77e12d0,shenyaojin,shenyaojin@mines.edu,2026-07-16T14:39:03-06:00,2026-07-16T14:39:03-06:00,0,1,4,4,0,Fix mesh generator type in ModelBuilder to ensure consistency in operation naming
+fiberis,watchlist,a4aee9ca7449f8a5a6dfcd54bea615191396ca0b,shenyaojin,shenyaojin@mines.edu,2026-07-15T15:08:42-06:00,2026-07-15T15:08:42-06:00,0,1,30,6,0,Enhance SRV configuration to support multiple zones with customizable specifications
+fiberis,watchlist,1b7723a2f032a9f5ed474e2358f97c8cfa4053ed,"Shenyao ""Keith"" Jin",shenyaojin@mines.edu,2026-06-30T10:59:21-06:00,2026-06-30T10:59:21-06:00,1,,,,,Merge pull request #7 from shenyaojin/claude/fiberis-modernization-kfx142
+fiberis,watchlist,57e4d0821d134b0ba7c072620e93803d3b68313a,Claude,noreply@anthropic.com,2026-06-30T16:37:15+00:00,2026-06-30T16:37:15+00:00,0,6,162,48,0,Fix three import-level defects (cannot-run bugs)
+fiberis,watchlist,ff6b9dfb30b8e444a5af4f240d50ec659b2bf236,Claude,noreply@anthropic.com,2026-06-30T16:21:32+00:00,2026-06-30T16:21:32+00:00,0,1,97,0,0,Document modernization plan and characterization findings
+fiberis,watchlist,338a4151bcfc829cf8009102db3277a6e244bb5a,Claude,noreply@anthropic.com,2026-06-30T16:20:49+00:00,2026-06-30T16:20:49+00:00,0,1,41,0,0,Add GitHub Actions CI to run the test suite
+fiberis,watchlist,ddc8ecd7dbc41864bbd8f305135430ee4a1d7d3e,Claude,noreply@anthropic.com,2026-06-30T16:19:47+00:00,2026-06-30T16:19:47+00:00,0,2,633,0,0,Add characterization tests for io readers and MOOSE postprocessor
+fiberis,watchlist,62e27aad61df45cebd81ec31702479226f2769bc,Claude,noreply@anthropic.com,2026-06-30T16:19:16+00:00,2026-06-30T16:19:16+00:00,0,1,951,0,0,Add characterization tests for MOOSE model_builder
+fiberis,watchlist,f55796350db131968ce6987399575087617b3530,Claude,noreply@anthropic.com,2026-06-30T16:17:16+00:00,2026-06-30T16:17:16+00:00,0,15,2995,0,0,"Add characterization tests for utils, simulator, tensor, moose config/io"
+fiberis,watchlist,de080fc25bde30bb7ab3a44228ac24beffe98f91,Claude,noreply@anthropic.com,2026-06-30T16:16:03+00:00,2026-06-30T16:16:03+00:00,0,3,783,0,0,"Add characterization tests for Data3D, Geometry3D, Data1DG"
+fiberis,watchlist,7df052746b35d12bccd42ed2460978176d9d7bf5,Claude,noreply@anthropic.com,2026-06-30T16:15:51+00:00,2026-06-30T16:15:51+00:00,0,2,854,0,0,Add characterization tests for Data1D analyzer
+fiberis,watchlist,fce70f2a2dce41ef7e80b39974a1af0ca57fe56f,Claude,noreply@anthropic.com,2026-06-30T16:15:26+00:00,2026-06-30T16:15:26+00:00,0,2,601,0,0,Add characterization tests for Data2D analyzer
+fiberis,watchlist,a99963eef3aabf75c5967562bf5ed50895cb2bdc,Claude,noreply@anthropic.com,2026-06-30T16:13:03+00:00,2026-06-30T16:13:03+00:00,0,2,66,18,0,Activate pytest/coverage/mypy config and add shared test fixtures
+fiberis,watchlist,787eee5ad03e15aac4e9a41f667ceeaea9e0c8c3,shenyaojin,shenyaojin@mines.edu,2026-06-25T14:00:46-06:00,2026-06-25T14:00:46-06:00,0,4,245,15,0,Enhance Tensor2D class with directional component projection and improve error handling in MOOSETensorFromData2D and MOOSEVectorPostProcessorReader
+fiberis,watchlist,e88df07622c3f0878b7b230360964866a6172f3c,shenyaojin,shenyaojin@mines.edu,2026-06-05T12:15:21-06:00,2026-06-05T12:15:21-06:00,0,1,5,1,0,Add Ruff cache to .gitignore
+fiberis,watchlist,70e114946d8de7fc11c3621e1db10ad35bb47cb3,shenyaojin,shenyaojin@mines.edu,2026-04-15T13:23:27-06:00,2026-04-15T13:23:27-06:00,0,2,11,2,0,Update model_builder and runner for anisotropic diffusion and single-threading
+fiberis,watchlist,026526245cdfc17cff4f804cd6920f68d1f79880,shenyaojin,shenyaojin@mines.edu,2026-04-12T15:57:29-06:00,2026-04-12T15:57:29-06:00,0,1,11,8,0,Update add_piecewise_function_from_data1d to support PiecewiseLinear functions and enhance executioner parameters
+fiberis,watchlist,e18361c6fb42961172b14f20aa2f2bcfebbb74ad,shenyaojin,shenyaojin@mines.edu,2026-04-06T19:20:40-06:00,2026-04-06T19:20:40-06:00,0,1,25,0,0,Add multi-system preconditioning block for optimization problems
+fiberis,watchlist,335b87728a8a728cd4f7713b916e91f1c99f817d,shenyaojin,shenyaojin@mines.edu,2026-03-18T20:00:25-06:00,2026-03-18T20:00:25-06:00,0,1,17,4,0,Refactor optimization executioner block to support multiple time stepper types
+fiberis,watchlist,cfaae9ccb102e03eb69fa4819378f75a702ab1a2,shenyaojin,shenyaojin@mines.edu,2026-03-17T19:14:30-06:00,2026-03-17T19:14:30-06:00,0,1,75,30,0,Enhance ModelBuilder with new methods for boundary and nodeset creation
+fiberis,watchlist,15d6db766d383197b461eec1e53e264b2d51d887,shenyaojin,shenyaojin@mines.edu,2026-03-09T20:40:17-06:00,2026-03-09T20:40:17-06:00,0,1,6,1,0,Add support for CLI arguments in MOOSE simulation runner
+fiberis,watchlist,ec1701327aea4e844ad3d3936ca85fcfd7ac1515,shenyaojin,shenyaojin@mines.edu,2026-03-01T19:18:31-07:00,2026-03-01T19:18:31-07:00,0,1,1,1,0,Update import statement in optimizer.py to use MooseRunner
+fiberis,watchlist,df80590e2faeb42532bfffc9964102db0104c632,shenyaojin,shenyaojin@mines.edu,2026-02-25T21:19:40-07:00,2026-02-25T21:19:40-07:00,0,2,393,2,0,prototype passed.
+fiberis,watchlist,5a78c6a2f320ea545e839eae883a4a39cb489cf3,shenyaojin,shenyaojin@mines.edu,2026-02-17T12:19:14-07:00,2026-02-17T12:19:14-07:00,0,1,76,0,0,Add method to format data for MOOSE OptimizationData Reporter
+fiberis,watchlist,1347dd5ddebf9cf6b1a0826d6febb8161f00a8c7,shenyaojin,shenyaojin@mines.edu,2026-02-09T21:29:21-07:00,2026-02-09T21:29:21-07:00,0,2,16,357,0,Add print_str method to core1D for formatted output; clean up optimizer.py
+fiberis,watchlist,6d73471d963967fd0f55d2b66300c43df6cad853,shenyaojin,shenyaojin@mines.edu,2026-02-09T14:03:41-07:00,2026-02-09T14:03:41-07:00,0,2,267,87,0,Enhance model builder with casing configuration support and new mesh generation methods
+fiberis,watchlist,42275b71743d568aabb5d739df85adc89ffe163e,shenyaojin,shenyaojin@mines.edu,2026-02-04T10:46:36-07:00,2026-02-04T10:46:36-07:00,0,4,107,6,0,Add casing model configurations and new notebook for permeability imaging
+fiberis,watchlist,175e8161c499518666ffe095b5c3fae0412b4c38,shenyaojin,shenyaojin@mines.edu,2026-01-31T22:34:46-07:00,2026-01-31T22:34:46-07:00,0,3,188,1,0,Add Tensor1D class for 1D static tensor processing
+fiberis,watchlist,f87ad72d6599b061c0c17c4177e9bccbb6bdeeec,shenyaojin,shenyaojin@mines.edu,2026-01-28T16:39:22-07:00,2026-01-28T16:39:22-07:00,0,4,73,28,0,update fiberis to the lastest version.
+fiberis,watchlist,599b3a814fd7cd486ba70b12443df5ca6824836a,shenyaojin,shenyaojin@mines.edu,2026-01-26T21:59:57-07:00,2026-01-26T21:59:57-07:00,0,3,9,4,0,change the default rendering method to pcolormesh because it's stable and no errors (compared to imshow).
+fiberis,watchlist,184c76588f27538bc22ac04456893edf4d13387d,shenyaojin,shenyaojin@mines.edu,2026-01-25T12:08:55-07:00,2026-01-25T12:08:55-07:00,0,1,49,35,0,fix timestep error in bearskin reader.
+fiberis,watchlist,ce6c55661741577548a05984517fdc03346234d0,shenyaojin,shenyaojin@mines.edu,2026-01-20T12:01:20-07:00,2026-01-20T12:01:20-07:00,0,1,112,6,0,fix bugs in unit conversion in misfit calculation
+fiberis,watchlist,01bc8881840a5c5ffa4874fe17139c19d8032052,shenyaojin,shenyaojin@mines.edu,2026-01-14T13:08:49-07:00,2026-01-14T13:08:49-07:00,0,2,295,5,0,add generator v2. I suspect the post processor in v1 is wrong.
+fiberis,watchlist,2ee3e1b5e95402e64ab0ba8c7238f7cc1a007d36,shenyaojin,shenyaojin@mines.edu,2026-01-14T09:22:49-07:00,2026-01-14T09:22:49-07:00,0,1,0,4,0,delete unnecessary datatype check
+fiberis,watchlist,f32544c6502c2d31c8b05881f8e4d0a4ae193875,shenyaojin,shenyaojin@mines.edu,2026-01-13T13:23:22-07:00,2026-01-13T13:23:22-07:00,0,1,2,0,0,update pypi svg icon
+fiberis,watchlist,a9d6e62b04952b5e925e3bb2e3cdbb91fc286041,shenyaojin,shenyaojin@mines.edu,2026-01-13T13:16:24-07:00,2026-01-13T13:16:24-07:00,0,4,33,14,0,update license to MIT so that I can upload it to pypi
+fiberis,watchlist,014794073b5cefc0da227147e323ba319bb060be,shenyaojin,shenyaojin@mines.edu,2026-01-13T13:06:05-07:00,2026-01-13T13:06:05-07:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,a7736f8d6001b4bfa29fa761ff2fca54d5bdbe3a,shenyaojin,shenyaojin@mines.edu,2026-01-13T13:05:37-07:00,2026-01-13T13:05:37-07:00,0,1,13,1,0,update the baseline model generator: degradation
+fiberis,watchlist,04d45b9eeb43bad82559b9f4dc191b3d3a64d0f2,Shenyao Jin,shenyaojin@mines.edu,2025-12-30T12:04:43-07:00,2025-12-30T12:04:43-07:00,1,,,,,Merge pull request #6 from shenyaojin/refactor/code-cleanup
+fiberis,watchlist,7f18691cef0ec4a4fb8d2190d757e3a1c235b465,shenyaojin,106902466+shenyaojin@users.noreply.github.com,2025-12-30T14:01:31-05:00,2025-12-30T14:01:31-05:00,0,2,85,22,0,Docs: Add docstrings to core modules and update READMEs
+fiberis,watchlist,ad85eed37582d52315db635c6e9ecafe375af6d8,shenyaojin,106902466+shenyaojin@users.noreply.github.com,2025-12-30T13:48:21-05:00,2025-12-30T13:48:21-05:00,0,5,418,0,0,"Add comprehensive tests for Data2D, Data3D, Geometry, TensorProcessor and performance benchmarks"
+fiberis,watchlist,7b2389594a507878328798fae5d2e91bc060ae75,Shenyao Jin,shenyaojin@mines.edu,2025-12-30T11:43:35-07:00,2025-12-30T11:43:35-07:00,1,,,,,Merge pull request #5 from shenyaojin/refactor/code-cleanup
+fiberis,watchlist,4534be127a3bca532776b0336627240e1d586905,shenyaojin,106902466+shenyaojin@users.noreply.github.com,2025-12-30T13:40:53-05:00,2025-12-30T13:40:53-05:00,0,2,211,0,0,Add pytest-based tests for Data1D and signal_utils
+fiberis,watchlist,d14c03b7390611e8a7b2da0086a37cd2e66038b0,shenyaojin,106902466+shenyaojin@users.noreply.github.com,2025-12-30T13:35:23-05:00,2025-12-30T13:35:23-05:00,0,1,25,40,0,"Refactor core1D.py: Improve type hinting, error handling, and code structure"
+fiberis,watchlist,70acbc526ae5edd795bb4d61111283ef59be0e77,Shenyao Jin,shenyaojin@mines.edu,2025-12-26T21:47:22-07:00,2025-12-26T21:47:22-07:00,1,,,,,Merge pull request #4 from Cameronnn3/main
+fiberis,watchlist,f65fd228b7a4fc979c4e417d895c5879ebf33ea2,Cameronnn3,155463393+Cameronnn3@users.noreply.github.com,2025-12-23T13:47:51-07:00,2025-12-23T13:47:51-07:00,0,1,13,3,0,commit message here
+fiberis,watchlist,41b2cdc2206e9508e97684ee9a857a29b71ab0a5,Shenyao Jin,shenyaojin@mines.edu,2025-12-23T13:45:02-07:00,2025-12-23T13:45:02-07:00,1,,,,,Merge pull request #3 from Cameronnn3/main
+fiberis,watchlist,bd1f248b8a643921e57ef92f2134cd2ea3aace04,Cameronnn3,155463393+Cameronnn3@users.noreply.github.com,2025-12-23T13:33:29-07:00,2025-12-23T13:33:29-07:00,0,1,61,0,0,Explanation of the changes I made to the repository.
+fiberis,watchlist,9e27c7a5e583d113e596466a98e25d159f838438,shenyaojin,shenyaojin@mines.edu,2025-12-14T08:25:30-07:00,2025-12-14T08:25:30-07:00,0,1,19,8,0,Load and process gauge and DSS data for model initialization
+fiberis,watchlist,1818100a9142d50e72d1b82d17eb00260163e2f6,shenyaojin,shenyaojin@mines.edu,2025-12-09T20:15:00-07:00,2025-12-09T20:15:00-07:00,0,1,154,0,0,Add MOOSETensorVPPReader for handling MOOSE VectorPostProcessor CSV files
+fiberis,watchlist,9ebae2eb6245e6732ce7f28080794e1357be193d,shenyaojin,shenyaojin@mines.edu,2025-12-09T20:10:33-07:00,2025-12-09T20:10:33-07:00,0,4,120,29,0,Add initial condition configurations to model builder and update permeability parameters
+fiberis,watchlist,5b7848af4e402724cc50d4b2306010e3f44710bc,shenyaojin,shenyaojin@mines.edu,2025-12-07T15:35:31-07:00,2025-12-07T15:35:31-07:00,0,1,103,0,0,Add function to plot 2D and 1D datasets in a co-plot format
+fiberis,watchlist,c31f334d8b28bad89ab75ba6a5ae0c6f0349367a,shenyaojin,shenyaojin@mines.edu,2025-12-06T16:32:30-07:00,2025-12-06T16:32:30-07:00,0,1,1,1,0,Enable Exodus output in baseline model generator
+fiberis,watchlist,46794252fd803234e8f5d2d16eec08f52aae0c58,shenyaojin,shenyaojin@mines.edu,2025-12-06T15:59:16-07:00,2025-12-06T15:59:16-07:00,0,2,34,5,0,Enhance outputs block configuration to allow controlled Exodus output execution timing
+fiberis,watchlist,86cf343add78c4a16cb65adf710708843b5104c9,shenyaojin,shenyaojin@mines.edu,2025-12-05T14:32:36-07:00,2025-12-05T14:32:36-07:00,0,1,1,1,0,Adjust default service height in baseline model generator
+fiberis,watchlist,696af6112a7935dcdcb723524f54b4f7dcd5f7cf,shenyaojin,shenyaojin@mines.edu,2025-12-03T13:55:40-07:00,2025-12-03T13:55:40-07:00,0,3,313,59,0,Refactor baseline model generator and add Tensor2D class for 2D tensor processing
+fiberis,watchlist,3c3f169dc40ec2aa0840a64a28fb1e44408cc60f,shenyaojin,shenyaojin@mines.edu,2025-12-02T23:43:43-07:00,2025-12-02T23:43:43-07:00,0,3,79,15,0,Refactor material properties and update strain data extraction in baseline model generators
+fiberis,watchlist,02e1b5f29dfcd23db7e6dacd7ee1080f7317baa1,shenyaojin,shenyaojin@mines.edu,2025-12-02T14:22:06-07:00,2025-12-02T14:22:06-07:00,0,2,7,0,0,Enhance baseline model calibration and update tensor rotation usage documentation
+fiberis,watchlist,048ac4f6ed5f4aa8b9e4d58e8dc9b02de268bbdb,shenyaojin,shenyaojin@mines.edu,2025-12-02T13:51:54-07:00,2025-12-02T13:51:54-07:00,0,1,46,0,0,Add tensor rotation method for 2D and 3D tensors
+fiberis,watchlist,6d479a6c4cf28ed19c7925368896f094dd5a3dc0,shenyaojin,shenyaojin@mines.edu,2025-12-01T17:56:24-07:00,2025-12-01T17:56:24-07:00,0,1,26,1,0,Add plotting functionality to visualize channel misfit and save plots
+fiberis,watchlist,9b4fbd07e617befd8bf3d268f356c90afda26e60,shenyaojin,shenyaojin@mines.edu,2025-12-01T16:43:58-07:00,2025-12-01T16:43:58-07:00,0,2,7,3,0,doc update
+fiberis,watchlist,675e9cf0aa071da50075794c9d9b7600f8f774a8,shenyaojin,shenyaojin@mines.edu,2025-11-28T16:20:54-07:00,2025-11-28T16:20:54-07:00,0,1,65,0,0,Add misfit_calculator function to compute misfit between simulated and observed data. Ready to test.
+fiberis,watchlist,f3d042d62d0206491e6ab158ea9ee41cadebea84,shenyaojin,shenyaojin@mines.edu,2025-11-26T11:34:24-07:00,2025-11-26T11:34:24-07:00,0,3,46,6,0,Enhance parameter documentation in model generator scripts
+fiberis,watchlist,aebf9f7f79c64cc56702890ba979b195a7f03195,shenyaojin,shenyaojin@mines.edu,2025-11-26T09:24:48-07:00,2025-11-26T09:24:48-07:00,0,5,239,11,0,Add BearskinInjection and Gold4PBProjection readers; enhance plot method with mode selection
+fiberis,watchlist,a9f2a49458de31e91797f7fdfc1b7c3c61f4b331,shenyaojin,shenyaojin@mines.edu,2025-11-26T09:24:39-07:00,2025-11-26T09:24:39-07:00,0,3,342,380,0,Refactor baseline model generator for improved stability and clarity
+fiberis,watchlist,49975ee8a92dec5ca1af27791908beab784c074e,shenyaojin,shenyaojin@mines.edu,2025-11-25T14:30:39-07:00,2025-11-25T14:30:39-07:00,0,1,53,1,0,Add 3D plotting functionality to DataG3D class
+fiberis,watchlist,20ee087a3e6070200ed53213cc0eaf9966c82ee4,shenyaojin,shenyaojin@mines.edu,2025-11-24T21:17:34-07:00,2025-11-24T21:17:34-07:00,0,2,10,3,0,End of the day update. Minor changes in core2D and README.
+fiberis,watchlist,dd9ae94c1514ff0c0b90ed3de1d1e63c4676ce0e,shenyaojin,shenyaojin@mines.edu,2025-11-24T21:17:08-07:00,2025-11-24T21:17:08-07:00,0,3,278,8,0,Add baseline model generator and update permeability parameters
+fiberis,watchlist,56f08dcfc9d9d610f61b86187fc2147c912ab00c,shenyaojin,shenyaojin@mines.edu,2025-11-24T17:30:44-07:00,2025-11-24T17:30:44-07:00,0,2,276,0,0,Add readers for Bearskin pressure data and Gold 4 PB well geometry.
+fiberis,watchlist,60dbf38b88c486ed8cbb986c762a11ffd5d00ec4,shenyaojin,shenyaojin@mines.edu,2025-11-21T14:56:01-07:00,2025-11-21T14:56:01-07:00,0,2,163,14,0,Enhance baseline model generator with improved gauge data handling and low-pass filter method
+fiberis,watchlist,5e17e9bdbcc0f28d78188141c7631995f9ea4489,shenyaojin,shenyaojin@mines.edu,2025-11-18T10:37:59-07:00,2025-11-18T10:37:59-07:00,0,1,202,0,0,Add baseline model generator for history matching tasks
+fiberis,watchlist,8584a393d4f1e0cf24a5bc433cfd9ed8ab7a9c4a,shenyaojin,shenyaojin@mines.edu,2025-11-12T13:26:01-07:00,2025-11-12T13:26:01-07:00,0,2,6,3,0,Refactor get_end_time and plot_geometry methods to improve flexibility
+fiberis,watchlist,e374a52878bec9becff4217dbe68493f4f2a9016,shenyaojin,shenyaojin@mines.edu,2025-11-03T12:55:35-07:00,2025-11-03T12:55:35-07:00,0,2,52,0,0,Add MOOSE optimizer example notebook and utility functions
+fiberis,watchlist,ab679c83b7c5d483b7e3805384f51987ef97a36b,shenyaojin,shenyaojin@mines.edu,2025-11-01T14:18:59-06:00,2025-11-01T14:18:59-06:00,0,1,25,4,0,Add extract postprocessor info method
+fiberis,watchlist,72d8b730d3cd3ae4cedc3ca3b31be0eb684187d1,shenyaojin,shenyaojin@mines.edu,2025-10-30T23:39:46-06:00,2025-10-30T23:39:46-06:00,0,1,8,7,0,Refactor optimizer to use a model builder function instead of a direct ModelBuilder instance
+fiberis,watchlist,b5432904c62072bee643a52e697619dc9457c13c,shenyaojin,shenyaojin@mines.edu,2025-10-30T23:39:35-06:00,2025-10-30T23:39:35-06:00,0,1,228,1,0,Add Data1DG class for handling 1D spatial data with loading and saving capabilities
+fiberis,watchlist,6505ea37a31dcfe91c4cf3bd68a69b5ecf56b823,shenyaojin,shenyaojin@mines.edu,2025-10-29T18:00:45-06:00,2025-10-29T18:00:45-06:00,0,1,2,1,0,Update comment in io_utils.py to include author attribution
+fiberis,watchlist,6023598218ad6c2df042ff8cd51f7dd73e9685eb,shenyaojin,shenyaojin@mines.edu,2025-10-29T18:00:38-06:00,2025-10-29T18:00:38-06:00,0,1,19,3,0,Enhance optimizer to format permeability values and pass dynamic arguments to misfit function
+fiberis,watchlist,d033a45273799dbee1212e2de55aaaf3e4552407,shenyaojin,shenyaojin@mines.edu,2025-10-28T00:26:05-06:00,2025-10-28T00:26:05-06:00,0,1,6,2,0,Add clean_output_dir option to runner function for managing output directory
+fiberis,watchlist,b92f4e8589f5c1b926fbcee7a571133ab6ea4694,shenyaojin,shenyaojin@mines.edu,2025-10-28T00:25:50-06:00,2025-10-28T00:25:50-06:00,0,1,334,15,0,Refactor optimizer.py to implement Optimizer class for parameter optimization using fiberis library
+fiberis,watchlist,57de42a19d4349021e6597cbcf7ad2d8d0becf45,shenyaojin,shenyaojin@mines.edu,2025-10-28T00:25:41-06:00,2025-10-28T00:25:41-06:00,0,1,50,0,0,Add string representation and NPZ save/load functionality to ModelBuilder
+fiberis,watchlist,8e7fbbfee6039990b26e587775d9861420dff4ec,shenyaojin,shenyaojin@mines.edu,2025-10-28T00:25:29-06:00,2025-10-28T00:25:29-06:00,0,1,4,17,0,Refactor print_model_structure to use ModelBuilder's __str__ method
+fiberis,watchlist,4de18048a49e49eb3c853a46696d05a2cec6f89c,shenyaojin,shenyaojin@mines.edu,2025-10-27T22:51:01-06:00,2025-10-27T22:51:01-06:00,0,1,55,0,0,Add a function to save the log into .txt format.
+fiberis,watchlist,12c40332f61ccb039970d058918e555d67d0e4df,shenyaojin,shenyaojin@mines.edu,2025-10-27T22:50:29-06:00,2025-10-27T22:50:29-06:00,0,1,7,0,0,Add my name to editor.py :P
+fiberis,watchlist,0620b109f2dd04126c9d9b00542bc58c37c62b97,shenyaojin,shenyaojin@mines.edu,2025-10-27T11:35:34-06:00,2025-10-27T11:35:34-06:00,0,1,0,3,0,Remove bad imports
+fiberis,watchlist,6855df9a828432345e4d1066453b7cafc074333f,shenyaojin,shenyaojin@mines.edu,2025-10-26T16:58:55-06:00,2025-10-26T16:58:55-06:00,0,1,1,1,0,fix ref error in readme
+fiberis,watchlist,5f8ed62081d08ad59755250eedf5ece27c91cc4b,shenyaojin,shenyaojin@mines.edu,2025-10-26T16:57:31-06:00,2025-10-26T16:57:31-06:00,0,2,40,38,0,add comment and hyperlink in readme
+fiberis,watchlist,6ace380b59f617fa5ce8d84a0257a6b225e6ad2e,shenyaojin,shenyaojin@mines.edu,2025-10-26T16:07:19-06:00,2025-10-26T16:07:19-06:00,0,4,3252,85,3,Add result for the simulator
+fiberis,watchlist,a2433760c43fc9f9e2243d9af60438bb87927b9c,shenyaojin,shenyaojin@mines.edu,2025-10-26T15:48:01-06:00,2025-10-26T15:48:01-06:00,0,1,681,0,0,Add part of moose example::
+fiberis,watchlist,cb4274a73a8dfb1aafb9546a79119c8bfd150955,shenyaojin,shenyaojin@mines.edu,2025-10-24T14:55:03-06:00,2025-10-24T14:55:03-06:00,0,1,3,0,0,add output files to gitignore. It might take up too much space. -- Shenyao
+fiberis,watchlist,b46a07611f256025965e1da47b88fcdb5ec22657,Shenyao Jin,shenyaojin@mines.edu,2025-10-24T13:44:45-06:00,2025-10-24T13:44:45-06:00,1,,,,,Merge pull request #2 from shenyaojin/moose_editor
+fiberis,watchlist,63dcd39566a82d4294960db199e3374cfd4a4df1,shenyaojin,shenyaojin@mines.edu,2025-10-24T13:46:55-06:00,2025-10-24T13:46:55-06:00,0,2,140,1,0,Add the MOOSE model builder editor.
+fiberis,watchlist,bb65e9433052bf20ac9667161e8c1a5b17bbf0b0,shenyaojin,shenyaojin@mines.edu,2025-10-24T11:12:12-06:00,2025-10-24T11:12:12-06:00,0,1,1,1,0,Update optimizer. This is the last update before I finish the model editor.
+fiberis,watchlist,5b764bf40f3cc23033e4b5d2318c53ce6c57e00b,shenyaojin,shenyaojin@mines.edu,2025-10-24T11:11:39-06:00,2025-10-24T11:11:39-06:00,0,1,2,2,0,Update function clarification.
+fiberis,watchlist,3bf16a2f4064a71d2a72e9aaa8b900a777aee894,shenyaojin,shenyaojin@mines.edu,2025-10-24T11:11:25-06:00,2025-10-24T11:11:25-06:00,0,2,15,6,0,Better description on fiberis.
+fiberis,watchlist,da606984ffb8cb69fc7cf52667f2048131da11f9,shenyaojin,shenyaojin@mines.edu,2025-10-22T12:48:53-06:00,2025-10-22T12:48:53-06:00,0,1,2,1,0,Display plot interactively if no save path is provided
+fiberis,watchlist,8cfac77b2969f710b6146ec28b1a223c5410600f,shenyaojin,shenyaojin@mines.edu,2025-10-19T20:18:45-06:00,2025-10-19T20:18:45-06:00,0,1,5,1,0,Add optional save path to plot_geometry for saving geometry plots
+fiberis,watchlist,47d6426334f34068e6924f9b36e92935e4222cb0,shenyaojin,shenyaojin@mines.edu,2025-10-19T01:51:49-06:00,2025-10-19T01:51:49-06:00,0,1,3,3,0,"Add return type hints to read, write, and to_analyzer methods"
+fiberis,watchlist,196af0c0d4e6572fa979b4a688b97c25000b7c4a,shenyaojin,shenyaojin@mines.edu,2025-10-17T13:38:07-06:00,2025-10-17T13:38:07-06:00,0,1,11,0,0,Add env file.
+fiberis,watchlist,17c75548a889588bb16bf382c7000e86b6fa174b,shenyaojin,shenyaojin@mines.edu,2025-10-11T15:14:43-06:00,2025-10-11T15:14:43-06:00,0,2,9,5,0,Better support for mpi
+fiberis,watchlist,679e3b75cfbf36aad7482ffda25e4d7c25720998,shenyaojin,shenyaojin@mines.edu,2025-10-06T21:23:38-06:00,2025-10-06T21:23:38-06:00,0,1,8,1,0,README.md update.
+fiberis,watchlist,afd36f1a4205cdaddd2da160ab47ac9facb9380e,shenyaojin,shenyaojin@mines.edu,2025-10-04T21:40:25-06:00,2025-10-04T21:40:25-06:00,0,4,202,199,1,Update on LP filter
+fiberis,watchlist,e30e517d8cfbb4494a085a97edac249a0dffe587,shenyaojin,shenyaojin@mines.edu,2025-10-03T20:09:01-06:00,2025-10-03T20:09:01-06:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,218e1d3eedba121f56423df6fae7222323ff77be,shenyaojin,shenyaojin@mines.edu,2025-10-03T20:08:47-06:00,2025-10-03T20:08:47-06:00,0,1,1,1,0,Comment savez for rerun consideration.
+fiberis,watchlist,ba8d605a3fc4fe75344703ce1a808581b31c38f7,shenyaojin,shenyaojin@mines.edu,2025-10-02T15:02:43-06:00,2025-10-02T15:02:43-06:00,0,1,13,0,0,Update h5 key mapper
+fiberis,watchlist,7c920496c2cc42e22f796b73958e268dd4b35b8f,shenyaojin,shenyaojin@mines.edu,2025-10-02T14:52:52-06:00,2025-10-02T14:52:52-06:00,0,1,27,3,0,Fix timezone issue. Add `rename` method.
+fiberis,watchlist,841aee914600d8a25b9bdc7fc35bbe6e63a39592,shenyaojin,shenyaojin@mines.edu,2025-10-02T14:52:13-06:00,2025-10-02T14:52:13-06:00,0,5,6173,33,0,Update runner. Now it will clean up before running a instance.
+fiberis,watchlist,79567dc7711287f1a4935b25524613af7de370b6,shenyaojin,shenyaojin@mines.edu,2025-10-02T14:50:47-06:00,2025-10-02T14:50:47-06:00,0,11,630,1,9,Add example 2d
+fiberis,watchlist,853c11c09b7392fedf1d56493f016d4e5368e69e,shenyaojin,shenyaojin@mines.edu,2025-10-01T15:46:31-06:00,2025-10-01T15:46:31-06:00,0,3,203,36,0,Add TimeSequenceStepper
+fiberis,watchlist,10156125ea3ed6c888d84a66c4a29c9ffff24975,shenyaojin,shenyaojin@mines.edu,2025-10-01T12:40:41-06:00,2025-10-01T12:40:41-06:00,0,2,102,2,0,Add plot_geometry method for model_builder.py
+fiberis,watchlist,d6f7bbdb81fa29a650d6e303d48d15e7c19bc31e,shenyaojin,shenyaojin@mines.edu,2025-10-01T12:40:23-06:00,2025-10-01T12:40:23-06:00,0,1,40,13,0,Add terminal streaming mode for runner.py
+fiberis,watchlist,86b857d15d1f48cc4ee296aecd63cf588f9c2efb,shenyaojin,shenyaojin@mines.edu,2025-09-29T16:35:24-06:00,2025-09-29T16:35:24-06:00,0,2,0,602,0,"Remove input_editor.py, will create a robust algorithm for this func."
+fiberis,watchlist,512f387480ddfcfb2254a78725ce730ec7d2f286,shenyaojin,shenyaojin@mines.edu,2025-09-26T22:31:57-06:00,2025-09-26T22:31:57-06:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,3358678cbfab129e664a077e43379f61ee8dba43,shenyaojin,shenyaojin@mines.edu,2025-09-26T22:31:32-06:00,2025-09-26T22:31:32-06:00,0,3,152,21,0,Update hfts2
+fiberis,watchlist,ff1c7538322511bf48901eda529902c675f46a3d,shenyaojin,shenyaojin@mines.edu,2025-09-25T13:11:40-06:00,2025-09-25T13:11:40-06:00,0,1,24,3,0,Add write method for h5 reader.
+fiberis,watchlist,a6cf6c614443781b8bfe5ba4c9986061bf741da6,shenyaojin,shenyaojin@mines.edu,2025-09-24T20:34:28-06:00,2025-09-24T20:34:28-06:00,0,8,164,38,0,Add to_analyzer function for I/O part.
+fiberis,watchlist,5b4e069c86bcff4bab5e997a562ef92acb31d2e7,shenyaojin,shenyaojin@mines.edu,2025-09-24T19:24:01-06:00,2025-09-24T19:24:01-06:00,0,1,2,2,0,Add comments in model_builder.py
+fiberis,watchlist,aa8a1fcfb246ae8a3dd607cabdcc1630fc11fd58,shenyaojin,shenyaojin@mines.edu,2025-09-24T19:23:46-06:00,2025-09-24T19:23:46-06:00,0,2,7,1,0,Add optimizer.py. Abandon study.py
+fiberis,watchlist,9ca2d30bda8e3913650782858ce4223ddd36b2b1,shenyaojin,shenyaojin@mines.edu,2025-09-24T14:13:52-06:00,2025-09-24T14:13:52-06:00,0,1,0,8,0,Delete duplicated method.
+fiberis,watchlist,b5877a5c2ff2eee55014be1bb3737e14a1ca6c96,shenyaojin,shenyaojin@mines.edu,2025-09-23T16:23:27-06:00,2025-09-23T16:23:27-06:00,0,1,101,12,0,Update hfts2
+fiberis,watchlist,31ba5215788c6ea1226fa220ae6f94bc1253e63a,shenyaojin,shenyaojin@mines.edu,2025-09-18T15:46:54-06:00,2025-09-18T15:46:54-06:00,0,2,2,8,1,Add example data and notebook.
+fiberis,watchlist,9f6ab3eb5594e3d5ea9420a44ed79c5829f960b6,shenyaojin,shenyaojin@mines.edu,2025-09-18T15:44:10-06:00,2025-09-18T15:44:10-06:00,0,2,737,0,1,Add data 1D example.
+fiberis,watchlist,73ceb1ed31a562de4f1378baf1cfadd8d9c07bcc,shenyaojin,shenyaojin@mines.edu,2025-09-18T15:43:58-06:00,2025-09-18T15:43:58-06:00,0,1,42,10,0,Update robustness of get_value_by_time
+fiberis,watchlist,504c075e95f969a4525c338ada4b7f427bc3d203,shenyaojin,shenyaojin@mines.edu,2025-09-17T13:40:57-06:00,2025-09-17T13:40:57-06:00,0,3,6,0,0,Add analyzer modules.
+fiberis,watchlist,3027b021b47181d140dd52714b157d4037f913a1,shenyaojin,shenyaojin@mines.edu,2025-09-14T12:05:14-06:00,2025-09-14T12:05:14-06:00,0,1,4,58,0,Update readme in I/O submodule.
+fiberis,watchlist,6e2b87850b7fbfdc2c31f2dfabcef1214b46e0a9,shenyaojin,shenyaojin@mines.edu,2025-09-13T17:13:53-06:00,2025-09-13T17:13:53-06:00,0,1,5,1,0,Update readme in I/O submodule.
+fiberis,watchlist,ea96e245bffe38bb011717061b10cecd213f0abe,shenyaojin,shenyaojin@mines.edu,2025-09-10T11:49:58-06:00,2025-09-10T11:49:58-06:00,0,1,13,1,0,Add get end of daxis and taxis method.
+fiberis,watchlist,514824c4959e58ce889965550c54b325f9345397,shenyaojin,shenyaojin@mines.edu,2025-09-10T11:49:35-06:00,2025-09-10T11:49:35-06:00,0,2,43,10,0,Fix bug in readers.
+fiberis,watchlist,b92bead460eec13855b746669a77724e320d601d,shenyaojin,shenyaojin@mines.edu,2025-09-09T23:08:47-06:00,2025-09-09T23:08:47-06:00,0,1,63,0,0,Add *.dat file mariner reading method.
+fiberis,watchlist,0a6c417163a13d02437cbda6c3bc967440c6f2b6,shenyaojin,shenyaojin@mines.edu,2025-09-09T23:08:28-06:00,2025-09-09T23:08:28-06:00,0,1,4,4,0,Fix DSSh5 file bug.
+fiberis,watchlist,efc538cf1614ac15293d05fc7e3f99fc58b7767e,shenyaojin,shenyaojin@mines.edu,2025-09-08T11:09:20-06:00,2025-09-08T11:09:20-06:00,0,4,229,37,0,Revise the print methods. Now print(dataframe) is available.
+fiberis,watchlist,5a0cda39269d0ad4ef63758769b3ac9ec85c7900,shenyaojin,shenyaojin@mines.edu,2025-09-08T09:29:52-06:00,2025-09-08T09:29:52-06:00,0,2,8,5,0,Update the load_npz algorithms. --Shenyao
+fiberis,watchlist,93a8f401c502ff8bf63c9b065ecd7350b86c78d8,shenyaojin,shenyaojin@mines.edu,2025-09-07T22:54:19-06:00,2025-09-07T22:54:19-06:00,0,2,3,0,0,Add init
+fiberis,watchlist,90d03339ff6c400fc01f7c3598153bfa5dd4a6fb,shenyaojin,shenyaojin@mines.edu,2025-09-05T13:35:40-06:00,2025-09-05T13:35:40-06:00,0,3,71,6,0,Update DSSRFS data reader.
+fiberis,watchlist,e817ea00cecbf195e8d35da2294f0833c2c872c1,shenyaojin,shenyaojin@mines.edu,2025-09-04T12:21:02-06:00,2025-09-04T12:21:02-06:00,0,1,52,12,0,Update h5 reader.
+fiberis,watchlist,a09d5ad3996e7d9834f18804be588d774ca954c3,shenyaojin,shenyaojin@mines.edu,2025-09-04T12:20:49-06:00,2025-09-04T12:20:49-06:00,0,5,14,32,0,Fix bug in some readers.
+fiberis,watchlist,75bea98039611964215a14c5c258331eacb37089,shenyaojin,shenyaojin@mines.edu,2025-09-04T00:21:24-06:00,2025-09-04T00:21:24-06:00,0,1,3,5,0,update model_builder
+fiberis,watchlist,8dcd228a6ea645ecd640bbb8553ab6b0718cbf94,shenyaojin,shenyaojin@mines.edu,2025-09-02T20:38:16-06:00,2025-09-02T20:38:16-06:00,0,1,0,1,0,Fix typo
+fiberis,watchlist,17347a818cc7ecdb36cca5e4d8c8afd336806c5a,shenyaojin,shenyaojin@mines.edu,2025-08-29T17:55:50-06:00,2025-08-29T17:55:50-06:00,0,2,1,2,0,Fix bugs in model_builder.py
+fiberis,watchlist,1b7692dc91b20518666f9a298fedc33b8d315fd7,shenyaojin,shenyaojin@mines.edu,2025-08-23T21:37:39-06:00,2025-08-23T21:37:39-06:00,0,1,215,0,0,add doc
+fiberis,watchlist,5e78678d7c5a367cc76a9ac69fced8d868110910,shenyaojin,shenyaojin@mines.edu,2025-08-22T15:48:36-06:00,2025-08-22T15:48:36-06:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,5048195bf77c05e18df09638d2143674a8369625,shenyaojin,shenyaojin@mines.edu,2025-08-22T15:48:07-06:00,2025-08-22T15:48:07-06:00,0,1,50,1,0,fix StressDivergenceTensors kernel.
+fiberis,watchlist,b8d3c18c3a2c49a13ad123b28b47c8fa6047e78d,Shenyao Jin,shenyaojin@mines.edu,2025-08-20T11:34:47-06:00,2025-08-20T11:34:47-06:00,1,,,,,Merge pull request #1 from shenyaojin/copilot/fix-61972495-bc31-4ba3-9bae-d1b263df4952
+fiberis,watchlist,0f8e808c24fb57b5554553d47c2d58bff0c6e988,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,2025-08-20T17:22:42+00:00,2025-08-20T17:22:42+00:00,0,1,177,0,0,Add comprehensive documentation to all undocumented methods in ModelBuilder class
+fiberis,watchlist,b1976dcac18388c609edda93edf563fb1a9ff859,shenyaojin,shenyaojin@mines.edu,2025-08-20T11:17:17-06:00,2025-08-20T11:17:17-06:00,0,1,74,9,0,Add docs for model_builder.py
+fiberis,watchlist,cdc81e21e3d67e16a9533f70a4e6b09dbffd8ae4,copilot-swe-agent[bot],198982749+Copilot@users.noreply.github.com,2025-08-20T17:13:31+00:00,2025-08-20T17:13:31+00:00,0,0,0,0,0,Initial plan
+fiberis,watchlist,f5d32b6e5597f5629e48974f897fe86ef2ecce49,shenyaojin,shenyaojin@mines.edu,2025-08-20T10:11:57-06:00,2025-08-20T10:11:57-06:00,0,2,33,1,0,update reading methods.
+fiberis,watchlist,2b21fa4a661ddaf14a0d80ccb8eb1461aa797e8d,shenyaojin,shenyaojin@mines.edu,2025-08-16T13:05:33-06:00,2025-08-16T13:05:33-06:00,0,1,2,0,0,Update readme.
+fiberis,watchlist,ed0e6b25c48ff2ce471e63a16c89d4066f71f245,shenyaojin,shenyaojin@mines.edu,2025-08-16T13:00:54-06:00,2025-08-16T13:00:54-06:00,0,4,86,6,0,add print info methods.
+fiberis,watchlist,ee41ad32ad143091010eef3d3885391b5bad53f3,shenyaojin,shenyaojin@mines.edu,2025-08-15T15:49:33-06:00,2025-08-15T15:49:33-06:00,0,5,207,4,0,update viz tools
+fiberis,watchlist,93d0d87722f77b2de16c01f3490841e9f35a6d01,shenyaojin,shenyaojin@mines.edu,2025-08-10T14:51:41-06:00,2025-08-10T14:51:41-06:00,0,2,268,0,0,update I/O
+fiberis,watchlist,8e04f4d03ce9cf0324fe4a041b425d41daad11d3,shenyaojin,shenyaojin@mines.edu,2025-08-10T14:51:33-06:00,2025-08-10T14:51:33-06:00,0,7,472,0,0,Update readme
+fiberis,watchlist,dce7899a9666dd4efda69ba458469d04d44aa5e6,shenyaojin,shenyaojin@mines.edu,2025-08-10T10:26:38-06:00,2025-08-10T10:26:38-06:00,0,13,371,357,0,improve code structure.
+fiberis,watchlist,bdf270ce1f2ae3872b50015f2563feb4ac671465,shenyaojin,shenyaojin@mines.edu,2025-08-09T19:05:14-06:00,2025-08-09T19:05:14-06:00,0,1,41,62,0,Update READMEs
+fiberis,watchlist,d321e7dcc4a9cc8cdd8e1a653b110774760b3b1c,shenyaojin,shenyaojin@mines.edu,2025-08-09T18:55:04-06:00,2025-08-09T18:55:04-06:00,0,4,151,73,0,Update READMEs
+fiberis,watchlist,3484aa83d219518848b4c00acea9e749c4afdad4,shenyaojin,shenyaojin@mines.edu,2025-08-09T01:51:03-06:00,2025-08-09T01:51:03-06:00,0,2,5,2,0,Update version. The MOOSE extension is online and working
+fiberis,watchlist,5547f6a87dcc2dc07d83e9210d09c8a5af0736da,shenyaojin,shenyaojin@mines.edu,2025-08-08T20:39:30-06:00,2025-08-08T20:39:30-06:00,0,3,22,2,0,implement data1d save func
+fiberis,watchlist,6d7d00339c99ec3f42f7def2d2be8ca1f8590a11,shenyaojin,shenyaojin@mines.edu,2025-08-08T16:38:34-06:00,2025-08-08T16:38:34-06:00,0,3,66,48,0,"Grammar improvement, and post-processor algorithm improvement"
+fiberis,watchlist,3878b133b25d9c7c41c454fbc5fde4b418f3a153,shenyaojin,shenyaojin@mines.edu,2025-08-08T12:34:39-06:00,2025-08-08T12:34:39-06:00,0,3,190,60,0,Add processors.
+fiberis,watchlist,708108b2e92d5cb1629cf86feee47258bbae3c14,shenyaojin,shenyaojin@mines.edu,2025-08-06T15:55:49-06:00,2025-08-06T15:55:49-06:00,0,3,132,9,0,Update permeability algorithm
+fiberis,watchlist,e0ad8473cf25ae31d08bb29a166f9f6cb61022f1,shenyaojin,shenyaojin@mines.edu,2025-08-06T13:51:20-06:00,2025-08-06T13:51:20-06:00,0,5,19,13,0,Update comments.
+fiberis,watchlist,bf768bf419a2ae2f846270988ca6b2646e186dbd,shenyaojin,shenyaojin@mines.edu,2025-08-06T12:07:37-06:00,2025-08-06T12:07:37-06:00,0,7,222,225,0,Update name to Tensor (NOT vector).
+fiberis,watchlist,e7f66a52bcf5dcc7f99dcaf13217e00cc0884518,shenyaojin,shenyaojin@mines.edu,2025-08-03T21:06:05-06:00,2025-08-03T21:06:05-06:00,0,1,24,3,0,update vector processor.
+fiberis,watchlist,72135dbe9eba4b6b23bac9370563c0a33635f1d2,shenyaojin,shenyaojin@mines.edu,2025-07-27T20:57:25-06:00,2025-07-27T20:57:25-06:00,0,1,10,1,0,Add vector processor.
+fiberis,watchlist,5ca4d442ab852e5055c701f2f9d0b54e976d0df4,shenyaojin,shenyaojin@mines.edu,2025-07-18T11:34:00-06:00,2025-07-18T11:34:00-06:00,0,3,186,1,0,Add vector processor class init and I/O
+fiberis,watchlist,ca3666cdd575ec3ce2e653d3a7bec23603e43369,shenyaojin,shenyaojin@mines.edu,2025-07-17T16:49:43-06:00,2025-07-17T16:49:43-06:00,0,2,9,0,0,Add vector processor files.
+fiberis,watchlist,fff35125d5f53058dcedef0612ba31214eba4b0d,shenyaojin,shenyaojin@mines.edu,2025-07-05T18:31:18-06:00,2025-07-05T18:31:18-06:00,0,4,0,390,0,Remove examples.
+fiberis,watchlist,9a4a2cddda2088793ba1c456763f84974632e898,shenyaojin,shenyaojin@mines.edu,2025-07-04T15:45:59-06:00,2025-07-04T15:45:59-06:00,0,1,2,0,0,add readme in fiberis.io
+fiberis,watchlist,3bac4dbc9c3bad3df5a931245b466ef5c9e21e3c,shenyaojin,shenyaojin@mines.edu,2025-06-27T18:25:04-06:00,2025-06-27T18:25:04-06:00,0,2,52,14,0,Add porous flow dp/dt. --need test.
+fiberis,watchlist,39892c8f73a76949540c58a0650a6c4901bed409,shenyaojin,shenyaojin@mines.edu,2025-06-24T08:56:48-06:00,2025-06-24T08:56:48-06:00,0,2,83,87,0,implement adaptive DT in config and model builder.
+fiberis,watchlist,07a7e26b5c717154bd9e08c34c4eb8d86736b836,shenyaojin,shenyaojin@mines.edu,2025-06-23T12:50:47-06:00,2025-06-23T12:50:47-06:00,0,1,151,0,0,implement moose vector post processor data format.
+fiberis,watchlist,64b7c3cd20d96621b7ac7b301b4c74f52acc80c2,shenyaojin,shenyaojin@mines.edu,2025-06-23T12:50:14-06:00,2025-06-23T12:50:14-06:00,0,1,517,0,0,add fiberis example
+fiberis,watchlist,1b5e20acbd73ac05aa61d56242f834a0516e6421,shenyaojin,shenyaojin@mines.edu,2025-06-23T12:50:03-06:00,2025-06-23T12:50:03-06:00,0,1,99,0,0,implement MOOSE point reader.
+fiberis,watchlist,9d646acbdbc8f365efcfa88b8de7624464b78357,shenyaojin,shenyaojin@mines.edu,2025-06-22T22:47:15-06:00,2025-06-22T22:47:15-06:00,0,1,0,4,0,Refractor data 3d.
+fiberis,watchlist,c060d149fdf51c2e60a5af679fcf2ecde5228b23,shenyaojin,shenyaojin@mines.edu,2025-06-21T09:30:11-06:00,2025-06-21T09:30:11-06:00,0,2,1,967,0,Remove bkp model builder.
+fiberis,watchlist,98100698d5a6bc47c8f5534748a4d4aab847e0bf,shenyaojin,shenyaojin@mines.edu,2025-06-19T11:54:43-06:00,2025-06-19T11:54:43-06:00,0,1,155,0,0,Add example 102r full simulator.
+fiberis,watchlist,ef90129e7e47b024023b7b2c20a0cd669beff555,shenyaojin,shenyaojin@mines.edu,2025-06-18T16:17:08-06:00,2025-06-18T16:17:08-06:00,0,1,125,4,0,model builder preconditioning update.
+fiberis,watchlist,7f2b3b2fcc71f2839e903582a6c993fee40e12fa,shenyaojin,shenyaojin@mines.edu,2025-06-15T16:06:37-06:00,2025-06-15T16:06:37-06:00,0,2,319,81,0,Save model_builder from gemini.
+fiberis,watchlist,4166a14a10d99baddb31cf7ff82d85570ab0a04a,shenyaojin,shenyaojin@mines.edu,2025-06-14T10:20:07-06:00,2025-06-14T10:20:07-06:00,0,1,28,41,0,Add global param
+fiberis,watchlist,e793c80a1dad09d17966c29b9330f88b1aa18604,shenyaojin,shenyaojin@mines.edu,2025-06-13T11:47:51-06:00,2025-06-13T11:47:51-06:00,0,3,172,61,0,Update mariner wellhead gauge reader.
+fiberis,watchlist,a21ed3fb2c3e49d9978a72ec004b6f0f786cf657,shenyaojin,shenyaojin@mines.edu,2025-06-12T15:47:25-06:00,2025-06-12T15:47:25-06:00,0,2,1230,695,0,Refractor model_builder
+fiberis,watchlist,c0fbdf8b18aaba569dba35b5416193088548f2b2,shenyaojin,shenyaojin@mines.edu,2025-06-11T13:33:56-06:00,2025-06-11T13:33:56-06:00,0,1,87,88,0,Tweak model builder. The add_ method are more robust now.
+fiberis,watchlist,8265b7822feccfa212510c7076506760d38c5532,shenyaojin,shenyaojin@mines.edu,2025-06-09T15:20:21-06:00,2025-06-09T15:20:21-06:00,0,2,103,111,0,Update variables.
+fiberis,watchlist,5bac486d161410d1fd8ab43a2e9ee7f05f3ed7c7,shenyaojin,shenyaojin@mines.edu,2025-06-09T14:29:44-06:00,2025-06-09T14:29:44-06:00,0,1,40,10,0,Update variables.
+fiberis,watchlist,25bc2bcb0b247f8af35854911ebf804b0fd3d60e,shenyaojin,shenyaojin@mines.edu,2025-06-06T15:44:28-06:00,2025-06-06T15:44:28-06:00,0,1,429,1258,0,Finish model_builder.py. Prepare to do test on this script.
+fiberis,watchlist,7011f78f1eb4d09c1dfbc99196f0218e3eb1fa00,shenyaojin,shenyaojin@mines.edu,2025-06-06T14:21:23-06:00,2025-06-06T14:21:23-06:00,0,2,203,135,0,Add fluid properties model.
+fiberis,watchlist,72107c57d780ccae3b3e27cd2013b868172795b1,shenyaojin,shenyaojin@mines.edu,2025-06-06T10:39:25-06:00,2025-06-06T10:39:25-06:00,0,2,142,1,0,Add fluid properties model.
+fiberis,watchlist,157326143bbbba19c1cb151a1900412eb11d59f6,shenyaojin,shenyaojin@mines.edu,2025-06-04T17:46:35-06:00,2025-06-04T17:46:35-06:00,0,1,30,14,0,fix bugs in fuc generator.
+fiberis,watchlist,1b4f1edae268d31f41afe0e1603dc237f6db94f8,shenyaojin,shenyaojin@mines.edu,2025-06-03T17:06:25-06:00,2025-06-03T17:06:25-06:00,0,3,136,5,0,Test commit. Some problems in functions.
+fiberis,watchlist,a78bf16c7ff9c088074c3a4dc366197682e8cab6,shenyaojin,shenyaojin@mines.edu,2025-06-03T15:12:24-06:00,2025-06-03T15:12:24-06:00,0,3,1282,589,0,Update core functions to be better integrated with MOOSE extension.
+fiberis,watchlist,c182a01e27b4aef78861dffa0b093cf76dbc7446,shenyaojin,shenyaojin@mines.edu,2025-06-03T11:26:16-06:00,2025-06-03T11:26:16-06:00,0,2,261,69,0,Update post processor focusing on point/vector sampling.
+fiberis,watchlist,d744c557bbd8d2959bc7857daebdc2038c3fe3e0,shenyaojin,shenyaojin@mines.edu,2025-06-02T15:28:16-06:00,2025-06-02T15:28:16-06:00,0,2,6,6,0,Add post processor configration.
+fiberis,watchlist,1fe734221d2cf660ea708602760a0fb1ca576c65,shenyaojin,shenyaojin@mines.edu,2025-06-02T14:22:44-06:00,2025-06-02T14:22:44-06:00,0,1,81,1,0,Add post processor configration.
+fiberis,watchlist,010b6a4b48836b94723abe37bacfbfe9b1236c8d,shenyaojin,shenyaojin@mines.edu,2025-06-02T12:49:31-06:00,2025-06-02T12:49:31-06:00,0,1,380,5,0,Add BC builder.
+fiberis,watchlist,f531ee13913b6417502d1dd352104890e152847b,shenyaojin,shenyaojin@mines.edu,2025-06-02T11:55:55-06:00,2025-06-02T11:55:55-06:00,0,1,218,3,0,Add AMA builder.
+fiberis,watchlist,d99349eeae8b09223c6608529f75641754786065,shenyaojin,shenyaojin@mines.edu,2025-06-01T16:50:21-06:00,2025-06-01T16:50:21-06:00,0,2,287,152,0,Add optimizer configuration.
+fiberis,watchlist,18cf848a336ca2327f3aadfaa3baa886499829d8,shenyaojin,shenyaojin@mines.edu,2025-05-30T19:11:36-06:00,2025-05-30T19:11:36-06:00,0,1,5,0,0,Add readme in simulator.
+fiberis,watchlist,76b71d34d87893566f59dd24bc246cb2ff84db9e,shenyaojin,shenyaojin@mines.edu,2025-05-29T17:17:53-06:00,2025-05-29T17:17:53-06:00,0,1,125,54,0,"Update static method, add kernel part. Update main func."
+fiberis,watchlist,59dfc6bb13a9e90e02e821295eedd8679af8f03b,shenyaojin,shenyaojin@mines.edu,2025-05-29T17:03:28-06:00,2025-05-29T17:03:28-06:00,0,1,208,7,0,Add kernel part. --Shenyao
+fiberis,watchlist,8823ca8f31a6b9ab3d87b923d8d372ef4ef75832,shenyaojin,shenyaojin@mines.edu,2025-05-29T15:45:36-06:00,2025-05-29T15:45:36-06:00,0,2,184,313,0,Change the implement of API. Make it much easier to expand. --Shenyao
+fiberis,watchlist,5930dc21f2f6bc8806f9a6d869f7ece6d36ccdb0,shenyaojin,shenyaojin@mines.edu,2025-05-28T12:45:55-06:00,2025-05-28T12:45:55-06:00,0,2,12,13,0,Change width -> height. --Shenyao
+fiberis,watchlist,620ec53d50601ba87b18e2633d522ab6b92241c0,shenyaojin,shenyaojin@mines.edu,2025-05-28T10:21:31-06:00,2025-05-28T10:21:31-06:00,0,1,39,39,0,Remove bad grammar
+fiberis,watchlist,93d5f53cc9d94beeb5059ab0054ae12ee5002137,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-05-28T10:10:56-06:00,2025-05-28T10:10:56-06:00,0,1,95,10,0,Update readme.md
+fiberis,watchlist,7b7ff9f48f8242978154fe2ef13fbf80d2e992bb,shenyaojin,shenyaojin@mines.edu,2025-05-28T10:14:47-06:00,2025-05-28T10:14:47-06:00,0,1,10,22,0,Update readme.
+fiberis,watchlist,fb657b87e09e639b690d0ba5a727f42a3c87ca2e,shenyaojin,shenyaojin@mines.edu,2025-05-28T09:58:16-06:00,2025-05-28T09:58:16-06:00,0,4,675,1,0,Implement Model builder. But need further fix.--Shenyao
+fiberis,watchlist,27594082d45c0c6586a8a2aba2a0978c57563bb5,shenyaojin,shenyaojin@mines.edu,2025-05-26T12:08:42-06:00,2025-05-26T12:08:42-06:00,0,1,1,1,0,Fix typo in plot func. --Shenyao
+fiberis,watchlist,7773676020cdb9dac969096e330c64094bbcf9bb,shenyaojin,shenyaojin@mines.edu,2025-05-23T16:09:11-06:00,2025-05-23T16:09:11-06:00,0,1,1,0,0,Update input_generator.py. Prepare to build upper interface. --Shenyao
+fiberis,watchlist,da8b770e19d69bbd320f343be63d6c9cb30ef282,shenyaojin,shenyaojin@mines.edu,2025-05-20T17:27:43-06:00,2025-05-20T17:27:43-06:00,0,8,560,59,0,Add csv I/O. Fix bugs in runner. --Shenyao
+fiberis,watchlist,d3ec762c192d252e9bb4d662ee498441e831519d,shenyaojin,shenyaojin@mines.edu,2025-05-19T11:14:45-06:00,2025-05-19T11:14:45-06:00,0,3,725,680,0,Add template DOT i files. --Shenyao
+fiberis,watchlist,215609aad233e39656a835694dc0fe48e98e549b,shenyaojin,shenyaojin@mines.edu,2025-05-18T23:37:22-06:00,2025-05-18T23:37:22-06:00,0,2,399,3,0,Fix typo
+fiberis,watchlist,4794795acd531475ef654e848f8242312f1de36c,shenyaojin,shenyaojin@mines.edu,2025-05-18T11:00:59-06:00,2025-05-18T11:00:59-06:00,0,2,4,1,0,Fix typo
+fiberis,watchlist,b5486ef0ec652c448f969c0762c786aa1e1d11b1,shenyaojin,shenyaojin@mines.edu,2025-05-18T01:34:58-06:00,2025-05-18T01:34:58-06:00,0,1,783,112,0,Update signal processing.
+fiberis,watchlist,f9d6cbe213db0633dccbbe2a418d925b344ebf20,shenyaojin,shenyaojin@mines.edu,2025-05-18T01:22:00-06:00,2025-05-18T01:22:00-06:00,0,1,92,17,0,Optimize toml file.
+fiberis,watchlist,d5c38c9b0ec750a3b003b528aef334a94439ccaf,shenyaojin,shenyaojin@mines.edu,2025-05-18T00:47:23-06:00,2025-05-18T00:47:23-06:00,0,2,188,2,0,Add runner prototype. --Shenyao
+fiberis,watchlist,c5d865693cdb03f70a660a85c00a17e2a7f889fa,shenyaojin,shenyaojin@mines.edu,2025-05-18T00:01:15-06:00,2025-05-18T00:01:15-06:00,0,7,900,4,0,Add ifile reader. Add README. --Shenyao
+fiberis,watchlist,90f25c2abf74223ab0002ead61f0e273a0f10c5b,shenyaojin,shenyaojin@mines.edu,2025-05-17T23:10:24-06:00,2025-05-17T23:10:24-06:00,0,41,898,919,0,Update project structure. Prepare to introduce MOOSE utils. --Shenyao
+fiberis,watchlist,3929739e8c046367b6d871539bf0fd6f624658a0,shenyaojin,shenyaojin@mines.edu,2025-05-17T22:20:13-06:00,2025-05-17T22:20:13-06:00,0,1,8,8,0,Update dependence. Make it more flexible. --Shenyao
+fiberis,watchlist,980221dcec66f0b804c26025ad3063fb3917b51c,shenyaojin,shenyaojin@mines.edu,2025-05-16T11:27:34-06:00,2025-05-16T11:27:34-06:00,0,1,23,0,0,Update MOOSE code.
+fiberis,watchlist,a1fd003dc6de592183398bc3c04d2e06ea9175f7,shenyaojin,shenyaojin@mines.edu,2025-04-12T23:23:56-06:00,2025-04-12T23:23:56-06:00,0,1,2,1,0,Update readme.
+fiberis,watchlist,462186005955828b03e561ec78819c6189bbdc8b,shenyaojin,shenyaojin@mines.edu,2025-04-10T22:46:12-06:00,2025-04-10T22:46:12-06:00,0,3,69,1,0,Update core2D select functions.
+fiberis,watchlist,ef6425eee499bee565f7394f36eb344a3b154c09,shenyaojin,shenyaojin@mines.edu,2025-04-06T17:13:06-06:00,2025-04-06T17:13:06-06:00,0,2,10,5,0,Add crop alias in core1D. --shenyao
+fiberis,watchlist,a53405f499ca7725634efe92fc0eab0c48ffeab5,shenyaojin,shenyaojin@mines.edu,2025-04-03T09:45:44-06:00,2025-04-03T09:45:44-06:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,a73e157387889c201590304d64868f17f384ee82,shenyaojin,shenyaojin@mines.edu,2025-04-03T09:45:38-06:00,2025-04-03T09:45:38-06:00,0,1,1,1,0,fix the bug in get value by depth. --shenyao
+fiberis,watchlist,4cd9f4b0c203052b849846c743e35169e0b3e2a7,Shenyao Jin,shenyaojin@mines.edu,2025-03-29T11:28:41-06:00,2025-03-29T11:28:41-06:00,0,1,5,1,0,Update README.md
+fiberis,watchlist,ef8daa504b8ec40c966fb65b08a41b1737e25c31,Shenyao Jin,shenyaojin@mines.edu,2025-03-29T11:24:36-06:00,2025-03-29T11:24:36-06:00,0,1,2,2,0,Update LICENSE
+fiberis,watchlist,1d0ff83a5c21e96a659af752c21c7cbfeb534fbd,shenyaojin,shenyaojin@mines.edu,2025-03-27T23:05:06-06:00,2025-03-27T23:05:06-06:00,0,2,18,1,0,Add get value by depth function. --shenyao
+fiberis,watchlist,dbb601a1784f11dd006cac158aaa62d010b90713,shenyaojin,shenyaojin@mines.edu,2025-03-26T15:09:18-06:00,2025-03-26T15:09:18-06:00,0,1,2,2,0,Update pds typo
+fiberis,watchlist,cb95a8ae1a689bd7b49cebe7ecafeac23ba8bf42,shenyaojin,shenyaojin@mines.edu,2025-03-24T13:37:23-06:00,2025-03-24T13:37:23-06:00,0,2,2,2,0,Update README.md
+fiberis,watchlist,67c69027ef9073d53b49f017c9fddf01fd33ab2f,shenyaojin,shenyaojin@mines.edu,2025-03-18T18:00:03-06:00,2025-03-18T18:00:03-06:00,0,3,25,3,0,Add 3d MD calculation.
+fiberis,watchlist,5c4ac1c3b1e3f1f8eaa4c2907d471ee6770924e9,shenyaojin,shenyaojin@mines.edu,2025-03-17T11:20:11-06:00,2025-03-17T11:20:11-06:00,0,3,48,2,0,Delete unnecessary files.
+fiberis,watchlist,d2078e75f7014a0b649bc0d4f9ef7f6e583da345,shenyaojin,shenyaojin@mines.edu,2025-03-14T10:57:49-06:00,2025-03-14T10:57:49-06:00,0,2,3,25,0,Redirect read h5 function.
+fiberis,watchlist,6acd43f8d580d502f2790bca89b71ec84c2d9af5,shenyaojin,shenyaojin@mines.edu,2025-03-13T22:49:03-06:00,2025-03-13T22:49:03-06:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,abae4df67757a746490ce5aff0bc55c5823139cf,shenyaojin,shenyaojin@mines.edu,2025-03-13T22:48:49-06:00,2025-03-13T22:48:49-06:00,0,1,51,0,0,Add prototype for hfts5 files
+fiberis,watchlist,e7ac3b68ed756de5009a19a4d10066a20e47c84f,Shenyao Jin,shenyaojin@mines.edu,2025-03-11T20:49:00-06:00,2025-03-11T20:51:55-06:00,0,1,2,2,0,Update pds core
+fiberis,watchlist,43feb12ac90265b6268b00320d10e2a1c91b5478,shenyaojin,shenyaojin@mines.edu,2025-03-11T20:35:04-06:00,2025-03-11T20:35:04-06:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,ba4788818631e21bf5fae76998184b44562f2f5c,shenyaojin,shenyaojin@mines.edu,2025-03-11T20:34:58-06:00,2025-03-11T20:34:58-06:00,0,2,5,61,0,extract BCs as class.
+fiberis,watchlist,8dade00bd41e4f436b301824c84f59d3b27d9087,Shenyao Jin,shenyaojin@mines.edu,2025-03-10T08:16:21-06:00,2025-03-10T08:16:21-06:00,0,1,13,21,0,Update LICENSE
+fiberis,watchlist,ab84704859b3c430905bfb1850f3cabb8c3fde16,Shenyao Jin,shenyaojin@mines.edu,2025-03-09T17:05:50-06:00,2025-03-09T17:05:50-06:00,0,6,340,30,0,Update 3D IO and processing
+fiberis,watchlist,e58b16f09e739094ca99d0a2d76a1628e6e699c9,Shenyao Jin,shenyaojin@mines.edu,2025-03-09T13:13:41-06:00,2025-03-09T13:13:41-06:00,0,3,75,1,0,Add example for IO
+fiberis,watchlist,19c8eca1f522cf5e724ea8e43a694825cd13c730,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-03-05T14:48:51-07:00,2025-03-05T14:48:51-07:00,0,3,14,3,0,Update readme fix typo in several files
+fiberis,watchlist,d111dd34b6b46f40fa792d10ee8ae13e67749205,Shenyao Jin,shenyaojin@mines.edu,2025-03-05T10:10:24-07:00,2025-03-05T10:10:24-07:00,0,1,1,1,0,Update pds core
+fiberis,watchlist,edaf4fb32a637da29e40d5cfcfa71ade5d96b4b9,Shenyao Jin,shenyaojin@mines.edu,2025-03-03T15:16:44-07:00,2025-03-03T15:25:54-07:00,0,1,2,1,0,Update .gitignore
+fiberis,watchlist,570efb8cf4d14a7aa107a6853151cce1739959a7,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-03-03T12:32:51-07:00,2025-03-03T12:32:51-07:00,0,1,51,1,0,Update lp filter. Need test
+fiberis,watchlist,1bfe298fc8e46475184fb666fd83657971cfe2fd,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-03-03T09:00:16-07:00,2025-03-03T09:00:16-07:00,0,1,4,2,0,Remove PML bugs.
+fiberis,watchlist,ea109a452e4687eb0097f393003f2888a4c3f777,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-03-03T08:33:35-07:00,2025-03-03T08:33:35-07:00,0,3,4,1,0,Add None BC
+fiberis,watchlist,496d167a20346554549bd9b57891e384d87cf1d0,shenyaojin,shenyaojin@mines.edu,2025-02-24T11:57:18-07:00,2025-02-24T11:57:18-07:00,0,2,111,6,0,extract BCs as class.
+fiberis,watchlist,d91342d89715ce04af127d5b07a42fa342744681,shenyaojin,shenyaojin@mines.edu,2025-02-19T23:01:56-07:00,2025-02-19T23:01:56-07:00,1,,,,,Merge remote-tracking branch 'origin/main'
+fiberis,watchlist,407f668afe0c751648343b0fe461f51823784f5e,shenyaojin,shenyaojin@mines.edu,2025-02-19T23:01:26-07:00,2025-02-19T23:01:26-07:00,0,2,11,7,0,fix import error
+fiberis,watchlist,a3b63b4bd61bca4fc3fd6f1e594fdc087ab01df3,Shenyao Jin,shenyaojin@mines.edu,2025-02-18T10:34:39-07:00,2025-02-18T10:34:39-07:00,0,1,4,2,0,Update README.md
+fiberis,watchlist,23171ca8e559d59507a6eaa124eb372f86e4c063,shenyaojin,shenyaojin@mines.edu,2025-02-14T14:24:19-07:00,2025-02-14T14:24:19-07:00,0,1,4,0,0,Add comments for 3D case
+fiberis,watchlist,770e10d7e2d98318c42c87f575da31b13688a4f3,shenyaojin,shenyaojin@mines.edu,2025-02-13T12:28:49-07:00,2025-02-13T12:28:49-07:00,0,2,4,2,0,Create examples for visualization.
+fiberis,watchlist,b27fa46d59b7cec149943c4acaeed2d2a5f73dc7,shenyaojin,shenyaojin@mines.edu,2025-02-13T12:28:26-07:00,2025-02-13T12:28:26-07:00,0,1,16,1,0,Bug fixed for core2D.
+fiberis,watchlist,aabffe287cd0a58e6b2815b25175d9cca4f92314,shenyaojin,shenyaojin@mines.edu,2025-02-11T22:23:05-07:00,2025-02-11T22:23:05-07:00,0,2,23,3,0,Bug fixed in pds packing function.
+fiberis,watchlist,ace71e1b4ad30be89cae6f87e40a840746f913e5,shenyaojin,shenyaojin@mines.edu,2025-02-11T22:03:44-07:00,2025-02-11T22:03:44-07:00,0,7,222,30,0,Bug fixed in 1D. New init files
+fiberis,watchlist,39d8b58d2bc227c55787d7d3560db3964527f80f,shenyaojin,shenyaojin@mines.edu,2025-02-11T17:10:39-07:00,2025-02-11T17:10:39-07:00,0,2,48,5,0,Update 2D core: add merge method
+fiberis,watchlist,8e5d89e4cade2b968b9996161705b4cfde6b0512,shenyaojin,shenyaojin@mines.edu,2025-02-10T19:18:54-07:00,2025-02-10T19:18:54-07:00,0,1,11,5,0,Update 2D IO
+fiberis,watchlist,a079978177ad440b7aee183b1d460a84e4f082ad,shenyaojin,shenyaojin@mines.edu,2025-02-10T19:14:12-07:00,2025-02-10T19:14:12-07:00,0,2,9,2,0,Auto update from shell script
+fiberis,watchlist,20361ce89776c407bb54266f0498765efc60ba5d,shenyaojin,shenyaojin@mines.edu,2025-02-10T19:11:51-07:00,2025-02-10T19:11:51-07:00,0,2,24,43,0,Auto update from shell script
+fiberis,watchlist,48bc938f27246c95541d926ae4b82599a081a380,shenyaojin,shenyaojin@mines.edu,2025-02-10T18:55:04-07:00,2025-02-10T18:55:04-07:00,0,3,3,3,0,Auto update from shell script
+fiberis,watchlist,23e77706b4fac948fe21fd5c4da9bed6460e989a,shenyaojin,shenyaojin@mines.edu,2025-02-10T18:52:33-07:00,2025-02-10T18:52:33-07:00,0,2,2,1,0,Auto update from shell script
+fiberis,watchlist,3d779e37d24b00b4a2b94e97a704526709d4179b,shenyaojin,shenyaojin@mines.edu,2025-02-10T18:38:08-07:00,2025-02-10T18:38:08-07:00,0,1,1,1,0,Auto update from shell script
+fiberis,watchlist,77686a4ffcaf2f11c3595e472d89713e4c257481,shenyaojin,shenyaojin@mines.edu,2025-02-10T18:37:24-07:00,2025-02-10T18:37:24-07:00,0,2,390,410,0,Update 2D IO
+fiberis,watchlist,257e36ad5eda929218396bc53e94f03dadd5d404,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-10T08:40:59-07:00,2025-02-10T08:40:59-07:00,0,1,3,3,0,Bug fixed
+fiberis,watchlist,a58330b8d97e8b5a2d556ef6fdf3ea6c4660a074,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-10T08:31:48-07:00,2025-02-10T08:31:48-07:00,0,1,4,0,0,Bug fixed
+fiberis,watchlist,2b44fddc2fe571988489c4e9ad80886cdc70d9ac,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-10T08:31:24-07:00,2025-02-10T08:31:24-07:00,1,,,,,Merge branch 'main' of https://github.com/shenyaojin/fibeRIS
+fiberis,watchlist,0754a21ab2b5898550992fbcad95c9d49a825a74,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-10T08:30:16-07:00,2025-02-10T08:30:16-07:00,0,1,0,4,0,Remove .DS_Store files and update .gitignore
+fiberis,watchlist,a2904b62504a14e3de92e538291f1dacbbad1731,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-10T08:29:38-07:00,2025-02-10T08:29:38-07:00,0,1,4,0,0,Fix bug
+fiberis,watchlist,056fcdc5b856e74919c2e766eebdbcb728ffd86f,shenyaojin,shenyaojin@mines.edu,2025-02-09T22:37:16-07:00,2025-02-09T22:37:16-07:00,0,1,18,107,0,Update 2D IO
+fiberis,watchlist,639d565c84eca4ebf8210482e2f8a52ea1563e8a,shenyaojin,shenyaojin@mines.edu,2025-02-09T21:35:48-07:00,2025-02-09T21:35:48-07:00,0,2,0,0,0,update init file
+fiberis,watchlist,af697469ef0bdd259749957bb4b34cd11a01b0a5,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-09T21:25:57-07:00,2025-02-09T21:25:57-07:00,0,2,5,5,0,Update pds for legacy dataformat
+fiberis,watchlist,7c3b46254a7476f4b4c71a8d83da6ef57b0e98f6,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-09T21:22:31-07:00,2025-02-09T21:22:31-07:00,0,1,5,5,0,Remove check
+fiberis,watchlist,f28a888b3a57ac4b291acf307ed15b559753e506,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-09T21:13:36-07:00,2025-02-09T21:13:36-07:00,0,2,2,2,0,Fix typo
+fiberis,watchlist,a4a08184bcfea3e6ead770a02c6757d3719d83de,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-09T21:11:29-07:00,2025-02-09T21:11:29-07:00,0,1,1,1,0,Fix typo
+fiberis,watchlist,fc32dde3afecadd03b8e415c5c1cb2d98a3fea96,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-09T21:10:54-07:00,2025-02-09T21:10:54-07:00,0,3,15,15,0,Fix typo
+fiberis,watchlist,19c09a2e2541472357e1ad4e5fde8102f55238fc,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-09T21:05:58-07:00,2025-02-09T21:05:58-07:00,0,2,6,6,0,Fix legacy PG dataframe bugs.
+fiberis,watchlist,aaf169ea610a273103bb9fa04ee4d920918ecd4c,shenyaojin,shenyaojin@mines.edu,2025-02-09T19:41:31-07:00,2025-02-09T19:41:31-07:00,0,2,2,2,0,Auto update from shell script
+fiberis,watchlist,a643dc8cce89abd8728ba82caeb3b8122d2127ec,shenyaojin,shenyaojin@mines.edu,2025-02-09T19:30:22-07:00,2025-02-09T19:30:22-07:00,0,1,1,1,0,Auto update from shell script
+fiberis,watchlist,3079c3a1c9642868b7188fc2439e761788570b62,shenyaojin,shenyaojin@mines.edu,2025-02-09T17:57:29-07:00,2025-02-09T17:57:29-07:00,0,1,1,1,0,Auto update from shell script
+fiberis,watchlist,1043357aba4539517627b21302b6e29c7f2233a2,shenyaojin,shenyaojin@mines.edu,2025-02-09T17:53:06-07:00,2025-02-09T17:53:06-07:00,0,4,118,208,0,Auto update from shell script
+fiberis,watchlist,967cb4bb0982b739b4262fef308a764978ab9f01,shenyaojin,shenyaojin@mines.edu,2025-02-09T16:01:02-07:00,2025-02-09T16:01:02-07:00,0,1,0,2,0,Auto update from shell script
+fiberis,watchlist,0e6fb8720e625551897a5a42db5af33d0f9b1734,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:59:29-07:00,2025-02-09T15:59:29-07:00,0,1,6,7,0,Auto update from shell script
+fiberis,watchlist,6660f48af2279a99533c915c928fcbf11a2a902f,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:55:43-07:00,2025-02-09T15:55:43-07:00,0,2,2,2,0,Auto update from shell script
+fiberis,watchlist,6d7666dca38ef1dec81c6f79c93773076dbc3061,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:54:13-07:00,2025-02-09T15:54:13-07:00,0,2,20,6,0,Auto update from shell script
+fiberis,watchlist,d4016fd30334d4e9add9af850da9dc4a70eca1f0,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:48:15-07:00,2025-02-09T15:48:15-07:00,0,1,1,1,0,Auto update from shell script
+fiberis,watchlist,021787e7698bda277b5b0de40ef62fbb421a1856,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:47:03-07:00,2025-02-09T15:47:03-07:00,0,1,6,2,0,Auto update from shell script
+fiberis,watchlist,548f86473c7f75aebc87b5d0e5b0ebc4facf9b38,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:42:49-07:00,2025-02-09T15:42:49-07:00,0,1,6,2,0,Auto update from shell script
+fiberis,watchlist,52160d58e029f96df7631e6470f54680d3feb616,shenyaojin,shenyaojin@mines.edu,2025-02-09T15:39:13-07:00,2025-02-09T15:39:13-07:00,0,4,229,185,0,Update
+fiberis,watchlist,d31054a6f757e6dd3f2f2b9e0dca6dfc9d11fd8e,shenyaojin,shenyaojin@mines.edu,2025-02-09T12:43:21-07:00,2025-02-09T12:43:21-07:00,0,1,1,0,0,update file IO in syn utils
+fiberis,watchlist,4b6e31119d2d225ebd49f1fa9a766c7ea8bd9415,shenyaojin,shenyaojin@mines.edu,2025-02-09T12:41:02-07:00,2025-02-09T12:41:02-07:00,0,4,106,89,0,Auto update from shell script
+fiberis,watchlist,e99e85ab482d50792b6c47a0bc005f27cea93c05,shenyaojin,shenyaojin@mines.edu,2025-02-09T12:01:39-07:00,2025-02-09T12:01:39-07:00,0,3,12,3,0,Update readme file
+fiberis,watchlist,b18f7cab71a4bc5bbb4916343c41d18f96e6c5b7,shenyaojin,shenyaojin@mines.edu,2025-02-09T11:02:18-07:00,2025-02-09T11:02:18-07:00,0,1,0,1,0,Auto update from shell script
+fiberis,watchlist,f2d3fc9f0b8e085afe62ef88799bdd3e0ba5b2e3,shenyaojin,shenyaojin@mines.edu,2025-02-09T11:01:08-07:00,2025-02-09T11:01:08-07:00,0,2,57,0,0,Auto update from shell script
+fiberis,watchlist,ce520895bb664907748585df6bdf4079c7641bf3,shenyaojin,shenyaojin@mines.edu,2025-02-09T10:55:51-07:00,2025-02-09T10:55:51-07:00,0,1,0,50,0,test terminal.
+fiberis,watchlist,013056c32a506c8093f284764835e3f5d94a58b5,shenyaojin,shenyaojin@mines.edu,2025-02-09T10:39:52-07:00,2025-02-09T10:39:52-07:00,0,1,55,1,0,"Update core.py, add set_data functions."
+fiberis,watchlist,69d44b3ca833e54737a389f93d22a422de13efec,shenyaojin,shenyaojin@mines.edu,2025-02-08T20:57:02-07:00,2025-02-08T20:57:02-07:00,0,1,1,1,0,TEST update
+fiberis,watchlist,1e766ab34660669452599805d21d4e8900ba5853,shenyaojin,shenyaojin@mines.edu,2025-02-08T20:34:09-07:00,2025-02-08T20:34:09-07:00,0,1,2,0,0,Update README.md
+fiberis,watchlist,5ad2a96f90a3176985a06dd904784b1bd0f0df57,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-08T12:44:19-07:00,2025-02-08T12:44:19-07:00,0,2,5,2,0,Rename classes.
+fiberis,watchlist,eb456b6f1fc67bbccc82be96907204f0fb73e588,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-07T18:45:01-07:00,2025-02-07T18:45:01-07:00,0,1,1,0,0,Update IO
+fiberis,watchlist,c813169a25852e23e66fd7f4c4c4e6e05e16194d,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-06T14:18:59-07:00,2025-02-06T14:18:59-07:00,0,4,224,17,0,Update I/O for DAS2D
+fiberis,watchlist,494cba68c3627125218060d64bd96ae87efc5fbc,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-05T15:41:09-07:00,2025-02-05T15:41:09-07:00,0,11,961,6,0,Update IO
+fiberis,watchlist,cca026d8a7b7a39ceb9494c458f5b2209a339c4c,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T09:50:57-07:00,2025-02-03T09:50:57-07:00,0,1,2,2,0,Fix pressure value loading bug again.
+fiberis,watchlist,9fd1fe6359de565bdbf42b748bdcf45c8eb3966c,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T08:54:35-07:00,2025-02-03T08:54:35-07:00,0,1,2,2,0,Fix pressure value loading bug in matbuilder
+fiberis,watchlist,8ec37ada631d57dff26071fd31baa7d3824e4f2a,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T07:47:48-07:00,2025-02-03T07:47:48-07:00,0,2,303,4,0,Add signal_utils.py. Fix import issue in DSS 2D
+fiberis,watchlist,d9f3fca81119fd5990da8f2a23d8c1b1d131becf,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T07:43:11-07:00,2025-02-03T07:43:11-07:00,0,1,415,0,0,Add DSS
+fiberis,watchlist,f3edb46dc3bfebbc349f3314f2dbe4e21873b587,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T02:18:25-07:00,2025-02-03T02:18:25-07:00,0,1,4,4,0,Fix bugs.
+fiberis,watchlist,3c66e95ecc8de1cc5c3c4937bc93e8926dbcc295,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T01:31:18-07:00,2025-02-03T01:31:18-07:00,0,4,310,2,0,Update pyproject and fix bugs.
+fiberis,watchlist,078007ba07eb2ac13276a4a7611356ef2894c3d7,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-03T00:40:35-07:00,2025-02-03T00:40:35-07:00,0,8,237,17,0,Add init files and original files from pds
+fiberis,watchlist,4f6f43c2a5c81d1227101130efe7e739f96d7c67,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-02-02T22:34:21-07:00,2025-02-02T22:34:21-07:00,0,6,876,0,0,Update gitignore.
+fiberis,watchlist,b9e3b582c73c9203136599ccd8251f547e6bb252,Shenyao Jin,106902466+shenyaojin@users.noreply.github.com,2025-01-31T18:55:56-07:00,2025-01-31T18:55:56-07:00,0,1,9,0,0,Update gitignore.
+fiberis,watchlist,ffe723bad250a165bd6512f8ee14ca849443ffbf,Shenyao Jin,shenyao_jin@zju.edu.cn,2025-01-31T17:56:41-07:00,2025-01-31T17:56:41-07:00,0,3,194,0,0,Initial commit

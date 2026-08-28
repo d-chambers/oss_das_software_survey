@@ -1,0 +1,6 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+dascorepy,included,bb3619abe0ab2c00712b88b1e4a3cf7b329b682c,Derrick Chambers,d-chambers@users.noreply.github.com,2026-05-08T10:50:22+01:00,2026-05-08T10:50:22+01:00,1,,,,,Merge pull request #1 from DASDAE/setup_ci
+dascorepy,included,d6efc52e308c456d1da17cc42348dd88c517e61e,Derrick Chambers,chambers.ja.derrick@gmail.com,2026-05-08T11:37:54+02:00,2026-05-08T11:37:54+02:00,0,1,2,2,0,Pin setup-uv action to existing tag
+dascorepy,included,449794ae6387178b40304af3e7dddbf3dc207758,Derrick Chambers,chambers.ja.derrick@gmail.com,2026-05-08T11:36:38+02:00,2026-05-08T11:36:38+02:00,0,2,66,17,0,Make doctest examples self contained
+dascorepy,included,c37dfd68168275ec60750cd76cfa2445b64727cf,Derrick Chambers,chambers.ja.derrick@gmail.com,2026-05-08T11:22:30+02:00,2026-05-08T11:22:30+02:00,0,1,5,14,0,tighten readme
+dascorepy,included,481c5c80be03b759bbfddc52467b8f9c8ec59498,Derrick Chambers,chambers.ja.derrick@gmail.com,2026-05-08T11:22:18+02:00,2026-05-08T11:22:18+02:00,0,12,2462,0,0,first

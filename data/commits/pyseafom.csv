@@ -1,0 +1,73 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+pyseafom,included,0d71f753f3d48f48e660aace7f0bef984a2d235f,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T11:38:30-05:00,2026-03-21T11:38:30-05:00,0,1,0,29,0,Update README.md
+pyseafom,included,f07a8f69284a1a00be705956e77270f238ac3d78,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T11:37:01-05:00,2026-03-21T11:37:01-05:00,0,1,0,35,0,Update README.md
+pyseafom,included,2abddb55873616d6f5bb22276f209ed93f1a12fe,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T11:36:22-05:00,2026-03-21T11:36:22-05:00,0,1,0,101,0,Update README.md
+pyseafom,included,250819ee52415f69446738c9433d2e724a195382,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T11:34:55-05:00,2026-03-21T11:34:55-05:00,0,1,0,107,0,Update README.md
+pyseafom,included,633bb890decca5c56f55a427e1b68f19e4ecb38c,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T06:54:07-05:00,2026-03-21T06:54:07-05:00,0,1,1,1,0,Update README.md
+pyseafom,included,3ef37c5ed2f8a2eebcf29bcf678b23616e394708,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T06:42:44-05:00,2026-03-21T06:42:44-05:00,0,1,2,2,0,Update DATA_MODEL.md
+pyseafom,included,12077255d385a3b11c133901b110da18c3d96ca9,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T06:41:08-05:00,2026-03-21T06:41:08-05:00,0,1,215,66,0,Update DATA_MODEL.md
+pyseafom,included,f934fe4aa91f9ffe8e63011fdb237068851795e6,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T06:13:32-05:00,2026-03-21T06:13:32-05:00,0,4,5,5,1,updated the demo
+pyseafom,included,f09364c754438865b4d19a20e923a11e33b92f5c,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T05:43:46-05:00,2026-03-21T05:43:46-05:00,0,1,12,10,0,Update README.md
+pyseafom,included,f6f7148c5db9800f1066485004d77b72162521e6,p-moradi,peyman.moradi@bakerhughes.com,2026-03-21T05:40:58-05:00,2026-03-21T05:40:58-05:00,0,26,498,28,1,added spatial resolution to the doc website
+pyseafom,included,a0c803d21e38d79823c8fe178b7aa95cd9290288,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-03-20T19:05:13-03:00,2026-03-20T19:05:13-03:00,0,1,323,0,0,Added spatial resolution codes.
+pyseafom,included,4c877813349ff5ad46abcd997ecb8e5bde7bd503,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-03-20T19:04:48-03:00,2026-03-20T19:04:48-03:00,0,1,138,0,0,Added spatial resolution codes.
+pyseafom,included,ca14dc912a989b4cae481ec960d5f8401673c6f8,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-03-20T19:04:24-03:00,2026-03-20T19:04:24-03:00,0,2,818,2,0,Added spatial resolution codes.
+pyseafom,included,c5dea1bf9b3492454af5c4c33284d371ad981c2a,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-03-20T19:03:54-03:00,2026-03-20T19:03:54-03:00,0,1,380,0,0,Added spatial resolution codes.
+pyseafom,included,0928326793b51a0bd8c75f17c08debd37f2a3fbd,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-03-20T19:03:06-03:00,2026-03-20T19:03:06-03:00,0,1,103,2,0,Added spatial resolution codes.
+pyseafom,included,ab4bd51b45bcde71f14fa6f37ae82659f8bf41b8,p-moradi,peyman.moradi@bakerhughes.com,2026-02-26T06:40:30-06:00,2026-02-26T06:40:30-06:00,0,1,5,39,0,Update README.md
+pyseafom,included,701b13534500b7a3eb4fea265286630ba0d33044,p-moradi,peyman.moradi@bakerhughes.com,2026-02-21T09:11:12-06:00,2026-02-21T09:11:12-06:00,0,6,6,6,0,new package added
+pyseafom,included,3cb5e6fe6579b011326514092064826e3028ef62,p-moradi,peyman.moradi@bakerhughes.com,2026-02-21T09:08:27-06:00,2026-02-21T09:08:27-06:00,0,12,224,21,0,fixed minor errors in dynamic range
+pyseafom,included,8dcbe190e444aae9f15269e7746886b70bb25660,p-moradi,peyman.moradi@bakerhughes.com,2026-02-21T08:50:44-06:00,2026-02-21T08:50:44-06:00,0,1,0,0,1,Update pySEAFOM_updates.pptx
+pyseafom,included,cb281d253d9615b4275c54b7f23325db2023051d,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-02-09T16:37:21-03:00,2026-02-09T16:37:21-03:00,0,1,487,0,0,Add files via upload
+pyseafom,included,b8cb0060dbda22ce64d9df3a8d14ae129ca19e80,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-02-09T15:51:59-03:00,2026-02-09T15:51:59-03:00,0,2,571,10,0,Add files via upload
+pyseafom,included,b81ec252ccf318fc984f03cf17a5f900b6d59646,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-02-09T15:50:17-03:00,2026-02-09T15:50:17-03:00,0,1,242,0,0,Add files via upload
+pyseafom,included,42908e3be77691091cd5ec337166adffc0044511,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-02-09T15:49:20-03:00,2026-02-09T15:49:20-03:00,0,1,115,0,0,Add files via upload
+pyseafom,included,cfdca45c4ec4432aa93efbeb0bbaa8a84e3ca8dd,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-02-09T15:48:18-03:00,2026-02-09T15:48:18-03:00,0,1,98,61,0,Add files via upload
+pyseafom,included,36447b30aa915351a9b1b2556c7c2e359d6b4d97,p-moradi,peyman.moradi@bakerhughes.com,2026-01-24T09:12:12-06:00,2026-01-24T09:12:12-06:00,0,1,63,21,0,Update style.css
+pyseafom,included,37cfee917ad09e6462bced837f3dbd66365173b9,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T05:06:08-06:00,2026-01-22T05:06:08-06:00,0,2,3,3,0,style update
+pyseafom,included,e43baff82a1afb4265d263365a662abd1ce6656b,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T05:01:27-06:00,2026-01-22T05:01:27-06:00,0,1,2,2,0,Update style.css
+pyseafom,included,31e16d52720a2daa382de8aa4f0bc2718b159090,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:57:59-06:00,2026-01-22T04:57:59-06:00,0,6,23,5,0,style update
+pyseafom,included,76bbbbe619c364fb75cd095a32b3d5bae0859c0d,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:55:12-06:00,2026-01-22T04:55:12-06:00,0,1,2,3,0,Update style.css
+pyseafom,included,a0e7efa2d5f4051d44086750a691ee41d4b85490,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:52:42-06:00,2026-01-22T04:52:42-06:00,0,6,15,5,0,updated the doc website
+pyseafom,included,d7f1731bd5f3e145377b525643868dded0b9a597,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:49:58-06:00,2026-01-22T04:49:58-06:00,0,9,30,26,1,added logo
+pyseafom,included,c8ad136bb99aaf1451a896d1023f5569a3c74a66,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:44:35-06:00,2026-01-22T04:44:35-06:00,0,1,17,7,0,Update style.css
+pyseafom,included,fc8f6bb21f249a37b567c323afc4ea2d24615360,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:41:20-06:00,2026-01-22T04:41:20-06:00,0,1,6,4,0,Update style.css
+pyseafom,included,e380e8e76550564123a4fa93d0daed6cb4165ece,p-moradi,peyman.moradi@bakerhughes.com,2026-01-22T04:33:55-06:00,2026-01-22T04:33:55-06:00,0,1,0,0,1,Update logo.png
+pyseafom,included,39e7cbae58228dba007398bc36f96cf28a859bb8,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:41:28-06:00,2026-01-21T05:41:28-06:00,0,1,12,16,0,Update crosstalk.html
+pyseafom,included,02941dea972db7e0043735d17a422a70b07b51be,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:40:08-06:00,2026-01-21T05:40:08-06:00,0,5,67,123,0,updated the doc website
+pyseafom,included,7a47907a4a158297bc87ecce5cdaf4f3f5df0fe6,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:34:56-06:00,2026-01-21T05:34:56-06:00,0,6,139,79,0,updated the doc website
+pyseafom,included,e1107ba8a4018eb3637fb243a96b0690bbe3582c,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:31:20-06:00,2026-01-21T05:31:20-06:00,0,1,3,2,0,Update style.css
+pyseafom,included,5558cd41fbfffca08e3eab9aedb9318bfbfc778e,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:28:16-06:00,2026-01-21T05:28:16-06:00,0,1,1,1,0,Update README.md
+pyseafom,included,67d6ffbbf2c6bc0fbd822c5dbcd47b18a7863490,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:27:33-06:00,2026-01-21T05:27:33-06:00,0,1,1,1,0,Update README.md
+pyseafom,included,c2c4ff55cfbda0089666db921b1aeeb2c825e133,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:27:21-06:00,2026-01-21T05:27:21-06:00,0,11,998,289,0,updated the doc website
+pyseafom,included,783f9aded785507fe4b47cb16ecb3e4947f5c26f,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:20:05-06:00,2026-01-21T05:20:05-06:00,0,4,233,31,1,added a new logo
+pyseafom,included,cb754c6081f5be907bff67bbadbdbb643aca429d,p-moradi,peyman.moradi@bakerhughes.com,2026-01-21T05:04:49-06:00,2026-01-21T05:04:49-06:00,0,4,231,0,0,added the intial demo website
+pyseafom,included,0ede209f9b5b556c1c81de3195833059b59e40f9,p-moradi,peyman.moradi@bakerhughes.com,2026-01-11T13:50:49-06:00,2026-01-11T13:50:49-06:00,0,17,1349,46,2,added cross-talk and fidelity
+pyseafom,included,e510acc74dbbf737c65500bc3c7d31ca04fd3e28,p-moradi,peyman.moradi@bakerhughes.com,2026-01-09T12:58:53-06:00,2026-01-09T12:58:53-06:00,1,,,,,Merge branch 'main' of https://github.com/SEAFOM-Fiber-Optic-Monitoring-Group/pySEAFOM
+pyseafom,included,f9688b1d1b339bcaf5a9710494efc9edb914ba5a,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T15:03:24-03:00,2026-01-07T15:03:24-03:00,0,1,1,1,0,"Minor correction (""rdB unit"")"
+pyseafom,included,eb2d26feb3c594a81070e7c725a4f73bf01cbd41,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:56:54-03:00,2026-01-07T14:56:54-03:00,0,1,50,1,0,Implementation on dB calculation for DR
+pyseafom,included,e0b59cdee641ff8f82adc31e15347081086c6125,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:56:03-03:00,2026-01-07T14:56:03-03:00,0,1,3,0,0,Update for the DR workflow
+pyseafom,included,fdb0b7dc688e9b7f85e62eb99acf9e9d788bd9c9,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:54:45-03:00,2026-01-07T14:54:45-03:00,0,1,9,5,0,New implementations for the DR code
+pyseafom,included,4e3a1f2ca4e793d17b8bbae37147dc8b4835f987,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:53:07-03:00,2026-01-07T14:53:07-03:00,0,1,157,0,0,Simulator code moved to source directory.
+pyseafom,included,cd78db4e44f989b6a553be0532f41dd325e29155,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:49:22-03:00,2026-01-07T14:49:22-03:00,0,1,366,0,0,New file for the DR test as Jupyter format.
+pyseafom,included,eaf2bbc8cb25ce0500a0b84b6a5ba27387fb6a63,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:48:27-03:00,2026-01-07T14:48:27-03:00,0,1,0,186,0,Delete testing_notebooks/dynamic_range_test.py
+pyseafom,included,d8c14695a9866effd5fe7b929ff04f879f1f581a,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2026-01-07T14:45:46-03:00,2026-01-07T14:45:46-03:00,0,1,0,157,0,Delete testing_notebooks/simulator_dynamic_range.py
+pyseafom,included,3eaff633bd1f94a8a51e35688b749115304f0d87,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2025-12-17T09:40:31-03:00,2025-12-17T09:40:31-03:00,0,1,118,0,0,Add files via upload
+pyseafom,included,5a602dcba91687a17793293efdc9e977bf1775d2,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2025-12-17T09:36:48-03:00,2025-12-17T09:36:48-03:00,0,1,377,37,0,Add files via upload
+pyseafom,included,287df80649462ff7d8d79ebbb0e3ded167b63ea3,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2025-12-16T15:18:51-03:00,2025-12-16T15:18:51-03:00,0,2,343,0,0,Add files via upload
+pyseafom,included,f63a2ce5ca8979091a04651795f6b242f318d77a,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2025-12-16T15:15:36-03:00,2025-12-16T15:15:36-03:00,0,1,0,1,0,Add files via upload
+pyseafom,included,ad51f1a120215ba586093e4304936c1ce63c54ae,Guilherme Heim Weber,41933935+gheimweber@users.noreply.github.com,2025-12-16T15:13:34-03:00,2025-12-16T15:13:34-03:00,0,2,997,1,0,Add files via upload
+pyseafom,included,a7471495a08dde49467daffb0d47880260e8545b,p-moradi,peyman.moradi@bakerhughes.com,2025-11-19T13:20:14-06:00,2025-11-19T13:20:14-06:00,0,1,0,0,1,Update pySEAFOM_updates.pptx
+pyseafom,included,76af9e9fca6688e70a3ebc5ef4393a3cb7ff323f,p-moradi,peyman.moradi@bakerhughes.com,2025-11-19T08:14:28-06:00,2025-11-19T08:14:28-06:00,0,5,6,6,0,updated to 0.1.5
+pyseafom,included,6b1bb9765766b91c6ca5f842d324cd93f7eec1a7,p-moradi,peyman.moradi@bakerhughes.com,2025-11-19T07:58:35-06:00,2025-11-19T07:58:35-06:00,0,9,775,840,1,added the self-noise workflow
+pyseafom,included,1d0e6f75206f877c058c0908be189794985156d5,p-moradi,peyman.moradi@bakerhughes.com,2025-11-19T07:13:50-06:00,2025-11-19T07:13:50-06:00,0,6,82,5,0,added data model and self-noise workflow
+pyseafom,included,42ac834f88cbaf29821934d766ec35b1af1dc2d0,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T15:33:05-06:00,2025-11-06T15:33:05-06:00,0,1,5,5,0,Update self_noise_test.ipynb
+pyseafom,included,3dcee5c16c1919ff9eabe0b62ec358a45f5128b0,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T15:32:42-06:00,2025-11-06T15:32:42-06:00,0,2,24,30,0,03
+pyseafom,included,e393ce1d7bffef0e0fc29747e0e59c0973f58d66,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T15:28:10-06:00,2025-11-06T15:28:10-06:00,0,1,35,72,0,Update DATA_MODEL.md
+pyseafom,included,cc7d0403e079db25e85b44877d9e485be7b8d6cd,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T15:24:40-06:00,2025-11-06T15:24:40-06:00,0,2,8,11,0,03
+pyseafom,included,b73161885303a3bcca7f2ac389b3d49518b004eb,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T14:34:42-06:00,2025-11-06T14:34:42-06:00,0,2,326,4,0,02
+pyseafom,included,7620333b90da6956e95b350d9d070a2cb9a35f15,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T14:24:28-06:00,2025-11-06T14:24:28-06:00,0,6,146,61,0,01
+pyseafom,included,43bce312d200f5182c07a9a9c06fb1d15c8f66d4,p-moradi,peyman.moradi@bakerhughes.com,2025-11-06T14:02:20-06:00,2025-11-06T14:02:20-06:00,0,9,1166,10,0,01
+pyseafom,included,385976529bd10639d509d1b670c9723bf760e217,p-moradi,peyman.moradi@bakerhughes.com,2025-09-21T11:42:35-05:00,2025-09-21T11:42:35-05:00,0,3,92,0,0,added code owners
+pyseafom,included,5b1005b75770b6914fef6e786ffa3e141f2a8431,Peyman Moradi,peyman.moradi@bakerhughes.com,2025-07-13T05:56:45-05:00,2025-07-13T05:56:45-05:00,0,1,26,1,0,Update README.md
+pyseafom,included,520ddd20b8cc7f6ebb3061e3f42b8fe71db3b304,Peyman Moradi,peyman.moradi@bakerhughes.com,2025-07-13T05:54:17-05:00,2025-07-13T05:54:17-05:00,0,1,2,0,0,Initial commit

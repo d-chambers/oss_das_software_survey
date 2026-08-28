@@ -1,0 +1,68 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+intro-to-das,excluded,461b75898ea6c91871284fda17df6d608e8f79aa,ariellellouch,lellouch@gmail.com,2022-01-04T01:03:35+02:00,2022-01-04T01:03:35+02:00,0,1,7,0,0,Inserting link to Google Colab
+intro-to-das,excluded,3f3c4aa3678b3e75144cf7f1bc17261ae9dc3308,Eileen R Martin,eileenrmartin@vt.edu,2021-08-27T10:33:15-04:00,2021-08-27T10:33:15-04:00,0,2,3560,1,0,added reference to 3D imaging in BHS
+intro-to-das,excluded,1a6e6c2dd78f14aa55dbe8cea27e052148765262,ariellellouch,lellouch@gmail.com,2021-08-13T16:56:00+03:00,2021-08-13T16:56:00+03:00,0,1,1,1,0,Added description of cross-correlation flow
+intro-to-das,excluded,794f6082ebf03e4811b07cad2e0bde8a93052974,ariellellouch,lellouch@gmail.com,2021-08-13T10:05:58+03:00,2021-08-13T10:05:58+03:00,0,1,1,1,0,cleanup
+intro-to-das,excluded,899f0b1f241ddd0d4ee73b8930ceac45ee3d7a93,ariellellouch,lellouch@gmail.com,2021-08-13T10:03:48+03:00,2021-08-13T10:03:48+03:00,0,1,1,1,0,cleanup
+intro-to-das,excluded,43004deb418b294662d13db55b2ec294229f26a4,ariellellouch,lellouch@gmail.com,2021-08-13T09:52:59+03:00,2021-08-13T09:52:59+03:00,0,1,1,1480,0,Added sweep autocorrelation
+intro-to-das,excluded,ec74729e23665831dbf85c3a6adc09c5d7a66ad4,eileenrmartin,eileenrmartin@vt.edu,2020-09-23T08:23:11-04:00,2020-09-23T08:23:11-04:00,0,1,5,4,0,Update README.md
+intro-to-das,excluded,f14a3a967d25048c66e6c0878d4e9f083f334e89,eileenrmartin,eileenrmartin@vt.edu,2020-08-13T13:37:03-04:00,2020-08-13T13:37:03-04:00,0,1,5,0,0,Update README.md
+intro-to-das,excluded,e6422f4b363c212a1ed0eb61364583e98591d33f,eileenrmartin,eileenrmartin@vt.edu,2020-08-11T16:27:47-04:00,2020-08-11T16:27:47-04:00,0,1,25,24,0,added final Brady Hot Springs report
+intro-to-das,excluded,f6676fc1fb98405e16187793927968354bd0895e,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-10T20:01:50-07:00,2020-08-10T20:01:50-07:00,0,1,2,2,0,modified d/l name and clean up
+intro-to-das,excluded,72432f9ac07fe9e87d05628a79d10379270e461b,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-10T19:43:59-07:00,2020-08-10T19:43:59-07:00,0,1,1402,0,0,modified noise level function
+intro-to-das,excluded,eabffe57f8fc1374599432386edf179cdeb50660,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-10T19:43:27-07:00,2020-08-10T19:43:27-07:00,0,1,0,1396,0,Delete Forge.ipynb
+intro-to-das,excluded,962decc4206bd916fb411ea87db19ada5fb158eb,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-10T19:13:44-07:00,2020-08-10T19:13:44-07:00,0,1,507,86,0,Add files via upload
+intro-to-das,excluded,c04b62b91568f293b919bc153da222247b2e7af9,eileenrmartin,eileenrmartin@vt.edu,2020-08-10T17:48:16-04:00,2020-08-10T17:48:16-04:00,0,1,68,54,0,Created using Colaboratory
+intro-to-das,excluded,33af5069532256d48960f18571175f3521cbd4f9,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-07T14:36:28-07:00,2020-08-07T14:36:28-07:00,0,1,8,9,0,Modified intro...
+intro-to-das,excluded,d9ccd9f51392506638aa6d20946fc509f8fbe7eb,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-07T14:16:59-07:00,2020-08-07T14:16:59-07:00,0,1,149,589,0,Add files via upload
+intro-to-das,excluded,9bd6ee9611175247db50e2dc032b8dc218cbcc72,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-06T11:55:56-07:00,2020-08-06T11:55:56-07:00,0,1,1416,0,0,Add files via upload
+intro-to-das,excluded,be4154eaebc27847a9511389bd1fc837f75ce86f,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-06T11:55:33-07:00,2020-08-06T11:55:33-07:00,0,1,0,1834,0,Delete Forge.ipynb
+intro-to-das,excluded,d23796f52d1143d93f2eecd3e05c86af0a9a2a2e,eileenrmartin,eileenrmartin@vt.edu,2020-08-06T10:15:14-04:00,2020-08-06T10:15:14-04:00,0,1,66,56,0,updated to show more interesting individual trace
+intro-to-das,excluded,fd158bc72f36f97a3991c0bc1fa30a923ef082fe,eileenrmartin,eileenrmartin@vt.edu,2020-08-06T10:13:34-04:00,2020-08-06T10:13:34-04:00,0,1,3,0,0,Update README.md
+intro-to-das,excluded,9f13defb21631e16757b15f794cc445537c82d23,eileenrmartin,eileenrmartin@vt.edu,2020-08-06T10:13:15-04:00,2020-08-06T10:13:15-04:00,0,1,4,1,0,updated readme with link to video+drive directory
+intro-to-das,excluded,7d40e63a5247134114422097e6a36716048283b2,eileenrmartin,eileenrmartin@vt.edu,2020-08-05T16:49:15-04:00,2020-08-05T16:49:15-04:00,0,1,1830,1409,0,Created using Colaboratory - added scipy import prior to obspy install
+intro-to-das,excluded,cc595f73d2838ffd7fab047d86b2bb27eaa259f1,eileenrmartin,eileenrmartin@vt.edu,2020-08-05T10:39:33-04:00,2020-08-05T10:39:33-04:00,0,1,184,122,0,Created using Colaboratory
+intro-to-das,excluded,8fddbb824c3c51e5b740ddd978117465d5c8d9ca,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T19:17:22-07:00,2020-08-02T19:17:22-07:00,0,1,1413,0,0,Add files via upload
+intro-to-das,excluded,de72175cd900b387f2425deffd8463d1e49eeec5,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T19:16:43-07:00,2020-08-02T19:16:43-07:00,0,1,0,1414,0,Delete Forge.ipynb
+intro-to-das,excluded,2eca41ee1084b5029ec53174fff3d11efdf0ff41,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:56:06-07:00,2020-08-02T18:56:06-07:00,0,1,5,5,0,Add files via upload
+intro-to-das,excluded,dd63603e9368e6e11a2358f2c596db798fac8f44,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:51:41-07:00,2020-08-02T18:51:41-07:00,0,1,1414,0,0,Add files via upload
+intro-to-das,excluded,5dfcad47032099e56717af3adf81156c088a0907,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:51:05-07:00,2020-08-02T18:51:05-07:00,0,1,0,1410,0,Delete Forge.ipynb
+intro-to-das,excluded,fb44a5d413f936af9b74b702385c441f0a246e6a,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:36:41-07:00,2020-08-02T18:36:41-07:00,0,1,1410,0,0,Add files via upload
+intro-to-das,excluded,fcb3a0ec944cc91e2fd230d3d0a040bb208d0057,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:36:20-07:00,2020-08-02T18:36:20-07:00,0,1,0,1406,0,Delete Forge.ipynb
+intro-to-das,excluded,355b84f886e25ac99b3c989c3be8ee415bdb2ddb,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:19:31-07:00,2020-08-02T18:19:31-07:00,0,1,1406,0,0,Add files via upload
+intro-to-das,excluded,71e9a868c9920efd84a01b2ed0157a9f3684b478,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T18:19:03-07:00,2020-08-02T18:19:03-07:00,0,1,0,1394,0,Delete Forge.ipynb
+intro-to-das,excluded,8c0466ea6ed74b41f238d80cea409499e36d1104,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T14:42:51-07:00,2020-08-02T14:42:51-07:00,0,1,16,32,0,Add files via upload
+intro-to-das,excluded,88478fcf08ae120f67e2b5165581e0c582a7b737,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T14:42:13-07:00,2020-08-02T14:42:13-07:00,0,1,1410,0,0,Add files via upload
+intro-to-das,excluded,5db7f4ef5f1d321cbf1bc41848b5f1db57574532,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T13:25:49-07:00,2020-08-02T13:25:49-07:00,0,1,0,1410,0,Delete Forge.ipynb
+intro-to-das,excluded,350f7ff641c3c9913585eb65c2c5f8eb2fb6fe19,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T13:23:00-07:00,2020-08-02T13:23:00-07:00,0,1,1410,0,0,download data from Google Drive instead
+intro-to-das,excluded,854eb169b7c9f61b9035fd5886d99a50f496d1ee,Nate James Lindsey,natelindsey@berkeley.edu,2020-08-02T13:22:11-07:00,2020-08-02T13:22:11-07:00,0,1,0,967,0,Delete Forge.ipynb
+intro-to-das,excluded,93d1c403990cfe410f0069db8256e7a5fe13218d,eileenrmartin,eileenrmartin@vt.edu,2020-08-01T21:23:00-04:00,2020-08-01T21:23:00-04:00,0,1,78,55,0,Created using Colaboratory - still can't get the version  of the segy file stored on Drive to not have  corrupted endian argument? so using GDR url  still.
+intro-to-das,excluded,f256e206ca4bdbbbbfd46feb3fd0eb43399476fd,eileenrmartin,eileenrmartin@vt.edu,2020-08-01T18:31:30-04:00,2020-08-01T18:31:30-04:00,0,1,88,146,0,Created using Colaboratory
+intro-to-das,excluded,17094a50974d16fb8c2dff4c07b45f1ca0ab0e00,eileenrmartin,eileenrmartin@vt.edu,2020-08-01T09:26:56-04:00,2020-08-01T09:26:56-04:00,0,1,66,41,0,Created using Colaboratory
+intro-to-das,excluded,63370ad4e903e5ff7eef1b178f6f37eb18fec507,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:30:44-07:00,2020-07-31T12:30:44-07:00,0,1,0,71881,0,Delete get_all_silixa.sh
+intro-to-das,excluded,6bb543c7f35cb3e66f3e23ff237560b761076bd2,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:30:36-07:00,2020-07-31T12:30:36-07:00,0,1,0,55796,0,Delete get_all_slb.sh
+intro-to-das,excluded,4301814825209ee2aeea09253864da8f82a4e7c5,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:30:29-07:00,2020-07-31T12:30:29-07:00,0,1,0,1,0,Delete tmp
+intro-to-das,excluded,7ac26d638a999fa26f9b7b8e65700c57e5de409a,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:30:22-07:00,2020-07-31T12:30:22-07:00,0,1,0,305,0,Delete forge_utils.py
+intro-to-das,excluded,42e1d5ead5404e430d14d56fb55145f4116d4f86,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:29:58-07:00,2020-07-31T12:29:58-07:00,0,1,0,0,1,Delete fiberMappingLocations.png
+intro-to-das,excluded,c9319297945068b03ab9c3e85e5e65501d0a2b16,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:29:51-07:00,2020-07-31T12:29:51-07:00,0,1,0,0,1,Delete fiberMapping.png
+intro-to-das,excluded,369e05b7f2279016e606722764533de8cacd2d25,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:29:44-07:00,2020-07-31T12:29:44-07:00,0,1,0,1,0,Delete __.init.__
+intro-to-das,excluded,75cb0f7b0b925385091d732f9a555999cc49be4b,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:29:34-07:00,2020-07-31T12:29:34-07:00,0,1,0,0,1,Delete FORGE_gather_strainrate.png
+intro-to-das,excluded,b298a52c9bc3fd651ba4bebb21684bbda6f89cc0,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:29:14-07:00,2020-07-31T12:29:14-07:00,0,1,0,13074,0,deleting older notebook
+intro-to-das,excluded,ae745b3c87aad0de9d766220c05d5727ffd3b952,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-31T12:28:38-07:00,2020-07-31T12:28:38-07:00,0,1,967,0,0,forge notebook for distribution to Guides
+intro-to-das,excluded,97c4de1e3984015f2d550fa4e4cacb9059fa6458,eileenrmartin,eileenrmartin@vt.edu,2020-07-31T14:23:21-04:00,2020-07-31T14:23:21-04:00,0,1,219,172,0,Created using Colaboratory
+intro-to-das,excluded,40facf1c92dad5806e7baedb402815861a85b586,eileenrmartin,eileenrmartin@vt.edu,2020-07-31T11:10:29-04:00,2020-07-31T11:10:29-04:00,0,1,386,247,0,Created using Colaboratory
+intro-to-das,excluded,f81fe5de8e9005dce76ad9e84c57d5bdbf1a0736,eileenrmartin,eileenrmartin@vt.edu,2020-07-30T14:58:46-04:00,2020-07-30T14:58:46-04:00,0,1,707,88,0,Created using Colaboratory
+intro-to-das,excluded,14d894d04b5bc413b970ae5b48c87f821221bdfc,Nate,joyce@wakame.stanford.edu,2020-07-30T11:44:35-07:00,2020-07-30T11:44:35-07:00,1,,,,,Merge branch 'master' of https://github.com/eileenrmartin/IntroToDASData
+intro-to-das,excluded,aa482f21064b8fe2c032a1b61be35b017f323c40,Nate,joyce@wakame.stanford.edu,2020-07-30T11:44:17-07:00,2020-07-30T11:44:17-07:00,0,1,2,2,0,adding collab link better
+intro-to-das,excluded,4e969f2b50a95c68c6785ea9ad48f5758bf9ceb3,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-30T10:56:22-07:00,2020-07-30T10:56:22-07:00,0,1,1,0,0,Create __.init.__
+intro-to-das,excluded,b8d8781649581047107fbe8eb45b8793cfc4b72a,Nate,joyce@wakame.stanford.edu,2020-07-30T10:52:30-07:00,2020-07-30T10:52:30-07:00,0,2,13074,0,0,adding collab link
+intro-to-das,excluded,1c12a97dde8f1a5c911de687c20a43259ebc2980,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-30T10:05:09-07:00,2020-07-30T10:05:09-07:00,0,6,127982,0,3,adding support for forge notebook
+intro-to-das,excluded,5640eb94e8449d4975415703bc649499e4e01363,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-30T10:02:58-07:00,2020-07-30T10:02:58-07:00,0,1,1,0,0,Create tmp
+intro-to-das,excluded,8730f637ff5abdb5ce35a50940790950cb2d5884,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-30T10:01:55-07:00,2020-07-30T10:01:55-07:00,0,1,0,6587,0,deleting old forge notebook
+intro-to-das,excluded,1fd6d1648d67c72c835908055e088835460b5bbf,Nate James Lindsey,natelindsey@berkeley.edu,2020-07-30T09:59:15-07:00,2020-07-30T09:59:15-07:00,0,1,13067,0,0,update to Forge Data Analysis Tutorial
+intro-to-das,excluded,44b46338a870d0c092b06c7a21e67eccba38a664,eileenrmartin,eileenrmartin@vt.edu,2020-04-29T09:44:39-04:00,2020-04-29T09:44:39-04:00,0,1,235,2,0,Created using Colaboratory
+intro-to-das,excluded,fde4b3d5f23fa44a533cbdce723bf0930416eb3c,eileenrmartin,eileenrmartin@vt.edu,2020-04-29T09:27:25-04:00,2020-04-29T09:27:25-04:00,0,1,169,20,0,Created using Colaboratory
+intro-to-das,excluded,7997713719edecaabde972dc0dad5d0af9c4a8a2,Nate,joyce@joyce.local,2020-04-16T15:44:10-07:00,2020-04-16T15:44:10-07:00,0,1,6587,0,0,adding Forge notebook draft;
+intro-to-das,excluded,bc7369e62ea2b944569cf372ea0b31e0a93b42d8,eileenrmartin,eileenrmartin@vt.edu,2020-04-14T11:42:53-04:00,2020-04-14T11:42:53-04:00,0,1,70,4,0,Created using Colaboratory
+intro-to-das,excluded,814b8816dbdce2afa1044a1848189e8aa4370230,eileenrmartin,eileenrmartin@vt.edu,2020-04-14T10:49:54-04:00,2020-04-14T10:49:54-04:00,0,1,150,0,0,Created using Colaboratory
+intro-to-das,excluded,a42736b85fbf03ba2f1b8f50676afedcc35b43e2,eileenrmartin,eileenrmartin@vt.edu,2020-04-14T10:31:59-04:00,2020-04-14T10:31:59-04:00,0,2,23,0,0,Initial commit

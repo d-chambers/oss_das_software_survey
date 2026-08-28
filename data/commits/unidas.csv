@@ -1,0 +1,14 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+unidas,included,3af371f3cbd56c558de805f852c94c14c66f4652,Derrick Chambers,d-chambers@users.noreply.github.com,2026-05-16T11:17:28+02:00,2026-05-16T11:17:28+02:00,0,1,1,2,0,Update README.md
+unidas,included,c2fd696cdf7efae7b7933da0bc714f0687cc3e49,Derrick Chambers,d-chambers@users.noreply.github.com,2026-05-16T10:14:56+01:00,2026-05-16T11:14:56+02:00,0,3,63,0,1,add logo (#10)
+unidas,included,6f88f7ead4bc2c460bf36d1a2749cc6c2db6eb28,Derrick Chambers,d-chambers@users.noreply.github.com,2026-05-07T16:20:36+01:00,2026-05-07T17:20:36+02:00,0,8,447,97,0,"Improve DAS conversions, coverage, and release workflow (#9)"
+unidas,included,64e20ba7ffe8dd589d652c75380147607320b8d8,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-18T07:05:11-08:00,2024-12-18T07:05:11-08:00,0,4,72,53,0,"cleanup docs, add post_conversion (#6)"
+unidas,included,d59823788860bac189009bedb762b3b1a04dc14b,derrick chambers,djachambeador@gmail.com,2024-12-18T06:40:58-08:00,2024-12-18T06:40:58-08:00,0,1,1,1,0,readme tweak
+unidas,included,d9bf70970198c15b42e517ab599ab35f03c77d25,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-16T17:59:03-08:00,2024-12-16T17:59:03-08:00,0,1,4,13,0,switch build to hatchling (#5)
+unidas,included,0bdccf55ac07001f27340945c85f9a83bdf593d6,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-16T17:45:47-08:00,2024-12-16T17:45:47-08:00,0,3,7,2,0,Fix license (#4)
+unidas,included,5448db6564a7b7d9e766b3fd7261bd200782c00e,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-16T17:24:50-08:00,2024-12-16T17:24:50-08:00,0,4,67,8,0,"improve error message, fix readme code (#3)"
+unidas,included,c19d93cb5ab72b6440a0fbfe6d03f10107781f1c,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-16T16:32:06-08:00,2024-12-16T16:32:06-08:00,0,12,271,42,0,setup CI (#2)
+unidas,included,a0c6e0f9ca21277cf512dad25a9ffb9c2b179789,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-16T10:59:15-08:00,2024-12-16T10:59:15-08:00,0,2,88,21,0,matrix tests (#1)
+unidas,included,bc68273521ff934fed4e0e5939ca2f410f9e7157,Derrick Chambers,chambers.ja.derrick@gmail.com,2024-12-16T09:27:59-08:00,2024-12-16T09:27:59-08:00,0,2,139,68,0,add matrix conversion tests
+unidas,included,6bf2416e76acb4c2e053a414237cb498d24ff4b0,Derrick Chambers,chambers.ja.derrick@gmail.com,2024-12-12T04:43:33-08:00,2024-12-12T04:43:33-08:00,0,6,1140,1,0,first
+unidas,included,1a4acf2ce75b6e28d87e7f27a89470c525bee9b7,Derrick Chambers,d-chambers@users.noreply.github.com,2024-12-10T15:32:31-08:00,2024-12-10T15:32:31-08:00,0,3,185,0,0,Initial commit

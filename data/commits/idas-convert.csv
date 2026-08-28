@@ -1,0 +1,19 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+idas-convert,included,af05e3aabfb9af1a383616205a9982e02617a1e8,Marius Isken,marius.isken@gfz-potsdam.de,2021-11-16T16:08:25+01:00,2021-11-16T16:08:25+01:00,0,1,0,4,0,upd README
+idas-convert,included,2e039f98ee46bc51f0f7b6615ad8e57a4888ff44,Marius Isken,marius.isken@gfz-potsdam.de,2021-11-16T16:07:28+01:00,2021-11-16T16:07:28+01:00,0,1,16,9,0,update README
+idas-convert,included,b5e73dcb06078e6df016cb3b9ffceb9c05148246,Marius Isken,marius.isken@gfz-potsdam.de,2021-11-15T14:24:32+01:00,2021-11-15T14:24:32+01:00,0,10,51,11,0,"adding license, finish rename to das-convert"
+idas-convert,included,da65ad412abe4b58db05efad7aed69f595da65b0,Marius Isken,marius.isken@gfz-potsdam.de,2021-09-21T09:23:53+00:00,2021-09-21T09:23:53+00:00,0,1,595,0,0,Add 'LICENSE.md'
+idas-convert,included,114f5fa6e4e58637c3d582331dcc27b8706a7ac5,Marius Isken,marius.isken@gfz-potsdam.de,2021-09-21T09:21:10+00:00,2021-09-21T09:21:10+00:00,0,1,10,1,0,Update 'README.md'
+idas-convert,included,8f7b368e5b11b6ef1cef4fdcecc90a746f4d272d,Marius Isken,marius.isken@gfz-potsdam.de,2021-03-11T18:13:02+01:00,2021-03-11T18:13:02+01:00,0,13,316,284,0,renamed doc // added maintenance deploy
+idas-convert,included,f381d827d5bd3dea55a5b43718715ba9f86a34e3,Marius Isken,marius.isken@gfz-potsdam.de,2021-03-11T18:02:17+01:00,2021-03-11T18:02:17+01:00,0,7,74,15,0,docs and tests
+idas-convert,included,4a081628b24303cfb7223ae9e23734dd40d0f306,Marius Isken,marius.isken@gfz-potsdam.de,2021-03-11T13:56:40+01:00,2021-03-11T13:56:40+01:00,0,7,280,2,0,docs: adding docs
+idas-convert,included,5918e884deae3f69858b5ec13bf016cdcee4cd7d,Marius Isken,marius.isken@gfz-potsdam.de,2021-02-12T18:32:29+01:00,2021-02-12T18:32:29+01:00,0,1,2,0,0,update README.md
+idas-convert,included,33f98d44c2baf2c61d8547bf2f3e004e3c6d2552,Marius Isken,marius.isken@gfz-potsdam.de,2021-02-12T18:31:41+01:00,2021-02-12T18:31:41+01:00,0,1,3,0,0,add defensiveness
+idas-convert,included,40251368d7857bfc74692cd3d9c924fb1e4d03c4,Marius Isken,marius.isken@gfz-potsdam.de,2021-02-12T18:28:36+01:00,2021-02-12T18:28:36+01:00,0,2,25,7,0,adding STEIM configuration
+idas-convert,included,8d347ada8da751a89fc52609b1a0ef0e058506fa,Marius Isken,isken@eosc-1.gfz-potsdam.de,2021-02-12T16:58:26+00:00,2021-02-12T16:58:26+00:00,0,1,25,6,0,up
+idas-convert,included,f31f2479e70d32ff0bbff9b5185fbbb84b358415,Marius Isken,isken@eosc-1.gfz-potsdam.de,2021-01-25T16:03:22+00:00,2021-01-25T16:03:22+00:00,0,4,402,238,0,"refactor, better threading"
+idas-convert,included,debf6dc7ebdb4653f44032731eb01e5c4baa1676,Marius Isken,isken@eosc-1.gfz-potsdam.de,2021-01-23T21:05:56+00:00,2021-01-23T21:05:56+00:00,0,3,20,6,0,logging general exception
+idas-convert,included,6c142f2e74ea3e9e5e60657f0cf09d52ef5db951,Marius Isken,isken@eosc-1.gfz-potsdam.de,2021-01-23T19:43:09+00:00,2021-01-23T19:43:09+00:00,0,4,83,25,0,adding checkpoint file
+idas-convert,included,18f7ed83bdadbca65fde373c1caed1a8a3618a06,miili,isken@gfz-potsdam.de,2021-01-22T18:37:03+01:00,2021-01-22T18:37:03+01:00,0,1,0,0,0,added dummy test
+idas-convert,included,4bfc73600b9df502ca17c069765f123dcb86f282,Marius Isken,isken@eosc-1.gfz-potsdam.de,2021-01-21T16:49:46+00:00,2021-01-22T18:33:02+01:00,0,12,890,290,0,refactor
+idas-convert,included,e984aa721dd362c94b9cfa4c7b863a155bfe3b98,miili,marius.isken@gmail.com,2021-01-14T16:30:57+01:00,2021-01-14T16:30:57+01:00,0,5,454,0,0,initial commit

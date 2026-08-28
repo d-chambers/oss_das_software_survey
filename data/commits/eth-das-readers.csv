@@ -1,0 +1,13 @@
+project_id,status,sha,author_name,author_email,authored_at,committed_at,is_merge,files_changed,insertions,deletions,binary_files,subject
+eth-das-readers,included,ea25ff8bd02e49bf4f4adf86b999e66c41760b3a,dcbowden,dcbowden@gmail.com,2024-11-22T01:18:34+01:00,2024-11-22T01:18:34+01:00,0,1,1,1,0,Reduce number of headers to check
+eth-das-readers,included,6f95bf6414565bcd65106b2b0237508162349bc9,dcbowden,dcbowden@gmail.com,2024-07-24T10:51:22+02:00,2024-07-24T10:51:22+02:00,0,1,21,12,0,"bugfix from Sara, dealing with daylong files"
+eth-das-readers,included,0c38d8eb3864bc6705f1673b2c06a337ee9be8d0,dcbowden,dcbowden@gmail.com,2024-07-18T13:31:13+02:00,2024-07-18T13:36:50+02:00,0,1,33,20,0,minor bugfixes in load_das_h5
+eth-das-readers,included,83a5c7ee74d72d4854e72a2ecbe82c683577ef98,dcbowden,dcbowden@gmail.com,2024-06-11T16:29:10+02:00,2024-06-11T16:29:10+02:00,0,1,24,5,0,faster PWS
+eth-das-readers,included,e7a548ab9c39f96a8575751d7308792c5a68743b,dcbowden,dcbowden@gmail.com,2024-03-15T15:18:27+01:00,2024-03-15T15:18:27+01:00,0,1,0,1,0,update comments
+eth-das-readers,included,2a9df5adc32c7710ce304a7292144ccdf0d5dcdd,dcbowden,dcbowden@gmail.com,2024-03-15T15:16:56+01:00,2024-03-15T15:16:56+01:00,0,1,1,1,0,update comments
+eth-das-readers,included,023caa597f5ae9d1ef311dad41b57a5930f92ce9,dcbowden,dcbowden@gmail.com,2024-03-13T11:31:41+01:00,2024-03-13T11:31:41+01:00,0,1,17,17,0,updated for python>3.10
+eth-das-readers,included,634a8d1dfa1beea6a2ace38869703e5b3b08536d,dcbowden,dcbowden@gmail.com,2023-04-24T14:49:03+02:00,2023-04-24T14:49:03+02:00,0,2,171,15,0,add block_spectra scripts from Sara
+eth-das-readers,included,dc6476390323af96a5bd9039212ce9f7cb08fa74,dcbowden,dcbowden@gmail.com,2023-04-24T13:11:27+02:00,2023-04-24T13:11:27+02:00,0,1,29,0,0,support YYYY-MM-DD
+eth-das-readers,included,fd106a32036c4115157e87951ecc6ac51799875f,dcbowden,dcbowden@gmail.com,2023-04-24T13:02:22+02:00,2023-04-24T13:02:22+02:00,0,1,1,1,0,update readme
+eth-das-readers,included,96a2d2e348962b7382fb1e0a50c3db666cfc0eaf,dcbowden,dcbowden@gmail.com,2023-03-28T06:35:59+02:00,2023-03-28T06:35:59+02:00,0,21,11377,792,5,dealing with large file
+eth-das-readers,included,5a78cbf36974d6c785405fabb18ebe5bab93774b,DCBowden,daniel.bowden@erdw.ethz.ch,2023-01-31T16:31:06+01:00,2023-01-31T16:31:06+01:00,0,14,2676,0,4,github upload
