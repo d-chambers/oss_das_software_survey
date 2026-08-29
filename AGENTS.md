@@ -44,13 +44,15 @@ A figure built in conversation is not a change to be shipped. Do what was asked 
 
 ## The deck
 
-`deck/slides.qmd` compiles to `deck/talk.pdf` through Quarto and Beamer. `scripts/d010_deck.py` runs it.
+`cd deck && quarto render` builds `talk.pdf`. That is the whole build: `_quarto.yml` names `prepare.py` as a pre-render step, so quarto runs it. `quarto render --profile notes --output talk-notes.pdf` writes the speaker notes alone.
 
-- **A number on a slide is a reference, never a literal.** Slides cite `{{< meta n.<path> >}}` into `figures/figures.json`; the build resolves them and fails on a key it cannot find. The deck this replaced hard-coded its numbers and ended up saying 78 projects on one slide and 77 on the next.
-- Figures are referenced by path from `figures/`, and the build refuses to run when they and `figures.json` are not from one build. Run `v000_build_all.py` first.
-- `incremental: true` gives each bullet its own PDF page, with the frame title static. That is what "animation" means in a PDF.
-- Slides carry no prose, per the figure rules; the talk lives in `::: {.notes}`. `--notes` renders those alone as `talk-notes.pdf`.
-- Built PDFs and `_numbers.yml` are gitignored. The source is the `.qmd` and `_theme.tex`.
+- **A number on a slide is a reference, never a literal.** Slides cite `{{< meta n.<path> >}}` into `figures/figures.json`; a key the sidecar does not define stops the render. The deck this replaced hard-coded its numbers and said 78 projects on one slide and 77 on the next.
+- **Name the numbers a slide quotes.** `sidecar()` exports `hub`/`hub_dependents` rather than leaving them at `providers.0.2`: a positional path is not a citation anyone can read, and quarto cannot resolve one.
+- Figures are cited by path, and `prepare.py` checks each against the checksum `v000_build_all.py` recorded. Modification times cannot do this -- git rewrites them all on checkout -- so it compares content.
+- Hand-drawn SVGs are converted to PDF by the same step; beamer cannot place an SVG.
+- `prepare.py` uses the standard library alone. Quarto invokes a pre-render script with the system interpreter, which cannot see this project's environment.
+- `incremental: true` gives each bullet its own page with the frame title static. That is what animation means in a PDF.
+- Built PDFs, `_numbers.yml` and `_svg/` are gitignored. The source is `slides.qmd`, `_theme.tex` and `assets/`.
 
 ## Definition of done
 

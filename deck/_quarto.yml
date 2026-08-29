@@ -1,0 +1,19 @@
+# `quarto render` is the whole build. The pre-render step resolves the numbers
+# the slides cite, checks that the figures are the ones those numbers describe,
+# and converts hand-drawn SVGs to PDF -- three things quarto has no native way
+# to do, and all three are what keep a slide from printing a stale figure.
+project:
+  type: default
+  pre-render: prepare.py
+  output-dir: .
+
+format:
+  beamer:
+    aspectratio: 169
+    incremental: true
+    include-in-header: _theme.tex
+    slide-level: 2
+    pdf-engine: pdflatex
+
+metadata-files:
+  - _numbers.yml

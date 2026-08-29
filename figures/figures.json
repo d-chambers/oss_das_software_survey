@@ -1377,10 +1377,12 @@
   ],
   "projects": 77,
   "connected": 26,
-  "isolated": 51
+  "isolated": 51,
+  "hub": "DASCore",
+  "hub_dependents": 13
  },
- "ecosystems": [
-  {
+ "ecosystems": {
+  "das": {
    "name": "DAS",
    "providers": [
     [
@@ -1422,9 +1424,12 @@
    "projects": 60,
    "connected": 18,
    "consumers": 12,
-   "edges": 17
+   "edges": 17,
+   "hub": "DASCore",
+   "hub_dependents": 8,
+   "share_percent": 20
   },
-  {
+  "seismology": {
    "name": "Seismology",
    "providers": [
     [
@@ -1511,9 +1516,12 @@
    "projects": 342,
    "connected": 177,
    "consumers": 167,
-   "edges": 192
+   "edges": 192,
+   "hub": "obspy",
+   "hub_dependents": 150,
+   "share_percent": 49
   }
- ],
+ },
  "archive_abstractions": [
   {
    "project": "DASCore",

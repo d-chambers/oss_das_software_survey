@@ -11,7 +11,7 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 DECK = ROOT / "deck"
-SCRIPT = ROOT / "scripts" / "d010_deck.py"
+SCRIPT = ROOT / "deck" / "prepare.py"
 
 pytestmark = pytest.mark.skipif(
     not (DECK / "slides.qmd").exists(), reason="no deck in this checkout"
@@ -20,7 +20,7 @@ pytestmark = pytest.mark.skipif(
 
 def build(*args: str) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
-        [sys.executable, str(SCRIPT), "--no-render", *args],
+        [sys.executable, str(SCRIPT), *args],
         cwd=ROOT,
         capture_output=True,
         text=True,

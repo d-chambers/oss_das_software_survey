@@ -70,7 +70,9 @@ def main() -> int:
         "dependencies": dependency_mix_from_records().sidecar(),
         "language_platform": language_platform().sidecar(),
         "network": network_from_records().sidecar(),
-        "ecosystems": [graph.sidecar() for graph in ecosystems()],
+        # Keyed by ecosystem, not positional: a slide cites n.ecosystems.seismology
+        # and stays right if the order ever changes.
+        "ecosystems": {graph.name.lower(): graph.sidecar() for graph in ecosystems()},
         "archive_abstractions": [model.sidecar() for model in archive_abstractions()],
     }
     # A checksum per figure, so a consumer can prove a figure and these numbers

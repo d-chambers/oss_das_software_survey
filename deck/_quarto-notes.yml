@@ -1,0 +1,9 @@
+# `quarto render --profile notes --output talk-notes.pdf` writes the speaker
+# notes alone. The output name must be given on the command line: a profile
+# cannot override the document's own `output-file`, and without it this profile
+# writes the notes over talk.pdf.
+format:
+  beamer:
+    include-in-header:
+      - _theme.tex
+      - _notes.tex

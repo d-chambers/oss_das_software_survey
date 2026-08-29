@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-"""Compile the talk from the repository: figures, numbers, and slides.
+"""Quarto pre-render step for the talk. Run by `quarto render`, not by hand.
 
-Reads:  figures/figures.json, figures/*.png, deck/slides.qmd
-Writes: deck/_numbers.yml, deck/talk.pdf
+Reads:  figures/figures.json, figures/*.png, figures/*.svg, deck/slides.qmd
+Writes: deck/_numbers.yml, deck/_svg/*.pdf
 
-Every number on a slide is a reference into the measurement sidecar, never a
-literal. A deck that hard-codes its numbers goes stale silently -- the previous
-one showed 78 projects on one slide and 77 on the next -- so a reference this
-script cannot resolve fails the build instead of rendering blank.
+Three jobs quarto has no native way to do:
+
+* resolve the measurements the slides cite into metadata quarto can substitute,
+* prove each figure is the one those measurements describe, and
+* convert hand-drawn SVGs to PDF, which beamer cannot place directly.
+
+The first two exist because a deck that hard-codes its numbers goes stale
+silently: the deck this replaced showed 78 projects on one slide and 77 on the
+next. A citation this step cannot resolve stops the render.
 """
 
 from __future__ import annotations
@@ -22,15 +27,16 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import yaml
-
-from oss_das.core import PATHS
-
 #: How a slide cites a measurement: {{< meta n.ecosystem_totals.projects >}}
 REFERENCE = re.compile(r"\{\{<\s*meta\s+n\.([A-Za-z0-9_.]+)\s*>\}\}")
 
 #: How a slide cites a figure. Every one must exist, or the slide renders a gap.
 FIGURE = re.compile(r"!\[[^\]]*\]\((\.\./figures/[^)]+)\)")
+
+#: How a slide cites a hand-drawn figure. Beamer cannot place an SVG, so the
+#: build converts each to PDF -- vector in, vector out, sharp at any projection
+#: size -- and the slide references the converted file.
+VECTOR = re.compile(r"\(_svg/([A-Za-z0-9_.-]+)\.pdf\)")
 
 #: Figures that scripts/v000_build_all.py regenerates, and so must be current.
 GENERATED = re.compile(r"/v\d{3}_")
@@ -64,24 +70,21 @@ def render_number(value: Any) -> str:
     return f"{value:,}" if abs(value) >= 1_000 else f"{value:g}"
 
 
-def render(deck: Path, slides: Path, numbers: Path, extra: list[str] | None = None):
-    """Run quarto in the deck directory, surfacing only what failed."""
-    result = subprocess.run(
-        [
-            "quarto",
-            "render",
-            slides.name,
-            "--metadata-file",
-            numbers.name,
-            *(extra or []),
-        ],
-        cwd=deck,
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode != 0:
-        sys.stderr.write(result.stderr[-4000:])
-    return result.returncode
+def as_yaml(tree: dict, indent: int = 0) -> str:
+    """The nested mapping quarto substitutes from, quoted so it cannot re-type.
+
+    Hand-rolled rather than PyYAML: quarto runs a pre-render script with the
+    system interpreter, which has no access to this project's environment.
+    """
+    lines = []
+    for key, value in tree.items():
+        pad = "  " * indent
+        if isinstance(value, dict):
+            lines.append(f"{pad}{key}:")
+            lines.append(as_yaml(value, indent + 1).rstrip("\n"))
+        else:
+            lines.append(f"{pad}{key}: '{str(value).replace(chr(39), chr(39) * 2)}'")
+    return "\n".join(lines) + "\n"
 
 
 def main() -> int:
@@ -91,16 +94,8 @@ def main() -> int:
     parser.add_argument(
         "--root",
         type=Path,
-        default=PATHS.root,
+        default=Path(__file__).resolve().parents[1],
         help="Tree holding deck/ and figures/. Defaults to the repository.",
-    )
-    parser.add_argument(
-        "--no-render", action="store_true", help="Resolve numbers but skip quarto."
-    )
-    parser.add_argument(
-        "--notes",
-        action="store_true",
-        help="Also write talk-notes.pdf, the speaker notes alone.",
     )
     args = parser.parse_args()
 
@@ -128,6 +123,41 @@ def main() -> int:
         )
         return 2
 
+    # Convert every cited SVG before anything looks for the file it becomes.
+    vectors = sorted(set(VECTOR.findall(text)))
+    if vectors:
+        if shutil.which("inkscape") is None:
+            print(
+                "inkscape is not installed, so the vector figures cannot be "
+                f"converted: {vectors}",
+                file=sys.stderr,
+            )
+            return 2
+        built = deck / "_svg"
+        built.mkdir(exist_ok=True)
+        for stem in vectors:
+            source = args.root / "figures" / f"{stem}.svg"
+            if not source.exists():
+                print(f"no such vector figure: {source}", file=sys.stderr)
+                return 2
+            target = built / f"{stem}.pdf"
+            if target.exists() and target.stat().st_mtime >= source.stat().st_mtime:
+                continue
+            code = subprocess.run(
+                [
+                    "inkscape",
+                    "--export-type=pdf",
+                    "--export-area-drawing",
+                    f"--export-filename={target}",
+                    str(source),
+                ],
+                capture_output=True,
+            ).returncode
+            if code != 0 or not target.exists():
+                print(f"could not convert {source}", file=sys.stderr)
+                return 2
+        print(f"converted {len(vectors)} vector figures", file=sys.stderr)
+
     figures = sorted(set(FIGURE.findall(text)))
     absent = [f for f in figures if not (deck / f).resolve().exists()]
     if absent:
@@ -137,7 +167,9 @@ def main() -> int:
     # Anything naming figures/ that the reference form did not catch would slip
     # past both checks above and render as a gap.
     unaccounted = sorted(
-        set(re.findall(r"[^\s()\[\]\"']*figures/[^\s()\[\]\"']+", text)) - set(figures)
+        set(re.findall(r"[^\s()\[\]\"']*figures/[^\s()\[\]\"']+", text))
+        - set(figures)
+        - {f"figures/{stem}.svg" for stem in vectors}
     )
     if unaccounted:
         print(
@@ -187,46 +219,9 @@ def main() -> int:
 
     out = deck / "_numbers.yml"
     out.write_text(
-        "# Written by scripts/d010_deck.py. Do not edit.\n"
-        + yaml.safe_dump(
-            {"n": tree}, sort_keys=True, default_flow_style=False, default_style="'"
-        )
+        "# Written by deck/prepare.py. Do not edit.\n" + as_yaml({"n": tree})
     )
     print(f"resolved {len(wanted)} numbers and {len(figures)} figures", file=sys.stderr)
-
-    if args.no_render:
-        return 0
-    if shutil.which("quarto") is None:
-        print("quarto is not installed, so no PDF was written", file=sys.stderr)
-        return 2
-    if render(deck, slides, out) != 0:
-        return 1
-    print(f"wrote {deck / 'talk.pdf'}", file=sys.stderr)
-
-    if args.notes:
-        # The slides carry no prose by design, so the notes are where the talk
-        # actually lives. Beamer hides them from the slide PDF; this renders
-        # them alone, as something to hold.
-        header = deck / "_notes.tex"
-        header.write_text(
-            "\\setbeameroption{show only notes}\n"
-            "\\setbeamerfont{note page}{size=\\small}\n"
-        )
-        code = render(
-            deck,
-            slides,
-            out,
-            extra=[
-                "--metadata",
-                "include-in-header:_notes.tex",
-                "--output",
-                "talk-notes.pdf",
-            ],
-        )
-        header.unlink(missing_ok=True)
-        if code != 0:
-            return 1
-        print(f"wrote {deck / 'talk-notes.pdf'}", file=sys.stderr)
     return 0
 
 

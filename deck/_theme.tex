@@ -1,32 +1,58 @@
-% Approximates the INERIS deck: a restrained frame around figures that already
-% carry the identity. The figures are transparent, so the slide ground shows
-% through and must stay light.
+% The Ineris deck template, carried over from chambers_presentation.pptx:
+% colours are the theme's own (ppt/theme/theme2.xml), and the logo is the
+% master's image1.jpg. Figures are transparent, so the ground stays white.
 \usepackage{helvet}
+\usepackage{tikz}
 \renewcommand{\familydefault}{\sfdefault}
 
+\definecolor{inerisblue}{HTML}{000091}
+\definecolor{inerisgreen}{HTML}{005841}
+\definecolor{inerisred}{HTML}{E1000F}
 \definecolor{ink}{HTML}{2B2620}
-\definecolor{amber}{HTML}{C98500}
 \definecolor{muted}{HTML}{7A7266}
 \definecolor{rule}{HTML}{CBC3B3}
 
-\setbeamercolor{structure}{fg=amber}
-\setbeamercolor{frametitle}{fg=ink, bg=white}
+\setbeamercolor{structure}{fg=inerisblue}
+\setbeamercolor{frametitle}{fg=inerisblue, bg=white}
 \setbeamercolor{normal text}{fg=ink, bg=white}
-\setbeamercolor{itemize item}{fg=amber}
+\setbeamercolor{title}{fg=inerisblue}
+\setbeamercolor{author}{fg=muted}
+\setbeamercolor{institute}{fg=muted}
+\setbeamercolor{date}{fg=muted}
+\setbeamercolor{itemize item}{fg=inerisblue}
 \setbeamercolor{itemize subitem}{fg=muted}
-\setbeamercolor{footline}{fg=muted}
+\setbeamercolor{alerted text}{fg=inerisred}
 
 \setbeamerfont{frametitle}{size=\Large, series=\bfseries}
 \setbeamerfont{itemize/enumerate body}{size=\large}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{itemize item}{\textbullet}
 
-% A rule under the title, in the figures' own palette.
+% Title bar: the institute's blue rule under every frame title.
 \setbeamertemplate{frametitle}{%
-  \vspace{0.6em}\hspace{0.4em}\insertframetitle\par
-  \hspace{0.4em}{\color{rule}\rule{0.94\paperwidth}{1pt}}}
+  \vspace{0.55em}\hspace{0.45em}\insertframetitle\par
+  \hspace{0.45em}{\color{inerisblue}\rule{0.93\linewidth}{1.2pt}}}
 
-% Footer: institute left, slide number right, nothing else.
+% Footer: institute left, logo and slide number right, on every slide.
 \setbeamertemplate{footline}{%
-  \hspace{0.5em}{\color{muted}\tiny Ineris — Galileo, 2026}\hfill
-  {\color{muted}\tiny\insertframenumber}\hspace{0.5em}\vspace{0.3em}}
+  \hspace{0.5em}{\color{muted}\tiny
+    Institut national de l'environnement industriel et des risques}%
+  \hfill
+  \raisebox{-0.15em}{\includegraphics[height=1.15em]{assets/ineris_logo.jpg}}%
+  \hspace{0.5em}{\color{muted}\tiny\insertframenumber}\hspace{0.5em}\vspace{0.35em}}
+
+% Title slide: the institute's cover image, its logo, and nothing else.
+\setbeamertemplate{title page}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east, inner sep=0.6cm] at (current page.north east)
+      {\includegraphics[height=1.5cm]{assets/ineris_logo.jpg}};
+  \end{tikzpicture}%
+  \vspace{1.7cm}
+  % Held clear of the logo in the top-right corner.
+  \begin{minipage}{0.74\linewidth}
+    {\color{inerisblue}\Huge\bfseries\inserttitle\par}
+  \end{minipage}\par
+  \vspace{0.4em}{\color{inerisblue}\rule{0.55\linewidth}{1.2pt}}\par
+  \vspace{0.9em}{\large\insertauthor\par}
+  \vspace{0.2em}{\color{muted}\insertinstitute\par}
+  \vspace{0.6em}{\color{muted}\small\insertdate\par}}

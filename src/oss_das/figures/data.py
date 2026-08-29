@@ -1683,12 +1683,17 @@ class Network:
         return self.projects - self.connected
 
     def sidecar(self) -> dict[str, Any]:
+        hub = self.providers[0] if self.providers else ("", "", 0)
         return {
             "links": [asdict(link) for link in self.links],
             "providers": [list(p) for p in self.providers],
             "projects": self.projects,
             "connected": self.connected,
             "isolated": self.isolated,
+            # Named, because a slide quotes these and "providers.0.2" is not a
+            # citation anyone can read or a path every consumer can resolve.
+            "hub": hub[1],
+            "hub_dependents": hub[2],
         }
 
 
@@ -1792,6 +1797,7 @@ class EcosystemGraph:
         return self.consumers / self.projects if self.projects else 0.0
 
     def sidecar(self) -> dict[str, Any]:
+        hub = self.providers[0] if self.providers else ("", "", 0)
         return {
             "name": self.name,
             "providers": [list(p) for p in self.providers],
@@ -1799,6 +1805,9 @@ class EcosystemGraph:
             "connected": self.connected,
             "consumers": self.consumers,
             "edges": self.edges,
+            "hub": hub[1],
+            "hub_dependents": hub[2],
+            "share_percent": round(100 * self.share),
         }
 
 
