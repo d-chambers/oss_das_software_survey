@@ -44,7 +44,7 @@ A figure built in conversation is not a change to be shipped. Do what was asked 
 
 ## The deck
 
-`deck/slides.qmd` compiles to `deck/talk.pdf` through Quarto and Beamer. `scripts/v900_deck.py` runs it.
+`deck/slides.qmd` compiles to `deck/talk.pdf` through Quarto and Beamer. `scripts/d010_deck.py` runs it.
 
 - **A number on a slide is a reference, never a literal.** Slides cite `{{< meta n.<path> >}}` into `figures/figures.json`; the build resolves them and fails on a key it cannot find. The deck this replaced hard-coded its numbers and ended up saying 78 projects on one slide and 77 on the next.
 - Figures are referenced by path from `figures/`, and the build refuses to run when they and `figures.json` are not from one build. Run `v000_build_all.py` first.

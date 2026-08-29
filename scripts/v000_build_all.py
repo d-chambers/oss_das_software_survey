@@ -8,6 +8,7 @@ status is non-zero so a failure cannot pass unnoticed.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import subprocess
 import sys
@@ -70,9 +71,14 @@ def main() -> int:
         "language_platform": language_platform().sidecar(),
         "network": network_from_records().sidecar(),
         "ecosystems": [graph.sidecar() for graph in ecosystems()],
-        "archive_abstractions": [
-            model.sidecar() for model in archive_abstractions()
-        ],
+        "archive_abstractions": [model.sidecar() for model in archive_abstractions()],
+    }
+    # A checksum per figure, so a consumer can prove a figure and these numbers
+    # came from one build. Modification times cannot: git rewrites them all to
+    # the checkout time, which made a stale figure look current.
+    sidecar["figures"] = {
+        path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+        for path in sorted(out.glob("v[0-9][0-9][0-9]_*.png"))
     }
     (out / "figures.json").write_text(json.dumps(sidecar, indent=1) + "\n")
     print(f"wrote {out / 'figures.json'}", file=sys.stderr)

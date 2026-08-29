@@ -1539,5 +1539,25 @@
    ],
    "logo_source": "https://github.com/xdas-dev/xdas/blob/0.2.8/docs/_static/logo-light.png"
   }
- ]
+ ],
+ "figures": {
+  "v010_pipeline.png": "b685e1c32f801a06be5900eb295d68695166502802366e672d0153358b97ba63",
+  "v020_totals.png": "162b99925e3df350b67481dc96a486b13424dfd2826f4af2f8a31d7345b66af0",
+  "v030_funnel.png": "a78cd4ec56a27c0486e2c0e8f83199f64eaf8af9a62842f0edd923e9c7e0f4e7",
+  "v040_coverage.png": "1aee1cbf304e4065869efaca2b70e2abf287cbcc8b785317232cb984b29e65b0",
+  "v050_maturity.png": "eb0203b9866616c68ce6d19fb1b8d933d1d1ead7031f3b15630e1ec338ebd194",
+  "v060_licence.png": "888766d01bed88ea69fdcd25a95a23babbcb407ee149b5de7aea4b61c089ec55",
+  "v070_growth.png": "158ac07cb2e8d35930295637e3d207a7fd45ac03aadde1834830d13443e30756",
+  "v080_composition.png": "da01fc85b4499853cc885a19852a0a729088374396cac154f779be3944e1d092",
+  "v090_record_section.png": "6f2cb90e55c265941a91b7df0eec79c353b34cc2f10d4b02e534b333f5f459a2",
+  "v100_language_licence.png": "fe7fb72f95aba9c81d3f266ad0c051a2a80ca49c0f09de48f3a49e60767931a9",
+  "v110_growth_by_category.png": "d5a8afc6c8f01a106eaaefbf29719fcc2618844926c84009539a63d162142e07",
+  "v120_growth_by_cohort.png": "eb9d5c1d8c0769ab2ecf12df58179c7237258b59e92d63cc2e9cbe8d962396b8",
+  "v130_engineering.png": "080ec98507d988370338a59177619404cbbf215efa29f19c277a88393d5a09bb",
+  "v140_dependencies.png": "89102758cfd683b7579576578c7cdcfeb30e40169f87872a09ee03f4bc60eadf",
+  "v150_language_platform.png": "0ca780487298ec0ab1d3244a46753f64c635053107094b64c5648e7a0ff9f6de",
+  "v160_network.png": "e7d103bfbb6c3f3b7406a854958a15c0e1ade4b833513595d1b159b2d0f8b9b1",
+  "v170_ecosystems.png": "aec68ff964dfab537008dd232f60e7ba75d11bc56647ed5958c9db925d8721ea",
+  "v180_archive_abstractions.png": "f185d1379b64ef1d8ce902a485276a20e94ba70b6d7b04b3ac7db015ae32262c"
+ }
 }

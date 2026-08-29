@@ -61,7 +61,8 @@ content — so lead with projects and commits if challenged.
 
 ::: {.notes}
 One bar per project, ordered by first commit. 76 of the
-{{< meta n.ecosystem_totals.projects >}} began in 2020 or later. The hardware is
+{{< meta n.ecosystem_totals.projects >}} began in 2020 or later; only dastools
+predates it. The hardware is
 decades old; essentially all of the software is five years old or less. That is
 the single fact that explains everything that follows.
 :::
@@ -71,25 +72,31 @@ the single fact that explains everything that follows.
 ![](../figures/v130_engineering.png){height=76%}
 
 ::: {.notes}
-Four questions a stranger asks before depending on your code. Most projects
-answer the licence question and almost none answer the packaging one:
-{{< meta n.composition.with_packaging >}} are set up as a package,
-{{< meta n.composition.with_pypi >}} actually published.
+Four questions a stranger asks before depending on your code. Most answer the
+licence one. Two-thirds carry a packaging manifest --
+{{< meta n.composition.with_packaging >}} of
+{{< meta n.ecosystem_totals.projects >}} -- but only
+{{< meta n.composition.with_pypi >}} ever published one. That is the mechanical
+reason for the next slide.
 :::
 
-## Most projects build on nothing
+## We build on NumPy, not on each other
 
 ![](../figures/v160_network.png){height=76%}
 
 ::: {.notes}
-This is the finding. 51 of {{< meta n.ecosystem_totals.projects >}} projects
-depend on nothing in the census and nothing depends on them. One hub with 13
-dependents, four small clusters, and everything else standing alone.
+This is the finding. {{< meta n.network.isolated >}} of
+{{< meta n.ecosystem_totals.projects >}} projects depend on nothing in this
+census and nothing depends on them. DASCore with
+{{< meta n.network.providers.0.2 >}} dependents, five others with two or three
+each, and everything else standing alone. The figure shows 21 that depend on
+another and 10 that are depended on -- five projects are in both columns, so
+those do not add up to the 26 connected.
 
 If asked why DASCore reads 13 here and 8 on the next slide: this graph counts
 declared manifests and imports; the comparison counts manifests only, because
-that is the only evidence available for 677 seismology repositories read over
-an API.
+that is the only evidence available for seismology repositories read over an
+API rather than cloned.
 :::
 
 ## Half as connected as seismology
@@ -98,7 +105,12 @@ an API.
 
 ::: {.notes}
 Same measurement, both fields, manifests only so the two are comparable.
-Seismology has ObsPy, depended on by 44 per cent of its packages. We have no
+Seismology has ObsPy, depended on by
+{{< meta n.ecosystems.1.providers.0.2 >}} of its
+{{< meta n.ecosystems.1.projects >}} projects. The denominator narrows from
+{{< meta n.ecosystem_totals.projects >}} to
+{{< meta n.ecosystems.0.projects >}} on our side because only those carry a
+packaging manifest, which is the only bar both fields can be measured on. We have no
 equivalent. Say "roughly half as connected", not the precise percentages — the
 DAS set is hand-curated and the seismology set is scraped, so the comparison is
 directional.
@@ -106,8 +118,10 @@ directional.
 
 ## Five tools, five different jobs
 
-- **DASCore** — general data handling, a foundation for other packages
-- **xdas** — very large or live continuous acquisitions
+### I maintain DASCore. {.alert}
+
+- **DASCore** — general data handling and package foundations
+- **xdas** — very large or live continuous acquisitions, and foundations at scale
 - **DASPy** — broad seismological analysis in scripts and notebooks
 - **DAS4Whales** — marine bioacoustics, end to end
 - **Lightguide** — Pyrocko modelling and the published AFK filter
@@ -121,11 +135,11 @@ processing is central rather than incidental, start with xdas.
 
 ## "Large data" means five different things
 
-- **DASCore** — indexes sources, selects and chunks across files
+- **DASCore** — indexes, selects and chunks across files; each patch eager
 - **xdas** — virtual arrays, stateful chunk-continuous pipelines, streaming
-- **DASPy** — sequential file loop that carries filter state across boundaries
+- **DASPy** — continuous-file processing that carries filter state across boundaries
 - **DAS4Whales** — targeted Dask and xarray helpers over NumPy workflows
-- **Lightguide** — native parallel code accelerating one filter
+- **Lightguide** — Rust-accelerated AFK denoising
 
 ::: {.notes}
 Each of these is a reasonable answer to a different question. None of the labels
@@ -165,7 +179,7 @@ These are the four places where nothing in the census is a complete answer yet.
 
 ## Conclusions
 
-- A young ecosystem: 76 of {{< meta n.ecosystem_totals.projects >}} began after 2020
+- 76 of {{< meta n.ecosystem_totals.projects >}} projects began in 2020 or later
 - Most projects build on nothing
 - Five tools cover five different jobs
 - Interoperate rather than re-implement
@@ -179,6 +193,8 @@ data model rather than inventing a sixth.
 
 ::: {.nonincremental}
 derrick.chambers@ineris.fr · github.com/d-chambers
+
+github.com/d-chambers/oss_das_software_survey
 :::
 
 # Appendix

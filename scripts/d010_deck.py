@@ -13,6 +13,7 @@ script cannot resolve fails the build instead of rendering blank.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -46,7 +47,13 @@ def flatten(value: Any, prefix: str = "") -> dict[str, Any]:
             out.update(flatten(item, f"{prefix}.{key}" if prefix else str(key)))
         return out
     if isinstance(value, list):
-        return {}
+        # By index, so n.network.providers.0.2 reaches the hub's count. Dropping
+        # lists put the most quotable numbers out of reach and pushed them back
+        # onto the slides as literals, which is what this build exists to stop.
+        out = {}
+        for index, item in enumerate(value):
+            out.update(flatten(item, f"{prefix}.{index}" if prefix else str(index)))
+        return out
     return {prefix: value}
 
 
@@ -110,29 +117,62 @@ def main() -> int:
 
     wanted = set(REFERENCE.findall(text))
     missing = sorted(key for key in wanted if key not in numbers)
-    assert not missing, (
-        "the deck cites measurements the sidecar does not define: "
-        + ", ".join(missing)
-        + " -- re-run scripts/v000_build_all.py, or fix the reference"
-    )
+    if missing:
+        # An authoring mistake, not an unreachable state, so it reports rather
+        # than raising: a traceback tells the author less than the sentence does.
+        print(
+            "the deck cites measurements the sidecar does not define: "
+            + ", ".join(missing)
+            + " -- re-run scripts/v000_build_all.py, or fix the reference",
+            file=sys.stderr,
+        )
+        return 2
 
     figures = sorted(set(FIGURE.findall(text)))
     absent = [f for f in figures if not (deck / f).resolve().exists()]
-    assert not absent, f"the deck cites figures that do not exist: {absent}"
+    if absent:
+        print(f"the deck cites figures that do not exist: {absent}", file=sys.stderr)
+        return 2
 
-    # Generated figures and the sidecar must come from one build. The sidecar is
-    # written last, so seconds of spread are normal; a figure from an earlier run
-    # is a figure drawn from numbers the slides no longer cite. Hand-drawn
-    # diagrams are exempt -- nothing regenerates them.
-    stamps = [
-        (deck / f).resolve().stat().st_mtime for f in figures if GENERATED.search(f)
-    ]
-    stamps.append(sidecar.stat().st_mtime)
-    spread = max(stamps) - min(stamps)
-    assert spread < ONE_BUILD, (
-        f"figures and figures.json span {spread / 60:.0f} minutes, so they are not "
-        "from one build -- run scripts/v000_build_all.py"
+    # Anything naming figures/ that the reference form did not catch would slip
+    # past both checks above and render as a gap.
+    unaccounted = sorted(
+        set(re.findall(r"[^\s()\[\]\"']*figures/[^\s()\[\]\"']+", text)) - set(figures)
     )
+    if unaccounted:
+        print(
+            f"figures referenced in a form this build cannot check: {unaccounted}",
+            file=sys.stderr,
+        )
+        return 2
+
+    # Content, not modification time. Git rewrites every mtime to the checkout
+    # time, so a spread of seconds proved nothing: a stale figure beside a fresh
+    # sidecar looked current, which is the exact failure this guards against.
+    recorded = json.loads(sidecar.read_text()).get("figures") or {}
+    if not recorded:
+        print(
+            "figures.json records no figure checksums; re-run "
+            "scripts/v000_build_all.py",
+            file=sys.stderr,
+        )
+        return 2
+    drifted = []
+    for reference in figures:
+        path = (deck / reference).resolve()
+        if not GENERATED.search(reference):
+            continue
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        if recorded.get(path.name) != digest:
+            drifted.append(path.name)
+    if drifted:
+        print(
+            f"these figures are not the ones figures.json describes: "
+            f"{', '.join(sorted(drifted))} -- run scripts/v000_build_all.py so "
+            "the slides and their numbers come from one build",
+            file=sys.stderr,
+        )
+        return 2
 
     # Nested, not flat: quarto resolves {{< meta n.a.b >}} by walking the
     # metadata tree, so a key literally named "a.b" is never found and the
@@ -144,10 +184,13 @@ def main() -> int:
         for part in parents:
             cursor = cursor.setdefault(part, {})
         cursor[leaf] = render_number(numbers[key])
+
     out = deck / "_numbers.yml"
     out.write_text(
-        "# Written by scripts/v900_deck.py. Do not edit.\n"
-        + yaml.safe_dump({"n": tree}, sort_keys=True, default_flow_style=False)
+        "# Written by scripts/d010_deck.py. Do not edit.\n"
+        + yaml.safe_dump(
+            {"n": tree}, sort_keys=True, default_flow_style=False, default_style="'"
+        )
     )
     print(f"resolved {len(wanted)} numbers and {len(figures)} figures", file=sys.stderr)
 
