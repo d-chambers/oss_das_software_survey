@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="420" viewBox="0 0 1680 420">
   <title>What share of DAS software is open source</title>
-  <desc>77 catalogued projects and 606,453 lines, grouped by the reuse terms they publish.</desc>
+  <desc>77 catalogued projects and 606,383 lines, grouped by the reuse terms they publish.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="841.6" y="62" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT SHARE IS ACTUALLY OPEN SOURCE</text>
   <text x="140" y="128" font-size="24" fill="#2b2620" text-anchor="start" letter-spacing="2.4">BY PROJECT</text>
@@ -21,10 +21,10 @@
   <rect x="1190" y="228" width="26" height="18" rx="3" fill="#b8b0a0"/>
   <text x="1228" y="244" font-size="22" fill="#2b2620" text-anchor="start">Unresolved 1</text>
   <text x="140" y="314" font-size="24" fill="#2b2620" text-anchor="start" letter-spacing="2.4">BY LINE OF CODE</text>
-  <rect x="140" y="340" width="1258.11" height="54" fill="#c98500"/>
-  <rect x="1398.11" y="340" width="66.5427" height="54" fill="#e4dccb"/>
-  <rect x="1464.65" y="340" width="75.3519" height="54" fill="#4b4b50"/>
+  <rect x="140" y="340" width="1258.09" height="54" fill="#c98500"/>
+  <rect x="1398.09" y="340" width="66.5503" height="54" fill="#e4dccb"/>
+  <rect x="1464.64" y="340" width="75.3606" height="54" fill="#4b4b50"/>
   <rect x="1540" y="340" width="0" height="54" fill="#b8b0a0"/>
-  <text x="769.053" y="376" font-size="25" fill="#ffffff" text-anchor="middle">90%</text>
+  <text x="769.045" y="376" font-size="25" fill="#ffffff" text-anchor="middle">90%</text>
   </g>
 </svg>

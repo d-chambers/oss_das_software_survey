@@ -1,13 +1,14 @@
 ---
 id: mldas
 name: MLDAS
-repository: DAS-RCN/mldas
-repository_url: https://github.com/DAS-RCN/mldas
+repository: ml4science/mldas
+repository_url: https://gitlab.com/ml4science/mldas
 homepage: null
 description: Machine-learning tools for DAS data.
 status: included
 decision_reason: Reusable DAS machine-learning package under the Lawrence Berkeley National Labs BSD variant,
-  an OSI-approved license that GitHub cannot auto-detect.
+  an OSI-approved license a forge cannot auto-detect. Catalogued at its GitLab home rather than
+  the DAS-RCN GitHub mirror, which is eight commits and a year behind it.
 primary_category: machine-learning-detection
 capabilities:
 - detection
@@ -16,8 +17,8 @@ capabilities:
 license_spdx: BSD-3-Clause-LBNL
 license_class: osi-approved
 forge:
-  kind: github
-  host: github.com
+  kind: gitlab
+  host: gitlab.com
 registries:
   pypi:
   - mldas
@@ -26,6 +27,7 @@ registries:
 publications: []
 das_focus: das-native
 sources:
+- gitlab.com/ml4science/mldas
 - github.com/das-rcn/mldas
 reviewed_at: '2026-08-28'
 provenance:
@@ -54,7 +56,7 @@ MLDAS (Machine Learning for Distributed Acoustic Sensing) is a Python package fr
 - **Interface:** library, installed via pip, with a command-line training entry point (`python mldas/train.py configs/multilabel.yaml`)
 - **Data formats:** not stated explicitly for raw DAS input; training code observed reads image files via `torchvision.datasets.ImageFolder` plus a plain-text `label.txt` label file
 - **Key dependencies:** h5py, hdf5storage, matplotlib, mpi4py, numpy, pillow, pyyaml, scipy, torch, torchvision (from `setup.py`)
-- **Scope signals:** small research codebase (~47 commits, 11 stars, 6 forks on the GitHub mirror); primary development and docs are hosted on GitLab (`gitlab.com/ml4science/mldas`, docs at `ml4science.gitlab.io/mldas`), with GitHub as a mirror; funded by U.S. Department of Energy, developed at LBNL; `setup.py` lists the license as "Proprietary" while the README states a "modified BSD license"
+- **Scope signals:** small research codebase; primary development and docs are hosted on GitLab (`gitlab.com/ml4science/mldas`, docs at `ml4science.gitlab.io/mldas`), and the `DAS-RCN/mldas` GitHub copy is a mirror that stopped tracking it in 2021; funded by U.S. Department of Energy, developed at LBNL; `setup.py` lists the license as "Proprietary" while the README states a "modified BSD license"
 - **Source visible:** yes — full source code is published (`mldas/` package with `datasets`, `models`, `trainers`, `explore`, `production`, `utils` subdirectories, plus `matlab` submodules)
 - **Sources read:**
   - https://github.com/DAS-RCN/mldas

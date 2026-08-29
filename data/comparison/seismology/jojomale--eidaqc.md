@@ -1,0 +1,56 @@
+---
+repository: jojomale/eidaQC
+ref: main
+manifests:
+- pyproject.toml
+- requirements.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  brotlipy: required
+  cartopy: required
+  certifi: required
+  cffi: required
+  chardet: required
+  charset-normalizer: required
+  cryptography: required
+  cycler: required
+  decorator: required
+  eidaqc: required
+  future: required
+  greenlet: required
+  idna: required
+  importlib_resources: required
+  kiwisolver: required
+  lxml: required
+  matplotlib: required
+  numpy: required
+  obspy: required
+  olefile: required
+  pillow: required
+  pycparser: required
+  pyopenssl: required
+  pyparsing: required
+  pyproj: required
+  pyshp: required
+  pysocks: required
+  python-dateutil: required
+  requests: required
+  scipy: required
+  shapely: required
+  six: required
+  sqlalchemy: required
+  tornado: required
+  urllib3: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: eidaQC
+stars: 1
+language: Python
+fork: false
+archived: false
+pushed_at: '2021-12-16T18:01:16Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

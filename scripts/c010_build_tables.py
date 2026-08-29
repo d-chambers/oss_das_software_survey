@@ -114,6 +114,9 @@ MEASURED_COLUMNS: list[tuple[str, str, str]] = [
     ("conda_downloads_total", "registry", "conda_downloads_total"),
     ("dependencies", "registry", "dependencies"),
     ("practices", "practices", "practices"),
+    ("has_python", "dependencies", "has_python"),
+    ("requires", "dependencies", "required"),
+    ("optional_requires", "dependencies", "optional"),
     ("citations_total", "publications", "citations_total"),
     ("canonical_citations", "publications", "canonical_citations"),
 ]

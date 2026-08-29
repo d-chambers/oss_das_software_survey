@@ -26,6 +26,7 @@ run scripts/b012_forge.py
 run scripts/b013_registry.py
 run scripts/b014_publications.py
 run scripts/b015_practices.py
+run scripts/b016_dependencies.py
 
 run scripts/c010_build_tables.py
 echo "done: uv run marimo run notebooks/ecosystem.py"

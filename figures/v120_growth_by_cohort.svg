@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="608.0" viewBox="0 0 1680 608.0">
   <title>Commits by year</title>
-  <desc>7,100 commits between 2019 and 2026, in 8 groups.</desc>
+  <desc>7,108 commits between 2019 and 2026, in 8 groups.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="840" y="76" font-size="34" fill="#2b2620" text-anchor="middle">Commits by year</text>
   <path d="M 300,526 L 1380,526" stroke="#cbc3b3" stroke-width="2" fill="none"/>
@@ -15,15 +15,15 @@
   <text x="502.5" y="474.409" font-size="18" fill="#2b2620" text-anchor="middle">226</text>
   <rect x="583.5" y="520.012" width="108" height="4.5879" fill="#e0cba4"/>
   <rect x="583.5" y="505.541" width="108" height="13.0708" fill="#d4ae5d"/>
-  <rect x="583.5" y="470.945" width="108" height="33.1968" fill="#c88d17"/>
+  <rect x="583.5" y="470.446" width="108" height="33.6958" fill="#c88d17"/>
   <text x="637.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2021</text>
-  <text x="637.5" y="456.945" font-size="18" fill="#2b2620" text-anchor="middle">331</text>
+  <text x="637.5" y="456.446" font-size="18" fill="#2b2620" text-anchor="middle">334</text>
   <rect x="718.5" y="514.191" width="108" height="10.4095" fill="#e0cba4"/>
   <rect x="718.5" y="508.535" width="108" height="4.25524" fill="#d4ae5d"/>
-  <rect x="718.5" y="490.073" width="108" height="17.0627" fill="#c88d17"/>
-  <rect x="718.5" y="448.989" width="108" height="39.6837" fill="#af7409"/>
+  <rect x="718.5" y="489.241" width="108" height="17.8944" fill="#c88d17"/>
+  <rect x="718.5" y="448.157" width="108" height="39.6837" fill="#af7409"/>
   <text x="772.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2022</text>
-  <text x="772.5" y="434.989" font-size="18" fill="#2b2620" text-anchor="middle">463</text>
+  <text x="772.5" y="434.157" font-size="18" fill="#2b2620" text-anchor="middle">468</text>
   <rect x="853.5" y="488.742" width="108" height="35.8581" fill="#e0cba4"/>
   <rect x="853.5" y="487.744" width="108" height="0.9" fill="#d4ae5d"/>
   <rect x="853.5" y="465.456" width="108" height="20.8883" fill="#c88d17"/>

@@ -1,0 +1,60 @@
+---
+repository: comp-geoph-itera/lindu-software
+ref: dev
+manifests:
+- requirements_all.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  apptools: required
+  basemap: required
+  certifi: required
+  chardet: required
+  click: required
+  configobj: required
+  cx-freeze: required
+  cycler: required
+  decorator: required
+  flask: required
+  future: required
+  geos: required
+  idna: required
+  itsdangerous: required
+  jinja2: required
+  kiwisolver: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  mayavi: required
+  numpy: required
+  obspy: required
+  pillow: required
+  pyface: required
+  pygments: required
+  pyparsing: required
+  pyproj: required
+  pyqt4: required
+  pyshp: required
+  python-dateutil: required
+  requests: required
+  scipy: required
+  six: required
+  sqlalchemy: required
+  traits: required
+  traits-stubs: required
+  traitsui: required
+  urllib3: required
+  vtk: required
+  werkzeug: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: lindu-software
+stars: 4
+language: Arc
+fork: false
+archived: false
+pushed_at: '2022-04-22T04:22:48Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

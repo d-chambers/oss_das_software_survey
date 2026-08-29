@@ -1,0 +1,50 @@
+---
+repository: archeumstudios/LunaSeis-1
+ref: main
+manifests:
+- pyproject.toml
+- requirements-lock.txt
+distribution: lunaseis
+tree_truncated: false
+declared:
+  certifi: required
+  charset-normalizer: required
+  contourpy: required
+  cycler: required
+  decorator: required
+  filelock: required
+  fonttools: required
+  fsspec: required
+  idna: required
+  jinja2: required
+  kiwisolver: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  mpmath: required
+  networkx: required
+  numpy: required
+  obspy: required
+  packaging: required
+  pillow: required
+  pyparsing: required
+  python-dateutil: required
+  requests: required
+  scipy: required
+  six: required
+  sqlalchemy: required
+  sympy: required
+  torch: required
+  typing_extensions: required
+  urllib3: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: LunaSeis-1
+stars: 1
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-07-14T16:26:00Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

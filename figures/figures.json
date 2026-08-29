@@ -3,9 +3,11 @@
  "ecosystem_totals": {
   "projects": 77,
   "contributors": 126,
-  "commits": 7100,
-  "lines": 606453,
-  "unmirrored": []
+  "commits": 7108,
+  "lines": 606383,
+  "unmirrored": [],
+  "citations": 151,
+  "cited_projects": 12
  },
  "pipeline_flow": {
   "snapshot": "working tree",
@@ -21,13 +23,14 @@
   "rows_retrieved": 7218,
   "candidates": 3201,
   "unreviewed": 0,
-  "reviewed": 397,
-  "catalogued": 98,
+  "reviewed": 396,
+  "catalogued": 97,
   "included": 77,
-  "metric_rows": 280,
+  "metric_rows": 278,
   "metric_hosts": [
    "api.github.com",
    "git.gfz-potsdam.de",
+   "gitlab.com",
    "gitlab.in2p3.fr"
   ],
   "summarised": 71,
@@ -42,7 +45,7 @@
   "stages": [
    [
     "Rejected",
-    2804
+    2805
    ],
    [
     "Not reusable",
@@ -54,7 +57,7 @@
    ],
    [
     "Duplicate or collision",
-    69
+    68
    ],
    [
     "Teaching or no source",
@@ -112,7 +115,7 @@
   "lines_by_class": [
    [
     "osi-approved",
-    544987
+    544917
    ],
    [
     "source-available",
@@ -128,13 +131,13 @@
    ]
   ],
   "projects": 77,
-  "lines": 606453
+  "lines": 606383
  },
  "composition": {
   "languages": [
    [
     "Python",
-    476844
+    476773
    ],
    [
     "Jupyter",
@@ -166,7 +169,7 @@
    ],
    [
     "Shell",
-    2218
+    2219
    ],
    [
     "CUDA",
@@ -189,7 +192,7 @@
     58
    ]
   ],
-  "total_lines": 606453,
+  "total_lines": 606383,
   "projects": 77,
   "with_pypi": 21,
   "with_conda": 3,
@@ -255,8 +258,8 @@
      0,
      46,
      226,
-     331,
-     463,
+     334,
+     468,
      996,
      1639,
      1984,
@@ -293,7 +296,7 @@
    ],
    [
     "das-native",
-    7100
+    7108
    ],
    [
     "other-fiber",
@@ -529,6 +532,15 @@
     "lines": 75368
    },
    {
+    "project_id": "mldas",
+    "name": "MLDAS",
+    "role": "other",
+    "commits": 55,
+    "authors": 1,
+    "days": 530,
+    "lines": 6733
+   },
+   {
     "project_id": "optodas-processor",
     "name": "OptoDAS_processor",
     "role": "other",
@@ -545,15 +557,6 @@
     "authors": 1,
     "days": 303,
     "lines": 733
-   },
-   {
-    "project_id": "mldas",
-    "name": "MLDAS",
-    "role": "other",
-    "commits": 47,
-    "authors": 1,
-    "days": 176,
-    "lines": 6803
    },
    {
     "project_id": "cqi-das",
@@ -1010,9 +1013,9 @@
    },
    {
     "key": "licence",
-    "label": "OSI licence",
+    "label": "Licence",
     "gate": "Can I get it?",
-    "note": "legally reusable",
+    "note": "OSI-approved, legally reusable",
     "projects": 64
    },
    {
@@ -1027,11 +1030,11 @@
     "label": "CI",
     "gate": "Can I trust it?",
     "note": "a workflow runs",
-    "projects": 29
+    "projects": 28
    },
    {
     "key": "docs",
-    "label": "Documentation",
+    "label": "Docs",
     "gate": "Can I learn it?",
     "note": "beyond the README",
     "projects": 21
@@ -1045,18 +1048,496 @@
    },
    {
     "key": "authors",
-    "label": "Two or more authors",
+    "label": "Authors > 1",
     "gate": "Will it last?",
     "note": "more than one person",
     "projects": 31
    },
    {
     "key": "active",
-    "label": "Active this year",
+    "label": "Active",
     "gate": "Will it last?",
-    "note": "a commit in 12 months",
+    "note": "a commit in the last 12 months",
     "projects": 53
    }
   ]
- }
+ },
+ "dependencies": {
+  "python_projects": 66,
+  "other_projects": 11,
+  "rows": [
+   {
+    "name": "numpy",
+    "projects": 65
+   },
+   {
+    "name": "matplotlib",
+    "projects": 57
+   },
+   {
+    "name": "scipy",
+    "projects": 54
+   },
+   {
+    "name": "h5py",
+    "projects": 42
+   },
+   {
+    "name": "pandas",
+    "projects": 40
+   },
+   {
+    "name": "obspy",
+    "projects": 24
+   },
+   {
+    "name": "tqdm",
+    "projects": 21
+   },
+   {
+    "name": "torch",
+    "projects": 16
+   },
+   {
+    "name": "pyyaml",
+    "projects": 14
+   },
+   {
+    "name": "scikit-learn",
+    "projects": 12
+   }
+  ]
+ },
+ "language_platform": {
+  "projects": 77,
+  "hosts": {
+   "github.com": 74,
+   "git.gfz-potsdam.de": 1,
+   "gitlab.com": 1,
+   "gitlab.in2p3.fr": 1
+  },
+  "languages": {
+   "Python": {
+    "projects": 59,
+    "by_host": {
+     "github.com": 56,
+     "git.gfz-potsdam.de": 1,
+     "gitlab.com": 1,
+     "gitlab.in2p3.fr": 1
+    }
+   },
+   "Jupyter": {
+    "projects": 5,
+    "by_host": {
+     "github.com": 5
+    }
+   },
+   "MATLAB": {
+    "projects": 4,
+    "by_host": {
+     "github.com": 4
+    }
+   },
+   "Java": {
+    "projects": 3,
+    "by_host": {
+     "github.com": 3
+    }
+   },
+   "Julia": {
+    "projects": 3,
+    "by_host": {
+     "github.com": 3
+    }
+   },
+   "C": {
+    "projects": 1,
+    "by_host": {
+     "github.com": 1
+    }
+   },
+   "Rust": {
+    "projects": 1,
+    "by_host": {
+     "github.com": 1
+    }
+   },
+   "n/a": {
+    "projects": 1,
+    "by_host": {
+     "github.com": 1
+    }
+   }
+  }
+ },
+ "network": {
+  "links": [
+   {
+    "source": "coherence-analysis",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "das-ani",
+    "target": "daspack",
+    "kind": "optional"
+   },
+   {
+    "source": "das-anomaly",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "das-levels",
+    "target": "das4whales",
+    "kind": "required"
+   },
+   {
+    "source": "das-levels",
+    "target": "simpledas",
+    "kind": "required"
+   },
+   {
+    "source": "das-processing-pipeline",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "das-source-locator",
+    "target": "das4whales",
+    "kind": "required"
+   },
+   {
+    "source": "das4whales",
+    "target": "simpledas",
+    "kind": "required"
+   },
+   {
+    "source": "dascorepy",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "dascorepy",
+    "target": "daspy",
+    "kind": "required"
+   },
+   {
+    "source": "dascorepy",
+    "target": "unidas",
+    "kind": "required"
+   },
+   {
+    "source": "dasexplorer",
+    "target": "das4whales",
+    "kind": "required"
+   },
+   {
+    "source": "dasjax",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "dasmatrix",
+    "target": "dascore",
+    "kind": "optional"
+   },
+   {
+    "source": "daspy",
+    "target": "dascore",
+    "kind": "optional"
+   },
+   {
+    "source": "daspy",
+    "target": "lightguide",
+    "kind": "optional"
+   },
+   {
+    "source": "derzug",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "farmdas",
+    "target": "dasstore",
+    "kind": "required"
+   },
+   {
+    "source": "multi-res-viewer",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "multi-res-viewer",
+    "target": "spool-processing",
+    "kind": "required"
+   },
+   {
+    "source": "optodas-processor",
+    "target": "simpledas",
+    "kind": "required"
+   },
+   {
+    "source": "optodas-processor",
+    "target": "xdas",
+    "kind": "required"
+   },
+   {
+    "source": "remi-das",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "spool-processing",
+    "target": "dascore",
+    "kind": "required"
+   },
+   {
+    "source": "unidas",
+    "target": "dascore",
+    "kind": "optional"
+   },
+   {
+    "source": "unidas",
+    "target": "daspy",
+    "kind": "optional"
+   },
+   {
+    "source": "unidas",
+    "target": "lightguide",
+    "kind": "optional"
+   },
+   {
+    "source": "unidas",
+    "target": "xdas",
+    "kind": "optional"
+   },
+   {
+    "source": "xdas",
+    "target": "dascore",
+    "kind": "development"
+   },
+   {
+    "source": "xpick",
+    "target": "xdas",
+    "kind": "required"
+   }
+  ],
+  "providers": [
+   [
+    "dascore",
+    "DASCore",
+    13
+   ],
+   [
+    "das4whales",
+    "DAS4Whales",
+    3
+   ],
+   [
+    "simpledas",
+    "simpleDAS",
+    3
+   ],
+   [
+    "xdas",
+    "xdas",
+    3
+   ],
+   [
+    "daspy",
+    "DASPy",
+    2
+   ],
+   [
+    "lightguide",
+    "lightguide",
+    2
+   ],
+   [
+    "daspack",
+    "DASPack",
+    1
+   ],
+   [
+    "unidas",
+    "unidas",
+    1
+   ],
+   [
+    "dasstore",
+    "DASstore",
+    1
+   ],
+   [
+    "spool-processing",
+    "SpoolProcessing",
+    1
+   ]
+  ],
+  "projects": 77,
+  "connected": 26,
+  "isolated": 51
+ },
+ "ecosystems": [
+  {
+   "name": "DAS",
+   "providers": [
+    [
+     "dascore",
+     "DASCore",
+     8
+    ],
+    [
+     "das4whales",
+     "DAS4Whales",
+     2
+    ],
+    [
+     "daspy",
+     "DASPy",
+     2
+    ],
+    [
+     "xdas",
+     "xdas",
+     2
+    ],
+    [
+     "daspack",
+     "DASPack",
+     1
+    ],
+    [
+     "unidas",
+     "unidas",
+     1
+    ],
+    [
+     "lightguide",
+     "lightguide",
+     1
+    ]
+   ],
+   "projects": 60,
+   "connected": 18,
+   "consumers": 12,
+   "edges": 17
+  },
+  {
+   "name": "Seismology",
+   "providers": [
+    [
+     "obspy--obspy",
+     "obspy",
+     150
+    ],
+    [
+     "seisbench--seisbench",
+     "seisbench",
+     11
+    ],
+    [
+     "genericmappingtools--pygmt",
+     "pygmt",
+     9
+    ],
+    [
+     "pyrocko--pyrocko",
+     "pyrocko",
+     7
+    ],
+    [
+     "niosh-mining--obsplus",
+     "obsplus",
+     3
+    ],
+    [
+     "earthnet-eew--earthnet-protocol",
+     "earthnet-protocol",
+     2
+    ],
+    [
+     "agilescientific--bruges",
+     "bruges",
+     1
+    ],
+    [
+     "damb--mseed",
+     "mseed",
+     1
+    ],
+    [
+     "eqcorrscan--eqcorrscan",
+     "EQcorrscan",
+     1
+    ],
+    [
+     "paudetseis--telewavesim",
+     "Telewavesim",
+     1
+    ],
+    [
+     "swiss-seismological-service--seismostats",
+     "SeismoStats",
+     1
+    ],
+    [
+     "mtuqorg--seisgen",
+     "seisgen",
+     1
+    ],
+    [
+     "yooucef--promethium",
+     "Promethium",
+     1
+    ],
+    [
+     "pysmo--pysmo",
+     "pysmo",
+     1
+    ],
+    [
+     "claudiodsf--nllgrid",
+     "nllgrid",
+     1
+    ],
+    [
+     "robelgium--msnoise",
+     "MSNoise",
+     1
+    ]
+   ],
+   "projects": 342,
+   "connected": 177,
+   "consumers": 167,
+   "edges": 192
+  }
+ ],
+ "archive_abstractions": [
+  {
+   "project": "DASCore",
+   "version": "0.1.21",
+   "files": "Files",
+   "logical": "Spool index",
+   "memory": "Patch",
+   "palette": [
+    "#002868",
+    "#D0002A",
+    "#FFC934"
+   ],
+   "logo_source": "https://github.com/DASDAE/dascore/blob/v0.1.21/docs/_static/logo.png"
+  },
+  {
+   "project": "Xdas",
+   "version": "0.2.8",
+   "files": "Files",
+   "logical": "Virtual DataArray",
+   "memory": "Chunk",
+   "palette": [
+    "#2F007E"
+   ],
+   "logo_source": "https://github.com/xdas-dev/xdas/blob/0.2.8/docs/_static/logo-light.png"
+  }
+ ]
 }

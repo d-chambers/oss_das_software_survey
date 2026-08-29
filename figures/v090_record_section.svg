@@ -206,10 +206,12 @@
   <rect x="1316.9" y="254.103" width="48.6207" height="5.32105" fill="#dcb25f"/>
   <rect x="1365.52" y="254.103" width="48.6207" height="5.32105" fill="#f4efe3"/>
   <rect x="1462.76" y="254.103" width="48.6207" height="5.32105" fill="#ad740c"/>
-  <rect x="490.345" y="261.024" width="97.2414" height="5.32105" fill="#f1ece1"/>
+  <rect x="490.345" y="261.024" width="291.724" height="5.32105" fill="#f1ece1"/>
   <rect x="490.345" y="261.024" width="48.6207" height="5.32105" fill="#b77a08"/>
   <rect x="538.966" y="261.024" width="48.6207" height="5.32105" fill="#daac4e"/>
-  <rect x="587.586" y="261.024" width="48.6207" height="5.32105" fill="#eae3d4"/>
+  <rect x="587.586" y="261.024" width="48.6207" height="5.32105" fill="#dfc38a"/>
+  <rect x="684.828" y="261.024" width="48.6207" height="5.32105" fill="#e1cea6"/>
+  <rect x="782.069" y="261.024" width="48.6207" height="5.32105" fill="#f4efe3"/>
   <rect x="490.345" y="267.945" width="145.862" height="5.32105" fill="#f1ece1"/>
   <rect x="490.345" y="267.945" width="48.6207" height="5.32105" fill="#d49b2a"/>
   <rect x="587.586" y="267.945" width="48.6207" height="5.32105" fill="#eae3d4"/>

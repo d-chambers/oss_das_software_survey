@@ -1,0 +1,49 @@
+---
+repository: sandialabs/pycheron
+ref: github
+manifests:
+- pyproject.toml
+distribution: pycheron
+tree_truncated: false
+declared:
+  certifi: required
+  cmdline-ispaq: required
+  cx_oracle: required
+  dash: required
+  e1: required
+  imbalanced-learn: required
+  joblib: required
+  llvmlite: required
+  matplotlib: required
+  mock: required
+  numba: required
+  numpy: required
+  obspy: required
+  openpyxl: required
+  pandas: required
+  pathlib2: required
+  pebble: required
+  pisces: required
+  pyhht: required
+  python-dotenv: required
+  pywavelets: required
+  pyyaml: required
+  scikit-learn: required
+  scipy: required
+  snakeviz: required
+  sqlalchemy: required
+  statsmodels: required
+  tables: required
+  testfixtures: required
+  toml: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: pycheron
+stars: 27
+language: Python
+fork: false
+archived: false
+pushed_at: '2025-02-27T00:06:31Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

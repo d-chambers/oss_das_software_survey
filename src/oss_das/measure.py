@@ -14,10 +14,14 @@ DOIs) gets ``not_applicable`` so the build stage still sees a file for it.
 
 from __future__ import annotations
 
+import ast
+import json
 import re
 import shutil
+import sys
+import tomllib
 from collections import Counter
-from collections.abc import Iterable
+from collections.abc import Iterable, Iterator
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -53,6 +57,9 @@ from oss_das.models import ForgeKind, ProjectRecord
 from oss_das.utils import normalize_name, utc_now
 
 GIB = 1024**3
+
+#: Modules the interpreter provides, which are never a dependency.
+STDLIB = frozenset(sys.stdlib_module_names) | {"__future__"}
 
 #: The commit CSV columns. ``status`` is curated, not measured, so it is not
 #: exported; the build stage joins it back from the catalogue.
@@ -562,6 +569,310 @@ def practices_record(
     return record
 
 
+# --- dependencies -------------------------------------------------------------
+
+#: Files that declare what a project depends on, across the ecosystems the
+#: catalogue spans. A Python-only list recorded the Maven and Cargo projects as
+#: depending on nothing.
+DEPENDENCY_MANIFESTS = re.compile(
+    r"^(pyproject\.toml|setup\.py|requirements[^/]*\.txt|environment\.ya?ml"
+    r"|Project\.toml|DESCRIPTION|pom\.xml|build\.gradle(\.kts)?|package\.json"
+    r"|Cargo\.toml)$|/requirements[^/]*\.txt$|/pom\.xml$"
+)
+
+#: Extras and requirement files whose name means "to develop this", not "to use
+#: it". A linter is not part of what a project is built on.
+DEV_EXTRA = re.compile(
+    r"^(dev|test|tests|testing|lint|docs?|typing|benchmark)s?$", re.I
+)
+
+#: Build and test tooling, which every project has and none is built on.
+TOOLING = re.compile(
+    r"^(python|pip|setuptools|wheel|hatchling|poetry.*|flit.*|build|pytest.*|ruff"
+    r"|black|isort|flake8|mypy|pylint|pre-commit|tox|coverage|twine|nox|ty|pyright"
+    r"|typos|codecov)$",
+    re.I,
+)
+
+#: Source paths whose imports are how the project is developed, not used.
+TEST_PATH = re.compile(r"(^|/)(tests?|testing|conftest)[./]|(^|/)test_[^/]*\.py$")
+
+#: Import name to the distribution providing it, where the two differ.
+DISTRIBUTION = {
+    "sklearn": "scikit-learn",
+    "cv2": "opencv-python",
+    "PIL": "pillow",
+    "skimage": "scikit-image",
+    "yaml": "pyyaml",
+    "mpl_toolkits": "matplotlib",
+    "dateutil": "python-dateutil",
+    "OpenGL": "pyopengl",
+    "serial": "pyserial",
+    "netCDF4": "netcdf4",
+    "tables": "pytables",
+    "IPython": "ipython",
+    "torchvision": "torch",
+    "torchaudio": "torch",
+    "pkg_resources": "setuptools",
+}
+
+#: Weakest evidence last: a name declared as a hard requirement in one place and
+#: imported inside a function in another is a hard requirement.
+DEPENDENCY_KINDS = ("required", "optional", "development")
+
+_NAME = re.compile(r"^\s*([A-Za-z0-9][A-Za-z0-9._-]*)")
+
+
+def _strongest(into: dict[str, str], name: str, kind: str) -> None:
+    order = DEPENDENCY_KINDS.index
+    if name not in into or order(kind) < order(into[name]):
+        into[name] = kind
+
+
+def declared_dependencies(text: str, path: str) -> list[tuple[str, str]]:
+    """Every ``(distribution, kind)`` one manifest declares."""
+    low, out = path.lower(), []
+    if low.endswith("pyproject.toml"):
+        try:
+            data = tomllib.loads(text)
+        except tomllib.TOMLDecodeError:
+            return out
+        project = data.get("project") or {}
+        out += [(n, "required") for n in _names(project.get("dependencies") or [])]
+        for extra, values in (project.get("optional-dependencies") or {}).items():
+            kind = "development" if DEV_EXTRA.match(extra) else "optional"
+            out += [(n, kind) for n in _names(values)]
+        poetry = (data.get("tool") or {}).get("poetry") or {}
+        out += [(n, "required") for n in (poetry.get("dependencies") or {})]
+        for group in (poetry.get("group") or {}).values():
+            out += [(n, "development") for n in (group.get("dependencies") or {})]
+    elif "requirements" in low and low.endswith(".txt"):
+        stem = low.rsplit("/", 1)[-1].removesuffix(".txt")
+        kind = "development" if DEV_EXTRA.search(stem.split("_")[-1]) else "required"
+        out += [
+            (n, kind)
+            for n in _names(
+                line
+                for line in text.splitlines()
+                if line.strip() and not line.strip().startswith(("#", "-"))
+            )
+        ]
+    elif low.endswith((".yml", ".yaml")):
+        out += [
+            (match.group(1), "required")
+            for match in (
+                re.match(r"\s*-\s*([A-Za-z0-9][A-Za-z0-9._-]*)", line)
+                for line in text.splitlines()
+            )
+            if match
+        ]
+    elif low.endswith("setup.py"):
+        block = " ".join(re.findall(r"install_requires\s*=\s*\[(.*?)\]", text, re.S))
+        out += [
+            (n, "required")
+            for n in re.findall(r"['\"]\s*([A-Za-z0-9][A-Za-z0-9._-]*)", block)
+        ]
+    elif low.endswith("project.toml"):
+        try:
+            out += [(n, "required") for n in (tomllib.loads(text).get("deps") or {})]
+        except tomllib.TOMLDecodeError:
+            return out
+    elif low.endswith("cargo.toml"):
+        try:
+            data = tomllib.loads(text)
+        except tomllib.TOMLDecodeError:
+            return out
+        out += [(n, "required") for n in (data.get("dependencies") or {})]
+        out += [(n, "development") for n in (data.get("dev-dependencies") or {})]
+    elif low.endswith("package.json"):
+        try:
+            data = json.loads(text)
+        except json.JSONDecodeError:
+            return out
+        out += [(n, "required") for n in (data.get("dependencies") or {})]
+        out += [(n, "development") for n in (data.get("devDependencies") or {})]
+    elif low.endswith("pom.xml"):
+        for entry in re.findall(r"<dependency>(.*?)</dependency>", text, re.S):
+            artifact = re.search(r"<artifactId>([^<]+)</artifactId>", entry)
+            scope = re.search(r"<scope>([^<]+)</scope>", entry)
+            if artifact:
+                kind = (
+                    "development"
+                    if scope and scope.group(1).strip() == "test"
+                    else "required"
+                )
+                out.append((artifact.group(1).strip(), kind))
+    elif low.endswith("description"):
+        block = " ".join(
+            re.findall(r"(?:Imports|Depends):(.*?)(?:\n[A-Z]|\Z)", text, re.S)
+        )
+        out += [(n, "required") for n in re.findall(r"([A-Za-z][A-Za-z0-9._]*)", block)]
+    return out
+
+
+def _names(values: Iterable[Any]) -> Iterator[str]:
+    for value in values:
+        match = _NAME.match(str(value))
+        if match:
+            yield match.group(1)
+
+
+def imported_modules(source: str) -> dict[str, str]:
+    """Modules one Python file imports, and whether the import always runs.
+
+    Where an import sits is what kind of dependency it is. At the top of a
+    module it runs on import and the package cannot work without it; inside a
+    function body it runs only when that function is called, which is how a
+    converter reaches for the library it converts to.
+    """
+    out: dict[str, str] = {}
+    try:
+        tree = ast.parse(source)
+    except (SyntaxError, ValueError):
+        return out
+    deferred = {
+        id(node)
+        for scope in ast.walk(tree)
+        if isinstance(scope, ast.FunctionDef | ast.AsyncFunctionDef)
+        for node in ast.walk(scope)
+    }
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            names = {alias.name.split(".")[0] for alias in node.names}
+        elif isinstance(node, ast.ImportFrom):
+            # A relative import is the project's own code, never a dependency.
+            names = (
+                {node.module.split(".")[0]}
+                if node.level == 0 and node.module
+                else set()
+            )
+        else:
+            continue
+        kind = "optional" if id(node) in deferred else "required"
+        for name in names:
+            _strongest(out, name, kind)
+    return out
+
+
+def notebook_source(text: str) -> str:
+    """The Python in a notebook's code cells, with the magics stripped."""
+    try:
+        cells = (json.loads(text) or {}).get("cells") or []
+    except json.JSONDecodeError:
+        return ""
+    out = []
+    for cell in cells:
+        if cell.get("cell_type") != "code":
+            continue
+        body = "".join(cell.get("source") or [])
+        out.append(
+            "\n".join(
+                line
+                for line in body.splitlines()
+                if not line.lstrip().startswith(("%", "!", "?"))
+            )
+        )
+    return "\n".join(out)
+
+
+def dependency_record(
+    project: ProjectRecord, repos: Path, *, timeout: int = 900
+) -> dict[str, Any]:
+    """What one project is built on, from its manifests and its own imports.
+
+    A manifest is a promise and an import is a fact, and the two disagree in
+    both directions: twenty catalogued projects ship no manifest at all, and
+    one declares packages it only imports under `tests/`. Both are read and the
+    stronger classification kept, so a declared extra stays an extra and a
+    test-only import never becomes a runtime dependency.
+    """
+    record: dict[str, Any] = {
+        "id": project.id,
+        "ref": None,
+        "tip": None,
+        "has_python": None,
+        "manifests": [],
+        "required": [],
+        "optional": [],
+        "development": [],
+        "declared": {},
+        "error": "",
+        "missing": {},
+    }
+    if project.repository is None:
+        record["missing"] = {"dependencies": "not_applicable"}
+        return record
+    repo = mirror_path(repos, project.id)
+    if not repo.exists():
+        record["missing"] = {"dependencies": "unavailable"}
+        record["error"] = f"no mirror at {repo}"
+        return record
+    try:
+        ref = resolve_mainline(repo, timeout=timeout)
+        if ref is None:
+            record["missing"] = {"dependencies": "unavailable"}
+            record["error"] = "no mainline ref"
+            return record
+        tip = run_git(
+            ["-C", str(repo), "rev-parse", f"{ref}^{{commit}}"], timeout=timeout
+        ).strip()
+        paths = run_git(
+            ["-C", str(repo), "ls-tree", "-r", "--name-only", ref], timeout=timeout
+        ).splitlines()
+    except GitError as error:
+        record["missing"] = {"dependencies": "fetch_error"}
+        record["error"] = str(error)
+        return record
+
+    found: dict[str, str] = {}
+    # Kept apart from ``found`` as well as merged into it. The import scan needs
+    # a clone, so it cannot be run against an ecosystem measured over an API,
+    # and a comparison drawn between a manifest-and-import graph and a
+    # manifest-only one would credit this corpus with edges the other could not
+    # have. ``declared`` is the half both sides can be measured on.
+    declared: dict[str, str] = {}
+    manifests = [p for p in paths if DEPENDENCY_MANIFESTS.search(p)]
+    for path in manifests:
+        for name, kind in declared_dependencies(
+            _blob(repo, ref, path, timeout=timeout), path
+        ):
+            if not TOOLING.match(name):
+                _strongest(declared, name.lower(), kind)
+                _strongest(found, name.lower(), kind)
+
+    sources = [p for p in paths if p.endswith((".py", ".ipynb"))]
+    # A module the project ships is its own, however it is imported.
+    own = {p.split("/")[0] for p in paths if p.endswith(".py")}
+    own |= {
+        p.rsplit("/", 1)[-1].removesuffix(".py") for p in paths if p.endswith(".py")
+    }
+    for path in sources:
+        text = _blob(repo, ref, path, timeout=timeout)
+        if path.endswith(".ipynb"):
+            text = notebook_source(text)
+        in_tests = bool(TEST_PATH.search(path))
+        for module, kind in imported_modules(text).items():
+            if module in STDLIB or module in own:
+                continue
+            name = DISTRIBUTION.get(module, module).lower()
+            if TOOLING.match(name):
+                continue
+            _strongest(found, name, "development" if in_tests else kind)
+
+    record.update(
+        ref=ref,
+        tip=tip,
+        has_python=bool(sources),
+        manifests=sorted(manifests),
+        declared=dict(sorted(declared.items())),
+        **{
+            kind: sorted(n for n, k in found.items() if k == kind)
+            for kind in DEPENDENCY_KINDS
+        },
+    )
+    return record
+
+
 # --- forge --------------------------------------------------------------------
 
 
@@ -828,6 +1139,30 @@ def julia_package_record(name: str, julia: JuliaRegistryClient) -> dict[str, Any
     return record
 
 
+def _distinct_works(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """One entry per work, preferring the most-cited version of a title.
+
+    OpenAlex files a preprint and its published paper as separate works. They
+    are the same research, so a project that links both would otherwise have
+    its citations counted twice.
+    """
+    best: dict[str, dict[str, Any]] = {}
+    loose: list[dict[str, Any]] = []
+    for item in items:
+        title = re.sub(r"[^a-z0-9]+", " ", (item.get("title") or "").lower()).strip()
+        if not title:
+            # No title means the lookup failed; it cannot be matched to
+            # anything, and dropping it would hide the failure from _total.
+            loose.append(item)
+            continue
+        held = best.get(title)
+        if held is None or (item.get("cited_by_count") or -1) > (
+            held.get("cited_by_count") or -1
+        ):
+            best[title] = item
+    return [*best.values(), *loose]
+
+
 def _total(
     items: list[dict[str, Any]], key: str, *fallbacks: str
 ) -> tuple[int | None, str | None]:
@@ -959,22 +1294,24 @@ def publication_record(
     missing: dict[str, str] = {}
     if not items:
         missing["publications"] = "not_applicable"
-    # A book is cited as a book. ExploreDAS ships as an appendix to the SEG
-    # Distinguished Instructor volume, and that volume's citations measure the
-    # field's use of a DAS primer, not of the MATLAB application -- crediting
-    # them to the software made it the most-cited tool in the census. Books
-    # stay in ``publications`` as provenance, with their own count, and are
-    # left out of the totals that stand for the software's reach.
-    counted = [item for item in items if item["work_type"] != "book"]
-    total, reason = _total(counted, "cited_by_count", "work")
+    # Every linked work counts, whatever its type. A project's canonical DOI is
+    # the artefact its own authors say to cite, and for ExploreDAS that is a
+    # book whose appendix is the software's documentation -- there is no
+    # separate software paper to prefer. Filtering by work type would also have
+    # to drop the standards and method papers that other projects are cited
+    # through, which are subject-level in exactly the same way.
+    #
+    # One work, though, is not two. A preprint and the paper it became share a
+    # title and carry separate citation counts, and summing both credits the
+    # software twice for one piece of work. The version of record keeps the
+    # count; both stay in the record as evidence.
+    total, reason = _total(_distinct_works(items), "cited_by_count", "work")
     if reason and items:
         missing["citations_total"] = reason
-    canonical = next((i for i in counted if i["role"] == "canonical"), None)
+    canonical = next((i for i in items if i["role"] == "canonical"), None)
     canonical_count = canonical["cited_by_count"] if canonical else None
     if canonical is None:
         missing["canonical_citations"] = "not_applicable"
-        if any(i["role"] == "canonical" for i in items):
-            missing["canonical_citations"] = "not_published"
     elif canonical_count is None:
         missing["canonical_citations"] = canonical["missing"].get("work") or canonical[
             "missing"

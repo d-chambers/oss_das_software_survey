@@ -27,7 +27,10 @@ registries:
 publications:
 - doi: 10.5281/zenodo.6580579
   role: canonical
-  note: null
+  note: the Zenodo record the README says to cite the software as
+- doi: 10.1093/gji/ggac229
+  role: related
+  note: the adaptive frequency-wavenumber filter paper the README points to
 das_focus: das-native
 sources:
 - github.com/pyrocko/lightguide

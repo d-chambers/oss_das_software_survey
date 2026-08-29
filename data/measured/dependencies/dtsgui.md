@@ -1,0 +1,300 @@
+---
+id: dtsgui
+source: dependencies
+scanned_at: '2026-08-29T11:22:40+00:00'
+ref: master
+tip: 5ecac3eab64b6f1d136d3deef08f707362f4cdf8
+has_python: true
+manifests:
+- environment.yml
+- setup.py
+required:
+- alabaster
+- altgraph
+- asn1crypto
+- astroid
+- autopep8
+- axes
+- babel
+- backports
+- backports.functools_lru_cache
+- backports.shutil_get_terminal_size
+- backports.shutil_which
+- backports_abc
+- blas
+- bleach
+- ca-certificates
+- certifi
+- cffi
+- chardet
+- colorama
+- configparser
+- cryptography
+- curl
+- cycler
+- dateutil
+- decorator
+- defaults
+- dis3
+- docutils
+- entrypoints
+- enum34
+- expat
+- freexl
+- functools32
+- future
+- futures
+- gdal
+- geos
+- h5py
+- hdf4
+- hdf5
+- html5lib
+- icc_rt
+- icu
+- idna
+- imagesize
+- intel-openmp
+- ipaddress
+- ipykernel
+- ipython
+- ipython_genutils
+- ipywidgets
+- jinja2
+- jpeg
+- jsonschema
+- jupyter
+- jupyter_client
+- jupyter_console
+- jupyter_core
+- kealib
+- lazy-object-proxy
+- libboost
+- libgdal
+- libiconv
+- libkml
+- libnetcdf
+- libpng
+- libpq
+- libspatialite
+- libssh2
+- libtiff
+- libxml2
+- macholib
+- markupsafe
+- matplotlib
+- mccabe
+- mistune
+- mkl
+- nbconvert
+- nbformat
+- notebook
+- numpy
+- openjpeg
+- openssl
+- osgeo
+- packaging
+- pandas
+- pandoc
+- pandocfilters
+- pathlib2
+- pefile
+- pickleshare
+- proj4
+- prompt_toolkit
+- pycodestyle
+- pycparser
+- pygments
+- pyinstaller
+- pyopenssl
+- pyparsing
+- pypiwin32
+- pyqt
+- pyside
+- pysocks
+- python-dateutil
+- pytz
+- pywinpty
+- pyzmq
+- qt
+- qtconsole
+- requests
+- scandir
+- send2trash
+- simplegeneric
+- singledispatch
+- sip
+- six
+- snowballstemmer
+- sphinx
+- sphinxcontrib
+- sphinxcontrib-websupport
+- sqlite
+- ssl_match_hostname
+- terminado
+- testpath
+- tk
+- tornado
+- traitlets
+- typing
+- urllib3
+- vc
+- vs2008_runtime
+- wcwidth
+- webencodings
+- widgetsnbextension
+- win_inet_pton
+- win_unicode_console
+- wincertstore
+- winpty
+- wrapt
+- wx
+- wxpython
+- xerces-c
+- zlib
+optional: []
+development: []
+declared:
+  alabaster: required
+  altgraph: required
+  asn1crypto: required
+  astroid: required
+  autopep8: required
+  babel: required
+  backports: required
+  backports.functools_lru_cache: required
+  backports.shutil_get_terminal_size: required
+  backports.shutil_which: required
+  backports_abc: required
+  blas: required
+  bleach: required
+  ca-certificates: required
+  certifi: required
+  cffi: required
+  chardet: required
+  colorama: required
+  configparser: required
+  cryptography: required
+  curl: required
+  cycler: required
+  dateutil: required
+  decorator: required
+  defaults: required
+  dis3: required
+  docutils: required
+  entrypoints: required
+  enum34: required
+  expat: required
+  freexl: required
+  functools32: required
+  future: required
+  futures: required
+  gdal: required
+  geos: required
+  h5py: required
+  hdf4: required
+  hdf5: required
+  html5lib: required
+  icc_rt: required
+  icu: required
+  idna: required
+  imagesize: required
+  intel-openmp: required
+  ipaddress: required
+  ipykernel: required
+  ipython: required
+  ipython_genutils: required
+  ipywidgets: required
+  jinja2: required
+  jpeg: required
+  jsonschema: required
+  jupyter: required
+  jupyter_client: required
+  jupyter_console: required
+  jupyter_core: required
+  kealib: required
+  lazy-object-proxy: required
+  libboost: required
+  libgdal: required
+  libiconv: required
+  libkml: required
+  libnetcdf: required
+  libpng: required
+  libpq: required
+  libspatialite: required
+  libssh2: required
+  libtiff: required
+  libxml2: required
+  macholib: required
+  markupsafe: required
+  matplotlib: required
+  mccabe: required
+  mistune: required
+  mkl: required
+  nbconvert: required
+  nbformat: required
+  notebook: required
+  numpy: required
+  openjpeg: required
+  openssl: required
+  packaging: required
+  pandas: required
+  pandoc: required
+  pandocfilters: required
+  pathlib2: required
+  pefile: required
+  pickleshare: required
+  proj4: required
+  prompt_toolkit: required
+  pycodestyle: required
+  pycparser: required
+  pygments: required
+  pyinstaller: required
+  pyopenssl: required
+  pyparsing: required
+  pypiwin32: required
+  pyqt: required
+  pyside: required
+  pysocks: required
+  python-dateutil: required
+  pytz: required
+  pywinpty: required
+  pyzmq: required
+  qt: required
+  qtconsole: required
+  requests: required
+  scandir: required
+  send2trash: required
+  simplegeneric: required
+  singledispatch: required
+  sip: required
+  six: required
+  snowballstemmer: required
+  sphinx: required
+  sphinxcontrib: required
+  sphinxcontrib-websupport: required
+  sqlite: required
+  ssl_match_hostname: required
+  terminado: required
+  testpath: required
+  tk: required
+  tornado: required
+  traitlets: required
+  typing: required
+  urllib3: required
+  vc: required
+  vs2008_runtime: required
+  wcwidth: required
+  webencodings: required
+  widgetsnbextension: required
+  win_inet_pton: required
+  win_unicode_console: required
+  wincertstore: required
+  winpty: required
+  wrapt: required
+  wxpython: required
+  xerces-c: required
+  zlib: required
+error: ''
+missing: {}
+---

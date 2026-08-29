@@ -12,3 +12,9 @@ data/cache/
 data/repos/
 site/
 notebooks/__marimo__/
+
+# Deck build products; slides.qmd and _theme.tex are the source.
+deck/talk.pdf
+deck/talk-notes.pdf
+deck/_numbers.yml
+deck/slides_files/

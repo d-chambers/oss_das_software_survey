@@ -1,0 +1,125 @@
+---
+repository: geophystech/eqalert.ru
+ref: master
+manifests:
+- package.json
+distribution: null
+tree_truncated: false
+declared:
+  '@mapbox/timespace': required
+  '@vue/test-utils': development
+  autoprefixer: development
+  axios: required
+  axios-mock-adapter: development
+  babel-core: development
+  babel-eslint: development
+  babel-loader: development
+  babel-plugin-istanbul: development
+  babel-plugin-transform-runtime: development
+  babel-preset-env: development
+  babel-preset-stage-2: development
+  babel-register: development
+  bootstrap: required
+  bootstrap-vue: development
+  chai: development
+  chalk: development
+  chart.js: required
+  chromedriver: development
+  compression-webpack-plugin: development
+  connect-history-api-fallback: development
+  copy-webpack-plugin: development
+  cross-env: development
+  cross-spawn: development
+  cryptiles: required
+  css-loader: development
+  cssnano: development
+  eslint: development
+  eslint-config-standard: development
+  eslint-friendly-formatter: development
+  eslint-loader: development
+  eslint-plugin-html: development
+  eslint-plugin-promise: development
+  eslint-plugin-standard: development
+  eventsource-polyfill: development
+  express: development
+  extract-text-webpack-plugin: development
+  file-loader: development
+  flush-promises: development
+  font-awesome: required
+  friendly-errors-webpack-plugin: development
+  html-webpack-plugin: development
+  http-proxy-middleware: development
+  idle-vue: required
+  inject-loader: development
+  karma: development
+  karma-chrome-launcher: development
+  karma-coverage: development
+  karma-mocha: development
+  karma-phantomjs-launcher: development
+  karma-phantomjs-shim: development
+  karma-sinon-chai: development
+  karma-sourcemap-loader: development
+  karma-spec-reporter: development
+  karma-webpack: development
+  leaflet: required
+  leaflet-dvf: required
+  leaflet-fullscreen: required
+  leaflet-gesture-handling: required
+  leaflet-spin: required
+  leaflet-yandex-tile: required
+  leaflet-zoomhome: required
+  leaflet.gridlayer.googlemutant: required
+  leaflet.markercluster: required
+  luxon: required
+  mocha: development
+  nightwatch: development
+  node-sass: development
+  opn: development
+  optimize-css-assets-webpack-plugin: development
+  ora: development
+  phantomjs-prebuilt: development
+  puppeteer: development
+  rimraf: development
+  sass-loader: development
+  selenium-server: development
+  semver: development
+  shelljs: development
+  sinon: development
+  sinon-chai: development
+  style-loader: development
+  url-loader: development
+  vue: required
+  vue-analytics: required
+  vue-axios: required
+  vue-chartjs: required
+  vue-datetime: required
+  vue-flatpickr-component: required
+  vue-loader: development
+  vue-markdown: required
+  vue-meta: required
+  vue-moment: required
+  vue-router: required
+  vue-simple-spinner: required
+  vue-style-loader: development
+  vue-template-compiler: development
+  vue-toasted: required
+  vue-yandex-metrika: required
+  vuex: required
+  vuex-persistedstate: required
+  webpack: development
+  webpack-bundle-analyzer: development
+  webpack-dev-middleware: development
+  webpack-hot-middleware: development
+  webpack-merge: development
+  weekstart: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: eqalert.ru
+stars: 10
+language: JavaScript
+fork: false
+archived: false
+pushed_at: '2023-05-02T06:38:07Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

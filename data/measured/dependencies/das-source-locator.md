@@ -1,0 +1,380 @@
+---
+id: das-source-locator
+source: dependencies
+scanned_at: '2026-08-29T11:22:34+00:00'
+ref: main
+tip: 78338a6e51ea1483da76a619e522317abf3ca4b4
+has_python: true
+manifests:
+- requirements_DAS_Locator.txt
+required:
+- altair
+- anyio
+- appnope
+- argon2-cffi
+- argon2-cffi-bindings
+- arrow
+- asttokens
+- async-lru
+- attrs
+- audioread
+- babel
+- backcall
+- beautifulsoup4
+- bleach
+- blinker
+- bokeh
+- cachetools
+- certifi
+- cffi
+- charset-normalizer
+- click
+- cloudpickle
+- comm
+- contourpy
+- cycler
+- das4whales
+- dask
+- datetime
+- debugpy
+- decorator
+- defusedxml
+- distributed
+- exceptiongroup
+- executing
+- fastjsonschema
+- filelock
+- fonttools
+- fqdn
+- fsspec
+- gitdb
+- gitpython
+- h11
+- h5py
+- httpcore
+- httpx
+- idna
+- imageio
+- importlib_metadata
+- importlib_resources
+- iniconfig
+- ipykernel
+- ipython
+- ipywidgets
+- isoduration
+- jedi
+- jinja2
+- joblib
+- json5
+- jsonpointer
+- jsonschema
+- jsonschema-specifications
+- jupyter
+- jupyter-console
+- jupyter-events
+- jupyter-lsp
+- jupyter_client
+- jupyter_core
+- jupyter_server
+- jupyter_server_terminals
+- jupyterlab
+- jupyterlab_pygments
+- jupyterlab_server
+- jupyterlab_widgets
+- kiwisolver
+- lazy_loader
+- librosa
+- llvmlite
+- locket
+- lz4
+- markdown-it-py
+- markupsafe
+- matplotlib
+- matplotlib-inline
+- mdurl
+- mistune
+- mpmath
+- msgpack
+- narwhals
+- nbclient
+- nbconvert
+- nbformat
+- nest-asyncio
+- networkx
+- notebook
+- notebook_shim
+- numba
+- numpy
+- opencv-python
+- overrides
+- packaging
+- pandas
+- pandocfilters
+- parso
+- partd
+- pexpect
+- pickleshare
+- pillow
+- pkgutil_resolve_name
+- platformdirs
+- plotly
+- pluggy
+- pooch
+- prometheus_client
+- prompt_toolkit
+- protobuf
+- psutil
+- ptyprocess
+- pure-eval
+- pyarrow
+- pycparser
+- pydeck
+- pygments
+- pyparsing
+- python-dateutil
+- python-json-logger
+- pytz
+- pywavelets
+- pyyaml
+- pyzmq
+- qtconsole
+- qtpy
+- referencing
+- requests
+- rfc3339-validator
+- rfc3986-validator
+- rich
+- rpds-py
+- scikit-image
+- scikit-learn
+- scipy
+- send2trash
+- six
+- smmap
+- sniffio
+- sortedcontainers
+- soundfile
+- soupsieve
+- soxr
+- sparse
+- stack-data
+- streamlit
+- sympy
+- tblib
+- tenacity
+- terminado
+- threadpoolctl
+- tifffile
+- tinycss2
+- toml
+- tomli
+- toolz
+- torch
+- torchvision
+- tornado
+- tqdm
+- traitlets
+- types-python-dateutil
+- typing_extensions
+- tzdata
+- uri-template
+- urllib3
+- wcwidth
+- webcolors
+- webencodings
+- websocket-client
+- wget
+- widgetsnbextension
+- xarray
+- xyzservices
+- zict
+- zipp
+- zope.interface
+optional: []
+development: []
+declared:
+  altair: required
+  anyio: required
+  appnope: required
+  argon2-cffi: required
+  argon2-cffi-bindings: required
+  arrow: required
+  asttokens: required
+  async-lru: required
+  attrs: required
+  audioread: required
+  babel: required
+  backcall: required
+  beautifulsoup4: required
+  bleach: required
+  blinker: required
+  bokeh: required
+  cachetools: required
+  certifi: required
+  cffi: required
+  charset-normalizer: required
+  click: required
+  cloudpickle: required
+  comm: required
+  contourpy: required
+  cycler: required
+  das4whales: required
+  dask: required
+  datetime: required
+  debugpy: required
+  decorator: required
+  defusedxml: required
+  distributed: required
+  exceptiongroup: required
+  executing: required
+  fastjsonschema: required
+  filelock: required
+  fonttools: required
+  fqdn: required
+  fsspec: required
+  gitdb: required
+  gitpython: required
+  h11: required
+  h5py: required
+  httpcore: required
+  httpx: required
+  idna: required
+  imageio: required
+  importlib_metadata: required
+  importlib_resources: required
+  iniconfig: required
+  ipykernel: required
+  ipython: required
+  ipywidgets: required
+  isoduration: required
+  jedi: required
+  jinja2: required
+  joblib: required
+  json5: required
+  jsonpointer: required
+  jsonschema: required
+  jsonschema-specifications: required
+  jupyter: required
+  jupyter-console: required
+  jupyter-events: required
+  jupyter-lsp: required
+  jupyter_client: required
+  jupyter_core: required
+  jupyter_server: required
+  jupyter_server_terminals: required
+  jupyterlab: required
+  jupyterlab_pygments: required
+  jupyterlab_server: required
+  jupyterlab_widgets: required
+  kiwisolver: required
+  lazy_loader: required
+  librosa: required
+  llvmlite: required
+  locket: required
+  lz4: required
+  markdown-it-py: required
+  markupsafe: required
+  matplotlib: required
+  matplotlib-inline: required
+  mdurl: required
+  mistune: required
+  mpmath: required
+  msgpack: required
+  narwhals: required
+  nbclient: required
+  nbconvert: required
+  nbformat: required
+  nest-asyncio: required
+  networkx: required
+  notebook: required
+  notebook_shim: required
+  numba: required
+  numpy: required
+  opencv-python: required
+  overrides: required
+  packaging: required
+  pandas: required
+  pandocfilters: required
+  parso: required
+  partd: required
+  pexpect: required
+  pickleshare: required
+  pillow: required
+  pkgutil_resolve_name: required
+  platformdirs: required
+  plotly: required
+  pluggy: required
+  pooch: required
+  prometheus_client: required
+  prompt_toolkit: required
+  protobuf: required
+  psutil: required
+  ptyprocess: required
+  pure-eval: required
+  pyarrow: required
+  pycparser: required
+  pydeck: required
+  pygments: required
+  pyparsing: required
+  python-dateutil: required
+  python-json-logger: required
+  pytz: required
+  pywavelets: required
+  pyyaml: required
+  pyzmq: required
+  qtconsole: required
+  qtpy: required
+  referencing: required
+  requests: required
+  rfc3339-validator: required
+  rfc3986-validator: required
+  rich: required
+  rpds-py: required
+  scikit-image: required
+  scikit-learn: required
+  scipy: required
+  send2trash: required
+  six: required
+  smmap: required
+  sniffio: required
+  sortedcontainers: required
+  soundfile: required
+  soupsieve: required
+  soxr: required
+  sparse: required
+  stack-data: required
+  streamlit: required
+  sympy: required
+  tblib: required
+  tenacity: required
+  terminado: required
+  threadpoolctl: required
+  tifffile: required
+  tinycss2: required
+  toml: required
+  tomli: required
+  toolz: required
+  torch: required
+  torchvision: required
+  tornado: required
+  tqdm: required
+  traitlets: required
+  types-python-dateutil: required
+  typing_extensions: required
+  tzdata: required
+  uri-template: required
+  urllib3: required
+  wcwidth: required
+  webcolors: required
+  webencodings: required
+  websocket-client: required
+  wget: required
+  widgetsnbextension: required
+  xarray: required
+  xyzservices: required
+  zict: required
+  zipp: required
+  zope.interface: required
+error: ''
+missing: {}
+---

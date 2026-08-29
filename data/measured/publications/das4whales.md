@@ -1,7 +1,7 @@
 ---
 id: das4whales
 source: publications
-scanned_at: '2026-08-28T15:03:54+00:00'
+scanned_at: '2026-08-29T12:11:02+00:00'
 publications:
 - doi: 10.5281/zenodo.7760187
   role: canonical

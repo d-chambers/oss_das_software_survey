@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import shutil
 import subprocess
 from datetime import date
@@ -19,17 +20,22 @@ from oss_das.clients import (
 from oss_das.clients.base import NotFoundError, SourceError
 from oss_das.core import read_csv, read_frontmatter
 from oss_das.measure import (
+    DEPENDENCY_KINDS,
     FORGE_FIELDS,
     GIT_COMMIT_FIELDS,
     ForgeClients,
     commit_rows,
     count_authors,
+    declared_dependencies,
     dependency_names,
+    dependency_record,
     downloads_in_window,
     forge_fields,
     forge_record,
     git_record,
+    imported_modules,
     mirror_record,
+    notebook_source,
     practices_from_tree,
     publication_record,
     registry_record,
@@ -769,3 +775,140 @@ class TestPracticesFromTree:
 
     def test_a_matlab_toolbox_project_is_packaged(self):
         assert practices_from_tree(["ExploreDAS.prj"])["packaging"] == "ExploreDAS.prj"
+
+
+class TestDeclaredDependencies:
+    """Manifest parsing, for the ecosystems the catalogue actually spans."""
+
+    def test_a_pyproject_separates_extras_from_requirements(self):
+        text = (
+            '[project]\ndependencies = ["numpy>=2", "scipy"]\n'
+            '[project.optional-dependencies]\nextras = ["xarray"]\ntest = ["pytest"]\n'
+        )
+        found = dict(declared_dependencies(text, "pyproject.toml"))
+        assert found == {
+            "numpy": "required",
+            "scipy": "required",
+            "xarray": "optional",
+            "pytest": "development",
+        }
+
+    def test_a_maven_test_scope_is_development(self):
+        text = (
+            "<dependency><artifactId>flink-core</artifactId></dependency>"
+            "<dependency><artifactId>junit</artifactId><scope>test</scope></dependency>"
+        )
+        assert dict(declared_dependencies(text, "pom.xml")) == {
+            "flink-core": "required",
+            "junit": "development",
+        }
+
+    def test_a_requirements_file_named_for_development_is_development(self):
+        assert dict(declared_dependencies("black\n", "requirements_dev.txt")) == {
+            "black": "development"
+        }
+
+    def test_unparseable_toml_yields_nothing_rather_than_raising(self):
+        assert declared_dependencies("[project", "pyproject.toml") == []
+
+
+class TestImportedModules:
+    def test_a_module_level_import_is_required(self):
+        assert imported_modules("import numpy") == {"numpy": "required"}
+
+    def test_an_import_inside_a_function_is_optional(self):
+        # DASPy reaches for DASCore this way, and DASMatrix for the same
+        # reason: the converter only needs the library when it is called.
+        source = "def to_dascore(self):\n    from dascore.core import Patch\n"
+        assert imported_modules(source) == {"dascore": "optional"}
+
+    def test_a_relative_import_is_the_project_itself(self):
+        assert imported_modules("from . import utils") == {}
+
+    def test_the_stronger_position_wins_for_one_name(self):
+        source = "import numpy\ndef f():\n    import numpy\n"
+        assert imported_modules(source) == {"numpy": "required"}
+
+    def test_unparseable_source_yields_nothing_rather_than_raising(self):
+        assert imported_modules("def (:") == {}
+
+
+class TestNotebookSource:
+    def test_magics_and_shell_escapes_are_stripped(self):
+        nb = json.dumps(
+            {
+                "cells": [
+                    {
+                        "cell_type": "code",
+                        "source": ["%matplotlib inline\n", "import numpy\n"],
+                    }
+                ]
+            }
+        )
+        assert imported_modules(notebook_source(nb)) == {"numpy": "required"}
+
+    def test_markdown_cells_are_not_python(self):
+        nb = json.dumps({"cells": [{"cell_type": "markdown", "source": ["import x"]}]})
+        assert notebook_source(nb).strip() == ""
+
+    def test_a_broken_notebook_is_empty_not_an_error(self):
+        assert notebook_source("{not json") == ""
+
+
+class TestDependencyRecord:
+    def test_a_project_with_no_repository_is_not_applicable(self, tmp_path):
+        record = dependency_record(REGISTRY_ONLY, tmp_path)
+        assert record["missing"] == {"dependencies": "not_applicable"}
+        assert record["has_python"] is None
+
+    def test_a_missing_mirror_is_unavailable(self, tmp_path):
+        record = dependency_record(project(), tmp_path)
+        assert record["missing"] == {"dependencies": "unavailable"}
+
+    def test_a_mirror_is_read_for_manifests_and_imports(self, tmp_path, source_repo):
+        local = project().model_copy(update={"repository_url": str(source_repo)})
+        mirror_record(local, tmp_path / "repos")
+        record = dependency_record(local, tmp_path / "repos")
+        assert record["missing"] == {}
+        assert record["has_python"] is True
+        assert set(record) >= {*DEPENDENCY_KINDS, "manifests", "ref", "tip"}
+
+    def test_declared_holds_the_manifest_half_alone(self, tmp_path, source_repo):
+        """The import scan needs a clone, so a comparison can only use this half."""
+        (source_repo / "pyproject.toml").write_text(
+            '[project]\nname = "x"\ndependencies = ["obspy"]\n'
+        )
+        (source_repo / "a.py").write_text("import numpy\n")
+        git(source_repo, "add", "pyproject.toml", "a.py")
+        git(source_repo, "commit", "--quiet", "-m", "manifest")
+        local = project().model_copy(update={"repository_url": str(source_repo)})
+        mirror_record(local, tmp_path / "repos")
+        record = dependency_record(local, tmp_path / "repos")
+
+        assert record["declared"] == {"obspy": "required"}
+        # numpy is imported but never declared, so it reaches the merged lists
+        # and must not reach ``declared``.
+        assert "numpy" in record["required"]
+        assert "numpy" not in record["declared"]
+
+    def test_declared_is_a_subset_of_the_merged_lists(self, tmp_path, source_repo):
+        (source_repo / "pyproject.toml").write_text(
+            '[project]\nname = "x"\ndependencies = ["obspy"]\n'
+            '[project.optional-dependencies]\nextra = ["scipy"]\n'
+        )
+        git(source_repo, "add", "pyproject.toml")
+        git(source_repo, "commit", "--quiet", "-m", "manifest")
+        local = project().model_copy(update={"repository_url": str(source_repo)})
+        mirror_record(local, tmp_path / "repos")
+        record = dependency_record(local, tmp_path / "repos")
+
+        merged = {n for kind in DEPENDENCY_KINDS for n in record[kind]}
+        assert set(record["declared"]) <= merged
+        assert record["declared"]["scipy"] == "optional"
+
+    def test_a_project_with_no_manifest_declares_nothing(self, tmp_path, source_repo):
+        local = project().model_copy(update={"repository_url": str(source_repo)})
+        mirror_record(local, tmp_path / "repos")
+        record = dependency_record(local, tmp_path / "repos")
+        assert record["manifests"] == []
+        assert record["declared"] == {}

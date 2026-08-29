@@ -1,0 +1,53 @@
+---
+repository: INGV/ttime
+ref: main
+manifests:
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  certifi: required
+  charset-normalizer: required
+  click: required
+  contourpy: required
+  cycler: required
+  decorator: required
+  flask: required
+  flask-api: required
+  flask-cors: required
+  fonttools: required
+  geojson: required
+  greenlet: required
+  idna: required
+  itsdangerous: required
+  jinja2: required
+  kiwisolver: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  numpy: required
+  obspy: required
+  packaging: required
+  pillow: required
+  pyparsing: required
+  pyproj: required
+  python-dateutil: required
+  requests: required
+  scipy: required
+  simplejson: required
+  six: required
+  sqlalchemy: required
+  urllib3: required
+  uwsgi: required
+  werkzeug: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: ttime
+stars: 0
+language: Python
+fork: false
+archived: false
+pushed_at: '2023-01-31T14:41:15Z'
+fetched_at: '2026-08-29T12:10:16+00:00'
+---

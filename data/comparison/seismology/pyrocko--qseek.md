@@ -1,0 +1,50 @@
+---
+repository: pyrocko/qseek
+ref: main
+manifests:
+- pyproject.toml
+- setup.py
+distribution: qseek
+tree_truncated: false
+declared:
+  aiofiles: required
+  aiohttp: required
+  aiohttp_cors: required
+  argcomplete: optional
+  asyncssh: optional
+  babel: optional
+  eikonalfm: required
+  fudgeo: required
+  griffe-pydantic: development
+  lru-dict: required
+  markdown-exec: development
+  mkdocs-material: development
+  mkdocstrings: development
+  nest_asyncio: required
+  nicegui: optional
+  numpy: required
+  plotly: optional
+  prek: development
+  psutil: required
+  pydantic: required
+  pyevtk: required
+  pyrocko: required
+  rfc3986: optional
+  rich: required
+  scikit-fmm: required
+  scikit-learn: required
+  scipy: required
+  sdnotify: required
+  seisbench: required
+  watchfiles: optional
+error: ''
+missing: {}
+ecosystem: seismology
+name: qseek
+stars: 50
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-08-21T21:13:43Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

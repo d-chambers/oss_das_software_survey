@@ -1,0 +1,49 @@
+---
+repository: PyGLImER/PyGLImER
+ref: master
+manifests:
+- environment.yml
+- pyproject.toml
+- requirements.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  cartopy: required
+  colorama: required
+  conda-forge: required
+  cython: required
+  dill: required
+  geographiclib: required
+  global-land-mask: required
+  h5py: required
+  jinja2: required
+  joblib: required
+  matplotlib: required
+  numpy: required
+  obspy: required
+  owslib: required
+  pandas: required
+  plotly: required
+  prov: required
+  psutil: required
+  py: required
+  pydata-sphinx-theme: required
+  pyvista: required
+  pyyaml: required
+  scipy: required
+  sphinx: required
+  sphinx-copybutton: required
+  sphinx-gallery: required
+  tqdm: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: PyGLImER
+stars: 48
+language: Python
+fork: false
+archived: false
+pushed_at: '2025-07-04T14:02:49Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

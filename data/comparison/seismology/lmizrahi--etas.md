@@ -1,0 +1,62 @@
+---
+repository: lmizrahi/etas
+ref: main
+manifests:
+- pyproject.toml
+- requirements.txt
+distribution: etas
+tree_truncated: false
+declared:
+  annotated-types: required
+  attrs: required
+  cartopy: required
+  certifi: required
+  charset-normalizer: required
+  click: required
+  click-plugins: required
+  cligj: required
+  contourpy: required
+  cycler: required
+  fiona: required
+  fonttools: required
+  geopandas: required
+  hermes-model: required
+  idna: required
+  jinja2: required
+  joblib: required
+  kiwisolver: required
+  markupsafe: required
+  matplotlib: required
+  numpy: required
+  packaging: required
+  pandas: required
+  pillow: required
+  pydantic: required
+  pydantic_core: required
+  pynverse: required
+  pyogrio: required
+  pyparsing: required
+  pyproj: required
+  pyshp: required
+  python-dateutil: required
+  pytz: required
+  requests: required
+  scipy: required
+  seismostats: required
+  shapely: required
+  six: required
+  tabulate: required
+  typing_extensions: required
+  tzdata: required
+  urllib3: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: etas
+stars: 102
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-04-10T16:56:13Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

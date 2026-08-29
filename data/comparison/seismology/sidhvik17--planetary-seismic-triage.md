@@ -1,0 +1,101 @@
+---
+repository: sidhvik17/planetary-seismic-triage
+ref: main
+manifests:
+- pyproject.toml
+- requirements-lock.txt
+- requirements.txt
+distribution: planetseis
+tree_truncated: false
+declared:
+  altair: required
+  anyio: required
+  attrs: required
+  blinker: required
+  bottleneck: required
+  cachetools: required
+  certifi: required
+  charset-normalizer: required
+  click: required
+  colorama: required
+  contourpy: required
+  cycler: required
+  decorator: required
+  filelock: required
+  flatbuffers: required
+  fonttools: required
+  fsspec: required
+  gitdb: required
+  gitpython: required
+  greenlet: required
+  h11: required
+  h5py: required
+  hf-xet: required
+  httpcore: required
+  httptools: required
+  httpx: required
+  huggingface_hub: required
+  idna: required
+  itsdangerous: required
+  jinja2: required
+  joblib: required
+  jsonschema: required
+  jsonschema-specifications: required
+  kiwisolver: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  ml_dtypes: required
+  mpmath: required
+  narwhals: required
+  nest-asyncio: required
+  networkx: required
+  numpy: required
+  obspy: required
+  onnx: required
+  onnxruntime: required
+  packaging: required
+  pandas: required
+  pillow: required
+  plotly: required
+  protobuf: required
+  pyarrow: required
+  pydeck: required
+  pyparsing: required
+  python-dateutil: required
+  python-multipart: required
+  pyyaml: required
+  referencing: required
+  requests: required
+  rpds-py: required
+  scikit-learn: required
+  scipy: required
+  seisbench: required
+  six: required
+  smmap: required
+  sqlalchemy: required
+  starlette: required
+  streamlit: required
+  sympy: required
+  tenacity: required
+  threadpoolctl: required
+  toml: required
+  torch: required
+  tqdm: required
+  typing_extensions: required
+  tzdata: required
+  urllib3: required
+  uvicorn: required
+  watchdog: required
+  websockets: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: planetary-seismic-triage
+stars: 2
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-07-18T13:49:48Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

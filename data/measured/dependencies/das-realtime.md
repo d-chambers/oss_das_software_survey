@@ -1,0 +1,369 @@
+---
+id: das-realtime
+source: dependencies
+scanned_at: '2026-08-29T11:22:34+00:00'
+ref: main
+tip: f7ebe1eecfb7cfdf0cda72470faee72d430fa331
+has_python: true
+manifests:
+- environment.yml
+required:
+- anaconda
+- asttokens
+- binutils
+- binutils_impl_linux-64
+- binutils_linux-64
+- blas
+- bottleneck
+- brotli-python
+- bzip2
+- c-ares
+- c-compiler
+- ca-certificates
+- cmake
+- comm
+- conda-forge
+- contourpy
+- cxx-compiler
+- cycler
+- cyrus-sasl
+- dbus
+- debugpy
+- decorator
+- defaults
+- eqnet
+- exceptiongroup
+- executing
+- expat
+- fastapi
+- fontconfig
+- fonttools
+- freetype
+- gcc
+- gcc_impl_linux-64
+- gcc_linux-64
+- glib
+- glib-tools
+- gst-plugins-base
+- gstreamer
+- gxx
+- gxx_impl_linux-64
+- gxx_linux-64
+- h5py
+- hdf5
+- https
+- icu
+- importlib-metadata
+- importlib_resources
+- ipykernel
+- ipython
+- jedi
+- joblib
+- jpeg
+- jupyter_client
+- jupyter_core
+- kernel-headers_linux-64
+- kiwisolver
+- krb5
+- lcms2
+- ld_impl_linux-64
+- lerc
+- libabseil
+- libblas
+- libcblas
+- libclang
+- libclang13
+- libcups
+- libcurl
+- libdeflate
+- libedit
+- libev
+- libffi
+- libgcc
+- libgcc-devel_linux-64
+- libgcc-ng
+- libgfortran-ng
+- libgfortran5
+- libglib
+- libgomp
+- libiconv
+- liblapack
+- libllvm10
+- libllvm11
+- libllvm14
+- libnghttp2
+- libopenblas
+- libpng
+- libpq
+- libprotobuf
+- libsanitizer
+- libsodium
+- libssh2
+- libstdcxx
+- libstdcxx-devel_linux-64
+- libstdcxx-ng
+- libtiff
+- libuuid
+- libuv
+- libwebp-base
+- libxcb
+- libxkbcommon
+- libxml2
+- llvmlite
+- lz4-c
+- make
+- markupsafe
+- matplotlib
+- matplotlib-base
+- matplotlib-inline
+- mpmath
+- mysql
+- ncurses
+- nest-asyncio
+- numba
+- numexpr
+- numpy
+- obspy
+- openjpeg
+- openldap
+- openssl
+- packaging
+- pandas
+- parso
+- pcre2
+- pexpect
+- pickleshare
+- pillow
+- platformdirs
+- plotly
+- ply
+- prompt-toolkit
+- psutil
+- ptyprocess
+- pure_eval
+- pybind11-abi
+- pydantic
+- pyew
+- pygments
+- pyparsing
+- pyqt
+- pyqt5-sip
+- python-dateutil
+- python-tzdata
+- python_abi
+- python_http_client
+- pytz
+- pyyaml
+- pyzmq
+- qt-main
+- readline
+- rhash
+- scipy
+- sendgrid
+- sip
+- six
+- sqlite
+- stack_data
+- sympy
+- sysroot_linux-64
+- tbb
+- tenacity
+- tk
+- tomli
+- torch
+- tornado
+- tqdm
+- traitlets
+- typing_extensions
+- tzdata
+- unicodedata2
+- utm
+- watchdog
+- wcwidth
+- werkzeug
+- xz
+- yaml
+- zeromq
+- zipp
+- zlib
+- zmq
+- zstd
+optional: []
+development: []
+declared:
+  anaconda: required
+  asttokens: required
+  binutils: required
+  binutils_impl_linux-64: required
+  binutils_linux-64: required
+  blas: required
+  bottleneck: required
+  brotli-python: required
+  bzip2: required
+  c-ares: required
+  c-compiler: required
+  ca-certificates: required
+  cmake: required
+  comm: required
+  conda-forge: required
+  contourpy: required
+  cxx-compiler: required
+  cycler: required
+  cyrus-sasl: required
+  dbus: required
+  debugpy: required
+  decorator: required
+  defaults: required
+  exceptiongroup: required
+  executing: required
+  expat: required
+  fontconfig: required
+  fonttools: required
+  freetype: required
+  gcc: required
+  gcc_impl_linux-64: required
+  gcc_linux-64: required
+  glib: required
+  glib-tools: required
+  gst-plugins-base: required
+  gstreamer: required
+  gxx: required
+  gxx_impl_linux-64: required
+  gxx_linux-64: required
+  h5py: required
+  hdf5: required
+  https: required
+  icu: required
+  importlib-metadata: required
+  importlib_resources: required
+  ipykernel: required
+  ipython: required
+  jedi: required
+  joblib: required
+  jpeg: required
+  jupyter_client: required
+  jupyter_core: required
+  kernel-headers_linux-64: required
+  kiwisolver: required
+  krb5: required
+  lcms2: required
+  ld_impl_linux-64: required
+  lerc: required
+  libabseil: required
+  libblas: required
+  libcblas: required
+  libclang: required
+  libclang13: required
+  libcups: required
+  libcurl: required
+  libdeflate: required
+  libedit: required
+  libev: required
+  libffi: required
+  libgcc: required
+  libgcc-devel_linux-64: required
+  libgcc-ng: required
+  libgfortran-ng: required
+  libgfortran5: required
+  libglib: required
+  libgomp: required
+  libiconv: required
+  liblapack: required
+  libllvm10: required
+  libllvm11: required
+  libllvm14: required
+  libnghttp2: required
+  libopenblas: required
+  libpng: required
+  libpq: required
+  libprotobuf: required
+  libsanitizer: required
+  libsodium: required
+  libssh2: required
+  libstdcxx: required
+  libstdcxx-devel_linux-64: required
+  libstdcxx-ng: required
+  libtiff: required
+  libuuid: required
+  libuv: required
+  libwebp-base: required
+  libxcb: required
+  libxkbcommon: required
+  libxml2: required
+  llvmlite: required
+  lz4-c: required
+  make: required
+  markupsafe: required
+  matplotlib: required
+  matplotlib-base: required
+  matplotlib-inline: required
+  mpmath: required
+  mysql: required
+  ncurses: required
+  nest-asyncio: required
+  numba: required
+  numexpr: required
+  numpy: required
+  openjpeg: required
+  openldap: required
+  openssl: required
+  packaging: required
+  pandas: required
+  parso: required
+  pcre2: required
+  pexpect: required
+  pickleshare: required
+  pillow: required
+  platformdirs: required
+  plotly: required
+  ply: required
+  prompt-toolkit: required
+  psutil: required
+  ptyprocess: required
+  pure_eval: required
+  pybind11-abi: required
+  pygments: required
+  pyparsing: required
+  pyqt: required
+  pyqt5-sip: required
+  python-dateutil: required
+  python-tzdata: required
+  python_abi: required
+  python_http_client: required
+  pytz: required
+  pyyaml: required
+  pyzmq: required
+  qt-main: required
+  readline: required
+  rhash: required
+  scipy: required
+  sendgrid: required
+  sip: required
+  six: required
+  sqlite: required
+  stack_data: required
+  sympy: required
+  sysroot_linux-64: required
+  tbb: required
+  tenacity: required
+  tk: required
+  tomli: required
+  tornado: required
+  tqdm: required
+  traitlets: required
+  typing_extensions: required
+  tzdata: required
+  unicodedata2: required
+  utm: required
+  watchdog: required
+  wcwidth: required
+  werkzeug: required
+  xz: required
+  yaml: required
+  zeromq: required
+  zipp: required
+  zlib: required
+  zstd: required
+error: ''
+missing: {}
+---

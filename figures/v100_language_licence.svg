@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="800" viewBox="0 0 1680 800">
   <title>Language and licence</title>
-  <desc>77 DAS projects by primary language, split by reuse terms. 64 are OSI-approved; 606,453 lines of source.</desc>
+  <desc>77 DAS projects by primary language, split by reuse terms. 64 are OSI-approved; 606,383 lines of source.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="840" y="88" font-size="36" fill="#2b2620" text-anchor="middle">What it is written in, and how it may be reused</text>
   <rect x="330" y="166" width="26" height="12" rx="2" fill="#c98500"/>
@@ -19,7 +19,7 @@
   <rect x="1109.66" y="221" width="140.339" height="30" fill="#4b4b50"/>
   <text x="712.034" y="244" font-size="19" fill="#ffffff" text-anchor="middle">49</text>
   <text x="1179.83" y="244" font-size="19" fill="#ffffff" text-anchor="middle">9</text>
-  <text x="1272" y="243" font-size="18" fill="#7a7266" text-anchor="start" font-style="italic">492,138 lines</text>
+  <text x="1272" y="243" font-size="18" fill="#7a7266" text-anchor="start" font-style="italic">492,068 lines</text>
   <text x="308" y="302" font-size="22" fill="#2b2620" text-anchor="end">Jupyter</text>
   <rect x="330" y="279" width="46.7797" height="30" fill="#c98500"/>
   <rect x="376.78" y="279" width="15.5932" height="30" fill="#e4dccb"/>

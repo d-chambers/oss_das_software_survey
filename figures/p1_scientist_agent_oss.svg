@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="737.651"
+   height="474.53586"
+   viewBox="0 0 737.65104 474.53585"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="p1_scientist_agent_oss.svg"
+   inkscape:version="1.4.4 (1:1.4.4+202605061436+dcaf3e7d9e)"
+   inkscape:export-filename="p1_scientist_agent_oss.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview53"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.93958333"
+     inkscape:cx="221.37472"
+     inkscape:cy="300.66519"
+     inkscape:window-width="1854"
+     inkscape:window-height="1011"
+     inkscape:window-x="66"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg53" />
+  <defs
+     id="defs1">
+    <marker
+       id="ah"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1" />
+    </marker>
+    <marker
+       id="agh"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-6" />
+    </marker>
+    <marker
+       id="marker2"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path2-7" />
+    </marker>
+    <marker
+       id="marker29"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path29" />
+    </marker>
+    <defs
+       id="defs29">
+      <marker
+         id="marker56"
+         viewBox="0 0 10 10"
+         refX="6"
+         refY="5"
+         markerWidth="2.5999999"
+         markerHeight="2.5999999"
+         orient="auto">
+        <path
+           d="M 0,0 10,5 0,10 Z"
+           fill="#2b2620"
+           id="path56" />
+      </marker>
+    </defs>
+    <marker
+       id="ah-3"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-5" />
+    </marker>
+    <marker
+       id="ah-1"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-2" />
+    </marker>
+    <marker
+       id="ah-1-3"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-2-6" />
+    </marker>
+    <marker
+       id="ah-6"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1" />
+    </marker>
+    <marker
+       id="ah-2"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-0" />
+    </marker>
+    <marker
+       id="ah-2-5"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-0-9" />
+    </marker>
+    <marker
+       id="agh-9"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-6-7" />
+    </marker>
+    <marker
+       id="marker1"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-3" />
+    </marker>
+    <marker
+       id="ah-6-2"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-9" />
+    </marker>
+    <marker
+       id="ah-6-1"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-0" />
+    </marker>
+    <marker
+       id="ah-6-4"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-5" />
+    </marker>
+    <marker
+       id="ah-63"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-20" />
+    </marker>
+    <marker
+       id="ah-3-6"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-5-1" />
+    </marker>
+    <marker
+       id="agh-9-5"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-6-7-5" />
+    </marker>
+    <marker
+       id="marker2-4"
+       viewBox="0 0 10 10"
+       refX="6"
+       refY="5"
+       markerWidth="2.5999999"
+       markerHeight="2.5999999"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path2" />
+    </marker>
+    <marker
+       id="ah-6-4-5"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-5-6" />
+    </marker>
+    <marker
+       id="ah-6-4-4"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-5-5" />
+    </marker>
+    <marker
+       id="ah-6-4-7"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-5-4" />
+    </marker>
+    <marker
+       id="ah-63-8"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-20-6" />
+    </marker>
+    <marker
+       id="ah-63-8-3"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-20-6-1" />
+    </marker>
+    <marker
+       id="ah-6-4-7-0"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="8"
+       markerHeight="8"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#2b2620"
+         id="path1-1-5-4-6" />
+    </marker>
+  </defs>
+  <g
+     id="g59"
+     transform="translate(11.904326,100.21119)">
+    <circle
+       cx="76.976562"
+       cy="209.86017"
+       r="33.599998"
+       fill="#2b2620"
+       id="circle1"
+       style="stroke-width:1.05" />
+    <path
+       d="m 11.876563,340.06018 c 0,-58.8 29.4,-81.9 65.099999,-81.9 35.699998,0 65.099998,23.1 65.099998,81.9 z"
+       fill="#2b2620"
+       id="path3"
+       style="stroke-width:1.05" />
+    <path
+       d="m 60.176562,258.16018 16.8,37.8 16.800001,-37.8"
+       fill="#f1ece1"
+       id="path4"
+       style="stroke-width:1.05" />
+    <rect
+       x="72.776566"
+       y="274.96017"
+       width="8.3999996"
+       height="42"
+       rx="2.0999999"
+       fill="#f1ece1"
+       id="rect3"
+       style="stroke-width:1.05" />
+  </g>
+  <text
+     x="82.591728"
+     y="474.1008"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="27px"
+     letter-spacing="2"
+     fill="#2b2620"
+     id="text3">SCIENTIST</text>
+  <g
+     id="g58"
+     transform="translate(-469.82555,-11.088809)">
+    <rect
+       x="747.67657"
+       y="190.96017"
+       width="138.60001"
+       height="96.599998"
+       rx="6.3000002"
+       fill="#4b4b50"
+       id="rect8"
+       style="stroke-width:1.05" />
+    <rect
+       x="756.07654"
+       y="199.36017"
+       width="121.8"
+       height="79.800003"
+       fill="#1c1a17"
+       id="rect9"
+       style="stroke-width:1.05" />
+    <text
+       x="764.47656"
+       y="218.26016"
+       font-family="'Courier New', monospace"
+       font-size="15.75px"
+       font-weight="bold"
+       fill="#c98500"
+       id="text9"
+       style="stroke-width:1.05">&gt;&gt;&gt;</text>
+    <rect
+       x="800.17657"
+       y="207.76016"
+       width="42"
+       height="4.1999998"
+       rx="1.05"
+       fill="#8a929b"
+       id="rect10"
+       style="stroke-width:1.05" />
+    <path
+       d="m 764.47656,253.96018 h 16.8 l 6.3,-10.5 6.3,23.1 6.3,-33.6 6.3,39.9 6.3,-31.5 6.3,16.8 6.3,-10.5 8.4,6.3 10.5,-4.2 25.2,2.1"
+       fill="none"
+       stroke="#e4dccb"
+       stroke-width="2.31"
+       stroke-linejoin="round"
+       id="path10" />
+    <path
+       d="m 732.97656,291.76018 h 168 l -8.4,14.7 h -151.2 z"
+       fill="#63636a"
+       id="path11"
+       style="stroke-width:1.05" />
+    <rect
+       x="800.17657"
+       y="291.76016"
+       width="33.599998"
+       height="5.25"
+       fill="#4b4b50"
+       id="rect11"
+       style="stroke-width:1.05" />
+  </g>
+  <text
+     x="347.151"
+     y="334.93906"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="27px"
+     letter-spacing="2"
+     fill="#2b2620"
+     id="text11">Domain OSS</text>
+  <g
+     id="g53"
+     transform="translate(-678.94905,-147.82372)">
+    <path
+       d="m 1246.5,207.8 h 69.3 l 16.8,16.8 v 117.6 h -86.1 z"
+       fill="#e4dccb"
+       id="path12"
+       style="stroke-width:1.05" />
+    <path
+       d="m 1315.8,207.8 v 16.8 h 16.8"
+       fill="#c9bfa9"
+       id="path13"
+       style="stroke-width:1.05" />
+    <rect
+       x="1259.1"
+       y="235.10001"
+       width="37.799999"
+       height="5.25"
+       rx="1.05"
+       fill="#7a7266"
+       id="rect13"
+       style="stroke-width:1.05" />
+    <rect
+       x="1269.6"
+       y="247.7"
+       width="46.200001"
+       height="5.25"
+       rx="1.05"
+       fill="#2b2620"
+       id="rect14"
+       style="stroke-width:1.05" />
+    <rect
+       x="1280.1"
+       y="260.29999"
+       width="31.5"
+       height="5.25"
+       rx="1.05"
+       fill="#2b2620"
+       id="rect15"
+       style="stroke-width:1.05" />
+    <rect
+       x="1280.1"
+       y="272.89999"
+       width="42"
+       height="5.25"
+       rx="1.05"
+       fill="#7a7266"
+       id="rect16"
+       style="stroke-width:1.05" />
+    <rect
+       x="1269.6"
+       y="285.5"
+       width="27.299999"
+       height="5.25"
+       rx="1.05"
+       fill="#2b2620"
+       id="rect17"
+       style="stroke-width:1.05" />
+    <rect
+       x="1259.1"
+       y="298.10001"
+       width="48.299999"
+       height="5.25"
+       rx="1.05"
+       fill="#2b2620"
+       id="rect18"
+       style="stroke-width:1.05" />
+    <rect
+       x="1269.6"
+       y="310.70001"
+       width="35.700001"
+       height="5.25"
+       rx="1.05"
+       fill="#7a7266"
+       id="rect19"
+       style="stroke-width:1.05" />
+    <rect
+       x="1259.1"
+       y="323.29999"
+       width="23.1"
+       height="5.25"
+       rx="1.05"
+       fill="#2b2620"
+       id="rect20"
+       style="stroke-width:1.05" />
+    <path
+       d="m 1341,275 h 31.5"
+       stroke="#2b2620"
+       stroke-width="3.15"
+       stroke-linecap="round"
+       id="path20" />
+    <path
+       d="m 1364.1,265.55 10.5,9.45 -10.5,9.45"
+       fill="none"
+       stroke="#2b2620"
+       stroke-width="3.15"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       id="path21" />
+    <rect
+       x="1378.8"
+       y="256.10001"
+       width="37.799999"
+       height="37.799999"
+       rx="4.1999998"
+       fill="#4b4b50"
+       id="rect21"
+       style="stroke-width:1.05" />
+  </g>
+  <text
+     x="637.56274"
+     y="43.622757"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="27px"
+     letter-spacing="2"
+     fill="#2b2620"
+     id="text21">Algorithms</text>
+  <g
+     id="g56"
+     transform="translate(-696.49435,-321.4821)">
+    <g
+       id="g54"
+       transform="translate(8.5144121,-4.2572062)">
+      <g
+         id="g55"
+         transform="translate(3.0102994,-63.216287)">
+        <line
+           x1="1257"
+           y1="693"
+           x2="1320"
+           y2="677.25"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line21" />
+        <line
+           x1="1257"
+           y1="693"
+           x2="1320"
+           y2="716.09998"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line22" />
+        <line
+           x1="1257"
+           y1="693"
+           x2="1320"
+           y2="753.90002"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line23" />
+        <line
+           x1="1257"
+           y1="693"
+           x2="1320"
+           y2="792.75"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line24" />
+        <line
+           x1="1257"
+           y1="735"
+           x2="1320"
+           y2="677.25"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line25" />
+        <line
+           x1="1257"
+           y1="735"
+           x2="1320"
+           y2="716.09998"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line26" />
+        <line
+           x1="1257"
+           y1="735"
+           x2="1320"
+           y2="753.90002"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line27" />
+        <line
+           x1="1257"
+           y1="735"
+           x2="1320"
+           y2="792.75"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line28" />
+        <line
+           x1="1257"
+           y1="777"
+           x2="1320"
+           y2="677.25"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line29" />
+        <line
+           x1="1257"
+           y1="777"
+           x2="1320"
+           y2="716.09998"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line30" />
+        <line
+           x1="1257"
+           y1="777"
+           x2="1320"
+           y2="753.90002"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line31" />
+        <line
+           x1="1257"
+           y1="777"
+           x2="1320"
+           y2="792.75"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line32" />
+        <line
+           x1="1320"
+           y1="677.25"
+           x2="1383"
+           y2="714"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line33" />
+        <line
+           x1="1320"
+           y1="677.25"
+           x2="1383"
+           y2="756"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line34" />
+        <line
+           x1="1320"
+           y1="716.09998"
+           x2="1383"
+           y2="714"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line35" />
+        <line
+           x1="1320"
+           y1="716.09998"
+           x2="1383"
+           y2="756"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line36" />
+        <line
+           x1="1320"
+           y1="753.90002"
+           x2="1383"
+           y2="714"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line37" />
+        <line
+           x1="1320"
+           y1="753.90002"
+           x2="1383"
+           y2="756"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line38" />
+        <line
+           x1="1320"
+           y1="792.75"
+           x2="1383"
+           y2="714"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line39" />
+        <line
+           x1="1320"
+           y1="792.75"
+           x2="1383"
+           y2="756"
+           stroke="#cbc3b3"
+           stroke-width="2.1"
+           id="line40" />
+        <circle
+           cx="1257"
+           cy="693"
+           r="9.4499998"
+           fill="#2b2620"
+           id="circle40"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1257"
+           cy="735"
+           r="9.4499998"
+           fill="#2b2620"
+           id="circle41"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1257"
+           cy="777"
+           r="9.4499998"
+           fill="#2b2620"
+           id="circle42"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1320"
+           cy="677.25"
+           r="9.4499998"
+           fill="#c98500"
+           id="circle43"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1320"
+           cy="716.09998"
+           r="9.4499998"
+           fill="#c98500"
+           id="circle44"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1320"
+           cy="753.90002"
+           r="9.4499998"
+           fill="#c98500"
+           id="circle45"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1320"
+           cy="792.75"
+           r="9.4499998"
+           fill="#c98500"
+           id="circle46"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1383"
+           cy="714"
+           r="9.4499998"
+           fill="#2b2620"
+           id="circle47"
+           style="stroke-width:1.05" />
+        <circle
+           cx="1383"
+           cy="756"
+           r="9.4499998"
+           fill="#2b2620"
+           id="circle48"
+           style="stroke-width:1.05" />
+      </g>
+    </g>
+  </g>
+  <text
+     x="634.93811"
+     y="441.00262"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="27px"
+     letter-spacing="2"
+     fill="#2b2620"
+     id="text48">ML Models</text>
+  <path
+     d="m 123.39126,200.84189 -0.30033,60.91229"
+     fill="none"
+     stroke="#2b2620"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#ah-6-4-7)"
+     id="path48-7-3-30"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#ah-6-4-7)"
+     inkscape:transform-center-x="8.948237"
+     inkscape:transform-center-y="-16.503688" />
+  <path
+     d="m 55.087056,262.65415 0.30033,-60.91229"
+     fill="none"
+     stroke="#2b2620"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#ah-6-4-7-0)"
+     id="path48-7-3-30-9"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#ah-6-4-7-0)"
+     inkscape:transform-center-x="-8.9482339"
+     inkscape:transform-center-y="16.503684" />
+  <path
+     d="m 435.08025,206.72349 96.7048,-85.78703"
+     fill="none"
+     stroke="#2b2620"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#ah-63)"
+     id="path51"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#ah-63)" />
+  <path
+     d="m 162.22405,120.84378 96.7048,85.78703"
+     fill="none"
+     stroke="#2b2620"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#ah-63-8)"
+     id="path51-8"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#ah-63-8)" />
+  <path
+     d="m 162.22405,325.00108 96.7048,-85.78703"
+     fill="none"
+     stroke="#2b2620"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#ah-63-8-3)"
+     id="path51-8-9"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#ah-63-8-3)" />
+  <path
+     d="m 435.07775,239.12137 96.6958,84.78536"
+     fill="none"
+     stroke="#2b2620"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#ah-3-6)"
+     id="path51-2"
+     sodipodi:nodetypes="cc"
+     style="marker-end:url(#ah-3-6)" />
+  <text
+     x="83.481621"
+     y="19.116211"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="27px"
+     letter-spacing="2"
+     fill="#2b2620"
+     id="text8">AGENT</text>
+  <g
+     id="g57"
+     transform="translate(-1281.8941,-72.523731)">
+    <path
+       d="m 1365,111.5 a 73.5,73.5 0 0 1 71.4,60.9"
+       fill="none"
+       stroke="#2b2620"
+       stroke-width="11.55"
+       stroke-linecap="round"
+       marker-end="url(#agh-9-5)"
+       id="path30"
+       style="marker-end:url(#agh-9-5)" />
+    <path
+       d="m 1365,258.5 a 73.5,73.5 0 0 1 -71.4,-60.9"
+       fill="none"
+       stroke="#2b2620"
+       stroke-width="11.55"
+       stroke-linecap="round"
+       marker-end="url(#agh-9-5)"
+       id="path31"
+       style="marker-end:url(#agh-9-5)" />
+    <path
+       d="M 1436.4,197.6 A 73.5,73.5 0 0 1 1365,258.5"
+       fill="none"
+       stroke="#2b2620"
+       stroke-width="11.55"
+       stroke-linecap="round"
+       opacity="0.35"
+       id="path32" />
+    <path
+       d="M 1293.6,172.4 A 73.5,73.5 0 0 1 1365,111.5"
+       fill="none"
+       stroke="#2b2620"
+       stroke-width="11.55"
+       stroke-linecap="round"
+       opacity="0.35"
+       id="path33" />
+    <path
+       d="m 1331.4,157.7 h 67.2 c 6.3,0 10.5,4.2 10.5,10.5 v 29.4 c 0,6.3 -4.2,10.5 -10.5,10.5 h -37.8 l -16.8,14.7 2.1,-14.7 h -14.7 c -6.3,0 -10.5,-4.2 -10.5,-10.5 v -29.4 c 0,-6.3 4.2,-10.5 10.5,-10.5 z"
+       fill="#c98500"
+       id="path34"
+       style="stroke-width:1.05" />
+  </g>
+</svg>

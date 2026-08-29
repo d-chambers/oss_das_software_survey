@@ -1,0 +1,98 @@
+---
+repository: nikosT/Gisola
+ref: main
+manifests:
+- environment.yml
+distribution: null
+tree_truncated: false
+declared:
+  anaconda: required
+  basemap: required
+  basemap-data: required
+  basemap-data-hires: required
+  c-ares: required
+  ca-certificates: required
+  certifi: required
+  chardet: required
+  conda-forge: required
+  cycler: required
+  decorator: required
+  defaults: required
+  freetype: required
+  future: required
+  geographiclib: required
+  geojson: required
+  geoparse: required
+  geos: required
+  idna: required
+  jinja2: required
+  jpeg: required
+  kiwisolver: required
+  krb5: required
+  lcms2: required
+  ld_impl_linux-64: required
+  libblas: required
+  libcblas: required
+  libcurl: required
+  libedit: required
+  libev: required
+  libffi: required
+  libgcc-ng: required
+  libgfortran-ng: required
+  libgfortran5: required
+  libgomp: required
+  liblapack: required
+  libnghttp2: required
+  libopenblas: required
+  libpng: required
+  libssh2: required
+  libstdcxx-ng: required
+  libtiff: required
+  libwebp-base: required
+  lxml: required
+  lz4-c: required
+  markupsafe: required
+  matplotlib-base: required
+  ncurses: required
+  numpy: required
+  obspy: required
+  olefile: required
+  openssl: required
+  pandas: required
+  pillow: required
+  proj: required
+  pyparsing: required
+  pyproj: required
+  pyshp: required
+  python-dateutil: required
+  python_abi: required
+  pytz: required
+  pyyaml: required
+  readline: required
+  requests: required
+  scipy: required
+  shapely: required
+  six: required
+  sqlalchemy: required
+  sqlite: required
+  tk: required
+  tornado: required
+  tqdm: required
+  turfpy: required
+  tzdata: required
+  urllib3: required
+  version: required
+  xz: required
+  zlib: required
+  zstd: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: Gisola
+stars: 54
+language: HTML
+fork: false
+archived: false
+pushed_at: '2026-07-25T10:09:33Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

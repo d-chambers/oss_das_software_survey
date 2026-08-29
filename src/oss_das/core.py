@@ -19,7 +19,15 @@ import yaml
 from oss_das.models import ProjectRecord
 
 #: Sources a measured record can come from; each is one B script's directory.
-MEASURED_SOURCES = ("mirror", "git", "forge", "registry", "publications", "practices")
+MEASURED_SOURCES = (
+    "mirror",
+    "git",
+    "forge",
+    "registry",
+    "publications",
+    "practices",
+    "dependencies",
+)
 
 
 @dataclass(frozen=True)
@@ -74,6 +82,20 @@ class ProjectPaths:
     def measured(self, source: str) -> Path:
         assert source in MEASURED_SOURCES, source
         return self.data / "measured" / source
+
+    # --- S: comparison -------------------------------------------------------
+    def comparison(self, ecosystem: str) -> Path:
+        """One record per repository in a reference ecosystem.
+
+        Deliberately not under ``raw/candidates``: these are not candidates for
+        the catalogue and must never reach the funnel, which counts every file
+        there. A separate tree keeps a second ecosystem measurable without
+        putting a thumb on this one's arithmetic.
+        """
+        return self.data / "comparison" / ecosystem
+
+    def comparison_coverage(self, ecosystem: str) -> Path:
+        return self.data / "comparison" / f"{ecosystem}-coverage.csv"
 
     # --- C: present ----------------------------------------------------------
     @property

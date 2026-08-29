@@ -1,0 +1,81 @@
+---
+repository: sixu0/SeisCLIP
+ref: main
+manifests:
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  appnope: required
+  asttokens: required
+  backcall: required
+  certifi: required
+  charset-normalizer: required
+  contourpy: required
+  cycler: required
+  debugpy: required
+  decorator: required
+  entrypoints: required
+  executing: required
+  filelock: required
+  fonttools: required
+  idna: required
+  importlib-resources: required
+  ipykernel: required
+  ipython: required
+  jedi: required
+  jinja2: required
+  joblib: required
+  jupyter_client: required
+  jupyter_core: required
+  kiwisolver: required
+  markupsafe: required
+  matplotlib: required
+  matplotlib-inline: required
+  mpmath: required
+  nest-asyncio: required
+  networkx: required
+  numpy: required
+  packaging: required
+  pandas: required
+  parso: required
+  pexpect: required
+  pickleshare: required
+  pillow: required
+  prompt-toolkit: required
+  psutil: required
+  ptyprocess: required
+  pure-eval: required
+  pygments: required
+  pyparsing: required
+  python-dateutil: required
+  pytz: required
+  pyzmq: required
+  requests: required
+  scikit-learn: required
+  scipy: required
+  six: required
+  stack-data: required
+  sympy: required
+  threadpoolctl: required
+  timm: required
+  torch: required
+  torchvision: required
+  tornado: required
+  traitlets: required
+  typing_extensions: required
+  tzdata: required
+  urllib3: required
+  wcwidth: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: SeisCLIP
+stars: 56
+language: Jupyter Notebook
+fork: false
+archived: false
+pushed_at: '2025-11-26T00:28:15Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

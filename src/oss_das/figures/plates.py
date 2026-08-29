@@ -14,14 +14,19 @@ from pathlib import Path
 from oss_das.figures import draw
 from oss_das.figures.data import (
     LICENCE_ORDER,
+    ArchiveAbstraction,
     Composition,
+    DependencyMix,
+    EcosystemGraph,
     EcosystemTotals,
     Engineering,
     Funnel,
     Growth,
     LanguageLicence,
+    LanguagePlatform,
     LicenceMix,
     Maturity,
+    Network,
     PipelineFlow,
     RecordSection,
     SelectionFunnel,
@@ -31,6 +36,21 @@ from oss_das.figures.render import load_asset
 
 #: Column centres for a four-up row on the standard canvas.
 FOUR = (210, 630, 1050, 1470)
+#: Column centres for a five-up row, spaced 282 apart rather than the 336 an
+#: even division of the canvas would give: five numbers read as one statement
+#: when they are close, and as five unrelated facts when they are not. This is
+#: about as tight as the row goes -- any closer and "contributors" meets
+#: "lines of code".
+FIVE = (276, 558, 840, 1122, 1404)
+#: Where each headline icon was authored, so a plate can translate it to a
+#: column instead of every asset being redrawn when the row count changes.
+ICON_HOME = {
+    "projects": 210,
+    "contributors": 630,
+    "commits": 1050,
+    "lines": 1470,
+    "citations": 210,
+}
 WIDTH = 1680
 
 
@@ -75,34 +95,40 @@ def pipeline_plate(flow: PipelineFlow) -> str:
 
 
 def totals_plate(totals: EcosystemTotals, assets: Path) -> str:
-    """The ecosystem in four numbers."""
+    """The ecosystem in five numbers."""
     c = draw.Canvas(
         width=WIDTH,
         height=420,
         title="Open-source DAS software in numbers",
         desc=(
             f"{totals.projects} projects, {totals.contributors} contributors, "
-            f"{totals.commits:,} commits, {totals.lines:,} lines of code."
+            f"{totals.commits:,} commits, {totals.lines:,} lines of code, and "
+            f"{totals.citations} citations across the "
+            f"{totals.cited_projects} projects that have a linked publication."
         ),
     )
-    for key in ("projects", "contributors", "commits", "lines"):
-        c.parts.append(load_asset(f"icon_{key}", assets))
-    c.spine(100, 1580, 228, list(FOUR))
     stats = [
-        (f"{totals.projects:,}", "Projects"),
-        (f"{totals.contributors:,}", "Contributors"),
-        (f"{totals.commits:,}", "Commits"),
-        (f"{totals.lines:,}", "Lines of code"),
+        ("projects", f"{totals.projects:,}", "Projects"),
+        ("contributors", f"{totals.contributors:,}", "Contributors"),
+        ("commits", f"{totals.commits:,}", "Commits"),
+        ("lines", f"{totals.lines:,}", "Lines of code"),
+        ("citations", f"{totals.citations:,}", "Citations"),
     ]
-    for x, (number, label) in zip(FOUR, stats, strict=True):
+    for x, (key, _number, _label) in zip(FIVE, stats, strict=True):
+        # Icons are authored at fixed coordinates so they stay editable in a
+        # vector editor; the plate slides each one to its column.
+        art = load_asset(f"icon_{key}", assets)
+        c.parts.append(f'<g transform="translate({x - ICON_HOME[key]:g},0)">{art}</g>')
+    c.spine(184, 1496, 228, list(FIVE))
+    for x, (_key, number, label) in zip(FIVE, stats, strict=True):
         c.stat(
             x,
             326,
             number,
             label,
-            size=88,
+            size=70,
             label_size=draw.LABEL,
-            gap=46,
+            gap=42,
             sub_gap=38,
         )
     return c.to_svg()
@@ -290,7 +316,7 @@ def composition_plate(comp: Composition) -> str:
             fill=draw.AMBER if not index else draw.CREAM,
             rx=3,
         )
-        c.text(left - 22, y, language, size=draw.SUB, fill=draw.INK, anchor="end")
+        c.text(left - 22, y, language, size=30, fill=draw.INK, anchor="end")
         c.text(
             left + width + 20,
             y,
@@ -307,9 +333,9 @@ def composition_plate(comp: Composition) -> str:
     # second. conda is measured but not shown -- only three of the 78 are on
     # conda-forge and all three are on PyPI too, so it earns no column.
     stats = [
-        (f"{comp.with_packaging}", "Set up as a package", ""),
-        (f"{comp.with_pypi}", "Published on PyPI", ""),
-        (f"{comp.with_none}", "No package at all", f"of {comp.projects} DAS projects"),
+        (f"{comp.with_packaging}", "Packaged", ""),
+        (f"{comp.with_pypi}", "On PyPI", ""),
+        (f"{comp.with_none}", "No package", f"of {comp.projects}"),
     ]
     for x, (number, label, sub) in zip((420, 840, 1260), stats, strict=True):
         c.stat(
@@ -319,9 +345,9 @@ def composition_plate(comp: Composition) -> str:
             label,
             sub,
             size=draw.MID,
-            label_size=draw.LABEL_SM,
-            gap=32,
-            sub_gap=28,
+            label_size=32,
+            gap=34,
+            sub_gap=32,
         )
     return c.to_svg()
 
@@ -378,7 +404,7 @@ def maturity_plate(mat: Maturity) -> str:
     c.text(
         890,
         bottom + 66,
-        "Days of development · both axes square-root scaled",
+        "Days of development",
         size=draw.SUB_SM,
         fill=draw.MUTED,
         italic=True,
@@ -585,20 +611,10 @@ def coverage_plate(flow: PipelineFlow) -> str:
     )
     _heading(c, 64, "What was searched")
     asked = [
-        (
-            f"{flow.github_searches}",
-            "GitHub queries",
-            "Name, description, README, topic",
-            draw.INK,
-        ),
-        (f"{flow.gitlab_searches}", "GitLab queries", "Across four hosts", draw.INK),
-        (f"{flow.gitea_searches}", "Gitea queries", "Across two hosts", draw.INK),
-        (
-            f"{flow.namespace_walks}",
-            "Namespace walks",
-            "Organisations swept end to end",
-            draw.AMBER,
-        ),
+        (f"{flow.github_searches}", "GitHub", "", draw.INK),
+        (f"{flow.gitlab_searches}", "GitLab", "", draw.INK),
+        (f"{flow.gitea_searches}", "Gitea", "", draw.INK),
+        (f"{flow.namespace_walks}", "Namespace walks", "", draw.AMBER),
     ]
     for x, (number, label, sub, colour) in zip(FOUR, asked, strict=True):
         c.stat(
@@ -609,30 +625,25 @@ def coverage_plate(flow: PipelineFlow) -> str:
             sub,
             size=draw.BIG,
             colour=colour,
-            label_size=21,
-            gap=38,
+            label_size=30,
+            gap=44,
             sub_gap=32,
         )
 
     c.spine(100, 1580, 270, list(FOUR))
-    failed = (
-        f"{flow.rows_retrieved:,} results · {flow.candidates:,} distinct candidates · "
-        f"{flow.probes_failed} of {probes} probes failed"
-        if flow.probes_failed
-        else f"{flow.rows_retrieved:,} results · {flow.candidates:,} distinct candidates"
-    )
-    c.text(840, 320, failed, size=draw.SUB_SM, fill=draw.MUTED, spacing=2.4, upper=True)
+    failed = f"{flow.rows_retrieved:,} results · {flow.candidates:,} candidates"
+    c.text(840, 322, failed, size=30, fill=draw.MUTED, spacing=2.4, upper=True)
 
     _heading(c, 396, "What was not searched")
     for x, (title, _lines) in zip(FOUR, NOT_SEARCHED, strict=True):
         c.line(x - 102, 432, x + 102, 432, stroke=draw.RULE, width=2.5, dash="7 7")
-        c.text(x + 1.3, 480, title, size=26, fill=draw.MUTED, spacing=2.6, upper=True)
+        c.text(x + 1.3, 482, title, size=30, fill=draw.MUTED, spacing=2.6, upper=True)
     return c.to_svg()
 
 
 def funnel_shape_plate(f: Funnel) -> str:
     """A literal funnel: every source in at the top, every exclusion out the side."""
-    width, height = 1220, 850
+    width, height = 1400, 660
     centre = width / 2
     mouth_y, throat_y = 126, 410
     mouth_l, mouth_r = centre - 190, centre + 190
@@ -647,7 +658,10 @@ def funnel_shape_plate(f: Funnel) -> str:
         title="Every candidate, and how it left",
         desc=(
             f"{f.candidates:,} candidates discovered; {f.in_scope} in scope. "
-            "Each stage is a count of candidates leaving by exactly one route."
+            "Each stage is a count of candidates leaving by exactly one route. "
+            f"The {f.supporting} seismology tools that also support DAS are "
+            f"{', '.join(f.supporting_names)}. The {f.other_fiber} other "
+            f"fibre-sensing projects are {', '.join(f.other_fiber_names)}."
         ),
     )
 
@@ -743,44 +757,36 @@ def funnel_shape_plate(f: Funnel) -> str:
 
     outputs = (
         (
-            centre - 300,
+            centre - 330,
             f"{f.supporting}",
-            ("Seismology tools", "that also read DAS"),
-            f.supporting_names,
+            ("Seismology tools", "that also support DAS"),
             draw.SLATE,
-            32,
+            36,
         ),
-        (centre, f"{f.in_scope}", ("DAS projects",), (), draw.AMBER, 58),
+        (centre, f"{f.in_scope}", ("DAS projects",), draw.AMBER, 62),
         (
-            centre + 300,
+            centre + 330,
             f"{f.other_fiber}",
             ("Other fibre sensing", "temperature or strain"),
-            f.other_fiber_names,
             draw.SLATE,
-            32,
+            36,
         ),
     )
-    for x, number, lines, names, colour, size in outputs:
-        c.text(x, spout_y + 96, number, size=size, fill=colour)
+    # The three outputs sit close under the spout. Naming the flanking projects
+    # was worth a page and is not worth a slide: it doubled the figure's height
+    # for eleven names nobody reads from the back of a room. They stay in the
+    # record, and in this plate's <desc>.
+    for x, number, lines, colour, size in outputs:
+        c.text(x, spout_y + 78, number, size=size, fill=colour)
         for offset, line in enumerate(lines):
             c.text(
                 x,
-                spout_y + 126 + offset * 21,
+                spout_y + 112 + offset * 26,
                 line,
-                size=15,
+                size=22,
                 fill=draw.INK if size > 40 else draw.MUTED,
                 spacing=2.2,
                 upper=offset == 0,
-            )
-        # Naming the flanking groups is the point of splitting them out: five
-        # and seven are only interesting if a reader can see which projects.
-        for offset, name in enumerate(names):
-            c.text(
-                x,
-                spout_y + 126 + len(lines) * 21 + 14 + offset * 20,
-                name,
-                size=15,
-                fill=draw.INK,
             )
     return c.to_svg()
 
@@ -1040,6 +1046,120 @@ def language_licence_plate(d: LanguageLicence) -> str:
             fill=draw.MUTED,
             anchor="start",
             italic=True,
+        )
+
+    return c.to_svg()
+
+
+#: Forges under the names a room says out loud. A host with no entry prints as
+#: itself, so a newly catalogued forge appears in the legend rather than
+#: silently falling into an "other" bucket nobody can check.
+HOST_NAME = {
+    "github.com": "GitHub",
+    # Two of the other forges are institutional GitLab instances, so the
+    # public one has to say which GitLab it is.
+    "gitlab.com": "GitLab.com",
+    "git.gfz-potsdam.de": "GFZ Potsdam",
+    "gitlab.in2p3.fr": "IN2P3",
+    "git.pyrocko.org": "Pyrocko",
+    "code.usgs.gov": "USGS",
+}
+
+#: Colour per forge, with the ink a count printed on it has to be, taken by
+#: position in the measurement's host order rather than by name so a forge the
+#: deck has never seen still gets a colour. The first is the deck's primary
+#: because the first host is almost the whole ecosystem; the rest are chosen to
+#: stay apart from it at the width of a single project.
+HOST_PALETTE = (
+    (draw.AMBER, draw.PAPER),
+    (draw.SLATE, draw.PAPER),
+    (draw.MUTED, draw.PAPER),
+    (draw.GRAY, draw.INK),
+    (draw.CREAM, draw.INK),
+)
+
+
+def language_platform_plate(d: LanguagePlatform) -> str:
+    """What the ecosystem is written in, and where its source is hosted."""
+    width, height = WIDTH, 800
+    # The bars run most of the canvas so the figure lands on a slide wider
+    # than 16:9. Cropped to its ink, a narrower plate letterboxes to a third
+    # of the slide however much room the canvas left around it.
+    left, right = 380.0, 1500.0
+    top = 176.0
+    # Tall enough for a row's total to be set at the deck's headline size
+    # rather than a size that only survives being read off a laptop.
+    row_h = 74.0
+    widest = max((r.projects for r in d.rows), default=1)
+    scale = (right - left) / widest
+    paint = {
+        host: HOST_PALETTE[i % len(HOST_PALETTE)] for i, (host, _) in enumerate(d.hosts)
+    }
+    colour = {host: fill for host, (fill, _) in paint.items()}
+
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="Language and forge",
+        desc=(
+            f"{d.projects} DAS projects by primary language, split by the forge the "
+            "source was cloned from. Hosted on "
+            + ", ".join(f"{HOST_NAME.get(h, h)} {n}" for h, n in d.hosts)
+            + ". "
+            + "; ".join(
+                f"{r.language} {r.projects}"
+                + (
+                    ""
+                    if len(r.by_host) < 2
+                    else " ("
+                    + ", ".join(f"{HOST_NAME.get(h, h)} {n}" for h, n in r.by_host)
+                    + ")"
+                )
+                for r in d.rows
+            )
+            + "."
+        ),
+    )
+    cursor = left
+    for host, count in d.hosts:
+        # Set close to the first bar: the key describes the bars, and a wide
+        # band of paper between them reads as two separate things.
+        c.rect(cursor, 101, 30, 16, fill=colour[host], rx=2)
+        label = f"{HOST_NAME.get(host, host)} {count}"
+        c.text(cursor + 42, 117, label, size=draw.LABEL, fill=draw.INK, anchor="start")
+        # SVG collapses runs of whitespace, so entries are placed rather than
+        # spaced: the advance is the swatch, the string, and a fixed gap.
+        cursor += 42 + len(label) * 0.5 * draw.LABEL + 56
+
+    for index, row in enumerate(d.rows):
+        y = top + index * row_h
+        c.text(left - 26, y + 12, row.language, size=34, fill=draw.INK, anchor="end")
+        segments = [(host, float(count), colour[host]) for host, count in row.by_host]
+        spans = c.bar_stack(
+            left, y - 21, row.projects * scale, 42, segments, min_visible=0.0
+        )
+        counts = dict(row.by_host)
+        for host, x, span in spans:
+            # A segment is labelled only where it is both wide enough to hold
+            # a number and telling the reader something the row total does not
+            # already say. On an unsplit row the two are the same figure, and
+            # printing it twice reads as two facts rather than one.
+            if span < 52 or len(spans) < 2:
+                continue
+            c.text(
+                x + span / 2,
+                y + 12,
+                f"{counts[host]}",
+                size=34,
+                fill=paint[host][1],
+            )
+        c.text(
+            left + row.projects * scale + 26,
+            y + 16,
+            f"{row.projects}",
+            size=draw.MID,
+            fill=draw.INK,
+            anchor="start",
         )
 
     return c.to_svg()
@@ -1321,9 +1441,9 @@ def engineering_plate(eng: Engineering) -> str:
         c.line(cursor, 62, cursor + group_w, 62, stroke=colour, width=3)
         c.text(
             cursor + group_w / 2,
-            44,
+            40,
             gate,
-            size=draw.SUB,
+            size=34,
             fill=draw.INK,
             italic=True,
         )
@@ -1345,12 +1465,456 @@ def engineering_plate(eng: Engineering) -> str:
                 size=draw.TINY,
                 fill=draw.MUTED,
             )
-            y = baseline + 36
+            y = baseline + 46
             for line in _wrap(practice.label, 14):
-                c.text(cursor + bar_w / 2, y, line, size=draw.SUB_SM, fill=draw.INK)
-                y += 26
+                c.text(cursor + bar_w / 2, y, line, size=32, fill=draw.INK)
+                y += 34
             cursor += bar_w + inner_gap
         cursor += gate_gap - inner_gap
 
     c.line(left - 20, baseline, left + span + 20, baseline, stroke=draw.RULE, width=2)
+    return c.to_svg()
+
+
+#: How far along the deck's sequential ramp the palest bar sits. Starting at
+#: zero would put the last bar at the ramp's lightest stop, which clears 1.9:1
+#: against white and reads as unfilled rather than pale.
+PALEST = 0.35
+
+#: Bar geometry, fixed rather than derived from the canvas: the figure's width
+#: follows from how many bars it has, so adding or dropping one narrows the
+#: figure instead of fattening every bar.
+BAR_PITCH, BAR_WIDTH, BAR_EDGE = 132.0, 106.0, 48.0
+
+#: Display names for packages whose distribution name is not what a reader
+#: calls them from the back of a room.
+DEPENDENCY_LABEL = {
+    "numpy": "NumPy",
+    "scipy": "SciPy",
+    "matplotlib": "Matplotlib",
+    "pandas": "pandas",
+    "h5py": "h5py",
+    "obspy": "ObsPy",
+    "torch": "PyTorch",
+    "pyyaml": "PyYAML",
+    "scikit-learn": "sklearn",
+    "joblib": "joblib",
+    "tqdm": "tqdm",
+    "xarray": "xarray",
+    "dask": "Dask",
+    "nptdms": "npTDMS",
+}
+
+
+def dependency_plate(mix: DependencyMix) -> str:
+    """What the ecosystem's Python is built on, one bar per package."""
+    height = 720
+    baseline, full = 604.0, 402.0
+    width = round(2 * BAR_EDGE + BAR_PITCH * len(mix.rows))
+    left = BAR_EDGE + (BAR_PITCH - BAR_WIDTH) / 2
+
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="What the ecosystem is built on",
+        desc=(
+            f"Share of the {mix.python_projects} catalogued DAS projects written in "
+            "Python that depend on each package, required or optional, excluding "
+            "development-only dependencies and every catalogued DAS package. "
+            f"{mix.other_projects} catalogued projects ship no Python and are not "
+            "counted. "
+            + "; ".join(
+                f"{r.name} {r.projects} "
+                f"({round(100 * r.projects / mix.python_projects)}%)"
+                for r in mix.rows
+            )
+            + "."
+        ),
+    )
+
+    # One hue, stepped by the same quantity the bars are: the ramp is
+    # redundant with height rather than claiming a second variable. There is
+    # no honest one to claim -- what a package is for is a judgement, and its
+    # own brand colour is not this deck's to borrow.
+    shares = [r.projects / mix.python_projects for r in mix.rows]
+    lo, hi = min(shares), max(shares)
+
+    def shade(share: float) -> float:
+        span = hi - lo
+        return 1.0 if span <= 0 else PALEST + (1 - PALEST) * (share - lo) / span
+
+    for index, row in enumerate(mix.rows):
+        share = row.projects / mix.python_projects
+        x = left + index * BAR_PITCH
+        bar_h = full * share
+        c.rect(
+            x, baseline - bar_h, BAR_WIDTH, bar_h, fill=_sequential(shade(share)), rx=3
+        )
+        c.text(
+            x + BAR_WIDTH / 2,
+            baseline - bar_h - 54,
+            f"{round(share * 100)}%",
+            size=draw.MID,
+            fill=draw.INK,
+        )
+        c.text(
+            x + BAR_WIDTH / 2,
+            baseline - bar_h - 20,
+            f"{row.projects}",
+            size=draw.SUB,
+            fill=draw.MUTED,
+        )
+        c.text(
+            x + BAR_WIDTH / 2,
+            baseline + 46,
+            DEPENDENCY_LABEL.get(row.name, row.name),
+            size=28,
+            fill=draw.INK,
+        )
+    c.line(
+        left - 22,
+        baseline,
+        left + (len(mix.rows) - 1) * BAR_PITCH + BAR_WIDTH + 22,
+        baseline,
+        stroke=draw.RULE,
+        width=2,
+    )
+
+    return c.to_svg()
+
+
+def network_plate(net: Network) -> str:
+    """Which DAS projects are built on other DAS projects.
+
+    Consumers on the left, the projects they build on down the right, ordered
+    by how many depend on them. Four projects appear on both sides -- a project
+    can be built on and still build on something else -- so the two columns are
+    a direction of travel, not a partition.
+    """
+    width, height = 1680, 940
+    left_x, right_x = 300.0, 1180.0
+    top, bottom = 190.0, 850.0
+
+    consumers = list(net.consumers)
+    providers = list(net.providers)
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="What DAS software is built on",
+        desc=(
+            f"{len(net.links)} declared dependencies among catalogued DAS "
+            f"projects. {net.connected} of {net.projects} are connected to "
+            f"another; {net.isolated} depend on none and are depended on by none."
+        ),
+    )
+
+    # Each column is headed by its own count: how many projects build on
+    # another, and how many are built on. Five projects are in both columns,
+    # so the two numbers deliberately do not sum to the connected total.
+    for x, number, label in (
+        (left_x - 20, f"{len(consumers)}", "depend on another"),
+        (right_x + 38, f"{len(providers)}", "are depended on"),
+    ):
+        anchor = "end" if x < right_x else "start"
+        c.text(x, 86, number, size=draw.MID, fill=draw.INK, anchor=anchor)
+        c.text(x, 126, label, size=26, fill=draw.MUTED, anchor=anchor)
+
+    def row(index: int, count: int) -> float:
+        if count < 2:
+            return (top + bottom) / 2
+        return top + (bottom - top) * index / (count - 1)
+
+    y_of_consumer = {
+        pid: row(i, len(consumers)) for i, (pid, _) in enumerate(consumers)
+    }
+    y_of_provider = {
+        pid: row(i, len(providers)) for i, (pid, _, _) in enumerate(providers)
+    }
+
+    # Edges first, so every node sits on top of its own threads.
+    for link in net.links:
+        y1, y2 = y_of_consumer[link.source], y_of_provider[link.target]
+        mid = (left_x + right_x) / 2
+        c.parts.append(
+            f'<path d="M {left_x + 12:g},{y1:g} C {mid:g},{y1:g} {mid:g},{y2:g} '
+            f'{right_x - 22:g},{y2:g}" fill="none" stroke="'
+            + (draw.AMBER if link.kind == "required" else draw.RULE)
+            + f'" stroke-width="{2.6 if link.kind == "required" else 2.0:g}"'
+            ' stroke-opacity="0.55"/>'
+        )
+
+    for pid, name in consumers:
+        y = y_of_consumer[pid]
+        c.dot(left_x, y, r=7, fill=draw.SLATE)
+        c.text(left_x - 20, y + 8, name, size=22, fill=draw.INK, anchor="end")
+
+    # Labels clear the widest dot, not a fixed gap: the radius grows with the
+    # count, so a fixed offset would be overrun by whichever project happens to
+    # be the hub. DASCore's dot already reached past it.
+    radius = {pid: 12 + count * 2.6 for pid, _, count in providers}
+    label_x = right_x + max(radius.values(), default=12.0) + 20
+
+    for pid, name, count in providers:
+        y = y_of_provider[pid]
+        # Radius carries the count, so the hub is visible before it is read.
+        c.dot(right_x, y, r=radius[pid], fill=draw.AMBER)
+        # The count belongs to the name, so it is drawn as one string. Setting
+        # it separately meant guessing where the name ended, which either
+        # collided with the long ones or stranded the number at the margin.
+        c.text(
+            label_x,
+            y + 10,
+            f"{name} ({count})",
+            size=28,
+            fill=draw.INK,
+            anchor="start",
+        )
+    return c.to_svg()
+
+
+#: Largest dot on the comparison, in user units. Radius runs with the square
+#: root of the count so that *area* carries it: a hub with ten times the
+#: dependents should look ten times the blob, not ten times the width.
+ECOSYSTEM_R_MAX = 44.0
+ECOSYSTEM_R_MIN = 7.0
+
+
+def ecosystems_plate(das: EcosystemGraph, reference: EcosystemGraph) -> str:
+    """Two ecosystems' dependency hubs, on one scale.
+
+    The shared scale is the whole figure. Sizing each panel to its own largest
+    hub would draw the two ecosystems the same and say nothing.
+    """
+    width, height = 1680, 800
+    # Seven rows: the tail is a run of ones in both ecosystems and says nothing
+    # the top of the column has not, and it is where the DAS column runs out,
+    # so both panels end together instead of one trailing past the other. The
+    # pitch clears the largest dot so a hub never crowds the row beneath it.
+    rows, pitch = 7, 66.0
+    top = 250.0
+    panels = ((das, 150.0), (reference, 900.0))
+
+    peak = max(
+        (count for graph, _ in panels for _, _, count in graph.providers), default=1
+    )
+    assert peak > 0, "neither ecosystem has a single in-ecosystem dependency"
+
+    def radius(count: int) -> float:
+        return max(ECOSYSTEM_R_MIN, ECOSYSTEM_R_MAX * (count / peak) ** 0.5)
+
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="How much each ecosystem builds on itself",
+        desc=(
+            f"{das.name}: {das.consumers} of {das.projects} projects with a "
+            f"packaging manifest depend on another ({das.share:.0%}), across "
+            f"{das.edges} edges. {reference.name}: {reference.consumers} of "
+            f"{reference.projects} ({reference.share:.0%}), across "
+            f"{reference.edges} edges. Both counted from declared manifests "
+            "only, so both are floors."
+        ),
+    )
+
+    for graph, left in panels:
+        dot_x = left + ECOSYSTEM_R_MAX
+        c.text(left, 96, graph.name, size=40, fill=draw.INK, anchor="start")
+        c.text(
+            left,
+            152,
+            f"{graph.share:.0%} build on another",
+            size=30,
+            fill=draw.MUTED,
+            anchor="start",
+        )
+        c.text(
+            left,
+            196,
+            f"{graph.consumers} of {graph.projects} projects",
+            size=26,
+            fill=draw.FAINT,
+            anchor="start",
+        )
+        for index, (_pid, name, count) in enumerate(graph.providers[:rows]):
+            y = top + index * pitch
+            c.dot(dot_x, y, r=radius(count), fill=draw.AMBER)
+            # A reference ecosystem is named by its repositories, which are
+            # lowercased; the catalogue is named by hand. The same map the
+            # dependency figure uses puts both in the form a reader says.
+            label = DEPENDENCY_LABEL.get(name.lower(), name)
+            # The share as well as the count: 152 against 8 is a comparison
+            # between two ecosystems of different sizes, and only the share
+            # says how much of its own field each hub actually carries.
+            share = count / graph.projects if graph.projects else 0.0
+            c.text(
+                dot_x + ECOSYSTEM_R_MAX + 24,
+                y + 10,
+                f"{label} ({count} · {share:.0%})",
+                size=28,
+                fill=draw.INK,
+                anchor="start",
+            )
+    return c.to_svg()
+
+
+def archive_abstractions_plate(
+    dascore: ArchiveAbstraction, xdas: ArchiveAbstraction
+) -> str:
+    """Where the multi-file abstraction sits in DASCore and xdas."""
+    width, height = 1680, 680
+    navy, red, gold = dascore.palette
+    (purple,) = xdas.palette
+    c = draw.Canvas(
+        width=width,
+        height=height,
+        title="Two multi-file abstractions",
+        desc=(
+            f"Schematic comparison of released {dascore.project} {dascore.version} "
+            f"and {xdas.project} {xdas.version}. DASCore indexes file-level patch "
+            "records in a Spool and materializes one contiguous Patch in memory. "
+            "xdas maps compatible files into one virtual DataArray and materializes "
+            "selected chunks. The repeated files and cells are illustrative, not "
+            "quantitative. Colours are sampled from each release's logo."
+        ),
+    )
+
+    def box(
+        x: float,
+        y: float,
+        w: float,
+        h: float,
+        colour: str,
+        *,
+        opacity: float = 0.12,
+        stroke_width: float = 3,
+        radius: float = 8,
+    ) -> None:
+        c.parts.append(
+            f'<rect x="{x:g}" y="{y:g}" width="{w:g}" height="{h:g}" '
+            f'rx="{radius:g}" fill="{colour}" fill-opacity="{opacity:g}" '
+            f'stroke="{colour}" stroke-width="{stroke_width:g}"/>'
+        )
+
+    def up_arrow(x: float, bottom: float, top: float, colour: str) -> None:
+        c.line(x, bottom, x, top + 22, stroke=colour, width=3)
+        c.parts.append(
+            f'<path d="M {x - 10:g},{top + 22:g} L {x:g},{top:g} '
+            f'L {x + 10:g},{top + 22:g} Z" fill="{colour}"/>'
+        )
+
+    def grid(
+        x: float,
+        y: float,
+        w: float,
+        h: float,
+        columns: int,
+        rows: int,
+        colour: str,
+        *,
+        opacity: float,
+    ) -> None:
+        box(x, y, w, h, colour, opacity=opacity, stroke_width=4, radius=5)
+        for index in range(1, columns):
+            xpos = x + w * index / columns
+            c.line(xpos, y, xpos, y + h, stroke=colour, width=1.4)
+        for index in range(1, rows):
+            ypos = y + h * index / rows
+            c.line(x, ypos, x + w, ypos, stroke=colour, width=1.4)
+
+    c.line(840, 54, 840, 626, stroke=draw.RULE, width=2)
+
+    # DASCore: the Spool is the archive-scale object; one requested Patch is
+    # assembled into a dense in-memory array.
+    c.text(420, 70, dascore.project, size=48, fill=navy)
+    c.text(420, 122, dascore.memory, size=draw.LABEL, fill=red, spacing=2.8, upper=True)
+    c.text(665, 122, "In memory", size=draw.SUB_SM, fill=navy, anchor="end")
+    grid(175, 146, 490, 104, 14, 4, red, opacity=0.12)
+    c.rect(175, 146, 42, 104, fill=gold)
+
+    up_arrow(420, 314, 266, red)
+    c.text(
+        420, 336, dascore.logical, size=draw.LABEL, fill=navy, spacing=2.8, upper=True
+    )
+    box(145, 356, 550, 146, navy, opacity=1.0, stroke_width=4)
+    c.rect(145, 356, 550, 38, fill=navy, rx=7)
+    for ypos in (430, 466):
+        c.line(145, ypos, 695, ypos, stroke=navy, width=2)
+    for xpos in (260, 450, 570):
+        c.line(xpos, 394, xpos, 502, stroke=navy, width=1.5)
+    c.rect(146, 431, 548, 34, fill=gold)
+    for index, label in enumerate(("PATH", "TIME", "FORMAT", "DIMS")):
+        xpos = (202, 355, 510, 632)[index]
+        c.text(xpos, 383, label, size=draw.TINY, fill=draw.PAPER)
+    for index, ypos in enumerate((420, 456, 492), start=1):
+        c.text(
+            202,
+            ypos,
+            f"F{index}",
+            size=draw.TINY,
+            fill=navy if index == 2 else draw.PAPER,
+        )
+
+    up_arrow(420, 550, 516, navy)
+    file_width, gap = 88.0, 18.0
+    file_left = 173.0
+    for index in range(5):
+        xpos = file_left + index * (file_width + gap)
+        box(xpos, 560, file_width, 58, navy, opacity=1.0, stroke_width=3, radius=5)
+        c.text(
+            xpos + file_width / 2,
+            597,
+            f"F{index + 1}",
+            size=draw.SUB_SM,
+            fill=draw.PAPER,
+        )
+    c.text(420, 656, dascore.files, size=draw.LABEL, fill=navy, spacing=2.8, upper=True)
+
+    # xdas: the archive-scale object is itself one logical array. Only a
+    # selected chunk becomes a dense in-memory array for processing.
+    c.text(1260, 70, xdas.project, size=48, fill=purple)
+    c.text(
+        1260, 122, xdas.memory, size=draw.LABEL, fill=purple, spacing=2.8, upper=True
+    )
+    c.text(1465, 122, "In memory", size=draw.SUB_SM, fill=purple, anchor="end")
+    grid(1155, 146, 210, 104, 6, 4, purple, opacity=0.18)
+
+    up_arrow(1260, 314, 266, purple)
+    c.text(
+        1260, 336, xdas.logical, size=draw.LABEL, fill=purple, spacing=2.8, upper=True
+    )
+    array_x, array_y, array_w, array_h = 920.0, 366.0, 680.0, 112.0
+    grid(array_x, array_y, array_w, array_h, 25, 4, purple, opacity=0.08)
+    source_width = array_w / 5
+    for index in range(1, 5):
+        xpos = array_x + index * source_width
+        c.line(xpos, array_y, xpos, array_y + array_h, stroke=purple, width=4)
+    selected_x = array_x + 1.75 * source_width
+    selected_w = 1.55 * source_width
+    c.parts.append(
+        f'<rect x="{selected_x:g}" y="{array_y:g}" width="{selected_w:g}" '
+        f'height="{array_h:g}" fill="{purple}" fill-opacity="0.24"/>'
+    )
+    c.line(
+        selected_x,
+        array_y - 9,
+        selected_x + selected_w,
+        array_y - 9,
+        stroke=purple,
+        width=5,
+    )
+
+    for index in range(5):
+        target = array_x + (index + 0.5) * source_width
+        xpos = target - file_width / 2
+        c.line(xpos + file_width / 2, 560, target, 492, stroke=purple, width=2)
+        box(xpos, 560, file_width, 58, purple, opacity=1.0, stroke_width=3, radius=5)
+        c.text(
+            xpos + file_width / 2,
+            597,
+            f"F{index + 1}",
+            size=draw.SUB_SM,
+            fill=draw.PAPER,
+        )
+    c.text(1260, 656, xdas.files, size=draw.LABEL, fill=purple, spacing=2.8, upper=True)
+
     return c.to_svg()

@@ -1,0 +1,89 @@
+---
+repository: ylseanna/QuakeView
+ref: main
+manifests:
+- docs/requirements.txt
+- flask/requirements.txt
+- package.json
+distribution: null
+tree_truncated: false
+declared:
+  '@babel/polyfill': required
+  '@electron-toolkit/utils': required
+  '@emotion/cache': required
+  '@emotion/react': required
+  '@emotion/styled': required
+  '@eslint/eslintrc': development
+  '@fontsource-variable/archivo': required
+  '@formatjs/intl-datetimeformat': required
+  '@mui/icons-material': required
+  '@mui/lab': required
+  '@mui/material': required
+  '@mui/material-nextjs': required
+  '@mui/types': required
+  '@mui/x-data-grid': required
+  '@mui/x-date-pickers': required
+  '@next/bundle-analyzer': development
+  '@react-hooks-library/core': required
+  '@stdlib/array-linspace': required
+  '@tanstack/query-async-storage-persister': required
+  '@tanstack/react-query': required
+  '@tanstack/react-query-persist-client': required
+  '@turf/turf': required
+  '@types/d3': required
+  '@types/geojson': required
+  '@types/humanize-plus': development
+  '@types/lodash': development
+  '@types/node': development
+  '@types/react': development
+  '@types/react-dom': development
+  '@types/turf': development
+  cross-env: development
+  d3: required
+  datetime: required
+  dayjs: required
+  deck.gl: required
+  electron: development
+  electron-builder: development
+  electron-vite: development
+  eslint: development
+  eslint-config-next: development
+  fastpysgi: required
+  flask: required
+  get-port-please: required
+  humanize-plus: required
+  immer: required
+  lodash: required
+  maplibre-gl: required
+  material-ui-popup-state: required
+  mdi-material-ui: required
+  mui-color-input: required
+  next: required
+  next-intl: required
+  nodemon: required
+  npm-run-all: development
+  numpy: required
+  pandas: required
+  postcss: development
+  pymdown-extensions: required
+  react: required
+  react-color: required
+  react-dom: required
+  react-json-tree: required
+  react-map-gl: required
+  tailwindcss: development
+  typescript: required
+  use-animation-frame: required
+  vite: development
+  zustand: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: QuakeView
+stars: 3
+language: TypeScript
+fork: false
+archived: false
+pushed_at: '2026-08-12T15:25:00Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

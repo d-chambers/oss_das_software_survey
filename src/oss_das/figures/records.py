@@ -81,6 +81,14 @@ def candidate_sources() -> dict[str, int]:
     }
 
 
+def comparison(ecosystem: str) -> dict[str, dict[str, Any]]:
+    """Every record for a reference ecosystem, keyed by ``owner--name``."""
+    directory = data_dir() / "comparison" / ecosystem
+    if not directory.exists():
+        return {}
+    return {path.stem: frontmatter(path) for path in sorted(directory.glob("*.md"))}
+
+
 def rejections() -> dict[str, dict[str, str]]:
     """The reviewed-and-rejected ledger, keyed by candidate key."""
     path = data_dir() / "rejected.yml"

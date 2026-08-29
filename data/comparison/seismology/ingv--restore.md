@@ -1,0 +1,83 @@
+---
+repository: INGV/RESTORE
+ref: master
+manifests:
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  appnope: required
+  asttokens: required
+  backcall: required
+  basemap: required
+  basemap-data: required
+  certifi: required
+  colorama: required
+  comm: required
+  contourpy: required
+  cycler: required
+  dateparser: required
+  debugpy: required
+  decorator: required
+  executing: required
+  fonttools: required
+  importlib-metadata: required
+  importlib-resources: required
+  ipykernel: required
+  ipython: required
+  jedi: required
+  jupyter_client: required
+  jupyter_core: required
+  kiwisolver: required
+  matplotlib: required
+  matplotlib-inline: required
+  munkres: required
+  nest-asyncio: required
+  numpy: required
+  packaging: required
+  pandas: required
+  parso: required
+  patsy: required
+  pexpect: required
+  pickleshare: required
+  pillow: required
+  platformdirs: required
+  plotly: required
+  prompt-toolkit: required
+  psutil: required
+  ptyprocess: required
+  pure-eval: required
+  pygments: required
+  pyparsing: required
+  pyproj: required
+  pyshp: required
+  python-dateutil: required
+  pytz: required
+  pyzmq: required
+  regex: required
+  scipy: required
+  six: required
+  stack-data: required
+  statsmodels: required
+  tenacity: required
+  tornado: required
+  tqdm: required
+  traitlets: required
+  typing_extensions: required
+  tzdata: required
+  tzlocal: required
+  unicodedata2: required
+  wcwidth: required
+  xmltodict: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: RESTORE
+stars: 7
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-04-15T10:37:57Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

@@ -1,0 +1,54 @@
+---
+repository: globalseismology/avni
+ref: main
+manifests:
+- docs/requirements.txt
+- requirements.txt
+- requirements_base.txt
+- requirements_extra_conda.txt
+- requirements_extra_pip.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  basemap: required
+  basemap-data-hires: required
+  configobj: required
+  fortranformat: required
+  future: required
+  h5py: required
+  joblib: required
+  matplotlib: required
+  netcdf4: required
+  numba: required
+  numpy: required
+  numpydoc: required
+  pandas: required
+  pint: required
+  pint-pandas: required
+  progressbar2: required
+  pygeodesy: required
+  pyshtools: required
+  pytables: required
+  recommonmark: required
+  requests: required
+  requirements_base.txt: required
+  scipy: required
+  sphinx: required
+  sphinx_rtd_theme: required
+  sphinxcontrib: required
+  sphinxcontrib-bibtex: required
+  sphinxcontrib-svg2pdfconverter: required
+  urllib3: required
+  xarray: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: avni
+stars: 4
+language: Python
+fork: false
+archived: false
+pushed_at: '2024-08-13T14:29:49Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

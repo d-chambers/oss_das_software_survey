@@ -1,0 +1,73 @@
+---
+repository: rizac/stream2segment
+ref: main
+manifests:
+- requirements.dev.txt
+- requirements.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  astroid: required
+  blinker: required
+  blosc2: required
+  certifi: required
+  charset-normalizer: required
+  click: required
+  contourpy: required
+  cycler: required
+  cython: required
+  decorator: required
+  dill: required
+  flask: required
+  fonttools: required
+  greenlet: required
+  idna: required
+  iniconfig: required
+  itsdangerous: required
+  jinja2: required
+  kiwisolver: required
+  lazy-object-proxy: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  mccabe: required
+  msgpack: required
+  numexpr: required
+  numpy: required
+  obspy: required
+  packaging: required
+  pandas: required
+  pep8: required
+  pillow: required
+  platformdirs: required
+  pluggy: required
+  psutil: required
+  psycopg2: required
+  py-cpuinfo: required
+  pyparsing: required
+  python-dateutil: required
+  pytz: required
+  pyyaml: required
+  requests: required
+  scipy: required
+  six: required
+  sqlalchemy: required
+  tables: required
+  tomlkit: required
+  typing_extensions: required
+  tzdata: required
+  urllib3: required
+  werkzeug: required
+  wrapt: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: stream2segment
+stars: 24
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-08-20T11:48:09Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

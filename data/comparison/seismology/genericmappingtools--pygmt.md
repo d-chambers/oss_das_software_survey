@@ -1,0 +1,54 @@
+---
+repository: GenericMappingTools/pygmt
+ref: main
+manifests:
+- environment.yml
+- pyproject.toml
+distribution: pygmt
+tree_truncated: false
+declared:
+  cairosvg: required
+  codespell: required
+  conda-forge: required
+  contextily: required
+  geopandas: required
+  ghostscript: required
+  git-lfs: required
+  gmt: required
+  ipython: required
+  jupyter: required
+  make: required
+  matplotlib-base: required
+  myst-nb: required
+  netcdf4: required
+  nodefaults: required
+  numpy: required
+  packaging: required
+  pandas: required
+  pandas-stubs: required
+  panel: required
+  prek: required
+  pyarrow: optional
+  pyarrow-core: required
+  python-build: required
+  rioxarray: required
+  sphinx: required
+  sphinx-autodoc-typehints: required
+  sphinx-copybutton: required
+  sphinx-design: required
+  sphinx-gallery: required
+  sphinx_rtd_theme: required
+  sphinxcontrib-svg2pdfconverter: required
+  tectonic: required
+  xarray: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: pygmt
+stars: 873
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-08-28T20:58:24Z'
+fetched_at: '2026-08-29T11:26:17+00:00'
+---

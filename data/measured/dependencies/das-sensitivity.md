@@ -1,0 +1,264 @@
+---
+id: das-sensitivity
+source: dependencies
+scanned_at: '2026-08-29T11:22:34+00:00'
+ref: main
+tip: 3943489c394fe846d4104d6aad02a4fa7cac0e9a
+has_python: true
+manifests:
+- environment.yml
+required:
+- affine
+- asttokens
+- attrs
+- backcall
+- brotli-python
+- bzip2
+- ca-certificates
+- cached-property
+- cached_property
+- certifi
+- charset-normalizer
+- click
+- click-plugins
+- cligj
+- colorama
+- comm
+- conda-forge
+- contourpy
+- corner
+- cycler
+- cython
+- debugpy
+- decorator
+- defaults
+- emcee
+- executing
+- fonttools
+- greenlet
+- h5py
+- hdf5
+- idna
+- importlib-metadata
+- importlib-resources
+- importlib_metadata
+- intel-openmp
+- ipykernel
+- ipympl
+- ipython
+- ipython-genutils
+- ipywidgets
+- jedi
+- jupyter_client
+- jupyter_core
+- jupyterlab-widgets
+- kiwisolver
+- krb5
+- libaec
+- libblas
+- libcblas
+- libcurl
+- libffi
+- libhwloc
+- libiconv
+- liblapack
+- libsodium
+- libsqlite
+- libssh2
+- libxml2
+- libzlib
+- lxml
+- m2w64-gcc-libgfortran
+- m2w64-gcc-libs
+- m2w64-gcc-libs-core
+- m2w64-gmp
+- m2w64-libwinpthread-git
+- matplotlib
+- matplotlib-inline
+- mkl
+- msys2-conda-epoch
+- nest-asyncio
+- numpy
+- obspy
+- openssl
+- packaging
+- pandas
+- parso
+- patsy
+- pickleshare
+- pillow
+- platformdirs
+- pooch
+- prompt-toolkit
+- prompt_toolkit
+- psutil
+- pthreads-win32
+- pure_eval
+- pygments
+- pykonal
+- pyparsing
+- pysocks
+- python-dateutil
+- python_abi
+- pytz
+- pywin32
+- pyzmq
+- rasterio
+- requests
+- scipy
+- seaborn
+- six
+- snuggs
+- sqlalchemy
+- stack_data
+- statsmodels
+- tbb
+- tk
+- tornado
+- tqdm
+- traitlets
+- typing_extensions
+- tzdata
+- ucrt
+- urllib3
+- utm
+- vc
+- vc14_runtime
+- vs2015_runtime
+- wcwidth
+- widgetsnbextension
+- win_inet_pton
+- xarray
+- xz
+- zeromq
+- zipp
+optional: []
+development: []
+declared:
+  affine: required
+  asttokens: required
+  attrs: required
+  backcall: required
+  brotli-python: required
+  bzip2: required
+  ca-certificates: required
+  cached-property: required
+  cached_property: required
+  certifi: required
+  charset-normalizer: required
+  click: required
+  click-plugins: required
+  cligj: required
+  colorama: required
+  comm: required
+  conda-forge: required
+  contourpy: required
+  corner: required
+  cycler: required
+  cython: required
+  debugpy: required
+  decorator: required
+  defaults: required
+  emcee: required
+  executing: required
+  fonttools: required
+  greenlet: required
+  h5py: required
+  hdf5: required
+  idna: required
+  importlib-metadata: required
+  importlib-resources: required
+  importlib_metadata: required
+  intel-openmp: required
+  ipykernel: required
+  ipympl: required
+  ipython: required
+  ipython-genutils: required
+  ipywidgets: required
+  jedi: required
+  jupyter_client: required
+  jupyter_core: required
+  jupyterlab-widgets: required
+  kiwisolver: required
+  krb5: required
+  libaec: required
+  libblas: required
+  libcblas: required
+  libcurl: required
+  libffi: required
+  libhwloc: required
+  libiconv: required
+  liblapack: required
+  libsodium: required
+  libsqlite: required
+  libssh2: required
+  libxml2: required
+  libzlib: required
+  lxml: required
+  m2w64-gcc-libgfortran: required
+  m2w64-gcc-libs: required
+  m2w64-gcc-libs-core: required
+  m2w64-gmp: required
+  m2w64-libwinpthread-git: required
+  matplotlib: required
+  matplotlib-inline: required
+  mkl: required
+  msys2-conda-epoch: required
+  nest-asyncio: required
+  numpy: required
+  obspy: required
+  openssl: required
+  packaging: required
+  pandas: required
+  parso: required
+  patsy: required
+  pickleshare: required
+  pillow: required
+  platformdirs: required
+  pooch: required
+  prompt-toolkit: required
+  prompt_toolkit: required
+  psutil: required
+  pthreads-win32: required
+  pure_eval: required
+  pygments: required
+  pykonal: required
+  pyparsing: required
+  pysocks: required
+  python-dateutil: required
+  python_abi: required
+  pytz: required
+  pywin32: required
+  pyzmq: required
+  rasterio: required
+  requests: required
+  scipy: required
+  seaborn: required
+  six: required
+  snuggs: required
+  sqlalchemy: required
+  stack_data: required
+  statsmodels: required
+  tbb: required
+  tk: required
+  tornado: required
+  tqdm: required
+  traitlets: required
+  typing_extensions: required
+  tzdata: required
+  ucrt: required
+  urllib3: required
+  utm: required
+  vc: required
+  vc14_runtime: required
+  vs2015_runtime: required
+  wcwidth: required
+  widgetsnbextension: required
+  win_inet_pton: required
+  xarray: required
+  xz: required
+  zeromq: required
+  zipp: required
+error: ''
+missing: {}
+---

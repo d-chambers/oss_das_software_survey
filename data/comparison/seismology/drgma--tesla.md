@@ -1,0 +1,61 @@
+---
+repository: DrGMA/TESLA
+ref: main
+manifests:
+- docs/requirements.txt
+- requirements.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  certifi: required
+  charset-normalizer: required
+  configparser: required
+  contourpy: required
+  cycler: required
+  decorator: required
+  entrypoints: required
+  fonttools: required
+  greenlet: required
+  idna: required
+  importlib-resources: required
+  kiwisolver: required
+  lxml: required
+  markdown-it-py: required
+  matplotlib: required
+  mdurl: required
+  numpy: required
+  obspy: required
+  packaging: required
+  pandas: required
+  pillow: required
+  pygments: required
+  pymysql: required
+  pyparsing: required
+  python-dateutil: required
+  python-math: required
+  pytz: required
+  pyyaml: required
+  requests: required
+  rich: required
+  scipy: required
+  six: required
+  sphinx: required
+  sphinx-rtd-theme: required
+  sqlalchemy: required
+  tesla: required
+  typing-extensions: required
+  tzdata: required
+  urllib3: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: TESLA
+stars: 6
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-02-24T17:17:55Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

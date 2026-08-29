@@ -1,0 +1,140 @@
+---
+repository: rixmape/ph-earthquake-info
+ref: main
+manifests:
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  anyio: required
+  argon2-cffi: required
+  argon2-cffi-bindings: required
+  arrow: required
+  asttokens: required
+  async-lru: required
+  attrs: required
+  babel: required
+  beautifulsoup4: required
+  bleach: required
+  bs4: required
+  certifi: required
+  cffi: required
+  charset-normalizer: required
+  click: required
+  click-plugins: required
+  cligj: required
+  colorama: required
+  comm: required
+  contourpy: required
+  cycler: required
+  debugpy: required
+  decorator: required
+  defusedxml: required
+  executing: required
+  fastjsonschema: required
+  fiona: required
+  fonttools: required
+  fqdn: required
+  geopandas: required
+  h11: required
+  httpcore: required
+  httpx: required
+  idna: required
+  ipykernel: required
+  ipython: required
+  ipywidgets: required
+  isoduration: required
+  jedi: required
+  jinja2: required
+  joblib: required
+  json5: required
+  jsonpointer: required
+  jsonschema: required
+  jsonschema-specifications: required
+  jupyter: required
+  jupyter-console: required
+  jupyter-events: required
+  jupyter-lsp: required
+  jupyter_client: required
+  jupyter_core: required
+  jupyter_server: required
+  jupyter_server_terminals: required
+  jupyterlab: required
+  jupyterlab_pygments: required
+  jupyterlab_server: required
+  jupyterlab_widgets: required
+  kiwisolver: required
+  markupsafe: required
+  matplotlib: required
+  matplotlib-inline: required
+  mistune: required
+  nbclient: required
+  nbconvert: required
+  nbformat: required
+  nest-asyncio: required
+  notebook: required
+  notebook_shim: required
+  numpy: required
+  overrides: required
+  packaging: required
+  pandas: required
+  pandocfilters: required
+  parso: required
+  pillow: required
+  platformdirs: required
+  prometheus_client: required
+  prompt-toolkit: required
+  psutil: required
+  pure-eval: required
+  pyarrow: required
+  pycparser: required
+  pygments: required
+  pyparsing: required
+  pyproj: required
+  python-dateutil: required
+  python-json-logger: required
+  pytz: required
+  pywin32: required
+  pywinpty: required
+  pyyaml: required
+  pyzmq: required
+  qtconsole: required
+  qtpy: required
+  referencing: required
+  requests: required
+  rfc3339-validator: required
+  rfc3986-validator: required
+  rpds-py: required
+  scikit-learn: required
+  scipy: required
+  send2trash: required
+  shapely: required
+  six: required
+  sniffio: required
+  soupsieve: required
+  stack-data: required
+  terminado: required
+  threadpoolctl: required
+  tinycss2: required
+  tornado: required
+  traitlets: required
+  types-python-dateutil: required
+  tzdata: required
+  uri-template: required
+  urllib3: required
+  wcwidth: required
+  webcolors: required
+  webencodings: required
+  websocket-client: required
+  widgetsnbextension: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: ph-earthquake-info
+stars: 0
+language: Jupyter Notebook
+fork: false
+archived: true
+pushed_at: '2024-02-19T01:26:07Z'
+fetched_at: '2026-08-29T12:10:16+00:00'
+---

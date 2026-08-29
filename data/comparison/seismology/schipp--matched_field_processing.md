@@ -1,0 +1,159 @@
+---
+repository: schipp/matched_field_processing
+ref: main
+manifests:
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  acoular: required
+  appdirs: required
+  argcomplete: required
+  argon2-cffi: required
+  astropy: required
+  async-generator: required
+  attrs: required
+  backcall: required
+  bleach: required
+  brotlipy: required
+  cached-property: required
+  cartopy: required
+  certifi: required
+  cffi: required
+  cftime: required
+  chardet: required
+  click: required
+  cmcrameri: required
+  colorama: required
+  cryptography: required
+  cycler: required
+  decorator: required
+  defusedxml: required
+  dill: required
+  docopt: required
+  entrypoints: required
+  fastkml: required
+  future: required
+  geographiclib: required
+  glances: required
+  global-land-mask: required
+  greenlet: required
+  h5py: required
+  idna: required
+  imgcat: required
+  importlib-metadata: required
+  instaseis: required
+  ipykernel: required
+  ipython: required
+  ipython-genutils: required
+  ipywidgets: required
+  isodate: required
+  jedi: required
+  jinja2: required
+  joblib: required
+  jsonschema: required
+  jupyter: required
+  jupyter-client: required
+  jupyter-console: required
+  jupyter-core: required
+  jupyterlab-pygments: required
+  jupyterlab-widgets: required
+  kiwisolver: required
+  llvmlite: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  mistune: required
+  mkl-fft: required
+  mkl-random: required
+  mkl-service: required
+  mpi4py: required
+  mypy-extensions: required
+  nbclient: required
+  nbconvert: required
+  nbformat: required
+  nest-asyncio: required
+  netcdf4: required
+  networkx: required
+  notebook: required
+  numba: required
+  numexpr: required
+  numpy: required
+  obspy: required
+  olefile: required
+  owslib: required
+  packaging: required
+  pandas: required
+  pandocfilters: required
+  parso: required
+  pathspec: required
+  pexpect: required
+  pickleshare: required
+  pillow: required
+  prometheus-client: required
+  prompt-toolkit: required
+  prov: required
+  psutil: required
+  ptyprocess: required
+  pyasdf: required
+  pycparser: required
+  pyepsg: required
+  pyerfa: required
+  pygeoif: required
+  pygments: required
+  pykdtree: required
+  pyopenssl: required
+  pyparsing: required
+  pyproj: required
+  pyrsistent: required
+  pyshp: required
+  pysocks: required
+  python-dateutil: required
+  python-xlib: required
+  pytz: required
+  pyyaml: required
+  pyzmq: required
+  qtconsole: required
+  qtpy: required
+  ranger-fm: required
+  rdflib: required
+  regex: required
+  requests: required
+  scikit-learn: required
+  scipy: required
+  segyio: required
+  send2trash: required
+  shapely: required
+  sip: required
+  six: required
+  sqlalchemy: required
+  tables: required
+  termcolor: required
+  terminado: required
+  testpath: required
+  threadpoolctl: required
+  tldr: required
+  toml: required
+  tornado: required
+  tqdm: required
+  traitlets: required
+  traits: required
+  typed-ast: required
+  typing-extensions: required
+  urllib3: required
+  wcwidth: required
+  webencodings: required
+  widgetsnbextension: required
+  xarray: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: matched_field_processing
+stars: 9
+language: Python
+fork: false
+archived: false
+pushed_at: '2022-02-28T06:53:46Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

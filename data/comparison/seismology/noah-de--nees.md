@@ -1,0 +1,135 @@
+---
+repository: noah-de/NEES
+ref: master
+manifests:
+- environment.yml
+distribution: null
+tree_truncated: false
+declared:
+  attrs: required
+  backports: required
+  backports.functools_lru_cache: required
+  backports.shutil_get_terminal_size: required
+  backports_abc: required
+  blas: required
+  bleach: required
+  ca-certificates: required
+  certifi: required
+  conda-forge: required
+  configparser: required
+  cycler: required
+  dbus: required
+  decorator: required
+  defaults: required
+  entrypoints: required
+  enum34: required
+  expat: required
+  fontconfig: required
+  freetype: required
+  funcsigs: required
+  functools32: required
+  futures: required
+  gettext: required
+  glib: required
+  gmp: required
+  gst-plugins-base: required
+  gstreamer: required
+  icu: required
+  intel-openmp: required
+  ipaddress: required
+  ipykernel: required
+  ipython: required
+  ipython_genutils: required
+  ipywidgets: required
+  jinja2: required
+  jpeg: required
+  jsonschema: required
+  jupyter: required
+  jupyter_client: required
+  jupyter_console: required
+  jupyter_core: required
+  kiwisolver: required
+  libffi: required
+  libgcc-ng: required
+  libgfortran: required
+  libgfortran-ng: required
+  libiconv: required
+  libopenblas: required
+  libpng: required
+  libsodium: required
+  libstdcxx-ng: required
+  libuuid: required
+  libxcb: required
+  libxml2: required
+  llvmlite: required
+  markupsafe: required
+  matplotlib: required
+  mistune: required
+  mkl: required
+  mkl_fft: required
+  mkl_random: required
+  nbconvert: required
+  nbformat: required
+  ncurses: required
+  nose: required
+  notebook: required
+  numba: required
+  numpy: required
+  numpy-base: required
+  openblas: required
+  openssl: required
+  pandas: required
+  pandoc: required
+  pandocfilters: required
+  pathlib2: required
+  pcre: required
+  pexpect: required
+  pickleshare: required
+  prometheus_client: required
+  prompt_toolkit: required
+  pthread-stubs: required
+  ptyprocess: required
+  pudb: required
+  pygments: required
+  pyparsing: required
+  pyqt: required
+  pyrsistent: required
+  python-dateutil: required
+  pytz: required
+  pyzmq: required
+  qt: required
+  qtconsole: required
+  readline: required
+  scandir: required
+  send2trash: required
+  simplegeneric: required
+  singledispatch: required
+  sip: required
+  six: required
+  sqlite: required
+  subprocess32: required
+  terminado: required
+  testpath: required
+  tk: required
+  tornado: required
+  traitlets: required
+  urwid: required
+  wcwidth: required
+  webencodings: required
+  widgetsnbextension: required
+  xorg-libxau: required
+  xorg-libxdmcp: required
+  xz: required
+  zeromq: required
+  zlib: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: NEES
+stars: 0
+language: Jupyter Notebook
+fork: false
+archived: false
+pushed_at: '2019-07-25T03:42:04Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

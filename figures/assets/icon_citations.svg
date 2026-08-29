@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="220" viewBox="0 0 1680 220">
+  <!-- citations: an open book, the one icon in the set that is not a repository
+       artefact, because a citation is the only headline number measured outside
+       the forge. Authored centred on x=210 like the rest; the plate translates
+       it. Editable: open in a vector editor and keep the coordinates as authored. -->
+  <g>
+    <path d="M 141,152 L 141,74 Q 175,60 207,76 L 207,154 Q 175,138 141,152 Z"
+          fill="#e4dccb" stroke="#ffffff" stroke-width="5"/>
+    <path d="M 279,152 L 279,74 Q 245,60 213,76 L 213,154 Q 245,138 279,152 Z"
+          fill="#f1ece1" stroke="#ffffff" stroke-width="5"/>
+    <rect x="206" y="70" width="8" height="86" rx="4" fill="#c98500"/>
+    <rect x="157" y="92" width="38" height="7" rx="3.5" fill="#b8b0a0"/>
+    <rect x="157" y="110" width="30" height="7" rx="3.5" fill="#b8b0a0"/>
+    <rect x="225" y="92" width="38" height="7" rx="3.5" fill="#b8b0a0"/>
+    <rect x="225" y="110" width="30" height="7" rx="3.5" fill="#b8b0a0"/>
+  </g>
+</svg>

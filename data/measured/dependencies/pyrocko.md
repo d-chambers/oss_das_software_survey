@@ -1,0 +1,83 @@
+---
+id: pyrocko
+source: dependencies
+scanned_at: '2026-08-29T11:22:50+00:00'
+ref: master
+tip: b5bbdee44b322eb4b4aa0a6f6fa8321d1fb0f36e
+has_python: true
+manifests:
+- pyproject.toml
+- requirements-all.txt
+- requirements-conda-windows.txt
+- requirements-conda.txt
+- requirements.txt
+- setup.py
+required:
+- '3.11'
+- basehttpserver
+- certifi
+- cpickle
+- distutils
+- geoip
+- jinja2
+- kite
+- m2-gzip
+- m2-patch
+- m2-tar
+- matplotlib
+- numpy
+- obspy
+- packaging
+- pybtex
+- pyqt
+- pyqt5
+- pyyaml
+- queue
+- requests
+- scipy
+- seisbench
+- sha
+- simpledas
+- simplehttpserver
+- sphinx_sleekcat_theme
+- stringio
+- torch
+- tornado
+- urlparse
+- vtk
+- vtkmodules
+optional:
+- cycler
+- geographiclib
+- h5py
+- markdown
+- pylab
+- pyserial
+- sip
+- threadpoolctl
+- trimesh
+- tunguska
+development:
+- beat
+- mopad
+- nptdms
+- urllib2
+declared:
+  '3.11': required
+  jinja2: required
+  m2-gzip: required
+  m2-patch: required
+  m2-tar: required
+  matplotlib: required
+  numpy: required
+  pybtex: required
+  pyqt: required
+  pyqt5: required
+  pyyaml: required
+  requests: required
+  scipy: required
+  tornado: required
+  vtk: required
+error: ''
+missing: {}
+---

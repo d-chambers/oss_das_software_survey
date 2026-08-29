@@ -1,0 +1,205 @@
+---
+title: "The Open Source DAS Ecosystem"
+author: "Derrick Chambers"
+institute: "Ineris"
+date: today
+date-format: "[Galileo Fiber Optic Conference, 2026]"
+format:
+  beamer:
+    aspectratio: 169
+    incremental: true
+    include-in-header: _theme.tex
+    slide-level: 2
+    pdf-engine: pdflatex
+output-file: talk
+---
+
+## Why tools?
+
+::: {.nonincremental}
+![](../figures/p1_scientist_oss.png){height=68%}
+:::
+
+::: {.notes}
+A field is named for its material. Stone, bronze, iron. Ours is named for the
+fibre, but what we actually work in is software, and nobody has surveyed it.
+:::
+
+## What is out there?
+
+![](../figures/v030_funnel.png){height=78%}
+
+::: {.notes}
+{{< meta n.funnel.candidates >}} candidates from forge search, registries and
+the literature. Every one leaves by exactly one route. What survives is
+{{< meta n.funnel.in_scope >}} DAS projects, plus {{< meta n.funnel.supporting >}}
+seismology tools that also support DAS and {{< meta n.funnel.other_fiber >}}
+projects for temperature or strain.
+:::
+
+## The ecosystem in five numbers
+
+![](../figures/v020_totals.png){width=98%}
+
+::: {.notes}
+{{< meta n.ecosystem_totals.projects >}} projects,
+{{< meta n.ecosystem_totals.contributors >}} contributors,
+{{< meta n.ecosystem_totals.commits >}} commits,
+{{< meta n.ecosystem_totals.lines >}} lines,
+{{< meta n.ecosystem_totals.citations >}} citations.
+
+Say the caveat on citations out loud: they cover only
+{{< meta n.ecosystem_totals.cited_projects >}} of the
+{{< meta n.ecosystem_totals.projects >}} projects, so it is a floor. Lines of
+code is the softest number here — a handful of repositories carry vendored
+content — so lead with projects and commits if challenged.
+:::
+
+## A field younger than its instruments
+
+![](../figures/v090_record_section.png){height=76%}
+
+::: {.notes}
+One bar per project, ordered by first commit. 76 of the
+{{< meta n.ecosystem_totals.projects >}} began in 2020 or later. The hardware is
+decades old; essentially all of the software is five years old or less. That is
+the single fact that explains everything that follows.
+:::
+
+## Can it be depended on?
+
+![](../figures/v130_engineering.png){height=76%}
+
+::: {.notes}
+Four questions a stranger asks before depending on your code. Most projects
+answer the licence question and almost none answer the packaging one:
+{{< meta n.composition.with_packaging >}} are set up as a package,
+{{< meta n.composition.with_pypi >}} actually published.
+:::
+
+## Most projects build on nothing
+
+![](../figures/v160_network.png){height=76%}
+
+::: {.notes}
+This is the finding. 51 of {{< meta n.ecosystem_totals.projects >}} projects
+depend on nothing in the census and nothing depends on them. One hub with 13
+dependents, four small clusters, and everything else standing alone.
+
+If asked why DASCore reads 13 here and 8 on the next slide: this graph counts
+declared manifests and imports; the comparison counts manifests only, because
+that is the only evidence available for 677 seismology repositories read over
+an API.
+:::
+
+## Half as connected as seismology
+
+![](../figures/v170_ecosystems.png){width=98%}
+
+::: {.notes}
+Same measurement, both fields, manifests only so the two are comparable.
+Seismology has ObsPy, depended on by 44 per cent of its packages. We have no
+equivalent. Say "roughly half as connected", not the precise percentages — the
+DAS set is hand-curated and the seismology set is scraped, so the comparison is
+directional.
+:::
+
+## Five tools, five different jobs
+
+- **DASCore** — general data handling, a foundation for other packages
+- **xdas** — very large or live continuous acquisitions
+- **DASPy** — broad seismological analysis in scripts and notebooks
+- **DAS4Whales** — marine bioacoustics, end to end
+- **Lightguide** — Pyrocko modelling and the published AFK filter
+
+::: {.notes}
+There is no universal winner, because these occupy different layers. Disclose
+here, out loud, that I maintain DASCore — and say which criterion I weighted
+and where I would choose differently: if larger-than-memory or real-time
+processing is central rather than incidental, start with xdas.
+:::
+
+## "Large data" means five different things
+
+- **DASCore** — indexes sources, selects and chunks across files
+- **xdas** — virtual arrays, stateful chunk-continuous pipelines, streaming
+- **DASPy** — sequential file loop that carries filter state across boundaries
+- **DAS4Whales** — targeted Dask and xarray helpers over NumPy workflows
+- **Lightguide** — native parallel code accelerating one filter
+
+::: {.notes}
+Each of these is a reasonable answer to a different question. None of the labels
+guarantees a given workflow is faster — benchmark the actual operation chain.
+:::
+
+## The choice you cannot reverse
+
+- The **data model** leaks into your public API
+- Immutable patches, virtual arrays, mutable 2-D sections, bare NumPy
+- Conversion exists — but is not lossless
+- Licences differ more than the features do
+
+::: {.notes}
+Unidas adapts four of the containers, and DASPy converts among several. But an
+xarray round trip densifies xdas's compact coordinates, and MiniSEED cannot
+carry every DAS field. Licences: LGPL, GPL, MIT, and one CC BY-NC-SA — the last
+needs a conversation before you depend on it downstream.
+:::
+
+## Where the gaps are
+
+- GPU and array-API processing beyond NumPy
+- Metadata: one reusable, integrated inventory
+- Visualisation at acquisition scale
+- Agent-readable interfaces
+
+::: {.notes}
+These are the four places where nothing in the census is a complete answer yet.
+:::
+
+## What agent-ready software looks like
+
+::: {.nonincremental}
+![](../figures/p1_scientist_agent_oss.png){height=68%}
+:::
+
+## Conclusions
+
+- A young ecosystem: 76 of {{< meta n.ecosystem_totals.projects >}} began after 2020
+- Most projects build on nothing
+- Five tools cover five different jobs
+- Interoperate rather than re-implement
+
+::: {.notes}
+Close on the call to action: publish it, declare your dependencies, and reuse a
+data model rather than inventing a sixth.
+:::
+
+## Thank you
+
+::: {.nonincremental}
+derrick.chambers@ineris.fr · github.com/d-chambers
+:::
+
+# Appendix
+
+## How the search was run
+
+![](../figures/v040_coverage.png){width=98%}
+
+::: {.notes}
+The honest limitations slide. Four discovery routes were not taken, and most
+rejections came from one deterministic rule.
+:::
+
+## Languages and licences
+
+![](../figures/v100_language_licence.png){height=76%}
+
+## What the work went into
+
+![](../figures/v120_growth_by_cohort.png){width=98%}
+
+## What it is all built on
+
+![](../figures/v140_dependencies.png){width=98%}

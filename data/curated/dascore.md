@@ -30,6 +30,9 @@ publications:
 - doi: 10.26443/seismica.v3i2.1184
   role: canonical
   note: null
+- doi: 10.31223/x5b978
+  role: related
+  note: the EarthArXiv preprint of the canonical paper, cited separately
 das_focus: das-native
 sources:
 - github.com/dasdae/dascore

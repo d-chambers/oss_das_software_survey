@@ -1,0 +1,65 @@
+---
+repository: earthinversion/STADIUM-Py
+ref: master
+manifests:
+- environment_files/requirements_linux.txt
+- environment_files/requirements_osx.txt
+distribution: null
+tree_truncated: false
+declared:
+  asn1crypto: required
+  basemap: required
+  cartopy: required
+  certifi: required
+  cffi: required
+  chardet: required
+  cryptography: required
+  cycler: required
+  cython: required
+  decorator: required
+  future: required
+  geographiclib: required
+  h5py: required
+  idna: required
+  kiwisolver: required
+  lxml: required
+  matplotlib: required
+  numpy: required
+  obspy: required
+  obspyh5: required
+  olefile: required
+  owslib: required
+  pandas: required
+  pillow: required
+  pycparser: required
+  pyepsg: required
+  pykdtree: required
+  pyopenssl: required
+  pyparsing: required
+  pyproj: required
+  pyshp: required
+  pysocks: required
+  python-dateutil: required
+  pytz: required
+  requests: required
+  rf: required
+  scipy: required
+  shapely: required
+  six: required
+  splitwavepy: required
+  sqlalchemy: required
+  toeplitz: required
+  tornado: required
+  tqdm: required
+  urllib3: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: STADIUM-Py
+stars: 21
+language: Python
+fork: false
+archived: false
+pushed_at: '2022-12-08T06:20:20Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

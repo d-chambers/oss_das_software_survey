@@ -1,0 +1,54 @@
+---
+repository: eqcorrscan/RT_EQcorrscan
+ref: master
+manifests:
+- docs/requirements.txt
+- pyproject.toml
+- requirements.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  bokeh: required
+  bottleneck: required
+  certifi: required
+  eqcorrscan: required
+  fonttools: required
+  geographiclib: required
+  h5py: required
+  latlon: required
+  matplotlib: required
+  mock: required
+  nbsphinx: required
+  notifiers: required
+  numpy: required
+  numpydoc: required
+  obsplus: required
+  obspy: required
+  pillow: required
+  psutil: required
+  pygmt: required
+  pympler: required
+  pyproj: required
+  pyyaml: required
+  requests: required
+  scipy: required
+  sphinx: required
+  sphinx_autodoc_typehints: required
+  sphinx_bootstrap_theme: required
+  statsmodels: required
+  tornado: required
+  tqdm: required
+  urllib3: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: RT_EQcorrscan
+stars: 14
+language: C++
+fork: false
+archived: false
+pushed_at: '2026-08-21T03:31:27Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

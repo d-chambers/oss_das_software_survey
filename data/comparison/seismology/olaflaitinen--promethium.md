@@ -1,0 +1,59 @@
+---
+repository: olaflaitinen/Promethium
+ref: main
+manifests:
+- docker/requirements.txt
+- pyproject.toml
+- requirements-dev.txt
+- requirements.txt
+distribution: promethium-seismic
+tree_truncated: false
+declared:
+  aiosqlite: required
+  alembic: required
+  asyncpg: required
+  celery: required
+  fastapi: required
+  httpx: required
+  hydra-core: required
+  lightning: required
+  matplotlib: optional
+  numpy: required
+  obspy: required
+  pandas: required
+  passlib: required
+  prometheus-client: required
+  promethium: optional
+  pydantic: required
+  pydantic-settings: required
+  python-jose: required
+  python-multipart: required
+  pytorch-lightning: required
+  pywavelets: required
+  pyyaml: required
+  redis: required
+  requests: required
+  rich: optional
+  scikit-learn: required
+  scipy: required
+  seaborn: optional
+  segyio: required
+  sqlalchemy: required
+  structlog: required
+  torch: required
+  tqdm: required
+  typer: required
+  uvicorn: required
+  xarray: required
+  zarr: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: Promethium
+stars: 13
+language: Python
+fork: false
+archived: false
+pushed_at: '2025-12-10T17:30:15Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

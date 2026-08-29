@@ -1,0 +1,56 @@
+---
+repository: SeisBlue/SeisBlue
+ref: master
+manifests:
+- alpha/SeisBlue_Pipeline_old/src/requirements.txt
+- docs/requirements.txt
+- requirements.txt
+- requirements_dev.txt
+- setup.py
+distribution: null
+tree_truncated: false
+declared:
+  cartopy: required
+  h5glance: required
+  h5py: required
+  ipympl: required
+  ipywidgets: required
+  jupyterlab: required
+  kedro: required
+  kedro-airflow: required
+  kedro-mlflow: required
+  kedro-telemetry: required
+  kedro-viz: required
+  keras: required
+  lxml: required
+  matplotlib: required
+  mlflow: required
+  nbstripout: required
+  numpy: required
+  obspy: required
+  pandas: required
+  pillow: required
+  pyyaml: required
+  recommonmark: required
+  scikit-learn: required
+  scipy: required
+  seaborn: required
+  sklearn: required
+  sphinx: required
+  sphinx-bootstrap-theme: required
+  sqlalchemy: required
+  sqlalchemy-utils: required
+  tensorflow: required
+  tqdm: required
+  yapf: development
+error: ''
+missing: {}
+ecosystem: seismology
+name: SeisBlue
+stars: 73
+language: Python
+fork: false
+archived: true
+pushed_at: '2025-02-25T07:50:46Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

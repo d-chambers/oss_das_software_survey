@@ -1,0 +1,104 @@
+---
+repository: ifountoul/SSA2py
+ref: master
+manifests:
+- environment.yml
+distribution: null
+tree_truncated: false
+declared:
+  alabaster: required
+  babel: required
+  brotli-python: required
+  bzip2: required
+  ca-certificates: required
+  cartopy: required
+  certifi: required
+  cftime: required
+  charset-normalizer: required
+  colorama: required
+  conda-forge: required
+  contourpy: required
+  cycler: required
+  decorator: required
+  defaults: required
+  docutils: required
+  fonttools: required
+  geojson: required
+  gitdb: required
+  gitpython: required
+  greenlet: required
+  idna: required
+  imagesize: required
+  importlib-metadata: required
+  jinja2: required
+  joblib: required
+  kiwisolver: required
+  ld_impl_linux-64: required
+  libffi: required
+  libgcc-ng: required
+  libgomp: required
+  libnsl: required
+  libsqlite: required
+  libstdcxx-ng: required
+  libuuid: required
+  libzlib: required
+  llvmlite: required
+  lxml: required
+  markupsafe: required
+  matplotlib: required
+  ncurses: required
+  netcdf4: required
+  numba: required
+  numpy: required
+  obspy: required
+  openssl: required
+  packaging: required
+  pillow: required
+  pygments: required
+  pyparsing: required
+  pyproj: required
+  pyshp: required
+  pysocks: required
+  python-dateutil: required
+  python_abi: required
+  pytz: required
+  pyyaml: required
+  readline: required
+  requests: required
+  scikit-fmm: required
+  scikit-learn: required
+  scipy: required
+  shapely: required
+  six: required
+  smmap: required
+  snowballstemmer: required
+  sphinx: required
+  sphinx-rtd-theme: required
+  sphinxcontrib-applehelp: required
+  sphinxcontrib-devhelp: required
+  sphinxcontrib-htmlhelp: required
+  sphinxcontrib-jquery: required
+  sphinxcontrib-jsmath: required
+  sphinxcontrib-qthelp: required
+  sphinxcontrib-serializinghtml: required
+  sqlalchemy: required
+  tbb: required
+  threadpoolctl: required
+  tk: required
+  turfpy: required
+  typing-extensions: required
+  tzdata: required
+  urllib3: required
+  xz: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: SSA2py
+stars: 28
+language: Python
+fork: false
+archived: false
+pushed_at: '2024-03-30T12:53:31Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

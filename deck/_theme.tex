@@ -1,0 +1,32 @@
+% Approximates the INERIS deck: a restrained frame around figures that already
+% carry the identity. The figures are transparent, so the slide ground shows
+% through and must stay light.
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{ink}{HTML}{2B2620}
+\definecolor{amber}{HTML}{C98500}
+\definecolor{muted}{HTML}{7A7266}
+\definecolor{rule}{HTML}{CBC3B3}
+
+\setbeamercolor{structure}{fg=amber}
+\setbeamercolor{frametitle}{fg=ink, bg=white}
+\setbeamercolor{normal text}{fg=ink, bg=white}
+\setbeamercolor{itemize item}{fg=amber}
+\setbeamercolor{itemize subitem}{fg=muted}
+\setbeamercolor{footline}{fg=muted}
+
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamerfont{itemize/enumerate body}{size=\large}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\textbullet}
+
+% A rule under the title, in the figures' own palette.
+\setbeamertemplate{frametitle}{%
+  \vspace{0.6em}\hspace{0.4em}\insertframetitle\par
+  \hspace{0.4em}{\color{rule}\rule{0.94\paperwidth}{1pt}}}
+
+% Footer: institute left, slide number right, nothing else.
+\setbeamertemplate{footline}{%
+  \hspace{0.5em}{\color{muted}\tiny Ineris — Galileo, 2026}\hfill
+  {\color{muted}\tiny\insertframenumber}\hspace{0.5em}\vspace{0.3em}}

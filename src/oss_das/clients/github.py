@@ -26,6 +26,7 @@ class GitHubClient(JsonClient):
         *,
         host: str = "github.com",
         client: httpx.Client | None = None,
+        min_interval: float = 0.0,
     ) -> None:
         headers = {
             "Accept": "application/vnd.github+json",
@@ -35,8 +36,14 @@ class GitHubClient(JsonClient):
         if token:
             headers["Authorization"] = f"Bearer {token}"
         self.host = host
+        # Pacing is off by default so existing callers are unchanged. A caller
+        # working through hundreds of repositories should set it: search allows
+        # thirty requests a minute, and being throttled costs more than waiting.
         super().__init__(
-            base_url="https://api.github.com", headers=headers, client=client
+            base_url="https://api.github.com",
+            headers=headers,
+            client=client,
+            min_interval=min_interval,
         )
 
     def paginate(
@@ -73,6 +80,18 @@ class GitHubClient(JsonClient):
         hundred matches. Paging fixes that, and returning ``total_count``
         alongside makes the remaining cap visible instead of invisible.
         """
+        items, total = self.search_items(query)
+        return SearchResult(
+            [self._candidate(item) for item in items], total, total > len(items)
+        )
+
+    def search_items(self, query: str) -> tuple[list[dict[str, Any]], int]:
+        """Raw search payloads, and how many hits GitHub claims to hold.
+
+        ``search_repositories`` narrows these to the candidate shape discovery
+        works with, which drops fields a caller may need -- ``default_branch``,
+        for one, without which a tree cannot be listed.
+        """
         items: list[dict[str, Any]] = []
         total = 0
         for page in range(1, SEARCH_RESULT_LIMIT // 100 + 1):
@@ -85,9 +104,7 @@ class GitHubClient(JsonClient):
             items.extend(batch)
             if len(batch) < 100 or len(items) >= min(total, SEARCH_RESULT_LIMIT):
                 break
-        return SearchResult(
-            [self._candidate(item) for item in items], total, total > len(items)
-        )
+        return items, total
 
     def list_namespace_repositories(self, namespace: str) -> list[dict[str, Any]]:
         """List an owner's repositories, whether it is an org or a user account.

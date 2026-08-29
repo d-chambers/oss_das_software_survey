@@ -1,0 +1,74 @@
+---
+id: seisbench
+source: dependencies
+scanned_at: '2026-08-29T11:22:51+00:00'
+ref: main
+tip: afac5f1ee200c00f9994410517f85c646095e56c
+has_python: true
+manifests:
+- docs/requirements.txt
+- pyproject.toml
+- requirements.txt
+- setup.py
+required:
+- bottleneck
+- docutils
+- eqtransformer
+- gamma
+- git
+- h5py
+- huggingface_hub
+- keras
+- lxml
+- matplotlib
+- model
+- nest_asyncio
+- numpy
+- obspy
+- packaging
+- pandas
+- pyocto
+- pyproj
+- pyrocko
+- recommonmark
+- requests
+- scipy
+- seaborn
+- sphinx
+- sphinx-autodoc-typehints
+- sphinx-rtd-theme
+- tensorflow
+- torch
+- tqdm
+- typing_extensions
+- xdas
+optional:
+- cartopy
+- fiona
+- ipython
+- pyarrow
+- shapely
+- torchvision
+development: []
+declared:
+  bottleneck: required
+  git: required
+  h5py: required
+  nest_asyncio: required
+  numpy: required
+  obspy: required
+  pandas: required
+  pyarrow: optional
+  recommonmark: required
+  scipy: required
+  sphinx: required
+  sphinx-autodoc-typehints: required
+  sphinx-rtd-theme: required
+  torch: required
+  torchvision: optional
+  tqdm: required
+  typing_extensions: required
+  xdas: optional
+error: ''
+missing: {}
+---

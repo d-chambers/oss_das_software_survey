@@ -1,0 +1,52 @@
+---
+repository: albertus82/earthquake-bulletin
+ref: master
+manifests:
+- pom.xml
+distribution: null
+tree_truncated: false
+declared:
+  ant-contrib: required
+  batik-codec: development
+  extra-enforcer-rules: required
+  jakarta.xml.bind-api: required
+  jarbundler-core: required
+  jaxb-runtime: required
+  jface-utils: required
+  jsoup: required
+  jul-to-slf4j: required
+  junit-jupiter: development
+  logback-classic: required
+  lombok: required
+  org.eclipse.core.commands: required
+  org.eclipse.core.jobs: required
+  org.eclipse.equinox.common: required
+  org.eclipse.jface: required
+  org.eclipse.nebula.cwt: required
+  org.eclipse.nebula.widgets.cdatetime: required
+  org.eclipse.osgi: required
+  org.eclipse.swt.cocoa.macosx.aarch64: required
+  org.eclipse.swt.cocoa.macosx.x86_64: required
+  org.eclipse.swt.gtk.linux.aarch64: required
+  org.eclipse.swt.gtk.linux.armhf: required
+  org.eclipse.swt.gtk.linux.x86: required
+  org.eclipse.swt.gtk.linux.x86_64: required
+  org.eclipse.swt.win32.win32.x86: required
+  org.eclipse.swt.win32.win32.x86_64: required
+  picocli: required
+  picocli-codegen: required
+  reflections: required
+  resilience4j-all: required
+  slf4j-api: required
+  vavr: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: earthquake-bulletin
+stars: 8
+language: Java
+fork: false
+archived: false
+pushed_at: '2026-04-26T08:58:00Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

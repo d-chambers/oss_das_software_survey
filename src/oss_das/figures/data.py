@@ -14,6 +14,7 @@ from collections import Counter
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from oss_das.core import PATHS, load_projects
 
@@ -68,13 +69,19 @@ def unique_authors(rows: list[dict[str, str]]) -> int:
 
 @dataclass(frozen=True)
 class EcosystemTotals:
-    """The four headline numbers, all over the same set of projects."""
+    """The five headline numbers, all over the same set of projects."""
 
     projects: int
     contributors: int
     commits: int
     lines: int
     unmirrored: tuple[str, ...]
+    #: Citations of the software, summed over every linked DOI. Books are left
+    #: out upstream: they measure interest in a subject, not use of a tool.
+    citations: int = 0
+    #: How many projects contribute to that sum. Most have no linked
+    #: publication at all, so the total is a floor.
+    cited_projects: int = 0
 
     def sidecar(self) -> dict[str, Any]:
         return asdict(self)
@@ -598,7 +605,7 @@ def das_project_ids() -> set[str]:
 
 
 def totals_from_records() -> EcosystemTotals:
-    """The four headline numbers, read from the markdown records."""
+    """The five headline numbers, read from the markdown records."""
     from oss_das.figures import records
 
     git = records.measured("git")
@@ -616,12 +623,19 @@ def totals_from_records() -> EcosystemTotals:
         for r in rows
         if not (BOT.search(r["author_name"]) or BOT.search(r["author_email"]))
     ]
+    publications = records.measured("publications")
+    cited = {
+        pid: (publications.get(pid) or {}).get("citations_total") or 0
+        for pid in included
+    }
     return EcosystemTotals(
         projects=len(included),
         contributors=unique_authors(rows),
         commits=len(human),
         lines=lines,
         unmirrored=tuple(sorted(i for i in included if i not in git)),
+        citations=sum(cited.values()),
+        cited_projects=sum(1 for count in cited.values() if count),
     )
 
 
@@ -1230,6 +1244,100 @@ def language_licence() -> LanguageLicence:
     )
 
 
+#: A catalogued project whose source could not be counted. It is a finding
+#: rather than a gap -- the project is real and publishes nothing a reader
+#: could compile -- so it gets a row, and the row sorts last because it is not
+#: a language and should not sit between two that are.
+NO_LANGUAGE = "n/a"
+
+
+@dataclass(frozen=True)
+class PlatformRow:
+    """One language: how many projects, and which forges they live on."""
+
+    language: str
+    by_host: tuple[tuple[str, int], ...]
+
+    @property
+    def projects(self) -> int:
+        return sum(n for _, n in self.by_host)
+
+
+@dataclass(frozen=True)
+class LanguagePlatform:
+    """What the ecosystem is written in, and where its source is hosted."""
+
+    rows: tuple[PlatformRow, ...]
+    projects: int
+    #: Forge totals, most-used first. This is the order every row stacks in,
+    #: so a host sits at the same depth in every bar and the eye can follow it
+    #: down the figure.
+    hosts: tuple[tuple[str, int], ...]
+
+    def sidecar(self) -> dict[str, Any]:
+        return {
+            "projects": self.projects,
+            "hosts": dict(self.hosts),
+            "languages": {
+                r.language: {"projects": r.projects, "by_host": dict(r.by_host)}
+                for r in self.rows
+            },
+        }
+
+
+def language_platform() -> LanguagePlatform:
+    """Primary language against the forge the source is hosted on.
+
+    The forge is read from the mirror record's ``repository_url``, which is
+    the URL that was actually cloned, rather than from the curated ``forge``
+    block, which only says where the clone was expected to be.
+    """
+    from oss_das.figures import records
+
+    git = records.measured("git")
+    mirror = records.measured("mirror")
+    das = das_project_ids()
+
+    grid: dict[str, Counter[str]] = {}
+    totals: Counter[str] = Counter()
+    for pid in das:
+        language = (git.get(pid) or {}).get("primary_language") or NO_LANGUAGE
+        url = (mirror.get(pid) or {}).get("repository_url") or ""
+        # A project with no mirror is named rather than dropped: it would
+        # otherwise leave the host totals short of the project count with
+        # nothing on the plate to explain the gap.
+        host = urlparse(url).netloc.lower() or "unmirrored"
+        grid.setdefault(language, Counter())[host] += 1
+        totals[host] += 1
+
+    order = tuple(sorted(totals, key=lambda host: (-totals[host], host)))
+    rows = tuple(
+        PlatformRow(
+            language=language,
+            by_host=tuple((host, counts[host]) for host in order if counts[host]),
+        )
+        for language, counts in sorted(
+            grid.items(),
+            key=lambda kv: (-sum(kv[1].values()), kv[0] == NO_LANGUAGE, kv[0]),
+        )
+    )
+    mix = LanguagePlatform(
+        rows=rows,
+        projects=len(das),
+        hosts=tuple((host, totals[host]) for host in order),
+    )
+    # Each bar is built from its segments and annotated with its own total,
+    # and the legend invites the reader to add the hosts up to the same
+    # number. All three have to agree or the figure prints a lie.
+    assert sum(r.projects for r in mix.rows) == mix.projects, (
+        "the language rows do not sum to the project total"
+    )
+    assert sum(n for _, n in mix.hosts) == mix.projects, (
+        "the forge hosts do not sum to the project total"
+    )
+    return mix
+
+
 #: Ten catalogue categories is more than a stacked bar can carry, so near
 #: neighbours are folded together. The grouping is listed here rather than
 #: hidden in a plate, and a category matching nothing lands in the last bucket.
@@ -1350,14 +1458,17 @@ class Engineering:
 #: linting, typing and release notes are measured but not shown -- their
 #: absence is a style, not an obstacle.
 PRACTICE_COLUMNS: tuple[tuple[str, str, str, str], ...] = (
+    # Labels are read from the back of a room, so they are as short as they can
+    # be and still be unambiguous. The note beside each one is what the
+    # presenter says out loud; it is not drawn.
     ("packaged", "Packaged", "Can I get it?", "on PyPI, conda or Julia"),
-    ("licence", "OSI licence", "Can I get it?", "legally reusable"),
+    ("licence", "Licence", "Can I get it?", "OSI-approved, legally reusable"),
     ("tests", "Tests", "Can I trust it?", "a test suite in the repo"),
     ("ci", "CI", "Can I trust it?", "a workflow runs"),
-    ("docs", "Documentation", "Can I learn it?", "beyond the README"),
+    ("docs", "Docs", "Can I learn it?", "beyond the README"),
     ("examples", "Examples", "Can I learn it?", "tutorials or notebooks"),
-    ("authors", "Two or more authors", "Will it last?", "more than one person"),
-    ("active", "Active this year", "Will it last?", "a commit in 12 months"),
+    ("authors", "Authors > 1", "Will it last?", "more than one person"),
+    ("active", "Active", "Will it last?", "a commit in the last 12 months"),
 )
 
 #: How long since the last commit a project may be and still count as active.
@@ -1439,3 +1550,419 @@ def engineering_from_records() -> Engineering:
         if practice.gate not in gates:
             gates.append(practice.gate)
     return Engineering(practices=counted, projects=len(ids), gates=tuple(gates))
+
+
+#: Packages that arrive in a dependency list without anyone choosing them: the
+#: transitive closure of matplotlib and Jupyter, from the handful of projects
+#: that commit a `pip freeze`, plus the notebook and documentation machinery
+#: every scientific repository carries. Counting them would report this field
+#: as collectively founded on a font parser. Listed here, in the open, because
+#: it is a judgement about what "built on" means rather than a measurement.
+NOT_A_FOUNDATION = frozenset(
+    """
+    contourpy cycler fonttools kiwisolver pyparsing six pytz platformdirs
+    typing_extensions packaging python-dateutil pygments pyzmq decorator psutil
+    traitlets jinja2 markupsafe attrs certifi charset-normalizer idna urllib3
+    zipp importlib-metadata conda-forge defaults wheel hdf5 libgcc wcwidth
+    ipython ipykernel jupyter jupyterlab notebook nbformat ipywidgets
+    sphinx nbsphinx myst-parser furo pydata-sphinx-theme
+    """.split()
+)
+
+
+@dataclass(frozen=True)
+class Dependency:
+    """One package, and how much of the ecosystem is built on it."""
+
+    name: str
+    projects: int
+
+
+@dataclass(frozen=True)
+class DependencyMix:
+    """What the ecosystem's Python is built on, most-used first."""
+
+    rows: tuple[Dependency, ...]
+    python_projects: int
+    other_projects: int
+
+    def sidecar(self) -> dict[str, Any]:
+        return {
+            "python_projects": self.python_projects,
+            "other_projects": self.other_projects,
+            "rows": [asdict(r) for r in self.rows],
+        }
+
+
+def dependency_mix_from_records(top: int = 10) -> DependencyMix:
+    """The packages most of the ecosystem's Python is built on.
+
+    Counted over DAS projects that ship Python, because every name here is a
+    Python distribution: a MATLAB or Julia project cannot depend on one, and
+    including it in the denominator reports it as failing to use NumPy when it
+    was never in a position to. Development-only dependencies are left out --
+    a linter is not something a project is built on -- and so is every
+    catalogued DAS package: this figure is about the ground the field stands
+    on, and a DAS package on the chart would be measuring the field against
+    itself. What the field builds on itself is the dependency graph's job.
+    """
+    from oss_das.figures import records
+
+    curated = records.curated()
+    measured = records.measured("dependencies")
+    das = das_project_ids()
+    python = sorted(pid for pid in das if (measured.get(pid) or {}).get("has_python"))
+
+    #: Every name a catalogued project answers to, so a dependency on it is
+    #: counted against the project rather than a bare distribution name.
+    catalogued: dict[str, str] = {}
+    for pid, record in curated.items():
+        for key in (pid, record.get("name") or pid):
+            catalogued[key.lower()] = pid
+        for host in ("pypi", "conda", "julia"):
+            for name in (record.get("registries") or {}).get(host) or []:
+                catalogued[str(name).lower()] = pid
+
+    counts: Counter[str] = Counter()
+    for pid in python:
+        record = measured[pid]
+        counts.update(
+            {
+                name
+                for name in list(record.get("required") or ())
+                + list(record.get("optional") or ())
+                if name not in NOT_A_FOUNDATION and name not in catalogued
+            }
+        )
+
+    # Ties at the cut are broken alphabetically, so two packages on the same
+    # count can decide the last place between them on their names alone.
+    rows = tuple(
+        Dependency(name=name, projects=n)
+        for name, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))[:top]
+    )
+    mix = DependencyMix(
+        rows=rows,
+        python_projects=len(python),
+        other_projects=len(das) - len(python),
+    )
+    # The figure prints a share of the same denominator beside every bar, so a
+    # count above it would be printing a percentage over one hundred, and an
+    # empty denominator would divide by zero rather than draw nothing.
+    assert mix.rows, "no dependency is shared by any catalogued project"
+    assert mix.python_projects > 0, "no catalogued DAS project ships Python"
+    assert all(r.projects <= mix.python_projects for r in mix.rows), (
+        "a package is depended on by more projects than there are projects"
+    )
+    return mix
+
+
+@dataclass(frozen=True)
+class Link:
+    """One catalogued project depending on another."""
+
+    source: str
+    target: str
+    kind: str
+
+
+@dataclass(frozen=True)
+class Network:
+    """Which catalogued DAS projects build on each other."""
+
+    links: tuple[Link, ...]
+    #: (id, name, how many catalogued projects depend on it), most depended first.
+    providers: tuple[tuple[str, str, int], ...]
+    #: (id, name) for each project that depends on another, most edges first.
+    consumers: tuple[tuple[str, str], ...]
+    projects: int
+    connected: int
+
+    @property
+    def isolated(self) -> int:
+        return self.projects - self.connected
+
+    def sidecar(self) -> dict[str, Any]:
+        return {
+            "links": [asdict(link) for link in self.links],
+            "providers": [list(p) for p in self.providers],
+            "projects": self.projects,
+            "connected": self.connected,
+            "isolated": self.isolated,
+        }
+
+
+#: Strongest relation first. A package named in two lists is counted once, by
+#: the strongest claim: needing something at runtime is not the same as
+#: naming it in a test extra.
+_LINK_RANK = ("required", "optional", "development")
+
+
+def network_from_records() -> Network:
+    """The dependency graph among catalogued DAS projects.
+
+    Edges come from the manifests each project publishes, not from imports, so
+    this is what a project *declares* it builds on. A name is resolved to a
+    project through every name it could be installed under -- its id, its
+    catalogue name, and any PyPI distribution the registry scan confirmed --
+    because a project is rarely imported under the name we file it by.
+    """
+    from oss_das.figures import records
+
+    curated = records.curated()
+    registry = records.measured("registry")
+    measured = records.measured("dependencies")
+    included = das_project_ids()
+
+    alias: dict[str, str] = {}
+    for pid in included:
+        names = {pid, (curated[pid].get("name") or "").lower()}
+        names.update(
+            row["name"].lower()
+            for row in ((registry.get(pid) or {}).get("pypi") or [])
+            if row.get("name")
+        )
+        for name in names:
+            if name:
+                alias[name.replace("_", "-")] = pid
+
+    strongest: dict[tuple[str, str], str] = {}
+    for pid in sorted(included):
+        record = measured.get(pid) or {}
+        for kind in _LINK_RANK:
+            for name in record.get(kind) or []:
+                target = alias.get(str(name).lower().replace("_", "-"))
+                if target is None or target == pid:
+                    continue
+                held = strongest.get((pid, target))
+                if held is None or _LINK_RANK.index(kind) < _LINK_RANK.index(held):
+                    strongest[(pid, target)] = kind
+
+    links = tuple(
+        Link(source, target, kind)
+        for (source, target), kind in sorted(strongest.items())
+    )
+    incoming: Counter[str] = Counter(link.target for link in links)
+    outgoing: Counter[str] = Counter(link.source for link in links)
+    name = lambda pid: curated[pid].get("name") or pid  # noqa: E731
+
+    # Providers rank by how many depend on them. Consumers then follow the
+    # providers they point at, so the figure's threads run mostly parallel
+    # instead of crossing the full width to reach a row picked alphabetically.
+    order = {pid: i for i, (pid, _) in enumerate(incoming.most_common())}
+    targets: dict[str, list[int]] = {}
+    for link in links:
+        targets.setdefault(link.source, []).append(order[link.target])
+    consumers = sorted(
+        outgoing,
+        key=lambda pid: (sum(targets[pid]) / len(targets[pid]), name(pid).lower()),
+    )
+    return Network(
+        links=links,
+        providers=tuple(
+            (pid, name(pid), count) for pid, count in incoming.most_common()
+        ),
+        consumers=tuple((pid, name(pid)) for pid in consumers),
+        projects=len(included),
+        connected=len(set(incoming) | set(outgoing)),
+    )
+
+
+@dataclass(frozen=True)
+class EcosystemGraph:
+    """One ecosystem's internal dependency graph, on the manifest bar."""
+
+    name: str
+    #: (id, display name, how many in-ecosystem projects depend on it).
+    providers: tuple[tuple[str, str, int], ...]
+    #: Projects that ship a dependency manifest. Anything else declares
+    #: nothing, so its absence of edges would be a silence rather than a
+    #: finding. Deliberately NOT the composition figure's "Packaged": that
+    #: counts root packaging files, and ten projects here declare their
+    #: dependencies in a requirements.txt without being installable at all.
+    projects: int
+    #: Projects with at least one edge, in either direction.
+    connected: int
+    #: How many depend on another project in the same ecosystem.
+    consumers: int
+    edges: int
+
+    @property
+    def share(self) -> float:
+        return self.consumers / self.projects if self.projects else 0.0
+
+    def sidecar(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "providers": [list(p) for p in self.providers],
+            "projects": self.projects,
+            "connected": self.connected,
+            "consumers": self.consumers,
+            "edges": self.edges,
+        }
+
+
+def _graph(
+    name: str,
+    declared: dict[str, dict[str, str]],
+    alias: dict[str, str],
+    display: dict[str, str],
+) -> EcosystemGraph:
+    """Fold declared dependencies into one ecosystem's internal graph."""
+    incoming: Counter[str] = Counter()
+    outgoing: Counter[str] = Counter()
+    edges: set[tuple[str, str]] = set()
+    for pid, names in declared.items():
+        for raw in names:
+            target = alias.get(str(raw).lower().replace("_", "-"))
+            if target is None or target == pid or (pid, target) in edges:
+                continue
+            edges.add((pid, target))
+            incoming[target] += 1
+            outgoing[pid] += 1
+    return EcosystemGraph(
+        name=name,
+        providers=tuple(
+            (pid, display.get(pid, pid), count) for pid, count in incoming.most_common()
+        ),
+        projects=len(declared),
+        connected=len(set(incoming) | set(outgoing)),
+        consumers=len(outgoing),
+        edges=len(edges),
+    )
+
+
+def das_graph() -> EcosystemGraph:
+    """The catalogue's internal graph, on the manifest bar."""
+    from oss_das.figures import records
+
+    curated = records.curated()
+    registry = records.measured("registry")
+    measured = records.measured("dependencies")
+    included = das_project_ids()
+
+    alias: dict[str, str] = {}
+    display: dict[str, str] = {}
+    declared: dict[str, dict[str, str]] = {}
+    for pid in sorted(included):
+        record = measured.get(pid) or {}
+        if not record.get("manifests"):
+            continue
+        declared[pid] = record.get("declared") or {}
+        display[pid] = curated[pid].get("name") or pid
+        names = {pid, (curated[pid].get("name") or "").lower()}
+        names.update(
+            row["name"].lower()
+            for row in ((registry.get(pid) or {}).get("pypi") or [])
+            if row.get("name")
+        )
+        for name in names:
+            if name:
+                alias[name.replace("_", "-")] = pid
+    return _graph("DAS", declared, alias, display)
+
+
+def reference_graph(ecosystem: str = "seismology") -> EcosystemGraph:
+    """A reference ecosystem's internal graph, read from data/comparison.
+
+    Catalogued DAS projects are held out. Six of them carry the seismology
+    topic, so leaving them in put the same project in both panels with
+    different counts -- DASCore reads eight dependents against the catalogue
+    and two against the topic, because seven of its dependents never set the
+    topic. That gap is a difference of population, not of measurement, and it
+    is not worth explaining from a podium. Seismology tools that merely read
+    DAS, such as Pyrocko, are not DAS-native and stay.
+    """
+    from oss_das.figures import records
+
+    curated = records.curated()
+    das_repos = {
+        (curated[pid].get("repository") or "").lower()
+        for pid in das_project_ids()
+        if curated[pid].get("repository")
+    }
+    corpus = records.comparison(ecosystem)
+    alias: dict[str, str] = {}
+    display: dict[str, str] = {}
+    declared: dict[str, dict[str, str]] = {}
+    for key, record in sorted(corpus.items()):
+        if not record.get("manifests"):
+            continue
+        if str(record.get("repository") or "").lower() in das_repos:
+            continue
+        declared[key] = record.get("declared") or {}
+        display[key] = record.get("name") or key
+        # A repository is depended on by the name on its distribution, which is
+        # often not the name of the repository -- daspy ships as daspy-toolbox.
+        names = {
+            str(record.get("name") or "").lower(),
+            str(record.get("distribution") or "").lower(),
+        }
+        for name in names:
+            if name:
+                alias[name.replace("_", "-")] = key
+    return _graph(ecosystem.capitalize(), declared, alias, display)
+
+
+def ecosystems(ecosystem: str = "seismology") -> tuple[EcosystemGraph, EcosystemGraph]:
+    """The DAS graph beside a reference one, measured identically.
+
+    Both sides read the ``declared`` field and both apply the manifest bar. The
+    catalogue's own measurement also scans imports, which needs a clone and so
+    cannot be run against a few hundred reference repositories; comparing the
+    two halves would credit DAS with edges the other side could not have shown.
+    """
+    das, reference = das_graph(), reference_graph(ecosystem)
+    assert das.projects and reference.projects, (
+        "one ecosystem has no project with a manifest; run b016_dependencies "
+        "and s010_seismology_corpus before drawing the comparison"
+    )
+    return das, reference
+
+
+@dataclass(frozen=True)
+class ArchiveAbstraction:
+    """One project's released multi-file abstraction and logo palette."""
+
+    project: str
+    version: str
+    files: str
+    logical: str
+    memory: str
+    palette: tuple[str, ...]
+    logo_source: str
+
+    def sidecar(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+def archive_abstractions() -> tuple[ArchiveAbstraction, ArchiveAbstraction]:
+    """Released archive models and exact dominant colours from their logos."""
+    dascore = ArchiveAbstraction(
+        project="DASCore",
+        version="0.1.21",
+        files="Files",
+        logical="Spool index",
+        memory="Patch",
+        palette=("#002868", "#D0002A", "#FFC934"),
+        logo_source=(
+            "https://github.com/DASDAE/dascore/blob/v0.1.21/docs/_static/logo.png"
+        ),
+    )
+    xdas = ArchiveAbstraction(
+        project="Xdas",
+        version="0.2.8",
+        files="Files",
+        logical="Virtual DataArray",
+        memory="Chunk",
+        palette=("#2F007E",),
+        logo_source=(
+            "https://github.com/xdas-dev/xdas/blob/0.2.8/docs/_static/logo-light.png"
+        ),
+    )
+    assert len(dascore.palette) == 3 and len(xdas.palette) == 1
+    assert all(
+        colour.startswith("#") and len(colour) == 7 for colour in dascore.palette
+    )
+    assert all(colour.startswith("#") and len(colour) == 7 for colour in xdas.palette)
+    return dascore, xdas

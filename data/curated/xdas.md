@@ -29,6 +29,9 @@ publications:
 - doi: 10.1785/0220240366
   role: canonical
   note: null
+- doi: 10.31223/x5141g
+  role: related
+  note: the EarthArXiv preprint of the canonical paper, cited separately
 das_focus: das-native
 sources:
 - github.com/xdas-dev/xdas

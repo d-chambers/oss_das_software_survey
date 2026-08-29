@@ -1,0 +1,95 @@
+---
+repository: PauloXavi/mseed-navigator
+ref: main
+manifests:
+- package.json
+- requirements-dev.txt
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  '@eslint/js': development
+  '@hookform/resolvers': required
+  '@lovable.dev/vite-tanstack-config': development
+  '@radix-ui/react-accordion': required
+  '@radix-ui/react-alert-dialog': required
+  '@radix-ui/react-aspect-ratio': required
+  '@radix-ui/react-avatar': required
+  '@radix-ui/react-checkbox': required
+  '@radix-ui/react-collapsible': required
+  '@radix-ui/react-context-menu': required
+  '@radix-ui/react-dialog': required
+  '@radix-ui/react-dropdown-menu': required
+  '@radix-ui/react-hover-card': required
+  '@radix-ui/react-label': required
+  '@radix-ui/react-menubar': required
+  '@radix-ui/react-navigation-menu': required
+  '@radix-ui/react-popover': required
+  '@radix-ui/react-progress': required
+  '@radix-ui/react-radio-group': required
+  '@radix-ui/react-scroll-area': required
+  '@radix-ui/react-select': required
+  '@radix-ui/react-separator': required
+  '@radix-ui/react-slider': required
+  '@radix-ui/react-slot': required
+  '@radix-ui/react-switch': required
+  '@radix-ui/react-tabs': required
+  '@radix-ui/react-toggle': required
+  '@radix-ui/react-toggle-group': required
+  '@radix-ui/react-tooltip': required
+  '@tailwindcss/vite': required
+  '@tanstack/react-query': required
+  '@tanstack/react-router': required
+  '@tanstack/react-start': required
+  '@tanstack/router-plugin': required
+  '@types/node': development
+  '@types/react': development
+  '@types/react-dom': development
+  '@vitejs/plugin-react': development
+  class-variance-authority: required
+  clsx: required
+  cmdk: required
+  date-fns: required
+  embla-carousel-react: required
+  eslint: development
+  eslint-config-prettier: development
+  eslint-plugin-prettier: development
+  eslint-plugin-react-hooks: development
+  eslint-plugin-react-refresh: development
+  globals: development
+  input-otp: required
+  lucide-react: required
+  matplotlib: required
+  nitro: development
+  numpy: required
+  obspy: required
+  pandas: required
+  prettier: development
+  react: required
+  react-day-picker: required
+  react-dom: required
+  react-hook-form: required
+  react-resizable-panels: required
+  recharts: required
+  scipy: required
+  sonner: required
+  tailwind-merge: required
+  tailwindcss: required
+  tw-animate-css: required
+  typescript: development
+  typescript-eslint: development
+  vaul: required
+  vite: development
+  vite-tsconfig-paths: required
+  zod: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: mseed-navigator
+stars: 0
+language: TypeScript
+fork: false
+archived: false
+pushed_at: '2026-08-23T00:35:25Z'
+fetched_at: '2026-08-29T12:10:16+00:00'
+---

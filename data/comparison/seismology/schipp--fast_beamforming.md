@@ -1,0 +1,18 @@
+---
+repository: schipp/fast_beamforming
+ref: main
+manifests: []
+distribution: null
+tree_truncated: false
+declared: {}
+error: ''
+missing: {}
+ecosystem: seismology
+name: fast_beamforming
+stars: 61
+language: Jupyter Notebook
+fork: false
+archived: false
+pushed_at: '2025-08-25T06:24:09Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

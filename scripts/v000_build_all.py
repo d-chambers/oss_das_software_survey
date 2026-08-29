@@ -16,12 +16,17 @@ from pathlib import Path
 from oss_das.core import PATHS
 from oss_das.figures.cli import figure_parser
 from oss_das.figures.data import (
+    archive_abstractions,
     composition_from_records,
+    dependency_mix_from_records,
+    ecosystems,
     engineering_from_records,
     funnel_from_records,
     growth_from_records,
+    language_platform,
     licence_from_records,
     maturity_from_records,
+    network_from_records,
     pipeline_from_records,
     totals_from_records,
 )
@@ -61,6 +66,13 @@ def main() -> int:
         "growth": growth_from_records().sidecar(),
         "maturity": maturity_from_records().sidecar(),
         "engineering": engineering_from_records().sidecar(),
+        "dependencies": dependency_mix_from_records().sidecar(),
+        "language_platform": language_platform().sidecar(),
+        "network": network_from_records().sidecar(),
+        "ecosystems": [graph.sidecar() for graph in ecosystems()],
+        "archive_abstractions": [
+            model.sidecar() for model in archive_abstractions()
+        ],
     }
     (out / "figures.json").write_text(json.dumps(sidecar, indent=1) + "\n")
     print(f"wrote {out / 'figures.json'}", file=sys.stderr)

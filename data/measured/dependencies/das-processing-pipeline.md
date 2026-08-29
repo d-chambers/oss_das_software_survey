@@ -1,0 +1,132 @@
+---
+id: das-processing-pipeline
+source: dependencies
+scanned_at: '2026-08-29T11:22:34+00:00'
+ref: main
+tip: 09a9a8bf6a298f1bb29650acff6afceb8b556842
+has_python: true
+manifests:
+- pyproject.toml
+- requirements.txt
+required:
+- annotated-doc
+- annotated-types
+- anyio
+- blosc2
+- certifi
+- charset-normalizer
+- contourpy
+- cycler
+- das_pipeline
+- dascore
+- decorator
+- flexcache
+- flexparser
+- fonttools
+- greenlet
+- h11
+- h2
+- h5py
+- hpack
+- httpcore
+- httpx
+- hyperframe
+- idna
+- kiwisolver
+- lxml
+- markdown-it-py
+- matplotlib
+- mdurl
+- msgpack
+- ndindex
+- numexpr
+- numpy
+- obspy
+- packaging
+- pandas
+- pillow
+- pint
+- platformdirs
+- pooch
+- py-cpuinfo
+- pydantic
+- pydantic_core
+- pygments
+- pyparsing
+- python-dateutil
+- pyyaml
+- requests
+- rich
+- scipy
+- shellingham
+- six
+- sqlalchemy
+- tables
+- threadpoolctl
+- typer
+- typing-inspection
+- typing_extensions
+- urllib3
+optional: []
+development: []
+declared:
+  annotated-doc: required
+  annotated-types: required
+  anyio: required
+  blosc2: required
+  certifi: required
+  charset-normalizer: required
+  contourpy: required
+  cycler: required
+  dascore: required
+  decorator: required
+  flexcache: required
+  flexparser: required
+  fonttools: required
+  greenlet: required
+  h11: required
+  h2: required
+  h5py: required
+  hpack: required
+  httpcore: required
+  httpx: required
+  hyperframe: required
+  idna: required
+  kiwisolver: required
+  lxml: required
+  markdown-it-py: required
+  matplotlib: required
+  mdurl: required
+  msgpack: required
+  ndindex: required
+  numexpr: required
+  numpy: required
+  obspy: required
+  packaging: required
+  pandas: required
+  pillow: required
+  pint: required
+  platformdirs: required
+  pooch: required
+  py-cpuinfo: required
+  pydantic: required
+  pydantic_core: required
+  pygments: required
+  pyparsing: required
+  python-dateutil: required
+  pyyaml: required
+  requests: required
+  rich: required
+  scipy: required
+  shellingham: required
+  six: required
+  sqlalchemy: required
+  tables: required
+  threadpoolctl: required
+  typer: required
+  typing-inspection: required
+  typing_extensions: required
+  urllib3: required
+error: ''
+missing: {}
+---

@@ -1,0 +1,57 @@
+---
+repository: ROBelgium/MSNoise
+ref: master
+manifests:
+- doc/requirements.txt
+- pyproject.toml
+distribution: msnoise
+tree_truncated: false
+declared:
+  click: required
+  click-command-tree: required
+  click-plugins: required
+  flask: required
+  flask-admin: required
+  flask-wtf: required
+  flask_babel: required
+  folium: required
+  graphviz: required
+  jinja2: required
+  logbook: required
+  markdown: required
+  matplotlib: required
+  nbsphinx: required
+  netcdf4: required
+  numpy: required
+  numpydoc: required
+  obspy: required
+  pandas: required
+  platformdirs: required
+  pooch: required
+  pymysql: required
+  pyyaml: required
+  scipy: required
+  sphinx: required
+  sphinx-gallery: required
+  sphinx-rtd-theme: required
+  sphinx_bootstrap_theme: development
+  sphinx_gallery: development
+  sphinxcontrib-bibtex: required
+  sphinxcontrib-jquery: required
+  sqlalchemy: required
+  sqlalchemy-utils: required
+  tables: required
+  wtforms: required
+  xarray: required
+  zstandard: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: MSNoise
+stars: 214
+language: Python
+fork: false
+archived: false
+pushed_at: '2026-08-20T15:43:29Z'
+fetched_at: '2026-08-29T11:26:17+00:00'
+---

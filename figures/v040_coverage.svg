@@ -6,31 +6,27 @@
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="841.6" y="64" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT WAS SEARCHED</text>
   <text x="210" y="164" font-size="76" fill="#2b2620" text-anchor="middle">30</text>
-  <text x="211.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITHUB QUERIES</text>
-  <text x="210" y="234" font-size="22" fill="#7a7266" text-anchor="middle" font-style="italic">Name, description, README, topic</text>
+  <text x="211.2" y="208" font-size="30" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITHUB</text>
   <text x="630" y="164" font-size="76" fill="#2b2620" text-anchor="middle">32</text>
-  <text x="631.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITLAB QUERIES</text>
-  <text x="630" y="234" font-size="22" fill="#7a7266" text-anchor="middle" font-style="italic">Across four hosts</text>
+  <text x="631.2" y="208" font-size="30" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITLAB</text>
   <text x="1050" y="164" font-size="76" fill="#2b2620" text-anchor="middle">16</text>
-  <text x="1051.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITEA QUERIES</text>
-  <text x="1050" y="234" font-size="22" fill="#7a7266" text-anchor="middle" font-style="italic">Across two hosts</text>
+  <text x="1051.2" y="208" font-size="30" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">GITEA</text>
   <text x="1470" y="164" font-size="76" fill="#c98500" text-anchor="middle">134</text>
-  <text x="1471.2" y="202" font-size="21" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">NAMESPACE WALKS</text>
-  <text x="1470" y="234" font-size="22" fill="#7a7266" text-anchor="middle" font-style="italic">Organisations swept end to end</text>
+  <text x="1471.2" y="208" font-size="30" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">NAMESPACE WALKS</text>
   <path d="M 100,270 L 1580,270" stroke="#cbc3b3" stroke-width="3" fill="none"/>
   <circle cx="210" cy="270" r="7" fill="#2b2620"/>
   <circle cx="630" cy="270" r="7" fill="#2b2620"/>
   <circle cx="1050" cy="270" r="7" fill="#2b2620"/>
   <circle cx="1470" cy="270" r="7" fill="#2b2620"/>
-  <text x="841.2" y="320" font-size="22" fill="#7a7266" text-anchor="middle" letter-spacing="2.4">7,218 RESULTS · 3,201 DISTINCT CANDIDATES · 5 OF 212 PROBES FAILED</text>
+  <text x="841.2" y="322" font-size="30" fill="#7a7266" text-anchor="middle" letter-spacing="2.4">7,218 RESULTS · 3,201 CANDIDATES</text>
   <text x="841.6" y="396" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT WAS NOT SEARCHED</text>
   <path d="M 108,432 L 312,432" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
-  <text x="212.6" y="480" font-size="26" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">THE LITERATURE</text>
+  <text x="212.6" y="482" font-size="30" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">THE LITERATURE</text>
   <path d="M 528,432 L 732,432" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
-  <text x="632.6" y="480" font-size="26" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">SOURCE CODE</text>
+  <text x="632.6" y="482" font-size="30" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">SOURCE CODE</text>
   <path d="M 948,432 L 1152,432" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
-  <text x="1052.6" y="480" font-size="26" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">PACKAGE REGISTRIES</text>
+  <text x="1052.6" y="482" font-size="30" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">PACKAGE REGISTRIES</text>
   <path d="M 1368,432 L 1572,432" stroke="#cbc3b3" stroke-width="2.5" fill="none" stroke-dasharray="7 7"/>
-  <text x="1472.6" y="480" font-size="26" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">OTHER HOSTS</text>
+  <text x="1472.6" y="482" font-size="30" fill="#7a7266" text-anchor="middle" letter-spacing="2.6">OTHER HOSTS</text>
   </g>
 </svg>

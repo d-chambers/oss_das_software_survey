@@ -1,0 +1,76 @@
+---
+repository: srivastavaresearchgroup/DL-HRGNSS
+ref: main
+manifests:
+- requirements.txt
+distribution: null
+tree_truncated: false
+declared:
+  absl-py: required
+  astunparse: required
+  cachetools: required
+  certifi: required
+  charset-normalizer: required
+  contourpy: required
+  cycler: required
+  flatbuffers: required
+  fonttools: required
+  gast: required
+  google-auth: required
+  google-auth-oauthlib: required
+  google-pasta: required
+  grpcio: required
+  h5py: required
+  idna: required
+  importlib-metadata: required
+  joblib: required
+  keras: required
+  keras-preprocessing: required
+  kiwisolver: required
+  libclang: required
+  markdown: required
+  markupsafe: required
+  matplotlib: required
+  numpy: required
+  oauthlib: required
+  opt-einsum: required
+  packaging: required
+  pandas: required
+  pillow: required
+  protobuf: required
+  pyasn1: required
+  pyasn1-modules: required
+  pydot: required
+  pyparsing: required
+  python-dateutil: required
+  pytz: required
+  requests: required
+  requests-oauthlib: required
+  rsa: required
+  scikit-learn: required
+  scipy: required
+  six: required
+  tensorboard: required
+  tensorboard-data-server: required
+  tensorboard-plugin-wit: required
+  tensorflow: required
+  tensorflow-estimator: required
+  tensorflow-io-gcs-filesystem: required
+  termcolor: required
+  threadpoolctl: required
+  typing-extensions: required
+  urllib3: required
+  werkzeug: required
+  wrapt: required
+  zipp: required
+error: ''
+missing: {}
+ecosystem: seismology
+name: DL-HRGNSS
+stars: 6
+language: Jupyter Notebook
+fork: false
+archived: false
+pushed_at: '2024-02-20T16:06:45Z'
+fetched_at: '2026-08-29T11:28:06+00:00'
+---

@@ -1,0 +1,90 @@
+---
+id: das-simulator
+source: dependencies
+scanned_at: '2026-08-29T11:22:34+00:00'
+ref: main
+tip: aeaae649f2e6af5fdaa73a789f2b9e08fae62002
+has_python: false
+manifests:
+- das-producer/pom.xml
+- pom.xml
+- simulator-box-unit/pom.xml
+- simulator-common/pom.xml
+- static-data-unit/pom.xml
+required:
+- assertj-core
+- commons-beanutils
+- commons-collections
+- commons-lang3
+- fiberoptics-das-simulator
+- gson
+- guava
+- jose4j
+- kafka-avro-serializer
+- lombok
+- lz4-java
+- micrometer-registry-prometheus
+- public-schemas
+- reactor-core
+- simulator-box-unit
+- simulator-common
+- spotbugs-annotations
+- spring-boot-configuration-processor
+- spring-boot-dependencies
+- spring-boot-starter-actuator
+- spring-boot-starter-aop
+- spring-boot-starter-logging
+- spring-boot-starter-web
+- spring-cloud-dependencies
+- spring-cloud-starter-stream-kafka
+- spring-context
+- spring-integration-feed
+- static-data-unit
+optional: []
+development:
+- junit-jupiter
+- junit-jupiter-engine
+- kafka
+- slf4j-simple
+- spring-boot-starter-test
+- spring-kafka-test
+- testcontainers
+declared:
+  assertj-core: required
+  commons-beanutils: required
+  commons-collections: required
+  commons-lang3: required
+  fiberoptics-das-simulator: required
+  gson: required
+  guava: required
+  jose4j: required
+  junit-jupiter: development
+  junit-jupiter-engine: development
+  kafka: development
+  kafka-avro-serializer: required
+  lombok: required
+  lz4-java: required
+  micrometer-registry-prometheus: required
+  public-schemas: required
+  reactor-core: required
+  simulator-box-unit: required
+  simulator-common: required
+  slf4j-simple: development
+  spotbugs-annotations: required
+  spring-boot-configuration-processor: required
+  spring-boot-dependencies: required
+  spring-boot-starter-actuator: required
+  spring-boot-starter-aop: required
+  spring-boot-starter-logging: required
+  spring-boot-starter-test: development
+  spring-boot-starter-web: required
+  spring-cloud-dependencies: required
+  spring-cloud-starter-stream-kafka: required
+  spring-context: required
+  spring-integration-feed: required
+  spring-kafka-test: development
+  static-data-unit: required
+  testcontainers: development
+error: ''
+missing: {}
+---

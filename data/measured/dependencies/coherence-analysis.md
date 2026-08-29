@@ -1,0 +1,193 @@
+---
+id: coherence-analysis
+source: dependencies
+scanned_at: '2026-08-29T11:22:32+00:00'
+ref: main
+tip: 443eabcc04ab2a54750f21ef6cd1dea5e136d22b
+has_python: true
+manifests:
+- pyproject.toml
+- requirements_all.txt
+- requirements_basic.txt
+- requirements_notebooks.txt
+required:
+- annotated-types
+- appnope
+- asttokens
+- blosc2
+- certifi
+- cffi
+- cfgv
+- charset-normalizer
+- cmocean
+- colorama
+- comm
+- contourpy
+- cycler
+- dascore
+- debugpy
+- decorator
+- deepwave
+- distlib
+- et-xmlfile
+- executing
+- filelock
+- flexcache
+- flexparser
+- fonttools
+- h5py
+- identify
+- idna
+- ipykernel
+- ipython
+- ipython-pygments-lexers
+- ipywidgets
+- jedi
+- jupyter-client
+- jupyter-core
+- jupyterlab-widgets
+- kiwisolver
+- markdown-it-py
+- matplotlib
+- matplotlib-inline
+- mdurl
+- msgpack
+- ndindex
+- nest-asyncio
+- nodeenv
+- numexpr
+- numpy
+- openpyxl
+- packaging
+- pandas
+- parso
+- pexpect
+- pillow
+- pint
+- platformdirs
+- pooch
+- prompt-toolkit
+- psutil
+- ptyprocess
+- pure-eval
+- py-cpuinfo
+- pycparser
+- pydantic
+- pydantic-core
+- pygments
+- pyparsing
+- python-dateutil
+- pytz
+- pyyaml
+- pyzmq
+- requests
+- rich
+- scikit-learn
+- scipy
+- seaborn
+- six
+- stack-data
+- tables
+- tensorfox
+- torch
+- tornado
+- traitlets
+- typing-extensions
+- typing-inspection
+- tzdata
+- urllib3
+- virtualenv
+- wcwidth
+- widgetsnbextension
+optional: []
+development: []
+declared:
+  annotated-types: required
+  appnope: required
+  asttokens: required
+  blosc2: required
+  certifi: required
+  cffi: required
+  cfgv: required
+  charset-normalizer: required
+  cmocean: required
+  colorama: required
+  comm: required
+  contourpy: required
+  cycler: required
+  dascore: required
+  debugpy: required
+  decorator: required
+  deepwave: optional
+  distlib: required
+  et-xmlfile: required
+  executing: required
+  filelock: required
+  flexcache: required
+  flexparser: required
+  fonttools: required
+  h5py: required
+  identify: required
+  idna: required
+  ipykernel: required
+  ipython: required
+  ipython-pygments-lexers: required
+  ipywidgets: required
+  jedi: required
+  jupyter-client: required
+  jupyter-core: required
+  jupyterlab-widgets: required
+  kiwisolver: required
+  markdown-it-py: required
+  matplotlib: required
+  matplotlib-inline: required
+  mdurl: required
+  msgpack: required
+  ndindex: required
+  nest-asyncio: required
+  nodeenv: required
+  numexpr: required
+  numpy: required
+  openpyxl: required
+  packaging: required
+  pandas: required
+  parso: required
+  pexpect: required
+  pillow: required
+  pint: required
+  platformdirs: required
+  pooch: required
+  prompt-toolkit: required
+  psutil: required
+  ptyprocess: required
+  pure-eval: required
+  py-cpuinfo: required
+  pycparser: required
+  pydantic: required
+  pydantic-core: required
+  pygments: required
+  pyparsing: required
+  python-dateutil: required
+  pytz: required
+  pyyaml: required
+  pyzmq: required
+  requests: required
+  rich: required
+  scikit-learn: optional
+  scipy: required
+  seaborn: required
+  six: required
+  stack-data: required
+  tables: required
+  tornado: required
+  traitlets: required
+  typing-extensions: required
+  typing-inspection: required
+  tzdata: required
+  urllib3: required
+  virtualenv: required
+  wcwidth: required
+  widgetsnbextension: required
+error: ''
+missing: {}
+---
