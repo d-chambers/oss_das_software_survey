@@ -210,7 +210,7 @@ rather than a software one, which matters before you depend on it downstream.
 :::
 
 ::: {.column width="38%"}
-![](assets/logo_das4whales.png){.fragment fig-align="center" width=88%}
+![](assets/logo_das4whales.png){fig-align="center" width=88%}
 :::
 
 ::::
@@ -231,7 +231,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
 ::: {.column width="38%"}
-![](assets/logo_dascore.png){.fragment fig-align="center" width=88%}
+![](assets/logo_dascore.png){fig-align="center" width=88%}
 :::
 
 ::::
@@ -252,7 +252,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
 ::: {.column width="38%"}
-![](assets/logo_daspy.png){.fragment fig-align="center" width=88%}
+![](assets/logo_daspy.png){fig-align="center" width=88%}
 :::
 
 ::::
@@ -273,7 +273,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
 ::: {.column width="38%"}
-![](assets/logo_lightguide.png){.fragment fig-align="center" width=88%}
+![](assets/logo_lightguide.png){fig-align="center" width=88%}
 :::
 
 ::::
@@ -294,7 +294,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
 ::: {.column width="38%"}
-![](assets/logo_xdas.png){.fragment fig-align="center" width=88%}
+![](assets/logo_xdas.png){fig-align="center" width=88%}
 :::
 
 ::::

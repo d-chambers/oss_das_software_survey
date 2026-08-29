@@ -30,9 +30,20 @@
   font-size: 1.4em;
   text-align: left;
 }
-/* Content clears the pinned title. */
+/* The content is centred in the space under the pinned title, rather than the
+   whole section being centred and dragging the title with it. Reveal sets
+   display:block !important on sections, so this has to out-specify it. */
+.reveal .slides section.present,
+.reveal .slides section.past,
+.reveal .slides section.future {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-top: 3.0em;
+  box-sizing: border-box;
+}
 .reveal .slides section > *:not(h2):not(.slide-logos) { margin-top: 0; }
-.reveal .slides section { padding-top: 3.2em; }
 
 /* A box that hides part of a figure until it is clicked away. Sized and placed
    per slide; white so it reads as absence rather than as a panel. */
@@ -65,7 +76,7 @@
 
 /* Captions on the logo-axis slides. */
 .reveal .axis-label {
-  font-size: 0.5em;
+  font-size: 0.95em;
   color: #7a7266;
   display: block;
   text-align: center;
@@ -118,3 +129,13 @@
 /* Project slides: the logo answers the bullets, so it is given room but not
    the slide. */
 .reveal .column img { max-height: 46vh; width: auto; max-width: 100%; }
+
+/* A figure must fit the space under the pinned title. Without this the tallest
+   plates run off the bottom of the slide, which is how the funnel lost its
+   two flanking labels. */
+.reveal .slides section img {
+  max-height: 72vh;
+  object-fit: contain;
+}
+/* The logo-axis slides place by coordinate, so they set their own size. */
+.reveal .slides section img.absolute { max-height: none; }

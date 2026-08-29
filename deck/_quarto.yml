@@ -18,9 +18,11 @@ format:
     height: 720
     slide-number: true
     fig-align: center
-    # Reveal's own vertical centring: the deck is mostly one figure per
-    # slide, and hanging those under the title left the slack at the bottom.
-    center: true
+    # Reveal's own vertical centring moves the whole section, and the title
+    # rides with it, so a title sits at a different height on every slide.
+    # The title is pinned instead and the content is centred beneath it, in
+    # ineris.css -- same result, fixed title.
+    center: false
     include-after-body: _logos.html
   beamer:
     output-file: talk.pdf
