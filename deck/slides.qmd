@@ -419,14 +419,24 @@ code that already exists: make it legible and predictable and an agent can
 drive it. Nothing here is agent-ready yet.
 :::
 
+## Agents working alongside us
+
+![](../figures/p1_scientist_agent_oss.png){fig-align="center" width=64%}
+
+- The scientist stays in the loop, and so does the agent
+
+::: {.notes}
+The second point, and a different one: not the agent standing between the
+scientist and the software, but both of them reaching it. That is the shape
+worth designing for.
+:::
+
 ## Software we have not written yet
 
 ::: {.nonincremental}
 Not porting a library for an agent to call — asking what software looks like
 when an agent is the one writing and running it.
 :::
-
-![](../figures/p1_scientist_agent_oss.png){.fragment fig-align="center" width=58%}
 
 ::: {.notes}
 The second half of the argument, and the speculative one. Say plainly that this
