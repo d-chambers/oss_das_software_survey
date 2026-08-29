@@ -1,7 +1,7 @@
 ---
 id: fiberis
 source: dependencies
-scanned_at: '2026-08-29T11:22:43+00:00'
+scanned_at: '2026-08-29T18:32:31+00:00'
 ref: main
 tip: 926891ea05b8ce97dcd669a8b7b89ba441be9b9f
 has_python: true
@@ -10,7 +10,6 @@ manifests:
 - pyproject.toml
 required:
 - conda-forge
-- fiberis
 - h5py
 - https
 - ipython

@@ -1,7 +1,7 @@
 ---
 id: das-simulator
 source: dependencies
-scanned_at: '2026-08-29T11:22:34+00:00'
+scanned_at: '2026-08-29T18:32:21+00:00'
 ref: main
 tip: aeaae649f2e6af5fdaa73a789f2b9e08fae62002
 has_python: false
@@ -16,7 +16,6 @@ required:
 - commons-beanutils
 - commons-collections
 - commons-lang3
-- fiberoptics-das-simulator
 - gson
 - guava
 - jose4j

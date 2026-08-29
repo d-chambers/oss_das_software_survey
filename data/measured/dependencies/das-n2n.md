@@ -1,7 +1,7 @@
 ---
 id: das-n2n
 source: dependencies
-scanned_at: '2026-08-29T11:22:33+00:00'
+scanned_at: '2026-08-29T18:32:21+00:00'
 ref: main
 tip: 770f2b8d073117f11c65a394696c04b47db86291
 has_python: true

@@ -18,11 +18,17 @@ format:
     height: 720
     slide-number: true
     fig-align: center
-    center: false
+    # Reveal's own vertical centring: the deck is mostly one figure per
+    # slide, and hanging those under the title left the slack at the bottom.
+    center: true
     include-after-body: _logos.html
   beamer:
     output-file: talk.pdf
     aspectratio: 169
+    # `c` so the PDF backup centres each frame the way reveal's `center: true`
+    # centres the slide it was built from; the default hangs figures from the
+    # title and leaves the slack at the bottom.
+    classoption: [c]
     incremental: true
     include-in-header: _theme.tex
     slide-level: 2

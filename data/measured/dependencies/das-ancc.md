@@ -1,7 +1,7 @@
 ---
 id: das-ancc
 source: dependencies
-scanned_at: '2026-08-29T11:22:32+00:00'
+scanned_at: '2026-08-29T18:32:19+00:00'
 ref: master
 tip: c06fdf4c4317b5463c2c300d2a2ed591c2e7d797
 has_python: true

@@ -1,7 +1,7 @@
 ---
 id: optodas-processor
 source: dependencies
-scanned_at: '2026-08-29T11:22:46+00:00'
+scanned_at: '2026-08-29T18:32:34+00:00'
 ref: main
 tip: 9bac19a03f1cb698b318897302d5cb666242ee82
 has_python: true

@@ -1,7 +1,7 @@
 ---
 id: lightguide
 source: dependencies
-scanned_at: '2026-08-29T11:22:45+00:00'
+scanned_at: '2026-08-29T18:32:34+00:00'
 ref: main
 tip: e5084944281cf0cdf9152a1e55fd8a60dbcd8e46
 has_python: true

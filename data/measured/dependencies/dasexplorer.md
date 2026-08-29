@@ -1,7 +1,7 @@
 ---
 id: dasexplorer
 source: dependencies
-scanned_at: '2026-08-29T11:22:36+00:00'
+scanned_at: '2026-08-29T18:32:24+00:00'
 ref: main
 tip: 9993b415f9856fe8f0596d858f2f0b812a45d8f0
 has_python: true

@@ -496,7 +496,7 @@ class TestDependencyMix:
         mix = dependency_mix_from_records()
         svg = plates.dependency_plate(mix)
         for row in mix.rows:
-            assert f">{row.projects}<" in svg
+            assert f">{row.projects} of {mix.python_projects}<" in svg
             assert f"{round(100 * row.projects / mix.python_projects)}%" in svg
 
     def test_the_ramp_runs_dark_to_pale_down_the_ranking(self):

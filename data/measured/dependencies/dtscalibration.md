@@ -1,7 +1,7 @@
 ---
 id: dtscalibration
 source: dependencies
-scanned_at: '2026-08-29T11:22:39+00:00'
+scanned_at: '2026-08-29T18:32:28+00:00'
 ref: main
 tip: 0eb9b1711ce68e6e6de76b3eb153b7722ed38831
 has_python: true
@@ -9,7 +9,6 @@ manifests:
 - pyproject.toml
 required:
 - dask
-- dtscalibration
 - matplotlib
 - nc-time-axis
 - netcdf4

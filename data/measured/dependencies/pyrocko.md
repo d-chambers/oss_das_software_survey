@@ -1,7 +1,7 @@
 ---
 id: pyrocko
 source: dependencies
-scanned_at: '2026-08-29T11:22:50+00:00'
+scanned_at: '2026-08-29T18:32:38+00:00'
 ref: master
 tip: b5bbdee44b322eb4b4aa0a6f6fa8321d1fb0f36e
 has_python: true

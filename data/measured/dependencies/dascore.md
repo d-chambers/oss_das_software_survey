@@ -1,7 +1,7 @@
 ---
 id: dascore
 source: dependencies
-scanned_at: '2026-08-29T11:22:36+00:00'
+scanned_at: '2026-08-29T18:32:24+00:00'
 ref: master
 tip: e377e6635fab0d15881ee5175edfa1865d5c3836
 has_python: true
@@ -32,7 +32,6 @@ required:
 - xarray
 optional:
 - bottleneck
-- dascore
 - obspy
 - segyio
 development:

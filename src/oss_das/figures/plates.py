@@ -1557,10 +1557,13 @@ def dependency_plate(mix: DependencyMix) -> str:
             size=draw.MID,
             fill=draw.INK,
         )
+        # The denominator is on the figure, not only in the caption: this deck
+        # also carries a language chart counting Python a different way, and a
+        # bare count invites "98 per cent of what?" from the floor.
         c.text(
             x + BAR_WIDTH / 2,
             baseline - bar_h - 20,
-            f"{row.projects}",
+            f"{row.projects} of {mix.python_projects}",
             size=draw.SUB,
             fill=draw.MUTED,
         )

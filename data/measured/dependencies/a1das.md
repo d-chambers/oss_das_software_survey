@@ -1,7 +1,7 @@
 ---
 id: a1das
 source: dependencies
-scanned_at: '2026-08-29T11:22:31+00:00'
+scanned_at: '2026-08-29T18:32:19+00:00'
 ref: main
 tip: d57f24ebda8e16f72857ce947ddb62f905fdb19e
 has_python: true

@@ -1,7 +1,7 @@
 ---
 id: orion
 source: dependencies
-scanned_at: '2026-08-29T11:22:46+00:00'
+scanned_at: '2026-08-29T18:32:34+00:00'
 ref: main
 tip: c1be8958944cec1bfacbaa31955cbc8a383e061a
 has_python: true

@@ -1,7 +1,7 @@
 ---
 id: fiberwatch-cli
 source: dependencies
-scanned_at: '2026-08-29T11:22:44+00:00'
+scanned_at: '2026-08-29T18:32:33+00:00'
 ref: master
 tip: 570aef72228ac5e92cf792423d50d3f49fc29700
 has_python: true

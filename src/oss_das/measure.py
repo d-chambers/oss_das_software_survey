@@ -846,6 +846,11 @@ def dependency_record(
     own |= {
         p.rsplit("/", 1)[-1].removesuffix(".py") for p in paths if p.endswith(".py")
     }
+    # A src-layout package sits under `src/`, so its own name never appears at
+    # the tree root; without these the project was recorded as depending on
+    # itself, and one of them then read as a viewer with a dependent.
+    own |= {p.split("/")[1] for p in paths if p.startswith("src/") and p.count("/") > 1}
+    own |= {project.id, project.id.replace("-", "_"), project.name.lower()}
     for path in sources:
         text = _blob(repo, ref, path, timeout=timeout)
         if path.endswith(".ipynb"):
@@ -859,6 +864,10 @@ def dependency_record(
                 continue
             _strongest(found, name, "development" if in_tests else kind)
 
+    # A manifest can name its own distribution, in a self-referential extra;
+    # counted, the project reads as depending on itself.
+    for name in {project.id, project.id.replace("-", "_"), project.name.lower()}:
+        found.pop(name, None)
     record.update(
         ref=ref,
         tip=tip,

@@ -1,7 +1,7 @@
 ---
 id: dtsgui
 source: dependencies
-scanned_at: '2026-08-29T11:22:40+00:00'
+scanned_at: '2026-08-29T18:32:28+00:00'
 ref: master
 tip: 5ecac3eab64b6f1d136d3deef08f707362f4cdf8
 has_python: true

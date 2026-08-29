@@ -13,14 +13,50 @@
   pointer-events: none;
 }
 .slide-logos img.rf { width: 4.4vw; }
-.slide-logos img.ineris { width: 5.8vw; margin-top: 0.5vw; }
+.slide-logos img.ineris { width: 7.8vw; margin-top: 0.5vw; }
 
-/* The blue rule the pptx draws under every frame title, and room for the marks. */
-.reveal h2 {
-  border-bottom: 2px solid #000091;
+/* The blue rule the pptx draws under every frame title. Pinned to the top of
+   the slide rather than flowing with the content: a title that rides up and
+   down as slides change length reads as a wobble from the back of a room. */
+.reveal .slides section > h2 {
+  position: absolute;
+  top: 0;
+  /* Clears both marks: 3.3vw offset + 4.4vw + 0.8vw gap + 7.8vw Ineris. */
+  left: 18%;
+  right: 2%;
+  margin: 0;
   padding-bottom: 0.15em;
-  margin-left: 12%;
+  border-bottom: 2px solid #000091;
   font-size: 1.4em;
+  text-align: left;
+}
+/* Content clears the pinned title. */
+.reveal .slides section > *:not(h2):not(.slide-logos) { margin-top: 0; }
+.reveal .slides section { padding-top: 3.2em; }
+
+/* A box that hides part of a figure until it is clicked away. Sized and placed
+   per slide; white so it reads as absence rather than as a panel. */
+.reveal .cover {
+  position: absolute;
+  background: #ffffff;
+  z-index: 5;
+}
+
+/* The axis rule under the logo slides, with an arrowhead at its right end. */
+.reveal .axis-arrow {
+  position: absolute;
+  height: 2px;
+  background: #000091;
+  z-index: 2;
+}
+.reveal .axis-arrow::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  border-left: 12px solid #000091;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
 }
 
 /* Figures carry the identity; centre them and let them breathe. */
@@ -36,9 +72,49 @@
   line-height: 1.25;
 }
 .reveal .axis-caption {
-  font-size: 0.58em;
+  font-size: 0.95em;
   color: #000091;
   font-weight: 600;
   display: block;
   text-align: center;
 }
+
+/* The one gap with no candidate to show for it. Sized to carry a slide on its
+   own, in the blue the deck uses for its own voice. */
+.reveal .question-mark {
+  display: block;
+  text-align: center;
+  font-size: 6em;
+  line-height: 1.1;
+  color: #000091;
+  margin-top: 0.4em;
+}
+
+/* A figure revealed a band at a time: white panels sit over the right-hand
+   gates and fade out one by one, so each can be talked through on its own. */
+.mask-wrap { position: relative; display: block; margin-inline: auto; }
+.mask-wrap p { margin: 0; }
+.mask-wrap img { display: block; width: 100%; margin: 0; }
+.mask-wrap .gate-mask {
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  right: -2%;
+  background: #ffffff;
+}
+
+
+/* `center: true` sets `min-height: 0` on every slide and reveal never writes a
+   height, so a slide whose children are all `position: absolute` collapses to
+   the height of its title and every `top: NN%` resolves against that. The
+   logo-scatter slides need a definite height to position against. */
+.reveal .slides section:has(.absolute) { height: 100%; }
+
+/* A slide whose logos are the whole content: the title would only name what
+   the presenter is about to say. */
+.reveal section.no-title > h2 { display: none; }
+.reveal section.no-title { padding-top: 0.5em; }
+
+/* Project slides: the logo answers the bullets, so it is given room but not
+   the slide. */
+.reveal .column img { max-height: 46vh; width: auto; max-width: 100%; }

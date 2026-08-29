@@ -1,7 +1,7 @@
 ---
 id: das-flink
 source: dependencies
-scanned_at: '2026-08-29T11:22:33+00:00'
+scanned_at: '2026-08-29T18:32:20+00:00'
 ref: main
 tip: 38713c903e25a419deae1a633fed3ebc3446a36c
 has_python: true

@@ -1,7 +1,7 @@
 ---
 id: das-to-store
 source: dependencies
-scanned_at: '2026-08-29T11:22:34+00:00'
+scanned_at: '2026-08-29T18:32:21+00:00'
 ref: main
 tip: 39751e34f9b30c6197a5d27a58c905ed2aa54433
 has_python: true
@@ -11,7 +11,6 @@ manifests:
 required:
 - colorcet
 - conda-forge
-- das_to_store
 - dask
 - defaults
 - fsspec

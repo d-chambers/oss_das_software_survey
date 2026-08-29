@@ -1,7 +1,7 @@
 ---
 id: edgedas
 source: dependencies
-scanned_at: '2026-08-29T11:22:40+00:00'
+scanned_at: '2026-08-29T18:32:28+00:00'
 ref: master
 tip: 7a095b19e0086e8ebb569b9b2b1b08653d3992ba
 has_python: false

@@ -1,7 +1,7 @@
 ---
 id: eqnet
 source: dependencies
-scanned_at: '2026-08-29T11:22:40+00:00'
+scanned_at: '2026-08-29T18:32:29+00:00'
 ref: main
 tip: af94a08a85de4b2c917a1b9429b044e7f38e4c28
 has_python: true

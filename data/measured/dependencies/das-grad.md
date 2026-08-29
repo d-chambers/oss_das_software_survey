@@ -1,7 +1,7 @@
 ---
 id: das-grad
 source: dependencies
-scanned_at: '2026-08-29T11:22:33+00:00'
+scanned_at: '2026-08-29T18:32:21+00:00'
 ref: main
 tip: 095d681d02191aca746531197606d150f1861733
 has_python: true

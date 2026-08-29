@@ -1,7 +1,7 @@
 ---
 id: dastools
 source: dependencies
-scanned_at: '2026-08-29T11:22:38+00:00'
+scanned_at: '2026-08-29T18:32:26+00:00'
 ref: master
 tip: a0181cff8079a3565f586a83a23791b0dd6c1ded
 has_python: true

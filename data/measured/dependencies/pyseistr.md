@@ -1,7 +1,7 @@
 ---
 id: pyseistr
 source: dependencies
-scanned_at: '2026-08-29T11:22:50+00:00'
+scanned_at: '2026-08-29T18:32:38+00:00'
 ref: main
 tip: a411c11c6ba0d10d9d939763c5941321b0b13fc9
 has_python: true

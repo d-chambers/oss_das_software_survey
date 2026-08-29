@@ -1,7 +1,7 @@
 ---
 id: derzug
 source: dependencies
-scanned_at: '2026-08-29T11:22:39+00:00'
+scanned_at: '2026-08-29T18:32:27+00:00'
 ref: main
 tip: 3380aabed7e4d9a855fdaa196e39387dd942f657
 has_python: true
@@ -12,7 +12,6 @@ required:
 - anyqt
 - conda-forge
 - dascore
-- derzug
 - duckdb
 - mcp
 - numpy

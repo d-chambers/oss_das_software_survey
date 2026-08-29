@@ -1,7 +1,7 @@
 ---
 id: dasvader-ds
 source: dependencies
-scanned_at: '2026-08-29T11:22:38+00:00'
+scanned_at: '2026-08-29T18:32:26+00:00'
 ref: main
 tip: 1153c6c7a349e6e82c89968446dacb41e386004e
 has_python: false

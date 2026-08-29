@@ -1,7 +1,7 @@
 ---
 id: seisbench
 source: dependencies
-scanned_at: '2026-08-29T11:22:51+00:00'
+scanned_at: '2026-08-29T18:32:39+00:00'
 ref: main
 tip: afac5f1ee200c00f9994410517f85c646095e56c
 has_python: true

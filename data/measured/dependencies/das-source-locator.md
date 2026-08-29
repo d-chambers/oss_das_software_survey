@@ -1,7 +1,7 @@
 ---
 id: das-source-locator
 source: dependencies
-scanned_at: '2026-08-29T11:22:34+00:00'
+scanned_at: '2026-08-29T18:32:21+00:00'
 ref: main
 tip: 78338a6e51ea1483da76a619e522317abf3ca4b4
 has_python: true

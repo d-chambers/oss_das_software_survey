@@ -1,7 +1,7 @@
 ---
 id: distpy
 source: dependencies
-scanned_at: '2026-08-29T11:22:39+00:00'
+scanned_at: '2026-08-29T18:32:27+00:00'
 ref: master
 tip: 4456a468f9272a5623b1b6ff0fb06f8cf13efec3
 has_python: true

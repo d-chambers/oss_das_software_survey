@@ -1,7 +1,7 @@
 ---
 id: daspack
 source: dependencies
-scanned_at: '2026-08-29T11:22:37+00:00'
+scanned_at: '2026-08-29T18:32:25+00:00'
 ref: main
 tip: ec268cd5abdfb52511d6e9eadc8188871e817200
 has_python: true

@@ -1,7 +1,7 @@
 ---
 id: daspy
 source: dependencies
-scanned_at: '2026-08-29T11:22:37+00:00'
+scanned_at: '2026-08-29T18:32:25+00:00'
 ref: main
 tip: caa532db99e46ee81988dca00eebf91a5fa23e70
 has_python: true

@@ -4,41 +4,19 @@ author: "Derrick Chambers"
 institute: "Ineris — Institut national de l'environnement industriel et des risques"
 date: today
 date-format: "[Galileo Fiber Optic Conference, 2026]"
-output-file: talk
 ---
 
 # Why give a talk about tools?
 
 ## Motivation
 
-![](_svg/ages_of_tools_edited.pdf){fig-align="center" width=88%}
-
-::: {.notes}
-We name an age for the material its tools were made from. Stone, bronze, iron.
-The instrument is what the era is remembered by.
-:::
-
-## Motivation
-
-![](_svg/two_tracks_of_seismology.pdf){fig-align="center" width=96%}
-
-::: {.notes}
-Seismology runs on two tracks. The instruments are the top row, and they are
-what we name our eras after — we are in the distributed age now.
-
-But every instrument was only ever as good as what we could do with what it
-recorded. The bottom row is the one that actually moved: felt reports, rulers
-and tables, compiled code, dynamic languages, models. Our era's bottom row is
-software, and nobody had surveyed it.
-:::
-
-## Motivation
-
 ![](assets/motivation.png){fig-align="center" width=94%}
 
+[&nbsp;]{.cover .fragment .fade-out data-fragment-index="1" style="top:41%; left:2%; width:96%; height:36%;"}
+
 ## Motivation
 
-![](../figures/p1_scientist_oss.png){fig-align="center" height=64%}
+![](../figures/p1_scientist_oss.png){fig-align="center" width=49%}
 
 ::: {.notes}
 Every one of us writes the same readers, the same filters, the same plots.
@@ -48,15 +26,7 @@ Every one of us writes the same readers, the same filters, the same plots.
 
 ## The tools
 
-![](assets/tools_collage.png){fig-align="center" height=70%}
-
-::: {.notes}
-Start from everything, not from what I already knew about.
-:::
-
-## The tools
-
-![](../figures/v030_funnel.png){fig-align="center" height=76%}
+![](../figures/v030_funnel.png){fig-align="center" width=59%}
 
 ::: {.notes}
 {{< meta n.funnel.candidates >}} candidates from forge search, registries and the
@@ -103,7 +73,23 @@ interoperate within.
 
 ## The tools
 
-![](../figures/v130_engineering.png){fig-align="center" height=74%}
+::: {.content-visible when-format="revealjs"}
+
+:::: {.mask-wrap style="width:94%"}
+![](../figures/v130_engineering.png){width="100%"}
+
+```{=html}
+<div class="gate-mask fragment fade-out" data-fragment-index="1" style="left:24.5%"></div>
+<div class="gate-mask fragment fade-out" data-fragment-index="2" style="left:50.0%"></div>
+<div class="gate-mask fragment fade-out" data-fragment-index="3" style="left:75.5%"></div>
+```
+::::
+
+:::
+
+::: {.content-visible when-format="beamer"}
+![](../figures/v130_engineering.png){fig-align="center" width=94%}
+:::
 
 ::: {.notes}
 Four questions a stranger asks before depending on your code. Most answer the
@@ -116,7 +102,17 @@ reason for the next slide.
 
 ## The tools
 
-![](../figures/v160_network.png){fig-align="center" height=74%}
+![](../figures/v140_dependencies.png){fig-align="center" width=98%}
+
+::: {.notes}
+And here is what we do build on. NumPy in 98 per cent, then Matplotlib, SciPy,
+h5py. ObsPy at 36 per cent — from a different field. We share a foundation, it
+just is not ours.
+:::
+
+## The tools
+
+![](../figures/v160_network.png){fig-align="center" width=72%}
 
 ::: {.notes}
 This is the finding. {{< meta n.network.isolated >}} of
@@ -143,15 +139,6 @@ Say "roughly half as connected", not the precise percentages — our set is
 hand-curated and theirs is scraped.
 :::
 
-## The tools
-
-![](../figures/v140_dependencies.png){fig-align="center" width=98%}
-
-::: {.notes}
-And here is what we do build on. NumPy in 98 per cent, then Matplotlib, SciPy,
-h5py. ObsPy at 36 per cent — from a different field. We share a foundation, it
-just is not ours.
-:::
 
 # Which projects to build on?
 
@@ -165,14 +152,14 @@ Take everything that follows with that in mind.
 Say it plainly, early, and once.
 :::
 
-## The five
+## The five {.no-title}
 
 :::: {.content-visible when-format="revealjs"}
-![](assets/logo_dascore.png){.absolute .fragment top="23.7%" left="2.2%" width="26.1%"}
-![](assets/logo_daspy.png){.absolute .fragment top="23.7%" left="32.9%" width="34.3%"}
-![](assets/logo_das4whales.png){.absolute .fragment top="21.4%" left="67.7%" width="32.3%"}
-![](assets/logo_xdas.png){.absolute .fragment top="58.2%" left="29.7%" width="40.6%"}
-![](assets/logo_lightguide.png){.absolute .fragment top="74.6%" left="5.6%" width="14.8%"}
+![](assets/logo_dascore.png){.absolute .fragment top="23.8%" left="2.2%" width="26.1%"}
+![](assets/logo_daspy.png){.absolute .fragment top="23.8%" left="32.9%" width="34.3%"}
+![](assets/logo_das4whales.png){.absolute .fragment top="21.5%" left="67.7%" width="32.3%"}
+![](assets/logo_xdas.png){.absolute .fragment top="58.3%" left="29.7%" width="40.6%"}
+![](assets/logo_lightguide.png){.absolute .fragment top="74.7%" left="5.6%" width="14.8%"}
 ::::
 
 :::: {.content-visible when-format="beamer"}
@@ -180,22 +167,23 @@ DASCore · DASPy · DAS4Whales · xdas · Lightguide
 ::::
 
 ::: {.notes}
-Five packages do the infrastructure work. Bring them up one at a time.
+Name each as it lands. No text on the slide; the logos are the list.
 :::
 
 ## Licence permissivity
 
 :::: {.content-visible when-format="revealjs"}
-![](assets/logo_das4whales.png){.absolute .fragment top="32.4%" left="6.4%" width="22.7%"}
-![](assets/logo_xdas.png){.absolute .fragment top="46.6%" left="30.7%" width="22.8%"}
-![](assets/logo_lightguide.png){.absolute .fragment top="12.3%" left="35.8%" width="12.7%"}
-![](assets/logo_dascore.png){.absolute .fragment top="44.3%" left="55.0%" width="19.1%"}
-![](assets/logo_daspy.png){.absolute .fragment top="26.6%" left="71.5%" width="27.0%"}
-[Non-Commercial]{.axis-label .absolute top="79.0%" left="1.0%" width="20%"}
-[GPL]{.axis-label .absolute top="79.0%" left="27.4%" width="20%"}
-[LGPL]{.axis-label .absolute top="79.0%" left="50.7%" width="20%"}
-[MIT]{.axis-label .absolute top="79.0%" left="74.0%" width="20%"}
-[Licence permissivity &rarr;]{.axis-caption .absolute top="89.0%" left="20.8%" width="20%"}
+![](assets/logo_das4whales.png){.absolute top="32.5%" left="6.4%" width="22.7%"}
+![](assets/logo_xdas.png){.absolute top="46.8%" left="30.7%" width="22.8%"}
+![](assets/logo_lightguide.png){.absolute top="12.4%" left="35.8%" width="12.7%"}
+![](assets/logo_dascore.png){.absolute top="44.4%" left="55.0%" width="19.1%"}
+![](assets/logo_daspy.png){.absolute top="26.7%" left="71.5%" width="34.3%"}
+[&nbsp;]{.axis-arrow style="top:80%; left:4%; width:90%;"}
+[Non-Commercial]{.axis-label .absolute top="83.5%" left="1.0%" width="20%"}
+[GPL]{.axis-label .absolute top="83.5%" left="27.4%" width="20%"}
+[LGPL]{.axis-label .absolute top="83.5%" left="50.7%" width="20%"}
+[MIT]{.axis-label .absolute top="83.5%" left="74.0%" width="20%"}
+[Licence permissivity]{.axis-caption .absolute top="88.0%" left="30%" width="40%"}
 ::::
 
 :::: {.content-visible when-format="beamer"}
@@ -207,106 +195,242 @@ Five packages do the infrastructure work. Bring them up one at a time.
 
 ::: {.notes}
 Left to right, least permissive to most. DAS4Whales carries a content licence
-rather than a software one — worth a conversation before depending on it.
+rather than a software one, which matters before you depend on it downstream.
 :::
 
-## Data model
+## DAS4Whales
 
-:::: {.content-visible when-format="revealjs"}
-![](assets/logo_xdas.png){.absolute .fragment top="41.0%" left="0.5%" width="22.8%"}
-![](assets/logo_dascore.png){.absolute .fragment top="36.2%" left="15.1%" width="19.1%"}
-![](assets/logo_lightguide.png){.absolute .fragment top="40.1%" left="39.3%" width="12.7%"}
-![](assets/logo_daspy.png){.absolute .fragment top="27.3%" left="43.9%" width="34.3%"}
-![](assets/logo_das4whales.png){.absolute .fragment top="25.1%" left="76.6%" width="22.7%"}
-[Xarray-inspired,<br>labelled multidimensional]{.axis-label .absolute top="73.7%" left="2.1%" width="20%"}
-[Unified object,<br>fixed dimensions]{.axis-label .absolute top="73.7%" left="37.1%" width="20%"}
-[Arrays and dicts<br>of metadata]{.axis-label .absolute top="73.7%" left="73.3%" width="20%"}
-[&larr; More general, more complex]{.axis-caption .absolute top="95.0%" left="1.5%" width="20%"}
-[Simpler, less flexible &rarr;]{.axis-caption .absolute top="95.0%" left="62.2%" width="20%"}
-::::
+:::: {.columns}
 
-:::: {.content-visible when-format="beamer"}
-- **xdas**, **DASCore** — labelled, multidimensional, Xarray-inspired
-- **Lightguide**, **DASPy** — one unified object, fixed dimensions
-- **DAS4Whales** — arrays and dictionaries of metadata
+::: {.column width="62%"}
+- Matched-filter and spectrogram whale-call detection
+- Call association, localisation and track building
+- Bathymetry and cable-geometry mapping
+- The deepest end-to-end marine workflow of the five
+:::
+
+::: {.column width="38%"}
+![](assets/logo_das4whales.png){.fragment fig-align="center" width=88%}
+:::
+
 ::::
 
 ::: {.notes}
-The choice you cannot reverse: the data model leaks into your public API.
-General costs complexity; simple costs flexibility.
+Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## Five tools, five different jobs
+## DASCore
 
-- **DASCore** — general data handling and package foundations
-- **xdas** — very large or live acquisitions, and foundations at scale
-- **DASPy** — broad seismological analysis in scripts and notebooks
-- **DAS4Whales** — marine bioacoustics, end to end
-- **Lightguide** — Pyrocko modelling and Rust-accelerated AFK denoising
+:::: {.columns}
 
-::: {.notes}
-No universal winner: these occupy different layers. If larger-than-memory or
-real-time processing is central rather than incidental, start with xdas.
+::: {.column width="62%"}
+- Immutable patches with named coordinates and Pint units
+- Spools index a directory, so you read only what you select
+- Over 20 format families, with versioned handlers
+- Entry-point plugins for readers and namespaces
 :::
 
-## "Large data" means five different things
-
-- **DASCore** — indexes, selects and chunks across files; each patch eager
-- **xdas** — virtual arrays, chunk-continuous pipelines, streaming
-- **DASPy** — continuous-file processing carrying filter state across boundaries
-- **DAS4Whales** — targeted Dask and xarray helpers over NumPy workflows
-- **Lightguide** — Rust-accelerated AFK denoising
-
-::: {.notes}
-Each is a reasonable answer to a different question. None of these labels
-guarantees a given workflow is faster — benchmark the actual chain.
+::: {.column width="38%"}
+![](assets/logo_dascore.png){.fragment fig-align="center" width=88%}
 :::
 
-## The choice you cannot reverse
-
-![](../figures/v180_archive_abstractions.png){fig-align="center" width=90%}
+::::
 
 ::: {.notes}
-The data model leaks into your public API. Conversion exists — Unidas adapts
-four containers — but an xarray round trip densifies xdas's compact
-coordinates, and MiniSEED cannot carry every DAS field.
+Strengths first, then the logo. Say what it is for, not what it lacks.
+:::
+
+## DASPy
+
+:::: {.columns}
+
+::: {.column width="62%"}
+- The richest seismology algorithm set of the five
+- Curvelet denoising, decomposition, strain-to-velocity
+- A simple Section and Collection workflow
+- MIT — the lowest licensing friction
+:::
+
+::: {.column width="38%"}
+![](assets/logo_daspy.png){.fragment fig-align="center" width=88%}
+:::
+
+::::
+
+::: {.notes}
+Strengths first, then the logo. Say what it is for, not what it lacks.
+:::
+
+## Lightguide
+
+:::: {.columns}
+
+::: {.column width="62%"}
+- The published adaptive frequency–wavenumber denoiser
+- Rust-backed, parallel, and fast
+- Phase following along the fibre
+- Green's-function forward modelling through Pyrocko
+:::
+
+::: {.column width="38%"}
+![](assets/logo_lightguide.png){.fragment fig-align="center" width=88%}
+:::
+
+::::
+
+::: {.notes}
+Strengths first, then the logo. Say what it is for, not what it lacks.
+:::
+
+## xdas
+
+:::: {.columns}
+
+::: {.column width="62%"}
+- Virtual arrays across thousands of files
+- Compact coordinates instead of dense index arrays
+- Stateful pipelines that survive chunk boundaries
+- Live acquisition over ZeroMQ
+:::
+
+::: {.column width="38%"}
+![](assets/logo_xdas.png){.fragment fig-align="center" width=88%}
+:::
+
+::::
+
+::: {.notes}
+Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
 # What are the gaps and opportunities?
 
 ## Interoperability
 
-![](assets/interoperability.png){fig-align="center" height=58%}
+:::: {.columns}
 
-- Overlap drives innovation — fragmentation costs users
+::: {.column width="52%"}
+Five data models, five I/O layers, five ways to say the same thing.
+
+- Overlap is how a field finds out what works
+- The cost lands on the user, not the author
+- Only paid when the tools cannot talk to each other
+:::
+
+::: {.column width="48%"}
+![](assets/interoperability.png){.fragment fig-align="center" width="94%"}
+:::
+
+::::
 
 ::: {.notes}
 Say the concession first and mean it: five independent designs is how a field
-finds out what works. The cost is only paid when they cannot talk.
+finds out what works. Unidas is the existence proof that the conversion can be
+written once instead of five times.
 :::
 
 ## GPU and beyond NumPy
 
-![](assets/gpu.png){fig-align="center" height=58%}
+:::: {.columns}
 
-- Array API, not one array library
-- Watch: Coordax, xarray_jax, wax-ml, einx
+::: {.column width="52%"}
+The shared layer is NumPy. Acceleration is bolted on one project at a time.
+
+- Sixteen reach for PyTorch, eight for Dask, three for CuPy
+- None of it is portable — the Array API is the target
+:::
+
+::: {.column width="48%"}
+![](assets/gpu.png){.fragment fig-align="center" width="88%"}
+:::
+
+::::
+
+::: {.notes}
+65 of the 66 Python projects declare NumPy, and none of the five infrastructure
+packages depends on an accelerator library beyond Numba and Dask. Plenty of
+individual projects reach for PyTorch or CuPy -- the PyTorch bar is on the
+dependency slide -- but each does it its own way, so nothing moves between them.
+:::
 
 ## Metadata
 
-![](assets/metadata.png){fig-align="center" height=62%}
+:::: {.columns}
 
-- One integrated, reusable inventory
+::: {.column width="46%"}
+Every project invents its own station, channel and geometry fields.
 
-## Agent–human collaboration
+- Seismology solved this once, with an inventory
+- Fiber needs the same thing, not a sixth dialect
+:::
 
-![](assets/agent_collab.png){fig-align="center" height=56%}
+::: {.column width="54%"}
+![](assets/metadata.png){.fragment fig-align="center" width="98%"}
+:::
+
+::::
+
+::: {.notes}
+One integrated, reusable inventory. The right-hand sketch is what that could
+look like: the point-sensor hierarchy on the left, the fiber one beside it.
+:::
+
+## Large-scale visualisation
+
+:::: {.columns}
+
+::: {.column width="52%"}
+Seven viewers in the census. Nothing in it depends on any of them.
+
+- Multi-resolution, streaming, annotation — each solved separately
+- The one gap where more tools has not meant more capability
+:::
+
+::: {.column width="48%"}
+::: {.content-visible when-format="revealjs"}
+[?]{.question-mark}
+:::
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+\vfill\begin{center}{\fontsize{100}{120}\selectfont\color{inerisblue}?}\end{center}\vfill
+```
+:::
+:::
+
+::::
+
+::: {.notes}
+Not for want of effort: MultiResViewer, FiLark, DAS_NIDF, DASexplorer, Xpick,
+DASSourceLocator and DerZug are all in the census, and several are named on the
+network slide. Not one of them is a dependency of anything else. The question
+mark is which the field converges on, not whether anyone is trying.
+:::
+
+## Agents using what we have
+
+![](../figures/p1_scientist_agent.png){fig-align="center" width=70%}
 
 - Readable interfaces, stable contracts, honest errors
 
 ::: {.notes}
-The tools we write now are the tools agents will use. Nothing here is
-agent-ready yet.
+The tools we write now are the tools agents will use. This slide is about the
+code that already exists: make it legible and predictable and an agent can
+drive it. Nothing here is agent-ready yet.
+:::
+
+## Software we have not written yet
+
+::: {.nonincremental}
+Not porting a library for an agent to call — asking what software looks like
+when an agent is the one writing and running it.
+:::
+
+![](../figures/p1_scientist_agent_oss.png){.fragment fig-align="center" width=58%}
+
+::: {.notes}
+The second half of the argument, and the speculative one. Say plainly that this
+is where I think the field goes, not where it is.
 :::
 
 ## Conclusions
@@ -331,4 +455,68 @@ derrick.chambers@ineris.fr · github.com/d-chambers
 
 ::: {.notes}
 Check your own project's record and send a correction.
+:::
+
+# Backup {visibility="uncounted"}
+
+## Call to action {visibility="uncounted"}
+
+- {{< meta n.composition.with_pypi >}} of {{< meta n.ecosystem_totals.projects >}} are installable — on PyPI, conda or Julia
+- {{< meta n.composition.with_packaging >}} are set up as a package, so most of the work is already done
+- Declare your dependencies; reuse a data model rather than inventing a sixth
+
+::: {.notes}
+Held back for questions. The gap between "set up as a package" and "published"
+is the cheapest thing in this talk to fix.
+:::
+
+## Licence and popularity {visibility="uncounted"}
+
+:::: {.content-visible when-format="revealjs"}
+![](assets/logo_das4whales.png){.absolute top="25.3%" left="6.4%" width="22.7%"}
+![](assets/logo_xdas.png){.absolute top="39.7%" left="30.7%" width="22.8%"}
+![](assets/logo_lightguide.png){.absolute top="5.3%" left="35.8%" width="12.7%"}
+![](assets/logo_dascore.png){.absolute top="37.3%" left="55.0%" width="19.1%"}
+![](assets/logo_daspy.png){.absolute top="19.6%" left="71.5%" width="34.3%"}
+[Non-Commercial]{.axis-label .absolute top="79.0%" left="1.0%" width="20%"}
+[GPL]{.axis-label .absolute top="79.0%" left="27.4%" width="20%"}
+[LGPL]{.axis-label .absolute top="79.0%" left="50.7%" width="20%"}
+[MIT]{.axis-label .absolute top="79.0%" left="74.0%" width="20%"}
+[Licence permissivity &rarr;]{.axis-caption .absolute top="89.0%" left="20.8%" width="20%"}
+[&uarr; Popularity (downloads, stars)]{.axis-caption .absolute top="12.0%" left="1.0%" width="26%"}
+::::
+
+:::: {.content-visible when-format="beamer"}
+Licence permissivity across, popularity up: DAS4Whales non-commercial,
+xdas and Lightguide GPL, DASCore LGPL, DASPy MIT.
+::::
+
+::: {.notes}
+Held back for questions. The two axes people ask about together.
+:::
+
+## Data model {visibility="uncounted"}
+
+:::: {.content-visible when-format="revealjs"}
+![](assets/logo_xdas.png){.absolute top="41.0%" left="0.5%" width="22.8%"}
+![](assets/logo_dascore.png){.absolute top="36.2%" left="15.1%" width="19.1%"}
+![](assets/logo_lightguide.png){.absolute top="40.1%" left="39.3%" width="12.7%"}
+![](assets/logo_daspy.png){.absolute top="27.3%" left="43.9%" width="34.3%"}
+![](assets/logo_das4whales.png){.absolute top="25.1%" left="76.6%" width="22.7%"}
+[Xarray-inspired,<br>labelled multidimensional]{.axis-label .absolute top="73.7%" left="2.1%" width="20%"}
+[Unified object,<br>fixed dimensions]{.axis-label .absolute top="73.7%" left="37.1%" width="20%"}
+[Arrays and dicts<br>of metadata]{.axis-label .absolute top="73.7%" left="73.3%" width="20%"}
+[&larr; More general, more complex]{.axis-caption .absolute top="95.0%" left="1.5%" width="20%"}
+[Simpler, less flexible &rarr;]{.axis-caption .absolute top="95.0%" left="62.2%" width="20%"}
+::::
+
+:::: {.content-visible when-format="beamer"}
+- **xdas**, **DASCore** — labelled, multidimensional, Xarray-inspired
+- **Lightguide**, **DASPy** — one unified object, fixed dimensions
+- **DAS4Whales** — arrays and dictionaries of metadata
+::::
+
+::: {.notes}
+Held back for questions. The data model leaks into your public API: general
+costs complexity, simple costs flexibility.
 :::

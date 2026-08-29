@@ -1,7 +1,7 @@
 ---
 id: idas-convert
 source: dependencies
-scanned_at: '2026-08-29T11:22:45+00:00'
+scanned_at: '2026-08-29T18:32:33+00:00'
 ref: master
 tip: af05e3aabfb9af1a383616205a9982e02617a1e8
 has_python: true

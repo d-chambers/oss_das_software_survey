@@ -1,7 +1,7 @@
 ---
 id: pyfocs
 source: dependencies
-scanned_at: '2026-08-29T11:22:46+00:00'
+scanned_at: '2026-08-29T18:32:34+00:00'
 ref: main
 tip: 6f0d635f68088f6a637199456bef920b07acf7d5
 has_python: true
@@ -18,7 +18,6 @@ required:
 - netcdf4
 - numpy
 - pandas
-- pyfocs
 - pyyaml
 - scipy
 - virtualenv

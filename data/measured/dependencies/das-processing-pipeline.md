@@ -1,7 +1,7 @@
 ---
 id: das-processing-pipeline
 source: dependencies
-scanned_at: '2026-08-29T11:22:34+00:00'
+scanned_at: '2026-08-29T18:32:21+00:00'
 ref: main
 tip: 09a9a8bf6a298f1bb29650acff6afceb8b556842
 has_python: true
@@ -17,7 +17,6 @@ required:
 - charset-normalizer
 - contourpy
 - cycler
-- das_pipeline
 - dascore
 - decorator
 - flexcache
