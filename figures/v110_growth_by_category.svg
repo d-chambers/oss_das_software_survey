@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="1680" height="720.0" viewBox="0 0 1680 720.0">
+  <title>What the work went into</title>
+  <desc>7,100 commits between 2019 and 2026, in 6 groups.</desc>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+  <text x="840" y="76" font-size="34" fill="#2b2620" text-anchor="middle">What the work went into</text>
+  <path d="M 300,500 L 1380,500" stroke="#cbc3b3" stroke-width="2" fill="none"/>
+  <rect x="313.5" y="492.349" width="108" height="6.25121" fill="#4b4b50"/>
+  <text x="367.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2019</text>
+  <text x="367.5" y="478.349" font-size="18" fill="#2b2620" text-anchor="middle">46</text>
+  <rect x="448.5" y="472.555" width="108" height="26.0446" fill="#4b4b50"/>
+  <rect x="448.5" y="463.906" width="108" height="7.24919" fill="#d9a63f"/>
+  <rect x="448.5" y="462.409" width="108" height="0.9" fill="#e4dccb"/>
+  <text x="502.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2020</text>
+  <text x="502.5" y="448.409" font-size="18" fill="#2b2620" text-anchor="middle">226</text>
+  <rect x="583.5" y="499.002" width="108" height="0.9" fill="#c98500"/>
+  <rect x="583.5" y="486.86" width="108" height="10.7421" fill="#4b4b50"/>
+  <rect x="583.5" y="464.239" width="108" height="21.221" fill="#d9a63f"/>
+  <rect x="583.5" y="455.756" width="108" height="7.08286" fill="#b8b0a0"/>
+  <rect x="583.5" y="444.945" width="108" height="9.41149" fill="#e4dccb"/>
+  <text x="637.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2021</text>
+  <text x="637.5" y="430.945" font-size="18" fill="#2b2620" text-anchor="middle">331</text>
+  <rect x="718.5" y="474.219" width="108" height="24.3813" fill="#c98500"/>
+  <rect x="718.5" y="435.131" width="108" height="37.6877" fill="#4b4b50"/>
+  <rect x="718.5" y="428.644" width="108" height="5.0869" fill="#d9a63f"/>
+  <rect x="718.5" y="428.311" width="108" height="0.9" fill="#b8b0a0"/>
+  <rect x="718.5" y="422.989" width="108" height="3.92258" fill="#e4dccb"/>
+  <text x="772.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2022</text>
+  <text x="772.5" y="408.989" font-size="18" fill="#2b2620" text-anchor="middle">463</text>
+  <rect x="853.5" y="449.269" width="108" height="49.3308" fill="#c98500"/>
+  <rect x="853.5" y="361.447" width="108" height="86.4226" fill="#4b4b50"/>
+  <rect x="853.5" y="356.789" width="108" height="3.25726" fill="#d9a63f"/>
+  <rect x="853.5" y="337.828" width="108" height="17.5617" fill="#8a5f1c"/>
+  <rect x="853.5" y="334.335" width="108" height="2.09294" fill="#e4dccb"/>
+  <text x="907.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2023</text>
+  <text x="907.5" y="320.335" font-size="18" fill="#2b2620" text-anchor="middle">996</text>
+  <rect x="988.5" y="400.867" width="108" height="97.7331" fill="#c98500"/>
+  <rect x="988.5" y="358.785" width="108" height="40.6817" fill="#4b4b50"/>
+  <rect x="988.5" y="306.724" width="108" height="50.6615" fill="#d9a63f"/>
+  <rect x="988.5" y="252.833" width="108" height="52.4911" fill="#8a5f1c"/>
+  <rect x="988.5" y="251.169" width="108" height="0.9" fill="#b8b0a0"/>
+  <rect x="988.5" y="227.384" width="108" height="22.3853" fill="#e4dccb"/>
+  <text x="1042.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2024</text>
+  <text x="1042.5" y="213.384" font-size="18" fill="#2b2620" text-anchor="middle">1,639</text>
+  <rect x="1123.5" y="404.027" width="108" height="94.5728" fill="#c98500"/>
+  <rect x="1123.5" y="359.95" width="108" height="42.6776" fill="#4b4b50"/>
+  <rect x="1123.5" y="315.706" width="108" height="42.844" fill="#d9a63f"/>
+  <rect x="1123.5" y="265.474" width="108" height="48.8319" fill="#8a5f1c"/>
+  <rect x="1123.5" y="176.321" width="108" height="87.7532" fill="#b8b0a0"/>
+  <rect x="1123.5" y="170" width="108" height="4.92056" fill="#e4dccb"/>
+  <text x="1177.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2025</text>
+  <text x="1177.5" y="156" font-size="18" fill="#2b2620" text-anchor="middle">1,984</text>
+  <rect x="1258.5" y="416.169" width="108" height="82.4306" fill="#c98500"/>
+  <rect x="1258.5" y="396.542" width="108" height="18.227" fill="#4b4b50"/>
+  <rect x="1258.5" y="342.485" width="108" height="52.6575" fill="#d9a63f"/>
+  <rect x="1258.5" y="324.688" width="108" height="16.3974" fill="#8a5f1c"/>
+  <rect x="1258.5" y="316.205" width="108" height="7.08286" fill="#b8b0a0"/>
+  <rect x="1258.5" y="264.642" width="108" height="50.1625" fill="#e4dccb"/>
+  <text x="1312.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2026</text>
+  <text x="1312.5" y="556" font-size="18" fill="#a3825a" text-anchor="middle" font-style="italic">part year</text>
+  <text x="1312.5" y="250.642" font-size="18" fill="#2b2620" text-anchor="middle">1,415</text>
+  <path d="M 100,580 L 1580,580" stroke="#cbc3b3" stroke-width="3" fill="none"/>
+  <rect x="300" y="606" width="22" height="12" rx="2" fill="#c98500"/>
+  <text x="332" y="618" font-size="22" fill="#2b2620" text-anchor="start">Core frameworks  2,143</text>
+  <rect x="730" y="606" width="22" height="12" rx="2" fill="#4b4b50"/>
+  <text x="762" y="618" font-size="22" fill="#2b2620" text-anchor="start">Data and I/O  1,683</text>
+  <rect x="1160" y="606" width="22" height="12" rx="2" fill="#d9a63f"/>
+  <text x="1192" y="618" font-size="22" fill="#2b2620" text-anchor="start">Processing  1,159</text>
+  <rect x="300" y="640" width="22" height="12" rx="2" fill="#8a5f1c"/>
+  <text x="332" y="652" font-size="22" fill="#2b2620" text-anchor="start">Applied domains  847</text>
+  <rect x="730" y="640" width="22" height="12" rx="2" fill="#b8b0a0"/>
+  <text x="762" y="652" font-size="22" fill="#2b2620" text-anchor="start">Machine learning  650</text>
+  <rect x="1160" y="640" width="22" height="12" rx="2" fill="#e4dccb"/>
+  <text x="1192" y="652" font-size="22" fill="#2b2620" text-anchor="start">Modelling, viz, other  618</text>
+  </g>
+</svg>

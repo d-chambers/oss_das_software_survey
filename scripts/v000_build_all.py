@@ -17,6 +17,7 @@ from oss_das.core import PATHS
 from oss_das.figures.cli import figure_parser
 from oss_das.figures.data import (
     composition_from_records,
+    engineering_from_records,
     funnel_from_records,
     growth_from_records,
     licence_from_records,
@@ -29,13 +30,20 @@ from oss_das.figures.data import (
 def main() -> int:
     args = figure_parser(__doc__).parse_args()
     out = args.out or PATHS.root / "figures"
-    scripts = sorted(Path(__file__).resolve().parent.glob("v0[1-9]0_*.py"))
+    here = Path(__file__).resolve().parent
+    # Every figure script but this one. A narrower glob silently drops figures
+    # once the numbering passes v090, which is how v100-v120 went unbuilt.
+    scripts = sorted(
+        p for p in here.glob("v[0-9][0-9][0-9]_*.py") if p != Path(__file__).resolve()
+    )
 
     failed: list[str] = []
     for script in scripts:
         command = [sys.executable, str(script), "--out", str(out)]
         if args.pdf:
             command.append("--pdf")
+        if not args.png:
+            command.append("--no-png")
         if args.keep_text:
             command.append("--keep-text")
         result = subprocess.run(command, capture_output=True, text=True)
@@ -52,6 +60,7 @@ def main() -> int:
         "composition": composition_from_records().sidecar(),
         "growth": growth_from_records().sidecar(),
         "maturity": maturity_from_records().sidecar(),
+        "engineering": engineering_from_records().sidecar(),
     }
     (out / "figures.json").write_text(json.dumps(sidecar, indent=1) + "\n")
     print(f"wrote {out / 'figures.json'}", file=sys.stderr)

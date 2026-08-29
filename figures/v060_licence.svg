@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-     width="1680" height="520" viewBox="0 0 1680 520">
+     width="1680" height="420" viewBox="0 0 1680 420">
   <title>What share of DAS software is open source</title>
-  <desc>78 catalogued projects and 595,505 lines, grouped by the reuse terms they publish.</desc>
-  <rect x="0" y="0" width="1680" height="520" fill="#ffffff"/>
+  <desc>77 catalogued projects and 606,453 lines, grouped by the reuse terms they publish.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
-  <text x="841.6" y="62" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT SHARE IS ACTUALLY OPEN SOURCE</text>
-  <text x="840" y="102" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Every catalogued code is counted regardless of licence, so the share can be measured rather than assumed.</text>
-  <text x="140" y="176" font-size="20" fill="#2b2620" text-anchor="start" letter-spacing="2.4">BY PROJECT</text>
-  <rect x="140" y="202" width="1166.67" height="54" fill="#c98500"/>
-  <rect x="1306.67" y="202" width="35.8974" height="54" fill="#e4dccb"/>
-  <rect x="1342.56" y="202" width="179.487" height="54" fill="#4b4b50"/>
-  <rect x="1522.05" y="202" width="17.9487" height="54" fill="#b8b0a0"/>
-  <text x="723.333" y="238" font-size="21" fill="#ffffff" text-anchor="middle">83%</text>
-  <text x="1432.31" y="238" font-size="21" fill="#ffffff" text-anchor="middle">13%</text>
-  <text x="140" y="288" font-size="19" fill="#7a7266" text-anchor="start" font-style="italic">OSI-approved 65   Source-available 2   No licence 10   Unresolved 1</text>
-  <text x="140" y="366" font-size="20" fill="#2b2620" text-anchor="start" letter-spacing="2.4">BY LINE OF CODE</text>
-  <rect x="140" y="392" width="1281.23" height="54" fill="#c98500"/>
-  <rect x="1421.23" y="392" width="67.766" height="54" fill="#e4dccb"/>
-  <rect x="1489" y="392" width="50.9991" height="54" fill="#4b4b50"/>
-  <rect x="1540" y="392" width="0" height="54" fill="#b8b0a0"/>
-  <text x="780.617" y="428" font-size="21" fill="#ffffff" text-anchor="middle">92%</text>
-  <text x="140" y="478" font-size="19" fill="#7a7266" text-anchor="start" font-style="italic">OSI-approved 544,987   Source-available 28,825   No licence 21,693   Unresolved 0</text>
+  <text x="841.6" y="62" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHAT SHARE IS ACTUALLY OPEN SOURCE</text>
+  <text x="140" y="128" font-size="24" fill="#2b2620" text-anchor="start" letter-spacing="2.4">BY PROJECT</text>
+  <rect x="140" y="154" width="1163.64" height="54" fill="#c98500"/>
+  <rect x="1303.64" y="154" width="36.3636" height="54" fill="#e4dccb"/>
+  <rect x="1340" y="154" width="181.818" height="54" fill="#4b4b50"/>
+  <rect x="1521.82" y="154" width="18.1818" height="54" fill="#b8b0a0"/>
+  <text x="721.818" y="190" font-size="25" fill="#ffffff" text-anchor="middle">83%</text>
+  <text x="1430.91" y="190" font-size="25" fill="#ffffff" text-anchor="middle">13%</text>
+  <rect x="140" y="228" width="26" height="18" rx="3" fill="#c98500"/>
+  <text x="178" y="244" font-size="22" fill="#2b2620" text-anchor="start">OSI-approved 64</text>
+  <rect x="490" y="228" width="26" height="18" rx="3" fill="#e4dccb"/>
+  <text x="528" y="244" font-size="22" fill="#2b2620" text-anchor="start">Source-available 2</text>
+  <rect x="840" y="228" width="26" height="18" rx="3" fill="#4b4b50"/>
+  <text x="878" y="244" font-size="22" fill="#2b2620" text-anchor="start">No licence 10</text>
+  <rect x="1190" y="228" width="26" height="18" rx="3" fill="#b8b0a0"/>
+  <text x="1228" y="244" font-size="22" fill="#2b2620" text-anchor="start">Unresolved 1</text>
+  <text x="140" y="314" font-size="24" fill="#2b2620" text-anchor="start" letter-spacing="2.4">BY LINE OF CODE</text>
+  <rect x="140" y="340" width="1258.11" height="54" fill="#c98500"/>
+  <rect x="1398.11" y="340" width="66.5427" height="54" fill="#e4dccb"/>
+  <rect x="1464.65" y="340" width="75.3519" height="54" fill="#4b4b50"/>
+  <rect x="1540" y="340" width="0" height="54" fill="#b8b0a0"/>
+  <text x="769.053" y="376" font-size="25" fill="#ffffff" text-anchor="middle">90%</text>
   </g>
 </svg>

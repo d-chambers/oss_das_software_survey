@@ -28,6 +28,7 @@ def main() -> int:
         plates.totals_plate(totals, resolve_out(args) / "assets"),
         resolve_out(args),
         pdf=args.pdf,
+        png=args.png,
         keep_text=args.keep_text,
     )
     for path in written:

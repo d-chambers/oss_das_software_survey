@@ -18,7 +18,8 @@ forge:
   kind: github
   host: github.com
 registries:
-  pypi: []
+  pypi:
+  - dasio
   conda: []
   julia: []
 publications: []

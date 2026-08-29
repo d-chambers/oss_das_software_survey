@@ -33,11 +33,11 @@ SERIF = "Georgia, 'Times New Roman', serif"
 HERO = 104
 BIG = 76
 MID = 52
-LABEL = 24
-LABEL_SM = 20
-SUB = 21
-SUB_SM = 19
-TINY = 15
+LABEL = 28
+LABEL_SM = 24
+SUB = 25
+SUB_SM = 22
+TINY = 18
 
 
 #: Centred text with letter-spacing renders half a space left of true centre,
@@ -55,6 +55,10 @@ class Canvas:
     title: str
     desc: str
     parts: list[str] = field(default_factory=list)
+    #: Paint behind the figure. None leaves it transparent, which is what a
+    #: slide wants: the deck's own background shows through and the figure
+    #: does not sit in a white card on a coloured slide.
+    background: str | None = None
 
     def text(
         self,
@@ -206,6 +210,15 @@ class Canvas:
 
     def to_svg(self) -> str:
         body = "\n  ".join(self.parts)
+        # A background is painted only when one is asked for. Left transparent,
+        # the figure drops onto a slide of any colour without a white card
+        # around it.
+        ground = (
+            f'  <rect x="0" y="0" width="{self.width}" height="{self.height}"'
+            f' fill="{self.background}"/>\n'
+            if self.background
+            else ""
+        )
         return (
             '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
             f'<svg xmlns="http://www.w3.org/2000/svg" version="1.1"\n'
@@ -213,8 +226,7 @@ class Canvas:
             f' viewBox="0 0 {self.width} {self.height}">\n'
             f"  <title>{escape(self.title)}</title>\n"
             f"  <desc>{escape(self.desc)}</desc>\n"
-            f'  <rect x="0" y="0" width="{self.width}" height="{self.height}"'
-            f' fill="{PAPER}"/>\n'
+            f"{ground}"
             f'  <g font-family="{SERIF}" text-anchor="middle">\n'
             f"  {body}\n"
             "  </g>\n"

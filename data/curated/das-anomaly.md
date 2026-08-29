@@ -18,8 +18,7 @@ forge:
   kind: github
   host: github.com
 registries:
-  pypi:
-  - das-anomaly
+  pypi: []
   conda: []
   julia: []
 publications: []

@@ -2,8 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="420" viewBox="0 0 1680 420">
   <title>Open-source DAS software in numbers</title>
-  <desc>78 projects, 125 contributors, 6,985 commits, 595,505 lines of code.</desc>
-  <rect x="0" y="0" width="1680" height="420" fill="#ffffff"/>
+  <desc>77 projects, 126 contributors, 7,100 commits, 606,453 lines of code.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <g>
     <rect x="141" y="50" width="106" height="84" rx="5" fill="#e4dccb"/>
@@ -49,13 +48,13 @@
   <circle cx="630" cy="228" r="7" fill="#2b2620"/>
   <circle cx="1050" cy="228" r="7" fill="#2b2620"/>
   <circle cx="1470" cy="228" r="7" fill="#2b2620"/>
-  <text x="210" y="326" font-size="88" fill="#2b2620" text-anchor="middle">78</text>
-  <text x="211.2" y="372" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">PROJECTS</text>
-  <text x="630" y="326" font-size="88" fill="#2b2620" text-anchor="middle">125</text>
-  <text x="631.2" y="372" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">CONTRIBUTORS</text>
-  <text x="1050" y="326" font-size="88" fill="#2b2620" text-anchor="middle">6,985</text>
-  <text x="1051.2" y="372" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">COMMITS</text>
-  <text x="1470" y="326" font-size="88" fill="#2b2620" text-anchor="middle">595,505</text>
-  <text x="1471.2" y="372" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">LINES OF CODE</text>
+  <text x="210" y="326" font-size="88" fill="#2b2620" text-anchor="middle">77</text>
+  <text x="211.2" y="372" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">PROJECTS</text>
+  <text x="630" y="326" font-size="88" fill="#2b2620" text-anchor="middle">126</text>
+  <text x="631.2" y="372" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">CONTRIBUTORS</text>
+  <text x="1050" y="326" font-size="88" fill="#2b2620" text-anchor="middle">7,100</text>
+  <text x="1051.2" y="372" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">COMMITS</text>
+  <text x="1470" y="326" font-size="88" fill="#2b2620" text-anchor="middle">606,453</text>
+  <text x="1471.2" y="372" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">LINES OF CODE</text>
   </g>
 </svg>

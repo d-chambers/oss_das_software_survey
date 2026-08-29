@@ -1,14 +1,10 @@
 ---
 id: dasvader
 source: registry
-scanned_at: '2026-08-28T15:06:05+00:00'
+scanned_at: '2026-08-29T06:12:01+00:00'
 pypi: []
 conda: []
-julia:
-- name: DASVader
-  registered: false
-  source_url: https://api.github.com/repos/JuliaRegistries/General/contents/D/DASVader/Package.toml
-  missing: {}
+julia: []
 pypi_downloads_30d: null
 pypi_downloads_180d: null
 conda_downloads_total: null

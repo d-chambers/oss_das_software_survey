@@ -5,10 +5,10 @@ repository: hetinghong/DASView
 repository_url: https://github.com/hetinghong/DASView
 homepage: null
 description: Cross-platform desktop application for interactive DAS visualization and processing.
-status: watchlist
-decision_reason: MIT licensed and clearly in scope, but the repository publishes only a README, a license,
-  and screenshots; no source code is available to review or reuse.
-primary_category: visualization-annotation
+status: excluded
+decision_reason: No public source. The repository holds a README, a licence, and six screenshots
+  and nothing else, so there is no software here to review or measure.
+primary_category: out-of-scope
 capabilities:
 - desktop-application
 - processing

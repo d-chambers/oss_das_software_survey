@@ -2,87 +2,85 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="620" viewBox="0 0 1680 620">
   <title>Commits per year</title>
-  <desc>16,604 commits between 2010 and 2026, split by how central DAS is to each project.</desc>
-  <rect x="0" y="0" width="1680" height="620" fill="#ffffff"/>
+  <desc>16,719 commits between 2010 and 2026, split by how central DAS is to each project.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
-  <text x="841.6" y="62" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHEN THE WORK HAPPENED</text>
-  <text x="840" y="102" font-size="19" fill="#7a7266" text-anchor="middle" font-style="italic">Every commit in the catalogued histories, by the year it was authored.</text>
+  <text x="841.6" y="62" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHEN THE WORK HAPPENED</text>
   <path d="M 180,460 L 1580,460" stroke="#cbc3b3" stroke-width="2" fill="none"/>
-  <rect x="195.647" y="425.569" width="51.0588" height="34.4307" fill="#4b4b50"/>
-  <text x="221.176" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2010</text>
-  <text x="221.176" y="411.569" font-size="15" fill="#2b2620" text-anchor="middle">278</text>
-  <rect x="278" y="418.51" width="51.0588" height="41.4902" fill="#4b4b50"/>
-  <text x="303.529" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2011</text>
-  <text x="303.529" y="404.51" font-size="15" fill="#2b2620" text-anchor="middle">335</text>
-  <rect x="360.353" y="422.845" width="51.0588" height="37.1554" fill="#4b4b50"/>
-  <text x="385.882" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2012</text>
-  <text x="385.882" y="408.845" font-size="15" fill="#2b2620" text-anchor="middle">300</text>
-  <rect x="442.706" y="431.762" width="51.0588" height="28.2381" fill="#4b4b50"/>
-  <text x="468.235" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2013</text>
-  <text x="468.235" y="417.762" font-size="15" fill="#2b2620" text-anchor="middle">228</text>
-  <rect x="525.059" y="415.661" width="51.0588" height="44.3388" fill="#4b4b50"/>
-  <text x="550.588" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2014</text>
-  <text x="550.588" y="401.661" font-size="15" fill="#2b2620" text-anchor="middle">358</text>
-  <rect x="607.412" y="425.569" width="51.0588" height="34.4307" fill="#4b4b50"/>
-  <text x="632.941" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2015</text>
-  <text x="632.941" y="411.569" font-size="15" fill="#2b2620" text-anchor="middle">278</text>
-  <rect x="689.765" y="392.006" width="51.0588" height="67.9944" fill="#4b4b50"/>
-  <text x="715.294" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2016</text>
-  <text x="715.294" y="378.006" font-size="15" fill="#2b2620" text-anchor="middle">549</text>
-  <rect x="772.118" y="301.47" width="51.0588" height="158.53" fill="#4b4b50"/>
-  <text x="797.647" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2017</text>
-  <text x="797.647" y="287.47" font-size="15" fill="#2b2620" text-anchor="middle">1,280</text>
-  <rect x="854.471" y="414.547" width="51.0588" height="45.4535" fill="#4b4b50"/>
-  <rect x="854.471" y="371.818" width="51.0588" height="42.7287" fill="#e4dccb"/>
-  <text x="880" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2018</text>
-  <text x="880" y="357.818" font-size="15" fill="#2b2620" text-anchor="middle">712</text>
-  <rect x="936.824" y="419.996" width="51.0588" height="40.004" fill="#4b4b50"/>
-  <rect x="936.824" y="414.299" width="51.0588" height="5.69716" fill="#c98500"/>
-  <rect x="936.824" y="359.061" width="51.0588" height="55.2377" fill="#e4dccb"/>
-  <text x="962.353" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2019</text>
-  <text x="962.353" y="345.061" font-size="15" fill="#2b2620" text-anchor="middle">815</text>
-  <rect x="1019.18" y="407.859" width="51.0588" height="52.1414" fill="#4b4b50"/>
-  <rect x="1019.18" y="379.62" width="51.0588" height="28.2381" fill="#c98500"/>
-  <rect x="1019.18" y="323.887" width="51.0588" height="55.7331" fill="#e4dccb"/>
-  <text x="1044.71" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2020</text>
-  <text x="1044.71" y="309.887" font-size="15" fill="#2b2620" text-anchor="middle">1,099</text>
-  <rect x="1101.53" y="386.308" width="51.0588" height="73.6916" fill="#4b4b50"/>
-  <rect x="1101.53" y="342.217" width="51.0588" height="44.0911" fill="#c98500"/>
-  <rect x="1101.53" y="337.759" width="51.0588" height="4.45865" fill="#e4dccb"/>
-  <text x="1127.06" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2021</text>
-  <text x="1127.06" y="323.759" font-size="15" fill="#2b2620" text-anchor="middle">987</text>
-  <rect x="1183.88" y="376.153" width="51.0588" height="83.8474" fill="#4b4b50"/>
-  <rect x="1183.88" y="317.942" width="51.0588" height="58.2101" fill="#c98500"/>
-  <rect x="1183.88" y="293.296" width="51.0588" height="24.6464" fill="#e4dccb"/>
-  <text x="1209.41" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2022</text>
-  <text x="1209.41" y="279.296" font-size="15" fill="#2b2620" text-anchor="middle">1,346</text>
-  <rect x="1266.24" y="376.772" width="51.0588" height="83.2281" fill="#4b4b50"/>
-  <rect x="1266.24" y="263.324" width="51.0588" height="113.448" fill="#c98500"/>
-  <rect x="1266.24" y="217.127" width="51.0588" height="46.1966" fill="#e4dccb"/>
-  <text x="1291.76" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2023</text>
-  <text x="1291.76" y="203.127" font-size="15" fill="#2b2620" text-anchor="middle">1,961</text>
-  <rect x="1348.59" y="421.73" width="51.0588" height="38.2701" fill="#4b4b50"/>
-  <rect x="1348.59" y="228.646" width="51.0588" height="193.084" fill="#c98500"/>
-  <rect x="1348.59" y="213.783" width="51.0588" height="14.8622" fill="#e4dccb"/>
-  <text x="1374.12" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2024</text>
-  <text x="1374.12" y="199.783" font-size="15" fill="#2b2620" text-anchor="middle">1,988</text>
-  <rect x="1430.94" y="410.212" width="51.0588" height="49.7883" fill="#4b4b50"/>
-  <rect x="1430.94" y="163.128" width="51.0588" height="247.083" fill="#c98500"/>
-  <rect x="1430.94" y="150" width="51.0588" height="13.1282" fill="#e4dccb"/>
-  <text x="1456.47" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2025</text>
-  <text x="1456.47" y="136" font-size="15" fill="#2b2620" text-anchor="middle">2,503</text>
-  <rect x="1513.29" y="440.431" width="51.0588" height="19.5685" fill="#4b4b50"/>
-  <rect x="1513.29" y="265.182" width="51.0588" height="175.25" fill="#c98500"/>
-  <rect x="1513.29" y="263.448" width="51.0588" height="1.73392" fill="#e4dccb"/>
-  <text x="1538.82" y="492" font-size="19" fill="#7a7266" text-anchor="middle">2026</text>
-  <text x="1538.82" y="516" font-size="15" fill="#a3825a" text-anchor="middle" font-style="italic">part year</text>
-  <text x="1538.82" y="249.448" font-size="15" fill="#2b2620" text-anchor="middle">1,587</text>
+  <rect x="195.647" y="425.417" width="51.0588" height="34.5827" fill="#4b4b50"/>
+  <text x="221.176" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2010</text>
+  <text x="221.176" y="411.417" font-size="18" fill="#2b2620" text-anchor="middle">278</text>
+  <rect x="278" y="418.327" width="51.0588" height="41.6734" fill="#4b4b50"/>
+  <text x="303.529" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2011</text>
+  <text x="303.529" y="404.327" font-size="18" fill="#2b2620" text-anchor="middle">335</text>
+  <rect x="360.353" y="422.681" width="51.0588" height="37.3194" fill="#4b4b50"/>
+  <text x="385.882" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2012</text>
+  <text x="385.882" y="408.681" font-size="18" fill="#2b2620" text-anchor="middle">300</text>
+  <rect x="442.706" y="431.637" width="51.0588" height="28.3628" fill="#4b4b50"/>
+  <text x="468.235" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2013</text>
+  <text x="468.235" y="417.637" font-size="18" fill="#2b2620" text-anchor="middle">228</text>
+  <rect x="525.059" y="415.465" width="51.0588" height="44.5345" fill="#4b4b50"/>
+  <text x="550.588" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2014</text>
+  <text x="550.588" y="401.465" font-size="18" fill="#2b2620" text-anchor="middle">358</text>
+  <rect x="607.412" y="425.417" width="51.0588" height="34.5827" fill="#4b4b50"/>
+  <text x="632.941" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2015</text>
+  <text x="632.941" y="411.417" font-size="18" fill="#2b2620" text-anchor="middle">278</text>
+  <rect x="689.765" y="391.705" width="51.0588" height="68.2945" fill="#4b4b50"/>
+  <text x="715.294" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2016</text>
+  <text x="715.294" y="377.705" font-size="18" fill="#2b2620" text-anchor="middle">549</text>
+  <rect x="772.118" y="300.77" width="51.0588" height="159.23" fill="#4b4b50"/>
+  <text x="797.647" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2017</text>
+  <text x="797.647" y="286.77" font-size="18" fill="#2b2620" text-anchor="middle">1,280</text>
+  <rect x="854.471" y="414.346" width="51.0588" height="45.6541" fill="#4b4b50"/>
+  <rect x="854.471" y="371.429" width="51.0588" height="42.9173" fill="#e4dccb"/>
+  <text x="880" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2018</text>
+  <text x="880" y="357.429" font-size="18" fill="#2b2620" text-anchor="middle">712</text>
+  <rect x="936.824" y="419.819" width="51.0588" height="40.1806" fill="#4b4b50"/>
+  <rect x="936.824" y="414.097" width="51.0588" height="5.72231" fill="#c98500"/>
+  <rect x="936.824" y="358.616" width="51.0588" height="55.4815" fill="#e4dccb"/>
+  <text x="962.353" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2019</text>
+  <text x="962.353" y="344.616" font-size="18" fill="#2b2620" text-anchor="middle">815</text>
+  <rect x="1019.18" y="407.628" width="51.0588" height="52.3716" fill="#4b4b50"/>
+  <rect x="1019.18" y="379.514" width="51.0588" height="28.114" fill="#c98500"/>
+  <rect x="1019.18" y="323.535" width="51.0588" height="55.9791" fill="#e4dccb"/>
+  <text x="1044.71" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2020</text>
+  <text x="1044.71" y="309.535" font-size="18" fill="#2b2620" text-anchor="middle">1,097</text>
+  <rect x="1101.53" y="385.983" width="51.0588" height="74.0169" fill="#4b4b50"/>
+  <rect x="1101.53" y="344.807" width="51.0588" height="41.1758" fill="#c98500"/>
+  <rect x="1101.53" y="340.329" width="51.0588" height="4.47833" fill="#e4dccb"/>
+  <text x="1127.06" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2021</text>
+  <text x="1127.06" y="326.329" font-size="18" fill="#2b2620" text-anchor="middle">962</text>
+  <rect x="1183.88" y="375.783" width="51.0588" height="84.2175" fill="#4b4b50"/>
+  <rect x="1183.88" y="318.186" width="51.0588" height="57.5963" fill="#c98500"/>
+  <rect x="1183.88" y="293.431" width="51.0588" height="24.7552" fill="#e4dccb"/>
+  <text x="1209.41" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2022</text>
+  <text x="1209.41" y="279.431" font-size="18" fill="#2b2620" text-anchor="middle">1,339</text>
+  <rect x="1266.24" y="376.404" width="51.0588" height="83.5955" fill="#4b4b50"/>
+  <rect x="1266.24" y="252.504" width="51.0588" height="123.9" fill="#c98500"/>
+  <rect x="1266.24" y="206.104" width="51.0588" height="46.4005" fill="#e4dccb"/>
+  <text x="1291.76" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2023</text>
+  <text x="1291.76" y="192.104" font-size="18" fill="#2b2620" text-anchor="middle">2,041</text>
+  <rect x="1348.59" y="421.561" width="51.0588" height="38.439" fill="#4b4b50"/>
+  <rect x="1348.59" y="217.673" width="51.0588" height="203.888" fill="#c98500"/>
+  <rect x="1348.59" y="202.745" width="51.0588" height="14.9278" fill="#e4dccb"/>
+  <text x="1374.12" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2024</text>
+  <text x="1374.12" y="188.745" font-size="18" fill="#2b2620" text-anchor="middle">2,068</text>
+  <rect x="1430.94" y="409.992" width="51.0588" height="50.008" fill="#4b4b50"/>
+  <rect x="1430.94" y="163.186" width="51.0588" height="246.806" fill="#c98500"/>
+  <rect x="1430.94" y="150" width="51.0588" height="13.1862" fill="#e4dccb"/>
+  <text x="1456.47" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2025</text>
+  <text x="1456.47" y="136" font-size="18" fill="#2b2620" text-anchor="middle">2,492</text>
+  <rect x="1513.29" y="440.345" width="51.0588" height="19.6549" fill="#4b4b50"/>
+  <rect x="1513.29" y="264.322" width="51.0588" height="176.023" fill="#c98500"/>
+  <rect x="1513.29" y="262.58" width="51.0588" height="1.74157" fill="#e4dccb"/>
+  <text x="1538.82" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2026</text>
+  <text x="1538.82" y="516" font-size="18" fill="#a3825a" text-anchor="middle" font-style="italic">part year</text>
+  <text x="1538.82" y="248.58" font-size="18" fill="#2b2620" text-anchor="middle">1,587</text>
   <path d="M 100,534 L 1580,534" stroke="#cbc3b3" stroke-width="3" fill="none"/>
   <rect x="342" y="574" width="22" height="22" rx="3" fill="#4b4b50"/>
-  <text x="376" y="592" font-size="19" fill="#2b2620" text-anchor="start">DAS-supporting  7,530</text>
+  <text x="376" y="592" font-size="22" fill="#2b2620" text-anchor="start">DAS-supporting  7,530</text>
   <rect x="762" y="574" width="22" height="22" rx="3" fill="#c98500"/>
-  <text x="796" y="592" font-size="19" fill="#2b2620" text-anchor="start">DAS-native  6,985</text>
+  <text x="796" y="592" font-size="22" fill="#2b2620" text-anchor="start">DAS-native  7,100</text>
   <rect x="1182" y="574" width="22" height="22" rx="3" fill="#e4dccb"/>
-  <text x="1216" y="592" font-size="19" fill="#2b2620" text-anchor="start">Other fiber  2,089</text>
+  <text x="1216" y="592" font-size="22" fill="#2b2620" text-anchor="start">Other fiber  2,089</text>
   </g>
 </svg>

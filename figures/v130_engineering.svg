@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="1680" height="620" viewBox="0 0 1680 620">
+  <title>Can this be depended on?</title>
+  <desc>8 engineering practices across 77 DAS projects: packaged 27%, osi licence 83%, tests 48%, ci 38%, documentation 27%, examples 60%, two or more authors 40%, active this year 69%.</desc>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+  <path d="M 182,375 L 1498,375" stroke="#f1ece1" stroke-width="1.5" fill="none"/>
+  <path d="M 182,280 L 1498,280" stroke="#f1ece1" stroke-width="1.5" fill="none"/>
+  <path d="M 182,185 L 1498,185" stroke="#f1ece1" stroke-width="1.5" fill="none"/>
+  <path d="M 182,90 L 1498,90" stroke="#f1ece1" stroke-width="1.5" fill="none"/>
+  <path d="M 202,62 L 470,62" stroke="#c98500" stroke-width="3" fill="none"/>
+  <text x="336" y="44" font-size="25" fill="#2b2620" text-anchor="middle" font-style="italic">Can I get it?</text>
+  <rect x="202" y="366.364" width="122" height="103.636" rx="3" fill="#c98500"/>
+  <text x="263" y="320.364" font-size="52" fill="#2b2620" text-anchor="middle">27%</text>
+  <text x="263" y="348.364" font-size="18" fill="#7a7266" text-anchor="middle">21 of 77</text>
+  <text x="263" y="506" font-size="22" fill="#2b2620" text-anchor="middle">Packaged</text>
+  <rect x="348" y="154.156" width="122" height="315.844" rx="3" fill="#c98500"/>
+  <text x="409" y="108.156" font-size="52" fill="#2b2620" text-anchor="middle">83%</text>
+  <text x="409" y="136.156" font-size="18" fill="#7a7266" text-anchor="middle">64 of 77</text>
+  <text x="409" y="506" font-size="22" fill="#2b2620" text-anchor="middle">OSI licence</text>
+  <path d="M 538,62 L 806,62" stroke="#4b4b50" stroke-width="3" fill="none"/>
+  <text x="672" y="44" font-size="25" fill="#2b2620" text-anchor="middle" font-style="italic">Can I trust it?</text>
+  <rect x="538" y="287.403" width="122" height="182.597" rx="3" fill="#4b4b50"/>
+  <text x="599" y="241.403" font-size="52" fill="#2b2620" text-anchor="middle">48%</text>
+  <text x="599" y="269.403" font-size="18" fill="#7a7266" text-anchor="middle">37 of 77</text>
+  <text x="599" y="506" font-size="22" fill="#2b2620" text-anchor="middle">Tests</text>
+  <rect x="684" y="326.883" width="122" height="143.117" rx="3" fill="#4b4b50"/>
+  <text x="745" y="280.883" font-size="52" fill="#2b2620" text-anchor="middle">38%</text>
+  <text x="745" y="308.883" font-size="18" fill="#7a7266" text-anchor="middle">29 of 77</text>
+  <text x="745" y="506" font-size="22" fill="#2b2620" text-anchor="middle">CI</text>
+  <path d="M 874,62 L 1142,62" stroke="#d9a63f" stroke-width="3" fill="none"/>
+  <text x="1008" y="44" font-size="25" fill="#2b2620" text-anchor="middle" font-style="italic">Can I learn it?</text>
+  <rect x="874" y="366.364" width="122" height="103.636" rx="3" fill="#d9a63f"/>
+  <text x="935" y="320.364" font-size="52" fill="#2b2620" text-anchor="middle">27%</text>
+  <text x="935" y="348.364" font-size="18" fill="#7a7266" text-anchor="middle">21 of 77</text>
+  <text x="935" y="506" font-size="22" fill="#2b2620" text-anchor="middle">Documentation</text>
+  <rect x="1020" y="242.987" width="122" height="227.013" rx="3" fill="#d9a63f"/>
+  <text x="1081" y="196.987" font-size="52" fill="#2b2620" text-anchor="middle">60%</text>
+  <text x="1081" y="224.987" font-size="18" fill="#7a7266" text-anchor="middle">46 of 77</text>
+  <text x="1081" y="506" font-size="22" fill="#2b2620" text-anchor="middle">Examples</text>
+  <path d="M 1210,62 L 1478,62" stroke="#8a5f1c" stroke-width="3" fill="none"/>
+  <text x="1344" y="44" font-size="25" fill="#2b2620" text-anchor="middle" font-style="italic">Will it last?</text>
+  <rect x="1210" y="317.013" width="122" height="152.987" rx="3" fill="#8a5f1c"/>
+  <text x="1271" y="271.013" font-size="52" fill="#2b2620" text-anchor="middle">40%</text>
+  <text x="1271" y="299.013" font-size="18" fill="#7a7266" text-anchor="middle">31 of 77</text>
+  <text x="1271" y="506" font-size="22" fill="#2b2620" text-anchor="middle">Two or more</text>
+  <text x="1271" y="532" font-size="22" fill="#2b2620" text-anchor="middle">authors</text>
+  <rect x="1356" y="208.442" width="122" height="261.558" rx="3" fill="#8a5f1c"/>
+  <text x="1417" y="162.442" font-size="52" fill="#2b2620" text-anchor="middle">69%</text>
+  <text x="1417" y="190.442" font-size="18" fill="#7a7266" text-anchor="middle">53 of 77</text>
+  <text x="1417" y="506" font-size="22" fill="#2b2620" text-anchor="middle">Active this</text>
+  <text x="1417" y="532" font-size="22" fill="#2b2620" text-anchor="middle">year</text>
+  <path d="M 182,470 L 1498,470" stroke="#cbc3b3" stroke-width="2" fill="none"/>
+  </g>
+</svg>

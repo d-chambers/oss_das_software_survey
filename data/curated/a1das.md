@@ -1,13 +1,14 @@
 ---
 id: a1das
 name: a1das
-repository: coutanto/a1das
-repository_url: https://github.com/coutanto/a1das
+repository: olivier.coutant/a1das-v2
+repository_url: https://gitlab.in2p3.fr/olivier.coutant/a1das-v2
 homepage: null
 description: Python reader and processing routines for Febus Optics DAS data.
-status: watchlist
-decision_reason: The default branch publishes a README and no source, so there is nothing to reuse or
-  review; the code described in it is not in the repository.
+status: included
+decision_reason: Reusable Python reader for Febus DAS data. The GitHub repository is a tombstone whose
+  only file redirects to the GitLab instance the project moved to in December 2023; that repository is
+  the one measured here.
 primary_category: data-management
 capabilities:
 - conversion
@@ -16,8 +17,8 @@ capabilities:
 license_spdx: null
 license_class: unlicensed
 forge:
-  kind: github
-  host: github.com
+  kind: gitlab
+  host: gitlab.in2p3.fr
 registries:
   pypi: []
   conda: []
@@ -26,6 +27,7 @@ publications: []
 das_focus: das-native
 sources:
 - github.com/coutanto/a1das
+- gitlab.in2p3.fr/olivier.coutant/a1das-v2
 reviewed_at: '2026-08-28'
 provenance:
   agent: das-summarizer

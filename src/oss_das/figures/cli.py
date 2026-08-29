@@ -21,6 +21,13 @@ def figure_parser(description: str | None = None) -> argparse.ArgumentParser:
         "--pdf", action="store_true", help="Also write a PDF beside the SVG."
     )
     parser.add_argument(
+        "--no-png",
+        dest="png",
+        action="store_false",
+        help="Skip the PNG. It is written by default, because the PNG is what "
+        "goes on a slide.",
+    )
+    parser.add_argument(
         "--keep-text",
         action="store_true",
         help="Keep PDF text selectable instead of converting it to outlines.",

@@ -19,7 +19,8 @@ forge:
   kind: github
   host: github.com
 registries:
-  pypi: []
+  pypi:
+  - filark
   conda: []
   julia: []
 publications: []

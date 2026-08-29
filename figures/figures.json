@@ -1,10 +1,10 @@
 {
  "source": "working tree",
  "ecosystem_totals": {
-  "projects": 78,
-  "contributors": 125,
-  "commits": 6985,
-  "lines": 595505,
+  "projects": 77,
+  "contributors": 126,
+  "commits": 7100,
+  "lines": 606453,
   "unmirrored": []
  },
  "pipeline_flow": {
@@ -19,15 +19,16 @@
    "git.pyrocko.org"
   ],
   "rows_retrieved": 7218,
-  "candidates": 3200,
+  "candidates": 3201,
   "unreviewed": 0,
   "reviewed": 397,
   "catalogued": 98,
-  "included": 78,
-  "metric_rows": 278,
+  "included": 77,
+  "metric_rows": 280,
   "metric_hosts": [
    "api.github.com",
-   "git.gfz-potsdam.de"
+   "git.gfz-potsdam.de",
+   "gitlab.in2p3.fr"
   ],
   "summarised": 71,
   "summary_models": [
@@ -37,11 +38,11 @@
  },
  "funnel": {
   "snapshot": "working tree",
-  "candidates": 3200,
+  "candidates": 3201,
   "stages": [
    [
     "Rejected",
-    2803
+    2804
    ],
    [
     "Not reusable",
@@ -53,18 +54,14 @@
    ],
    [
     "Duplicate or collision",
-    64
+    69
    ],
    [
     "Teaching or no source",
-    14
-   ],
-   [
-    "Out of scope",
-    8
+    18
    ]
   ],
-  "in_scope": 78,
+  "in_scope": 77,
   "supporting": 5,
   "other_fiber": 7,
   "supporting_names": [
@@ -91,13 +88,13 @@
    "Literature"
   ],
   "pending": [],
-  "accounted": 3200
+  "accounted": 3201
  },
  "licence_mix": {
   "by_class": [
    [
     "osi-approved",
-    65
+    64
    ],
    [
     "source-available",
@@ -123,21 +120,21 @@
    ],
    [
     "unlicensed",
-    21693
+    32641
    ],
    [
     "unknown",
     0
    ]
   ],
-  "projects": 78,
-  "lines": 595505
+  "projects": 77,
+  "lines": 606453
  },
  "composition": {
   "languages": [
    [
     "Python",
-    470676
+    476844
    ],
    [
     "Jupyter",
@@ -161,11 +158,15 @@
    ],
    [
     "C",
-    3837
+    5439
+   ],
+   [
+    "Fortran",
+    3170
    ],
    [
     "Shell",
-    2210
+    2218
    ],
    [
     "CUDA",
@@ -188,15 +189,25 @@
     58
    ]
   ],
-  "total_lines": 595505,
-  "projects": 78,
-  "with_pypi": 16,
-  "with_conda": 4,
-  "with_julia": 1,
-  "with_none": 61
+  "total_lines": 606453,
+  "projects": 77,
+  "with_pypi": 21,
+  "with_conda": 3,
+  "with_julia": 0,
+  "with_none": 56,
+  "packaged": 21,
+  "with_packaging": 51
  },
  "growth": {
   "years": [
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
    2018,
    2019,
    2020,
@@ -209,22 +220,60 @@
   ],
   "by_class": [
    [
+    "das-supporting",
+    [
+     278,
+     335,
+     300,
+     228,
+     358,
+     278,
+     549,
+     1280,
+     367,
+     323,
+     421,
+     595,
+     677,
+     672,
+     309,
+     402,
+     158
+    ]
+   ],
+   [
     "das-native",
     [
      0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
      46,
-     228,
-     356,
-     470,
-     916,
-     1559,
-     1997,
-     1416
+     226,
+     331,
+     463,
+     996,
+     1639,
+     1984,
+     1415
     ]
    ],
    [
     "other-fiber",
     [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
      345,
      446,
      450,
@@ -235,34 +284,20 @@
      106,
      14
     ]
-   ],
-   [
-    "das-supporting",
-    [
-     0,
-     0,
-     0,
-     0,
-     111,
-     109,
-     36,
-     6,
-     3
-    ]
    ]
   ],
   "class_totals": [
    [
+    "das-supporting",
+    7530
+   ],
+   [
     "das-native",
-    6988
+    7100
    ],
    [
     "other-fiber",
     2089
-   ],
-   [
-    "das-supporting",
-    265
    ]
   ]
  },
@@ -348,6 +383,15 @@
     "authors": 2,
     "days": 398,
     "lines": 55057
+   },
+   {
+    "project_id": "a1das",
+    "name": "a1das",
+    "role": "other",
+    "commits": 178,
+    "authors": 3,
+    "days": 340,
+    "lines": 10948
    },
    {
     "project_id": "rnn-das",
@@ -492,15 +536,6 @@
     "authors": 1,
     "days": 73,
     "lines": 3610
-   },
-   {
-    "project_id": "a1das",
-    "name": "a1das",
-    "role": "other",
-    "commits": 52,
-    "authors": 1,
-    "days": 1270,
-    "lines": 0
    },
    {
     "project_id": "xpick",
@@ -791,15 +826,6 @@
     "lines": 2920
    },
    {
-    "project_id": "dasview",
-    "name": "DASView",
-    "role": "viewer",
-    "commits": 11,
-    "authors": 1,
-    "days": 8,
-    "lines": 0
-   },
-   {
     "project_id": "das-flink",
     "name": "DAS-Flink",
     "role": "framework",
@@ -969,6 +995,67 @@
     "authors": 1,
     "days": 0,
     "lines": 6878
+   }
+  ]
+ },
+ "engineering": {
+  "projects": 77,
+  "practices": [
+   {
+    "key": "packaged",
+    "label": "Packaged",
+    "gate": "Can I get it?",
+    "note": "on PyPI, conda or Julia",
+    "projects": 21
+   },
+   {
+    "key": "licence",
+    "label": "OSI licence",
+    "gate": "Can I get it?",
+    "note": "legally reusable",
+    "projects": 64
+   },
+   {
+    "key": "tests",
+    "label": "Tests",
+    "gate": "Can I trust it?",
+    "note": "a test suite in the repo",
+    "projects": 37
+   },
+   {
+    "key": "ci",
+    "label": "CI",
+    "gate": "Can I trust it?",
+    "note": "a workflow runs",
+    "projects": 29
+   },
+   {
+    "key": "docs",
+    "label": "Documentation",
+    "gate": "Can I learn it?",
+    "note": "beyond the README",
+    "projects": 21
+   },
+   {
+    "key": "examples",
+    "label": "Examples",
+    "gate": "Can I learn it?",
+    "note": "tutorials or notebooks",
+    "projects": 46
+   },
+   {
+    "key": "authors",
+    "label": "Two or more authors",
+    "gate": "Will it last?",
+    "note": "more than one person",
+    "projects": 31
+   },
+   {
+    "key": "active",
+    "label": "Active this year",
+    "gate": "Will it last?",
+    "note": "a commit in 12 months",
+    "projects": 53
    }
   ]
  }

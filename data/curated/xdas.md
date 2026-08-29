@@ -23,8 +23,7 @@ forge:
 registries:
   pypi:
   - xdas
-  conda:
-  - conda-forge/xdas
+  conda: []
   julia: []
 publications:
 - doi: 10.1785/0220240366

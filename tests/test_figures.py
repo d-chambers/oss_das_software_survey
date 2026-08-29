@@ -7,8 +7,16 @@ from xml.etree import ElementTree
 
 import pytest
 
-from oss_das.figures import draw
-from oss_das.figures.data import BOT, unique_authors
+from oss_das.figures import draw, plates
+from oss_das.figures.data import (
+    BOT,
+    PRACTICE_COLUMNS,
+    Engineering,
+    Practice,
+    composition_from_records,
+    engineering_from_records,
+    unique_authors,
+)
 from oss_das.figures.records import frontmatter
 from oss_das.figures.render import RenderError, load_asset, write_figure
 
@@ -115,15 +123,30 @@ class TestCanvas:
 class TestWriteFigure:
     def test_svg_only_writes_one_file(self, tmp_path):
         c = draw.Canvas(width=10, height=10, title="T", desc="D")
-        written = write_figure("demo", c.to_svg(), tmp_path, pdf=False)
+        written = write_figure("demo", c.to_svg(), tmp_path, png=False)
         assert [p.name for p in written] == ["demo.svg"]
         assert (tmp_path / "demo.svg").exists()
 
     @pytest.mark.skipif(shutil.which("inkscape") is None, reason="inkscape required")
-    def test_pdf_is_written_beside_the_svg(self, tmp_path):
+    def test_png_is_written_beside_the_svg_by_default(self, tmp_path):
         c = draw.Canvas(width=200, height=100, title="T", desc="D")
         c.text(100, 50, "figure")
         written = write_figure("demo", c.to_svg(), tmp_path)
+        assert [p.name for p in written] == ["demo.svg", "demo.png"]
+        assert (tmp_path / "demo.png").read_bytes().startswith(b"\x89PNG")
+
+    @pytest.mark.skipif(shutil.which("inkscape") is None, reason="inkscape required")
+    def test_an_empty_figure_still_renders(self, tmp_path):
+        """Nothing drawn means no bounding box; the page is the fallback."""
+        c = draw.Canvas(width=40, height=20, title="T", desc="D")
+        written = write_figure("blank", c.to_svg(), tmp_path)
+        assert [p.name for p in written] == ["blank.svg", "blank.png"]
+
+    @pytest.mark.skipif(shutil.which("inkscape") is None, reason="inkscape required")
+    def test_pdf_is_written_when_asked(self, tmp_path):
+        c = draw.Canvas(width=200, height=100, title="T", desc="D")
+        c.text(100, 50, "figure")
+        written = write_figure("demo", c.to_svg(), tmp_path, pdf=True, png=False)
         assert [p.name for p in written] == ["demo.svg", "demo.pdf"]
         assert (tmp_path / "demo.pdf").read_bytes().startswith(b"%PDF")
 
@@ -148,7 +171,7 @@ class TestPdfTextMode:
     def _pdf(self, tmp_path, name, **kw):
         c = draw.Canvas(width=300, height=120, title="T", desc="D")
         c.text(150, 70, "Distributed", size=40)
-        write_figure(name, c.to_svg(), tmp_path, **kw)
+        write_figure(name, c.to_svg(), tmp_path, pdf=True, png=False, **kw)
         return (tmp_path / f"{name}.pdf").read_bytes()
 
     def test_outlined_pdf_embeds_no_font(self, tmp_path):
@@ -213,3 +236,101 @@ class TestFrontmatter:
                 continue
             for path in root.glob("*.md"):
                 assert frontmatter(path), path
+
+
+class TestEngineering:
+    """The engineering-practices measurement and its plate."""
+
+    def practice(self, key, gate, projects):
+        return Practice(key=key, label=key, gate=gate, note="", projects=projects)
+
+    def engineering(self):
+        return Engineering(
+            practices=(
+                self.practice("packaged", "Can I get it?", 23),
+                self.practice("licence", "Can I get it?", 65),
+                self.practice("docs", "Can I learn it?", 21),
+            ),
+            projects=78,
+            gates=("Can I get it?", "Can I learn it?"),
+        )
+
+    def test_gates_group_their_practices(self):
+        eng = self.engineering()
+        assert [p.key for p in eng.by_gate("Can I get it?")] == ["packaged", "licence"]
+        assert [p.key for p in eng.by_gate("Can I learn it?")] == ["docs"]
+
+    def test_an_unknown_gate_is_empty_not_an_error(self):
+        assert self.engineering().by_gate("Can I fly it?") == ()
+
+    def test_the_sidecar_carries_every_practice(self):
+        sidecar = self.engineering().sidecar()
+        assert sidecar["projects"] == 78
+        assert [p["key"] for p in sidecar["practices"]] == [
+            "packaged",
+            "licence",
+            "docs",
+        ]
+
+    def test_the_plate_is_well_formed_svg(self):
+        ElementTree.fromstring(plates.engineering_plate(self.engineering()))
+
+    def test_every_bar_prints_its_own_count(self):
+        # The pale amber does not clear 3:1 against paper, so a bar that is
+        # not labelled cannot be read at all.
+        svg = plates.engineering_plate(self.engineering())
+        for practice in self.engineering().practices:
+            assert f"{practice.projects} of 78" in svg
+
+    def test_the_closing_sentence_follows_the_practices_it_names(self):
+        # Dropping a column drops its clause rather than raising or printing
+        # the wrong number under the right word.
+        eng = self.engineering()
+        trimmed = Engineering(
+            practices=eng.practices[:1], projects=78, gates=("Can I get it?",)
+        )
+        svg = plates.engineering_plate(trimmed)
+        assert "23 of 78 may legally be reused" not in svg
+        assert "are documented" not in svg
+
+    def test_the_plate_prints_each_count_beside_its_bar(self):
+        # The pale amber does not clear 3:1 against paper, so every bar has to
+        # say its own number rather than be read off the axis.
+        svg = plates.engineering_plate(self.engineering())
+        assert "23 of 78" in svg and "83%" in svg
+
+    def test_every_column_names_a_gate_the_plate_can_colour(self):
+        gates = {gate for _, _, gate, _ in PRACTICE_COLUMNS}
+        assert gates <= set(plates.GATE_COLOUR)
+
+    def test_packaged_agrees_with_the_packaging_figure(self):
+        # Both figures go in the same deck, and both count published
+        # projects. They disagreed once, because this one read a registry
+        # result row as proof of publication when the row said the name was
+        # never published. One definition, checked against the real records.
+        eng = engineering_from_records()
+        packaged = next(p for p in eng.practices if p.key == "packaged")
+        assert packaged.projects == composition_from_records().packaged
+
+    def test_every_das_project_is_measured(self):
+        # The bars share a denominator, so an unmeasured project would be
+        # counted as failing every practice rather than being absent.
+        engineering_from_records()
+
+    def test_practice_keys_are_unique(self):
+        keys = [key for key, _, _, _ in PRACTICE_COLUMNS]
+        assert len(keys) == len(set(keys))
+
+
+class TestWrap:
+    def test_short_text_stays_on_one_line(self):
+        assert plates._wrap("Tests", 14) == ["Tests"]
+
+    def test_a_long_label_breaks_between_words(self):
+        assert plates._wrap("Two or more authors", 14) == ["Two or more", "authors"]
+
+    def test_a_word_longer_than_the_limit_is_not_cut(self):
+        assert plates._wrap("Documentation", 6) == ["Documentation"]
+
+    def test_empty_text_yields_itself(self):
+        assert plates._wrap("", 10) == [""]

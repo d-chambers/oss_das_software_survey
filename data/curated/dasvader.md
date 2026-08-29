@@ -20,8 +20,7 @@ forge:
 registries:
   pypi: []
   conda: []
-  julia:
-  - DASVader
+  julia: []
 publications: []
 das_focus: das-native
 sources:

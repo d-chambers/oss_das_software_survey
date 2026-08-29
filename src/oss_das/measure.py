@@ -323,6 +323,245 @@ def git_record(
     return record, commits
 
 
+# --- practices ----------------------------------------------------------------
+
+#: What a repository has to contain for each engineering practice to count, as
+#: patterns over the lowercased paths at the mainline tip. The rules are listed
+#: here rather than buried in a scanner so a reader can check what was counted:
+#: every claim the practices figure makes is one of these patterns matching one
+#: file, and the record keeps the file it matched.
+#:
+#: They are deliberately generous -- any test directory, any CI provider, any
+#: documentation builder -- because the question is whether the practice is
+#: present at all, not whether it was done to a particular standard. They also
+#: match anywhere in the path rather than only at the root: a mature project is
+#: the one most likely to file its tutorials and release notes inside its
+#: documentation site, and anchoring to the root marked exactly those as absent.
+PRACTICE_RULES: tuple[tuple[str, str], ...] = (
+    ("readme", r"(^|/)readme(\.|$)"),
+    ("license_file", r"(^|/)(licen[cs]e|copying)(\.|-|$)"),
+    (
+        "packaging",
+        r"^(pyproject\.toml|setup\.py|setup\.cfg|package\.json|cargo\.toml"
+        r"|project\.toml|description|namespace|manifest\.toml|meson\.build"
+        # Java and MATLAB ship real packages too, and the catalogue holds
+        # three Maven projects and a MATLAB toolbox that a Python-only list
+        # called unpackaged.
+        r"|pom\.xml|build\.gradle(\.kts)?|[^/]+\.prj)$",
+    ),
+    (
+        "tests",
+        # A test directory only counts when it holds source. This field calls
+        # an instrument measurement a "test" too, and one catalogued project
+        # ships `docs/tests/*.html` describing crosstalk and dynamic-range
+        # tests of an interrogator -- documentation, with no test suite behind
+        # it. Requiring code keeps the domain sense of the word out.
+        r"(^|/)(tests?|testthat)/.*\.(py|m|jl|r|rs|go|c|cc|cpp|java|js|ts|f90|ipynb)$"
+        r"|(^|/)test_[^/]+\.(py|m|jl|r)$"
+        r"|(^|/)[^/]+_test\.(py|jl|go|m)$|(^|/)runtests\.jl$",
+    ),
+    (
+        "ci",
+        r"^\.github/workflows/[^/]+\.ya?ml$|^\.gitlab-ci\.yml$|^\.travis\.yml$"
+        r"|^azure-pipelines\.ya?ml$|^\.circleci/|^appveyor\.yml$|^\.woodpecker",
+    ),
+    (
+        "coverage",
+        r"(^|/)codecov\.ya?ml$|(^|/)\.coveragerc$|(^|/)\.coveralls\.ya?ml$",
+    ),
+    (
+        "docs",
+        r"(^|/)conf\.py$|(^|/)mkdocs\.ya?ml$|(^|/)\.?readthedocs\.ya?ml$"
+        r"|(^|/)_quarto\.ya?ml$|(^|/)_config\.yml$|^vignettes/|^man/[^/]+\.rd$"
+        # Documenter.jl, the Julia documentation builder, has no config file:
+        # a `docs/make.jl` beside a `docs/Project.toml` is the whole convention.
+        r"|(^|/)docs?/make\.jl$",
+    ),
+    (
+        "examples",
+        r"(^|/)(examples?|tutorials?|demos?|notebooks?|how-?tos?|gallery"
+        r"|cookbook|recipes)/|\.ipynb$"
+        # A single worked file, not a directory of them: `Example.py`,
+        # `docs/examples.md`, `run_slip_example.m`. Anchored to the whole stem
+        # so that `example_parameters.py` -- configuration, not a worked
+        # example -- does not qualify.
+        r"|(^|/)(examples?|tutorials?|demos?|quickstart|getting[-_]started)"
+        r"\.(md|rst|qmd|py|m|jl|r)$"
+        r"|[-_]example\.(py|m|jl|r)$",
+    ),
+    (
+        "changelog",
+        r"(^|/)(changelog|changes|history|news|whatsnew|release[-_ ]?notes)(\.|$)",
+    ),
+    (
+        "contributing",
+        r"(^|/)contribut(ing|e)(\.|$)|(^|/)code_of_conduct(\.|$)"
+        # `.github/ISSUE_TEMPLATE/config.yml` only turns blank issues on or
+        # points at a discussion board. A template is guidance; its switch is
+        # not, so the directory counts only for the templates inside it.
+        r"|(^|/)developer[-_ ]?guide(\.|$)"
+        r"|^\.github/issue_template/(?!config\.ya?ml$)[^/]+$",
+    ),
+    (
+        "lint",
+        r"^\.pre-commit-config\.ya?ml$|^\.?ruff\.toml$|^\.flake8$|^\.pylintrc$"
+        r"|^\.eslintrc|^\.style\.yapf$",
+    ),
+    ("typed", r"(^|/)py\.typed$"),
+)
+
+#: Practices no single file proves. A documentation site is normally a build
+#: config, but a project can carry a written manual with no builder at all, and
+#: scoring that as "no documentation" would be false -- so a directory of prose
+#: also counts, above a floor that keeps a stray note or a folder of figures
+#: from passing. The floor is stated here because it is a judgement, not a fact.
+COUNTED_RULES: tuple[tuple[str, str, int], ...] = (
+    ("docs", r"^docs?/.*\.(md|rst|qmd|ipynb|tex|adoc|pdf)$", 3),
+)
+
+#: Paths under a documentation directory that are not documentation for a
+#: reader: a committed build of the site, and the design records some agent
+#: tooling files there. Counting either would say a project is documented on
+#: the strength of its own output or its internal planning.
+NOT_DOCUMENTATION = re.compile(r"(^|/)(_build|_site|site|node_modules|superpowers)/")
+
+#: Practices a `pyproject.toml` can declare instead of carrying its own file.
+#: A project configuring ruff there has the practice as surely as one with a
+#: `.ruff.toml`, and reading the one file avoids scoring it as absent. A test
+#: suite is deliberately not on this list: `[tool.pytest]` in a repository with
+#: no test files is an intention, and the question here is what was written.
+PYPROJECT_TABLES: tuple[tuple[str, str], ...] = (
+    ("coverage", r"\[tool\.coverage"),
+    ("lint", r"\[tool\.(ruff|black|flake8|pylint|isort)"),
+    # The table name has to end where it is written: `[tool.typos]` is a
+    # spelling checker, and without the boundary it read as a type checker.
+    ("typed", r"\[tool\.(mypy|ty|pyright)[\]. ]"),
+)
+
+#: Coverage services publish a badge in the README and nothing in the tree, so
+#: a project can measure coverage with no coverage file to find.
+COVERAGE_BADGE = re.compile(r"codecov\.io|coveralls\.io|shields\.io/coveralls", re.I)
+
+
+def _blob(repo: Path, ref: str, path: str, *, timeout: int) -> str:
+    """One file's text at ``ref``, or empty if it is not there or not text."""
+    try:
+        return run_git(["-C", str(repo), "show", f"{ref}:{path}"], timeout=timeout)
+    except GitError:
+        return ""
+
+
+def _rank(path: str, practice: str) -> tuple[int, int, int, str]:
+    """Sort key picking the file that best evidences ``practice``.
+
+    A file naming the practice comes first -- `tests/test_zarr.py` proves a
+    suite in a way that `tests/__init__.py` does not, though both sit in the
+    same directory -- and the shallowest, then shortest, path breaks the tie.
+    """
+    stem = practice.rstrip("s").split("_")[0]
+    named = stem not in path.rsplit("/", 1)[-1].lower()
+    return (named, path.count("/"), len(path), path)
+
+
+def practices_from_tree(
+    paths: Iterable[str], *, readme: str = "", pyproject: str = ""
+) -> dict[str, str]:
+    """Map each practice to the file that evidences it, omitting the absent.
+
+    The evidence is the point: a boolean says a project has tests, but the path
+    says which file made the tool believe it, so a wrong call is one `git show`
+    away from being seen rather than being taken on trust. Where several files
+    match, the shallowest is kept -- a repository's own `tests/` describes it
+    better than a test file vendored three directories down.
+    """
+    listed = list(paths)
+    lowered = [(path, path.lower()) for path in listed]
+    found: dict[str, str] = {}
+    for name, pattern in PRACTICE_RULES:
+        rule = re.compile(pattern)
+        matches = [path for path, low in lowered if rule.search(low)]
+        if matches:
+            found[name] = min(matches, key=lambda path: _rank(path, name))
+    for name, pattern, floor in COUNTED_RULES:
+        if name in found:
+            continue
+        rule = re.compile(pattern)
+        matches = [
+            path
+            for path, low in lowered
+            if rule.search(low) and not NOT_DOCUMENTATION.search(low)
+        ]
+        if len(matches) >= floor:
+            shallowest = min(matches, key=lambda path: _rank(path, name))
+            found[name] = f"{shallowest} (+{len(matches) - 1} more)"
+    for name, table in PYPROJECT_TABLES:
+        if name not in found and re.search(table, pyproject):
+            found[name] = "pyproject.toml"
+    if "coverage" not in found and COVERAGE_BADGE.search(readme):
+        found["coverage"] = "README badge"
+    return found
+
+
+def practices_record(
+    project: ProjectRecord, repos: Path, *, timeout: int = 900
+) -> dict[str, Any]:
+    """Record which engineering practices one project's tip tree shows.
+
+    Read from the mirror rather than from a forge API, so every project is
+    judged by the same rules whoever hosts it -- GitHub reports a repository's
+    own idea of whether it has tests, and the other forges report nothing.
+    """
+    record: dict[str, Any] = {
+        "id": project.id,
+        "ref": None,
+        "tip": None,
+        "files": None,
+        "practices": {},
+        "evidence": {},
+        "error": "",
+        "missing": {},
+    }
+    if project.repository is None:
+        record["missing"] = {"practices": "not_applicable"}
+        return record
+    repo = mirror_path(repos, project.id)
+    if not repo.exists():
+        record["missing"] = {"practices": "unavailable"}
+        record["error"] = f"no mirror at {repo}"
+        return record
+    try:
+        ref = resolve_mainline(repo, timeout=timeout)
+        if ref is None:
+            record["missing"] = {"practices": "unavailable"}
+            record["error"] = "no mainline ref"
+            return record
+        tip = run_git(
+            ["-C", str(repo), "rev-parse", f"{ref}^{{commit}}"], timeout=timeout
+        ).strip()
+        listing = run_git(
+            ["-C", str(repo), "ls-tree", "-r", "--name-only", ref], timeout=timeout
+        )
+    except GitError as error:
+        record["missing"] = {"practices": "fetch_error"}
+        record["error"] = str(error)
+        return record
+    paths = listing.splitlines()
+    readme = next((p for p in paths if p.lower().startswith("readme")), "")
+    found = practices_from_tree(
+        paths,
+        readme=_blob(repo, ref, readme, timeout=timeout) if readme else "",
+        pyproject=_blob(repo, ref, "pyproject.toml", timeout=timeout),
+    )
+    record.update(
+        ref=ref,
+        tip=tip,
+        files=len(paths),
+        practices={name: name in found for name, _ in PRACTICE_RULES},
+        evidence=dict(sorted(found.items())),
+    )
+    return record
+
+
 # --- forge --------------------------------------------------------------------
 
 
@@ -720,13 +959,22 @@ def publication_record(
     missing: dict[str, str] = {}
     if not items:
         missing["publications"] = "not_applicable"
-    total, reason = _total(items, "cited_by_count", "work")
+    # A book is cited as a book. ExploreDAS ships as an appendix to the SEG
+    # Distinguished Instructor volume, and that volume's citations measure the
+    # field's use of a DAS primer, not of the MATLAB application -- crediting
+    # them to the software made it the most-cited tool in the census. Books
+    # stay in ``publications`` as provenance, with their own count, and are
+    # left out of the totals that stand for the software's reach.
+    counted = [item for item in items if item["work_type"] != "book"]
+    total, reason = _total(counted, "cited_by_count", "work")
     if reason and items:
         missing["citations_total"] = reason
-    canonical = next((i for i in items if i["role"] == "canonical"), None)
+    canonical = next((i for i in counted if i["role"] == "canonical"), None)
     canonical_count = canonical["cited_by_count"] if canonical else None
     if canonical is None:
         missing["canonical_citations"] = "not_applicable"
+        if any(i["role"] == "canonical" for i in items):
+            missing["canonical_citations"] = "not_published"
     elif canonical_count is None:
         missing["canonical_citations"] = canonical["missing"].get("work") or canonical[
             "missing"

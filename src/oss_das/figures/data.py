@@ -205,7 +205,8 @@ HELD_BACK_RULES: tuple[tuple[str, str], ...] = (
     ),
     (
         "no-source",
-        r"private and returns 404|no published source|only a README|publishes only|nothing to reuse",
+        r"private and returns 404|no p(ublished|ublic) source|only a README|publishes only"
+        r"|nothing to reuse|no software here",
     ),
     ("teaching", r"tutorial material|teaching"),
     ("not-reusable", r"demonstration scripts|no packaging|four demonstration"),
@@ -400,6 +401,11 @@ class Composition:
     with_conda: int
     with_julia: int
     with_none: int
+    #: Projects on at least one registry. Not the sum of the three above:
+    #: a project can be on PyPI and conda both.
+    packaged: int = 0
+    #: Projects carrying a packaging manifest, published or not.
+    with_packaging: int = 0
 
     def sidecar(self) -> dict[str, Any]:
         return asdict(self)
@@ -669,10 +675,22 @@ def funnel_from_records() -> Funnel:
     outlets = {
         r["id"] for r in live if focus_of(r) in ("das-native", "other-fiber")
     } | {r["id"] for r in curated.values() if focus_of(r) == "das-supporting"}
+    unclassified: list[str] = []
     for record in curated.values():
         if record["id"] in outlets:
             continue
-        reasons[_classify_reason(record.get("decision_reason") or "")] += 1
+        name = _classify_reason(record.get("decision_reason") or "")
+        if name == "other":
+            unclassified.append(record["id"])
+        reasons[name] += 1
+    # FUNNEL_GROUPS names every bucket the figure draws, and "other" is not
+    # among them, so an unmatched reason would leave the record out of the
+    # funnel entirely. Fail here, naming it, rather than downstream on an
+    # arithmetic mismatch that says only that a number moved by one.
+    assert not unclassified, (
+        "no HELD_BACK_RULES pattern matches the decision_reason of: "
+        f"{', '.join(sorted(unclassified))}"
+    )
 
     bulk = total - len(curated) - len(ledger)
 
@@ -825,12 +843,46 @@ def licence_from_records() -> LicenceMix:
     )
 
 
+#: The registries the scan looks in, in the order a reader meets them.
+REGISTRY_HOSTS = ("pypi", "conda", "julia")
+
+
+def _published(rows: Any, host: str) -> list[str]:
+    """Package names the registry scan actually resolved on one host.
+
+    Each host answers a different question, so each has its own proof of
+    publication: PyPI reports a version, conda answers at all, and the Julia
+    General registry says outright whether a name is registered.
+    """
+    proven = {
+        "pypi": lambda row: row.get("version") is not None,
+        "conda": lambda row: not row.get("error"),
+        "julia": lambda row: row.get("registered") is True,
+    }[host]
+    return [
+        row["name"]
+        for row in (rows or ())
+        if isinstance(row, dict) and row.get("name") and proven(row)
+    ]
+
+
 def composition_from_records() -> Composition:
-    """Languages and packaging, from the git measurements and curated records."""
+    """Languages and packaging, from the git and registry measurements.
+
+    Packaging is counted from the registry scan, never from the curated
+    record's ``registries`` field. That field is a list of names to go and
+    look for, proposed by an agent, and it is wrong in both directions: it
+    claimed a PyPI release for a project that has never published one, a
+    conda-forge feedstock that does not exist, and a Julia registration the
+    scan had already recorded as ``registered: false``, while saying nothing
+    at all about six projects that are on PyPI under their own name. A name
+    only counts once the scan has resolved it.
+    """
     from oss_das.figures import records
 
     curated = records.curated()
     git = records.measured("git")
+    scan = records.measured("registry")
     included = das_project_ids()
     langs: Counter[str] = Counter()
     for pid in included:
@@ -838,27 +890,48 @@ def composition_from_records() -> Composition:
             (git.get(pid) or {}).get("lines_by_language") or {}
         ).items():
             langs[language] += int(count)
-    catalogued = [r for pid, r in curated.items() if pid in included]
+    catalogued = sorted(pid for pid in curated if pid in included)
 
-    def registry(record: dict[str, Any], name: str) -> bool:
-        return bool((record.get("registries") or {}).get(name))
+    def on(pid: str, host: str) -> bool:
+        return bool(_published((scan.get(pid) or {}).get(host), host))
 
-    return Composition(
+    packaged = {pid for pid in catalogued if any(on(pid, h) for h in REGISTRY_HOSTS)}
+    practices = records.measured("practices")
+
+    def configured(pid: str) -> bool:
+        return bool(
+            ((practices.get(pid) or {}).get("practices") or {}).get("packaging")
+        )
+
+    composition = Composition(
         languages=tuple(langs.most_common()),
         total_lines=sum(langs.values()),
         projects=len(catalogued),
-        with_pypi=sum(1 for r in catalogued if registry(r, "pypi")),
-        with_conda=sum(1 for r in catalogued if registry(r, "conda")),
-        with_julia=sum(1 for r in catalogued if registry(r, "julia")),
-        with_none=sum(
-            1
-            for r in catalogued
-            if not any(registry(r, n) for n in ("pypi", "conda", "julia"))
-        ),
+        with_pypi=sum(1 for pid in catalogued if on(pid, "pypi")),
+        with_conda=sum(1 for pid in catalogued if on(pid, "conda")),
+        with_julia=sum(1 for pid in catalogued if on(pid, "julia")),
+        with_none=len(catalogued) - len(packaged),
+        packaged=len(packaged),
+        with_packaging=sum(1 for pid in catalogued if configured(pid)),
     )
+    # The figure reads as a narrowing: set up as a package, then published.
+    # That is only honest while publication implies configuration.
+    assert all(configured(pid) for pid in packaged), (
+        "a project is published without a packaging manifest, so the figure's "
+        "funnel from configured to published no longer nests"
+    )
+    # The figure prints PyPI beside "no package at all" and invites the reader
+    # to add them up. That only works while PyPI is the sole way in; a project
+    # packaged for conda or Julia alone would leave the two short of the total
+    # with nothing on the plate to explain the gap.
+    assert composition.with_pypi == composition.packaged, (
+        f"{composition.packaged - composition.with_pypi} project(s) are packaged "
+        "somewhere other than PyPI; composition_plate must show that host too"
+    )
+    return composition
 
 
-def growth_from_records() -> Growth:
+def growth_from_records(exclude: frozenset[str] = frozenset()) -> Growth:
     """Commits per year, over the same three groups the funnel emits.
 
     The funnel names five seismology tools that also read DAS; four are
@@ -873,6 +946,8 @@ def growth_from_records() -> Growth:
     das = das_project_ids()
     counts: dict[str, Counter[int]] = {}
     for pid, record in curated.items():
+        if pid in exclude:
+            continue
         cls = record.get("das_focus") or "das-native"
         if cls == "not-das":
             continue
@@ -1138,8 +1213,11 @@ def language_licence() -> LanguageLicence:
             ),
             lines=lines[language],
         )
+        # Bars are project counts, but each row is annotated with its line
+        # count, so ties break on size rather than alphabetically: otherwise
+        # the annotations read as unsorted next to bars that are not.
         for language, counts in sorted(
-            grid.items(), key=lambda kv: (-sum(kv[1].values()), kv[0])
+            grid.items(), key=lambda kv: (-sum(kv[1].values()), -lines[kv[0]], kv[0])
         )
     )
     return LanguageLicence(
@@ -1150,3 +1228,214 @@ def language_licence() -> LanguageLicence:
             (licence, totals[licence]) for licence in LICENCE_ORDER if totals[licence]
         ),
     )
+
+
+#: Ten catalogue categories is more than a stacked bar can carry, so near
+#: neighbours are folded together. The grouping is listed here rather than
+#: hidden in a plate, and a category matching nothing lands in the last bucket.
+CATEGORY_GROUPS: dict[str, str] = {
+    "core-framework": "Core frameworks",
+    "data-management": "Data and I/O",
+    "interoperability": "Data and I/O",
+    "compression-storage": "Data and I/O",
+    "processing": "Processing",
+    "application-domain": "Applied domains",
+    "machine-learning-detection": "Machine learning",
+}
+CATEGORY_FALLBACK = "Modelling, viz, other"
+
+
+def _commit_years(pid: str) -> Counter[int]:
+    """A project's human commits, counted by the year they were authored."""
+    from oss_das.figures import records
+
+    years: Counter[int] = Counter()
+    for row in _read(records.data_dir() / "commits" / f"{pid}.csv"):
+        if BOT.search(row["author_name"]) or BOT.search(row["author_email"]):
+            continue
+        stamp = row.get("authored_at") or ""
+        if len(stamp) >= 4 and stamp[:4].isdigit():
+            years[int(stamp[:4])] += 1
+    return years
+
+
+def _growth_over(group_of: Any, order: Any = None) -> Growth:
+    """Commits per year for the DAS project set, grouped by ``group_of``."""
+    counts: dict[str, Counter[int]] = {}
+    for pid in das_project_ids():
+        key = group_of(pid)
+        if key is None:
+            continue
+        counts.setdefault(key, Counter()).update(_commit_years(pid))
+    years = sorted({y for c in counts.values() for y in c})
+    keys = (
+        sorted(counts, key=order)
+        if order
+        else sorted(counts, key=lambda k: -sum(counts[k].values()))
+    )
+    series = tuple((k, tuple(counts[k].get(y, 0) for y in years)) for k in keys)
+    return Growth(
+        years=tuple(years),
+        by_class=series,
+        class_totals=tuple((k, sum(v)) for k, v in series),
+    )
+
+
+def growth_by_category() -> Growth:
+    """What kind of software the work went into, year by year."""
+    from oss_das.figures import records
+
+    curated = records.curated()
+
+    def group_of(pid: str) -> str:
+        category = curated[pid].get("primary_category")
+        return CATEGORY_GROUPS.get(category, CATEGORY_FALLBACK)
+
+    return _growth_over(group_of)
+
+
+def growth_by_cohort() -> Growth:
+    """Which arrival cohort the work came from, year by year.
+
+    Answers the question a growth curve otherwise begs: is the field growing
+    because new projects keep arriving, or because existing ones deepen?
+    """
+    from oss_das.figures import records
+
+    git = records.measured("git")
+
+    def group_of(pid: str) -> str | None:
+        first = (git.get(pid) or {}).get("first_commit_at")
+        return f"Started {str(first)[:4]}" if first else None
+
+    return _growth_over(group_of, order=lambda k: k)
+
+
+@dataclass(frozen=True)
+class Practice:
+    """One engineering practice, and how much of the ecosystem shows it."""
+
+    key: str
+    label: str
+    gate: str
+    note: str
+    projects: int
+
+
+@dataclass(frozen=True)
+class Engineering:
+    """What the ecosystem does that makes its software usable by someone else.
+
+    Grouped into the four questions a reader asks before depending on
+    something: can I get it, can I trust it, can I learn it, will it last.
+    """
+
+    practices: tuple[Practice, ...]
+    projects: int
+    gates: tuple[str, ...]
+
+    def by_gate(self, gate: str) -> tuple[Practice, ...]:
+        return tuple(p for p in self.practices if p.gate == gate)
+
+    def sidecar(self) -> dict[str, Any]:
+        return {
+            "projects": self.projects,
+            "practices": [asdict(p) for p in self.practices],
+        }
+
+
+#: The practices the figure reports, in reading order, with the gate each one
+#: answers. The list is short on purpose: every column here is something that
+#: stops a stranger from using the software if it is missing, which is why
+#: linting, typing and release notes are measured but not shown -- their
+#: absence is a style, not an obstacle.
+PRACTICE_COLUMNS: tuple[tuple[str, str, str, str], ...] = (
+    ("packaged", "Packaged", "Can I get it?", "on PyPI, conda or Julia"),
+    ("licence", "OSI licence", "Can I get it?", "legally reusable"),
+    ("tests", "Tests", "Can I trust it?", "a test suite in the repo"),
+    ("ci", "CI", "Can I trust it?", "a workflow runs"),
+    ("docs", "Documentation", "Can I learn it?", "beyond the README"),
+    ("examples", "Examples", "Can I learn it?", "tutorials or notebooks"),
+    ("authors", "Two or more authors", "Will it last?", "more than one person"),
+    ("active", "Active this year", "Will it last?", "a commit in 12 months"),
+)
+
+#: How long since the last commit a project may be and still count as active.
+ACTIVE_DAYS = 365
+
+
+def engineering_from_records() -> Engineering:
+    """Count each practice over the DAS projects, from the markdown records.
+
+    Read from the practices measurement rather than a forge's own flags: a
+    forge reports what it can see about repositories it hosts, and the
+    catalogue spans four hosts, so only the mirrors give every project the
+    same test.
+    """
+    from datetime import date
+
+    from oss_das.figures import records
+
+    curated = records.curated()
+    practices = records.measured("practices")
+    registry = records.measured("registry")
+    git = records.measured("git")
+    ids = sorted(das_project_ids())
+    today = date.today()
+    # Every bar is a share of the same denominator, so a project the scan
+    # could not read would be counted as failing each practice rather than
+    # being absent from it. Records carry a reason instead of a zero
+    # everywhere else in this repository; refusing is the same rule.
+    unmeasured = sorted(
+        pid
+        for pid in ids
+        if not ((practices.get(pid) or {}).get("practices"))
+        or pid not in git
+        or pid not in registry
+    )
+    assert not unmeasured, (
+        "no practices, git or registry measurement for "
+        f"{', '.join(unmeasured)}; re-run b011, b013 and b015 rather than "
+        "publishing a figure that reads their silence as a failed practice"
+    )
+
+    def has(pid: str, key: str) -> bool:
+        record = practices.get(pid) or {}
+        tree = record.get("practices") or {}
+        if key in ("tests", "ci", "docs", "examples"):
+            return bool(tree.get(key))
+        if key == "licence":
+            return curated[pid].get("license_class") == "osi-approved"
+        if key == "packaged":
+            reg = registry.get(pid) or {}
+            # A result row is a name the scan went and looked for, not proof
+            # it found one: PyPI answers with `version: null` for a name that
+            # was never published, and the Julia registry says
+            # `registered: false` outright. `_published` holds the one
+            # definition of publication this deck uses, so the packaging
+            # figure and this one cannot report different totals.
+            return any(_published(reg.get(host), host) for host in REGISTRY_HOSTS)
+        if key == "authors":
+            return ((git.get(pid) or {}).get("authors") or 0) > 1
+        # A project whose mirror carries no commit date is not counted active:
+        # unknown is not the same claim as recent.
+        last = str((git.get(pid) or {}).get("last_commit_at") or "")[:10]
+        if not last:
+            return False
+        return (today - date.fromisoformat(last)).days <= ACTIVE_DAYS
+
+    counted = tuple(
+        Practice(
+            key=key,
+            label=label,
+            gate=gate,
+            note=note,
+            projects=sum(1 for pid in ids if has(pid, key)),
+        )
+        for key, label, gate, note in PRACTICE_COLUMNS
+    )
+    gates: list[str] = []
+    for practice in counted:
+        if practice.gate not in gates:
+            gates.append(practice.gate)
+    return Engineering(practices=counted, projects=len(ids), gates=tuple(gates))

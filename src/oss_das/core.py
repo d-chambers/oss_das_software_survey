@@ -19,7 +19,7 @@ import yaml
 from oss_das.models import ProjectRecord
 
 #: Sources a measured record can come from; each is one B script's directory.
-MEASURED_SOURCES = ("mirror", "git", "forge", "registry", "publications")
+MEASURED_SOURCES = ("mirror", "git", "forge", "registry", "publications", "practices")
 
 
 @dataclass(frozen=True)

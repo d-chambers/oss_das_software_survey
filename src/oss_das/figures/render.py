@@ -1,7 +1,8 @@
-"""Write a figure to disk as SVG and PDF.
+"""Write a figure to disk as SVG, PNG, and optionally PDF.
 
-The SVG is the source of truth; the PDF is what goes into a slide deck or a
-paper, where a vector that a viewer cannot re-render is what is wanted.
+The SVG is the source of truth. The PNG is what goes on a slide: PowerPoint
+places it without re-rendering anything, so what is seen in the deck is exactly
+what was written here. The PDF is for a paper, where a vector is wanted.
 
 Conversion shells out to Inkscape rather than using a Python renderer, because
 these figures are set in Georgia and the point of the PDF is that the typography
@@ -31,37 +32,74 @@ def _converter() -> str:
     return found
 
 
-def write_figure(
-    name: str, svg: str, out_dir: Path, *, pdf: bool = True, keep_text: bool = False
-) -> list[Path]:
-    """Write ``name``.svg, and ``name``.pdf unless ``pdf`` is false.
+#: Pixels across the exported PNG. Wide enough to fill a 16:9 slide at better
+#: than screen resolution, so the deck never shows a softened edge.
+PNG_WIDTH = 2400
 
-    Text is converted to outlines by default so the figure renders identically
-    wherever the PDF is opened. Pass ``keep_text`` to keep it live and
+#: User units of clear space left around the ink when cropping. Enough to keep
+#: a descender or a bar's edge off the boundary, not enough to read as margin.
+PNG_MARGIN = 20
+
+
+def _export(svg_path: Path, out_path: Path, args: list[str]) -> Path:
+    # Crop to the ink rather than the canvas: whatever slack a plate leaves at
+    # its edges is not the slide's problem. A figure with nothing drawn in it
+    # has no bounding box to crop to, so fall back to the page and let an
+    # empty figure be empty rather than an error.
+    crops = (["--export-area-drawing", f"--export-margin={PNG_MARGIN}"], [])
+    for crop in crops:
+        result = subprocess.run(
+            [
+                _converter(),
+                *crop,
+                *args,
+                f"--export-filename={out_path}",
+                str(svg_path),
+            ],
+            capture_output=True,
+            timeout=180,
+        )
+        if result.returncode == 0 and out_path.exists():
+            return out_path
+        stderr = result.stderr.decode("utf-8", "replace")
+        if "bounding box" not in stderr:
+            break
+    detail = stderr.strip().splitlines()
+    raise RenderError(detail[-1] if detail else f"inkscape exited {result.returncode}")
+
+
+def write_figure(
+    name: str,
+    svg: str,
+    out_dir: Path,
+    *,
+    pdf: bool = False,
+    png: bool = True,
+    keep_text: bool = False,
+) -> list[Path]:
+    """Write ``name``.svg, ``name``.png, and ``name``.pdf if asked.
+
+    Text is converted to outlines in the PDF by default so the figure renders
+    identically wherever it is opened. Pass ``keep_text`` to keep it live and
     selectable, which a publisher may require but which then depends on the
     reader having the font."""
     out_dir.mkdir(parents=True, exist_ok=True)
     svg_path = out_dir / f"{name}.svg"
     svg_path.write_text(svg, encoding="utf-8")
     written = [svg_path]
-    if not pdf:
-        return written
-    pdf_path = out_dir / f"{name}.pdf"
-    command = [_converter(), "--export-type=pdf"]
-    if not keep_text:
-        command.append("--export-text-to-path")
-    command += [f"--export-filename={pdf_path}", str(svg_path)]
-    result = subprocess.run(
-        command,
-        capture_output=True,
-        timeout=180,
-    )
-    if result.returncode != 0 or not pdf_path.exists():
-        detail = result.stderr.decode("utf-8", "replace").strip().splitlines()
-        raise RenderError(
-            detail[-1] if detail else f"inkscape exited {result.returncode}"
+    if png:
+        written.append(
+            _export(
+                svg_path,
+                out_dir / f"{name}.png",
+                ["--export-type=png", f"--export-width={PNG_WIDTH}"],
+            )
         )
-    written.append(pdf_path)
+    if pdf:
+        args = ["--export-type=pdf"]
+        if not keep_text:
+            args.append("--export-text-to-path")
+        written.append(_export(svg_path, out_dir / f"{name}.pdf", args))
     return written
 
 

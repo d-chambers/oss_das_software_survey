@@ -30,6 +30,7 @@ from oss_das.measure import (
     forge_record,
     git_record,
     mirror_record,
+    practices_from_tree,
     publication_record,
     registry_record,
     write_commits,
@@ -646,3 +647,125 @@ class TestPublicationRecord:
         record = publication_record(related, openalex_client({"10.1/related": 3}))
         assert record["citations_total"] == 3
         assert record["missing"] == {"canonical_citations": "not_applicable"}
+
+
+class TestPracticesFromTree:
+    """The false calls this rule set was built by fixing, kept as tests.
+
+    Every case here is a project in the catalogue that the first version of
+    the rules judged wrongly, so a later loosening or tightening cannot
+    quietly reintroduce one.
+    """
+
+    def test_an_empty_tree_shows_nothing(self):
+        assert practices_from_tree([]) == {}
+
+    def test_tests_need_source_not_a_documented_instrument_test(self):
+        # pySEAFOM publishes `docs/tests/*.html` describing crosstalk and
+        # dynamic-range tests of an interrogator. In this field a "test" is
+        # often a measurement, and documenting one is not a test suite.
+        found = practices_from_tree(["docs/tests/fidelity.html", "README.md"])
+        assert "tests" not in found
+
+    def test_a_test_directory_holding_code_counts(self):
+        found = practices_from_tree(["tests/test_zarr.py"])
+        assert found["tests"] == "tests/test_zarr.py"
+
+    def test_pytest_configuration_alone_is_not_a_test_suite(self):
+        # simpleDAS configures pytest and ships no test files.
+        found = practices_from_tree(
+            ["README.md"], pyproject="[tool.pytest.ini_options]"
+        )
+        assert "tests" not in found
+
+    def test_release_notes_inside_the_docs_are_a_changelog(self):
+        # xdas keeps all three of these in its documentation site rather than
+        # at the repository root, which the root-anchored rules called absent.
+        found = practices_from_tree(
+            [
+                "docs/release-notes.md",
+                "docs/contribute.md",
+                "docs/user-guide/how-to/index.md",
+            ]
+        )
+        assert found["changelog"] == "docs/release-notes.md"
+        assert found["contributing"] == "docs/contribute.md"
+        assert found["examples"] == "docs/user-guide/how-to/index.md"
+
+    def test_a_licence_below_the_root_still_counts(self):
+        # DASCore's LICENCE lives in docs/.
+        assert practices_from_tree(["docs/LICENSE"])["license_file"] == "docs/LICENSE"
+
+    def test_documenter_jl_is_a_documentation_builder(self):
+        # FebusTools.jl has no docs config -- `docs/make.jl` is the convention.
+        assert practices_from_tree(["docs/make.jl"])["docs"] == "docs/make.jl"
+
+    def test_a_single_worked_file_is_an_example(self):
+        assert practices_from_tree(["Example.py"])["examples"] == "Example.py"
+
+    def test_a_configuration_module_is_not_a_worked_example(self):
+        # DerZug's `example_parameters.py` is configuration, not a tutorial.
+        assert "examples" not in practices_from_tree(
+            ["src/derzug/example_parameters.py"]
+        )
+
+    def test_a_folder_of_figures_is_not_documentation(self):
+        # das-anomaly's docs/ holds only images; the floor keeps it out.
+        tree = ["docs/figures/logo.png", "docs/figures/architecture.jpg"]
+        assert "docs" not in practices_from_tree(tree)
+
+    def test_three_prose_files_clear_the_documentation_floor(self):
+        tree = [f"docs/chapter{i}.md" for i in range(3)]
+        assert practices_from_tree(tree)["docs"].startswith("docs/chapter")
+
+    def test_a_coverage_badge_counts_when_no_config_is_committed(self):
+        found = practices_from_tree(
+            ["README.md"], readme="[![cov](https://codecov.io/x)]"
+        )
+        assert found["coverage"] == "README badge"
+
+    def test_evidence_prefers_the_shallowest_match(self):
+        # Depth, not spelling: the deep path sorts first alphabetically and is
+        # the shorter of the two once the directories are counted.
+        tree = ["a/b/c/tests/test_x.py", "tests/test_patch_operations.py"]
+        assert practices_from_tree(tree)["tests"] == "tests/test_patch_operations.py"
+
+    def test_evidence_prefers_a_file_that_names_the_practice(self):
+        # `tests/__init__.py` sorts first on every tie-breaker but proves
+        # nothing on its own; the named file is the evidence a reader can check.
+        tree = ["tests/__init__.py", "tests/test_patch.py"]
+        assert practices_from_tree(tree)["tests"] == "tests/test_patch.py"
+
+    def test_an_issue_template_switch_is_not_contribution_guidance(self):
+        # unidas' config.yml only enables blank issues and links to Discussions.
+        tree = [".github/ISSUE_TEMPLATE/config.yml"]
+        assert "contributing" not in practices_from_tree(tree)
+
+    def test_an_issue_template_itself_is_guidance(self):
+        tree = [".github/ISSUE_TEMPLATE/bug_report.md"]
+        assert practices_from_tree(tree)["contributing"].endswith("bug_report.md")
+
+    def test_a_spelling_checker_is_not_a_type_checker(self):
+        # DerZug configures `[tool.typos]`, which `[tool.ty` matched.
+        assert "typed" not in practices_from_tree([], pyproject="[tool.typos.default]")
+
+    def test_a_type_checker_still_counts(self):
+        assert practices_from_tree([], pyproject="[tool.ty]")["typed"] == (
+            "pyproject.toml"
+        )
+
+    def test_a_committed_docs_build_is_not_documentation(self):
+        # A project that commits its rendered site would otherwise be
+        # documented on the strength of its own output.
+        tree = [f"docs/_build/html/page{i}.md" for i in range(6)]
+        assert "docs" not in practices_from_tree(tree)
+
+    def test_a_pdf_manual_counts_as_documentation(self):
+        tree = [f"doc/chapter{i}.pdf" for i in range(3)]
+        assert practices_from_tree(tree)["docs"].startswith("doc/chapter")
+
+    def test_a_maven_project_is_packaged(self):
+        assert practices_from_tree(["pom.xml"])["packaging"] == "pom.xml"
+
+    def test_a_matlab_toolbox_project_is_packaged(self):
+        assert practices_from_tree(["ExploreDAS.prj"])["packaging"] == "ExploreDAS.prj"

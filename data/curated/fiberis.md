@@ -21,7 +21,8 @@ forge:
   kind: github
   host: github.com
 registries:
-  pypi: []
+  pypi:
+  - fiberis
   conda: []
   julia: []
 publications: []

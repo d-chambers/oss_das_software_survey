@@ -2,8 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1220" height="850" viewBox="0 0 1220 850">
   <title>Every candidate, and how it left</title>
-  <desc>3,200 candidates discovered; 78 in scope. Each stage is a count of candidates leaving by exactly one route.</desc>
-  <rect x="0" y="0" width="1220" height="850" fill="#ffffff"/>
+  <desc>3,201 candidates discovered; 77 in scope. Each stage is a count of candidates leaving by exactly one route.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="374.4" y="66" font-size="21" fill="#2b2620" text-anchor="middle">GitHub</text>
   <path d="M 374.4,79 L 458,120" stroke="#4b4b50" stroke-width="2" fill="none"/>
@@ -21,11 +20,11 @@
   <path d="M 845.6,79 L 762,120" stroke="#4b4b50" stroke-width="2" fill="none"/>
   <path d="M 762,120 L 771.487,107.551 L 777.652,120.12 Z" fill="#4b4b50"/>
   <path d="M 420.0,126 L 800.0,126 L 638.0,410 L 638.0,458 L 582.0,458 L 582.0,410 Z" fill="#f1ece1"/>
-  <text x="610" y="188" font-size="58" fill="#2b2620" text-anchor="middle">3,200</text>
+  <text x="610" y="188" font-size="58" fill="#2b2620" text-anchor="middle">3,201</text>
   <text x="611.1" y="218" font-size="15" fill="#2b2620" text-anchor="middle" letter-spacing="2.2">CANDIDATES FOUND</text>
   <path d="M 736.113,238 L 814.113,238" stroke="#cbc3b3" stroke-width="2" fill="none"/>
   <path d="M 814.113,238 L 800.113,245 L 800.113,231 Z" fill="#cbc3b3"/>
-  <text x="832.113" y="239" font-size="26" fill="#4b4b50" text-anchor="start">2,803</text>
+  <text x="832.113" y="239" font-size="26" fill="#4b4b50" text-anchor="start">2,804</text>
   <text x="832.113" y="257" font-size="13" fill="#7a7266" text-anchor="start" letter-spacing="1.4">REJECTED</text>
   <path d="M 506.134,277 L 428.134,277" stroke="#cbc3b3" stroke-width="2" fill="none"/>
   <path d="M 428.134,277 L 442.134,270 L 442.134,284 Z" fill="#cbc3b3"/>
@@ -41,7 +40,7 @@
   <text x="454.627" y="374" font-size="13" fill="#7a7266" text-anchor="end" letter-spacing="1.4">DUPLICATE OR COLLISION</text>
   <path d="M 647.127,394 L 725.127,394" stroke="#cbc3b3" stroke-width="2" fill="none"/>
   <path d="M 725.127,394 L 711.127,401 L 711.127,387 Z" fill="#cbc3b3"/>
-  <text x="743.127" y="395" font-size="26" fill="#4b4b50" text-anchor="start">17</text>
+  <text x="743.127" y="395" font-size="26" fill="#4b4b50" text-anchor="start">18</text>
   <text x="743.127" y="413" font-size="13" fill="#7a7266" text-anchor="start" letter-spacing="1.4">TEACHING OR NO SOURCE</text>
   <path d="M 610,464 L 610,488" stroke="#c98500" stroke-width="3.5" fill="none"/>
   <path d="M 610,494 L 602,478 L 618,478 Z" fill="#c98500"/>
@@ -53,7 +52,7 @@
   <text x="310" y="680" font-size="15" fill="#2b2620" text-anchor="middle">SWPVPSEKMInv</text>
   <text x="310" y="700" font-size="15" fill="#2b2620" text-anchor="middle">SeisBench</text>
   <text x="310" y="720" font-size="15" fill="#2b2620" text-anchor="middle">pyseistr</text>
-  <text x="610" y="554" font-size="58" fill="#c98500" text-anchor="middle">78</text>
+  <text x="610" y="554" font-size="58" fill="#c98500" text-anchor="middle">77</text>
   <text x="611.1" y="584" font-size="15" fill="#2b2620" text-anchor="middle" letter-spacing="2.2">DAS PROJECTS</text>
   <text x="910" y="554" font-size="32" fill="#4b4b50" text-anchor="middle">7</text>
   <text x="911.1" y="584" font-size="15" fill="#7a7266" text-anchor="middle" letter-spacing="2.2">OTHER FIBRE SENSING</text>

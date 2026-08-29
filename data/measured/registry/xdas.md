@@ -1,14 +1,14 @@
 ---
 id: xdas
 source: registry
-scanned_at: '2026-08-28T15:15:20+00:00'
+scanned_at: '2026-08-29T06:12:08+00:00'
 pypi:
 - name: xdas
   version: 0.2.8
   latest_upload_at: '2026-07-31T06:53:39.748979Z'
   release_count: 18
-  downloads_30d: 745
-  downloads_180d: 6720
+  downloads_30d: 770
+  downloads_180d: 6705
   requires_dist:
   - dask<2025.4.0
   - h5netcdf
@@ -32,17 +32,10 @@ pypi:
   source_url: https://pypi.org/pypi/xdas/json
   missing: {}
   stats_source_url: https://pypistats.org/api/packages/xdas/recent
-conda:
-- channel: conda-forge
-  name: xdas
-  downloads_total: null
-  source_url: https://api.anaconda.org/package/conda-forge/xdas
-  missing:
-    downloads_total: not_published
-  error: https://api.anaconda.org/package/conda-forge/xdas
+conda: []
 julia: []
-pypi_downloads_30d: 745
-pypi_downloads_180d: 6720
+pypi_downloads_30d: 770
+pypi_downloads_180d: 6705
 conda_downloads_total: null
 dependencies:
 - dask
@@ -65,5 +58,5 @@ dependencies:
 - xarray
 - xinterp
 missing:
-  conda_downloads_total: not_published
+  conda_downloads_total: not_applicable
 ---
