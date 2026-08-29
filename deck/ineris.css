@@ -1,0 +1,44 @@
+/* Both marks the Ineris master draws top-left on every slide, at its own
+   proportions: Republique Francaise at (0.33in, 0.12in) 0.63in wide, INERIS at
+   (1.04in, 0.19in) 0.83in wide, on a 10in canvas. Fixed, so no slide can
+   forget them. */
+.slide-logos {
+  position: fixed;
+  top: 2.1vh;
+  left: 3.3vw;
+  z-index: 60;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8vw;
+  pointer-events: none;
+}
+.slide-logos img.rf { width: 4.4vw; }
+.slide-logos img.ineris { width: 5.8vw; margin-top: 0.5vw; }
+
+/* The blue rule the pptx draws under every frame title, and room for the marks. */
+.reveal h2 {
+  border-bottom: 2px solid #000091;
+  padding-bottom: 0.15em;
+  margin-left: 12%;
+  font-size: 1.4em;
+}
+
+/* Figures carry the identity; centre them and let them breathe. */
+.reveal section img { display: block; margin: 0 auto; background: transparent; }
+.reveal .slide figure { text-align: center; }
+
+/* Captions on the logo-axis slides. */
+.reveal .axis-label {
+  font-size: 0.5em;
+  color: #7a7266;
+  display: block;
+  text-align: center;
+  line-height: 1.25;
+}
+.reveal .axis-caption {
+  font-size: 0.58em;
+  color: #000091;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}

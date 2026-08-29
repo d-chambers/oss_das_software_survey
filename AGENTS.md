@@ -44,7 +44,7 @@ A figure built in conversation is not a change to be shipped. Do what was asked 
 
 ## The deck
 
-`cd deck && quarto render` builds `talk.pdf`. That is the whole build: `_quarto.yml` names `prepare.py` as a pre-render step, so quarto runs it. `quarto render --profile notes --output talk-notes.pdf` writes the speaker notes alone.
+`cd deck && quarto render` builds both outputs: `talk.html` to present from, `talk.pdf` as the backup. That is the whole build: `_quarto.yml` names `prepare.py` as a pre-render step, so quarto runs it. `quarto render --profile notes --output talk-notes.pdf` writes the speaker notes alone.
 
 - **A number on a slide is a reference, never a literal.** Slides cite `{{< meta n.<path> >}}` into `figures/figures.json`; a key the sidecar does not define stops the render. The deck this replaced hard-coded its numbers and said 78 projects on one slide and 77 on the next.
 - **Name the numbers a slide quotes.** `sidecar()` exports `hub`/`hub_dependents` rather than leaving them at `providers.0.2`: a positional path is not a citation anyone can read, and quarto cannot resolve one.
@@ -52,7 +52,9 @@ A figure built in conversation is not a change to be shipped. Do what was asked 
 - Hand-drawn SVGs are converted to PDF by the same step; beamer cannot place an SVG.
 - `prepare.py` uses the standard library alone. Quarto invokes a pre-render script with the system interpreter, which cannot see this project's environment.
 - `incremental: true` gives each bullet its own page with the frame title static. That is what animation means in a PDF.
-- Built PDFs, `_numbers.yml` and `_svg/` are gitignored. The source is `slides.qmd`, `_theme.tex` and `assets/`.
+- **Layout rules go in `ineris.css`, not the theme's scss.** A `scss:rules` block compiles silently to nothing when sass fails; plain CSS is inlined verbatim and cannot be dropped without noticing. Only variables belong in `ineris.scss`.
+- **Absolute positioning is reveal-only.** A slide that places logos by coordinate must pair `when-format="revealjs"` with a `when-format="beamer"` fallback, or the PDF gets an empty slide. Use spans, not nested fenced divs: nesting defeats the filter and the hidden half leaks into the other format.
+- Built outputs, `_numbers.yml` and `_svg/` are gitignored. The source is `slides.qmd`, `_theme.tex` and `assets/`.
 
 ## Definition of done
 

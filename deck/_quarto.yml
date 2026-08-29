@@ -1,19 +1,33 @@
-# `quarto render` is the whole build. The pre-render step resolves the numbers
-# the slides cite, checks that the figures are the ones those numbers describe,
-# and converts hand-drawn SVGs to PDF -- three things quarto has no native way
-# to do, and all three are what keep a slide from printing a stale figure.
+# `quarto render` is the whole build, and writes both outputs: talk.html to
+# present from and talk.pdf as the backup. The pre-render step resolves the
+# numbers the slides cite, proves each figure is the one those numbers describe,
+# and converts hand-drawn SVGs -- three things quarto has no native way to do.
 project:
   type: default
   pre-render: prepare.py
   output-dir: .
 
 format:
+  revealjs:
+    output-file: talk.html
+    embed-resources: true
+    incremental: true
+    theme: [default, ineris.scss]
+    css: ineris.css
+    width: 1280
+    height: 720
+    slide-number: true
+    fig-align: center
+    center: false
+    include-after-body: _logos.html
   beamer:
+    output-file: talk.pdf
     aspectratio: 169
     incremental: true
     include-in-header: _theme.tex
     slide-level: 2
     pdf-engine: pdflatex
+    fig-align: center
 
 metadata-files:
   - _numbers.yml

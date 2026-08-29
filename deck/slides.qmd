@@ -11,7 +11,7 @@ output-file: talk
 
 ## Motivation
 
-![](_svg/ages_of_tools_edited.pdf){width=88%}
+![](_svg/ages_of_tools_edited.pdf){fig-align="center" width=88%}
 
 ::: {.notes}
 We name an age for the material its tools were made from. Stone, bronze, iron.
@@ -20,7 +20,7 @@ The instrument is what the era is remembered by.
 
 ## Motivation
 
-![](_svg/two_tracks_of_seismology.pdf){width=96%}
+![](_svg/two_tracks_of_seismology.pdf){fig-align="center" width=96%}
 
 ::: {.notes}
 Seismology runs on two tracks. The instruments are the top row, and they are
@@ -34,11 +34,11 @@ software, and nobody had surveyed it.
 
 ## Motivation
 
-![](assets/motivation.png){width=94%}
+![](assets/motivation.png){fig-align="center" width=94%}
 
 ## Motivation
 
-![](../figures/p1_scientist_oss.png){height=64%}
+![](../figures/p1_scientist_oss.png){fig-align="center" height=64%}
 
 ::: {.notes}
 Every one of us writes the same readers, the same filters, the same plots.
@@ -48,7 +48,7 @@ Every one of us writes the same readers, the same filters, the same plots.
 
 ## The tools
 
-![](assets/tools_collage.png){height=70%}
+![](assets/tools_collage.png){fig-align="center" height=70%}
 
 ::: {.notes}
 Start from everything, not from what I already knew about.
@@ -56,7 +56,7 @@ Start from everything, not from what I already knew about.
 
 ## The tools
 
-![](../figures/v030_funnel.png){height=76%}
+![](../figures/v030_funnel.png){fig-align="center" height=76%}
 
 ::: {.notes}
 {{< meta n.funnel.candidates >}} candidates from forge search, registries and the
@@ -68,7 +68,7 @@ literature. Every one leaves by exactly one route. What survives is
 
 ## The tools
 
-![](../figures/v020_totals.png){width=98%}
+![](../figures/v020_totals.png){fig-align="center" width=98%}
 
 ::: {.notes}
 {{< meta n.ecosystem_totals.projects >}} projects,
@@ -85,7 +85,7 @@ pushed.
 
 ## The tools
 
-![](../figures/v120_growth_by_cohort.png){width=98%}
+![](../figures/v120_growth_by_cohort.png){fig-align="center" width=98%}
 
 ::: {.notes}
 Each year's growth comes mostly from projects that did not exist the year
@@ -94,7 +94,7 @@ before. This is a field still arriving, not one consolidating.
 
 ## The tools
 
-![](../figures/v150_language_platform.png){width=98%}
+![](../figures/v150_language_platform.png){fig-align="center" width=98%}
 
 ::: {.notes}
 Python and GitHub, overwhelmingly. That is a strength — one ecosystem to
@@ -103,7 +103,7 @@ interoperate within.
 
 ## The tools
 
-![](../figures/v130_engineering.png){height=74%}
+![](../figures/v130_engineering.png){fig-align="center" height=74%}
 
 ::: {.notes}
 Four questions a stranger asks before depending on your code. Most answer the
@@ -116,7 +116,7 @@ reason for the next slide.
 
 ## The tools
 
-![](../figures/v160_network.png){height=74%}
+![](../figures/v160_network.png){fig-align="center" height=74%}
 
 ::: {.notes}
 This is the finding. {{< meta n.network.isolated >}} of
@@ -131,7 +131,7 @@ in both columns, so those do not sum to the 26 connected.
 
 ## The tools
 
-![](../figures/v170_ecosystems.png){width=98%}
+![](../figures/v170_ecosystems.png){fig-align="center" width=98%}
 
 ::: {.notes}
 Same measurement, both fields, manifests only so the two are comparable.
@@ -145,7 +145,7 @@ hand-curated and theirs is scraped.
 
 ## The tools
 
-![](../figures/v140_dependencies.png){width=98%}
+![](../figures/v140_dependencies.png){fig-align="center" width=98%}
 
 ::: {.notes}
 And here is what we do build on. NumPy in 98 per cent, then Matplotlib, SciPy,
@@ -163,6 +163,77 @@ Take everything that follows with that in mind.
 
 ::: {.notes}
 Say it plainly, early, and once.
+:::
+
+## The five
+
+:::: {.content-visible when-format="revealjs"}
+![](assets/logo_dascore.png){.absolute .fragment top="23.7%" left="2.2%" width="26.1%"}
+![](assets/logo_daspy.png){.absolute .fragment top="23.7%" left="32.9%" width="34.3%"}
+![](assets/logo_das4whales.png){.absolute .fragment top="21.4%" left="67.7%" width="32.3%"}
+![](assets/logo_xdas.png){.absolute .fragment top="58.2%" left="29.7%" width="40.6%"}
+![](assets/logo_lightguide.png){.absolute .fragment top="74.6%" left="5.6%" width="14.8%"}
+::::
+
+:::: {.content-visible when-format="beamer"}
+DASCore · DASPy · DAS4Whales · xdas · Lightguide
+::::
+
+::: {.notes}
+Five packages do the infrastructure work. Bring them up one at a time.
+:::
+
+## Licence permissivity
+
+:::: {.content-visible when-format="revealjs"}
+![](assets/logo_das4whales.png){.absolute .fragment top="32.4%" left="6.4%" width="22.7%"}
+![](assets/logo_xdas.png){.absolute .fragment top="46.6%" left="30.7%" width="22.8%"}
+![](assets/logo_lightguide.png){.absolute .fragment top="12.3%" left="35.8%" width="12.7%"}
+![](assets/logo_dascore.png){.absolute .fragment top="44.3%" left="55.0%" width="19.1%"}
+![](assets/logo_daspy.png){.absolute .fragment top="26.6%" left="71.5%" width="27.0%"}
+[Non-Commercial]{.axis-label .absolute top="79.0%" left="1.0%" width="20%"}
+[GPL]{.axis-label .absolute top="79.0%" left="27.4%" width="20%"}
+[LGPL]{.axis-label .absolute top="79.0%" left="50.7%" width="20%"}
+[MIT]{.axis-label .absolute top="79.0%" left="74.0%" width="20%"}
+[Licence permissivity &rarr;]{.axis-caption .absolute top="89.0%" left="20.8%" width="20%"}
+::::
+
+:::: {.content-visible when-format="beamer"}
+- **DAS4Whales** — CC BY-NC-SA, non-commercial
+- **xdas**, **Lightguide** — GPL-3.0
+- **DASCore** — LGPL-3.0
+- **DASPy** — MIT
+::::
+
+::: {.notes}
+Left to right, least permissive to most. DAS4Whales carries a content licence
+rather than a software one — worth a conversation before depending on it.
+:::
+
+## Data model
+
+:::: {.content-visible when-format="revealjs"}
+![](assets/logo_xdas.png){.absolute .fragment top="41.0%" left="0.5%" width="22.8%"}
+![](assets/logo_dascore.png){.absolute .fragment top="36.2%" left="15.1%" width="19.1%"}
+![](assets/logo_lightguide.png){.absolute .fragment top="40.1%" left="39.3%" width="12.7%"}
+![](assets/logo_daspy.png){.absolute .fragment top="27.3%" left="43.9%" width="34.3%"}
+![](assets/logo_das4whales.png){.absolute .fragment top="25.1%" left="76.6%" width="22.7%"}
+[Xarray-inspired,<br>labelled multidimensional]{.axis-label .absolute top="73.7%" left="2.1%" width="20%"}
+[Unified object,<br>fixed dimensions]{.axis-label .absolute top="73.7%" left="37.1%" width="20%"}
+[Arrays and dicts<br>of metadata]{.axis-label .absolute top="73.7%" left="73.3%" width="20%"}
+[&larr; More general, more complex]{.axis-caption .absolute top="95.0%" left="1.5%" width="20%"}
+[Simpler, less flexible &rarr;]{.axis-caption .absolute top="95.0%" left="62.2%" width="20%"}
+::::
+
+:::: {.content-visible when-format="beamer"}
+- **xdas**, **DASCore** — labelled, multidimensional, Xarray-inspired
+- **Lightguide**, **DASPy** — one unified object, fixed dimensions
+- **DAS4Whales** — arrays and dictionaries of metadata
+::::
+
+::: {.notes}
+The choice you cannot reverse: the data model leaks into your public API.
+General costs complexity; simple costs flexibility.
 :::
 
 ## Five tools, five different jobs
@@ -193,7 +264,7 @@ guarantees a given workflow is faster — benchmark the actual chain.
 
 ## The choice you cannot reverse
 
-![](../figures/v180_archive_abstractions.png){width=90%}
+![](../figures/v180_archive_abstractions.png){fig-align="center" width=90%}
 
 ::: {.notes}
 The data model leaks into your public API. Conversion exists — Unidas adapts
@@ -205,7 +276,7 @@ coordinates, and MiniSEED cannot carry every DAS field.
 
 ## Interoperability
 
-![](assets/interoperability.png){height=58%}
+![](assets/interoperability.png){fig-align="center" height=58%}
 
 - Overlap drives innovation — fragmentation costs users
 
@@ -216,20 +287,20 @@ finds out what works. The cost is only paid when they cannot talk.
 
 ## GPU and beyond NumPy
 
-![](assets/gpu.png){height=58%}
+![](assets/gpu.png){fig-align="center" height=58%}
 
 - Array API, not one array library
 - Watch: Coordax, xarray_jax, wax-ml, einx
 
 ## Metadata
 
-![](assets/metadata.png){height=62%}
+![](assets/metadata.png){fig-align="center" height=62%}
 
 - One integrated, reusable inventory
 
 ## Agent–human collaboration
 
-![](assets/agent_collab.png){height=56%}
+![](assets/agent_collab.png){fig-align="center" height=56%}
 
 - Readable interfaces, stable contracts, honest errors
 

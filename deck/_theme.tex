@@ -28,18 +28,24 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{itemize item}{\textbullet}
 
-% Title bar: the institute's blue rule under every frame title.
+% Both marks top-left on every slide, at the master's proportions:
+% Republique Francaise at (0.33,0.12) 0.63in, INERIS at (1.04,0.19) 0.83in.
+\setbeamertemplate{headline}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north west, inner sep=0pt] at ([shift={(0.33in,-0.12in)}]current page.north west)
+      {\includegraphics[width=0.63in]{assets/ineris_cover.jpg}};
+    \node[anchor=north west, inner sep=0pt] at ([shift={(1.04in,-0.19in)}]current page.north west)
+      {\includegraphics[width=0.83in]{assets/ineris_logo.jpg}};
+  \end{tikzpicture}}
+
+% Frame title, indented clear of the marks, over the institute's blue rule.
 \setbeamertemplate{frametitle}{%
-  \vspace{0.55em}\hspace{0.45em}\insertframetitle\par
+  \vspace{0.75em}\hspace{2.0in}\insertframetitle\par
   \hspace{0.45em}{\color{inerisblue}\rule{0.93\linewidth}{1.2pt}}}
 
-% Footer: institute left, logo and slide number right, on every slide.
+% Footer: the slide number alone; the marks are in the header.
 \setbeamertemplate{footline}{%
-  \hspace{0.5em}{\color{muted}\tiny
-    Institut national de l'environnement industriel et des risques}%
-  \hfill
-  \raisebox{-0.15em}{\includegraphics[height=1.15em]{assets/ineris_logo.jpg}}%
-  \hspace{0.5em}{\color{muted}\tiny\insertframenumber}\hspace{0.5em}\vspace{0.35em}}
+  \hfill{\color{muted}\tiny\insertframenumber}\hspace{0.6em}\vspace{0.35em}}
 
 % Title slide: the institute's cover image, its logo, and nothing else.
 \setbeamertemplate{title page}{%

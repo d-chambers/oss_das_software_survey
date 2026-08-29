@@ -134,3 +134,36 @@ class TestListsAreCitable:
         spec.loader.exec_module(module)
         flat = module.flatten({"network": {"providers": [["a", "A", 13]]}})
         assert flat["network.providers.0.2"] == 13
+
+
+class TestBothFormats:
+    """The HTML is what gets presented; the PDF is the backup for when it isn't."""
+
+    def config(self) -> str:
+        return (DECK / "_quarto.yml").read_text()
+
+    def test_both_outputs_are_declared(self):
+        config = self.config()
+        assert "revealjs:" in config and "beamer:" in config
+
+    def test_the_html_is_self_contained(self):
+        """One file, or something goes missing between laptop and lectern."""
+        assert "embed-resources: true" in self.config()
+
+    def test_every_positioned_logo_exists(self):
+        """An .absolute image that is missing leaves a hole, not an error."""
+        import re
+
+        text = (DECK / "slides.qmd").read_text()
+        refs = re.findall(r"!\[\]\((assets/[^)]+)\)\{\.absolute", text)
+        assert refs, "no positioned logos found; the axis slides are the point"
+        missing = [r for r in refs if not (DECK / r).exists()]
+        assert not missing, missing
+
+    def test_reveal_only_content_declares_a_beamer_fallback(self):
+        """Absolute positioning has no beamer equivalent, so each such slide
+        must offer the PDF something readable instead of nothing."""
+        text = (DECK / "slides.qmd").read_text()
+        assert text.count('when-format="revealjs"') == text.count(
+            'when-format="beamer"'
+        ), "a format-conditional block has no counterpart in the other format"
