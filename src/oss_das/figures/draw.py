@@ -25,6 +25,10 @@ PALE = "#f1ece1"
 AMBER = "#c98500"
 SLATE = "#4b4b50"
 GRAY = "#b8b0a0"
+#: The one colour outside the warm family, kept for a band a figure has to
+#: single out. It is not a category colour: two reds would stop reading as
+#: emphasis and start reading as a class.
+RED = "#c1272d"
 PAPER = "#ffffff"
 
 SERIF = "Georgia, 'Times New Roman', serif"

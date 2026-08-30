@@ -2,10 +2,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="800" viewBox="0 0 1680 800">
   <title>Language and forge</title>
-  <desc>77 DAS projects by primary language, split by the forge the source was cloned from. Hosted on GitHub 74, GFZ Potsdam 1, GitLab.com 1, IN2P3 1. Python 59 (GitHub 56, GFZ Potsdam 1, GitLab.com 1, IN2P3 1); Jupyter 5; MATLAB 4; Java 3; Julia 3; C 1; Rust 1; n/a 1.</desc>
+  <desc>76 DAS projects by primary language, split by the forge the source was cloned from. Hosted on GitHub 73, GFZ Potsdam 1, GitLab.com 1, IN2P3 1. Python 58 (GitHub 55, GFZ Potsdam 1, GitLab.com 1, IN2P3 1); Jupyter 5; MATLAB 4; Java 3; Julia 3; C 1; Rust 1; n/a 1.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <rect x="380" y="101" width="30" height="16" rx="2" fill="#c98500"/>
-  <text x="422" y="117" font-size="28" fill="#2b2620" text-anchor="start">GitHub 74</text>
+  <text x="422" y="117" font-size="28" fill="#2b2620" text-anchor="start">GitHub 73</text>
   <rect x="604" y="101" width="30" height="16" rx="2" fill="#4b4b50"/>
   <text x="646" y="117" font-size="28" fill="#2b2620" text-anchor="start">GFZ Potsdam 1</text>
   <rect x="884" y="101" width="30" height="16" rx="2" fill="#7a7266"/>
@@ -13,32 +13,32 @@
   <rect x="1150" y="101" width="30" height="16" rx="2" fill="#b8b0a0"/>
   <text x="1192" y="117" font-size="28" fill="#2b2620" text-anchor="start">IN2P3 1</text>
   <text x="354" y="188" font-size="34" fill="#2b2620" text-anchor="end">Python</text>
-  <rect x="380" y="155" width="1063.05" height="42" fill="#c98500"/>
-  <rect x="1443.05" y="155" width="18.9831" height="42" fill="#4b4b50"/>
-  <rect x="1462.03" y="155" width="18.9831" height="42" fill="#7a7266"/>
-  <rect x="1481.02" y="155" width="18.9831" height="42" fill="#b8b0a0"/>
-  <text x="911.525" y="188" font-size="34" fill="#ffffff" text-anchor="middle">56</text>
-  <text x="1526" y="192" font-size="52" fill="#2b2620" text-anchor="start">59</text>
+  <rect x="380" y="155" width="1062.07" height="42" fill="#c98500"/>
+  <rect x="1442.07" y="155" width="19.3103" height="42" fill="#4b4b50"/>
+  <rect x="1461.38" y="155" width="19.3103" height="42" fill="#7a7266"/>
+  <rect x="1480.69" y="155" width="19.3103" height="42" fill="#b8b0a0"/>
+  <text x="911.034" y="188" font-size="34" fill="#ffffff" text-anchor="middle">55</text>
+  <text x="1526" y="192" font-size="52" fill="#2b2620" text-anchor="start">58</text>
   <text x="354" y="262" font-size="34" fill="#2b2620" text-anchor="end">Jupyter</text>
-  <rect x="380" y="229" width="94.9153" height="42" fill="#c98500"/>
-  <text x="500.915" y="266" font-size="52" fill="#2b2620" text-anchor="start">5</text>
+  <rect x="380" y="229" width="96.5517" height="42" fill="#c98500"/>
+  <text x="502.552" y="266" font-size="52" fill="#2b2620" text-anchor="start">5</text>
   <text x="354" y="336" font-size="34" fill="#2b2620" text-anchor="end">MATLAB</text>
-  <rect x="380" y="303" width="75.9322" height="42" fill="#c98500"/>
-  <text x="481.932" y="340" font-size="52" fill="#2b2620" text-anchor="start">4</text>
+  <rect x="380" y="303" width="77.2414" height="42" fill="#c98500"/>
+  <text x="483.241" y="340" font-size="52" fill="#2b2620" text-anchor="start">4</text>
   <text x="354" y="410" font-size="34" fill="#2b2620" text-anchor="end">Java</text>
-  <rect x="380" y="377" width="56.9492" height="42" fill="#c98500"/>
-  <text x="462.949" y="414" font-size="52" fill="#2b2620" text-anchor="start">3</text>
+  <rect x="380" y="377" width="57.931" height="42" fill="#c98500"/>
+  <text x="463.931" y="414" font-size="52" fill="#2b2620" text-anchor="start">3</text>
   <text x="354" y="484" font-size="34" fill="#2b2620" text-anchor="end">Julia</text>
-  <rect x="380" y="451" width="56.9492" height="42" fill="#c98500"/>
-  <text x="462.949" y="488" font-size="52" fill="#2b2620" text-anchor="start">3</text>
+  <rect x="380" y="451" width="57.931" height="42" fill="#c98500"/>
+  <text x="463.931" y="488" font-size="52" fill="#2b2620" text-anchor="start">3</text>
   <text x="354" y="558" font-size="34" fill="#2b2620" text-anchor="end">C</text>
-  <rect x="380" y="525" width="18.9831" height="42" fill="#c98500"/>
-  <text x="424.983" y="562" font-size="52" fill="#2b2620" text-anchor="start">1</text>
+  <rect x="380" y="525" width="19.3103" height="42" fill="#c98500"/>
+  <text x="425.31" y="562" font-size="52" fill="#2b2620" text-anchor="start">1</text>
   <text x="354" y="632" font-size="34" fill="#2b2620" text-anchor="end">Rust</text>
-  <rect x="380" y="599" width="18.9831" height="42" fill="#c98500"/>
-  <text x="424.983" y="636" font-size="52" fill="#2b2620" text-anchor="start">1</text>
+  <rect x="380" y="599" width="19.3103" height="42" fill="#c98500"/>
+  <text x="425.31" y="636" font-size="52" fill="#2b2620" text-anchor="start">1</text>
   <text x="354" y="706" font-size="34" fill="#2b2620" text-anchor="end">n/a</text>
-  <rect x="380" y="673" width="18.9831" height="42" fill="#c98500"/>
-  <text x="424.983" y="710" font-size="52" fill="#2b2620" text-anchor="start">1</text>
+  <rect x="380" y="673" width="19.3103" height="42" fill="#c98500"/>
+  <text x="425.31" y="710" font-size="52" fill="#2b2620" text-anchor="start">1</text>
   </g>
 </svg>

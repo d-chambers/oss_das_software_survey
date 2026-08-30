@@ -5,9 +5,12 @@ repository: Pengchao-He/DASmartInfra
 repository_url: https://github.com/Pengchao-He/DASmartInfra
 homepage: null
 description: Algorithms, benchmarks, and edge-inference components for DAS infrastructure monitoring.
-status: included
-decision_reason: Reusable DAS-specific package under Apache-2.0.
-primary_category: application-domain
+status: excluded
+decision_reason: The repository publishes governance and documentation scaffolding but no software.
+  Every directory it advertises -- algorithms, datasets, edge, examples -- holds only a README placeholder
+  or a .gitkeep, and the one Python file is a stdlib-only repository-layout validator. The same reading
+  applied to edgedas and dasview - a licence and an intention are not source anyone can review or reuse.
+primary_category: out-of-scope
 capabilities:
 - benchmarking
 - detection

@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="620" viewBox="0 0 1680 620">
   <title>Commits per year</title>
-  <desc>16,727 commits between 2010 and 2026, split by how central DAS is to each project.</desc>
+  <desc>16,725 commits between 2010 and 2026, split by how central DAS is to each project.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="841.6" y="62" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="3.2">WHEN THE WORK HAPPENED</text>
   <path d="M 180,460 L 1580,460" stroke="#cbc3b3" stroke-width="2" fill="none"/>
@@ -70,16 +70,16 @@
   <text x="1456.47" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2025</text>
   <text x="1456.47" y="136" font-size="18" fill="#2b2620" text-anchor="middle">2,492</text>
   <rect x="1513.29" y="440.345" width="51.0588" height="19.6549" fill="#4b4b50"/>
-  <rect x="1513.29" y="264.322" width="51.0588" height="176.023" fill="#c98500"/>
-  <rect x="1513.29" y="262.58" width="51.0588" height="1.74157" fill="#e4dccb"/>
+  <rect x="1513.29" y="264.571" width="51.0588" height="175.774" fill="#c98500"/>
+  <rect x="1513.29" y="262.829" width="51.0588" height="1.74157" fill="#e4dccb"/>
   <text x="1538.82" y="492" font-size="22" fill="#7a7266" text-anchor="middle">2026</text>
   <text x="1538.82" y="516" font-size="18" fill="#a3825a" text-anchor="middle" font-style="italic">part year</text>
-  <text x="1538.82" y="248.58" font-size="18" fill="#2b2620" text-anchor="middle">1,587</text>
+  <text x="1538.82" y="248.829" font-size="18" fill="#2b2620" text-anchor="middle">1,585</text>
   <path d="M 100,534 L 1580,534" stroke="#cbc3b3" stroke-width="3" fill="none"/>
   <rect x="342" y="574" width="22" height="22" rx="3" fill="#4b4b50"/>
   <text x="376" y="592" font-size="22" fill="#2b2620" text-anchor="start">DAS-supporting  7,530</text>
   <rect x="762" y="574" width="22" height="22" rx="3" fill="#c98500"/>
-  <text x="796" y="592" font-size="22" fill="#2b2620" text-anchor="start">DAS-native  7,108</text>
+  <text x="796" y="592" font-size="22" fill="#2b2620" text-anchor="start">DAS-native  7,106</text>
   <rect x="1182" y="574" width="22" height="22" rx="3" fill="#e4dccb"/>
   <text x="1216" y="592" font-size="22" fill="#2b2620" text-anchor="start">Other fiber  2,089</text>
   </g>

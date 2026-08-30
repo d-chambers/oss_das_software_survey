@@ -1214,12 +1214,19 @@ def stacked_years_plate(
     standfirst: str,
     closing: str = "",
     sequential: bool = False,
+    highlight_new: bool = False,
 ) -> str:
     """Commits per year, stacked by an arbitrary grouping.
 
     The generic form behind the category and cohort figures: `growth_plate`
     hard-codes the three DAS-focus classes and their colours, which is right
     for that figure and wrong for any other grouping.
+
+    ``highlight_new`` reads the same stack a second way: the topmost band of
+    each bar -- for a cohort grouping, the projects in their first year -- is
+    drawn in red, and that band's share of the year replaces the total above
+    the bar. Same figure, saying which part of the growth is arrivals rather
+    than existing projects deepening.
     """
     years = growth.years
     # An ordered grouping gets a colour bar instead of a swatch legend, which
@@ -1257,6 +1264,15 @@ def stacked_years_plate(
         for i, (key, _) in enumerate(growth.by_class)
     }
 
+    # The last group with any commits in a given year. For cohorts, whose keys
+    # run in order, that is the projects which started that year: nothing that
+    # began later can have committed yet.
+    newest = [
+        next((key for key, vals in reversed(growth.by_class) if vals[index]), None)
+        for index in range(len(years))
+    ]
+    by_key = dict(growth.by_class)
+
     c = draw.Canvas(
         width=width,
         height=height,
@@ -1264,6 +1280,12 @@ def stacked_years_plate(
         desc=(
             f"{sum(totals):,} commits between {years[0]} and {years[-1]}, "
             f"in {len(growth.by_class)} groups."
+            + (
+                " The top band of each bar, in red, is the projects that "
+                "started that year."
+                if highlight_new
+                else ""
+            )
         ),
     )
     c.text(840, 76, title, size=34, fill=draw.INK)
@@ -1288,7 +1310,11 @@ def stacked_years_plate(
                 cursor,
                 bar,
                 max(span - 1.4, 0.9),
-                fill=colour_of[key],
+                fill=(
+                    draw.RED
+                    if highlight_new and key == newest[index]
+                    else colour_of[key]
+                ),
             )
         c.text(centre, bottom + 32, str(year), size=draw.SUB_SM, fill=draw.MUTED)
         if year == years[-1]:
@@ -1300,7 +1326,30 @@ def stacked_years_plate(
                 fill=draw.FAINT,
                 italic=True,
             )
-        c.text(centre, cursor - 14, f"{totals[index]:,}", size=draw.TINY, fill=draw.INK)
+        if not highlight_new:
+            c.text(
+                centre,
+                cursor - 14,
+                f"{totals[index]:,}",
+                size=draw.TINY,
+                fill=draw.INK,
+            )
+        elif totals[index]:
+            # The share stands where the total stood. This figure follows one
+            # that already gave the counts, so repeating them here would take
+            # the eye off the only thing that has changed.
+            arrivals = by_key.get(newest[index], ())
+            arrivals = arrivals[index] if arrivals else 0
+            # Against the year's own total, not against the older projects:
+            # a share of a whole never passes 100, and a ratio between two
+            # parts does, which reads as a mistake rather than as a fact.
+            c.text(
+                centre,
+                cursor - 14,
+                f"{round(arrivals / totals[index] * 100)}%",
+                size=draw.TINY,
+                fill=draw.RED,
+            )
 
     if sequential:
         # An ordered grouping gets a colour bar, not eight swatches: the bar

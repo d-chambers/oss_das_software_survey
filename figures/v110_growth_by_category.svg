@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="720.0" viewBox="0 0 1680 720.0">
   <title>What the work went into</title>
-  <desc>7,108 commits between 2019 and 2026, in 6 groups.</desc>
+  <desc>7,106 commits between 2019 and 2026, in 6 groups.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="840" y="76" font-size="34" fill="#2b2620" text-anchor="middle">What the work went into</text>
   <path d="M 300,500 L 1380,500" stroke="#cbc3b3" stroke-width="2" fill="none"/>
@@ -54,12 +54,12 @@
   <rect x="1258.5" y="416.169" width="108" height="82.4306" fill="#c98500"/>
   <rect x="1258.5" y="396.542" width="108" height="18.227" fill="#4b4b50"/>
   <rect x="1258.5" y="342.485" width="108" height="52.6575" fill="#d9a63f"/>
-  <rect x="1258.5" y="324.688" width="108" height="16.3974" fill="#8a5f1c"/>
-  <rect x="1258.5" y="316.205" width="108" height="7.08286" fill="#b8b0a0"/>
-  <rect x="1258.5" y="264.642" width="108" height="50.1625" fill="#e4dccb"/>
+  <rect x="1258.5" y="325.02" width="108" height="16.0647" fill="#8a5f1c"/>
+  <rect x="1258.5" y="316.537" width="108" height="7.08286" fill="#b8b0a0"/>
+  <rect x="1258.5" y="264.975" width="108" height="50.1625" fill="#e4dccb"/>
   <text x="1312.5" y="532" font-size="22" fill="#7a7266" text-anchor="middle">2026</text>
   <text x="1312.5" y="556" font-size="18" fill="#a3825a" text-anchor="middle" font-style="italic">part year</text>
-  <text x="1312.5" y="250.642" font-size="18" fill="#2b2620" text-anchor="middle">1,415</text>
+  <text x="1312.5" y="250.975" font-size="18" fill="#2b2620" text-anchor="middle">1,413</text>
   <path d="M 100,580 L 1580,580" stroke="#cbc3b3" stroke-width="3" fill="none"/>
   <rect x="300" y="606" width="22" height="12" rx="2" fill="#c98500"/>
   <text x="332" y="618" font-size="22" fill="#2b2620" text-anchor="start">Core frameworks  2,143</text>
@@ -68,7 +68,7 @@
   <rect x="1160" y="606" width="22" height="12" rx="2" fill="#d9a63f"/>
   <text x="1192" y="618" font-size="22" fill="#2b2620" text-anchor="start">Processing  1,159</text>
   <rect x="300" y="640" width="22" height="12" rx="2" fill="#8a5f1c"/>
-  <text x="332" y="652" font-size="22" fill="#2b2620" text-anchor="start">Applied domains  847</text>
+  <text x="332" y="652" font-size="22" fill="#2b2620" text-anchor="start">Applied domains  845</text>
   <rect x="730" y="640" width="22" height="12" rx="2" fill="#b8b0a0"/>
   <text x="762" y="652" font-size="22" fill="#2b2620" text-anchor="start">Machine learning  658</text>
   <rect x="1160" y="640" width="22" height="12" rx="2" fill="#e4dccb"/>

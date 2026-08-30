@@ -33,7 +33,7 @@ Every one of us writes the same readers, the same filters, the same plots.
 
 # What open DAS tools exist?
 
-## The Tools
+## The Tools: Methodology
 
 ![](../figures/v030_funnel.png){fig-align="center" width=75%}
 
@@ -45,7 +45,7 @@ literature. Every one leaves by exactly one route. What survives is
 {{< meta n.funnel.other_fiber >}} for temperature or strain.
 :::
 
-## The Tools
+## The Tools: The Results
 
 
 
@@ -74,7 +74,7 @@ repositories carry vendored content — so lead with projects and commits if
 pushed.
 :::
 
-## The Tools
+## The Tools: Growth Over Time
 
 ![](../figures/v120_growth_by_cohort.png){fig-align="center" width=98%}
 
@@ -83,7 +83,19 @@ Each year's growth comes mostly from projects that did not exist the year
 before. This is a field still arriving, not one consolidating.
 :::
 
-## The Tools
+## The Tools: Growth Over Time
+
+![](../figures/v121_growth_new_arrivals.png){fig-align="center" width=98%}
+
+::: {.notes}
+The same chart, with the arrivals in red: every band above the rest is a set
+of projects committing in its first year. The figure over each bar is their
+share of that year -- 44% of 2025, and 63% of 2021, where nearly two thirds of
+the work came from projects that did not exist a year earlier. Growth here is
+arrival, not deepening.
+:::
+
+## The Tools: Language and Forge
 
 ![](../figures/v150_language_platform.png){fig-align="center" width=98%}
 
@@ -92,7 +104,7 @@ Python and GitHub, overwhelmingly. That is a strength: one ecosystem to
 interoperate within.
 :::
 
-## The Tools
+## The Tools: Egineering Practice
 
 ::: {.content-visible when-format="revealjs"}
 
@@ -121,7 +133,7 @@ licence one. Two-thirds carry a packaging manifest —
 reason for the next slide.
 :::
 
-## The Tools
+## The Tools: Dependencies
 
 
 :::: {.mask-wrap style="width:94%"}
@@ -135,27 +147,35 @@ reason for the next slide.
 
 
 ::: {.notes}
-And here is what we do build on. NumPy in 98 per cent, then Matplotlib, SciPy,
-h5py. ObsPy at 36 per cent — from a different field. We share a foundation, it
-just is not ours.
+And here is what we do build on. Every one of them on NumPy, then Matplotlib,
+SciPy, h5py. ObsPy at 37 per cent — from a different field. We share a
+foundation, it just is not ours.
+
+If asked why the denominator is 65 and not the 58 on the language chart: 65
+ship Python, 58 have Python as their *primary* language. The difference is five
+Jupyter repositories plus a Java and a Rust project that also ship Python. The
+11 left out have no Python at all — MATLAB, Julia, Java, C.
 :::
 
-## The Tools
+## The Tools: Dependencies
 
 ![](../figures/v160_network.png){fig-align="center" width=72%}
 
 ::: {.notes}
-This is the finding. {{< meta n.network.isolated >}} of
-{{< meta n.ecosystem_totals.projects >}} projects depend on nothing in this
-census and nothing depends on them. DASCore with
-{{< meta n.network.hub_dependents >}} dependents, five others with two or three
+This is the finding. {{< meta n.network.isolated >}} of the
+{{< meta n.network.projects >}} projects that declare their dependencies build
+on nothing in this census and have nothing built on them. DASCore with
+{{< meta n.network.hub_dependents >}} dependents, six others with one or two
 each, everything else standing alone.
 
-The figure shows 21 depending on another and 10 depended on; five projects are
-in both columns, so those do not sum to the 26 connected.
+The figure shows 12 depending on another and 7 depended on; unidas is in both
+columns, so those do not sum to the 18 connected. Same {{< meta
+n.network.projects >}} projects as the next slide, and DASCore is
+{{< meta n.network.hub_dependents >}} on both — the census reads a project's
+manifest here, because the seismology set beside it offers nothing else.
 :::
 
-## The Tools
+## The Tools: Dependency
 
 ![](../figures/v170_ecosystems.png){fig-align="center" width=98%}
 
@@ -173,20 +193,20 @@ hand-curated and theirs is scraped.
 # Which projects to build on?
 
 
-## Infrascture: Requirements
+## Infrastructure: Requirements
 
 :::{.incremental}
 - I/O for DAS files
 - Internal data structures
 - Processing
-- Visualizations
+- Visualisations
 - More than 1 contributor
 - at least 1 year old and active
 - In code registry
 :::
 
 
-## Infrascture: The Five
+## Infrastructure: The Five
 
 :::: {.content-visible when-format="revealjs"}
 ![](assets/logo_dascore.png){.absolute .fragment top="16.8%" left="2.2%" width="26.1%"}
@@ -204,7 +224,7 @@ DASCore · DASPy · DAS4Whales · xdas · Lightguide
 Name each as it lands. No text on the slide; the logos are the list.
 :::
 
-## Infrascture: Licence permissivity
+## Infrastructure: Licences
 
 :::: {.content-visible when-format="revealjs"}
 ![](assets/logo_das4whales.png){.absolute top="32.5%" left="6.4%" width="22.7%"}
@@ -232,7 +252,7 @@ Left to right, least permissive to most. DAS4Whales carries a content licence
 rather than a software one, which matters before you depend on it downstream.
 :::
 
-## Infrascture: DAS4Whales
+## Infrastructure: DAS4Whales
 
 :::: {.columns}
 
@@ -255,7 +275,7 @@ rather than a software one, which matters before you depend on it downstream.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## Infrascture: DASCore
+## Infrastructure: DASCore
 
 :::: {.columns}
 
@@ -278,7 +298,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## Infrascture: DASPy
+## Infrastructure: DASPy
 
 :::: {.columns}
 
@@ -301,7 +321,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## Infrascture: Lightguide
+## Infrastructure: Lightguide
 
 :::: {.columns}
 
@@ -324,7 +344,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## Infrascture: Xdas
+## Infrastructure: Xdas
 
 :::: {.columns}
 
@@ -375,7 +395,7 @@ finds out what works. Unidas is the existence proof that the conversion can be
 written once instead of five times.
 :::
 
-## Gaps: General Tensor Support
+## Gaps: Tensor Acceleration
 
 :::: {.columns}
 
@@ -395,13 +415,13 @@ The shared layer is NumPy. Acceleration is bolted on one project at a time.
 ::::
 
 ::: {.notes}
-65 of the 66 Python projects declare NumPy, and none of the five infrastructure
+All 65 Python projects declare NumPy, and none of the five infrastructure
 packages depends on an accelerator library beyond Numba and Dask. Plenty of
 individual projects reach for PyTorch or CuPy -- the PyTorch bar is on the
 dependency slide -- but each does it its own way, so nothing moves between them.
 :::
 
-## Gaps: Metadata
+## Gaps: Metadata Management
 
 :::: {.columns}
 
@@ -423,7 +443,7 @@ One integrated, reusable inventory. The right-hand sketch is what that could
 look like: the point-sensor hierarchy on the left, the fiber one beside it.
 :::
 
-## Large-scale visualisation
+## Gaps: Large-Scale Tiling and Visualization
 
 :::: {.columns}
 
@@ -455,7 +475,7 @@ network slide. Not one of them is a dependency of anything else. The question
 mark is which the field converges on, not whether anyone is trying.
 :::
 
-## Agents using what we have
+## Gaps: Agent Support
 
 ![](../figures/p1_scientist_agent.png){fig-align="center" width=70%}
 
@@ -467,7 +487,7 @@ code that already exists: make it legible and predictable and an agent can
 drive it. Nothing here is agent-ready yet.
 :::
 
-## Agents working alongside us
+## Gaps: Agent Support
 
 ![](../figures/p1_scientist_agent_oss.png){fig-align="center" width=64%}
 
@@ -479,24 +499,17 @@ scientist and the software, but both of them reaching it. That is the shape
 worth designing for.
 :::
 
-## Software we have not written yet
-
-::: {.nonincremental}
-Not porting a library for an agent to call — asking what software looks like
-when an agent is the one writing and running it.
-:::
-
-::: {.notes}
-The second half of the argument, and the speculative one. Say plainly that this
-is where I think the field goes, not where it is.
-:::
-
 ## Conclusions
 
-- A young field: 76 of {{< meta n.ecosystem_totals.projects >}} projects began in 2020 or later
-- Most build on NumPy, not on each other
-- Five tools already cover five different jobs
+:::{.increment}
+- A young field: most projects began after 2020: many more appear each year
+- Python and GitHub dominate
+- Most build on NumPy, not on each other (5 infrastructure tools)
+- Gaps and Opportunities: 
+  - Interoperability, Tensor Processing, Visualization, Agentic Support 
 - Interoperate rather than re-implement
+:::
+
 
 ::: {.notes}
 Close on the call to action: publish it, declare your dependencies, and reuse a
@@ -516,6 +529,35 @@ Check your own project's record and send a correction.
 :::
 
 # Backup {visibility="uncounted"}
+
+## Which projects each number counts {visibility="uncounted"}
+
+| | Where it appears | What it counts |
+|---|---|---|
+| {{< meta n.funnel.candidates >}} | Funnel | Everything the search found |
+| {{< meta n.ecosystem_totals.projects >}} | Totals, engineering | In scope: DAS-native, not excluded |
+| {{< meta n.dependencies.python_projects >}} | Dependency bars | Ships any `.py` or `.ipynb` |
+| {{< meta n.ecosystems.das.projects >}} | Network, two ecosystems | Ships a dependency manifest |
+| {{< meta n.language_platform.languages.Python.projects >}} | Language chart | Python is the *primary* language |
+| {{< meta n.dependencies.manifest_projects >}} | — | Both of the two above |
+| {{< meta n.composition.with_packaging >}} | Engineering | Has a root packaging file |
+| {{< meta n.composition.with_pypi >}} | Engineering | Actually published to PyPI |
+| {{< meta n.ecosystems.seismology.projects >}} | Two ecosystems, seismology side | Same manifest gate, scraped corpus |
+
+::: {.notes}
+The flip-to slide when someone subtracts two numbers. In one line:
+{{< meta n.dependencies.python_projects >}} counts *has Python*,
+{{< meta n.ecosystems.das.projects >}} counts *declares dependencies*,
+{{< meta n.language_platform.languages.Python.projects >}} counts *is mostly
+Python*.
+
+The dependency figure is not gated on manifests on purpose. For the ten Python
+projects that ship none, an import is the only evidence there is, and dropping
+them would bias the answer toward the projects tidy enough to package. The
+ecosystem graph has to be gated, because the seismology corpus beside it was
+scraped and its imports were never read -- same instrument on both sides or the
+comparison means nothing.
+:::
 
 ## Call to action {visibility="uncounted"}
 

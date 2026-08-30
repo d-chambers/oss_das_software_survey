@@ -54,9 +54,17 @@
   /* Only what the title occupies: its rule sets 62px down the 720px slide, so
      this leaves a little air and the content is centred in the rest. */
   padding-top: 1.9em;
+  /* Reveal's own 20px leaves the box short at the bottom, so centred content
+     sits high by half of it. */
+  padding-bottom: 0;
   box-sizing: border-box;
 }
-.reveal .slides section > *:not(h2):not(.slide-logos) { margin-top: 0; }
+/* A trailing margin on the one element a slide holds is space the centring
+   counts but the eye does not, which reads as content sitting high. */
+.reveal .slides section > *:not(h2):not(.slide-logos) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* The section breaks ask the question the section answers. Centred, because
    the slide is the question and nothing else: left-aligning it hangs the words
@@ -173,3 +181,24 @@
 }
 /* The logo-axis slides place by coordinate, so they set their own size. */
 .reveal .slides section img.absolute { max-height: none; }
+
+/* The reference tables on the backup slides. Reveal sizes a table from the
+   body text, which at this deck's base size overflows a nine-row table off
+   the slide; these three shrink it back and let the first column sit tight
+   against its number rather than centred in a column sized by the header. */
+.reveal .slides section table {
+  font-size: 0.62em;
+  border-collapse: collapse;
+  margin-inline: auto;
+}
+.reveal .slides section table th,
+.reveal .slides section table td {
+  padding: 0.22em 0.7em;
+  border: none;
+}
+.reveal .slides section table td:first-child,
+.reveal .slides section table th:first-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

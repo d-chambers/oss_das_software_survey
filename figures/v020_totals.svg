@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="420" viewBox="0 0 1680 420">
   <title>Open-source DAS software in numbers</title>
-  <desc>77 projects, 126 contributors, 7,108 commits, 606,383 lines of code, and 151 citations across the 12 projects that have a linked publication.</desc>
+  <desc>76 projects, 126 contributors, 7,106 commits, 606,296 lines of code, and 151 citations across the 12 projects that have a linked publication.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <g transform="translate(66,0)"><g>
     <rect x="141" y="50" width="106" height="84" rx="5" fill="#e4dccb"/>
@@ -60,13 +60,13 @@
   <circle cx="840" cy="228" r="7" fill="#2b2620"/>
   <circle cx="1122" cy="228" r="7" fill="#2b2620"/>
   <circle cx="1404" cy="228" r="7" fill="#2b2620"/>
-  <text x="276" y="326" font-size="70" fill="#2b2620" text-anchor="middle">77</text>
+  <text x="276" y="326" font-size="70" fill="#2b2620" text-anchor="middle">76</text>
   <text x="277.2" y="368" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">PROJECTS</text>
   <text x="558" y="326" font-size="70" fill="#2b2620" text-anchor="middle">126</text>
   <text x="559.2" y="368" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">CONTRIBUTORS</text>
-  <text x="840" y="326" font-size="70" fill="#2b2620" text-anchor="middle">7,108</text>
+  <text x="840" y="326" font-size="70" fill="#2b2620" text-anchor="middle">7,106</text>
   <text x="841.2" y="368" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">COMMITS</text>
-  <text x="1122" y="326" font-size="70" fill="#2b2620" text-anchor="middle">606,383</text>
+  <text x="1122" y="326" font-size="70" fill="#2b2620" text-anchor="middle">606,296</text>
   <text x="1123.2" y="368" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">LINES OF CODE</text>
   <text x="1404" y="326" font-size="70" fill="#2b2620" text-anchor="middle">151</text>
   <text x="1405.2" y="368" font-size="28" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">CITATIONS</text>

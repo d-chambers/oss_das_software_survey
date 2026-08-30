@@ -2,62 +2,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="608.0" viewBox="0 0 1680 608.0">
   <title>Commits by year</title>
-  <desc>7,106 commits between 2019 and 2026, in 8 groups.</desc>
+  <desc>7,106 commits between 2019 and 2026, in 8 groups. The top band of each bar, in red, is the projects that started that year.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="840" y="76" font-size="34" fill="#2b2620" text-anchor="middle">Commits by year</text>
   <path d="M 300,526 L 1380,526" stroke="#cbc3b3" stroke-width="2" fill="none"/>
-  <rect x="313.5" y="518.349" width="108" height="6.25121" fill="#e0cba4"/>
+  <rect x="313.5" y="518.349" width="108" height="6.25121" fill="#c1272d"/>
   <text x="367.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2019</text>
-  <text x="367.5" y="504.349" font-size="18" fill="#2b2620" text-anchor="middle">46</text>
+  <text x="367.5" y="504.349" font-size="18" fill="#c1272d" text-anchor="middle">100%</text>
   <rect x="448.5" y="504.71" width="108" height="19.8903" fill="#e0cba4"/>
-  <rect x="448.5" y="488.409" width="108" height="14.9004" fill="#d4ae5d"/>
+  <rect x="448.5" y="488.409" width="108" height="14.9004" fill="#c1272d"/>
   <text x="502.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2020</text>
-  <text x="502.5" y="474.409" font-size="18" fill="#2b2620" text-anchor="middle">226</text>
+  <text x="502.5" y="474.409" font-size="18" fill="#c1272d" text-anchor="middle">43%</text>
   <rect x="583.5" y="520.012" width="108" height="4.5879" fill="#e0cba4"/>
   <rect x="583.5" y="505.541" width="108" height="13.0708" fill="#d4ae5d"/>
-  <rect x="583.5" y="470.446" width="108" height="33.6958" fill="#c88d17"/>
+  <rect x="583.5" y="470.446" width="108" height="33.6958" fill="#c1272d"/>
   <text x="637.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2021</text>
-  <text x="637.5" y="456.446" font-size="18" fill="#2b2620" text-anchor="middle">334</text>
+  <text x="637.5" y="456.446" font-size="18" fill="#c1272d" text-anchor="middle">63%</text>
   <rect x="718.5" y="514.191" width="108" height="10.4095" fill="#e0cba4"/>
   <rect x="718.5" y="508.535" width="108" height="4.25524" fill="#d4ae5d"/>
   <rect x="718.5" y="489.241" width="108" height="17.8944" fill="#c88d17"/>
-  <rect x="718.5" y="448.157" width="108" height="39.6837" fill="#af7409"/>
+  <rect x="718.5" y="448.157" width="108" height="39.6837" fill="#c1272d"/>
   <text x="772.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2022</text>
-  <text x="772.5" y="434.157" font-size="18" fill="#2b2620" text-anchor="middle">468</text>
+  <text x="772.5" y="434.157" font-size="18" fill="#c1272d" text-anchor="middle">53%</text>
   <rect x="853.5" y="488.742" width="108" height="35.8581" fill="#e0cba4"/>
   <rect x="853.5" y="487.744" width="108" height="0.9" fill="#d4ae5d"/>
   <rect x="853.5" y="465.456" width="108" height="20.8883" fill="#c88d17"/>
   <rect x="853.5" y="408.737" width="108" height="55.3188" fill="#af7409"/>
-  <rect x="853.5" y="360.335" width="108" height="47.0022" fill="#906013"/>
+  <rect x="853.5" y="360.335" width="108" height="47.0022" fill="#c1272d"/>
   <text x="907.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2023</text>
-  <text x="907.5" y="346.335" font-size="18" fill="#2b2620" text-anchor="middle">996</text>
+  <text x="907.5" y="346.335" font-size="18" fill="#c1272d" text-anchor="middle">29%</text>
   <rect x="988.5" y="510.365" width="108" height="14.2351" fill="#e0cba4"/>
   <rect x="988.5" y="498.056" width="108" height="10.9085" fill="#d4ae5d"/>
   <rect x="988.5" y="483.087" width="108" height="13.5698" fill="#c88d17"/>
   <rect x="988.5" y="402.416" width="108" height="79.2704" fill="#af7409"/>
   <rect x="988.5" y="331.227" width="108" height="69.7895" fill="#906013"/>
-  <rect x="988.5" y="253.384" width="108" height="76.4427" fill="#704c17"/>
+  <rect x="988.5" y="253.384" width="108" height="76.4427" fill="#c1272d"/>
   <text x="1042.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2024</text>
-  <text x="1042.5" y="239.384" font-size="18" fill="#2b2620" text-anchor="middle">1,639</text>
+  <text x="1042.5" y="239.384" font-size="18" fill="#c1272d" text-anchor="middle">29%</text>
   <rect x="1123.5" y="485.582" width="108" height="39.0183" fill="#e0cba4"/>
   <rect x="1123.5" y="483.419" width="108" height="0.9" fill="#d4ae5d"/>
   <rect x="1123.5" y="469.947" width="108" height="12.0728" fill="#c88d17"/>
   <rect x="1123.5" y="447.991" width="108" height="20.5556" fill="#af7409"/>
   <rect x="1123.5" y="401.917" width="108" height="44.6736" fill="#906013"/>
   <rect x="1123.5" y="340.874" width="108" height="59.6433" fill="#704c17"/>
-  <rect x="1123.5" y="196" width="108" height="143.474" fill="#523813"/>
+  <rect x="1123.5" y="196" width="108" height="143.474" fill="#c1272d"/>
   <text x="1177.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2025</text>
-  <text x="1177.5" y="182" font-size="18" fill="#2b2620" text-anchor="middle">1,984</text>
+  <text x="1177.5" y="182" font-size="18" fill="#c1272d" text-anchor="middle">44%</text>
   <rect x="1258.5" y="516.852" width="108" height="7.74819" fill="#d4ae5d"/>
   <rect x="1258.5" y="498.555" width="108" height="16.8964" fill="#c88d17"/>
   <rect x="1258.5" y="444.831" width="108" height="52.3248" fill="#af7409"/>
   <rect x="1258.5" y="437.845" width="108" height="5.58589" fill="#906013"/>
   <rect x="1258.5" y="425.536" width="108" height="10.9085" fill="#704c17"/>
   <rect x="1258.5" y="378.631" width="108" height="45.5052" fill="#523813"/>
-  <rect x="1258.5" y="290.975" width="108" height="86.2562" fill="#33230b"/>
+  <rect x="1258.5" y="290.975" width="108" height="86.2562" fill="#c1272d"/>
   <text x="1312.5" y="558" font-size="22" fill="#7a7266" text-anchor="middle">2026</text>
   <text x="1312.5" y="582" font-size="18" fill="#a3825a" text-anchor="middle" font-style="italic">part year</text>
-  <text x="1312.5" y="276.975" font-size="18" fill="#2b2620" text-anchor="middle">1,413</text>
+  <text x="1312.5" y="276.975" font-size="18" fill="#c1272d" text-anchor="middle">37%</text>
   <rect x="620" y="110" width="3.98571" height="15" fill="#e0cba4"/>
   <rect x="623.286" y="110" width="3.98571" height="15" fill="#dfcaa0"/>
   <rect x="626.571" y="110" width="3.98571" height="15" fill="#dfc89d"/>

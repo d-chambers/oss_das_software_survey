@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1400" height="660" viewBox="0 0 1400 660">
   <title>Every candidate, and how it left</title>
-  <desc>3,201 candidates discovered; 77 in scope. Each stage is a count of candidates leaving by exactly one route. The 5 seismology tools that also support DAS are EQNet / PhaseNet-DAS, Pyrocko, SWPVPSEKMInv, SeisBench, pyseistr. The 7 other fibre-sensing projects are DSS_analyzer_Mariner, DTSGUI, Silixa_DTS_Tools, dts, fosanalysis, pyfocs, python-dts-calibration.</desc>
+  <desc>3,201 candidates discovered; 76 in scope. Each stage is a count of candidates leaving by exactly one route. The 5 seismology tools that also support DAS are EQNet / PhaseNet-DAS, Pyrocko, SWPVPSEKMInv, SeisBench, pyseistr. The 7 other fibre-sensing projects are DSS_analyzer_Mariner, DTSGUI, Silixa_DTS_Tools, dts, fosanalysis, pyfocs, python-dts-calibration.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="464.4" y="66" font-size="21" fill="#2b2620" text-anchor="middle">GitHub</text>
   <path d="M 464.4,79 L 548,120" stroke="#4b4b50" stroke-width="2" fill="none"/>
@@ -40,14 +40,14 @@
   <text x="544.627" y="374" font-size="13" fill="#7a7266" text-anchor="end" letter-spacing="1.4">DUPLICATE OR COLLISION</text>
   <path d="M 737.127,394 L 815.127,394" stroke="#cbc3b3" stroke-width="2" fill="none"/>
   <path d="M 815.127,394 L 801.127,401 L 801.127,387 Z" fill="#cbc3b3"/>
-  <text x="833.127" y="395" font-size="26" fill="#4b4b50" text-anchor="start">18</text>
+  <text x="833.127" y="395" font-size="26" fill="#4b4b50" text-anchor="start">19</text>
   <text x="833.127" y="413" font-size="13" fill="#7a7266" text-anchor="start" letter-spacing="1.4">TEACHING OR NO SOURCE</text>
   <path d="M 700,464 L 700,488" stroke="#c98500" stroke-width="3.5" fill="none"/>
   <path d="M 700,494 L 692,478 L 708,478 Z" fill="#c98500"/>
   <text x="370" y="536" font-size="36" fill="#4b4b50" text-anchor="middle">5</text>
   <text x="371.1" y="570" font-size="22" fill="#7a7266" text-anchor="middle" letter-spacing="2.2">SEISMOLOGY TOOLS</text>
   <text x="371.1" y="596" font-size="22" fill="#7a7266" text-anchor="middle" letter-spacing="2.2">that also support DAS</text>
-  <text x="700" y="536" font-size="62" fill="#c98500" text-anchor="middle">77</text>
+  <text x="700" y="536" font-size="62" fill="#c98500" text-anchor="middle">76</text>
   <text x="701.1" y="570" font-size="22" fill="#2b2620" text-anchor="middle" letter-spacing="2.2">DAS PROJECTS</text>
   <text x="1030" y="536" font-size="36" fill="#4b4b50" text-anchor="middle">7</text>
   <text x="1031.1" y="570" font-size="22" fill="#7a7266" text-anchor="middle" letter-spacing="2.2">OTHER FIBRE SENSING</text>

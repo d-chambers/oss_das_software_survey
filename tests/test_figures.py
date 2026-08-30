@@ -489,6 +489,13 @@ class TestDependencyMix:
     def test_ten_rows_by_default(self):
         assert len(dependency_mix_from_records().rows) == 10
 
+    def test_the_manifest_count_is_a_subset_of_the_python_count(self):
+        # The backup slide subtracts these two to explain why the dependency
+        # figure and the ecosystem graph count different projects, so the
+        # smaller one has to be inside the larger for the sentence to be true.
+        mix = dependency_mix_from_records()
+        assert 0 < mix.manifest_projects <= mix.python_projects
+
     def test_the_plate_is_well_formed_svg(self):
         ElementTree.fromstring(plates.dependency_plate(dependency_mix_from_records()))
 

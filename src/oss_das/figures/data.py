@@ -1585,11 +1585,18 @@ class DependencyMix:
     rows: tuple[Dependency, ...]
     python_projects: int
     other_projects: int
+    #: How many of the Python projects also ship a dependency manifest. Not
+    #: this figure's gate -- it counts imports too, and for a project with no
+    #: manifest an import is the only evidence there is -- but recorded so the
+    #: deck can say why this denominator and the ecosystem graph's differ
+    #: without either slide hard-coding the other's number.
+    manifest_projects: int = 0
 
     def sidecar(self) -> dict[str, Any]:
         return {
             "python_projects": self.python_projects,
             "other_projects": self.other_projects,
+            "manifest_projects": self.manifest_projects,
             "rows": [asdict(r) for r in self.rows],
         }
 
@@ -1645,6 +1652,9 @@ def dependency_mix_from_records(top: int = 10) -> DependencyMix:
         rows=rows,
         python_projects=len(python),
         other_projects=len(das) - len(python),
+        manifest_projects=sum(
+            1 for pid in python if (measured.get(pid) or {}).get("manifests")
+        ),
     )
     # The figure prints a share of the same denominator beside every bar, so a
     # count above it would be printing a percentage over one hundred, and an
@@ -1711,13 +1721,26 @@ def network_from_records() -> Network:
     project through every name it could be installed under -- its id, its
     catalogue name, and any PyPI distribution the registry scan confirmed --
     because a project is rarely imported under the name we file it by.
+
+    Counted over projects that ship a manifest, on the same bar the ecosystem
+    comparison uses. A project that declares nothing would otherwise sit in the
+    figure with no edges, and read as a finding when it is only a silence --
+    and the two figures are adjacent in the deck, so measuring the same hub two
+    ways puts two numbers for it on consecutive slides. The dependency bars
+    deliberately do not narrow this way: they ask what a project is built on,
+    where an import is the better evidence and the only evidence some projects
+    offer.
     """
     from oss_das.figures import records
 
     curated = records.curated()
     registry = records.measured("registry")
     measured = records.measured("dependencies")
-    included = das_project_ids()
+    included = {
+        pid
+        for pid in das_project_ids()
+        if (measured.get(pid) or {}).get("manifests")
+    }
 
     alias: dict[str, str] = {}
     for pid in included:
@@ -1733,15 +1756,16 @@ def network_from_records() -> Network:
 
     strongest: dict[tuple[str, str], str] = {}
     for pid in sorted(included):
-        record = measured.get(pid) or {}
-        for kind in _LINK_RANK:
-            for name in record.get(kind) or []:
-                target = alias.get(str(name).lower().replace("_", "-"))
-                if target is None or target == pid:
-                    continue
-                held = strongest.get((pid, target))
-                if held is None or _LINK_RANK.index(kind) < _LINK_RANK.index(held):
-                    strongest[(pid, target)] = kind
+        # `declared` is the manifest alone. The merged required/optional lists
+        # fold imports in, which is what made this figure report a different
+        # count for the same hub than the ecosystem comparison beside it.
+        for name, kind in ((measured.get(pid) or {}).get("declared") or {}).items():
+            target = alias.get(str(name).lower().replace("_", "-"))
+            if target is None or target == pid:
+                continue
+            held = strongest.get((pid, target))
+            if held is None or _LINK_RANK.index(kind) < _LINK_RANK.index(held):
+                strongest[(pid, target)] = kind
 
     links = tuple(
         Link(source, target, kind)

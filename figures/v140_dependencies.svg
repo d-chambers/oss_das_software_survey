@@ -2,47 +2,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1416" height="720" viewBox="0 0 1416 720">
   <title>What the ecosystem is built on</title>
-  <desc>Share of the 66 catalogued DAS projects written in Python that depend on each package, required or optional, excluding development-only dependencies and every catalogued DAS package. 11 catalogued projects ship no Python and are not counted. numpy 65 (98%); matplotlib 57 (86%); scipy 54 (82%); h5py 42 (64%); pandas 40 (61%); obspy 24 (36%); tqdm 21 (32%); torch 16 (24%); pyyaml 14 (21%); scikit-learn 12 (18%).</desc>
+  <desc>Share of the 65 catalogued DAS projects written in Python that depend on each package, required or optional, excluding development-only dependencies and every catalogued DAS package. 11 catalogued projects ship no Python and are not counted. numpy 65 (100%); matplotlib 57 (88%); scipy 54 (83%); h5py 42 (65%); pandas 40 (62%); obspy 24 (37%); tqdm 21 (32%); torch 16 (25%); pyyaml 14 (22%); scikit-learn 12 (18%).</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
-  <rect x="61" y="208.091" width="106" height="395.909" rx="3" fill="#33230b"/>
-  <text x="114" y="154.091" font-size="52" fill="#2b2620" text-anchor="middle">98%</text>
-  <text x="114" y="188.091" font-size="25" fill="#7a7266" text-anchor="middle">65 of 66</text>
+  <rect x="61" y="202" width="106" height="402" rx="3" fill="#33230b"/>
+  <text x="114" y="148" font-size="52" fill="#2b2620" text-anchor="middle">100%</text>
+  <text x="114" y="182" font-size="25" fill="#7a7266" text-anchor="middle">65 of 65</text>
   <text x="114" y="650" font-size="28" fill="#2b2620" text-anchor="middle">NumPy</text>
-  <rect x="193" y="256.818" width="106" height="347.182" rx="3" fill="#483210"/>
-  <text x="246" y="202.818" font-size="52" fill="#2b2620" text-anchor="middle">86%</text>
-  <text x="246" y="236.818" font-size="25" fill="#7a7266" text-anchor="middle">57 of 66</text>
+  <rect x="193" y="251.477" width="106" height="352.523" rx="3" fill="#483210"/>
+  <text x="246" y="197.477" font-size="52" fill="#2b2620" text-anchor="middle">88%</text>
+  <text x="246" y="231.477" font-size="25" fill="#7a7266" text-anchor="middle">57 of 65</text>
   <text x="246" y="650" font-size="28" fill="#2b2620" text-anchor="middle">Matplotlib</text>
-  <rect x="325" y="275.091" width="106" height="328.909" rx="3" fill="#503712"/>
-  <text x="378" y="221.091" font-size="52" fill="#2b2620" text-anchor="middle">82%</text>
-  <text x="378" y="255.091" font-size="25" fill="#7a7266" text-anchor="middle">54 of 66</text>
+  <rect x="325" y="270.031" width="106" height="333.969" rx="3" fill="#503712"/>
+  <text x="378" y="216.031" font-size="52" fill="#2b2620" text-anchor="middle">83%</text>
+  <text x="378" y="250.031" font-size="25" fill="#7a7266" text-anchor="middle">54 of 65</text>
   <text x="378" y="650" font-size="28" fill="#2b2620" text-anchor="middle">SciPy</text>
-  <rect x="457" y="348.182" width="106" height="255.818" rx="3" fill="#6f4b17"/>
-  <text x="510" y="294.182" font-size="52" fill="#2b2620" text-anchor="middle">64%</text>
-  <text x="510" y="328.182" font-size="25" fill="#7a7266" text-anchor="middle">42 of 66</text>
+  <rect x="457" y="344.246" width="106" height="259.754" rx="3" fill="#6f4b17"/>
+  <text x="510" y="290.246" font-size="52" fill="#2b2620" text-anchor="middle">65%</text>
+  <text x="510" y="324.246" font-size="25" fill="#7a7266" text-anchor="middle">42 of 65</text>
   <text x="510" y="650" font-size="28" fill="#2b2620" text-anchor="middle">h5py</text>
-  <rect x="589" y="360.364" width="106" height="243.636" rx="3" fill="#744e17"/>
-  <text x="642" y="306.364" font-size="52" fill="#2b2620" text-anchor="middle">61%</text>
-  <text x="642" y="340.364" font-size="25" fill="#7a7266" text-anchor="middle">40 of 66</text>
+  <rect x="589" y="356.615" width="106" height="247.385" rx="3" fill="#744e17"/>
+  <text x="642" y="302.615" font-size="52" fill="#2b2620" text-anchor="middle">62%</text>
+  <text x="642" y="336.615" font-size="25" fill="#7a7266" text-anchor="middle">40 of 65</text>
   <text x="642" y="650" font-size="28" fill="#2b2620" text-anchor="middle">pandas</text>
-  <rect x="721" y="457.818" width="106" height="146.182" rx="3" fill="#a16a10"/>
-  <text x="774" y="403.818" font-size="52" fill="#2b2620" text-anchor="middle">36%</text>
-  <text x="774" y="437.818" font-size="25" fill="#7a7266" text-anchor="middle">24 of 66</text>
+  <rect x="721" y="455.569" width="106" height="148.431" rx="3" fill="#a16a10"/>
+  <text x="774" y="401.569" font-size="52" fill="#2b2620" text-anchor="middle">37%</text>
+  <text x="774" y="435.569" font-size="25" fill="#7a7266" text-anchor="middle">24 of 65</text>
   <text x="774" y="650" font-size="28" fill="#2b2620" text-anchor="middle">ObsPy</text>
-  <rect x="853" y="476.091" width="106" height="127.909" rx="3" fill="#a9700c"/>
-  <text x="906" y="422.091" font-size="52" fill="#2b2620" text-anchor="middle">32%</text>
-  <text x="906" y="456.091" font-size="25" fill="#7a7266" text-anchor="middle">21 of 66</text>
+  <rect x="853" y="474.123" width="106" height="129.877" rx="3" fill="#a9700c"/>
+  <text x="906" y="420.123" font-size="52" fill="#2b2620" text-anchor="middle">32%</text>
+  <text x="906" y="454.123" font-size="25" fill="#7a7266" text-anchor="middle">21 of 65</text>
   <text x="906" y="650" font-size="28" fill="#2b2620" text-anchor="middle">tqdm</text>
-  <rect x="985" y="506.545" width="106" height="97.4545" rx="3" fill="#b67906"/>
-  <text x="1038" y="452.545" font-size="52" fill="#2b2620" text-anchor="middle">24%</text>
-  <text x="1038" y="486.545" font-size="25" fill="#7a7266" text-anchor="middle">16 of 66</text>
+  <rect x="985" y="505.046" width="106" height="98.9538" rx="3" fill="#b67906"/>
+  <text x="1038" y="451.046" font-size="52" fill="#2b2620" text-anchor="middle">25%</text>
+  <text x="1038" y="485.046" font-size="25" fill="#7a7266" text-anchor="middle">16 of 65</text>
   <text x="1038" y="650" font-size="28" fill="#2b2620" text-anchor="middle">PyTorch</text>
-  <rect x="1117" y="518.727" width="106" height="85.2727" rx="3" fill="#bb7c04"/>
-  <text x="1170" y="464.727" font-size="52" fill="#2b2620" text-anchor="middle">21%</text>
-  <text x="1170" y="498.727" font-size="25" fill="#7a7266" text-anchor="middle">14 of 66</text>
+  <rect x="1117" y="517.415" width="106" height="86.5846" rx="3" fill="#bb7c04"/>
+  <text x="1170" y="463.415" font-size="52" fill="#2b2620" text-anchor="middle">22%</text>
+  <text x="1170" y="497.415" font-size="25" fill="#7a7266" text-anchor="middle">14 of 65</text>
   <text x="1170" y="650" font-size="28" fill="#2b2620" text-anchor="middle">PyYAML</text>
-  <rect x="1249" y="530.909" width="106" height="73.0909" rx="3" fill="#c08002"/>
-  <text x="1302" y="476.909" font-size="52" fill="#2b2620" text-anchor="middle">18%</text>
-  <text x="1302" y="510.909" font-size="25" fill="#7a7266" text-anchor="middle">12 of 66</text>
+  <rect x="1249" y="529.785" width="106" height="74.2154" rx="3" fill="#c08002"/>
+  <text x="1302" y="475.785" font-size="52" fill="#2b2620" text-anchor="middle">18%</text>
+  <text x="1302" y="509.785" font-size="25" fill="#7a7266" text-anchor="middle">12 of 65</text>
   <text x="1302" y="650" font-size="28" fill="#2b2620" text-anchor="middle">sklearn</text>
   <path d="M 39,604 L 1377,604" stroke="#cbc3b3" stroke-width="2" fill="none"/>
   </g>

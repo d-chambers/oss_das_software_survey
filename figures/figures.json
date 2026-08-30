@@ -1,10 +1,10 @@
 {
  "source": "working tree",
  "ecosystem_totals": {
-  "projects": 77,
+  "projects": 76,
   "contributors": 126,
-  "commits": 7108,
-  "lines": 606383,
+  "commits": 7106,
+  "lines": 606296,
   "unmirrored": [],
   "citations": 151,
   "cited_projects": 12
@@ -25,7 +25,7 @@
   "unreviewed": 0,
   "reviewed": 396,
   "catalogued": 97,
-  "included": 77,
+  "included": 76,
   "metric_rows": 278,
   "metric_hosts": [
    "api.github.com",
@@ -61,10 +61,10 @@
    ],
    [
     "Teaching or no source",
-    18
+    19
    ]
   ],
-  "in_scope": 77,
+  "in_scope": 76,
   "supporting": 5,
   "other_fiber": 7,
   "supporting_names": [
@@ -97,7 +97,7 @@
   "by_class": [
    [
     "osi-approved",
-    64
+    63
    ],
    [
     "source-available",
@@ -115,7 +115,7 @@
   "lines_by_class": [
    [
     "osi-approved",
-    544917
+    544830
    ],
    [
     "source-available",
@@ -130,14 +130,14 @@
     0
    ]
   ],
-  "projects": 77,
-  "lines": 606383
+  "projects": 76,
+  "lines": 606296
  },
  "composition": {
   "languages": [
    [
     "Python",
-    476773
+    476686
    ],
    [
     "Jupyter",
@@ -192,12 +192,12 @@
     58
    ]
   ],
-  "total_lines": 606383,
-  "projects": 77,
+  "total_lines": 606296,
+  "projects": 76,
   "with_pypi": 21,
   "with_conda": 3,
   "with_julia": 0,
-  "with_none": 56,
+  "with_none": 55,
   "packaged": 21,
   "with_packaging": 51
  },
@@ -263,7 +263,7 @@
      996,
      1639,
      1984,
-     1415
+     1413
     ]
    ],
    [
@@ -296,7 +296,7 @@
    ],
    [
     "das-native",
-    7108
+    7106
    ],
    [
     "other-fiber",
@@ -955,15 +955,6 @@
     "lines": 3750
    },
    {
-    "project_id": "dasmart-infra",
-    "name": "DASmartInfra",
-    "role": "other",
-    "commits": 2,
-    "authors": 2,
-    "days": 0,
-    "lines": 87
-   },
-   {
     "project_id": "optixutils",
     "name": "OptixUtils",
     "role": "other",
@@ -1002,7 +993,7 @@
   ]
  },
  "engineering": {
-  "projects": 77,
+  "projects": 76,
   "practices": [
    {
     "key": "packaged",
@@ -1016,7 +1007,7 @@
     "label": "Licence",
     "gate": "Can I get it?",
     "note": "OSI-approved, legally reusable",
-    "projects": 64
+    "projects": 63
    },
    {
     "key": "tests",
@@ -1030,41 +1021,42 @@
     "label": "CI",
     "gate": "Can I trust it?",
     "note": "a workflow runs",
-    "projects": 28
+    "projects": 27
    },
    {
     "key": "docs",
     "label": "Docs",
     "gate": "Can I learn it?",
     "note": "beyond the README",
-    "projects": 21
+    "projects": 20
    },
    {
     "key": "examples",
     "label": "Examples",
     "gate": "Can I learn it?",
     "note": "tutorials or notebooks",
-    "projects": 46
+    "projects": 45
    },
    {
     "key": "authors",
     "label": "Authors > 1",
     "gate": "Will it last?",
     "note": "more than one person",
-    "projects": 31
+    "projects": 30
    },
    {
     "key": "active",
     "label": "Active",
     "gate": "Will it last?",
     "note": "a commit in the last 12 months",
-    "projects": 53
+    "projects": 52
    }
   ]
  },
  "dependencies": {
-  "python_projects": 66,
+  "python_projects": 65,
   "other_projects": 11,
+  "manifest_projects": 55,
   "rows": [
    {
     "name": "numpy",
@@ -1109,18 +1101,18 @@
   ]
  },
  "language_platform": {
-  "projects": 77,
+  "projects": 76,
   "hosts": {
-   "github.com": 74,
+   "github.com": 73,
    "git.gfz-potsdam.de": 1,
    "gitlab.com": 1,
    "gitlab.in2p3.fr": 1
   },
   "languages": {
    "Python": {
-    "projects": 59,
+    "projects": 58,
     "by_host": {
-     "github.com": 56,
+     "github.com": 55,
      "git.gfz-potsdam.de": 1,
      "gitlab.com": 1,
      "gitlab.in2p3.fr": 1
@@ -1188,16 +1180,6 @@
     "kind": "required"
    },
    {
-    "source": "das-levels",
-    "target": "das4whales",
-    "kind": "required"
-   },
-   {
-    "source": "das-levels",
-    "target": "simpledas",
-    "kind": "required"
-   },
-   {
     "source": "das-processing-pipeline",
     "target": "dascore",
     "kind": "required"
@@ -1205,11 +1187,6 @@
    {
     "source": "das-source-locator",
     "target": "das4whales",
-    "kind": "required"
-   },
-   {
-    "source": "das4whales",
-    "target": "simpledas",
     "kind": "required"
    },
    {
@@ -1238,57 +1215,12 @@
     "kind": "required"
    },
    {
-    "source": "dasmatrix",
-    "target": "dascore",
-    "kind": "optional"
-   },
-   {
-    "source": "daspy",
-    "target": "dascore",
-    "kind": "optional"
-   },
-   {
-    "source": "daspy",
-    "target": "lightguide",
-    "kind": "optional"
-   },
-   {
     "source": "derzug",
     "target": "dascore",
     "kind": "required"
    },
    {
-    "source": "farmdas",
-    "target": "dasstore",
-    "kind": "required"
-   },
-   {
-    "source": "multi-res-viewer",
-    "target": "dascore",
-    "kind": "required"
-   },
-   {
-    "source": "multi-res-viewer",
-    "target": "spool-processing",
-    "kind": "required"
-   },
-   {
-    "source": "optodas-processor",
-    "target": "simpledas",
-    "kind": "required"
-   },
-   {
-    "source": "optodas-processor",
-    "target": "xdas",
-    "kind": "required"
-   },
-   {
     "source": "remi-das",
-    "target": "dascore",
-    "kind": "required"
-   },
-   {
-    "source": "spool-processing",
     "target": "dascore",
     "kind": "required"
    },
@@ -1313,11 +1245,6 @@
     "kind": "optional"
    },
    {
-    "source": "xdas",
-    "target": "dascore",
-    "kind": "development"
-   },
-   {
     "source": "xpick",
     "target": "xdas",
     "kind": "required"
@@ -1327,22 +1254,12 @@
    [
     "dascore",
     "DASCore",
-    13
+    8
    ],
    [
     "das4whales",
     "DAS4Whales",
-    3
-   ],
-   [
-    "simpledas",
-    "simpleDAS",
-    3
-   ],
-   [
-    "xdas",
-    "xdas",
-    3
+    2
    ],
    [
     "daspy",
@@ -1350,8 +1267,8 @@
     2
    ],
    [
-    "lightguide",
-    "lightguide",
+    "xdas",
+    "xdas",
     2
    ],
    [
@@ -1365,21 +1282,16 @@
     1
    ],
    [
-    "dasstore",
-    "DASstore",
-    1
-   ],
-   [
-    "spool-processing",
-    "SpoolProcessing",
+    "lightguide",
+    "lightguide",
     1
    ]
   ],
-  "projects": 77,
-  "connected": 26,
-  "isolated": 51,
+  "projects": 60,
+  "connected": 18,
+  "isolated": 42,
   "hub": "DASCore",
-  "hub_dependents": 13
+  "hub_dependents": 8
  },
  "ecosystems": {
   "das": {
@@ -1549,22 +1461,23 @@
   }
  ],
  "figures": {
-  "v010_pipeline.png": "b685e1c32f801a06be5900eb295d68695166502802366e672d0153358b97ba63",
-  "v020_totals.png": "162b99925e3df350b67481dc96a486b13424dfd2826f4af2f8a31d7345b66af0",
-  "v030_funnel.png": "a78cd4ec56a27c0486e2c0e8f83199f64eaf8af9a62842f0edd923e9c7e0f4e7",
+  "v010_pipeline.png": "f976e62698024a8f93e3820afba49a8596e875cdc01d67d00bdfa3e706a41409",
+  "v020_totals.png": "8c4d0f4470805dbc65bc33324f80587f2f16a75766bde0fe9ce3b5cc0a9bdbd7",
+  "v030_funnel.png": "9b7fbbbdda35466d4a049f5c7cd7eb72905811f7891c7a6bc8e4bb58b0aa9c4c",
   "v040_coverage.png": "1aee1cbf304e4065869efaca2b70e2abf287cbcc8b785317232cb984b29e65b0",
   "v050_maturity.png": "eb0203b9866616c68ce6d19fb1b8d933d1d1ead7031f3b15630e1ec338ebd194",
-  "v060_licence.png": "888766d01bed88ea69fdcd25a95a23babbcb407ee149b5de7aea4b61c089ec55",
-  "v070_growth.png": "158ac07cb2e8d35930295637e3d207a7fd45ac03aadde1834830d13443e30756",
-  "v080_composition.png": "da01fc85b4499853cc885a19852a0a729088374396cac154f779be3944e1d092",
-  "v090_record_section.png": "6f2cb90e55c265941a91b7df0eec79c353b34cc2f10d4b02e534b333f5f459a2",
-  "v100_language_licence.png": "fe7fb72f95aba9c81d3f266ad0c051a2a80ca49c0f09de48f3a49e60767931a9",
-  "v110_growth_by_category.png": "d5a8afc6c8f01a106eaaefbf29719fcc2618844926c84009539a63d162142e07",
-  "v120_growth_by_cohort.png": "eb9d5c1d8c0769ab2ecf12df58179c7237258b59e92d63cc2e9cbe8d962396b8",
-  "v130_engineering.png": "080ec98507d988370338a59177619404cbbf215efa29f19c277a88393d5a09bb",
-  "v140_dependencies.png": "eeb4ba669d91389d49e180b88277f3561a33621b45035b1a04c0d051d0a5221a",
-  "v150_language_platform.png": "0ca780487298ec0ab1d3244a46753f64c635053107094b64c5648e7a0ff9f6de",
-  "v160_network.png": "e7d103bfbb6c3f3b7406a854958a15c0e1ade4b833513595d1b159b2d0f8b9b1",
+  "v060_licence.png": "030ead310620475463826e5d92d2680686503319841256673677134a2bed7a39",
+  "v070_growth.png": "acad492110a2b09cab4d6ae5904d99e5960cd128f662e1884498e3b92decd924",
+  "v080_composition.png": "fb240bcaf240b2142a283f662b2d8ef80762c45ec206654c7c69d32f3937fdcc",
+  "v090_record_section.png": "24c396ce1962a347623eff7a6adbf47d851bbea4ae2027968c4cd495922e29f7",
+  "v100_language_licence.png": "746a342cecbe262a3d646219cc94c7f820bfc65dcbfdd8d7b9392ab8a3e222df",
+  "v110_growth_by_category.png": "b18bf3b1af8035459685c79339eb6ffa07d408b1921c40f0c4a31ccffa368c6e",
+  "v120_growth_by_cohort.png": "675a87f0482fb1a0f05ddd091cf55d9182c73563be2f4642b0c35052b0eaa838",
+  "v121_growth_new_arrivals.png": "f19cd63f2455dcf6301a3573fa7aff3dbd33cd7feab0a25620ed1e8ee5015cde",
+  "v130_engineering.png": "3982e5ffb685300c67ff2788321201718c775d7b2362a0f806f0631bdd5f64d2",
+  "v140_dependencies.png": "a1ff3a2ba3ded8ca221ec1ebb6fa446be9822d3609e774336ab5e1eb72d47d0e",
+  "v150_language_platform.png": "45b4679e4ffc87fd0d0317f7c7322c071bbbcc030ef744bef930ddc8d398c212",
+  "v160_network.png": "c7ff38dac45d1a7083fbcb90bc218ec80d4641d74b472b6b68a604b35af66a5c",
   "v170_ecosystems.png": "aec68ff964dfab537008dd232f60e7ba75d11bc56647ed5958c9db925d8721ea",
   "v180_archive_abstractions.png": "f185d1379b64ef1d8ce902a485276a20e94ba70b6d7b04b3ac7db015ae32262c"
  }

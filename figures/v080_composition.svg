@@ -2,40 +2,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="700.0" viewBox="0 0 1680 700.0">
   <title>Languages and packaging</title>
-  <desc>606,383 lines across 14 languages; 56 of 77 DAS projects publish no package.</desc>
+  <desc>606,296 lines across 14 languages; 55 of 76 DAS projects publish no package.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="840" y="76" font-size="34" fill="#2b2620" text-anchor="middle">Languages and packaging</text>
   <rect x="430" y="147" width="900" height="28" rx="3" fill="#c98500"/>
   <text x="408" y="168" font-size="30" fill="#2b2620" text-anchor="end">Python</text>
-  <text x="1350" y="168" font-size="22" fill="#7a7266" text-anchor="start">476,773  ·  78.6%</text>
-  <rect x="430" y="191" width="97.8201" height="28" rx="3" fill="#e4dccb"/>
+  <text x="1350" y="168" font-size="22" fill="#7a7266" text-anchor="start">476,686  ·  78.6%</text>
+  <rect x="430" y="191" width="97.838" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="212" font-size="30" fill="#2b2620" text-anchor="end">Jupyter</text>
-  <text x="547.82" y="212" font-size="22" fill="#7a7266" text-anchor="start">51,820  ·  8.5%</text>
-  <rect x="430" y="235" width="54.7487" height="28" rx="3" fill="#e4dccb"/>
+  <text x="547.838" y="212" font-size="22" fill="#7a7266" text-anchor="start">51,820  ·  8.5%</text>
+  <rect x="430" y="235" width="54.7587" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="256" font-size="30" fill="#2b2620" text-anchor="end">MATLAB</text>
-  <text x="504.749" y="256" font-size="22" fill="#7a7266" text-anchor="start">29,003  ·  4.8%</text>
-  <rect x="430" y="279" width="35.9832" height="28" rx="3" fill="#e4dccb"/>
+  <text x="504.759" y="256" font-size="22" fill="#7a7266" text-anchor="start">29,003  ·  4.8%</text>
+  <rect x="430" y="279" width="35.9897" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="300" font-size="30" fill="#2b2620" text-anchor="end">Java</text>
-  <text x="485.983" y="300" font-size="22" fill="#7a7266" text-anchor="start">19,062  ·  3.1%</text>
-  <rect x="430" y="323" width="18.4239" height="28" rx="3" fill="#e4dccb"/>
+  <text x="485.99" y="300" font-size="22" fill="#7a7266" text-anchor="start">19,062  ·  3.1%</text>
+  <rect x="430" y="323" width="18.4272" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="344" font-size="30" fill="#2b2620" text-anchor="end">Julia</text>
-  <text x="468.424" y="344" font-size="22" fill="#7a7266" text-anchor="start">9,760  ·  1.6%</text>
-  <rect x="430" y="367" width="13.0779" height="28" rx="3" fill="#e4dccb"/>
+  <text x="468.427" y="344" font-size="22" fill="#7a7266" text-anchor="start">9,760  ·  1.6%</text>
+  <rect x="430" y="367" width="13.0803" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="388" font-size="30" fill="#2b2620" text-anchor="end">Rust</text>
-  <text x="463.078" y="388" font-size="22" fill="#7a7266" text-anchor="start">6,928  ·  1.1%</text>
-  <rect x="430" y="411" width="10.2672" height="28" rx="3" fill="#e4dccb"/>
+  <text x="463.08" y="388" font-size="22" fill="#7a7266" text-anchor="start">6,928  ·  1.1%</text>
+  <rect x="430" y="411" width="10.269" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="432" font-size="30" fill="#2b2620" text-anchor="end">C</text>
-  <text x="460.267" y="432" font-size="22" fill="#7a7266" text-anchor="start">5,439  ·  0.9%</text>
-  <rect x="430" y="455" width="5.98398" height="28" rx="3" fill="#e4dccb"/>
+  <text x="460.269" y="432" font-size="22" fill="#7a7266" text-anchor="start">5,439  ·  0.9%</text>
+  <rect x="430" y="455" width="5.98507" height="28" rx="3" fill="#e4dccb"/>
   <text x="408" y="476" font-size="30" fill="#2b2620" text-anchor="end">Fortran</text>
-  <text x="455.984" y="476" font-size="22" fill="#7a7266" text-anchor="start">3,170  ·  0.5%</text>
+  <text x="455.985" y="476" font-size="22" fill="#7a7266" text-anchor="start">3,170  ·  0.5%</text>
   <path d="M 180,524 L 1500,524" stroke="#cbc3b3" stroke-width="2" fill="none"/>
   <text x="420" y="600" font-size="52" fill="#2b2620" text-anchor="middle">51</text>
   <text x="421.2" y="634" font-size="32" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">PACKAGED</text>
   <text x="840" y="600" font-size="52" fill="#2b2620" text-anchor="middle">21</text>
   <text x="841.2" y="634" font-size="32" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">ON PYPI</text>
-  <text x="1260" y="600" font-size="52" fill="#2b2620" text-anchor="middle">56</text>
+  <text x="1260" y="600" font-size="52" fill="#2b2620" text-anchor="middle">55</text>
   <text x="1261.2" y="634" font-size="32" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">NO PACKAGE</text>
-  <text x="1260" y="666" font-size="22" fill="#7a7266" text-anchor="middle" font-style="italic">of 77</text>
+  <text x="1260" y="666" font-size="22" fill="#7a7266" text-anchor="middle" font-style="italic">of 76</text>
   </g>
 </svg>

@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="260" viewBox="0 0 1680 260">
   <title>From query to catalogue</title>
-  <desc>Snapshot working tree: 212 probes returned 3,201 candidates; 396 were reviewed and 77 are in scope.</desc>
+  <desc>Snapshot working tree: 212 probes returned 3,201 candidates; 396 were reviewed and 76 are in scope.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="210" y="110" font-size="76" fill="#2b2620" text-anchor="middle">3,201</text>
   <text x="211.2" y="162" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">CANDIDATES</text>
@@ -10,7 +10,7 @@
   <text x="631.2" y="162" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">REVIEWED</text>
   <text x="1050" y="110" font-size="76" fill="#2b2620" text-anchor="middle">97</text>
   <text x="1051.2" y="162" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">CATALOGUED</text>
-  <text x="1470" y="110" font-size="76" fill="#c98500" text-anchor="middle">77</text>
+  <text x="1470" y="110" font-size="76" fill="#c98500" text-anchor="middle">76</text>
   <text x="1471.2" y="162" font-size="24" fill="#2b2620" text-anchor="middle" letter-spacing="2.4">IN SCOPE</text>
   <path d="M 362,82 L 452,82" stroke="#cbc3b3" stroke-width="3" fill="none"/>
   <path d="M 452,71 L 478,82 L 452,93 Z" fill="#cbc3b3"/>
