@@ -25,7 +25,7 @@
    scaling. Tune it and the padding below together -- the padding moves it. */
 .reveal .slides section > h2 {
   position: absolute;
-  top: -0.8em;
+  top: -0.1em;
   /* Clears both marks: 3.3vw offset + 4.4vw + 0.8vw gap + 9.4vw Ineris. */
   left: 20%;
   right: 2%;
@@ -37,15 +37,21 @@
 }
 /* The content is centred in the space under the pinned title, rather than the
    whole section being centred and dragging the title with it. Reveal sets
-   display:block !important on sections, so this has to out-specify it. */
-.reveal .slides section.present,
-.reveal .slides section.past,
-.reveal .slides section.future {
+   display:block !important on sections, so this has to out-specify it.
+
+   `:not(.stack)` because reveal wraps each run of vertical slides in a stack
+   section that carries the same state classes. Without it every rule below
+   lands twice -- the padding is reserved once by the stack and again by the
+   slide inside it, and the slide is then re-centred within the stack, which
+   drove the content down the slide and took the title with it. */
+.reveal .slides section.present:not(.stack),
+.reveal .slides section.past:not(.stack),
+.reveal .slides section.future:not(.stack) {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  /* Only what the title occupies: its rule sets 61px down the 720px slide, so
+  /* Only what the title occupies: its rule sets 62px down the 720px slide, so
      this leaves a little air and the content is centred in the rest. */
   padding-top: 1.9em;
   box-sizing: border-box;

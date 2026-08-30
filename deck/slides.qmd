@@ -123,7 +123,16 @@ reason for the next slide.
 
 ## The Tools
 
+
+:::: {.mask-wrap style="width:94%"}
 ![](../figures/v140_dependencies.png){fig-align="center" width=98%}
+
+```{=html}
+<div class="gate-mask fragment fade-out" data-fragment-index="1" style="left:31%"></div>
+<div class="gate-mask fragment fade-out" data-fragment-index="2" style="left:60.0%"></div>
+```
+::::
+
 
 ::: {.notes}
 And here is what we do build on. NumPy in 98 per cent, then Matplotlib, SciPy,
@@ -164,7 +173,7 @@ hand-curated and theirs is scraped.
 # Which projects to build on?
 
 
-## DAS Infrascture
+## Infrascture: Requirements
 
 :::{.incremental}
 - I/O for DAS files
@@ -177,14 +186,14 @@ hand-curated and theirs is scraped.
 :::
 
 
-## The five {.no-title}
+## Infrascture: The Five
 
 :::: {.content-visible when-format="revealjs"}
-![](assets/logo_dascore.png){.absolute .fragment top="23.8%" left="2.2%" width="26.1%"}
-![](assets/logo_daspy.png){.absolute .fragment top="23.8%" left="32.9%" width="34.3%"}
-![](assets/logo_das4whales.png){.absolute .fragment top="21.5%" left="67.7%" width="32.3%"}
-![](assets/logo_xdas.png){.absolute .fragment top="58.3%" left="29.7%" width="40.6%"}
-![](assets/logo_lightguide.png){.absolute .fragment top="74.7%" left="5.6%" width="14.8%"}
+![](assets/logo_dascore.png){.absolute .fragment top="16.8%" left="2.2%" width="26.1%"}
+![](assets/logo_daspy.png){.absolute .fragment top="16.8%" left="32.9%" width="34.3%"}
+![](assets/logo_das4whales.png){.absolute .fragment top="16.5%" left="67.7%" width="32.3%"}
+![](assets/logo_xdas.png){.absolute .fragment top="53.3%" left="29.7%" width="40.6%"}
+![](assets/logo_lightguide.png){.absolute .fragment top="69.7%" left="5.6%" width="14.8%"}
 ::::
 
 :::: {.content-visible when-format="beamer"}
@@ -195,7 +204,7 @@ DASCore · DASPy · DAS4Whales · xdas · Lightguide
 Name each as it lands. No text on the slide; the logos are the list.
 :::
 
-## Licence permissivity
+## Infrascture: Licence permissivity
 
 :::: {.content-visible when-format="revealjs"}
 ![](assets/logo_das4whales.png){.absolute top="32.5%" left="6.4%" width="22.7%"}
@@ -223,7 +232,7 @@ Left to right, least permissive to most. DAS4Whales carries a content licence
 rather than a software one, which matters before you depend on it downstream.
 :::
 
-## DAS4Whales
+## Infrascture: DAS4Whales
 
 :::: {.columns}
 
@@ -246,7 +255,7 @@ rather than a software one, which matters before you depend on it downstream.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## DASCore
+## Infrascture: DASCore
 
 :::: {.columns}
 
@@ -269,7 +278,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## DASPy
+## Infrascture: DASPy
 
 :::: {.columns}
 
@@ -292,7 +301,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## Lightguide
+## Infrascture: Lightguide
 
 :::: {.columns}
 
@@ -315,7 +324,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 Strengths first, then the logo. Say what it is for, not what it lacks.
 :::
 
-## xdas
+## Infrascture: Xdas
 
 :::: {.columns}
 
@@ -340,7 +349,7 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 
 # What are the gaps and opportunities?
 
-## Interoperability
+## Gaps: Interoperability
 
 :::: {.columns}
 
@@ -366,7 +375,7 @@ finds out what works. Unidas is the existence proof that the conversion can be
 written once instead of five times.
 :::
 
-## GPU and beyond NumPy
+## Gaps: General Tensor Support
 
 :::: {.columns}
 
@@ -392,7 +401,7 @@ individual projects reach for PyTorch or CuPy -- the PyTorch bar is on the
 dependency slide -- but each does it its own way, so nothing moves between them.
 :::
 
-## Metadata
+## Gaps: Metadata
 
 :::: {.columns}
 
@@ -517,55 +526,4 @@ Check your own project's record and send a correction.
 ::: {.notes}
 Held back for questions. The gap between "set up as a package" and "published"
 is the cheapest thing in this talk to fix.
-:::
-
-## Licence and popularity {visibility="uncounted"}
-
-:::: {.content-visible when-format="revealjs"}
-![](assets/logo_das4whales.png){.absolute top="25.3%" left="6.4%" width="22.7%"}
-![](assets/logo_xdas.png){.absolute top="39.7%" left="30.7%" width="22.8%"}
-![](assets/logo_lightguide.png){.absolute top="5.3%" left="35.8%" width="12.7%"}
-![](assets/logo_dascore.png){.absolute top="37.3%" left="55.0%" width="19.1%"}
-![](assets/logo_daspy.png){.absolute top="19.6%" left="71.5%" width="34.3%"}
-[Non-Commercial]{.axis-label .absolute top="79.0%" left="1.0%" width="20%"}
-[GPL]{.axis-label .absolute top="79.0%" left="27.4%" width="20%"}
-[LGPL]{.axis-label .absolute top="79.0%" left="50.7%" width="20%"}
-[MIT]{.axis-label .absolute top="79.0%" left="74.0%" width="20%"}
-[Licence permissivity &rarr;]{.axis-caption .absolute top="89.0%" left="20.8%" width="20%"}
-[&uarr; Popularity (downloads, stars)]{.axis-caption .absolute top="12.0%" left="1.0%" width="26%"}
-::::
-
-:::: {.content-visible when-format="beamer"}
-Licence permissivity across, popularity up: DAS4Whales non-commercial,
-xdas and Lightguide GPL, DASCore LGPL, DASPy MIT.
-::::
-
-::: {.notes}
-Held back for questions. The two axes people ask about together.
-:::
-
-## Data model {visibility="uncounted"}
-
-:::: {.content-visible when-format="revealjs"}
-![](assets/logo_xdas.png){.absolute top="41.0%" left="0.5%" width="22.8%"}
-![](assets/logo_dascore.png){.absolute top="36.2%" left="15.1%" width="19.1%"}
-![](assets/logo_lightguide.png){.absolute top="40.1%" left="39.3%" width="12.7%"}
-![](assets/logo_daspy.png){.absolute top="27.3%" left="43.9%" width="34.3%"}
-![](assets/logo_das4whales.png){.absolute top="25.1%" left="76.6%" width="22.7%"}
-[Xarray-inspired,<br>labelled multidimensional]{.axis-label .absolute top="73.7%" left="2.1%" width="20%"}
-[Unified object,<br>fixed dimensions]{.axis-label .absolute top="73.7%" left="37.1%" width="20%"}
-[Arrays and dicts<br>of metadata]{.axis-label .absolute top="73.7%" left="73.3%" width="20%"}
-[&larr; More general, more complex]{.axis-caption .absolute top="95.0%" left="1.5%" width="20%"}
-[Simpler, less flexible &rarr;]{.axis-caption .absolute top="95.0%" left="62.2%" width="20%"}
-::::
-
-:::: {.content-visible when-format="beamer"}
-- **xdas**, **DASCore** — labelled, multidimensional, Xarray-inspired
-- **Lightguide**, **DASPy** — one unified object, fixed dimensions
-- **DAS4Whales** — arrays and dictionaries of metadata
-::::
-
-::: {.notes}
-Held back for questions. The data model leaks into your public API: general
-costs complexity, simple costs flexibility.
 :::
