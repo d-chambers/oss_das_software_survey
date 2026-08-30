@@ -13,16 +13,21 @@
   pointer-events: none;
 }
 .slide-logos img.rf { width: 4.4vw; }
-.slide-logos img.ineris { width: 7.8vw; margin-top: 0.5vw; }
+/* A fifth larger than the master draws it: at the back of a room the mark it
+   scales from is a smudge, and this is the one that names the institute. */
+.slide-logos img.ineris { width: 9.4vw; margin-top: 0.5vw; }
 
 /* The blue rule the pptx draws under every frame title. Pinned to the top of
    the slide rather than flowing with the content: a title that rides up and
-   down as slides change length reads as a wobble from the back of a room. */
+   down as slides change length reads as a wobble from the back of a room.
+   Raised clear of the slide box so its rule sets just under the bottom of the
+   Ineris mark beside it; em rather than px so it rides the slide's own
+   scaling. Tune it and the padding below together -- the padding moves it. */
 .reveal .slides section > h2 {
   position: absolute;
-  top: 0;
-  /* Clears both marks: 3.3vw offset + 4.4vw + 0.8vw gap + 7.8vw Ineris. */
-  left: 18%;
+  top: -0.8em;
+  /* Clears both marks: 3.3vw offset + 4.4vw + 0.8vw gap + 9.4vw Ineris. */
+  left: 20%;
   right: 2%;
   margin: 0;
   padding-bottom: 0.15em;
@@ -40,10 +45,17 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding-top: 3.0em;
+  /* Only what the title occupies: its rule sets 61px down the 720px slide, so
+     this leaves a little air and the content is centred in the rest. */
+  padding-top: 1.9em;
   box-sizing: border-box;
 }
 .reveal .slides section > *:not(h2):not(.slide-logos) { margin-top: 0; }
+
+/* The section breaks ask the question the section answers. Centred, because
+   the slide is the question and nothing else: left-aligning it hangs the words
+   off an edge that no rule or figure lines up with. */
+.reveal .slides section > h1:not(.title) { text-align: center; }
 
 /* A box that hides part of a figure until it is clicked away. Sized and placed
    per slide; white so it reads as absence rather than as a panel. */
@@ -90,6 +102,17 @@
   text-align: center;
 }
 
+/* The address under each project logo. Quiet enough that the logo still names
+   the slide, and on screen with it rather than arriving on a click. */
+.reveal .project-url {
+  display: block;
+  text-align: center;
+  font-size: 0.5em;
+  color: #7a7266;
+  margin-top: 0.5em;
+  word-break: break-all;
+}
+
 /* The one gap with no candidate to show for it. Sized to carry a slide on its
    own, in the blue the deck uses for its own voice. */
 .reveal .question-mark {
@@ -128,13 +151,18 @@
 
 /* Project slides: the logo answers the bullets, so it is given room but not
    the slide. */
-.reveal .column img { max-height: 46vh; width: auto; max-width: 100%; }
+.reveal .column img { max-height: 414px; width: auto; max-width: 100%; }
 
 /* A figure must fit the space under the pinned title. Without this the tallest
    plates run off the bottom of the slide, which is how the funnel lost its
-   two flanking labels. */
+   two flanking labels.
+
+   In slide pixels, not vh: the slide is 1280x720 and scales as a unit, so a
+   px here is resolution-independent, while a vh resolves against the window
+   and is then multiplied by that scale -- which made 72vh mean 90% of the
+   slide, and mean something different at every window shape. */
 .reveal .slides section img {
-  max-height: 72vh;
+  max-height: 640px;
   object-fit: contain;
 }
 /* The logo-axis slides place by coordinate, so they set their own size. */

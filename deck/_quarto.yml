@@ -23,6 +23,12 @@ format:
     # The title is pinned instead and the content is centred beneath it, in
     # ineris.css -- same result, fixed title.
     center: false
+    # A stretched figure fills the frame instead of sitting centred in it, and
+    # reveal sizes it against a slide whose title it cannot see: the title is
+    # absolutely positioned, so it measures as zero height and the figure is
+    # given the whole slide. Each figure keeps the width its slide declares,
+    # and the flex rule in ineris.css centres it.
+    auto-stretch: false
     include-after-body: _logos.html
   beamer:
     output-file: talk.pdf

@@ -10,13 +10,22 @@ date-format: "[Galileo Fiber Optic Conference, 2026]"
 
 ## Motivation
 
-![](assets/motivation.png){fig-align="center" width=94%}
+![](assets/three_age.png){fig-align="center" width=94%}
 
-[&nbsp;]{.cover .fragment .fade-out data-fragment-index="1" style="top:41%; left:2%; width:96%; height:36%;"}
+::: {.notes}
+We name an age for the material its tools were made from. Stone, bronze, iron.
+The instrument is what the era is remembered by.
+:::
 
 ## Motivation
 
-![](../figures/p1_scientist_oss.png){fig-align="center" width=49%}
+![](assets/motivation.png){fig-align="center" width=94%}
+
+[&nbsp;]{.cover .fragment .fade-out data-fragment-index="1" style="top:57%; left:0%; width:98%; height:36%;"}
+
+## Motivation
+
+![](../figures/p1_scientist_oss.png){fig-align="center" width=75%}
 
 ::: {.notes}
 Every one of us writes the same readers, the same filters, the same plots.
@@ -24,9 +33,9 @@ Every one of us writes the same readers, the same filters, the same plots.
 
 # What open DAS tools exist?
 
-## The tools
+## The Tools
 
-![](../figures/v030_funnel.png){fig-align="center" width=59%}
+![](../figures/v030_funnel.png){fig-align="center" width=75%}
 
 ::: {.notes}
 {{< meta n.funnel.candidates >}} candidates from forge search, registries and the
@@ -36,9 +45,21 @@ literature. Every one leaves by exactly one route. What survives is
 {{< meta n.funnel.other_fiber >}} for temperature or strain.
 :::
 
-## The tools
+## The Tools
 
-![](../figures/v020_totals.png){fig-align="center" width=98%}
+
+
+:::: {.mask-wrap style="width:94%"}
+![](../figures/v020_totals.png){fig-align="center"}
+
+```{=html}
+<div class="gate-mask fragment fade-out" data-fragment-index="1" style="left:20.0%"></div>
+<div class="gate-mask fragment fade-out" data-fragment-index="2" style="left:40.0%"></div>
+<div class="gate-mask fragment fade-out" data-fragment-index="3" style="left:60.0%"></div>
+<div class="gate-mask fragment fade-out" data-fragment-index="4" style="left:80.0%"></div>
+```
+::::
+
 
 ::: {.notes}
 {{< meta n.ecosystem_totals.projects >}} projects,
@@ -53,7 +74,7 @@ repositories carry vendored content — so lead with projects and commits if
 pushed.
 :::
 
-## The tools
+## The Tools
 
 ![](../figures/v120_growth_by_cohort.png){fig-align="center" width=98%}
 
@@ -62,16 +83,16 @@ Each year's growth comes mostly from projects that did not exist the year
 before. This is a field still arriving, not one consolidating.
 :::
 
-## The tools
+## The Tools
 
 ![](../figures/v150_language_platform.png){fig-align="center" width=98%}
 
 ::: {.notes}
-Python and GitHub, overwhelmingly. That is a strength — one ecosystem to
+Python and GitHub, overwhelmingly. That is a strength: one ecosystem to
 interoperate within.
 :::
 
-## The tools
+## The Tools
 
 ::: {.content-visible when-format="revealjs"}
 
@@ -100,7 +121,7 @@ licence one. Two-thirds carry a packaging manifest —
 reason for the next slide.
 :::
 
-## The tools
+## The Tools
 
 ![](../figures/v140_dependencies.png){fig-align="center" width=98%}
 
@@ -110,7 +131,7 @@ h5py. ObsPy at 36 per cent — from a different field. We share a foundation, it
 just is not ours.
 :::
 
-## The tools
+## The Tools
 
 ![](../figures/v160_network.png){fig-align="center" width=72%}
 
@@ -125,7 +146,7 @@ The figure shows 21 depending on another and 10 depended on; five projects are
 in both columns, so those do not sum to the 26 connected.
 :::
 
-## The tools
+## The Tools
 
 ![](../figures/v170_ecosystems.png){fig-align="center" width=98%}
 
@@ -142,15 +163,19 @@ hand-curated and theirs is scraped.
 
 # Which projects to build on?
 
-## I maintain DASCore
 
-::: {.nonincremental}
-Take everything that follows with that in mind.
+## DAS Infrascture
+
+:::{.incremental}
+- I/O for DAS files
+- Internal data structures
+- Processing
+- Visualizations
+- More than 1 contributor
+- at least 1 year old and active
+- In code registry
 :::
 
-::: {.notes}
-Say it plainly, early, and once.
-:::
 
 ## The five {.no-title}
 
@@ -211,6 +236,8 @@ rather than a software one, which matters before you depend on it downstream.
 
 ::: {.column width="38%"}
 ![](assets/logo_das4whales.png){fig-align="center" width=88%}
+
+[github.com/DAS4Whales/DAS4Whales]{.project-url}
 :::
 
 ::::
@@ -232,6 +259,8 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 
 ::: {.column width="38%"}
 ![](assets/logo_dascore.png){fig-align="center" width=88%}
+
+[github.com/DASDAE/dascore]{.project-url}
 :::
 
 ::::
@@ -253,6 +282,8 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 
 ::: {.column width="38%"}
 ![](assets/logo_daspy.png){fig-align="center" width=88%}
+
+[github.com/HMZ-03/DASPy]{.project-url}
 :::
 
 ::::
@@ -274,6 +305,8 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 
 ::: {.column width="38%"}
 ![](assets/logo_lightguide.png){fig-align="center" width=88%}
+
+[github.com/pyrocko/lightguide]{.project-url}
 :::
 
 ::::
@@ -295,6 +328,8 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 
 ::: {.column width="38%"}
 ![](assets/logo_xdas.png){fig-align="center" width=88%}
+
+[github.com/xdas-dev/xdas]{.project-url}
 :::
 
 ::::
@@ -318,7 +353,9 @@ Five data models, five I/O layers, five ways to say the same thing.
 :::
 
 ::: {.column width="48%"}
-![](assets/interoperability.png){.fragment fig-align="center" width="94%"}
+![](assets/interoperability.png){.fragment data-fragment-index="3" fig-align="center" width="94%"}
+
+[github.com/DASDAE/unidas]{.project-url .fragment data-fragment-index="3"}
 :::
 
 ::::
@@ -341,7 +378,9 @@ The shared layer is NumPy. Acceleration is bolted on one project at a time.
 :::
 
 ::: {.column width="48%"}
-![](assets/gpu.png){.fragment fig-align="center" width="88%"}
+![](assets/gpu.png){.fragment data-fragment-index="2" fig-align="center" width="88%"}
+
+[github.com/DASDAE/dasjax]{.project-url .fragment data-fragment-index="2"}
 :::
 
 ::::
@@ -414,7 +453,7 @@ mark is which the field converges on, not whether anyone is trying.
 - Readable interfaces, stable contracts, honest errors
 
 ::: {.notes}
-The tools we write now are the tools agents will use. This slide is about the
+The Tools we write now are the tools agents will use. This slide is about the
 code that already exists: make it legible and predictable and an agent can
 drive it. Nothing here is agent-ready yet.
 :::
