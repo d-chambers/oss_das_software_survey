@@ -391,9 +391,10 @@ Five data models, five I/O layers, five ways to say the same thing.
 ::: {.column width="52%"}
 The shared layer is NumPy. Acceleration is bolted on unevenly. 
 
-- Sixteen reach for PyTorch, three for CuPy
-- None of it is portable, the Array API is the target
-- 
+- Core libraries could benefit more from Tensor libraries
+  - Numba helps here
+- Generic the Array API is a good target
+- Split metadata/kernels seems promising
 :::
 
 ::: {.column width="48%"}
@@ -418,10 +419,11 @@ dependency slide -- but each does it its own way, so nothing moves between them.
 :::: {.columns}
 
 ::: {.column width="46%"}
-Every project invents its own station, channel and geometry fields.
+Uneven handling / support for metadata tracking
 
-- Seismology solved this once, with an inventory
-- Fiber needs the same thing, not a sixth dialect
+- ObsPy code uses Inventory (metadata/data workflows)
+- Fiber needs the same thing
+- Re-using current abstractions is ideal 
 :::
 
 ::: {.column width="54%"}
@@ -440,10 +442,10 @@ look like: the point-sensor hierarchy on the left, the fiber one beside it.
 :::: {.columns}
 
 ::: {.column width="52%"}
-Seven viewers in the census. Nothing in it depends on any of them.
+Seven viewers in the census, but meaningful visuals of big archives is challenging. 
 
-- Multi-resolution, streaming, annotation — each solved separately
-- The one gap where more tools has not meant more capability
+- Multi-resolution, streaming, annotation, each partially solved
+- Multi-resolution viewing of large archives still an unsolved problem
 :::
 
 ::: {.column width="48%"}
