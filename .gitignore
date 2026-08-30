@@ -21,3 +21,6 @@ deck/slides_files/
 deck/_notes.tex
 deck/_svg/
 deck/talk.html
+
+# LibreOffice lock files.
+.~lock.*#
