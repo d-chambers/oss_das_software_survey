@@ -1160,7 +1160,11 @@
      "github.com": 1
     }
    }
-  }
+  },
+  "top_language": "Python",
+  "top_language_pct": 76,
+  "top_host": "github.com",
+  "top_host_pct": 96
  },
  "network": {
   "links": [
@@ -1477,7 +1481,7 @@
   "v130_engineering.png": "3982e5ffb685300c67ff2788321201718c775d7b2362a0f806f0631bdd5f64d2",
   "v140_dependencies.png": "a1ff3a2ba3ded8ca221ec1ebb6fa446be9822d3609e774336ab5e1eb72d47d0e",
   "v150_language_platform.png": "45b4679e4ffc87fd0d0317f7c7322c071bbbcc030ef744bef930ddc8d398c212",
-  "v160_network.png": "c7ff38dac45d1a7083fbcb90bc218ec80d4641d74b472b6b68a604b35af66a5c",
+  "v160_network.png": "c1d95f4dc6f4b6bba0748ff4ad3904a06f541399e099be65a9a2e2f5e1e921d0",
   "v170_ecosystems.png": "aec68ff964dfab537008dd232f60e7ba75d11bc56647ed5958c9db925d8721ea",
   "v180_archive_abstractions.png": "f185d1379b64ef1d8ce902a485276a20e94ba70b6d7b04b3ac7db015ae32262c"
  }

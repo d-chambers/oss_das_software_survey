@@ -2,65 +2,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
      width="1680" height="940" viewBox="0 0 1680 940">
   <title>What DAS software is built on</title>
-  <desc>17 declared dependencies among catalogued DAS projects. 18 of 60 are connected to another; 42 depend on none and are depended on by none.</desc>
+  <desc>17 declared dependencies among the 60 catalogued DAS projects that ship a dependency manifest. 18 are connected to another; 42 depend on none and are depended on by none.</desc>
   <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
   <text x="280" y="86" font-size="52" fill="#2b2620" text-anchor="end">12</text>
   <text x="280" y="126" font-size="26" fill="#7a7266" text-anchor="end">depend on another</text>
+  <text x="280" y="164" font-size="25" fill="#7a7266" text-anchor="end">20%</text>
   <text x="1218" y="86" font-size="52" fill="#2b2620" text-anchor="start">7</text>
   <text x="1218" y="126" font-size="26" fill="#7a7266" text-anchor="start">are depended on</text>
-  <path d="M 312,190 C 740,190 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,850 C 740,850 740,630 1158,630" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
-  <path d="M 312,310 C 740,310 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,250 C 740,250 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,610 C 740,610 740,300 1158,300" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,670 C 740,670 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,670 C 740,670 740,410 1158,410" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,670 C 740,670 740,740 1158,740" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,550 C 740,550 740,300 1158,300" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,370 C 740,370 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,430 C 740,430 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,490 C 740,490 740,190 1158,190" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <path d="M 312,730 C 740,730 740,190 1158,190" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
-  <path d="M 312,730 C 740,730 740,410 1158,410" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
-  <path d="M 312,730 C 740,730 740,850 1158,850" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
-  <path d="M 312,730 C 740,730 740,520 1158,520" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
-  <path d="M 312,790 C 740,790 740,520 1158,520" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
-  <circle cx="300" cy="190" r="7" fill="#4b4b50"/>
-  <text x="280" y="198" font-size="22" fill="#2b2620" text-anchor="end">Coherence Analysis</text>
-  <circle cx="300" cy="250" r="7" fill="#4b4b50"/>
-  <text x="280" y="258" font-size="22" fill="#2b2620" text-anchor="end">DAS Processing Pipeline</text>
-  <circle cx="300" cy="310" r="7" fill="#4b4b50"/>
-  <text x="280" y="318" font-size="22" fill="#2b2620" text-anchor="end">das-anomaly</text>
-  <circle cx="300" cy="370" r="7" fill="#4b4b50"/>
-  <text x="280" y="378" font-size="22" fill="#2b2620" text-anchor="end">dasjax</text>
-  <circle cx="300" cy="430" r="7" fill="#4b4b50"/>
-  <text x="280" y="438" font-size="22" fill="#2b2620" text-anchor="end">DerZug</text>
-  <circle cx="300" cy="490" r="7" fill="#4b4b50"/>
-  <text x="280" y="498" font-size="22" fill="#2b2620" text-anchor="end">ReMi-DAS</text>
-  <circle cx="300" cy="550" r="7" fill="#4b4b50"/>
-  <text x="280" y="558" font-size="22" fill="#2b2620" text-anchor="end">DASexplorer</text>
-  <circle cx="300" cy="610" r="7" fill="#4b4b50"/>
-  <text x="280" y="618" font-size="22" fill="#2b2620" text-anchor="end">DASSourceLocator</text>
-  <circle cx="300" cy="670" r="7" fill="#4b4b50"/>
-  <text x="280" y="678" font-size="22" fill="#2b2620" text-anchor="end">dascorepy</text>
-  <circle cx="300" cy="730" r="7" fill="#4b4b50"/>
-  <text x="280" y="738" font-size="22" fill="#2b2620" text-anchor="end">unidas</text>
-  <circle cx="300" cy="790" r="7" fill="#4b4b50"/>
-  <text x="280" y="798" font-size="22" fill="#2b2620" text-anchor="end">Xpick</text>
+  <text x="1218" y="164" font-size="25" fill="#7a7266" text-anchor="start">12%</text>
+  <text x="740" y="86" font-size="34" fill="#2b2620" text-anchor="middle">60 projects</text>
+  <text x="740" y="126" font-size="26" fill="#7a7266" text-anchor="middle">with a dependency manifest</text>
+  <path d="M 312,232 C 740,232 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,850 C 740,850 740,644 1158,644" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M 312,344.364 C 740,344.364 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,288.182 C 740,288.182 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,625.273 C 740,625.273 740,335 1158,335" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,681.455 C 740,681.455 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,681.455 C 740,681.455 740,438 1158,438" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,681.455 C 740,681.455 740,747 1158,747" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,569.091 C 740,569.091 740,335 1158,335" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,400.545 C 740,400.545 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,456.727 C 740,456.727 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,512.909 C 740,512.909 740,232 1158,232" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <path d="M 312,737.636 C 740,737.636 740,232 1158,232" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M 312,737.636 C 740,737.636 740,438 1158,438" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M 312,737.636 C 740,737.636 740,850 1158,850" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M 312,737.636 C 740,737.636 740,541 1158,541" fill="none" stroke="#cbc3b3" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M 312,793.818 C 740,793.818 740,541 1158,541" fill="none" stroke="#c98500" stroke-width="2.6" stroke-opacity="0.55"/>
+  <circle cx="300" cy="232" r="7" fill="#4b4b50"/>
+  <text x="280" y="240" font-size="22" fill="#2b2620" text-anchor="end">Coherence Analysis</text>
+  <circle cx="300" cy="288.182" r="7" fill="#4b4b50"/>
+  <text x="280" y="296.182" font-size="22" fill="#2b2620" text-anchor="end">DAS Processing Pipeline</text>
+  <circle cx="300" cy="344.364" r="7" fill="#4b4b50"/>
+  <text x="280" y="352.364" font-size="22" fill="#2b2620" text-anchor="end">das-anomaly</text>
+  <circle cx="300" cy="400.545" r="7" fill="#4b4b50"/>
+  <text x="280" y="408.545" font-size="22" fill="#2b2620" text-anchor="end">dasjax</text>
+  <circle cx="300" cy="456.727" r="7" fill="#4b4b50"/>
+  <text x="280" y="464.727" font-size="22" fill="#2b2620" text-anchor="end">DerZug</text>
+  <circle cx="300" cy="512.909" r="7" fill="#4b4b50"/>
+  <text x="280" y="520.909" font-size="22" fill="#2b2620" text-anchor="end">ReMi-DAS</text>
+  <circle cx="300" cy="569.091" r="7" fill="#4b4b50"/>
+  <text x="280" y="577.091" font-size="22" fill="#2b2620" text-anchor="end">DASexplorer</text>
+  <circle cx="300" cy="625.273" r="7" fill="#4b4b50"/>
+  <text x="280" y="633.273" font-size="22" fill="#2b2620" text-anchor="end">DASSourceLocator</text>
+  <circle cx="300" cy="681.455" r="7" fill="#4b4b50"/>
+  <text x="280" y="689.455" font-size="22" fill="#2b2620" text-anchor="end">dascorepy</text>
+  <circle cx="300" cy="737.636" r="7" fill="#4b4b50"/>
+  <text x="280" y="745.636" font-size="22" fill="#2b2620" text-anchor="end">unidas</text>
+  <circle cx="300" cy="793.818" r="7" fill="#4b4b50"/>
+  <text x="280" y="801.818" font-size="22" fill="#2b2620" text-anchor="end">Xpick</text>
   <circle cx="300" cy="850" r="7" fill="#4b4b50"/>
   <text x="280" y="858" font-size="22" fill="#2b2620" text-anchor="end">DAS-ANI</text>
-  <circle cx="1180" cy="190" r="32.8" fill="#c98500"/>
-  <text x="1232.8" y="200" font-size="28" fill="#2b2620" text-anchor="start">DASCore (8)</text>
-  <circle cx="1180" cy="300" r="17.2" fill="#c98500"/>
-  <text x="1232.8" y="310" font-size="28" fill="#2b2620" text-anchor="start">DAS4Whales (2)</text>
-  <circle cx="1180" cy="410" r="17.2" fill="#c98500"/>
-  <text x="1232.8" y="420" font-size="28" fill="#2b2620" text-anchor="start">DASPy (2)</text>
-  <circle cx="1180" cy="520" r="17.2" fill="#c98500"/>
-  <text x="1232.8" y="530" font-size="28" fill="#2b2620" text-anchor="start">xdas (2)</text>
-  <circle cx="1180" cy="630" r="14.6" fill="#c98500"/>
-  <text x="1232.8" y="640" font-size="28" fill="#2b2620" text-anchor="start">DASPack (1)</text>
-  <circle cx="1180" cy="740" r="14.6" fill="#c98500"/>
-  <text x="1232.8" y="750" font-size="28" fill="#2b2620" text-anchor="start">unidas (1)</text>
+  <circle cx="1180" cy="232" r="32.8" fill="#c98500"/>
+  <text x="1232.8" y="242" font-size="28" fill="#2b2620" text-anchor="start">DASCore (8)</text>
+  <circle cx="1180" cy="335" r="17.2" fill="#c98500"/>
+  <text x="1232.8" y="345" font-size="28" fill="#2b2620" text-anchor="start">DAS4Whales (2)</text>
+  <circle cx="1180" cy="438" r="17.2" fill="#c98500"/>
+  <text x="1232.8" y="448" font-size="28" fill="#2b2620" text-anchor="start">DASPy (2)</text>
+  <circle cx="1180" cy="541" r="17.2" fill="#c98500"/>
+  <text x="1232.8" y="551" font-size="28" fill="#2b2620" text-anchor="start">xdas (2)</text>
+  <circle cx="1180" cy="644" r="14.6" fill="#c98500"/>
+  <text x="1232.8" y="654" font-size="28" fill="#2b2620" text-anchor="start">DASPack (1)</text>
+  <circle cx="1180" cy="747" r="14.6" fill="#c98500"/>
+  <text x="1232.8" y="757" font-size="28" fill="#2b2620" text-anchor="start">unidas (1)</text>
   <circle cx="1180" cy="850" r="14.6" fill="#c98500"/>
   <text x="1232.8" y="860" font-size="28" fill="#2b2620" text-anchor="start">lightguide (1)</text>
   </g>

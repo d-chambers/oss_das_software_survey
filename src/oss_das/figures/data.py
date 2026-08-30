@@ -1275,6 +1275,11 @@ class LanguagePlatform:
     hosts: tuple[tuple[str, int], ...]
 
     def sidecar(self) -> dict[str, Any]:
+        # The two shares the talk says out loud, rounded here rather than on a
+        # slide: a percentage typed into the deck goes stale the next time a
+        # project is added or excluded, and nothing catches it.
+        top_language = max(self.rows, key=lambda r: r.projects, default=None)
+        top_host = max(self.hosts, key=lambda h: h[1], default=None)
         return {
             "projects": self.projects,
             "hosts": dict(self.hosts),
@@ -1282,6 +1287,18 @@ class LanguagePlatform:
                 r.language: {"projects": r.projects, "by_host": dict(r.by_host)}
                 for r in self.rows
             },
+            "top_language": top_language.language if top_language else None,
+            "top_language_pct": (
+                round(top_language.projects / self.projects * 100)
+                if top_language and self.projects
+                else None
+            ),
+            "top_host": top_host[0] if top_host else None,
+            "top_host_pct": (
+                round(top_host[1] / self.projects * 100)
+                if top_host and self.projects
+                else None
+            ),
         }
 
 
@@ -1737,9 +1754,7 @@ def network_from_records() -> Network:
     registry = records.measured("registry")
     measured = records.measured("dependencies")
     included = {
-        pid
-        for pid in das_project_ids()
-        if (measured.get(pid) or {}).get("manifests")
+        pid for pid in das_project_ids() if (measured.get(pid) or {}).get("manifests")
     }
 
     alias: dict[str, str] = {}

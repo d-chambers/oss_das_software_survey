@@ -1639,13 +1639,17 @@ def network_plate(net: Network) -> str:
     """Which DAS projects are built on other DAS projects.
 
     Consumers on the left, the projects they build on down the right, ordered
-    by how many depend on them. Four projects appear on both sides -- a project
-    can be built on and still build on something else -- so the two columns are
-    a direction of travel, not a partition.
+    by how many depend on them. A project can be built on and still build on
+    something else, so a project can appear in both columns: the two are a
+    direction of travel, not a partition.
     """
     width, height = 1680, 940
     left_x, right_x = 300.0, 1180.0
-    top, bottom = 190.0, 850.0
+    # The header band runs to a third line now that each column carries its
+    # share, so the first row starts below it: at the old 190 the left share
+    # sat on the first consumer's name and the right one inside the hub's
+    # circle.
+    top, bottom = 232.0, 850.0
 
     consumers = list(net.consumers)
     providers = list(net.providers)
@@ -1654,22 +1658,51 @@ def network_plate(net: Network) -> str:
         height=height,
         title="What DAS software is built on",
         desc=(
-            f"{len(net.links)} declared dependencies among catalogued DAS "
-            f"projects. {net.connected} of {net.projects} are connected to "
-            f"another; {net.isolated} depend on none and are depended on by none."
+            f"{len(net.links)} declared dependencies among the {net.projects} "
+            "catalogued DAS projects that ship a dependency manifest. "
+            f"{net.connected} are connected to another; {net.isolated} depend "
+            "on none and are depended on by none."
         ),
     )
 
-    # Each column is headed by its own count: how many projects build on
-    # another, and how many are built on. Five projects are in both columns,
-    # so the two numbers deliberately do not sum to the connected total.
-    for x, number, label in (
-        (left_x - 20, f"{len(consumers)}", "depend on another"),
-        (right_x + 38, f"{len(providers)}", "are depended on"),
+    # Each column is headed by its own count and its share of the same
+    # denominator. A project built on while building on something else is in
+    # both columns, so the two counts deliberately do not sum to the connected
+    # total -- and neither share is a share of the other.
+    for x, count, label in (
+        (left_x - 20, len(consumers), "depend on another"),
+        (right_x + 38, len(providers), "are depended on"),
     ):
         anchor = "end" if x < right_x else "start"
-        c.text(x, 86, number, size=draw.MID, fill=draw.INK, anchor=anchor)
+        c.text(x, 86, f"{count}", size=draw.MID, fill=draw.INK, anchor=anchor)
         c.text(x, 126, label, size=26, fill=draw.MUTED, anchor=anchor)
+        c.text(
+            x,
+            164,
+            f"{round(100 * count / net.projects)}%",
+            size=draw.SUB,
+            fill=draw.MUTED,
+            anchor=anchor,
+        )
+
+    # The gate, between the two counts it is the denominator of. This deck
+    # counts projects three ways -- every catalogued project, every one that
+    # ships Python, every one that declares what it builds on -- and a reader
+    # who has to hold which is which cannot check the shares against anything.
+    # Smaller than the flanking numbers, because it is what they are measured
+    # against rather than a third measurement.
+    middle = (left_x + right_x) / 2
+    c.text(
+        middle, 86, f"{net.projects} projects", size=34, fill=draw.INK, anchor="middle"
+    )
+    c.text(
+        middle,
+        126,
+        "with a dependency manifest",
+        size=26,
+        fill=draw.MUTED,
+        anchor="middle",
+    )
 
     def row(index: int, count: int) -> float:
         if count < 2:

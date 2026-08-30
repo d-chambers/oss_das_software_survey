@@ -47,8 +47,6 @@ literature. Every one leaves by exactly one route. What survives is
 
 ## The Tools: The Results
 
-
-
 :::: {.mask-wrap style="width:94%"}
 ![](../figures/v020_totals.png){fig-align="center"}
 
@@ -95,16 +93,8 @@ the work came from projects that did not exist a year earlier. Growth here is
 arrival, not deepening.
 :::
 
-## The Tools: Language and Forge
 
-![](../figures/v150_language_platform.png){fig-align="center" width=98%}
-
-::: {.notes}
-Python and GitHub, overwhelmingly. That is a strength: one ecosystem to
-interoperate within.
-:::
-
-## The Tools: Egineering Practice
+## The Tools: Engineering Signals
 
 ::: {.content-visible when-format="revealjs"}
 
@@ -133,8 +123,28 @@ licence one. Two-thirds carry a packaging manifest —
 reason for the next slide.
 :::
 
-## The Tools: Dependencies
 
+## The Tools: Language and Forge
+
+![](../figures/v150_language_platform.png){fig-align="center" width=98%}
+
+::: {.content-visible when-format="revealjs"}
+[Python: {{< meta n.language_platform.top_language_pct >}}%<br>GitHub: {{< meta n.language_platform.top_host_pct >}}%]{.chart-callout .absolute .fragment top="50%" left="39%" width="44%"}
+:::
+
+::: {.content-visible when-format="beamer"}
+- Python: {{< meta n.language_platform.top_language_pct >}}%
+- GitHub: {{< meta n.language_platform.top_host_pct >}}%
+:::
+
+::: {.notes}
+Python and GitHub, overwhelmingly. That is a strength: one ecosystem to
+interoperate within. The two numbers land on the empty half of the chart, so
+say them rather than read the bars.
+:::
+
+
+## The Tools: Dependencies
 
 :::: {.mask-wrap style="width:94%"}
 ![](../figures/v140_dependencies.png){fig-align="center" width=98%}
@@ -205,25 +215,6 @@ hand-curated and theirs is scraped.
 - In code registry
 :::
 
-
-## Infrastructure: The Five
-
-:::: {.content-visible when-format="revealjs"}
-![](assets/logo_dascore.png){.absolute .fragment top="16.8%" left="2.2%" width="26.1%"}
-![](assets/logo_daspy.png){.absolute .fragment top="16.8%" left="32.9%" width="34.3%"}
-![](assets/logo_das4whales.png){.absolute .fragment top="16.5%" left="67.7%" width="32.3%"}
-![](assets/logo_xdas.png){.absolute .fragment top="53.3%" left="29.7%" width="40.6%"}
-![](assets/logo_lightguide.png){.absolute .fragment top="69.7%" left="5.6%" width="14.8%"}
-::::
-
-:::: {.content-visible when-format="beamer"}
-DASCore · DASPy · DAS4Whales · xdas · Lightguide
-::::
-
-::: {.notes}
-Name each as it lands. No text on the slide; the logos are the list.
-:::
-
 ## Infrastructure: Licences
 
 :::: {.content-visible when-format="revealjs"}
@@ -260,7 +251,7 @@ rather than a software one, which matters before you depend on it downstream.
 - Matched-filter and spectrogram whale-call detection
 - Call association, localisation and track building
 - Bathymetry and cable-geometry mapping
-- The deepest end-to-end marine workflow of the five
+- Specialized end-to-end marine workflow
 :::
 
 ::: {.column width="38%"}
@@ -280,10 +271,11 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::: {.columns}
 
 ::: {.column width="62%"}
-- Immutable patches with named coordinates and Pint units
-- Spools index a directory, so you read only what you select
+- Immutable xarray-like data structure
+- Rich suport for units
+- Metadata index: excellent for querying and archival
 - Over 20 format families, with versioned handlers
-- Entry-point plugins for readers and namespaces
+- Entry-point plugins for extensibility
 :::
 
 ::: {.column width="38%"}
@@ -303,8 +295,8 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::: {.columns}
 
 ::: {.column width="62%"}
-- The richest seismology algorithm set of the five
-- Curvelet denoising, decomposition, strain-to-velocity
+- The rich seismology algorithm set
+- Curvelet denoising, decomposition, multiple strain-to-velocity
 - A simple Section and Collection workflow
 - MIT — the lowest licensing friction
 :::
@@ -326,10 +318,9 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::: {.columns}
 
 ::: {.column width="62%"}
-- The published adaptive frequency–wavenumber denoiser
+- An adaptive frequency–wavenumber denoiser
 - Rust-backed, parallel, and fast
-- Phase following along the fibre
-- Green's-function forward modelling through Pyrocko
+- Gateway into the rich PyRocko ecosystem
 :::
 
 ::: {.column width="38%"}
@@ -349,10 +340,11 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 :::: {.columns}
 
 ::: {.column width="62%"}
-- Virtual arrays across thousands of files
-- Compact coordinates instead of dense index arrays
-- Stateful pipelines that survive chunk boundaries
-- Live acquisition over ZeroMQ
+- Xarray inspired data structures
+- Virtual (lazy) arrays across thousands of files
+- Tight integration with CF formats
+- Stateful pipelines that survive chunk boundaries (Atoms)
+- Acquisition streaming over ZeroMQ
 :::
 
 ::: {.column width="38%"}
@@ -376,40 +368,40 @@ Strengths first, then the logo. Say what it is for, not what it lacks.
 ::: {.column width="52%"}
 Five data models, five I/O layers, five ways to say the same thing.
 
-- Overlap is how a field finds out what works
-- The cost lands on the user, not the author
-- Only paid when the tools cannot talk to each other
+- Overlap is how a field innovates
+- Users pay the cost, not the author
+- Interroperability gives us the best of both
 :::
 
 ::: {.column width="48%"}
-![](assets/interoperability.png){.fragment data-fragment-index="3" fig-align="center" width="94%"}
+::: {.fragment}
+![](assets/interoperability.png){fig-align="center" width="94%"}
 
-[github.com/DASDAE/unidas]{.project-url .fragment data-fragment-index="3"}
+[github.com/DASDAE/unidas]{.project-url}
+:::
 :::
 
 ::::
 
-::: {.notes}
-Say the concession first and mean it: five independent designs is how a field
-finds out what works. Unidas is the existence proof that the conversion can be
-written once instead of five times.
-:::
 
 ## Gaps: Tensor Acceleration
 
 :::: {.columns}
 
 ::: {.column width="52%"}
-The shared layer is NumPy. Acceleration is bolted on one project at a time.
+The shared layer is NumPy. Acceleration is bolted on unevenly. 
 
-- Sixteen reach for PyTorch, eight for Dask, three for CuPy
-- None of it is portable — the Array API is the target
+- Sixteen reach for PyTorch, three for CuPy
+- None of it is portable, the Array API is the target
+- 
 :::
 
 ::: {.column width="48%"}
-![](assets/gpu.png){.fragment data-fragment-index="2" fig-align="center" width="88%"}
+::: {.fragment}
+![](assets/gpu.png){fig-align="center" width="88%"}
 
-[github.com/DASDAE/dasjax]{.project-url .fragment data-fragment-index="2"}
+[github.com/DASDAE/dasjax]{.project-url}
+:::
 :::
 
 ::::
@@ -456,7 +448,7 @@ Seven viewers in the census. Nothing in it depends on any of them.
 
 ::: {.column width="48%"}
 ::: {.content-visible when-format="revealjs"}
-[?]{.question-mark}
+[?]{.question-mark .fragment}
 :::
 
 ::: {.content-visible when-format="beamer"}
@@ -479,8 +471,6 @@ mark is which the field converges on, not whether anyone is trying.
 
 ![](../figures/p1_scientist_agent.png){fig-align="center" width=70%}
 
-- Readable interfaces, stable contracts, honest errors
-
 ::: {.notes}
 The Tools we write now are the tools agents will use. This slide is about the
 code that already exists: make it legible and predictable and an agent can
@@ -491,13 +481,18 @@ drive it. Nothing here is agent-ready yet.
 
 ![](../figures/p1_scientist_agent_oss.png){fig-align="center" width=64%}
 
-- The scientist stays in the loop, and so does the agent
 
 ::: {.notes}
 The second point, and a different one: not the agent standing between the
 scientist and the software, but both of them reaching it. That is the shape
 worth designing for.
 :::
+
+## Gaps: Agent Support
+
+![](../figures/derzug_screenshot.png)
+:::{.center}
+github.com/dasdae/derzug
 
 ## Conclusions
 
@@ -509,7 +504,6 @@ worth designing for.
   - Interoperability, Tensor Processing, Visualization, Agentic Support 
 - Interoperate rather than re-implement
 :::
-
 
 ::: {.notes}
 Close on the call to action: publish it, declare your dependencies, and reuse a
@@ -529,6 +523,19 @@ Check your own project's record and send a correction.
 :::
 
 # Backup {visibility="uncounted"}
+
+## Xdas vs DASCore: Abstractions
+
+![](../figures/v180_archive_abstractions.png){fig-align="center" width=98%}
+
+::: {.notes}
+The data model leaks into your public API. DASCore indexes a directory and
+hands you a patch; xdas builds a virtual array over the files and hands you a
+chunk. Conversion exists -- unidas adapts four containers -- but an xarray
+round trip densifies xdas's compact coordinates, and MiniSEED cannot carry
+every DAS field.
+:::
+
 
 ## Which projects each number counts {visibility="uncounted"}
 
@@ -568,4 +575,38 @@ comparison means nothing.
 ::: {.notes}
 Held back for questions. The gap between "set up as a package" and "published"
 is the cheapest thing in this talk to fix.
+:::
+
+
+
+
+## Infrastructure: The Five
+
+
+:::: {.content-visible when-format="revealjs"}
+
+![](assets/logo_dascore.png){.absolute .fragment top="16.8%" left="2.2%" width="26.1%"}
+
+![](assets/logo_daspy.png){.absolute .fragment top="16.8%" left="32.9%" width="34.3%"}
+
+![](assets/logo_das4whales.png){.absolute .fragment top="16.5%" left="67.7%" width="32.3%"}
+
+![](assets/logo_xdas.png){.absolute .fragment top="53.3%" left="29.7%" width="40.6%"}
+
+![](assets/logo_lightguide.png){.absolute .fragment top="69.7%" left="5.6%" width="14.8%"}
+
+::::
+
+
+:::: {.content-visible when-format="beamer"}
+
+DASCore · DASPy · DAS4Whales · xdas · Lightguide
+
+::::
+
+
+::: {.notes}
+
+Name each as it lands. No text on the slide; the logos are the list.
+
 :::

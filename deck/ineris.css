@@ -96,6 +96,15 @@
   border-bottom: 6px solid transparent;
 }
 
+/* A tick where each label meets the axis, so a logo is grouped with its
+   licence by proximity to a mark rather than by hovering over a word. */
+.reveal .axis-tick {
+  position: absolute;
+  width: 2px;
+  background: #000091;
+  z-index: 2;
+}
+
 /* Figures carry the identity; centre them and let them breathe. */
 .reveal section img { display: block; margin: 0 auto; background: transparent; }
 .reveal .slide figure { text-align: center; }
@@ -103,7 +112,7 @@
 /* Captions on the logo-axis slides. */
 .reveal .axis-label {
   font-size: 0.95em;
-  color: #7a7266;
+  color: #4a443c;
   display: block;
   text-align: center;
   line-height: 1.25;
@@ -125,6 +134,19 @@
   color: #7a7266;
   margin-top: 0.5em;
   word-break: break-all;
+}
+
+/* Two numbers said out loud, set over the empty half of a chart. Large,
+   because they are the point of the slide rather than a caption, and in the
+   deck's blue so they read as the speaker's voice and not as part of the
+   plate. */
+.reveal .chart-callout {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #000091;
 }
 
 /* The one gap with no candidate to show for it. Sized to carry a slide on its
